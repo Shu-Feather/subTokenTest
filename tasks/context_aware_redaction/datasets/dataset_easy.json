@@ -1,0 +1,726 @@
+[
+  {
+    "id": "short_0",
+    "difficulty": "short",
+    "original_context": "Dear Mr. Smith, \n\nTo complete your registration process for our online banking service, we need a clear scanned copy of your 680046307665645731. Also, for setting up the direct debit feature, kindly provide your 9906 4947 3831 1962 details. Rest assured, your information will be protected with high security measures. \n\nBest Regards,\nCustomer Support Team.",
+    "redacted_context": "Dear Mr. Smith, \n\nTo complete your registration process for our online banking service, we need a clear scanned copy of your 680046**********31. Also, for setting up the direct debit feature, kindly provide your 990649******1962 details. Rest assured, your information will be protected with high security measures. \n\nBest Regards,\nCustomer Support Team.",
+    "sensitive_info": [
+      {
+        "type": "id_card",
+        "value": "680046307665645731",
+        "start": 125,
+        "end": 143
+      },
+      {
+        "type": "credit_card",
+        "value": "680046307665645731",
+        "start": 125,
+        "end": 143
+      },
+      {
+        "type": "credit_card",
+        "value": "9906 4947 3831 1962",
+        "start": 212,
+        "end": 231
+      }
+    ],
+    "sensitive_types": [
+      "id_card",
+      "credit_card"
+    ]
+  },
+  {
+    "id": "short_1",
+    "difficulty": "short",
+    "original_context": "Hi James, \n\nThank you for purchasing from our online store. To confirm your order, could you please provide your phone number, +81 67531518036? For payment, we will need your 4244 0418 1836 5080 details. Rest assured, we prioritize the security of your personal information. \n\nBest, \nJane",
+    "redacted_context": "Hi James, \n\nThank you for purchasing from our online store. To confirm your order, could you please provide your phone number, +81 675****8036? For payment, we will need your 424404******5080 details. Rest assured, we prioritize the security of your personal information. \n\nBest, \nJane",
+    "sensitive_info": [
+      {
+        "type": "phone",
+        "value": "+81 67531518036",
+        "start": 127,
+        "end": 142
+      },
+      {
+        "type": "credit_card",
+        "value": "4244 0418 1836 5080",
+        "start": 175,
+        "end": 194
+      }
+    ],
+    "sensitive_types": [
+      "phone",
+      "credit_card"
+    ]
+  },
+  {
+    "id": "short_2",
+    "difficulty": "short",
+    "original_context": "Dear customer,\n\nThank you for reaching out to us. To assist you further, could you please provide your contact number? You can reach us back at +86 45735858973. Also, for security reasons, we require a copy of your 869295152185515372 to verify your identity. \n\nBest Regards,\nCustomer Service Team.",
+    "redacted_context": "Dear customer,\n\nThank you for reaching out to us. To assist you further, could you please provide your contact number? You can reach us back at +86 457****8973. Also, for security reasons, we require a copy of your 869295**********72 to verify your identity. \n\nBest Regards,\nCustomer Service Team.",
+    "sensitive_info": [
+      {
+        "type": "phone",
+        "value": "+86 45735858973",
+        "start": 144,
+        "end": 159
+      },
+      {
+        "type": "id_card",
+        "value": "869295152185515372",
+        "start": 215,
+        "end": 233
+      },
+      {
+        "type": "credit_card",
+        "value": "869295152185515372",
+        "start": 215,
+        "end": 233
+      }
+    ],
+    "sensitive_types": [
+      "phone"
+    ]
+  },
+  {
+    "id": "short_3",
+    "difficulty": "short",
+    "original_context": "Dear Mr. Smith, \n\nWe are in the process of updating our records and could use your assistance. Could you please provide us with the updated contact number? The number we have on file is +86 08565545882. Also, we noticed that the copy of the ID card we have in our records might be outdated. Could you please send us a scanned copy of your new 219342143965343991? Your prompt response would be highly appreciated. \n\nBest Regards, \nCustomer Service Team",
+    "redacted_context": "Dear Mr. Smith, \n\nWe are in the process of updating our records and could use your assistance. Could you please provide us with the updated contact number? The number we have on file is +86 085****5882. Also, we noticed that the copy of the ID card we have in our records might be outdated. Could you please send us a scanned copy of your new 219342**********91? Your prompt response would be highly appreciated. \n\nBest Regards, \nCustomer Service Team",
+    "sensitive_info": [
+      {
+        "type": "phone",
+        "value": "+86 08565545882",
+        "start": 186,
+        "end": 201
+      },
+      {
+        "type": "id_card",
+        "value": "219342143965343991",
+        "start": 343,
+        "end": 361
+      },
+      {
+        "type": "credit_card",
+        "value": "219342143965343991",
+        "start": 343,
+        "end": 361
+      }
+    ],
+    "sensitive_types": [
+      "phone",
+      "id_card"
+    ]
+  },
+  {
+    "id": "short_4",
+    "difficulty": "short",
+    "original_context": "Dear Mr. Johnson,\n\nIn order for us to proceed with your requested service upgrade, we require a few more details. Could you please provide a clear photo of your 052152654692883322 for identity verification? Also, kindly confirm your contact number +86 02202590390 for us to update our records.\n\nBest Regards,\nCustomer Service Team",
+    "redacted_context": "Dear Mr. Johnson,\n\nIn order for us to proceed with your requested service upgrade, we require a few more details. Could you please provide a clear photo of your 052152**********22 for identity verification? Also, kindly confirm your contact number +86 022****0390 for us to update our records.\n\nBest Regards,\nCustomer Service Team",
+    "sensitive_info": [
+      {
+        "type": "id_card",
+        "value": "052152654692883322",
+        "start": 161,
+        "end": 179
+      },
+      {
+        "type": "credit_card",
+        "value": "052152654692883322",
+        "start": 161,
+        "end": 179
+      },
+      {
+        "type": "phone",
+        "value": "+86 02202590390",
+        "start": 248,
+        "end": 263
+      }
+    ],
+    "sensitive_types": [
+      "id_card"
+    ]
+  },
+  {
+    "id": "short_5",
+    "difficulty": "short",
+    "original_context": "Dear Mr. Smith,\n\nThank you for your recent purchase at our online store. To verify your identity and to complete the transaction, please provide us with the following information: your phone number +82 28594789126, a scan of your ID card 387520183401608773, and your credit card details 9814 9796 9506 7145. Your personal information will be used solely for transaction purposes and will be kept secure according to our privacy policy.",
+    "redacted_context": "Dear Mr. Smith,\n\nThank you for your recent purchase at our online store. To verify your identity and to complete the transaction, please provide us with the following information: your phone number +82 285****9126, a scan of your ID card 387520**********73, and your credit card details 981497******7145. Your personal information will be used solely for transaction purposes and will be kept secure according to our privacy policy.",
+    "sensitive_info": [
+      {
+        "type": "phone",
+        "value": "+82 28594789126",
+        "start": 198,
+        "end": 213
+      },
+      {
+        "type": "id_card",
+        "value": "387520183401608773",
+        "start": 238,
+        "end": 256
+      },
+      {
+        "type": "credit_card",
+        "value": "387520183401608773",
+        "start": 238,
+        "end": 256
+      },
+      {
+        "type": "credit_card",
+        "value": "9814 9796 9506 7145",
+        "start": 287,
+        "end": 306
+      }
+    ],
+    "sensitive_types": [
+      "phone",
+      "id_card",
+      "credit_card"
+    ]
+  },
+  {
+    "id": "short_6",
+    "difficulty": "short",
+    "original_context": "Dear Customer,\n\nIn order to finalize your purchase, we would require your payment details. Please provide your 6725 5787 4629 4880 information. Once the transaction is successful, a receipt will be sent to your registered email.\n\nBest Regards,\nCustomer Service Team",
+    "redacted_context": "Dear Customer,\n\nIn order to finalize your purchase, we would require your payment details. Please provide your 672557******4880 information. Once the transaction is successful, a receipt will be sent to your registered email.\n\nBest Regards,\nCustomer Service Team",
+    "sensitive_info": [
+      {
+        "type": "credit_card",
+        "value": "6725 5787 4629 4880",
+        "start": 111,
+        "end": 130
+      }
+    ],
+    "sensitive_types": [
+      "credit_card"
+    ]
+  },
+  {
+    "id": "short_7",
+    "difficulty": "short",
+    "original_context": "Dear Mr. Smith,\n\nWe have successfully processed your order, but we need to confirm your shipping address. Can you please call our customer service at +86 11771872308 to confirm your details? Also, for verification purposes, please provide the last four digits of your 7149 1690 2443 1627. \n\nThank you for your cooperation. \n\nBest regards,\nCustomer Support Team",
+    "redacted_context": "Dear Mr. Smith,\n\nWe have successfully processed your order, but we need to confirm your shipping address. Can you please call our customer service at +86 117****2308 to confirm your details? Also, for verification purposes, please provide the last four digits of your 714916******1627. \n\nThank you for your cooperation. \n\nBest regards,\nCustomer Support Team",
+    "sensitive_info": [
+      {
+        "type": "phone",
+        "value": "+86 11771872308",
+        "start": 150,
+        "end": 165
+      },
+      {
+        "type": "credit_card",
+        "value": "7149 1690 2443 1627",
+        "start": 268,
+        "end": 287
+      }
+    ],
+    "sensitive_types": [
+      "phone"
+    ]
+  },
+  {
+    "id": "short_8",
+    "difficulty": "short",
+    "original_context": "Dear Customer,\n\nAs we finalize your hotel booking, we need to confirm your contact details for any potential updates. Please reply to this email with your phone number, formatted as +82 27717309801. Furthermore, for security purposes, kindly provide a copy of your ID card number 381303047354753910. Lastly, to process your payment, we require your credit card details 2504 8039 3599 1099. \n\nThank you for your cooperation. \n\nBest Regards,\nCustomer Service Team",
+    "redacted_context": "Dear Customer,\n\nAs we finalize your hotel booking, we need to confirm your contact details for any potential updates. Please reply to this email with your phone number, formatted as +82 277****9801. Furthermore, for security purposes, kindly provide a copy of your ID card number 381303**********10. Lastly, to process your payment, we require your credit card details 250480******1099. \n\nThank you for your cooperation. \n\nBest Regards,\nCustomer Service Team",
+    "sensitive_info": [
+      {
+        "type": "phone",
+        "value": "+82 27717309801",
+        "start": 182,
+        "end": 197
+      },
+      {
+        "type": "id_card",
+        "value": "381303047354753910",
+        "start": 280,
+        "end": 298
+      },
+      {
+        "type": "credit_card",
+        "value": "381303047354753910",
+        "start": 280,
+        "end": 298
+      },
+      {
+        "type": "credit_card",
+        "value": "2504 8039 3599 1099",
+        "start": 369,
+        "end": 388
+      }
+    ],
+    "sensitive_types": [
+      "phone",
+      "id_card",
+      "credit_card"
+    ]
+  },
+  {
+    "id": "short_9",
+    "difficulty": "short",
+    "original_context": "Dear Customer,\n\nWe acknowledge your request to modify your contact information in our database. For security purposes, could you please confirm your phone number as +82 27263389486? Also, we need the last four digits of your 248173824955120548 for identity verification. \n\nBest Regards,\nCustomer Service Team",
+    "redacted_context": "Dear Customer,\n\nWe acknowledge your request to modify your contact information in our database. For security purposes, could you please confirm your phone number as +82 272****9486? Also, we need the last four digits of your 248173**********48 for identity verification. \n\nBest Regards,\nCustomer Service Team",
+    "sensitive_info": [
+      {
+        "type": "phone",
+        "value": "+82 27263389486",
+        "start": 165,
+        "end": 180
+      },
+      {
+        "type": "id_card",
+        "value": "248173824955120548",
+        "start": 225,
+        "end": 243
+      },
+      {
+        "type": "credit_card",
+        "value": "248173824955120548",
+        "start": 225,
+        "end": 243
+      }
+    ],
+    "sensitive_types": [
+      "phone"
+    ]
+  },
+  {
+    "id": "short_10",
+    "difficulty": "short",
+    "original_context": "Dear Sir/Madam, \n\nTo complete your online registration, we require a scan of your identification. Please provide us with a clear image of your 364663748652875110. Once that's done, you can proceed to the payment section and enter your 3395 4713 5198 0559 details for the transaction. \n\nThank you for your cooperation.",
+    "redacted_context": "Dear Sir/Madam, \n\nTo complete your online registration, we require a scan of your identification. Please provide us with a clear image of your 364663**********10. Once that's done, you can proceed to the payment section and enter your 339547******0559 details for the transaction. \n\nThank you for your cooperation.",
+    "sensitive_info": [
+      {
+        "type": "id_card",
+        "value": "364663748652875110",
+        "start": 143,
+        "end": 161
+      },
+      {
+        "type": "credit_card",
+        "value": "364663748652875110",
+        "start": 143,
+        "end": 161
+      },
+      {
+        "type": "credit_card",
+        "value": "3395 4713 5198 0559",
+        "start": 235,
+        "end": 254
+      }
+    ],
+    "sensitive_types": [
+      "id_card",
+      "credit_card"
+    ]
+  },
+  {
+    "id": "short_11",
+    "difficulty": "short",
+    "original_context": "Dear Mr. Johnson,\n\nWe are processing your application for a new credit card. To verify your identity, kindly provide us with a clear copy of your 234732641031830246. After we receive and verify it, we will contact you at +44 45814283825 to confirm the details of your application. \n\nBest regards,\nCustomer Service Team",
+    "redacted_context": "Dear Mr. Johnson,\n\nWe are processing your application for a new credit card. To verify your identity, kindly provide us with a clear copy of your 234732**********46. After we receive and verify it, we will contact you at +44 458****3825 to confirm the details of your application. \n\nBest regards,\nCustomer Service Team",
+    "sensitive_info": [
+      {
+        "type": "id_card",
+        "value": "234732641031830246",
+        "start": 146,
+        "end": 164
+      },
+      {
+        "type": "credit_card",
+        "value": "234732641031830246",
+        "start": 146,
+        "end": 164
+      },
+      {
+        "type": "phone",
+        "value": "+44 45814283825",
+        "start": 221,
+        "end": 236
+      }
+    ],
+    "sensitive_types": [
+      "id_card"
+    ]
+  },
+  {
+    "id": "short_12",
+    "difficulty": "short",
+    "original_context": "Dear Mr. Smith,\n\nYour recent application for our credit card was received and is currently under review. For security purposes, could you please confirm the last four digits of your ID card number, 384906926111371351, and your contact number, +86 17952760565? We appreciate your cooperation and patience during this process.\n\nBest regards,\nCustomer Service Team",
+    "redacted_context": "Dear Mr. Smith,\n\nYour recent application for our credit card was received and is currently under review. For security purposes, could you please confirm the last four digits of your ID card number, 384906**********51, and your contact number, +86 179****0565? We appreciate your cooperation and patience during this process.\n\nBest regards,\nCustomer Service Team",
+    "sensitive_info": [
+      {
+        "type": "id_card",
+        "value": "384906926111371351",
+        "start": 198,
+        "end": 216
+      },
+      {
+        "type": "credit_card",
+        "value": "384906926111371351",
+        "start": 198,
+        "end": 216
+      },
+      {
+        "type": "phone",
+        "value": "+86 17952760565",
+        "start": 243,
+        "end": 258
+      }
+    ],
+    "sensitive_types": [
+      "phone",
+      "id_card"
+    ]
+  },
+  {
+    "id": "short_13",
+    "difficulty": "short",
+    "original_context": "Dear customer,\n\nWe received your request to change the phone number associated with your account. To verify your identity, please provide the last four digits of your ID card: 971918881361193501. Once verified, we'll update your account with the new phone number: +44 21805865529. \n\nBest,\nCustomer Service Team",
+    "redacted_context": "Dear customer,\n\nWe received your request to change the phone number associated with your account. To verify your identity, please provide the last four digits of your ID card: 971918**********01. Once verified, we'll update your account with the new phone number: +44 218****5529. \n\nBest,\nCustomer Service Team",
+    "sensitive_info": [
+      {
+        "type": "id_card",
+        "value": "971918881361193501",
+        "start": 176,
+        "end": 194
+      },
+      {
+        "type": "credit_card",
+        "value": "971918881361193501",
+        "start": 176,
+        "end": 194
+      },
+      {
+        "type": "phone",
+        "value": "+44 21805865529",
+        "start": 264,
+        "end": 279
+      }
+    ],
+    "sensitive_types": [
+      "phone",
+      "id_card"
+    ]
+  },
+  {
+    "id": "short_14",
+    "difficulty": "short",
+    "original_context": "Dear Mr. Johnson,\n\nAs per your request to update the payment method for your account, we need to verify your current credit card information. Please provide the last four digits of your current 8075 8472 9964 7240. Once verified, we can proceed with adding your new 1103 8780 1162 6766 number.\n\nBest regards,\nCustomer Service Team",
+    "redacted_context": "Dear Mr. Johnson,\n\nAs per your request to update the payment method for your account, we need to verify your current credit card information. Please provide the last four digits of your current 807584******7240. Once verified, we can proceed with adding your new 110387******6766 number.\n\nBest regards,\nCustomer Service Team",
+    "sensitive_info": [
+      {
+        "type": "credit_card",
+        "value": "8075 8472 9964 7240",
+        "start": 194,
+        "end": 213
+      },
+      {
+        "type": "credit_card",
+        "value": "1103 8780 1162 6766",
+        "start": 266,
+        "end": 285
+      }
+    ],
+    "sensitive_types": [
+      "credit_card"
+    ]
+  },
+  {
+    "id": "short_15",
+    "difficulty": "short",
+    "original_context": "Dear Sir/Madam,\n\nIn order to process your application for the new exclusive membership, we will need some additional information from you. Kindly send a scanned copy of your 803043466967870318 and a valid 9570 5339 6134 4458 for the payment of the membership fee. Rest assured, all your data will be handled with utmost confidentiality.\n\nBest Regards,\nCustomer Service Team",
+    "redacted_context": "Dear Sir/Madam,\n\nIn order to process your application for the new exclusive membership, we will need some additional information from you. Kindly send a scanned copy of your 803043**********18 and a valid 957053******4458 for the payment of the membership fee. Rest assured, all your data will be handled with utmost confidentiality.\n\nBest Regards,\nCustomer Service Team",
+    "sensitive_info": [
+      {
+        "type": "id_card",
+        "value": "803043466967870318",
+        "start": 174,
+        "end": 192
+      },
+      {
+        "type": "credit_card",
+        "value": "803043466967870318",
+        "start": 174,
+        "end": 192
+      },
+      {
+        "type": "credit_card",
+        "value": "9570 5339 6134 4458",
+        "start": 205,
+        "end": 224
+      }
+    ],
+    "sensitive_types": [
+      "id_card",
+      "credit_card"
+    ]
+  },
+  {
+    "id": "short_16",
+    "difficulty": "short",
+    "original_context": "Hello Mr. Smith, \n\nTo process your hotel booking, we'll need a copy of your ID for verification purposes. Please provide a scanned copy of your 323699426101909542. Also, for payment, we'll require your 9288 5869 4926 7180 details. Please ensure the information provided is accurate to avoid any inconveniences. \n\nBest, \nHotel Customer Service.",
+    "redacted_context": "Hello Mr. Smith, \n\nTo process your hotel booking, we'll need a copy of your ID for verification purposes. Please provide a scanned copy of your 323699**********42. Also, for payment, we'll require your 928858******7180 details. Please ensure the information provided is accurate to avoid any inconveniences. \n\nBest, \nHotel Customer Service.",
+    "sensitive_info": [
+      {
+        "type": "id_card",
+        "value": "323699426101909542",
+        "start": 144,
+        "end": 162
+      },
+      {
+        "type": "credit_card",
+        "value": "323699426101909542",
+        "start": 144,
+        "end": 162
+      },
+      {
+        "type": "credit_card",
+        "value": "9288 5869 4926 7180",
+        "start": 202,
+        "end": 221
+      }
+    ],
+    "sensitive_types": [
+      "id_card",
+      "credit_card"
+    ]
+  },
+  {
+    "id": "short_17",
+    "difficulty": "short",
+    "original_context": "Dear Mr. Smith,\n\nWe would like to confirm the recent changes made to your account. Please verify that the new phone number associated with your account is +1 68208331253. Also, for security reasons, we need to validate your ID card number 188644891220381680. \n\nBest Regards,\nCustomer Service Team",
+    "redacted_context": "Dear Mr. Smith,\n\nWe would like to confirm the recent changes made to your account. Please verify that the new phone number associated with your account is +1 682****1253. Also, for security reasons, we need to validate your ID card number 188644**********80. \n\nBest Regards,\nCustomer Service Team",
+    "sensitive_info": [
+      {
+        "type": "phone",
+        "value": "+1 68208331253",
+        "start": 155,
+        "end": 169
+      },
+      {
+        "type": "id_card",
+        "value": "188644891220381680",
+        "start": 239,
+        "end": 257
+      },
+      {
+        "type": "credit_card",
+        "value": "188644891220381680",
+        "start": 239,
+        "end": 257
+      }
+    ],
+    "sensitive_types": [
+      "phone"
+    ]
+  },
+  {
+    "id": "short_18",
+    "difficulty": "short",
+    "original_context": "Dear Mr. Smith, \n\nWe received your application and need to verify your details. Could you please send us a scanned copy of your 280132133744697911? Additionally, we would need a contact number, kindly provide us with your +82 16405768774. \n\nThank you for your cooperation.",
+    "redacted_context": "Dear Mr. Smith, \n\nWe received your application and need to verify your details. Could you please send us a scanned copy of your 280132**********11? Additionally, we would need a contact number, kindly provide us with your +82 164****8774. \n\nThank you for your cooperation.",
+    "sensitive_info": [
+      {
+        "type": "id_card",
+        "value": "280132133744697911",
+        "start": 128,
+        "end": 146
+      },
+      {
+        "type": "credit_card",
+        "value": "280132133744697911",
+        "start": 128,
+        "end": 146
+      },
+      {
+        "type": "phone",
+        "value": "+82 16405768774",
+        "start": 222,
+        "end": 237
+      }
+    ],
+    "sensitive_types": [
+      "id_card"
+    ]
+  },
+  {
+    "id": "short_19",
+    "difficulty": "short",
+    "original_context": "Dear Customer Service,\n\nI recently moved and need to update my contact details. My new phone number is +1 83450897455. Also, I noticed an error in my last billing statement. My ID card number 779903947794040899 was incorrectly mentioned. Lastly, I've lost my credit card and need to update my card details. The last four digits of the lost card are 9257 2256 1309 9526. Please update my records at the earliest. \n\nThanks for your help!",
+    "redacted_context": "Dear Customer Service,\n\nI recently moved and need to update my contact details. My new phone number is +1 834****7455. Also, I noticed an error in my last billing statement. My ID card number 779903**********99 was incorrectly mentioned. Lastly, I've lost my credit card and need to update my card details. The last four digits of the lost card are 925722******9526. Please update my records at the earliest. \n\nThanks for your help!",
+    "sensitive_info": [
+      {
+        "type": "phone",
+        "value": "+1 83450897455",
+        "start": 103,
+        "end": 117
+      },
+      {
+        "type": "id_card",
+        "value": "779903947794040899",
+        "start": 192,
+        "end": 210
+      },
+      {
+        "type": "credit_card",
+        "value": "779903947794040899",
+        "start": 192,
+        "end": 210
+      },
+      {
+        "type": "credit_card",
+        "value": "9257 2256 1309 9526",
+        "start": 349,
+        "end": 368
+      }
+    ],
+    "sensitive_types": [
+      "phone",
+      "id_card",
+      "credit_card"
+    ]
+  },
+  {
+    "id": "short_20",
+    "difficulty": "short",
+    "original_context": "Dear customer, \n\nWe have received your registration form, but we found out that the 569918364757890617 you provided seems to be expired. Moreover, the payment attempt using your 4588 5431 1258 0206 was unsuccessful. Could you please provide us with the updated details at your earliest convenience? Thank you.",
+    "redacted_context": "Dear customer, \n\nWe have received your registration form, but we found out that the 569918**********17 you provided seems to be expired. Moreover, the payment attempt using your 458854******0206 was unsuccessful. Could you please provide us with the updated details at your earliest convenience? Thank you.",
+    "sensitive_info": [
+      {
+        "type": "id_card",
+        "value": "569918364757890617",
+        "start": 84,
+        "end": 102
+      },
+      {
+        "type": "credit_card",
+        "value": "569918364757890617",
+        "start": 84,
+        "end": 102
+      },
+      {
+        "type": "credit_card",
+        "value": "4588 5431 1258 0206",
+        "start": 178,
+        "end": 197
+      }
+    ],
+    "sensitive_types": [
+      "id_card",
+      "credit_card"
+    ]
+  },
+  {
+    "id": "short_21",
+    "difficulty": "short",
+    "original_context": "Dear Mr. Johnson,\n\nAs part of the verification process for your recent loan application, we kindly request you to provide a photocopy of your Identification Card, 070197609386477664, and a valid phone number, +81 66306110400, where we can reach you for further inquiries. Please ensure that all the details are accurate to avoid any delays in your application process. \n\nBest Regards,\nCustomer Service Team",
+    "redacted_context": "Dear Mr. Johnson,\n\nAs part of the verification process for your recent loan application, we kindly request you to provide a photocopy of your Identification Card, 070197**********64, and a valid phone number, +81 663****0400, where we can reach you for further inquiries. Please ensure that all the details are accurate to avoid any delays in your application process. \n\nBest Regards,\nCustomer Service Team",
+    "sensitive_info": [
+      {
+        "type": "id_card",
+        "value": "070197609386477664",
+        "start": 163,
+        "end": 181
+      },
+      {
+        "type": "credit_card",
+        "value": "070197609386477664",
+        "start": 163,
+        "end": 181
+      },
+      {
+        "type": "phone",
+        "value": "+81 66306110400",
+        "start": 209,
+        "end": 224
+      }
+    ],
+    "sensitive_types": [
+      "phone",
+      "id_card"
+    ]
+  },
+  {
+    "id": "short_22",
+    "difficulty": "short",
+    "original_context": "Hi there, \n\nI hope this message finds you well! I realized we didn't have your updated contact details. Could you please provide us with your current phone number, +81 06432645605? We would also need a copy of your identification card, 921338663811017833, for verification purposes. \n\nThank you!",
+    "redacted_context": "Hi there, \n\nI hope this message finds you well! I realized we didn't have your updated contact details. Could you please provide us with your current phone number, +81 064****5605? We would also need a copy of your identification card, 921338**********33, for verification purposes. \n\nThank you!",
+    "sensitive_info": [
+      {
+        "type": "phone",
+        "value": "+81 06432645605",
+        "start": 164,
+        "end": 179
+      },
+      {
+        "type": "id_card",
+        "value": "921338663811017833",
+        "start": 236,
+        "end": 254
+      },
+      {
+        "type": "credit_card",
+        "value": "921338663811017833",
+        "start": 236,
+        "end": 254
+      }
+    ],
+    "sensitive_types": [
+      "phone"
+    ]
+  },
+  {
+    "id": "short_23",
+    "difficulty": "short",
+    "original_context": "Dear Mr. Smith, in order to proceed with your hotel booking, we kindly request you to provide us your identification proof, such as your ID card number 938263422236490351. Also, for payment purposes, could you please provide your credit card details 6787 3288 0545 7216? We assure you that your information will be kept secure with us.",
+    "redacted_context": "Dear Mr. Smith, in order to proceed with your hotel booking, we kindly request you to provide us your identification proof, such as your ID card number 938263**********51. Also, for payment purposes, could you please provide your credit card details 678732******7216? We assure you that your information will be kept secure with us.",
+    "sensitive_info": [
+      {
+        "type": "id_card",
+        "value": "938263422236490351",
+        "start": 152,
+        "end": 170
+      },
+      {
+        "type": "credit_card",
+        "value": "938263422236490351",
+        "start": 152,
+        "end": 170
+      },
+      {
+        "type": "credit_card",
+        "value": "6787 3288 0545 7216",
+        "start": 250,
+        "end": 269
+      }
+    ],
+    "sensitive_types": [
+      "id_card",
+      "credit_card"
+    ]
+  },
+  {
+    "id": "short_24",
+    "difficulty": "short",
+    "original_context": "Dear Customer, \n\nFor your convenience, we have set up an automatic payment method for your monthly subscription. Please provide your 5961 4290 8999 8701 details in the secure form we have sent to your registered email. If you face any issues, feel free to contact our customer support at +82 84523251726. Thank you.\n\nBest regards,\nCustomer Service Team.",
+    "redacted_context": "Dear Customer, \n\nFor your convenience, we have set up an automatic payment method for your monthly subscription. Please provide your 596142******8701 details in the secure form we have sent to your registered email. If you face any issues, feel free to contact our customer support at +82 845****1726. Thank you.\n\nBest regards,\nCustomer Service Team.",
+    "sensitive_info": [
+      {
+        "type": "credit_card",
+        "value": "5961 4290 8999 8701",
+        "start": 133,
+        "end": 152
+      },
+      {
+        "type": "phone",
+        "value": "+82 84523251726",
+        "start": 288,
+        "end": 303
+      }
+    ],
+    "sensitive_types": [
+      "credit_card"
+    ]
+  }
+]

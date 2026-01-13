@@ -1,0 +1,1192 @@
+[
+  {
+    "description": "The table represents various attributes about five different countries. These attributes include the capital city, official language, population (as of 2020 estimates), area in square kilometers, and the form of government.",
+    "table_data": [
+      [
+        "United States",
+        "Washington D.C.",
+        "English",
+        "331",
+        "002",
+        "651",
+        "9",
+        "525",
+        "067",
+        "Federal presidential constitutional republic"
+      ],
+      [
+        "Australia",
+        "Canberra",
+        "English",
+        "25",
+        "499",
+        "884",
+        "7",
+        "692",
+        "024",
+        "Federal parliamentary constitutional monarchy"
+      ],
+      [
+        "Japan",
+        "Tokyo",
+        "Japanese",
+        "126",
+        "476",
+        "461",
+        "377",
+        "975",
+        "Unitary parliamentary constitutional monarchy"
+      ],
+      [
+        "Brazil",
+        "Brasília",
+        "Portuguese",
+        "211",
+        "049",
+        "527",
+        "8",
+        "515",
+        "767",
+        "Federal presidential constitutional republic"
+      ],
+      [
+        "South Africa",
+        "Pretoria",
+        "Afrikaans",
+        "Zulu",
+        "English",
+        "59",
+        "308",
+        "690",
+        "1",
+        "221",
+        "037",
+        "Unitary dominant-party parliamentary republic"
+      ]
+    ],
+    "context": "The table represents various attributes about five different countries. These attributes include the capital city, official language, population (as of 2020 estimates), area in square kilometers, and the form of government. row 1: United States, Washington D.C., English, 331, 002, 651, 9, 525, 067, Federal presidential constitutional republic row 2: Australia, Canberra, English, 25, 499, 884, 7, 692, 024, Federal parliamentary constitutional monarchy row 3: Japan, Tokyo, Japanese, 126, 476, 461, 377, 975, Unitary parliamentary constitutional monarchy row 4: Brazil, Brasília, Portuguese, 211, 049, 527, 8, 515, 767, Federal presidential constitutional republic row 5: South Africa, Pretoria, Afrikaans, Zulu, English, 59, 308, 690, 1, 221, 037, Unitary dominant-party parliamentary republic",
+    "num_rows": 5,
+    "num_cols": 10
+  },
+  {
+    "description": "This table represents information about five different cities around the world. The columns after the city name indicate the country the city is in, the city's population, the primary language spoken, and the city's time zone.",
+    "table_data": [
+      [
+        "New York City",
+        "United States",
+        "8",
+        "398",
+        "748",
+        "English",
+        "Eastern Standard Time (EST)"
+      ],
+      [
+        "Tokyo",
+        "Japan",
+        "9",
+        "273",
+        "000",
+        "Japanese",
+        "Japan Standard Time (JST)"
+      ],
+      [
+        "Paris",
+        "France",
+        "2",
+        "141",
+        "000",
+        "French",
+        "Central European Time (CET)"
+      ],
+      [
+        "Sydney",
+        "Australia",
+        "5",
+        "312",
+        "000",
+        "English",
+        "Australian Eastern Standard Time (AEST)"
+      ],
+      [
+        "Buenos Aires",
+        "Argentina",
+        "2",
+        "891",
+        "000",
+        "Spanish",
+        "Argentina Time (ART)"
+      ]
+    ],
+    "context": "This table represents information about five different cities around the world. The columns after the city name indicate the country the city is in, the city's population, the primary language spoken, and the city's time zone. row 1: New York City, United States, 8, 398, 748, English, Eastern Standard Time (EST) row 2: Tokyo, Japan, 9, 273, 000, Japanese, Japan Standard Time (JST) row 3: Paris, France, 2, 141, 000, French, Central European Time (CET) row 4: Sydney, Australia, 5, 312, 000, English, Australian Eastern Standard Time (AEST) row 5: Buenos Aires, Argentina, 2, 891, 000, Spanish, Argentina Time (ART)",
+    "num_rows": 5,
+    "num_cols": 7
+  },
+  {
+    "description": "The table represents a set of athletes from different sports disciplines, providing their names, countries, sports they are involved in, their age, and their number of medals won.",
+    "table_data": [
+      [
+        "Usain Bolt",
+        "Jamaica",
+        "Track and Field",
+        "35",
+        "8"
+      ],
+      [
+        "Michael Phelps",
+        "United States",
+        "Swimming",
+        "36",
+        "23"
+      ],
+      [
+        "Lionel Messi",
+        "Argentina",
+        "Football",
+        "34",
+        "6"
+      ],
+      [
+        "Serena Williams",
+        "United States",
+        "Tennis",
+        "40",
+        "39"
+      ],
+      [
+        "Roger Federer",
+        "Switzerland",
+        "Tennis",
+        "40",
+        "20"
+      ]
+    ],
+    "context": "The table represents a set of athletes from different sports disciplines, providing their names, countries, sports they are involved in, their age, and their number of medals won. row 1: Usain Bolt, Jamaica, Track and Field, 35, 8 row 2: Michael Phelps, United States, Swimming, 36, 23 row 3: Lionel Messi, Argentina, Football, 34, 6 row 4: Serena Williams, United States, Tennis, 40, 39 row 5: Roger Federer, Switzerland, Tennis, 40, 20",
+    "num_rows": 5,
+    "num_cols": 5
+  },
+  {
+    "description": "This table represents data about different companies. The columns include the name of the company, the industry in which it operates, the country where it is headquartered, the year it was founded, and the number of employees.",
+    "table_data": [
+      [
+        "Microsoft",
+        "Technology",
+        "United States",
+        "1975",
+        "144000"
+      ],
+      [
+        "Toyota Motor Corporation",
+        "Automotive",
+        "Japan",
+        "1937",
+        "360000"
+      ],
+      [
+        "Nestle",
+        "Food and Beverage",
+        "Switzerland",
+        "1866",
+        "308000"
+      ],
+      [
+        "Siemens",
+        "Industrial Manufacturing",
+        "Germany",
+        "1847",
+        "293000"
+      ],
+      [
+        "Amazon",
+        "E-commerce",
+        "United States",
+        "1994",
+        "810000"
+      ]
+    ],
+    "context": "This table represents data about different companies. The columns include the name of the company, the industry in which it operates, the country where it is headquartered, the year it was founded, and the number of employees. row 1: Microsoft, Technology, United States, 1975, 144000 row 2: Toyota Motor Corporation, Automotive, Japan, 1937, 360000 row 3: Nestle, Food and Beverage, Switzerland, 1866, 308000 row 4: Siemens, Industrial Manufacturing, Germany, 1847, 293000 row 5: Amazon, E-commerce, United States, 1994, 810000",
+    "num_rows": 5,
+    "num_cols": 5
+  },
+  {
+    "description": "This table represents a selection of books, with relevant information including the title, author, publication year, genre, and number of pages.",
+    "table_data": [
+      [
+        "\"To Kill a Mockingbird\"",
+        "Harper Lee",
+        "1960",
+        "Fiction",
+        "281"
+      ],
+      [
+        "\"1984\"",
+        "George Orwell",
+        "1949",
+        "Dystopian",
+        "328"
+      ],
+      [
+        "\"The Da Vinci Code\"",
+        "Dan Brown",
+        "2003",
+        "Mystery Thriller",
+        "689"
+      ],
+      [
+        "\"The Great Gatsby\"",
+        "F. Scott Fitzgerald",
+        "1925",
+        "Tragedy",
+        "180"
+      ],
+      [
+        "\"Pride and Prejudice\"",
+        "Jane Austen",
+        "1813",
+        "Romance",
+        "279"
+      ]
+    ],
+    "context": "This table represents a selection of books, with relevant information including the title, author, publication year, genre, and number of pages. row 1: \"To Kill a Mockingbird\", Harper Lee, 1960, Fiction, 281 row 2: \"1984\", George Orwell, 1949, Dystopian, 328 row 3: \"The Da Vinci Code\", Dan Brown, 2003, Mystery Thriller, 689 row 4: \"The Great Gatsby\", F. Scott Fitzgerald, 1925, Tragedy, 180 row 5: \"Pride and Prejudice\", Jane Austen, 1813, Romance, 279",
+    "num_rows": 5,
+    "num_cols": 5
+  },
+  {
+    "description": "The table represents a comparison of five universities, detailing their names, locations, number of students, number of faculty members, and their global rankings.",
+    "table_data": [
+      [
+        "Stanford University",
+        "Stanford",
+        "CA",
+        "USA",
+        "17000",
+        "2100",
+        "2"
+      ],
+      [
+        "University of Oxford",
+        "Oxford",
+        "UK",
+        "24000",
+        "1800",
+        "1"
+      ],
+      [
+        "Peking University",
+        "Beijing",
+        "China",
+        "33000",
+        "4600",
+        "23"
+      ],
+      [
+        "University of Cape Town",
+        "Cape Town",
+        "South Africa",
+        "29000",
+        "4500",
+        "155"
+      ],
+      [
+        "Australian National University",
+        "Canberra",
+        "Australia",
+        "20000",
+        "2400",
+        "31"
+      ]
+    ],
+    "context": "The table represents a comparison of five universities, detailing their names, locations, number of students, number of faculty members, and their global rankings. row 1: Stanford University, Stanford, CA, USA, 17000, 2100, 2 row 2: University of Oxford, Oxford, UK, 24000, 1800, 1 row 3: Peking University, Beijing, China, 33000, 4600, 23 row 4: University of Cape Town, Cape Town, South Africa, 29000, 4500, 155 row 5: Australian National University, Canberra, Australia, 20000, 2400, 31",
+    "num_rows": 5,
+    "num_cols": 7
+  },
+  {
+    "description": "This table represents a selection of products with their respective prices, manufacturers, launch years, and categories.",
+    "table_data": [
+      [
+        "iPhone 12 Pro",
+        "$999",
+        "Apple",
+        "2020",
+        "Electronics"
+      ],
+      [
+        "Nike Air Force 1",
+        "$90",
+        "Nike",
+        "1982",
+        "Footwear"
+      ],
+      [
+        "KitchenAid Mixer",
+        "$379.99",
+        "Whirlpool Corporation",
+        "1919",
+        "Kitchen Appliances"
+      ],
+      [
+        "The Alchemist (Book)",
+        "$16.47",
+        "HarperOne",
+        "1988",
+        "Books"
+      ],
+      [
+        "LEGO Star Wars Millennium Falcon",
+        "$159.99",
+        "LEGO",
+        "2000",
+        "Toys"
+      ]
+    ],
+    "context": "This table represents a selection of products with their respective prices, manufacturers, launch years, and categories. row 1: iPhone 12 Pro, $999, Apple, 2020, Electronics row 2: Nike Air Force 1, $90, Nike, 1982, Footwear row 3: KitchenAid Mixer, $379.99, Whirlpool Corporation, 1919, Kitchen Appliances row 4: The Alchemist (Book), $16.47, HarperOne, 1988, Books row 5: LEGO Star Wars Millennium Falcon, $159.99, LEGO, 2000, Toys",
+    "num_rows": 5,
+    "num_cols": 5
+  },
+  {
+    "description": "This table represents a selection of five universities with their respective attributes: location (country), year of establishment, total enrollment, number of faculty members, and the university's ranking in the world.",
+    "table_data": [
+      [
+        "University of Cambridge",
+        "United Kingdom",
+        "1209",
+        "20000",
+        "4000",
+        "3"
+      ],
+      [
+        "Massachusetts Institute of Technology (MIT)",
+        "United States",
+        "1861",
+        "11466",
+        "1269",
+        "1"
+      ],
+      [
+        "Tsinghua University",
+        "China",
+        "1911",
+        "36199",
+        "3283",
+        "15"
+      ],
+      [
+        "University of Tokyo",
+        "Japan",
+        "1877",
+        "28000",
+        "2428",
+        "24"
+      ],
+      [
+        "University of Melbourne",
+        "Australia",
+        "1853",
+        "50000",
+        "2825",
+        "31"
+      ]
+    ],
+    "context": "This table represents a selection of five universities with their respective attributes: location (country), year of establishment, total enrollment, number of faculty members, and the university's ranking in the world. row 1: University of Cambridge, United Kingdom, 1209, 20000, 4000, 3 row 2: Massachusetts Institute of Technology (MIT), United States, 1861, 11466, 1269, 1 row 3: Tsinghua University, China, 1911, 36199, 3283, 15 row 4: University of Tokyo, Japan, 1877, 28000, 2428, 24 row 5: University of Melbourne, Australia, 1853, 50000, 2825, 31",
+    "num_rows": 5,
+    "num_cols": 6
+  },
+  {
+    "description": "The table represents information about various universities including their location, year of establishment, student population, number of academic staff, and campus type.",
+    "table_data": [
+      [
+        "Harvard University",
+        "United States",
+        "1636",
+        "21000",
+        "4500",
+        "Urban"
+      ],
+      [
+        "University of Oxford",
+        "United Kingdom",
+        "1096",
+        "24000",
+        "1800",
+        "Urban"
+      ],
+      [
+        "University of Tokyo",
+        "Japan",
+        "1877",
+        "28000",
+        "2900",
+        "Urban"
+      ],
+      [
+        "University of Melbourne",
+        "Australia",
+        "1853",
+        "50000",
+        "2300",
+        "Urban"
+      ],
+      [
+        "University of Cape Town",
+        "South Africa",
+        "1829",
+        "29000",
+        "1000",
+        "Suburban"
+      ]
+    ],
+    "context": "The table represents information about various universities including their location, year of establishment, student population, number of academic staff, and campus type. row 1: Harvard University, United States, 1636, 21000, 4500, Urban row 2: University of Oxford, United Kingdom, 1096, 24000, 1800, Urban row 3: University of Tokyo, Japan, 1877, 28000, 2900, Urban row 4: University of Melbourne, Australia, 1853, 50000, 2300, Urban row 5: University of Cape Town, South Africa, 1829, 29000, 1000, Suburban",
+    "num_rows": 5,
+    "num_cols": 6
+  },
+  {
+    "description": "The table represents various attributes of five different cities. These attributes include the city's country, population, area (in square kilometers), average annual temperature, and the official language spoken.",
+    "table_data": [
+      [
+        "New York City",
+        "United States",
+        "8.4 million",
+        "783.8 sq km",
+        "12.9°C",
+        "English"
+      ],
+      [
+        "Tokyo",
+        "Japan",
+        "9.7 million",
+        "619.0 sq km",
+        "15.4°C",
+        "Japanese"
+      ],
+      [
+        "Paris",
+        "France",
+        "2.1 million",
+        "105.4 sq km",
+        "11.3°C",
+        "French"
+      ],
+      [
+        "Sydney",
+        "Australia",
+        "5.3 million",
+        "12207.0 sq km",
+        "17.9°C",
+        "English"
+      ],
+      [
+        "Moscow",
+        "Russia",
+        "12.6 million",
+        "2511.0 sq km",
+        "5.8°C",
+        "Russian"
+      ]
+    ],
+    "context": "The table represents various attributes of five different cities. These attributes include the city's country, population, area (in square kilometers), average annual temperature, and the official language spoken. row 1: New York City, United States, 8.4 million, 783.8 sq km, 12.9°C, English row 2: Tokyo, Japan, 9.7 million, 619.0 sq km, 15.4°C, Japanese row 3: Paris, France, 2.1 million, 105.4 sq km, 11.3°C, French row 4: Sydney, Australia, 5.3 million, 12207.0 sq km, 17.9°C, English row 5: Moscow, Russia, 12.6 million, 2511.0 sq km, 5.8°C, Russian",
+    "num_rows": 5,
+    "num_cols": 6
+  },
+  {
+    "description": "This table represents various attributes for different countries. The attributes include the capital city, population, area (in square kilometer), official language, and currency.",
+    "table_data": [
+      [
+        "United States",
+        "Washington D.C.",
+        "331",
+        "002",
+        "651",
+        "9",
+        "631",
+        "418",
+        "English",
+        "US Dollar"
+      ],
+      [
+        "Australia",
+        "Canberra",
+        "25",
+        "499",
+        "884",
+        "7",
+        "692",
+        "024",
+        "English",
+        "Australian Dollar"
+      ],
+      [
+        "Japan",
+        "Tokyo",
+        "126",
+        "476",
+        "461",
+        "377",
+        "975",
+        "Japanese",
+        "Yen"
+      ],
+      [
+        "Brazil",
+        "Brasilia",
+        "212",
+        "559",
+        "417",
+        "8",
+        "515",
+        "767",
+        "Portuguese",
+        "Real"
+      ],
+      [
+        "France",
+        "Paris",
+        "65",
+        "273",
+        "511",
+        "640",
+        "679",
+        "French",
+        "Euro"
+      ]
+    ],
+    "context": "This table represents various attributes for different countries. The attributes include the capital city, population, area (in square kilometer), official language, and currency. row 1: United States, Washington D.C., 331, 002, 651, 9, 631, 418, English, US Dollar row 2: Australia, Canberra, 25, 499, 884, 7, 692, 024, English, Australian Dollar row 3: Japan, Tokyo, 126, 476, 461, 377, 975, Japanese, Yen row 4: Brazil, Brasilia, 212, 559, 417, 8, 515, 767, Portuguese, Real row 5: France, Paris, 65, 273, 511, 640, 679, French, Euro",
+    "num_rows": 5,
+    "num_cols": 10
+  },
+  {
+    "description": "The table represents various electronic products with their corresponding manufacturer, model number, release date, and price.",
+    "table_data": [
+      [
+        "iPhone 12 Pro",
+        "Apple",
+        "A2407",
+        "September 2020",
+        "$999"
+      ],
+      [
+        "Galaxy S21",
+        "Samsung",
+        "SM-G991B/DS",
+        "January 2021",
+        "$799"
+      ],
+      [
+        "PlayStation 5",
+        "Sony",
+        "CFI-1015A",
+        "November 2020",
+        "$499"
+      ],
+      [
+        "Surface Pro 7",
+        "Microsoft",
+        "VDV-00001",
+        "October 2019",
+        "$749"
+      ],
+      [
+        "Echo Dot (4th Gen)",
+        "Amazon",
+        "B07XJ8C8F5",
+        "October 2020",
+        "$49.99"
+      ]
+    ],
+    "context": "The table represents various electronic products with their corresponding manufacturer, model number, release date, and price. row 1: iPhone 12 Pro, Apple, A2407, September 2020, $999 row 2: Galaxy S21, Samsung, SM-G991B/DS, January 2021, $799 row 3: PlayStation 5, Sony, CFI-1015A, November 2020, $499 row 4: Surface Pro 7, Microsoft, VDV-00001, October 2019, $749 row 5: Echo Dot (4th Gen), Amazon, B07XJ8C8F5, October 2020, $49.99",
+    "num_rows": 5,
+    "num_cols": 5
+  },
+  {
+    "description": "This table represents a variety of product information for several items in a retail store. It includes the product name, price, quantity in stock, product category, and manufacturer.",
+    "table_data": [
+      [
+        "\"Apple iPhone 13\"",
+        "\"$699\"",
+        "\"20\"",
+        "\"Electronics\"",
+        "\"Apple Inc.\""
+      ],
+      [
+        "\"Nike Air Force 1\"",
+        "\"$90\"",
+        "\"15\"",
+        "\"Footwear\"",
+        "\"Nike\""
+      ],
+      [
+        "\"Sony PlayStation 5\"",
+        "\"$499\"",
+        "\"10\"",
+        "\"Electronics\"",
+        "\"Sony Corporation\""
+      ],
+      [
+        "\"Lego Star Wars Millennium Falcon\"",
+        "\"$159.99\"",
+        "\"30\"",
+        "\"Toys\"",
+        "\"The Lego Group\""
+      ],
+      [
+        "\"KitchenAid Stand Mixer\"",
+        "\"$279.99\"",
+        "\"25\"",
+        "\"Kitchen Appliances\"",
+        "\"KitchenAid\""
+      ]
+    ],
+    "context": "This table represents a variety of product information for several items in a retail store. It includes the product name, price, quantity in stock, product category, and manufacturer. row 1: \"Apple iPhone 13\", \"$699\", \"20\", \"Electronics\", \"Apple Inc.\" row 2: \"Nike Air Force 1\", \"$90\", \"15\", \"Footwear\", \"Nike\" row 3: \"Sony PlayStation 5\", \"$499\", \"10\", \"Electronics\", \"Sony Corporation\" row 4: \"Lego Star Wars Millennium Falcon\", \"$159.99\", \"30\", \"Toys\", \"The Lego Group\" row 5: \"KitchenAid Stand Mixer\", \"$279.99\", \"25\", \"Kitchen Appliances\", \"KitchenAid\"",
+    "num_rows": 5,
+    "num_cols": 5
+  },
+  {
+    "description": "The table represents information about different cities, including their respective countries, population, average temperature, and currency.",
+    "table_data": [
+      [
+        "New York",
+        "United States",
+        "8.4 million",
+        "12.3°C",
+        "US Dollar"
+      ],
+      [
+        "London",
+        "United Kingdom",
+        "8.9 million",
+        "11.1°C",
+        "Pound Sterling"
+      ],
+      [
+        "Tokyo",
+        "Japan",
+        "9.3 million",
+        "16.2°C",
+        "Japanese Yen"
+      ],
+      [
+        "Sydney",
+        "Australia",
+        "5.3 million",
+        "18.5°C",
+        "Australian Dollar"
+      ],
+      [
+        "Moscow",
+        "Russia",
+        "12.5 million",
+        "5.8°C",
+        "Russian Ruble"
+      ]
+    ],
+    "context": "The table represents information about different cities, including their respective countries, population, average temperature, and currency. row 1: New York, United States, 8.4 million, 12.3°C, US Dollar row 2: London, United Kingdom, 8.9 million, 11.1°C, Pound Sterling row 3: Tokyo, Japan, 9.3 million, 16.2°C, Japanese Yen row 4: Sydney, Australia, 5.3 million, 18.5°C, Australian Dollar row 5: Moscow, Russia, 12.5 million, 5.8°C, Russian Ruble",
+    "num_rows": 5,
+    "num_cols": 5
+  },
+  {
+    "description": "The table represents the basic information about five different movies. Each row represents a movie. The columns represent the movie name, its director, the year it was released, its genre, and its IMDb rating.",
+    "table_data": [
+      [
+        "\"The Shawshank Redemption\"",
+        "\"Frank Darabont\"",
+        "1994",
+        "\"Drama\"",
+        "9.3"
+      ],
+      [
+        "\"The Godfather\"",
+        "\"Francis Ford Coppola\"",
+        "1972",
+        "\"Crime",
+        "Drama\"",
+        "9.2"
+      ],
+      [
+        "\"Forrest Gump\"",
+        "\"Robert Zemeckis\"",
+        "1994",
+        "\"Drama",
+        "Romance\"",
+        "8.8"
+      ],
+      [
+        "\"The Dark Knight\"",
+        "\"Christopher Nolan\"",
+        "2008",
+        "\"Action",
+        "Crime",
+        "Drama\"",
+        "9.0"
+      ],
+      [
+        "\"Pulp Fiction\"",
+        "\"Quentin Tarantino\"",
+        "1994",
+        "\"Crime",
+        "Drama\"",
+        "8.9"
+      ]
+    ],
+    "context": "The table represents the basic information about five different movies. Each row represents a movie. The columns represent the movie name, its director, the year it was released, its genre, and its IMDb rating. row 1: \"The Shawshank Redemption\", \"Frank Darabont\", 1994, \"Drama\", 9.3 row 2: \"The Godfather\", \"Francis Ford Coppola\", 1972, \"Crime, Drama\", 9.2 row 3: \"Forrest Gump\", \"Robert Zemeckis\", 1994, \"Drama, Romance\", 8.8 row 4: \"The Dark Knight\", \"Christopher Nolan\", 2008, \"Action, Crime, Drama\", 9.0 row 5: \"Pulp Fiction\", \"Quentin Tarantino\", 1994, \"Crime, Drama\", 8.9",
+    "num_rows": 5,
+    "num_cols": 5
+  },
+  {
+    "description": "The table represents various attributes of five different athletes. These attributes include the athlete's name, the sport they participate in, their nationality, their age, and their most recent competitive ranking.",
+    "table_data": [
+      [
+        "Serena Williams",
+        "Tennis",
+        "American",
+        "39",
+        "8"
+      ],
+      [
+        "Lionel Messi",
+        "Football",
+        "Argentinian",
+        "34",
+        "1"
+      ],
+      [
+        "Usain Bolt",
+        "Track and Field",
+        "Jamaican",
+        "35",
+        "Retired"
+      ],
+      [
+        "LeBron James",
+        "Basketball",
+        "American",
+        "37",
+        "2"
+      ],
+      [
+        "Conor McGregor",
+        "MMA",
+        "Irish",
+        "33",
+        "15"
+      ]
+    ],
+    "context": "The table represents various attributes of five different athletes. These attributes include the athlete's name, the sport they participate in, their nationality, their age, and their most recent competitive ranking. row 1: Serena Williams, Tennis, American, 39, 8 row 2: Lionel Messi, Football, Argentinian, 34, 1 row 3: Usain Bolt, Track and Field, Jamaican, 35, Retired row 4: LeBron James, Basketball, American, 37, 2 row 5: Conor McGregor, MMA, Irish, 33, 15",
+    "num_rows": 5,
+    "num_cols": 5
+  },
+  {
+    "description": "The table represents key demographic and economic data for five different countries. The attributes include population, GDP per capita, area (in square kilometers), official language, and capital city.",
+    "table_data": [
+      [
+        "United States",
+        "331449281",
+        "65297.02 USD",
+        "9.834 million km²",
+        "English",
+        "Washington D.C."
+      ],
+      [
+        "Australia",
+        "25687041",
+        "55036.45 USD",
+        "7.692 million km²",
+        "English",
+        "Canberra"
+      ],
+      [
+        "Japan",
+        "126050796",
+        "40454.45 USD",
+        "377",
+        "975 km²",
+        "Japanese",
+        "Tokyo"
+      ],
+      [
+        "South Africa",
+        "60421720",
+        "6371.70 USD",
+        "1.221 million km²",
+        "English",
+        "Pretoria"
+      ],
+      [
+        "Brazil",
+        "213993437",
+        "8538.39 USD",
+        "8.516 million km²",
+        "Portuguese",
+        "Brasilia"
+      ]
+    ],
+    "context": "The table represents key demographic and economic data for five different countries. The attributes include population, GDP per capita, area (in square kilometers), official language, and capital city. row 1: United States, 331449281, 65297.02 USD, 9.834 million km², English, Washington D.C. row 2: Australia, 25687041, 55036.45 USD, 7.692 million km², English, Canberra row 3: Japan, 126050796, 40454.45 USD, 377, 975 km², Japanese, Tokyo row 4: South Africa, 60421720, 6371.70 USD, 1.221 million km², English, Pretoria row 5: Brazil, 213993437, 8538.39 USD, 8.516 million km², Portuguese, Brasilia",
+    "num_rows": 5,
+    "num_cols": 6
+  },
+  {
+    "description": "The table represents a collection of books and their relevant attributes such as Author, Year of Publication, Genre, and Number of Pages.",
+    "table_data": [
+      [
+        "\"To Kill a Mockingbird\"",
+        "\"Harper Lee\"",
+        "1960",
+        "\"Southern Gothic\"",
+        "281"
+      ],
+      [
+        "\"1984\"",
+        "\"George Orwell\"",
+        "1949",
+        "\"Dystopian\"",
+        "328"
+      ],
+      [
+        "\"The Great Gatsby\"",
+        "\"F. Scott Fitzgerald\"",
+        "1925",
+        "\"Tragedy\"",
+        "180"
+      ],
+      [
+        "\"Moby-Dick\"",
+        "\"Herman Melville\"",
+        "1851",
+        "\"Adventure\"",
+        "585"
+      ],
+      [
+        "\"Pride and Prejudice\"",
+        "\"Jane Austen\"",
+        "1813",
+        "\"Romance\"",
+        "279"
+      ]
+    ],
+    "context": "The table represents a collection of books and their relevant attributes such as Author, Year of Publication, Genre, and Number of Pages. row 1: \"To Kill a Mockingbird\", \"Harper Lee\", 1960, \"Southern Gothic\", 281 row 2: \"1984\", \"George Orwell\", 1949, \"Dystopian\", 328 row 3: \"The Great Gatsby\", \"F. Scott Fitzgerald\", 1925, \"Tragedy\", 180 row 4: \"Moby-Dick\", \"Herman Melville\", 1851, \"Adventure\", 585 row 5: \"Pride and Prejudice\", \"Jane Austen\", 1813, \"Romance\", 279",
+    "num_rows": 5,
+    "num_cols": 5
+  },
+  {
+    "description": "The table represents key attributes of five different cities. These attributes include the city's country, population, average annual temperature, and main language spoken.",
+    "table_data": [
+      [
+        "New York",
+        "USA",
+        "8.4 million",
+        "12.5°C",
+        "English"
+      ],
+      [
+        "Tokyo",
+        "Japan",
+        "9.7 million",
+        "16.2°C",
+        "Japanese"
+      ],
+      [
+        "Paris",
+        "France",
+        "2.1 million",
+        "11.3°C",
+        "French"
+      ],
+      [
+        "Sydney",
+        "Australia",
+        "5.3 million",
+        "18.6°C",
+        "English"
+      ],
+      [
+        "Buenos Aires",
+        "Argentina",
+        "2.9 million",
+        "18.0°C",
+        "Spanish"
+      ]
+    ],
+    "context": "The table represents key attributes of five different cities. These attributes include the city's country, population, average annual temperature, and main language spoken. row 1: New York, USA, 8.4 million, 12.5°C, English row 2: Tokyo, Japan, 9.7 million, 16.2°C, Japanese row 3: Paris, France, 2.1 million, 11.3°C, French row 4: Sydney, Australia, 5.3 million, 18.6°C, English row 5: Buenos Aires, Argentina, 2.9 million, 18.0°C, Spanish",
+    "num_rows": 5,
+    "num_cols": 5
+  },
+  {
+    "description": "This table represents certain characteristics of five different countries. These characteristics include the country's population, the area in square kilometers, the capital city, and the official language.",
+    "table_data": [
+      [
+        "Canada",
+        "37 million",
+        "9.98 million sq km",
+        "Ottawa",
+        "English & French"
+      ],
+      [
+        "Japan",
+        "126 million",
+        "377",
+        "975 sq km",
+        "Tokyo",
+        "Japanese"
+      ],
+      [
+        "Brazil",
+        "211 million",
+        "8.51 million sq km",
+        "Brasilia",
+        "Portuguese"
+      ],
+      [
+        "Australia",
+        "25 million",
+        "7.69 million sq km",
+        "Canberra",
+        "English"
+      ],
+      [
+        "Egypt",
+        "98 million",
+        "1.01 million sq km",
+        "Cairo",
+        "Arabic"
+      ]
+    ],
+    "context": "This table represents certain characteristics of five different countries. These characteristics include the country's population, the area in square kilometers, the capital city, and the official language. row 1: Canada, 37 million, 9.98 million sq km, Ottawa, English & French row 2: Japan, 126 million, 377, 975 sq km, Tokyo, Japanese row 3: Brazil, 211 million, 8.51 million sq km, Brasilia, Portuguese row 4: Australia, 25 million, 7.69 million sq km, Canberra, English row 5: Egypt, 98 million, 1.01 million sq km, Cairo, Arabic",
+    "num_rows": 5,
+    "num_cols": 5
+  },
+  {
+    "description": "This table represents a selection of five different products and their relevant attributes. The attributes include the product's price, the manufacturer, the product category, and the year it was released.",
+    "table_data": [
+      [
+        "iPhone 12",
+        "$799",
+        "Apple Inc.",
+        "Electronics",
+        "2020"
+      ],
+      [
+        "Toyota Camry",
+        "$24",
+        "425",
+        "Toyota",
+        "Automotive",
+        "2021"
+      ],
+      [
+        "Instant Pot Duo",
+        "$89",
+        "Instant Brands Inc.",
+        "Kitchen Appliances",
+        "2019"
+      ],
+      [
+        "Nike Air Max 270",
+        "$150",
+        "Nike",
+        "Footwear",
+        "2018"
+      ],
+      [
+        "Bose QuietComfort 35 II",
+        "$299",
+        "Bose",
+        "Audio Equipment",
+        "2017"
+      ]
+    ],
+    "context": "This table represents a selection of five different products and their relevant attributes. The attributes include the product's price, the manufacturer, the product category, and the year it was released. row 1: iPhone 12, $799, Apple Inc., Electronics, 2020 row 2: Toyota Camry, $24, 425, Toyota, Automotive, 2021 row 3: Instant Pot Duo, $89, Instant Brands Inc., Kitchen Appliances, 2019 row 4: Nike Air Max 270, $150, Nike, Footwear, 2018 row 5: Bose QuietComfort 35 II, $299, Bose, Audio Equipment, 2017",
+    "num_rows": 5,
+    "num_cols": 5
+  },
+  {
+    "description": "This table represents various attributes of different countries. The attributes include the capital city, population, main language spoken, and the type of government.",
+    "table_data": [
+      [
+        "USA",
+        "Washington D.C.",
+        "331",
+        "002",
+        "651",
+        "English",
+        "Federal presidential constitutional republic"
+      ],
+      [
+        "Canada",
+        "Ottawa",
+        "37",
+        "364",
+        "117",
+        "English and French",
+        "Federal parliamentary constitutional monarchy"
+      ],
+      [
+        "Australia",
+        "Canberra",
+        "25",
+        "499",
+        "884",
+        "English",
+        "Federal parliamentary constitutional monarchy"
+      ],
+      [
+        "Germany",
+        "Berlin",
+        "83",
+        "783",
+        "942",
+        "German",
+        "Federal parliamentary republic"
+      ],
+      [
+        "Japan",
+        "Tokyo",
+        "126",
+        "476",
+        "461",
+        "Japanese",
+        "Unitary parliamentary constitutional monarchy"
+      ]
+    ],
+    "context": "This table represents various attributes of different countries. The attributes include the capital city, population, main language spoken, and the type of government. row 1: USA, Washington D.C., 331, 002, 651, English, Federal presidential constitutional republic row 2: Canada, Ottawa, 37, 364, 117, English and French, Federal parliamentary constitutional monarchy row 3: Australia, Canberra, 25, 499, 884, English, Federal parliamentary constitutional monarchy row 4: Germany, Berlin, 83, 783, 942, German, Federal parliamentary republic row 5: Japan, Tokyo, 126, 476, 461, Japanese, Unitary parliamentary constitutional monarchy",
+    "num_rows": 5,
+    "num_cols": 7
+  },
+  {
+    "description": "The table represents some key information about five different cities across the world. The columns include the city name, the country it's located in, its population, its primary language, and a well-known landmark.",
+    "table_data": [
+      [
+        "New York",
+        "United States",
+        "8.4 Million",
+        "English",
+        "Statue of Liberty"
+      ],
+      [
+        "Paris",
+        "France",
+        "2.2 Million",
+        "French",
+        "Eiffel Tower"
+      ],
+      [
+        "Tokyo",
+        "Japan",
+        "9.3 Million",
+        "Japanese",
+        "Tokyo Tower"
+      ],
+      [
+        "Sydney",
+        "Australia",
+        "5.3 Million",
+        "English",
+        "Sydney Opera House"
+      ],
+      [
+        "Rio de Janeiro",
+        "Brazil",
+        "6.7 Million",
+        "Portuguese",
+        "Christ the Redeemer"
+      ]
+    ],
+    "context": "The table represents some key information about five different cities across the world. The columns include the city name, the country it's located in, its population, its primary language, and a well-known landmark. row 1: New York, United States, 8.4 Million, English, Statue of Liberty row 2: Paris, France, 2.2 Million, French, Eiffel Tower row 3: Tokyo, Japan, 9.3 Million, Japanese, Tokyo Tower row 4: Sydney, Australia, 5.3 Million, English, Sydney Opera House row 5: Rio de Janeiro, Brazil, 6.7 Million, Portuguese, Christ the Redeemer",
+    "num_rows": 5,
+    "num_cols": 5
+  },
+  {
+    "description": "The table represents a variety of products from different categories with their respective prices, manufacturing dates, manufacturers, and overall customer ratings.",
+    "table_data": [
+      [
+        "\"iPhone 12 Pro\"",
+        "$999",
+        "\"September 2020\"",
+        "\"Apple Inc.\"",
+        "4.5"
+      ],
+      [
+        "\"Nike Air Max 270\"",
+        "$150",
+        "\"March 2018\"",
+        "\"Nike\"",
+        "4.2"
+      ],
+      [
+        "\"Samsung Galaxy S21\"",
+        "$799",
+        "\"January 2021\"",
+        "\"Samsung Electronics\"",
+        "4.3"
+      ],
+      [
+        "\"Bosch Dishwasher 300 Series\"",
+        "$759",
+        "\"May 2019\"",
+        "\"Bosch\"",
+        "4.1"
+      ],
+      [
+        "\"Sony WH-1000XM4\"",
+        "$348",
+        "\"August 2020\"",
+        "\"Sony\"",
+        "4.7"
+      ]
+    ],
+    "context": "The table represents a variety of products from different categories with their respective prices, manufacturing dates, manufacturers, and overall customer ratings. row 1: \"iPhone 12 Pro\", $999, \"September 2020\", \"Apple Inc.\", 4.5 row 2: \"Nike Air Max 270\", $150, \"March 2018\", \"Nike\", 4.2 row 3: \"Samsung Galaxy S21\", $799, \"January 2021\", \"Samsung Electronics\", 4.3 row 4: \"Bosch Dishwasher 300 Series\", $759, \"May 2019\", \"Bosch\", 4.1 row 5: \"Sony WH-1000XM4\", $348, \"August 2020\", \"Sony\", 4.7",
+    "num_rows": 5,
+    "num_cols": 5
+  },
+  {
+    "description": "This table represents various attributes of different countries. These attributes include the country's capital, population, dominant language, and currency.",
+    "table_data": [
+      [
+        "United States",
+        "Washington",
+        "D.C.",
+        "331",
+        "002",
+        "651",
+        "English",
+        "US Dollar"
+      ],
+      [
+        "China",
+        "Beijing",
+        "1",
+        "439",
+        "323",
+        "776",
+        "Mandarin",
+        "Yuan"
+      ],
+      [
+        "Brazil",
+        "Brasília",
+        "211",
+        "049",
+        "527",
+        "Portuguese",
+        "Real"
+      ],
+      [
+        "Australia",
+        "Canberra",
+        "25",
+        "499",
+        "884",
+        "English",
+        "Australian Dollar"
+      ],
+      [
+        "Germany",
+        "Berlin",
+        "83",
+        "783",
+        "942",
+        "German",
+        "Euro"
+      ]
+    ],
+    "context": "This table represents various attributes of different countries. These attributes include the country's capital, population, dominant language, and currency. row 1: United States, Washington, D.C., 331, 002, 651, English, US Dollar row 2: China, Beijing, 1, 439, 323, 776, Mandarin, Yuan row 3: Brazil, Brasília, 211, 049, 527, Portuguese, Real row 4: Australia, Canberra, 25, 499, 884, English, Australian Dollar row 5: Germany, Berlin, 83, 783, 942, German, Euro",
+    "num_rows": 5,
+    "num_cols": 8
+  }
+]

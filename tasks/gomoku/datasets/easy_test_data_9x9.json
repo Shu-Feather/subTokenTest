@@ -1,0 +1,3011 @@
+{
+  "metadata": {
+    "board_size": 9,
+    "num_cases": 500,
+    "generated_at": "2025-10-29T11:38:19.996980",
+    "seed": 42,
+    "version": "1.0"
+  },
+  "test_cases": [
+    {
+      "id": 0,
+      "board": "EBBEEEEEE\nEEEEEEEEE\nEEEEEWBEE\nEEEEBEEEE\nEBEEEEEEE\nEEEEEEWWB\nEEBEEEEBE\nEEEBEEEBW\nEEEEEEEEE",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 1,
+      "board": "BEEBEEEEE\nEEEEEEEEE\nEEEEEWEWB\nBEEEEWEEE\nBEEEWEEEE\nEEBWEEWBB\nBEWEWWEBE\nEWEEEEEEE\nEEEEEBEEW",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 2,
+      "board": "EEBEEEEEE\nEEWEEEWEE\nEWBEEBEEE\nWEEEBEEEE\nEEWBEWEEE\nEEBEEEEEW\nEBWEEEEEE\nEEEEWEEEE\nEEEEEEEEB",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 3,
+      "board": "BEEEEEEEE\nEEBBEEEEE\nEWBEEEEEB\nEEEWWEEEE\nEEEEEEEEB\nEEWEEBEEE\nEBEEEEBWE\nEEEEEEEEB\nEEEEEEEEE",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 4,
+      "board": "EBWEEEEEE\nEEEEEWEEE\nWBEEEEEEE\nEEEEBEEEW\nBEEBEWWEE\nEBEBBEEEE\nWEBWEEBEE\nBEEBEEEEE\nBWEWBEEWE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 5,
+      "board": "EBWEBEBEB\nEBWBEEEWE\nEWEEEEEBE\nEEEEEEEEE\nEEEEWEWEE\nWEEEEEEEE\nEEEEEEEEB\nEEEEBEEEE\nEEEEEEWEE",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 6,
+      "board": "EEEEEEEWE\nEEEEEEEEE\nBEEEWWWWW\nEEEEEEBWB\nEEEEBEEBE\nBWEEEEEEE\nEEEWEEEEE\nEEEEEEBEB\nEEEBEEBEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 7,
+      "board": "BEEEEEEEE\nEBEEEEBEE\nEEEEEEBEE\nEEBEEBEEE\nBEEEEEEEE\nEEEBEEEWE\nEWWWWWEEE\nEEEWEEEEB\nBEWEEEEEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 8,
+      "board": "BEEEEEWEE\nWBEEEEEWE\nEBBEEEEWE\nEEBBEEEWE\nEEEEBEWEE\nEEWEEEBBW\nEEEEEEEEE\nEBWWEEEEE\nEEEEEWEEW",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 9,
+      "board": "EEEEEEEEE\nEEEEWEEWE\nEEWBWEEEE\nBEBEEEEBW\nEEWEEEWEE\nEWEEEEEEE\nWWWWEEEEE\nEEEBWWEWW\nEEBEEEEEW",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 10,
+      "board": "EEEEBEEWB\nEEEEEBEEE\nEEEEEEBEE\nEWEEEEBBE\nEEEEEEEEB\nEEEEWEEEE\nEEEEEWEEE\nEEEEEEWEE\nEWEEBEEEE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 11,
+      "board": "EEEEEEBEE\nEEEBEEEBB\nWEWEEEBEE\nEEEEEEEEE\nEEBEEWEEE\nEEEEEBEEE\nEEBEWEEBE\nEEEEEEEBE\nEEBBBBBEE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 12,
+      "board": "BEEBEWEEB\nWWWWWEEEE\nEBEEEEEEE\nEBEEEEEEE\nEEWEWBEEE\nWEEEEEEBW\nEWBEEEEEE\nEEEBBBEWE\nEWBEEEEEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 13,
+      "board": "WWEEEEEEE\nEEEEEEEEW\nEBEEEEEEE\nEEEWEEWEE\nBEBEEEEEB\nEEEBEEEBE\nEEEEEEBEW\nEEWWWWWBB\nEEEEWEEEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 14,
+      "board": "WWWEEEEWB\nEEEEEEEEE\nEWEEEEEEE\nBEEEEEEEE\nEEEEEEEEE\nEEBEEEEEE\nEWWWWWEEE\nWEEWWEBEE\nEEEEEEEEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 15,
+      "board": "EBEWEEEEE\nEEEBEEEEE\nEEEEEEEEE\nEEBEEEEEE\nEEEEEEEWE\nEEEWBEBBE\nWEEEBWEEE\nEEEEEEEEB\nBBBBBEWEE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 16,
+      "board": "EBEEEBEEE\nEWEBEWEEW\nWEWEEBEEE\nEBEEBEEEW\nEWEEEEEEB\nEEEWBEEBE\nEEWEEWBBE\nEEEBEEEBB\nEEEWEEEWW",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 17,
+      "board": "EEEEEEWEE\nEEEEEBWEB\nEWWEEEEEW\nEEEEEEEEE\nEEEEEEEEE\nEEEEEWEWE\nEEEEWWEEE\nEEEEEEEEE\nEEEEBEBWE",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 18,
+      "board": "EWWWWWEEE\nEBEEEEBEE\nEEWEEEEEE\nEEEEEEEEE\nEEEBEBEWE\nEEEEEEEEE\nEEWEEEEBE\nEWEEEWWWE\nEEEEEBBEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 19,
+      "board": "EEEEEEEEE\nEEEEEBBEE\nBEBEWEWEE\nWEEEEEEBE\nEEEEEEWBB\nWEWEEEEWE\nWEEEWEEEE\nBEEBEWBBW\nBEEWEWBEE",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 20,
+      "board": "EWBEEEEEB\nBBEWEBEEE\nBBEEEWEEW\nEEEBBEWEB\nBWWEWEBBE\nWEEWEWEWB\nEEWBBEWBW\nEBEEWEEBE\nEEBBEWEEW",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 21,
+      "board": "EEEEEEEEE\nEEEBEEEEE\nEEWEEEEEE\nEEWWWWWBE\nEEEEBEEEE\nEEEEEEWEW\nEEEEEEEEE\nWEEEEEEEE\nEEEEEEEEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 22,
+      "board": "EEEEEBEEE\nEEEEEEBEE\nEEEEEBEEE\nEEEEBBEEE\nEEEBEEEEE\nEEBBEEEEE\nWBEWEEEEE\nEEEEEEEEE\nEEWEEEEEE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 23,
+      "board": "EEEEEEEEE\nEEEEEEEEE\nEEEEEWEEE\nWEEEWWEEE\nEEEWEEEEE\nBEWEEEEEE\nEWEEEEEEE\nEEEWEWEEE\nEEEWEEEEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 24,
+      "board": "EEWEWEEEE\nBEEBEEEEE\nEEBEBBBEE\nBBEEEEEEE\nEBWEBBEEE\nBBEEEEEEB\nEBEEEEEEW\nBBEEBEEEE\nEEEEEBBEW",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 25,
+      "board": "WWEEBEEWE\nEEEEEWEEB\nEEBBEWEBE\nEEEEEEBEE\nEEEBEBEEE\nEEWEBEEEE\nEEEWEEEWE\nEEWEEEBEE\nEEEEEEEEE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 26,
+      "board": "EEEBEEEEE\nEEEEEEWEE\nEWEEEEWEE\nEEWEEEEEW\nEEEWEEEEE\nEEEEWEEEW\nEEEEEWEEE\nEEEEEBEEB\nEEWEEEEEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 27,
+      "board": "EBEEEEEWE\nEBEEEEEWB\nEEEEBEEEE\nEBEEEEWEW\nEBBEEEWEE\nEWEBEEEEE\nWEEEBEEEE\nEEEEEBEEW\nEEWEEEBEE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 28,
+      "board": "WEEEEEEEE\nEEEEEEEEE\nEEEEEEEEE\nEEEEEBEEE\nEEWEBEEEE\nEEEEBBEBE\nEEEEEEBEE\nEEEEBEEBE\nEEEEEEEEB",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 29,
+      "board": "EEEBEEBEE\nWBEEEWWBW\nWWWEEEEEE\nWEEEWEWEW\nEEBBEEEEE\nEBEEWEEEE\nBEEEBEEBE\nEEEEEEBEW\nEEEBEEBEW",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 30,
+      "board": "EEWEEEBEB\nEEEEWWBEW\nEEEEEWWEE\nEEEWEEWEB\nBEEEEEEWE\nEEEEEBEEW\nEEEEWEEEB\nEEWEEEEEE\nBEEEEEEEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 31,
+      "board": "EEWEEEWWE\nEEWEWEBWE\nEEEEEEWEE\nBEEEWEEEW\nWEEEEEBEE\nEEEEWWWWW\nEWEEEEEEE\nWEEEEEEEE\nEEEEEEEWE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 32,
+      "board": "EEEEEEEEE\nEEEEWBEEE\nEWWEBBBBB\nEEWEEWWBE\nEEEEEEEEE\nEEEBEEEBE\nEEEBWEEEE\nEEEEBEBEE\nEEEEEEEEE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 33,
+      "board": "BEBEEEEEE\nEBEEWEEBE\nEEWBEBEEB\nBEEWWEBEE\nEEEEEEWBE\nEEEEEEEEE\nEEEEEEBEE\nEEEEEEBEB\nEEEWWEWWE",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 34,
+      "board": "EEWEBEEEE\nBEBEBBEEB\nEBWEEBEBE\nEWEEWEWEE\nEBWEEWEEW\nWWWEBWEBW\nBWWEEBEWB\nEEEEEEEBB\nEBEWEWEBE",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 35,
+      "board": "EEEEEEEBE\nEBWBEEEWE\nEEEEEEEEE\nEWEEEEEEE\nEWEEEEEEE\nEWEEEBEEE\nEWEEEBEEE\nEWEEEEEEE\nEEEEEEEEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 36,
+      "board": "EEEEEEEEE\nEBEEEEEBB\nEEEEEEEWE\nEEEEWEEEE\nEEEEEEEEE\nEEEEEWWEE\nEWEEEEEWW\nEWEEEBEEE\nEWEBBBBBE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 37,
+      "board": "EEEEEEEEE\nBWWEEEEEE\nEEEEEEEBE\nEEEBWEBEE\nEBEEEBWBE\nEEEEBEEEE\nEEWBEBEEE\nEEBEEEEEB\nEEEWBEEEE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 38,
+      "board": "EEWWEEEEE\nEEEEWEBEW\nBEEWWEEEE\nEWEWEEEEB\nEWEWWEWBW\nEEWWEEEEB\nBEEEWWBEE\nWBBBWEEEB\nBBWBEEEEW",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 39,
+      "board": "EEEEWBEWE\nEEEEWEEWE\nEEBEEEEBE\nEEEEWEEEE\nEWEWEEEWB\nEWWEEEEWE\nBWBEEEEEB\nWEEWEWEEE\nEEEBEEBBE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 40,
+      "board": "EEEEEEWEB\nEBEBEEEEE\nBBEWEWEEE\nEEEEWEEBE\nEEWEEWEEB\nWBWEEEWEW\nEEEEEEEWE\nWEEEEEEEB\nEEEEWEBEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 41,
+      "board": "EEEEEEEEE\nEEEEEBEEE\nEEEEEEEEE\nEEEEEBEEE\nEBEEWEEEB\nEEEWEEEEE\nEEWEEEEEE\nEWEEEBWEE\nWBEEEEEEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 42,
+      "board": "EWWWWWEEE\nEEEEEEBEE\nEEBEEEEEE\nEEEEEEWEE\nBEEEEEEBE\nEEEEEEEEW\nEEEEWEEEE\nEEEEEEEEW\nEEEEEBEEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 43,
+      "board": "EEEEEWWEE\nEEEEEEEEE\nEWEBEEEEE\nEEBEEEEBE\nEEEWEWEEE\nEWWWEEEWE\nEEEEEEBEE\nEEBEEBEEE\nEWEEEEEEW",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 44,
+      "board": "EEWEBBEEE\nEEEWEEBWE\nEEEEWBEWE\nEEEEEWEEE\nEBEEEEWEE\nEEWEBEBEE\nEWWEEEWEE\nEEEEEEEBE\nEBWEEEEEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 45,
+      "board": "EWEEEEEEE\nEEWEEEEEE\nEEEEEEEEE\nBEEEWEEEB\nEEBEEEEEE\nEEBEEEEEE\nWEBBEEEEB\nWEBBEEWBE\nEEBEEEEEE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 46,
+      "board": "BBEEBEEWW\nWBEBWBWWE\nEEBEBBEEB\nEEEEEWWBE\nEEBEWEEBW\nEEBBEWEEB\nEBEWBEEWE\nEBEEEEEBB\nBWEEBBEBW",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 47,
+      "board": "EEEEWEEEE\nBEEWEEEEE\nEEWEBWEEE\nEWEEEEEEE\nWEEEEEEEE\nEEEEEEEEW\nBEEEEWEEE\nEBEEEEEEE\nBEEEEEEEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 48,
+      "board": "BWWEEEEEE\nWEEEEEWEB\nWEEBEEEWE\nEBBEBEEEB\nWBEEEWEEB\nEBEEEBWWE\nBBEEEEEEE\nEEEWEEEEW\nEEEEEBEBE",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 49,
+      "board": "WEBEEEBEE\nEEBBEEBEE\nEEEEEEBWE\nEEEEEEBEE\nEEEEBEBEE\nEEEEEEEEE\nEEEEBEEEE\nEEBEBEEEE\nEEEEEWEEE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 50,
+      "board": "EEEEWEEEE\nEEBWEWEEE\nEEEEEEWEE\nEEEEEEWWE\nEEEEEEEEW\nBEEEEEEEB\nEEWEEEEWW\nBEEEEBEEE\nEWEWEEEEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 51,
+      "board": "EEEEEEEEB\nEEEEEEEEE\nEEEEEEEEE\nWBEEEEEEE\nEEEEEEEEE\nEEEEWEEEE\nEEBBBBBEE\nBEEEEEEEE\nEEEEEEEEE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 52,
+      "board": "EWWEEBEEE\nEEEBWBWEE\nBEEEBBEEE\nWBEEBWEBE\nBEBEEEBEB\nBBWEEEEWE\nEEEBBEEBB\nEEEBEBEEE\nWEEEWEEEE",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 53,
+      "board": "BEEEEEBEE\nEEWBBEEEE\nWEBWBEWWW\nEWWEEEEWW\nWBEEWWEBE\nEWBBEBBEB\nWEEWEBEEE\nWBEEEWEEE\nEWEWWWWEE",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 54,
+      "board": "BEWBEBBEE\nEEEWEBBWW\nEEEWWEEWW\nBEEEEEEWE\nEBEEEEEEE\nEEBWWEEEE\nBBWEWEEWE\nBBEWEWBWB\nEEEEEWBEE",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 55,
+      "board": "EEEEEEBEE\nEEEWEEEEE\nEEEEEEWEE\nEEEEEEEWE\nEEEEEEBEE\nEEWWEBEEE\nWBBEEEEEE\nEWWEEEEEE\nEEEWEEEEE",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 56,
+      "board": "WWEWEEEWW\nEEEEBWEWE\nBEEWBWEWB\nEEEWWEEEE\nEEBBWEBWW\nEBEWEEEWB\nEEEEEEEEE\nWWEBWEEBE\nWBBBBEBBW",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 57,
+      "board": "EEEEEEWEE\nEEEBBEEEE\nEEEEEEEEE\nEWWBBEEEE\nEEWEEEEEE\nEEEWEEEEE\nEEEEWEEEE\nEEEEEWEEW\nEEEEBEWEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 58,
+      "board": "EEEEEEWBE\nEEWEEEEEE\nWEEWEEEEE\nEEBBBBBEE\nEBEEEWBWE\nEEEEEEBEE\nWBEEEBEEW\nEWEEEBEEB\nEEWEEBEEE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 59,
+      "board": "BBBBBBEEB\nEEEEEEEEE\nWBEEEBEEE\nEEEEEEBWE\nEEEEEWEEE\nEEEEEBEEE\nBEEEWWEEE\nEEEEEEEBE\nEEEEEWEEE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 60,
+      "board": "EEEBWEEEE\nEBEEEEBEE\nEEEEEWEEE\nEEBEEEEWE\nEBEEWEWEE\nEBEEBWEEB\nEEEWEBWEE\nEEWEEEEWE\nWWEEEEEEW",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 61,
+      "board": "EEWEEEWWE\nEEWEWBWBE\nEEEWEEEBE\nEEEBEWBEE\nWEEEEBEEE\nEEEEEWEEW\nEEEEEEBBE\nWEEEWBEEB\nWEBEBWEEE",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 62,
+      "board": "WEWBBEEEE\nBWWWBEBBE\nBEBEEWWBE\nEBEWWBEBE\nBEBEBWBEE\nEEBEEWBEB\nBEEBWBEEE\nEEWWEEEEB\nEEEEEEBEE",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 63,
+      "board": "EBWEEEEBE\nEEWWEEBEE\nWEEWEBEEE\nEEEBBEBBE\nEEEBEBBEE\nEEWEEWEEE\nEEEWEWEEE\nEEEBEEEEE\nEBEEWEEWB",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 64,
+      "board": "EEEEEEEEE\nEEEEBEEEW\nEEEEEEWEE\nEEEEBEEEE\nBEBEEWEEB\nWEBEWEEEB\nEEEEEEEEB\nEEEEEEBEB\nEEBEEEEEB",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 65,
+      "board": "EBEEWBEWE\nEBEEBWEBE\nEEBEWBWEE\nEEWEBWEWW\nEWEEEEEEW\nEEEEEEEEB\nEEEEEEEEE\nBEEWEEEEE\nBEEEEEBBE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 66,
+      "board": "EEEEEEWEE\nEEEBEEEEE\nEEEEEEEEE\nEEEBEEWEE\nBEWEEEEEE\nEWWWWWEEE\nEWEWEEEEE\nEEEEWEEEE\nEEBWEEEEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 67,
+      "board": "EBEBWWEEW\nEEEWEEWEE\nEEEEEEEWE\nEWWEEEEWW\nEEEEEEWEE\nBBWEEEWEE\nBBEEWEWWE\nWBEEWWEEE\nWEEEEBEBE",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 68,
+      "board": "WEBEBEEEE\nEEEEEEEEE\nEEEEEBEEE\nEBEBEEEWE\nWEEEEEEBE\nEWWEEBBEE\nBEWEEBEEE\nEEWBBBEEE\nWEEBEWEWE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 69,
+      "board": "WWBEEEEEE\nEEEWEWEEE\nEWWEEEEEE\nEBWEEEWBE\nEWEEEBBWE\nEEEEWEWEE\nWWEEWEEEE\nEEBWWEEWE\nBBEBEEBBW",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 70,
+      "board": "EEEEEEEBB\nEEBEWEEEE\nEEEEBEEEE\nWEEEEBBEB\nEEBEEWBBE\nEEEWEEEBE\nEEEEWEEEB\nEWEBEEEEE\nWEEWEEEBB",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 71,
+      "board": "EEEWBEEBE\nEEEEEEEEE\nBEEEWWEEE\nEWWBEEBEE\nEEEEEWBEE\nEWEEEBEEE\nEEEEWEBWW\nEEBBBBBEE\nEEEEEEEBE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 72,
+      "board": "EEWEEEEEE\nEEWWWWWEE\nEBEEEEBEE\nEEEWEWEEE\nEEWWEBEEE\nEEWEBEEEE\nEEEEBWWWE\nEEEEWEEBE\nEWBEEEEBE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 73,
+      "board": "EEEEEEEBE\nEEBEWEEEE\nBEEWEEEEE\nWEWEEEEEE\nEWEBEWEEE\nWEEEEEEEE\nBEEBWEEEE\nEEEBEWEEE\nEEEBEEEEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 74,
+      "board": "EEEEWEEEE\nEEEEWEEEE\nEEWEEEEEE\nWEBEEBEEB\nWEEEEEEEW\nWEEEEEWEE\nWEBEEEEEE\nWEBEEEEEE\nEEEEEEEEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 75,
+      "board": "EWEEBBEEE\nWEEWBEWEB\nEEEBEEEEE\nWBEEEBEEB\nEEEEEEEEE\nEEBEEEEWE\nEEWWEEEEE\nBEWEEWEWE\nEWEEEEBEE",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 76,
+      "board": "EEEEEEEEE\nWEBEEEEEE\nEEEBEEEEE\nWEEEBEEEE\nEEEEBBEEE\nEEEEEEBEE\nEEEEEEEEE\nEBEEWBEEW\nEEEEEEWEE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 77,
+      "board": "EEEEEBEEE\nEEEEEEEEE\nEEWEEBEEE\nEEEEEEEEE\nEWEEEEEEE\nWEWEBEBEE\nEEEEEWEEE\nEEEEEEEEE\nEEEEEBBBE",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 78,
+      "board": "EEEWBEEEE\nBWEBEEEEE\nEBEWBEEEB\nBEBEEEEEE\nEEEBEEEWE\nEEBEBEEEE\nBEEEEEEBE\nEEEBEEWEE\nEEWEBEEEE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 79,
+      "board": "WEEEEBEEB\nEEEEEBEBB\nBEBEBEEBE\nEEBBWEWBW\nBEEEEWEBE\nEBWBEBWEE\nEWEEWWWWE\nEEWEEEWEB\nEBEWWBEEE",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 80,
+      "board": "EEEEEEEEE\nEEEEEEEEB\nEBBBBBEEE\nWEEEEEEEE\nEEWEEBEEE\nBBEEEEEEE\nEEEBEEEEW\nEEEWEEEEE\nEEEEEEEEE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 81,
+      "board": "BEEBEBWEW\nEBWWWEEEB\nEEEEWEBBE\nEEEBWBBWW\nEBEBBEEEE\nWEWWBEWEE\nEEBEEEBWB\nEWEEBBEEE\nBEBWEBEWW",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 82,
+      "board": "EBEEWEBEE\nEWWEBBEEB\nEBWBWBEWE\nBWBEEEEBE\nBWEWEBEEE\nBEBWEEEEW\nEEEWEBBEW\nEWEWEEWEW\nWEBBEWEBE",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 83,
+      "board": "EEWWEBEEE\nEEEEEEEEE\nEWWEEEEEB\nEEEWEEEEE\nEBEWEBEWE\nWEEEEEBEB\nEEEBEBWEE\nEBWEEEEWE\nEBBEEEEEE",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 84,
+      "board": "EEWEWWEWE\nEEEEWEEEB\nWEEWEEBEE\nEEWEWEEEE\nBWEEEEEEE\nEEEEEEBEB\nEEEEEEEEE\nEEEEEEWWE\nEEEEEEEEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 85,
+      "board": "EEEEEEEEE\nEEEEEEBEE\nBEEEEEEEE\nEEEWWEEBE\nEEEEWWEEE\nEEEEEWEEE\nEEEEEWWEB\nEEEEEEEWE\nEEEEEEEEW",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 86,
+      "board": "EEWEEEEEB\nEEEEEEEEE\nEEEEEEWBE\nEEWEEEBEE\nEEEEEEEEE\nEEEEEWEEE\nEEEEWEEEE\nEEEEBBWEE\nWEEEEWBWE",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 87,
+      "board": "EWEBEBBEE\nEEEEEBWWE\nWEEBEBEWB\nWEEEEBBEE\nEEBWEBEBE\nEEEBEEEEE\nEEEWEEEWE\nEEEEEEBEE\nEEEEEEEEE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 88,
+      "board": "BEEEEEEEE\nEEEBEWEEE\nWEEEEEEEE\nEWEWEEEEE\nEEWEEEEEE\nBWEWWWEEE\nEEEEWEEEB\nBEWEEEEEE\nEEEEWEEEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 89,
+      "board": "EEEEBWEEE\nWBBEEEEEW\nEEEEWEEEW\nBWEEEEWEE\nEEEWWEWBB\nEEEEEEEEE\nBEEEEEEEW\nWEEEWBEWW\nEBWEBEEEW",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 90,
+      "board": "EEEEEBWEE\nEEEEWWEEE\nEEEEEWEBW\nBEBEEBEEE\nEEBEEEEEE\nEBEEWEEEE\nEEEEEBEEE\nEEEEEEEEE\nWBEEEEEEE",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 91,
+      "board": "EWEEEWEWE\nWEEEEEEEE\nEEBBEEEEE\nEEEEWEEEE\nBEEBEWEEE\nEWBBEEWEE\nBEEBBWWWE\nEBEEEEEWW\nEEEEEEEEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 92,
+      "board": "EEEEEEWEE\nEEBEEEEEE\nEBEWEEEBE\nEEEEEEWEE\nEEEEEEEEE\nEEWEEEBEE\nBEEEEBEEE\nEEEEEEEEE\nBEEWBBBBB",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 93,
+      "board": "EEEEEEWEE\nEEBEEEEEE\nEEEEBEEEE\nEEEEEEEEE\nEEEEEEEEE\nWEEEWWEEE\nBEEBEEEEE\nBBBBBEEEE\nEEEEEEEEE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 94,
+      "board": "BEEEEEEEE\nEEEEEWBEE\nEBWEEEBBE\nEEEEEEEBW\nWBBBBBEEE\nBEEEEEEEE\nEEEEEEEWE\nEEEBEEEEE\nEWEEEWEEE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 95,
+      "board": "BEEEEWEEW\nWEWEWEBEE\nEEEEWEEBE\nEEWWEEEEE\nEEWWBBEEE\nEWEEBEEWE\nWEEEEEEEE\nEWEEEEBEE\nEWEEEEEEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 96,
+      "board": "EWEEEEEEE\nEWEEBEBEE\nWEEEEEEEE\nEEEEEEEEE\nEEEEEEEEE\nEEEEEBEEE\nEEWEEEEEB\nEEBBBBBEB\nEEEEEBEEE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 97,
+      "board": "BEEBBEEEE\nEBEBWWBWE\nWWWEEEEEE\nEWEBEEEWE\nEWEEWEWEB\nEWEBEEEEE\nBEEBEBEEE\nWEBEEWEEE\nEWEWEWEEW",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 98,
+      "board": "EEEEEEEEE\nEBEWWEEEE\nEBBEEBBWB\nBEBEEEBEE\nEEBBBBWEE\nEEEEBBEEE\nWEWEBEBEE\nWBEEBBEEE\nBEWEEBEEE",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 99,
+      "board": "EEEEEEWEE\nEEEWEEEEE\nEEEEEEEEE\nEEWEEWBEE\nEBEEEEEEE\nEEEEEEEEE\nEEEEBBEEE\nEEEEEEEEE\nWWWWWEEEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 100,
+      "board": "EBWWEEEEE\nEBEEBEEEE\nEBBEEEEEB\nBBEEEBBEW\nEBEEWEEBE\nEEEEEBEBE\nEEEEEEEBE\nEEEBBEEEE\nEEEWBEEBE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 101,
+      "board": "EEEBEWWEE\nBEEEBWEEE\nEEWEBEEEE\nEBEWBEEEE\nEEEEBEEEE\nEEEBBEEEE\nEEEEBEEEW\nEEEBBEEBE\nEBEEEEEEE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 102,
+      "board": "BEBWEEEEE\nBWEEEBWBB\nEBEEWBEEE\nEEEEEEEEW\nWBBEWWWWE\nEBEEEEWEE\nBWBEWBEEE\nEBEBEEWEE\nEEBWBEEEE",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 103,
+      "board": "EBEEEEEBE\nEEEEEEWWE\nEEEBEEWEE\nEEEEEWWEE\nWEEEWEWBE\nEBEWEEWEE\nEEBEEEEEE\nEBEEEEEEE\nEEEEEEBEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 104,
+      "board": "EEEEEBEEE\nEEEEEEEEE\nEEEEEEEEW\nEEWEEWEEE\nEEWEEWEEE\nEEWWBEEEE\nEEWEEEEEE\nEEWEEEEEE\nEEEEEEEEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 105,
+      "board": "EEEEEEWWE\nEEEEWEEEE\nEEEWWEEEE\nEEEEWEEEE\nEEEEWEEEW\nEEEEWEEEE\nEEEEEEEEE\nEEEWEEWEE\nEEWBEBEWW",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 106,
+      "board": "EEEEEEEEE\nEEEWEEEEE\nEEEBBEWWE\nEEEEEBEEE\nEEEEEEBEB\nEEEEEEEBE\nEEEEEEEEB\nEEEEEEEWE\nEEWEEEEEE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 107,
+      "board": "EWEEEBEEE\nWEEWEEBEE\nEWBEEBEEE\nEBEEBEWEE\nEEBBEEEBE\nEEBEEEBEE\nWEEEEEWEE\nEEEEEBEEE\nEEEEEEEEE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 108,
+      "board": "EEEEEEEBE\nBWEEEEEEE\nEEEEEEEEW\nEEBEBEEEE\nEEEEWEEEE\nEEEEEBEEW\nBEEEEEWEE\nEEEEEWEEB\nEEEEEEEEE",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 109,
+      "board": "EEEEEWBEE\nEEEEBWBEE\nEEEEEBEEE\nEEEEEEBEE\nEEEEEEEBE\nEEEEEEEEB\nEEEEEEEBE\nBEEEEEWEE\nEEEEBEEEE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 110,
+      "board": "BEEEEEEEE\nEBEEBWEEE\nEEBEEEEEW\nEWEBEEBEE\nEEEBBEEEE\nWEEEEEEEB\nBEEEEEEEE\nWEEEWEWWE\nEBEEEEEEE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 111,
+      "board": "EEWEEEEEB\nWEBEEEWEE\nBEEWEWBEE\nEEEEEWEWE\nBWEEWEEEE\nEEEBEBBEW\nEEEWWEEEE\nEBEEWEEEB\nEWWWEBBEE",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 112,
+      "board": "EEEEEEEEB\nEEEEEEEEE\nEBEEBEWEE\nEEEEBEBWE\nEEEEEEEEE\nEEEWEEBEE\nEEEEEEBEE\nBEEWWBEWE\nBEWEEEEEW",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 113,
+      "board": "EEEEWEEEE\nWWEWWEWEW\nWEWEEEEEE\nWWEEEEBEE\nWEEEEEEWE\nBEEEEEEWE\nBEEEEWEEE\nEEEWEEEEE\nBEEEEEEEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 114,
+      "board": "EWBEEWEWE\nEEEWEWEWE\nEEEEEEBEW\nEEEEEEEEE\nEEBEEEEEE\nEBEBWBEWE\nWBBEEEEEE\nEEEBEEEWE\nEEEEBBBWB",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 115,
+      "board": "EEEEEEEEE\nEEEEWEWEW\nEEEEEBEEE\nEEEEEEEEE\nEEEEBEEEE\nEEEEWEEEE\nWBEEEEWEB\nEEEEEEEEE\nEEEEWEEEE",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 116,
+      "board": "EEWEEEBEE\nEEEWEEEBE\nEEEEWEBEE\nEEEEEWEEE\nEEBEWEWEE\nEEEEEEWEE\nEEEEEEEEE\nWEEEEWEWE\nEBEBEEEEB",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 117,
+      "board": "EEEEEEEEE\nEEEEWEEEE\nEEEEBEEBE\nWEEEEEEEE\nEBEEEBEEE\nEWEEEEEEE\nEEEEWEEEE\nEEEEEEEEE\nWEEEBWEEB",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 118,
+      "board": "EEEEEEEEE\nEEEEEEBEE\nBEEEEEWWW\nEEEEEEEEW\nEEEEEBWEE\nBEWBWEEWE\nEBWBEEEEE\nEEEBEEEEE\nEEEEEBBEB",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 119,
+      "board": "EEEEBEBEE\nEEEEBEEEE\nEEEEEBEEE\nEWEEBEEEE\nEEEBEEBEE\nEEBEEEEEB\nEBEEEEEBE\nEEEEEEEEW\nEBEEWBEEE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 120,
+      "board": "EEEEBEEEE\nBEEWEEWWE\nEEBEEEEEE\nBEEEEEEEE\nEEEBEEEEE\nEBBWWWWEW\nEEEEEEEBW\nEBEEEEEEB\nEEBBBBBEE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 121,
+      "board": "EEEEEEEEE\nEWEEEEEEE\nEEEWWEEWE\nEEEEWEEBE\nWEWEEEEEE\nEEEEEEEEE\nBEEBBBBBB\nEEBWEEEEE\nEEEEEEWWE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 122,
+      "board": "EEEEEBEEE\nEEEWWEBEW\nEEEEBWBBE\nEEEEEEWEE\nWEEEBBEWE\nWWEEBEWEW\nEEEEEEWEE\nEEBEEEBEE\nWEEBBEEEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 123,
+      "board": "EEEEEWEEE\nEBEEEEEEE\nEBEEEEEEE\nEBEEEEEWE\nEBEEEEEEW\nBBEEEEEEB\nEEBEEBEWE\nWEEEBEEEE\nEEEEEEEEE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 124,
+      "board": "EEEEEEEEE\nEEEEEEBEE\nEEEEWEEEE\nEEEEWEEEE\nEBBEWEEBE\nEEBEWEEBE\nWEEEWEEEE\nEEEWWEEEE\nEEEEWWEEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 125,
+      "board": "WEEEEEEEW\nEEEEEEWEE\nWEWBEEBEB\nEEEEEEBEW\nEWBEBWBEE\nEEEEEEBEE\nEBEEEEBWB\nWEEEEWBEE\nEEEEEWWEE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 126,
+      "board": "EWEEEWEEB\nEEEEEWEEE\nBEEWEEEWE\nEBWEWEWEE\nEEEEWBEEW\nEWEWWBEEE\nWEWEEEEEE\nEWEEEEEBE\nWBEEEEEWE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 127,
+      "board": "EEEEEWEEE\nEEEWWEEEE\nEEEWEEEEE\nBEWEWEEEE\nEWEWEEEBE\nEBEEEEEEE\nEEEEWEEBE\nEEEEEEEEE\nEEEEEEEBE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 128,
+      "board": "EEEEEEBEE\nEEEEEEEEE\nBEWWEEEEE\nEEBEEEBEE\nBBEEEEEEE\nEWBEBEEEE\nEEEBEEEWE\nEBEEBEEEB\nEEBEEBEEW",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 129,
+      "board": "EEEEEEEEB\nBEEWEEEWE\nWEEEBEBEE\nWEEWWWEEE\nEEEEEEEEE\nEEEEWEEEE\nEEEEEEBWE\nEEBEBEBEE\nEEEBEEBWE",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 130,
+      "board": "EWEEEEEEE\nEEEEEEBEE\nWEEWEWEBE\nEEEEEEEEE\nEEEEEEEEE\nEEEEEEEBB\nEEEEWEEEE\nWBEEEEEEE\nEWEEEEEEE",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 131,
+      "board": "WEEEEBWEE\nBEEWEWEWE\nEEEBBEEEE\nEEEEEBWEE\nEBBWEEBBE\nBBBEBEBEE\nBWEBEEWEE\nEBEEEBEEE\nEEBEWEEBE",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 132,
+      "board": "EEEBEEEEB\nEWWEEEEBE\nEEEBEEWWE\nEEEWEEWEE\nEEEEEEWEE\nEBEEEEWEW\nWBEEWWWEE\nEBEEEEEWE\nBBWEEEEEB",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 133,
+      "board": "EEEBEEBBE\nBEEEWBEBE\nBWEEBEEEE\nEEEBEEEEE\nEEBEEEEEE\nEBEEEEEBB\nEEEEEBEEE\nEEEBEEEEE\nEEEEEEEEE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 134,
+      "board": "EEEEEEEBE\nEEEEEEEEE\nEEEWEEEWE\nEEEEEBEWE\nBEEEEEEEB\nEEEEEEEBE\nEEEEEEBEE\nEEEEEBEEE\nEEEEBEEEE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 135,
+      "board": "EEEWEEEEE\nEEEEEEBEE\nBEEEEWWEW\nBEEBEBEWE\nEBWEBEEEE\nWEEBEEEEE\nEWBBEEEBB\nEBEEEEEEB\nEEEWEEEEE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 136,
+      "board": "EEEBEEEEE\nWWEEEEEEE\nEEEEBEEEE\nEEBEEWBBB\nEEWEEWBEE\nEEBEEBBEE\nEEWEBEWEE\nEEBBEBEEE\nEEEEEEEEE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 137,
+      "board": "EWEEEEBBE\nBBEEEEEEE\nEEEEEEEEB\nEBEEEEEEE\nEEEEEEEEB\nEEWBEEEBE\nEBEEEEBEB\nEEBEEBEEE\nEEEEBEEWE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 138,
+      "board": "EBEWEEEWE\nEEEEEEBEE\nEEEEBEEEE\nEEBEEEEEE\nEEEEEEEEE\nBEBEEEEEE\nEEWWEEEEE\nEWBBEEEEE\nEWWEEEEEE",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 139,
+      "board": "EEEEEEEWE\nEEEEEEEEB\nEEEWEEEEW\nEWWWWWEEE\nEEEEWWBEE\nEWEEWEEEE\nEEEEEWEEE\nEEBEEEBEE\nEWEEEBBBE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 140,
+      "board": "EEEEWEEWE\nEBEEEEEBE\nEEEEEEBEE\nEEEEEBEEE\nEEEEBEWEE\nEBEBWEEEB\nEEEEEEEEE\nEEEEEEEEE\nEEEEEEBEE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 141,
+      "board": "EEEEEWEBB\nEEBBEBEEE\nBEWEEEWWE\nEEEWBEWWE\nBEEEEWBBB\nBBEBEEBEE\nBEEWWWBBB\nEBWEEEEWE\nEWEEEEEEW",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 142,
+      "board": "EEBEEEEWE\nWWEBEEEWE\nBWBBEEEEW\nEEBEBEEEE\nBEWBEEWEW\nEEWEEEWEW\nEEEEEEBEB\nWEEWEEEEB\nEWBEEBWEE",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 143,
+      "board": "EBEWWWEEB\nEEEWEEBEE\nEEEEBEEBE\nEEEEEEEBB\nBEEEEEEEE\nEEEBEEEWE\nEBEEEWEWE\nBEBEBEEEE\nEEEEBEEWE",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 144,
+      "board": "EEEEEEEEB\nEEBEEEEEW\nEEEEEEEBE\nEEWEEEEBE\nEEEEEEEBE\nBWEEEEEBE\nEEEEEEEBE\nEEEEWEEEE\nEWEEEEEEE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 145,
+      "board": "EEEEEEEBE\nEEEEEEEEE\nEEWEEEEWE\nWEEEEEWEE\nEEEEEWEEE\nEEEEWEEEE\nEEEWBEEBE\nEBEBEEEEE\nEEEEEEEEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 146,
+      "board": "BWWBEEBEW\nEBEEEEEEW\nEWBEEEEWB\nWEEBEBEEE\nEEEEEEWEE\nWEEEEBWEE\nEWBEEEBEE\nEWEEEEBEE\nWEEEEWWEE",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 147,
+      "board": "BEEEEBEBB\nEEEEEEEEE\nEEBEEEEEE\nBBEBEWEEE\nWEEEEEEBB\nBEBBEEEEE\nBWEBEEEEE\nWEEEBWBEE\nEBEEWBEEB",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 148,
+      "board": "EEBEEEEWE\nEEEEEEEEE\nEEEEEBEEE\nWEEEEEBEB\nEEEEEEBEE\nEEEEEEBEE\nEEEEBEBEW\nWEEEWEBBB\nEEEWEWEEE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 149,
+      "board": "EEEEEEEEB\nEEWEEEEEE\nEEEEEEEEE\nEEEEEEEEE\nEEBEEWBEE\nEEEWBBEEE\nEEEEBEEEE\nEEEBEEEEE\nEEBEEEEEE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 150,
+      "board": "WEEEBEEEW\nBWEEEBEWB\nEEBWEEEEW\nEBEEEEBEB\nBBEEWEWWE\nBEWEWEWBE\nEEBEWBWBW\nBBBBEEEWE\nEEBWEBBEE",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 151,
+      "board": "EBEEEEEEW\nBEWEWEWEE\nEEEEWEEEE\nEBEEWEEEE\nEEBEWEEEE\nBEEEWEEEE\nWBEEWEEEE\nBEEEEEEEB\nEEEBWEEEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 152,
+      "board": "EEEEEEEEE\nEEEEEEEEE\nEEEEEEEEE\nEEEEWEEEE\nBEEWEEEWE\nEEWEEBEEE\nWWEEEEEEW\nWEEEBEEWE\nEEEEEEEEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 153,
+      "board": "EWWEEEBEE\nEEEEBEEEE\nEBBBBBEEE\nEEEWWEEEE\nWEEEEEBEE\nEEWEEEEWE\nEBEEEBWEW\nEEBEWEEEE\nEEWEWEEEW",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 154,
+      "board": "EEWEEEEBE\nEEEEEBEEE\nBEEEWEEEE\nEEEEEEEEE\nEWEEEEBEB\nEEWEEEEEE\nEEEWEEEEE\nEEEEWEEEW\nEEBEEWEEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 155,
+      "board": "EBEEEEBBE\nEEEEEEBEE\nWEEEEBEBE\nEEEEBEEEB\nEEEBEEEEB\nEEEEEEEEE\nEEEEEEEEE\nEEEEEEEEE\nEEEEEEEEE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 156,
+      "board": "EEEEEEEEE\nEBEBBBBBE\nEEEEEEEEB\nEEBEEEEEE\nEWEEEEEBB\nEEEEEEWEW\nEEEBEWEWE\nEWEEEEBBW\nEEEEWEEEB",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 157,
+      "board": "WEEBBEEWB\nWEEEEEWEE\nEEEEEEEEE\nEEEEEEBEE\nEEEEEEEEE\nEEEEWEEBW\nEEBEEBBBE\nEEEBEWEEE\nEEEEEEEEE",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 158,
+      "board": "EEBEEWBEE\nEEEBEEBWB\nEEEEEEWEE\nEEEEEWEEE\nEEEBWEEEE\nWEBWEEEEE\nEEEEEEEEE\nWEEEWEEEE\nEEEWEEWEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 159,
+      "board": "EBEEEEEEE\nEEEBEEBEE\nEEEEEWEWW\nEEEEEEEEE\nBBBBBEEWE\nEEEEEEEEE\nEEEEEEEEE\nEEEEEEEEE\nEEEEEEEEE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 160,
+      "board": "WEBEEEEEE\nEWEBEBEEB\nEEEBEEWEE\nEEEEWEEEB\nEEEEWEEBE\nWBBBEEEEW\nEEEEEBBWE\nEEEWEBEEE\nEBEEEEEWE",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 161,
+      "board": "EEEBEEEEE\nEEEEEEEEE\nEEWEEBEWE\nBEEEEEEEE\nEEEEEEEWE\nEEEEBEEEE\nEWBEEEEEE\nEEEWEEEBE\nEEEEEEEEE",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 162,
+      "board": "EEEEEBBEE\nEWEEEBEEE\nBBEEEEEWE\nEEWEBEEEE\nEBBBBBEEE\nEEEEEEEWE\nEEEBBEWWE\nEEEEEEEEE\nEEEEEEEWW",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 163,
+      "board": "EEEEBEEBE\nBEEEEEEEE\nEEWEBEEBE\nEEEEEBBBW\nEWEEEBEEE\nBEEEBEEBW\nEEEBEEEBE\nEEEEEEEEW\nEEEEBEEEE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 164,
+      "board": "EEEEEEEEE\nEEEEEBBEE\nEWEEEEEEE\nEBEEEEEEE\nEWEEEEEEE\nEEEEEEEEE\nEEEEEBEEE\nBEEEEEEEE\nEEEWWWWWE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 165,
+      "board": "EEWBEEEEW\nEEWWBEEEE\nEEEEEBEEE\nWBEEWEBEE\nEEEWEEEBE\nEBEEEBEEE\nEEEEEEEEW\nEEEEEEEEE\nBEEEEEEEE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 166,
+      "board": "EWWEEWEEE\nEEBEEEEEE\nEWBEWEEEE\nEWWEWEEEE\nEEEWEEBEE\nEWBEWEWEE\nBEEBEWEEE\nEWEEEBEEE\nBEEWEEEEW",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 167,
+      "board": "EEEEWEEEE\nEWEEEEEEW\nEEEEEEBBE\nEEEEEEBEE\nEEEEEEBEE\nEEEBEEBEE\nEEEEEEBWE\nEEEEBEEEE\nEEEEWEEEE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 168,
+      "board": "EEEWEWWEE\nEEEEEEWEE\nEEWBEEBEE\nWEEBBEEEE\nWBWBEEWBE\nEEWEEWBEE\nWWEEEEEEW\nWEEEEEEEE\nEEWWEEEEE",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 169,
+      "board": "EBEBEEWEE\nWBEEEEEEW\nBEWEEEBEW\nEBBEBEWEB\nBBWEWEEEE\nEEWWBEEEB\nWEEEBEWEE\nEWEEBEEEE\nWEEBEEWWB",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 170,
+      "board": "BWEEEEWBE\nEEWEEWBWE\nWEEEEEEEE\nEEEEEEEEE\nEWBEEEEEE\nWBEBBEEEW\nEEEWBEEEE\nEEBEEBWEE\nEEEEEWBEE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 171,
+      "board": "EEEEEEEEE\nEWEEEEEEB\nEEEEEEEEW\nEEWEEEEEW\nEEEWEEEEW\nEEEEEEEWE\nEEEEEEEEB\nEEEBEEEBE\nEEEEEEEEE",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 172,
+      "board": "WEEEBEWEB\nEBWWWEBEE\nBBEBBEEEW\nEBEWEWEWW\nEEWBWEEEW\nWBEEBBBEE\nEEEEWEEEE\nWEEEEBBWE\nBWWEEBWEE",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 173,
+      "board": "EEEEEEWEE\nEEEEWEEEE\nEEEEEEEEE\nEBEWEEEEE\nWWEEEEEEW\nWEEEEBBWE\nWEWEEEBEE\nWEWEEEBEE\nWEEBWEWEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 174,
+      "board": "EBEWEEEEE\nBEEWEEEEB\nWWEWWWEBE\nBEEBEEEEE\nEEEEBEEEE\nEBEWBEBEB\nEBEEEEEEE\nEEEEEEWEE\nBEEWEEEEW",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 175,
+      "board": "EEEEWEEWE\nEEBBBBBEE\nEEEEEEWEW\nEEEEEEEEE\nEEEEEEWWE\nEEEEEEBBE\nEBWEWEBEE\nEEEEEEEEW\nEEEEEBEEB",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 176,
+      "board": "EEEEEEEEE\nEEEEEEEBE\nEEEEEWEWE\nBEEEEEEWE\nEBWEEEEWE\nEEEEWWEWE\nEWEBWEEWW\nEEEEBBEEE\nEEEEEEEWW",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 177,
+      "board": "EEEEEEEEE\nEEEEBEWEE\nWEEEEEEEE\nEEEEEEEBW\nBEEEEEEBE\nEEBEEEEBE\nWEEEEEEBB\nEBEBEEBBE\nEEEEEEBWE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 178,
+      "board": "EEWEEEEEE\nEEWEEBEBE\nEEWEEEEEE\nEEWEBEEEE\nEEWEEEBEE\nEBEEEEEEB\nEEEEEEBEE\nBEEEEEWEE\nBEEWBEEBE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 179,
+      "board": "EEBEWEWEB\nEEEEEEEEE\nEEWEWBEEE\nEEEEBEEEB\nEEEBEEEEE\nEEBEBEEEE\nEBEEEEEEE\nEEEEEEWEE\nEEEEWBEEE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 180,
+      "board": "EEEWBEEEE\nEEEEEEEEE\nEEEWEEEEE\nEWEEEEEEW\nEEWEEEEBE\nEEBWEEEEE\nEEEEWEEEE\nBBEEEWEEE\nBEEEEEEEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 181,
+      "board": "EEEEEBEEW\nEEEEEEEEE\nEEEEEEEEW\nEEBWWWWWE\nEEBEEEEEE\nEEEEEEBWE\nBEEEEEEEE\nBEWEEEEEB\nEEEEBEEEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 182,
+      "board": "BEEEEEEEE\nWWWEEEEEW\nEEEBEEEEE\nWEBEEEEEB\nEEEEEEWEE\nBEEEEEWEE\nEEEEBEWEE\nEWWEBWWWE\nEEEEEEWEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 183,
+      "board": "EEEEBEWEW\nEEEEEEEEB\nEEEEEBEEE\nEEEEEBEEE\nEEEEWWEEW\nEEEEWWEEE\nWEEWEWEEE\nBEEEEEEBE\nEEEEEEEEE",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 184,
+      "board": "EWEEEWEWE\nEEEEEBEEE\nEWEEEEEEE\nEWBBEEEWW\nWEEEEEEWE\nWEEEEEEEE\nEWEEEEEEE\nEEEEEEEEB\nBEEEEEEEE",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 185,
+      "board": "EBEEEEEWE\nWEWWEEBEE\nEBEWEEEWE\nEEEWWWEEE\nBWEEBWEEE\nEEBEEWWBE\nEBEEEEEEE\nWWEEEEEEE\nEBEEEEEBE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 186,
+      "board": "EEEEWWEEE\nEWEWEEEBE\nBWEEEEBEE\nEEEEBEEEE\nEBEEEEEBE\nBEEEEBWBE\nEEWEEEEBE\nBEEEBEBBE\nEEEEEEEBE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 187,
+      "board": "EEEWBEEEE\nEBEEEEEEE\nEWEBBEEEB\nBEEEEEEEE\nWWBBWEEEB\nEEWEEEEEE\nEEEWEBEEB\nEEEEWEEEW\nEWEEEEWEE",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 188,
+      "board": "EWEEBEEWE\nEEWEWEEEE\nEEWWEEEEE\nEEEEWWEEE\nEEEEEWEEE\nEEEEWEEBE\nEWEEWEBEW\nEEEEEEEBE\nEEEEEEEEB",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 189,
+      "board": "EEEEBWEEE\nBBEEEEEWE\nEEEEEEEEE\nEEEEEEEWE\nEEEEEEEEW\nEEEEEEEEB\nEEEEEEEWE\nEEEEEEEBE\nWEEEEEWEE",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 190,
+      "board": "BBEEWEEEE\nEEEWEEEEB\nEEEEWEBBE\nEEEWEBEWE\nEEEWEWBEE\nEWBEEEEEE\nEEWEEEEEW\nEWEEBEEEE\nEEEEEEWEW",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 191,
+      "board": "EEEEWEEEE\nEEEEEBEEW\nEEEWBEEEE\nEEEBEWEEE\nBBEWBWEEW\nBEEEEBEWE\nEEEEWEBEE\nEEWWEEEBE\nEEBEBEEEW",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 192,
+      "board": "EEEEWEEEE\nEEWEBEEEE\nEEWEEEEEE\nEEWEEEEEE\nEEWEEWEEE\nEEWBEEEEE\nEEEEEEEEE\nEEEEEEWEE\nWEWEEEEEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 193,
+      "board": "EWEEEEEEE\nEEEEEEEEE\nEEEBEEEEE\nEEEWEEEEE\nEEEEEEEEW\nEEBEEEWWE\nEEEEEEWEE\nEEEEWWBEE\nEEEEWEEEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 194,
+      "board": "EEEEEEEEE\nEEEEEEEEW\nBEBEEEEEE\nEEEEEEEEE\nEBBBBBEEE\nWEEEEWEEE\nEEEEEEEEE\nEWEEEEEEE\nEEEEEEEEE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 195,
+      "board": "EBEEEEBEW\nBEEEEWBWE\nEBBBBBEEE\nWEEEEEEEE\nEEEBEEEEE\nEWEEEEEEE\nWBWEBEEEE\nEEEBWBWEE\nEEBWEEEEE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 196,
+      "board": "EEEEEBEEW\nEEEEEEBEW\nEEEEBEEBE\nWEEEEEEEE\nEEEEEWEWB\nEEEEEEEBB\nEEBEEEBEE\nEEEEEBEEE\nEEBEBEEEE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 197,
+      "board": "EWWBEBWWB\nWEWBWWEBE\nEWEWWEEEE\nEEWBWEEEE\nEWEWWEWBE\nEEBEEWEEE\nEWEEEBWEE\nBEWBWBEEW\nEEBEEEEEE",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 198,
+      "board": "EBEEEEEEE\nBEEBEEEWE\nEWEEEEEEE\nEWWEEWEBB\nEEEWEBEWE\nEEEEWEEEE\nWEEEEWEEE\nBEEEEEEEE\nEWEWEWEEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 199,
+      "board": "EBBEEEWEW\nEBWWEWEWB\nEEBBBEWEW\nWEEEBEEEB\nBEEBEEEEE\nEEBWEEEEB\nEEBEBEEEE\nEEBEEEEEB\nEEEEEEEEB",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 200,
+      "board": "BEWBEBEEE\nWEEBWEEEB\nEBEBBEWEE\nWBWWEEEEE\nEEEEEBEWB\nEBBEEWEEE\nEEEEEEEEW\nWWEEEEEEE\nEEEBEEEEB",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 201,
+      "board": "EEBBBBBEE\nEBEEBEEEW\nWEEEEEEEW\nEEEEEEBEE\nEEEEEEEEE\nEWEEEEEEE\nEEEEBEEEE\nEEEEEEEBB\nEEEEEBEEE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 202,
+      "board": "EEEWBBBEE\nEEEBEEBBE\nEEEEEEEEE\nEEEWEBEWE\nEEEEWEEEB\nWBEBBEEEE\nWEWBEEBEB\nBEBEWWEEE\nEBEWWWEWW",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 203,
+      "board": "EEWBEEWEE\nBBEBEWEEW\nBWEWEBWBE\nWWBEEEEWE\nEEEWWEEBE\nBWEBEBEEE\nBWEWEEEBE\nEBBWWBEWW\nBEEWWEEWE",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 204,
+      "board": "EEEEEEEEE\nWBEEEWEEE\nBEWBEEEEE\nEEEEEEEEE\nBEEWEEBEB\nEWEEWBEEW\nEWEEEWEEB\nEWEEWEWEE\nEBEWEEEWW",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 205,
+      "board": "EEEEEBEWW\nEBWBEEEEE\nBEEEEEEWE\nEEBEEWEEW\nEEEWEWEEE\nEEEWBEEEE\nBEEWEEEBE\nEEWWEEEBW\nEEEWEEEEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 206,
+      "board": "EWEWWWEEE\nEEEWWEWWE\nBBEEEWBEE\nWEWBEEEEE\nBEEBEWEEE\nEEEBEEEEE\nBEEBEBEEE\nEEEBEEWEE\nEEEEEWEEE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 207,
+      "board": "EWEBEBEEE\nEEBEWEEEE\nEEEWWWWWE\nEEBEBEEEE\nEEEEEEBEE\nEWEEEBWEE\nWEEWEEEEB\nEEEEEEEBE\nEEBEWEBEW",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 208,
+      "board": "EEEEEEBEE\nBEWEEEEEE\nEEEEBEEEE\nEEEEEBEEE\nEEEEEEEEE\nEEEEEEEEE\nEEEEEEEEE\nEEWWWWWEE\nEEEEEEEBE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 209,
+      "board": "EEEEEEEEE\nEEEEWEBEE\nEEEEWEEEE\nEEEEWEEEE\nWEEEWEEWE\nEEEEWEEEE\nEBEEEEEEE\nEEWEBEEEE\nEEEEEEEEB",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 210,
+      "board": "BEEEEEEEE\nEEEBEEWEE\nEEEEEEBEE\nEBEBEEEEE\nEEEEBEEEE\nBEBBEEWEE\nEWBEEEEEW\nEBEEEBEEW\nBEEEBEEEE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 211,
+      "board": "EEBBWEEEE\nEEEBEEEEE\nEEWBEEEEE\nBEWBEEEWE\nEEEBEEEEE\nEEEEEEEEE\nEEEEEEBEE\nEEEBEEEEE\nEEEEEEEEE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 212,
+      "board": "WWEWEEEEE\nEBWEEWEEE\nWBEWEEEEE\nEEEEWBBEW\nEEEEEWEWE\nEEEEWEEEW\nEEEEEWEEE\nWWEEEEEEE\nWEWEEEEEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 213,
+      "board": "WEEEEEEEW\nEEEEEEWEE\nEWWEEEEEB\nEEEEEEEEE\nEEWEEEEEE\nEWEWEEEEE\nEBEEEEWEE\nEEEEEEEEE\nEEEEEEEEE",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 214,
+      "board": "EEEEEWEEE\nEEEEEEEEE\nBBBWBEEEE\nEEEEEEEEE\nEEEEEEWEE\nEEEBEEEEE\nEEEEEEEEE\nEEEEEEEWE\nEEEBBBBBW",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 215,
+      "board": "EBEEEEEEE\nEEEBEEEEE\nEEEEEEWEE\nWEEEEEEEE\nBEEBEEEEE\nEEEBEEEEE\nEEEBEEEEE\nEEEBEEEEB\nEEEBEEEBE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 216,
+      "board": "EEBEWEEEE\nEEEEEEEBE\nEEWBEEEEE\nEEWEEBEEB\nBWWBBBBEE\nEEWEEEEEE\nWBBEEEEEE\nBBEEBEBEW\nEWWEEWEBB",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 217,
+      "board": "EEEWEEEEB\nBEWEEBBBE\nBEEEWBEEE\nEEEEBEEBE\nEWEBEEEEE\nEWBEEEBEB\nWEEBEEEEE\nWEEEEEEEE\nEWEEEBEEE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 218,
+      "board": "EEEEEEEEE\nEEEEEEEEW\nEEEEEEEWE\nEEEEEBWEE\nWEEBEWEBE\nWEEEWBEEB\nEBEEEEEEE\nEWEEEEEEE\nEBEBEEEEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 219,
+      "board": "EEEEEEWBB\nEBBEBEEBW\nEEEEEEEBE\nEEEEEEBBE\nEEEEEEEBE\nEEWBEEEEE\nEEEEEEEWW\nEEEEEEEEB\nEEEEEEEEE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 220,
+      "board": "EEEEWEEEE\nEEEEEEEEE\nEEEEBEEWE\nEEWEEWWEE\nEEEEEWEBW\nEEEEWEEEE\nEEEWWEEEE\nEEEEEEEEE\nEEEBEWEEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 221,
+      "board": "EEEEEEEEB\nEEEEEEEEE\nEWWEEBEEE\nEEEEEEEEW\nEEEWEEWEE\nBEEEWEEEE\nEEEEEWBEB\nEEEEEEWEE\nEBEEBEEWE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 222,
+      "board": "EEEEWEEWB\nEEEEEEEEE\nEEEEEEEEE\nBBBEEEWEB\nEEEEEWWBE\nEEEEEEWEE\nBEEEEEWEE\nEEEEEEWWE\nEEWEBEEEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 223,
+      "board": "EEWEEBBBE\nEEWEEEBBE\nWWWBBEEEE\nBEWEBEEWW\nEWEEEBEEE\nBEEBWBEEE\nBEEWWBEBE\nBBBEEWWEW\nBEWBWEEBE",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 224,
+      "board": "EEEEEEEEE\nEEEEEEEEE\nEEEEBEEEE\nEEEEEWEEE\nBEEBBEEEE\nEEEEBBEEE\nEEEEEEBBW\nEEEEEEEBE\nEEWEBEEEB",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 225,
+      "board": "EWBBWWEBE\nEWBEEEEBE\nEWEBBEBEW\nWWEEEEEWB\nEEWEEEWEE\nEEEWBEEBE\nEEBEBEBEE\nBEEEEBBEB\nEEEBBWBBE",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 226,
+      "board": "EWEEEEEEB\nEEEEEEEEE\nEEWEBEEBE\nEBEWEEEBW\nEEWEEEEEW\nEEEEBEEEE\nWEEBWEWBE\nEEEEBEEEE\nEEEEEEEEW",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 227,
+      "board": "EBEEEEEEE\nEEEBEWEBE\nEEEEEEBEE\nWEEEBBEEE\nEWEWBEEEE\nBEEBEBBEE\nEEBEEEEEE\nEEEEEEEEE\nWEBBEEEEE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 228,
+      "board": "EEEEEEBEE\nEEWEEEEEE\nEWEEEEEEE\nEWEEEEEEE\nEEEEEBEEE\nEEEEBBBBB\nEBEEEEEEW\nEEEEEEWEE\nEEEEEEEBE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 229,
+      "board": "WEEEBEEEE\nEEBEEEEBE\nEEEEBEEEE\nEBEEEEEWE\nEEWWWEEWE\nEEWEEBEWW\nEEEEEEEWE\nEEEEEEEWE\nEEEEWEEBW",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 230,
+      "board": "EWEEEEEBE\nEWBWEEEWE\nEEWWBBEBE\nEBWEBEEEE\nEEEBBEWEB\nWEEWEEBWE\nBEEEEEEEE\nWBWEEWEWE\nBEWWEBWWE",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 231,
+      "board": "EEEEEBWEE\nEEWEEEEEE\nEEEEEEEEB\nEEEEEWWEW\nWEEEEEEWE\nEEEEEEEEE\nWEEEEEEEB\nEBEEEEEEE\nEWWWWWEBE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 232,
+      "board": "EEEEEWEEE\nEEEEEEEEW\nEBEEEEEEE\nEBWEEEEEE\nEEEEWWEEE\nEEEEEEEEE\nEEEEEEEBE\nEWEEEEEEE\nEEEEEEBEB",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 233,
+      "board": "EEEEEEWEE\nWEEEEEEEE\nEEEBEEEBW\nEBEEEEEBB\nEEWEBEEBE\nEEEEBEEBE\nEEEEEWEBE\nEEEEEBEEW\nEWEEWEEWE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 234,
+      "board": "EWEEWEEEE\nEEEBWEEEW\nEEEBBEEEB\nEEBEEEBBE\nEEEWBEBBW\nBEEEEBEEB\nEEEEBEEEE\nBEEBEEEEE\nEBEEEBWEE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 235,
+      "board": "BEBEEWBEE\nWEEEEEEEE\nEEEEEEEEE\nEWBBEEEEB\nEEEWEEEEE\nEEEEEWEEW\nEWEBEEEEE\nEWEEWEEWE\nEEEEEEEEW",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 236,
+      "board": "WEEEEEEEE\nEEEEEEEEE\nEEEEEEEEE\nEEEEEEEEW\nEEEEEEEWE\nEEBEEBWEE\nEEEEEWEEE\nEEBEWEEEE\nEEEEEEBEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 237,
+      "board": "BEEEEBWEE\nEEEEBEEEB\nEWEBEEBEB\nEBBEEEEEW\nEBEEEWEEE\nEEWWEEEEE\nEEEEBEEWE\nEEWEEEWEE\nEEEEEEEBE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 238,
+      "board": "EEBEWEEEE\nWEEEWEEEE\nEEBWEEEEE\nEEEEEEBEE\nEBEEWEEWE\nEEEEEEEEE\nEEEWEEEEE\nEEEEWWWWW\nEEEEEEBEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 239,
+      "board": "EEWWWWWEE\nEBEWEEBEE\nEEEEEEBEE\nEEEEEEEEE\nEEEEEWEEE\nEEEEEEEEE\nEBWEBBEEE\nEEEEEEWEE\nEEEEEWEEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 240,
+      "board": "EEEEEEEEE\nEEEEBEEEE\nEEEEEBEEE\nEBEEBEWEE\nEEEBEBEEE\nEEEWEWEBE\nWEWEEEEEE\nEWEWEWWEE\nEBBEEEEEE",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 241,
+      "board": "EEWBBWBEE\nEEWEEEBEE\nEEEEWBBWB\nEEEEEWBWE\nEEEEBEWEW\nWWWEEBEEE\nEEWEEWEEB\nEWBWWWEWE\nEEEWEWEEB",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 242,
+      "board": "EEEBEEEEE\nEEEEEBEEE\nEEEEEWEWW\nEEEEEEEEB\nEBEEEWEEE\nBEWEWWEBE\nEBEWEBEEB\nEEWEEEEEE\nEWBEEEEEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 243,
+      "board": "EEEEEWEEE\nEEBEEWEEE\nWEEEEEEBE\nEEEEEEBEW\nEEEEEBEWE\nEEEEBEEEE\nEEEBEEWEE\nEEEEEEEEE\nWEEEEEEWE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 244,
+      "board": "EEEEEEEEE\nEEEWWWWWE\nEEEEBEEEE\nEBEEEEEEE\nEEEEEBEEE\nEEEEEEEWE\nEEEBWEEEE\nEEEEEEEEE\nEEEEEEEEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 245,
+      "board": "EEEEEEEEE\nEEEEEEEEE\nBEEEWEEEE\nWEEEEEEEE\nEEEEEEEBE\nEEEEEWBEE\nEEEWEBEBE\nEEEEBEEEE\nEEEBEEEEE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 246,
+      "board": "EBBEWEEEE\nWBEEEEBBE\nEBEEEEEEE\nEEEEBEEBE\nEEEEEEEEE\nEEEBEEWEB\nEEEEEEEEE\nEBEEEEEWE\nEEEEEBEEW",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 247,
+      "board": "EWBEEEEEE\nEBEBEBWEE\nEEEEEBBBE\nEEWEBEBEE\nEWEEEBEEB\nEEEEBEEEE\nEEEBEEEEE\nEEEWBEEBE\nEEEEEEEWE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 248,
+      "board": "EEWWWWWEW\nWEEEEEEBE\nBEEEWEEEE\nEEEEEBWBE\nEEEEEEEEE\nEEEEEEEEE\nEEEEEBEEE\nEEEEEEWEE\nEEWEBEEEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 249,
+      "board": "EEEEBEEEE\nEBWEBEEEE\nEEEWEEEEE\nEWEEWBEEE\nEEEWBEEWE\nEWWWWWWEE\nBWWEEEBEE\nEEEEEEEEE\nWBEEEEWEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 250,
+      "board": "EEEEEEEEB\nEEWEEBBEW\nEEEEEEEEE\nEEEBEBEEE\nEEEEEEEEE\nEWEEBBBBB\nEBEWEEEEE\nEEEEEWBEW\nEEEEEWEEE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 251,
+      "board": "EEWEEEEEE\nEEWBWEEEW\nEEWEWEEEE\nEEWBEEEEE\nEBWEEEEEW\nWEEWEWEEE\nEEBBEEEEB\nEWEEEEEEE\nEWEWEWBEB",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 252,
+      "board": "WEEWEWWEE\nEEWEEEEBW\nWEEWEEEEE\nEEWWBEWEE\nBWWEEBWEE\nEEWWEWWWB\nBBEEBWBEE\nWEBWEWWEW\nBBEBWEWEE",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 253,
+      "board": "EBWEEEEEE\nEWBBWEBBE\nEEBBWEWWE\nEEEEBEEEE\nEWEBWBEEE\nWEEEEEEEE\nEWEEEEWEE\nEEEEEBEWE\nEEWEEEEEE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 254,
+      "board": "EEWEEEWEW\nEBEEEEEEE\nWEEEBEEEE\nBEEEEBEWB\nEEBEEEEEE\nEEEEEEBEB\nWEEWEEEEE\nEEEEEEEEE\nEBEEEEEEE",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 255,
+      "board": "EEBBEWEEE\nEEWBEWWEB\nEEEEEBEEE\nWEEEEEBEE\nWWEEWBWEE\nEBEEEEBEE\nEEEEEEEEE\nEEEEWEEBE\nBEEEWEEBE",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 256,
+      "board": "EBEEEEEEE\nEEWEEEEEE\nEEEEEEEWE\nEEEEBEEEE\nEBWEEWEEE\nEEWEWEEEE\nEEEEWWEEE\nBEWWWWWEE\nEEEWEEBEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 257,
+      "board": "EEEEEBEEW\nEEEEEBEEB\nEEEWEBEEE\nEEWWWBEEE\nEEEWEBBEE\nEEWEWEEEW\nEEEEEEEEE\nEEEWEBBEE\nEEEEEEEEE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 258,
+      "board": "EEEEEEEEW\nEEEEEEEWB\nEWEEWEWEE\nEEEEEWEEE\nEEEEWEEEE\nWEEEEEEEE\nEEEEEWEBB\nBBBEEEBEE\nBEEEEEEEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 259,
+      "board": "EEEEEEEEE\nEEEEEEEEE\nEEEEEEBEE\nEEWWEEEEE\nBEEBEEEEE\nEEBEEEEEE\nEEWWWWWBB\nEWWEEEEEE\nEWEEEEEEW",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 260,
+      "board": "EEEEEEWEE\nEEEEEEEEE\nBBBBBEEEE\nEEEEEWEEE\nEEEEEBEEE\nEBEEEEEEE\nEEEEEEEEE\nEEWEEEEEE\nEEEEEEEEE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 261,
+      "board": "EEEEEEEWE\nEEEEEBEEW\nEEBEEEEEE\nEEBEEEEEE\nEBBEEEEEE\nEEBEEEEEE\nEEBEEEEEE\nEWEEEEEEE\nEEEEEWEEE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 262,
+      "board": "EEEWEEEEE\nEBEEWEEEE\nEEEEEEEEE\nEEEEEEWEE\nEEEEEEEEE\nEEEEEWEEE\nEEEEEEEEE\nEEEEWWWWW\nBEEEEEEEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 263,
+      "board": "EEEEEBEBE\nBWEEWEBEE\nEWEEEEEEE\nWEBEEBEBE\nEBBBWEEBE\nWEEBEEEEE\nEEWEWEWEE\nEEEEBEBEE\nEEBWWEEEE",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 264,
+      "board": "EEWEEWEEE\nEEEWEEEEE\nEEWEBEBEE\nEEBEEEEEW\nEEEEEEEEE\nEEEEEEEEE\nEEEEEEEEE\nEEEEEEEEE\nEWEWEEEEE",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 265,
+      "board": "EEEEWEEEE\nBEEEEEEEE\nBEEEEEEBE\nEEEEEWEEE\nBEEWEEEWE\nEEBEEEEEE\nWEEEEBEEE\nEEEEEEEEE\nEEEEEEEEE",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 266,
+      "board": "EEEWEEEEE\nEEEEEEWEE\nBEWEEEEEE\nEEBEEEEEE\nBEEBEEEEE\nBWEEBEEEB\nBEEEEEWEE\nBBEEWEEEE\nBWWEEEEBE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 267,
+      "board": "BEEEEEEEE\nEEEEEEEEW\nEWEBEEEEW\nEEWEEWEWE\nEEEEEEWBE\nEEEEBWEEE\nEEEEWBBEE\nEEEEEEEEE\nEEEWEBBBE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 268,
+      "board": "WBWEEEEEE\nEWEEWBEEE\nEBEEEEBEE\nEEBEEEEEW\nEEEBEEEEE\nEEEEBEEEE\nWEEEEBWEE\nEEEEEEEEE\nEWEEEEEEE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 269,
+      "board": "EEBWEEEEE\nEEEWBEEEE\nEEEWEEEEW\nEEEWEWEBB\nEEEWBEWEW\nEEWEEEEEE\nEEWEEEEEB\nEEBEBEEEE\nWEEEBEBEB",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 270,
+      "board": "EEBWEWBBB\nEEEBEEEBE\nEEEEEEBEB\nEEEEEBEEE\nWEEEBEEEE\nBEEWEEEEB\nEEBEWEBEE\nEEEEBEEEE\nEEEEEEEEE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 271,
+      "board": "EEEEEEEEE\nEEEEEEEEE\nWWWWWEEWE\nEEEEEBEEE\nEEEEEEEEE\nEEEWEEEEB\nEEEEWEEEE\nWEEEEEEEE\nBEEEEEEEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 272,
+      "board": "BWEEEEWEE\nEBEEEEEWB\nEWWWBWEEE\nBWEEWWEBB\nBWBEEBEEE\nEEEBEWBBE\nEBEEEEEEE\nWEEBWWWEW\nBEWEEBEEE",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 273,
+      "board": "EEEWEBEBE\nEEEEWEWEE\nEEWEEEEWE\nEEEEEWEEE\nEEBBEWBEE\nEBEEBEEEE\nEWWEEEEWE\nEEEBEWEWE\nEWWWWWEEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 274,
+      "board": "EEEEEBEEE\nEEEEEEEEW\nEEEEEEEWE\nEEEEEEWEE\nEEEEEWEEE\nEEEEWEEBE\nEEEEBEBEE\nEEEEEEEEW\nEEEEEEEEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 275,
+      "board": "EEEWWEEEW\nEEEWEEEEE\nEEEEEEWEE\nEEEEEEEEB\nEBEEBEEEE\nEEEEEEBEW\nWEEEEEBEE\nEEEEEEEEE\nEEEEEEBEE",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 276,
+      "board": "BEEEEWEEB\nBEWEBEWBE\nWEEEEBEEE\nEEEBEBEEE\nEWEEEWEBB\nBBWWBEBBW\nBWEBEEEEE\nEBWBEBBEW\nBEWWBEEBE",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 277,
+      "board": "EEEEEEEEB\nEEEEEEEEE\nWEEWEWEEE\nEEWEEWEBE\nEEEEWEEEE\nWEEWEEWWE\nEWWEEEEEW\nEWEEEEEWE\nEEEEEEEEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 278,
+      "board": "EEEEWBEBE\nBEEEEEEEE\nWEEEEEEEE\nEWEEEEEEE\nWWEEBWEBE\nEWEWEWEEE\nEWEWWBBBE\nWWEEEEBWE\nEEEEEBEEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 279,
+      "board": "EEEEEEEEE\nEEEWEEEEE\nEEEEEEEEE\nEEEEEEEBE\nBEEEEEEBE\nEBWEEEEEE\nEEBEWEEEE\nEEEBEEEEE\nWEBEBWEEE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 280,
+      "board": "EEEEBEEEE\nBEWWBEBEE\nEEWEEBBEE\nBEEEEBBEE\nEEEEEWEBE\nBEWEEEEEB\nEEEEEEBWE\nEBEEBEEEE\nEEWEEWEEE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 281,
+      "board": "EEEWEEEEE\nEWEEEEEEB\nBEEEEEBEB\nEEEEBEEEW\nWEBEWWEEE\nEEEEEBEEE\nEEWWWWWEW\nEEEEEWEWE\nEBEEEEBEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 282,
+      "board": "BBEEWWEEE\nEBEEEEEEB\nEEEWWWWWB\nEEWBEEEBW\nEEEEEBEEE\nEWEEEEBEE\nWEEEEEEEE\nEEEEEEEWB\nEEEBEEWEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 283,
+      "board": "EEEBEEEEE\nEEEEBBEEE\nWEBEEEEEE\nEWEWEEEEE\nEWWEEEEEE\nEEBWEEBEE\nEEEEWWEEE\nEEEWEEEEE\nEEEEEEWEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 284,
+      "board": "EEEEEEEEE\nEWEEEEEBE\nEEEEEEEBW\nEBEEEEEBE\nEEEEEEEBB\nEEBEEEEBE\nEEEEWWEWE\nEWEEEEEEW\nEEEBEEBEE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 285,
+      "board": "WEEEEEEEE\nEEEEBEEEE\nEWBEWEEWE\nWEEEEEEEE\nWEEEWEEWE\nWEEEEWEEE\nWEEEEEEEE\nWEEEWEWEE\nEEEEEEWEB",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 286,
+      "board": "EWEWWEBEE\nWWEWWEEBE\nEEEEWEEEE\nBBBWEEEWB\nEWEEBWEWB\nBEEEEEEWE\nEEBWWBBEE\nWBEEEWWEE\nEEBBEEEEW",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 287,
+      "board": "WWEEEEEWE\nEEEBEEEEB\nEEEEEEBEE\nEEEEWBEEE\nEEEEBWEBE\nBEEBWBEWE\nEWBEEEEEE\nBEEEEEEEE\nEEEEEWEEE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 288,
+      "board": "EEEWEEEEE\nWEEEEWEEE\nWEEEEBEEW\nEEEBEEEEE\nBEEBEWWEE\nEWWEEEEEB\nWEWWEEEEW\nEEBEBEEEE\nEWBBBBWEE",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 289,
+      "board": "EEEEEEEEE\nEEEEEWEEE\nEEEEEEBWB\nEEEEEEBEE\nEEWEEEBEE\nEEEBEEBEE\nEEEEEEBEE\nEEEEEEEEE\nEEEEEEEEE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 290,
+      "board": "EEBEEEEEE\nEEEEEEEEE\nEEEEEEBEE\nEEEEBBBBB\nEEEEEEEEE\nEEEEEEEEE\nEEEEEEEEE\nEEWEEEBEB\nEEEEEBEEE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 291,
+      "board": "EEEEEEEEE\nEEEEEEEEW\nEEWEEEEWE\nEEEEEEEEE\nEEEBEEEEE\nEEEEEEEEE\nEEBEEEEBE\nEEEEEEEEE\nBEBBBBBEE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 292,
+      "board": "EEEEEEEEE\nEEBEEEEEE\nEEEEEEEEE\nEEWEEWEEW\nBEWEEEEBE\nEEWEEEWEE\nEEWEEBEBE\nBEWWEEEEE\nEBBEEEBEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 293,
+      "board": "EEEEWEEEW\nEEWEEEEBE\nEEEEEEEEE\nWEEEEEEEE\nWEWEEWEEE\nWEEEEWEEB\nWEWEEEEEE\nWBEWEBWEE\nEEEWEEBEB",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 294,
+      "board": "EEEBEEEEE\nEEWEEEEWW\nEEBWWWEEW\nEEEEEEEEW\nEEEEBEEEW\nEEBEEEBEE\nEEEEBWBWE\nEEEWEWEBE\nEEEEBBWEW",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 295,
+      "board": "EEEEEEEEE\nWBEEEBEWE\nEEEEEEEEB\nEBBBBBEBE\nEEEEEEEEW\nEEEEEEEEE\nEEEEEBEEE\nEEEEEEEEE\nEEEEEEBEE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 296,
+      "board": "EEEEEEEEW\nEWEBEEEEE\nEEBEEEEEE\nBEEEEEEWE\nEBEEEEEEB\nEEBWEEEEE\nEBBBWEEEE\nEBEWBEBEE\nEEEEEEEEE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 297,
+      "board": "EWBEEEEWB\nWEEBEEEEB\nEEEBEEWEE\nEEEEEWEEB\nEEEEWEWEE\nEBEWEEBWB\nEEEEEEEEE\nEEEBEEWWE\nEEEWEEEWW",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 298,
+      "board": "WEEWEEEEE\nWWEEEEEEE\nEEEEEEBEE\nBBBBBEBEE\nEEEEEEEEE\nWEBEEEEEE\nEBEEBWEEB\nEEEEEEEEE\nEBEEEEEEE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 299,
+      "board": "EEEEWBEEE\nEEEEEEWEB\nEEBEEEWEE\nEEEEEEWEE\nEEEEEEWEW\nEBEEEEWEW\nWEEWEEEEE\nEEBEEWBEE\nEEEEEEEEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 300,
+      "board": "EBEEEEWEE\nBEBBEEEEE\nEEEBEEEEE\nEEWEBWEEE\nEEWEEEEEE\nEEWEEEEEE\nEBWEEEWEE\nBEWEBEEEE\nEEEWEEEEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 301,
+      "board": "EEEEEWEEE\nEEEBEEEEE\nEWEEEEEEE\nEWEEEEEEB\nEWEEEEEEE\nEWEBWEEWE\nEWEEEEEEE\nWEEEEEEEE\nEEEEEEEEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 302,
+      "board": "BEBEWWBEW\nEEEEEEEWW\nEBWEWEEEW\nEEEBEEEEE\nBEEEEBEWE\nEWEBBEWEW\nEEEEEWEEE\nEEEEEWEEE\nEWBWWBEBE",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 303,
+      "board": "EEEEBEWEW\nBEEEEEBEE\nEBEEEEEEE\nEEEEEEEBE\nEEEEEEBEE\nEEWWEEEEE\nEWBEEEEEW\nEWWWEEEWE\nEEBWEEEEE",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 304,
+      "board": "EEEEEEEEE\nEEWWEEEEE\nEEEEEEEEE\nEEBEEEEEE\nEEEWEEEEE\nEWWWWWEEE\nEWEEEWEEE\nEEEEEEEEE\nEEEEEEEEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 305,
+      "board": "EBBBEEEEE\nWEEEEWEEE\nEWWBWWWEB\nEEEBEEBWE\nEEWBEBEEE\nEBWWEBWEW\nEWWEEEBEW\nBBWBEWEEE\nEBEEEEWEW",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 306,
+      "board": "EEEEEEEEE\nEBWWEEEEB\nEEBWEBEEE\nWEEEWEEEW\nEEWEEWWEE\nEWEEEEWEE\nEEEEEEEEE\nEEEEEEBBE\nEBEWEEEEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 307,
+      "board": "EEEEWEWEE\nBEEEWEEEE\nEEEEWEEEE\nEEEEWEEEE\nEEEEWEEEE\nEEEEBEEBE\nEEEEEWEEE\nEEEEEEBEE\nEBEEEBEEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 308,
+      "board": "EEWWEEEEE\nEWEBEEEEE\nEBWEEEEEE\nEEBWEEWWE\nEEEEWEBWE\nEEEEWWEEE\nEBEEBEEBE\nBBEEBWBBE\nEEEEEEBEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 309,
+      "board": "EBEEWWBEE\nWEWEBEEEE\nWEEEWEWBB\nWEEEWEEEB\nEBWEEEEBE\nEEEWEWEEE\nEWBEWWWEE\nEEEEWEBBE\nEBEEEBEEB",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 310,
+      "board": "EEEBEEEEB\nEEWWBWWEB\nWBBEEEEWE\nWWEWWBEEE\nWWWEEEBEW\nEEEBEBEWW\nEEWEEBEWW\nWEWBBBWEB\nEEEEEWWEE",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 311,
+      "board": "EEEWEEEEE\nEEEEEEEEE\nBEEEBEWEE\nEEEWEEEEE\nWEEEEWEEE\nEWWEEEBEE\nEEWEEEEEE\nEEEWEEEEE\nWEEEWWBEW",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 312,
+      "board": "BBEWWEEEE\nEWEBEEWEE\nEWBWEEEWE\nBBEWEEWBW\nWEWWEWEEE\nEEWEBWEBW\nEEEEEBEWW\nWBBEEWEEB\nWWEBEEWBE",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 313,
+      "board": "EEEEEEEBE\nEEEWEBWEE\nWEEEBEEWE\nWEWBEEEEE\nEEBEEEEEE\nEBEEEEEEB\nEEBEEEEEB\nEEEEBEBEW\nEEEEBEWEB",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 314,
+      "board": "EWBEEEBBE\nEEWEEEEEE\nWEEWEEEBE\nEEEEWEWEE\nEEEWEWWBE\nEEEEEEBEE\nEEEEEEEEE\nEEEEBEEEB\nEBWEEEEEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 315,
+      "board": "EEEEEWEEW\nEEWEEBEEE\nEEEEEWEBE\nEEEEEEWEE\nEEEEEEEEE\nEEWEEEEWE\nEEEWEEEWE\nEEEEEEBEB\nEWEEEEBEE",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 316,
+      "board": "WEBEEEEEE\nEEEEEEEEW\nEEEEEEEEB\nEEEWWEBWE\nEEWEEWWBB\nEEEEEEEEB\nEEEEEBBEB\nEEEEEEEEB\nEEEEEEEBB",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 317,
+      "board": "EEEEEEEEW\nEWWEWEEEE\nEEBEEEEEE\nEEEWEEEEE\nEEEEEEEWE\nBWEEEEWBE\nEEEEEEEEE\nWEEBEEEEE\nEWEEEEEEE",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 318,
+      "board": "EEEEEEEEE\nEEEEEEEEW\nEEEEEEEEB\nEEEEBEEEE\nEEEEEWEBE\nEWEEBEWEW\nEEBBBBEEE\nEEEEBEEEE\nEEEEEEEWB",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 319,
+      "board": "WEWEBEEEE\nEEWWEWEEE\nEWEEEEBEW\nBEEEEBEEE\nEEEEEEEEE\nBBEWEEWEW\nEEEEWEWWE\nEBBEBEEEE\nEEEEWEEEE",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 320,
+      "board": "EEBEBWEEE\nWEEEEEEWE\nEWEEEWEWE\nEWEEEEEWE\nEEBEEWEWW\nEEEEEEEWE\nEBEEEEEEE\nEEEEEEEEE\nEEBEEEEWE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 321,
+      "board": "BEEEWEEEE\nEEEEEEEEE\nEBEEEEEBE\nBEEEEEEEB\nEBEEEEEEW\nEEBEWEEWW\nBEEBWWEEE\nEEWBBEEBE\nEBEEEBWWW",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 322,
+      "board": "WEEEEEEBW\nEEEEBEEEW\nEEEEBEEEE\nWEEEBBEEE\nWEEWEEEEW\nEEWEEEEEE\nWEWEEWEWE\nEEEEEBEEE\nEEEWEBEEW",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 323,
+      "board": "EEBWEEEEE\nEEBEEEEEE\nEEBEEEEEE\nWBEEBEEWE\nEEBEWWEEE\nBEEBWEEEE\nEEEEBEEEE\nEEEEEBEBW\nEEEWEEEEE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 324,
+      "board": "EEBEWEEEB\nEEEBEEEEW\nEBEEEEEEB\nEEEEEEEEB\nEEEEEEWBB\nEEEEEBBBB\nEEEEEBEEE\nEEEEBEEEE\nEWEEEWEEE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 325,
+      "board": "EEEEEEEEB\nEEEEEEEWE\nEEEEEEWEE\nEEEEEWEEE\nEEEEWWWEW\nEEEWWEEEE\nEEEEEEEEE\nEEEEEEEEE\nEEWWEEEEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 326,
+      "board": "EEEEEEEEE\nWEEEEEEEE\nWEEBEEEEE\nWWEEEBEWW\nWEEEEWEEE\nWEWWEEEEW\nEEEEBEEEE\nEEEEEWEEE\nEEEBEEEBE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 327,
+      "board": "BEWWEEEEE\nEWEEEBBWE\nEEWEEEWEE\nEBWEEWBEB\nEEEWWEWBW\nEEEWEEEEE\nEWEEEBEEE\nEEEEEWEEE\nWEEEEEEEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 328,
+      "board": "EEEBEEEEE\nBEEEBEEEE\nEEWEEEEWE\nWEEEBEEEB\nEEEEEWEEE\nEWBBEEEEE\nBEBEEEEEE\nEWEEEEEEB\nEEBBEEWEE",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 329,
+      "board": "WEEEEEEEB\nEEEEWEEWB\nEEEEEEEEE\nEEEEEEEEB\nBEBEWEBEB\nEEEWEWEEE\nEEEBEEWEE\nEWEWEWEWE\nEEEEEEBWW",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 330,
+      "board": "EWBWEEWEE\nEEEEEEEEE\nEWEWEEEEE\nBWBBEBEEE\nBWEEEEEEE\nEWEEEEEEW\nEWEBEEEEE\nEEEEEEEBE\nEEEBEEEEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 331,
+      "board": "EEEEEEBEE\nEEEEEEEEE\nEEEEEEEEE\nEEEEEEEEE\nEEEBEEWEE\nEEEEBEEEE\nWEWWEBEEE\nEEEEEEBEE\nEEEEEEEBE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 332,
+      "board": "WEEEEEEEE\nEEEWEWEEE\nBEEEWEEEE\nEEEEEWEEE\nEEEEEBWEE\nEBEEEEEWW\nEBEEEEEBE\nBEEEEEEEE\nBEBEEEEEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 333,
+      "board": "EEEEBEEEE\nEEEEEEEEE\nEEEEBEEEB\nEEEBEEBEE\nEEEEEEEEW\nEEEBEEEEB\nEEEEEEEWW\nEEEEEEEEB\nEEEEEEWEE",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 334,
+      "board": "EEEEBEEEE\nEEEEBEEWE\nEEWBEEEEE\nEEBEEEEWE\nEBEEEEEEE\nBEEWEEEEE\nEEBEEEWEE\nEEEEEEEBE\nEEEEEEEEE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 335,
+      "board": "EEEEEEWEW\nEEWEWWEEE\nEEEBWEEEE\nEEWWEBWEE\nEWWBEEEEE\nEEEWWEEEE\nWEEBEEBEE\nEBEEEEEEW\nEEEEWBEWE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 336,
+      "board": "EEEEEWEEE\nEEEEEEBBB\nEEEEEEEEE\nEEEEEBBEE\nWEEEEEEEE\nEWEEEEWWE\nEEWEBEBEW\nEEEEEEEEE\nBEEEEEEEE",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 337,
+      "board": "EEEEBEEEE\nBEWBEEEBE\nEBBEEEEEE\nEBEEEEEEB\nBEEEBEEEE\nEBEEEEEEE\nEEEEEEEBE\nEBWEBEEEE\nEEEEEWEBE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 338,
+      "board": "WEEEEEEEE\nWEEBEEEEE\nWWEEEEEEE\nWEWEEBEEE\nWEEEEEEEE\nEEEEEEEWE\nEEWEEEEEE\nEEEEEEEEE\nEEEEEEEEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 339,
+      "board": "EEEEBEEWE\nEEWEEEWEE\nEEEEEWBWE\nEEEEWBEEE\nEEEWBEEEE\nEEWEEEEBE\nEBEEBEEEE\nEWEEEBEEE\nEWBWEEEEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 340,
+      "board": "EBEEEWEEE\nEEEEWEBEE\nEWEEEWEEE\nEEEEEWWBW\nWWEEEEEWE\nWEEWEBEWW\nWEEWEEEEB\nBEEEEEEEE\nEEEEBEWWE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 341,
+      "board": "EBEEEEBEE\nEEEEEEEEW\nEEEEEWEWE\nEEEEWEEEE\nEEEWEEEBE\nEEWEBEEEW\nEWEEEEEEB\nEEEEBEWEE\nEEEEEEEEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 342,
+      "board": "EEEEEEEEW\nEEEEWEEEB\nEEEWWEBEB\nBEEEEEEEE\nWEEEEEEEE\nEWWEEEEEE\nEEEEEEEEE\nEEWEWEWEE\nEEEEEEEEE",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 343,
+      "board": "EEEWBEEEE\nEWEEWEEEE\nWWEBWWWEE\nEEEBEWEEE\nEEBBEEEEW\nEBEBEWEEB\nEEWBBEEWE\nEEEEEWEEE\nBEEEEEEEE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 344,
+      "board": "EEEEEEEEE\nEWEEEEEBE\nEEEBEEEEE\nWEEBEEEEE\nEWEBEEEEE\nEEEBEEEEE\nEEEBEEEEE\nEEEEWEEBE\nEEEEEEEEE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 345,
+      "board": "BEEWEBEWB\nEEEBEEEWE\nWEEBEEWEW\nWWWEWEWEB\nWEEEEEEEE\nBBWEBWEEB\nEEWEWEWWW\nEEWBEBBWB\nBEEEBEWEW",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 346,
+      "board": "EEEEEEEWE\nEBEEEEWEE\nEEEEEWEEE\nEEEEWEEEE\nEEEWEEEEE\nBEEEEEEEE\nEEEEEBEEE\nBEEEEEEEE\nEEEEEEWEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 347,
+      "board": "EEEBBWWEE\nEWBEEWEEE\nWWWEEBEEE\nEEWEEWWEB\nWBEWEWEEE\nEEWEEWBWE\nEWEWEEEEE\nEEEEWEEBE\nEBWWEWBEE",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 348,
+      "board": "EEEEWEBBE\nEEEEEEEEE\nEWWWWWEEE\nEEEBEEEEE\nWEEEWEEEE\nEEEEEEBBE\nEEEEEEEEE\nWBEEEEBEE\nEEEEEEEEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 349,
+      "board": "EBEEEEEEE\nEBEBEEEEE\nEBWBEEEEE\nEBEEEEEEE\nEBEEEEEEE\nEEEEEEEEE\nEEEEEEWEE\nEEEEWEEEE\nEEEEEEEEE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 350,
+      "board": "EWWWWWEEE\nEEEEEEEBE\nEWEEEEEEE\nEWEEEEEEE\nEEEBEEEEE\nEEBWEBEBE\nEEWEEEEBE\nEEEEEEEEE\nEEEEEEEEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 351,
+      "board": "EEEEEWEBE\nBWEEEWBEE\nEWEBEWEEE\nBWEEEEEBE\nEWEEEBEEE\nBWEWEWWEE\nEEEEEEEBE\nEEEEEEWEE\nBEEEWWEEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 352,
+      "board": "EEEEWEEEB\nEBEBEEEEE\nEEEEBEEEE\nEBEEWEBEE\nEWWWEBEBE\nBEEEBEWEE\nBBEEEEBEE\nEEEEEEEBE\nBEWEEEBEE",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 353,
+      "board": "EEWEEBEEE\nEEEWBEBEE\nEEEEBEEEE\nEWBBEEEBE\nBEEEEBEEE\nBBBWEWEEB\nWWEEEEEEW\nBEEBEEBEW\nWEWEEEBEE",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 354,
+      "board": "EEEEBEBEE\nEEEEEWEEE\nWEWEEBWEE\nBBEEEBEEB\nEWWWWWEEE\nEWEEEEEEE\nEEEWEEEEE\nEWEEEEEBE\nEEEWEEEEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 355,
+      "board": "EEEEEEEEE\nEEEEBEWEB\nEEEBBEBEB\nEEEEEEBEB\nEBBEWWEEE\nEWEEEBEWW\nBEEEEWEEB\nEBEBEEBEE\nEWEBWEEEE",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 356,
+      "board": "EEEEEWEBE\nEEBBEEBEE\nEEEBEBEEW\nEEEBBBWEE\nEEEBEEWEE\nEEEWEEEEE\nEEEEEBWEE\nEWEEEBEBE\nEEEEWEEEE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 357,
+      "board": "EWEEEEEEE\nEEEEEEEEE\nEEEEBEWEE\nEEEEWEEEE\nEEWEWEEBE\nBEEEWEEEE\nBEEWWEEEE\nEEEEWEEWE\nEEEEEWEEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 358,
+      "board": "WBEEEEEEB\nEBEEWEWEE\nWEWWEEEEW\nEEBWEBBWE\nEWEEEBEEE\nWBBEEEWEW\nBBEEEWEEW\nEBEWEBWBE\nEBEEWEEEE",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 359,
+      "board": "EEBEEEEEE\nEEEEEWEEE\nEEBEEWWEE\nEEEBEEEEE\nEEEEBEEEE\nEEEEEBEEE\nWEEEEEBEE\nEWEEEEBEE\nEEEEEEEEE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 360,
+      "board": "EEEWEEEEE\nWEEEWEEWE\nEWEEEWEEW\nWEEEEEWEE\nEEBEBWEWE\nEEEEEEEEE\nEEEBEEEEE\nEEEEEEEEB\nEBEEEEEWE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 361,
+      "board": "EEEEEEWEE\nWEEWEEEBE\nWEEEBEEEB\nEEEEBBEEB\nEWBEEEEEW\nEEWEWEEBB\nEBEEEBEEE\nEEEEEEEEE\nBEBEEWEWW",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 362,
+      "board": "WBEWBBEBW\nEEEBEBEEB\nEEEBEEBBE\nEWEEEEWWE\nEEEWEEBEE\nEEEEBWEWE\nWWEBWEEBW\nEEBEEWEBE\nEBEWBWBEB",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 363,
+      "board": "EEEEEEEEE\nBEEEEEEWE\nEEWEEEEEE\nEEEEEBWEW\nEEEEEEEEB\nEBEEBEEBB\nEEBEEEEEB\nEEEEEEEEB\nEEEEEEEWB",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 364,
+      "board": "EWEWEEEEW\nWWEWEBBBB\nWEEWEEEEE\nEEEEEEEWE\nEEWEEEEEE\nBEEBEEEWB\nBEWEEEBEB\nBBEBBEEEW\nEEEEEEWEE",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 365,
+      "board": "EEEEWEEEE\nEBWEEEEEE\nEEEEEEEEE\nEBEEWEEBE\nEEBEEEEEW\nEBEWEEBWW\nEEEEEEWEW\nEEEEEEEEW\nEEEEBEEEW",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 366,
+      "board": "BBEWWEBEE\nWEEWWEEEW\nEEWEEWEEE\nWEEEBEEEW\nWEWEEBEEE\nEEWWEEEEE\nEEBEEEEEE\nBEBEEWEEE\nEWEWBEEEB",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 367,
+      "board": "EEEEEEEEE\nBEEEEEEEB\nBEEEEEEEE\nBEEEEEEEE\nBEEEEEEBE\nBEEEEWEEE\nEEEEEEWEE\nEEEEEEEWE\nEEEEEEEWE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 368,
+      "board": "WEEEEEEWE\nBBBBBEEEE\nEBEWEEEBE\nEEBEEEEEE\nEEEEEEEEB\nBEEEEEEBW\nWEEEEWEEE\nEEEEEEWEE\nEEEEEEEBW",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 369,
+      "board": "BEEEBEEBE\nEEBEEEWBE\nEEEEWEEEE\nEEEBEEEWE\nEEEEEEEEE\nWWEEBEEEE\nBEEEBEBBE\nEEEEBEBEE\nEEBEEEEEE",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 370,
+      "board": "WEEEBEWEE\nEEEBEWEEE\nEEBEEEEEE\nEBEEWEEEE\nBEEBEEEEE\nEEEEEEEEE\nEEEEEEEEE\nEEEEEEEEW\nEEEEEEEEE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 371,
+      "board": "EEEWEBEEE\nEEEEBEEEB\nEEEEEEEEE\nEEBEBBBBB\nBEEBWBEEE\nWEBBEEEEE\nEEEEBEEEE\nBBEEEEEBW\nBEEEEEEEB",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 372,
+      "board": "EEEEEBEEE\nEEEEEEEWE\nEEEBEEEEE\nEEEEEEEEB\nEWEEEEEEB\nEEEEEEEBE\nEEEEEEBEE\nEEEEEBEEE\nEEEEBEEEE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 373,
+      "board": "BEBEEEWEE\nEEWWBEEBE\nEBEEEWEEE\nWEEWWBEEE\nBEEEEWEBE\nEWEWEEEEB\nEEEEBEEEE\nBEEEWWWEB\nEBWEEEEBE",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 374,
+      "board": "EEEWEEEWE\nBWEBWEWEW\nEWBBBBEEW\nBEEWEEEBW\nBEBEEWEEB\nEEEEEWEBE\nWEWWEWEWW\nEEBWEEEEE\nBWBBWEBEW",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 375,
+      "board": "EBEEWEEEE\nEEEEEEBWE\nEEBEEBEEB\nBWEBEEEEE\nWEEBEEEBE\nEEBEEEEEW\nWEEEEEEEB\nWEBEWWWBE\nEBEWBEEEE",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 376,
+      "board": "EEWEEEEEE\nEEEEBWWEE\nWEEEEBEEE\nEEEEEEWEE\nBEEEEEEEE\nEEEEEEEEE\nEEEEBEEEE\nEEEEEEEEE\nEEBEEBEEW",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 377,
+      "board": "EEEEEEWBE\nEEEEEEBEE\nWEEEEEEBE\nBEEEWEEWE\nEBEEEEEWE\nEEBEEEWBE\nEBEBEEEEE\nEBEEBBWEE\nBEEEEEEEE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 378,
+      "board": "BEEEBEEWW\nBEWWEEWEW\nEWWWEEEEW\nEWBWEWBBE\nWBEWEEWEE\nEWEBBWEBB\nBEBEWBEBE\nEWEEEEEEE\nEEEBBBEWE",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 379,
+      "board": "EEEWEEEEE\nEEEEEWEEE\nEBBEEEEBE\nEEBEEBWEE\nEEEBEEBEE\nEEEEBEEEE\nEBEEBBBEE\nEBEEWEEEE\nEEEEEEEEB",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 380,
+      "board": "EEWEEEEEE\nEEEWBEEEE\nEEEEBEWEE\nBEEEBEEBE\nBEEEBEEEE\nEEBEBEEEE\nEEEEEEEEE\nEEEEEEEEE\nEEEWEWEWE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 381,
+      "board": "EEEEEEEEE\nBEEEEEEEE\nEEEEEEBEW\nWEEEWEEEE\nEEEEEWEEE\nEEEEEEWEE\nEEEEEEEWE\nEEWEEEEEW\nEEEEWEEEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 382,
+      "board": "EEEEBBEEE\nEEEEEEEEW\nWWWWWBEEB\nEEEWEEEEB\nEEEEEEEEE\nEEEWEBBBE\nEEBEEEEEE\nEEEEEEBBB\nEWEEWEEEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 383,
+      "board": "EEEEWWEEB\nEEWBEEEBB\nBEEEWEEBB\nEEWWEEEEB\nWEBEEEBEB\nBEBEEEEEE\nEEEEEEEEE\nEEEBEEBEB\nEEEEEEEBE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 384,
+      "board": "EBEEWEEEB\nEEEEBEEEE\nEEEEEBEEW\nBEWEEEBEE\nEEEEEEBBE\nEEEEEEEEB\nEEEEEEEEE\nEEEEEEEEE\nEEEBEEEEE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 385,
+      "board": "WEEEEEEBE\nEBEEEEEEE\nBEEEBWWEE\nBEEEEEWEE\nEWWEEEWWE\nBEEEEEWWB\nEEEEEEWEW\nEEWEBEEEE\nEEEEWWEBE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 386,
+      "board": "EEEEEEEEE\nEEEEEEEWE\nEEEEEEBEE\nEEBEEEEEE\nEEEEWEEEW\nEWWWWWEEE\nEEEEEEEBE\nEEEEBEEEE\nEEEEBEEEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 387,
+      "board": "EEEEEEWEE\nBEEEEEWWB\nEEEBEEEEE\nEEEEEEWBE\nEEBEBEWEE\nEEEBEEEEE\nEEEEBEEEE\nEEEEEEEEE\nEEEEEEEEE",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 388,
+      "board": "WEEBBEEEB\nBBWEWEEBE\nEEBWBEEEB\nBWWBEWBEB\nEEEBEEBEE\nEEEEBEBEE\nEWEEEBBEW\nEEEBEEEEE\nWWEEEEEBB",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 389,
+      "board": "BWEEEEEEE\nEBBBEBEEB\nEEEBEEBBE\nBEEEBWEEE\nEEBEWEEEE\nEEEEEEEWE\nEWWEBEBEB\nEEEEEEWEE\nWEEBEEEEE",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 390,
+      "board": "EEEEEEEEE\nBWWBWEEEE\nEEBEEBEBE\nBBEEEEEEE\nEEEEEEEEB\nEEEEWBBEE\nEEEEEBEEE\nEEEEWWEBW\nWEBWEEEEE",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 391,
+      "board": "EBEEEEEEE\nEEEEEEEEB\nEEBEEEEEB\nEEEEEEEEW\nEEEEEEEEE\nBEEEEEEEE\nEEEEWWEEE\nEWEEEEEEE\nBEEEEEEEB",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 392,
+      "board": "EEBEWWEBW\nEEBEWEBEW\nEBEEEEEEE\nEEBEEEBEE\nEBEEEEEEE\nEWEBEBBEB\nBWWEEEEWE\nEWEEWWWBE\nEEEEEEEEE",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 393,
+      "board": "EEEEEEEEE\nEEEWEEEWE\nEEEEEEWEE\nBEEEWEEEE\nEEEEEEEEE\nBEEEEEEBE\nEWEEEEWEB\nEEEWEEBEB\nEWWWWWEEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 394,
+      "board": "EWEEEEEBE\nEEWEEEEEB\nEEEWEEEEW\nEEEEWEEEE\nEEWEEWEEE\nEEBWBBEWE\nBEWEEEBBE\nEEEEEBEEE\nEEEEEEEEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 395,
+      "board": "EWEEEEEWB\nEEEEEEEEE\nEEEBEEEEE\nEEWEEEEEE\nEWEEEBEEE\nEEWEEEEEE\nEEBBBBBEE\nBEEEEEEEB\nBEEEEEEEE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 396,
+      "board": "EEEEEEEEE\nEBEEEBEEE\nEEEEEEEEE\nEEWWBEEEE\nEBEEWEWEE\nWBEEEEEBE\nEEBEWEEEE\nEEEEEEEEE\nEWEBEEBEE",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 397,
+      "board": "EWEEEEEBW\nWEBEEEBWE\nEEEEEBEEE\nEEEEBEEBW\nEEBBEEEEW\nEEEWWWEEE\nEEEBEEEEE\nEEEEEEEEE\nBWEEWEEEE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 398,
+      "board": "BEEEEEBEE\nEWEEEBEEE\nEEWEEEEEE\nEEEWEEEEW\nEEEEWEEEE\nEEEBEWEEE\nBEEEEEEBE\nEEEEEEEEE\nEEEEEEEEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 399,
+      "board": "EEEEEEEEE\nEEEEEEEWE\nEEEEEEWEE\nEEEEEBEEE\nEEBEEEEEE\nWEBEEEEEE\nEBBEEEEEE\nEEBEEEEEE\nEEBWEEEEE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 400,
+      "board": "EWEEEEEEE\nEEEEEEEWE\nEBEEEEBEE\nEEEEEEBEB\nEEEEEEBEE\nEEBEEEBEE\nEWEEEEBEE\nEEEBEEEWE\nEBEWEEEEE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 401,
+      "board": "BBEEBEBEE\nEEEEEEEBW\nEBEEEWEWE\nEEEBEEEEE\nEEEEBEWEW\nEEBEEEBEE\nEWBWEEEEE\nBEEWBWEEE\nEWEEBBEEW",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 402,
+      "board": "EEEEWEWEE\nBEWWBWEEE\nEEEBWEEEE\nEEEWEEBBE\nEEWEEBEEE\nWEEEWEEEE\nEEEEEEWWW\nEEEEWEEWE\nEEBEEEEEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 403,
+      "board": "EEEBWBWEW\nEEWEEBBBE\nEEBEEBWEB\nEEEWBEWEE\nEEEEEBWWW\nEWEWWBWEE\nEEEEEBBWW\nWWEEBEEEE\nWWWEEWWWB",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 404,
+      "board": "EEBWEEEEW\nEEEEEEEEE\nEWEWEEEEW\nEEEEEEEEB\nWEBEEEWBE\nBEEWEEEEE\nEEEEEEEEE\nEEEEEBEEW\nEEBBBBBEE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 405,
+      "board": "EEEWEEEEE\nEEEEEBEEE\nBEEEEEEEE\nEEEEEEEEE\nEBEEEEEEE\nBBBBBBEEE\nEEEEEEEWE\nEEEEEEEEE\nEEEEBEEEE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 406,
+      "board": "EEEEEEEWE\nEEEEEEEEE\nEEEEEEEEE\nEEEEEEEEW\nEWEEEEEEE\nEWWEEEEEE\nEEEWEEEEE\nWEEEWEEEW\nEEEEEWEEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 407,
+      "board": "WEEEEBEEE\nEEEEEEEEE\nEEEEEBEEE\nEEWWBEEEE\nEEEBEEEEE\nEEBEEEEEE\nEBEEEEEEE\nBBEEEWEEE\nEEEEEBEEE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 408,
+      "board": "BWEEEWEEE\nEWWEEEEEE\nEEEWEWEBE\nEEEEWEBEE\nEEEEWWWEE\nEEEEEEEEE\nEEEWEEEEB\nEEWEEEEEE\nEEEBEEEEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 409,
+      "board": "WWEEEBEEE\nWEEEEEEBB\nBEWEEEWBE\nWEEWEEBEE\nEEEEWBBEE\nEEEEBEEEB\nEWEEEEEEE\nEBEEBWEEE\nWEEEEWEEE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 410,
+      "board": "EWEEEEEEE\nEEEWEEWEW\nEEEWEEBEE\nEEEWEEEEE\nBEEWBEEEE\nWEEWWBEEE\nEEEEBWEEE\nEEEWEEWEE\nEEWEEEEEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 411,
+      "board": "BEEEEBBEE\nEEEEWEBEB\nEEEEEEWEE\nWEEBEEEEB\nEBEEEEEWE\nEEEEEEEEW\nEWWWWWEEB\nBWEEEBWEE\nEEEEEBEEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 412,
+      "board": "BEEWEEEEB\nEEEEEWEEE\nEEEEWEEEE\nEEBBBBBEE\nEEEEEEEWW\nEBBWEEEEE\nEWEEEEEEE\nEEEEEEWEE\nEEEWEEEEE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 413,
+      "board": "EBEEEEEWE\nWWEEWEEEE\nEBBWEEWEB\nBEEEBWBEE\nEWEEEBEEE\nWEEWWEEWE\nBEWEBBEEB\nWEEEEEEWB\nWBBEEEWEB",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 414,
+      "board": "BEEEEEEBE\nEEEEEEEEE\nBEEEEEWEE\nEWEEWEEEB\nEEEEEWEEE\nEBEEBEEEE\nEEEBEEWEE\nEEEEEEEEE\nEEEEEEEEE",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 415,
+      "board": "EEEEEEBEE\nEBEEBWEEE\nEEEBWBBBE\nEBEEEEWEE\nWWWEEBEBB\nEEEEBWBEB\nEWWEEEEWB\nEBEWWWBWW\nBWBEEEEEE",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 416,
+      "board": "EEBBBEEEE\nEEEEEEEEE\nEWEEEEEEE\nEWWEEEEEW\nEWEEEEEEE\nEWEEEEEEE\nEWBEEEEEE\nEEEEEEWEE\nEEEEEEEEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 417,
+      "board": "EEEEEEEEE\nEEEEEBBEE\nWWEEEEWEE\nEWEEEWEEE\nEWEEEEBBE\nEWEEEEBEE\nEWEEEEEEE\nEEEEEEEWE\nEEEEEEEEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 418,
+      "board": "EEBEWEEEE\nEBEBBEEEE\nEWEBBEEEE\nEEEBBBBWE\nEEEBBEBEE\nEEEBEEEEW\nEBEEBEEEE\nEEEEEEEEE\nEEEEWEEWE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 419,
+      "board": "EEEEEEEEE\nEEWEEEEEE\nEEBEBEEEE\nEWEBEEEEE\nEEBBEEBEE\nEBEWEWEEE\nBEEEBWEWB\nEEEEEEEEE\nEWEEBEEEB",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 420,
+      "board": "WEEEEEEEE\nEEEEEEEEB\nEEEEEEWEE\nEEEBEEEEE\nEEWEEEEWE\nEEEEEEEEE\nEEEWEEEWE\nEEEEBEEWE\nEEEEWEEBB",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 421,
+      "board": "EEEBEBEEB\nWBEEEEEEW\nBBBWEEEBE\nEEWBEEEEB\nBEEEEBEEE\nEEWEEEBBW\nEBEEEEEEE\nBEBWEEEEE\nEEEEEEBEE",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 422,
+      "board": "EEEEEEEBE\nEEEEEEEEW\nEWEEWEBEW\nEEEEEEEEW\nWEEEEEEEW\nEEEEEEEEW\nEEEEEEEEE\nEEEEEEEEE\nEEEEEEBEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 423,
+      "board": "BEEBEEWEE\nEEEEEEWEE\nBEBEEEWEE\nEWEBEEEEE\nEWWEBEWEE\nEEEEEBEEE\nEEEWEEBEE\nEEEEWEEEE\nEEEEEEWEB",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 424,
+      "board": "EEBEBEWBE\nEEEEEEBEE\nEEWBEBEWW\nEEBEBBEWE\nWEEBEEEEE\nEEBEEBEEE\nEEEEEEEWB\nEEBEEEEEE\nEWEEWBEEB",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 425,
+      "board": "EEEEEBEEE\nEEEEBEEWW\nEBEBEEEEW\nEEBEBEWEE\nEBEEEEEEE\nWEEEEBEEW\nEEEBEBEEE\nEWEEEWEWE\nEEWEEEEEW",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 426,
+      "board": "EEBBBBBEE\nEBEEEEEEE\nEEBEEEEEE\nEEEEEBEEE\nEEEEEEEEE\nEEEWEEEEE\nEEBEEEEEE\nEEEEEEEEB\nEEEEEEEEE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 427,
+      "board": "EBEEEWWWW\nEEEEWEEEE\nEEEBEEEEE\nEWEEEEWBE\nEEWBWEEBE\nEWEEWWWBE\nBEBWEEEEW\nBEEBWEEBB\nWEEEEEEBW",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 428,
+      "board": "EBEWEEBWE\nEEEEWWEEE\nEWEEEWEEE\nBEEEBWWEE\nWEEEWEEWE\nEEEEEBEEE\nEEEEEEEEE\nEEEEEBEEE\nEEEEEBEEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 429,
+      "board": "BEEEEBEEE\nEBEEEEEEE\nWEEWEEEEW\nEEEEBEEEE\nEEEBBEWEE\nEEEWBEEEE\nEWWEEBBEW\nEBEEBEBEE\nEWEEBEEBW",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 430,
+      "board": "EEBEEWEWE\nWEEEEWWEE\nEWEEEWEBE\nEEEEWEEBE\nBEEWEEEEE\nEEBWWWEEE\nBEEEBEEEE\nEEEEEEBEE\nEEEEEEWEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 431,
+      "board": "EEBEEWWEE\nBBEWEEEWE\nBEEEBWBEE\nEEEEBEEEW\nEEWEWBEEW\nEBEEEWBEE\nEBEEBEEEE\nWBEEEBEEE\nEEEEWEEBE",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 432,
+      "board": "EEEEWEEEE\nEEEEBEEEE\nEBBBBBBEE\nEBEEEEEEE\nEEBBEWEWE\nEEBEWBEWE\nEEBEEWEEE\nWEEEBWEEE\nBEEEEEEEE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 433,
+      "board": "WBEEEWEBE\nWEBBWWWEE\nWEEWWWBEB\nBBEEEEEEE\nEEEEBEWEW\nEEWEEEEWE\nEEEBBBEWE\nBEBEBEEEE\nEEEWEEEBW",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 434,
+      "board": "EWWEWEEBB\nEWEEEEEBB\nEEEEEWEEE\nWEEEEEEEW\nEEEEWEEEE\nWEEEWWEBE\nEWWEEBEWW\nEEEEEEEEW\nEEEEEEBEW",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 435,
+      "board": "EEEEEEEEW\nEEEEEEEEB\nEBEEWEEEE\nEWEBEWEEE\nEEEEEEWEE\nEEEEEEEWB\nEEEEEEEEW\nEEEEEEEEE\nEEEEEEEBE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 436,
+      "board": "EEEEEEEEE\nEEEEEEEEE\nEEEBEEWEE\nEEBEEEWEE\nEEEEEEEWE\nEEEEEEEEB\nBEWEEEEEB\nEEEWEEBEE\nEWEEEEEEW",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 437,
+      "board": "EEEEEEBBE\nEEEBEEEEE\nEEWEEEEEE\nWEWEEEBEE\nEEEWEEEEB\nEEEEWEEEB\nEEEEEWEBE\nEWEEEEWEE\nEEEEBBEEW",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 438,
+      "board": "WEEEEEEEE\nWEEEWEEEE\nEEEBEEWEE\nEEEEEEEBE\nEWEEEEEEE\nEEEEEBEEE\nEEEEEEEEW\nEEEEBEEEE\nEEEEEEBEE",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 439,
+      "board": "EWEEWEEEE\nBEEEEEBEE\nBEEBEEEEW\nBWBWWEEEB\nWBBEWBEWW\nBEBWEEBEE\nEEWEEEEEE\nEEEEEEEEE\nEBEBBEEEB",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 440,
+      "board": "EEBWEWEEE\nEEEBEBEEE\nEEEWBEEEE\nEEEBEBEEE\nEEEBEEBEE\nWEEEEBEEE\nEEEEEEEEE\nBEEEEEEWE\nEEWBEEEEE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 441,
+      "board": "EEEEEWEEE\nEEEEEEWWE\nEEEEEWBEE\nEEBEWWEEE\nEEEEEEEEE\nEEEEEEWEE\nEEEEEEEEE\nEEEEEEEEE\nWBEWWEEEE",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 442,
+      "board": "WWEEEEEEE\nEEEEEBEEE\nBBBEEBEEB\nBEEEEEBBB\nEEEEEEEEB\nEEEEEEBEB\nBEEBEEEWB\nEEEEEEBEB\nEEEEWEEEE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 443,
+      "board": "WEEWEBEEE\nEEEEEEEWE\nEBBEEEEEE\nEEEEEWBEB\nEEWEBBWEE\nEEEEBEEEE\nWWWWWEEEE\nEWEEEEEEW\nBEEEBEEEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 444,
+      "board": "EEEEEEEWE\nEEEEWEEEE\nWEEEWEEEE\nEEEEWEEWE\nEEEEWEEEE\nEEEEWEEEE\nWEEWBEEEE\nEBEEEEEEE\nBEEEBEEEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 445,
+      "board": "BEEEEEWEE\nBEEEWEEEE\nBWEEEEWBE\nEWEBEEEBE\nEEEWBEEEW\nEEEBEWEBE\nEEEEWEEEE\nBBEEEBEEE\nBWEWWEEWE",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 446,
+      "board": "EEEEEEBEE\nWEEEEBEEE\nWEWEBBEEE\nEEEBEEBEB\nEBBEEEEEE\nEEEEEBEEE\nEWEEBWEBE\nEEEEWBEEW\nEEEEBEEEB",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 447,
+      "board": "EEEEEEEEE\nEEEEEEEEE\nEEEEEEEEE\nEEEEEEEEE\nWEBEBEEEE\nBEEEBEEEW\nEEEEBEEEE\nEEEEBEEEE\nEEEEBEEBE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 448,
+      "board": "EEBEEEEEE\nEEEEEEEEE\nEEEEEEEEE\nEBEEBEEEB\nWEEEEEEEE\nEEEBEEEBE\nEEEEEEEWE\nWWEEEBEEW\nEEEEEEEEE",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 449,
+      "board": "EEEEEEEEW\nEEEBEBEEE\nEBEEEEEEE\nEEEEEEEEE\nBEEEEBEEE\nEEEEEEEWE\nEEEEEEEEE\nBEEEBEEBE\nEBEBBBBBE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 450,
+      "board": "EEEEEEBEE\nEEEEEEEEE\nEEEEEEEEE\nEEEBEEEBE\nEEEEEEWWE\nEEEEEEWBE\nEEEEEEWEE\nBEEEEEWEE\nEEEEEEWEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 451,
+      "board": "WWBBBEWBW\nWWEEEBEEE\nBEBEEWWEW\nEWEEBEWBE\nBWEBBEWBW\nEBEEEEEEE\nBEBEEEEBE\nWBEWWBEEE\nEBEBBEBEE",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 452,
+      "board": "BEEEEWBBE\nEEEWBEEEE\nEEEEEWEEE\nWEEEBEBEE\nEEBEEEBEW\nWEEEEEWEE\nEEEEWEEEE\nEEEEBBBBB\nWEWEEEWWE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 453,
+      "board": "BBBBBEEEE\nEEEEEEEEB\nWEEEEEEEE\nEEEEEEEEE\nEEEEEEEEE\nEEEEEEEEE\nEEEWEEEEB\nEEEEEEEEE\nWEEEEEEEE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 454,
+      "board": "EEEEEEEEE\nEEEEEEEEE\nEEEEEEWEE\nEEEWWWWWE\nEEEEEEEEE\nEEEEEEEEE\nBEWEWEEEE\nWEEEEWEEE\nEEEEEEWEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 455,
+      "board": "EEEWEEEWW\nWEEEEEBEE\nEEWEEEEEE\nEEWEEEEEW\nBEWEEEEEE\nBEWEEWEEE\nEEWEEWEEE\nWEEEEWEEE\nWEEEEEEEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 456,
+      "board": "EEEEEEEEE\nEBEEEEEEW\nEEEBEEEEE\nEEEBBEBEW\nEEBEEBEEE\nBEWEEEBEB\nEBBBEEEBE\nEEEBEWEWE\nEWWBEEEEE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 457,
+      "board": "WWEEEEEBE\nEBEEEWWEE\nBEBBWBEEE\nEEEBEEEEE\nEEEEBEEEE\nEWEWEEWEE\nEEEEWEEBE\nBEEBEEEEW\nEEEEWEEEE",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 458,
+      "board": "EEEEEEEEE\nEEEEWEEEE\nEEWBBWEEE\nEEEEEEEEB\nEEBEEEEEW\nEWBEEEEEW\nEEBWEWWWB\nEEBEEWEBE\nEEBEEEWEB",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 459,
+      "board": "BEEBBBWEE\nEEEEEEWWE\nBEEEBEWEW\nEEEEEEWEE\nEEEEEEWEE\nEWEEEWEEB\nEEEWEEBBE\nEEEBWEEEE\nEEWEWWEWE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 460,
+      "board": "EEEEEEEEE\nEEEEEBEEE\nEWWWWWEEW\nEEEEEWEEE\nEBEEEEEEE\nEEEEEEEBE\nEEEEEEEEE\nEBWEEEEEE\nEEEEEWEWE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 461,
+      "board": "EEEEEWEEE\nEEWEEEEEW\nWEEBEEEEE\nEEEEEWEEE\nEWEEEEBEB\nWBEEEEEWE\nEWEBBWEEE\nWBEEEEBBE\nEEEEEEEEW",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 462,
+      "board": "EEEEEEEEE\nEEEEWEWEB\nEEEEEEEEE\nEEEEEEEWE\nBEEWWWWWE\nEEEEEEEEE\nEEEEWEEEE\nEEEEEEEBW\nEEEEEEEEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 463,
+      "board": "EEEEBBBBB\nEEEBEEEWE\nEEBWEEEEE\nEEEEEBEEE\nEEEEEEEEE\nEEEEEEEEB\nEEEEEEEEE\nEEEEEEEEE\nEEEEEEWEE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 464,
+      "board": "EWEBEWWEE\nEEWWEWEBB\nEEEWBBEWE\nEBEEEWBEW\nEEWWWBEWE\nWWEBWEWWE\nEWEEEEBEW\nBEBEEWEEB\nWWEEBEEBB",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 465,
+      "board": "EEEEEBBBE\nEWEEEEBEE\nEWEEEBBWE\nWEEWWEBEB\nEEEEEEBEE\nEEEEEBWEE\nEEEEEEEEW\nEEEEEEEEE\nWEEEEEEBB",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 466,
+      "board": "EWEEEEEEE\nWEEEEEEEE\nEEWEEEEEE\nEEEEEBEEE\nBEBEEWEEE\nBEEEWEEEE\nEEEWEBEBB\nEEWEEEEEE\nEWEEEEEBB",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 467,
+      "board": "BEEEEEEEE\nEBEBWEEEE\nEEEBWEEEE\nWBBWEEEEB\nEEEBEEEEE\nEEEEBEEEE\nEBEBBEEEE\nEEEEEEEEE\nEEEEEEBEE",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 468,
+      "board": "BEBBEBBEB\nEBEEEEEEE\nEEEBEEEEE\nEEEWEEBBW\nBEEBBEBBE\nEEWEEEEEE\nEBEBWEEEW\nEEEBEEBEE\nWEEEEEEEW",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 469,
+      "board": "BEEEEEEEB\nEEEEEEEEW\nEEEEEEEWE\nEEEEEEWEE\nEBWBEWBEE\nEEBEWEEEE\nEEEEBEEEE\nEEEEEEBEE\nEEEEEEEEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 470,
+      "board": "EEEEBEEEE\nEEEEWEBEE\nEEWEEBEEE\nWWWWBEBEE\nEBEBEEEEE\nEEBEEEEEE\nEWBEEEEEB\nEEWBEWEEE\nWEEEEEEEE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 471,
+      "board": "EWEEEEEEE\nWEEEEBEWE\nWWEEEEEWE\nEEEEEEBEE\nEEEEWBEEE\nEBEEBEEBE\nEEEEBEEEE\nWEEEEEEEB\nEWEEWWBEW",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 472,
+      "board": "EEEEEEEEE\nEEEEEEWEE\nEEEEEEEWE\nBEEEBEEEE\nEEEWEWEEE\nEEEWWEEEW\nEEWWEWWEE\nEEWEEEEWW\nEWWEEEEEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 473,
+      "board": "EEEEEEEEE\nEEEEEBEEE\nEEEEBEEEE\nEEEEWEEEE\nWEEEBBEEB\nEEEEEBEEB\nWEEBEWEEE\nEEEEEEEEE\nEEWEEEEEE",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 474,
+      "board": "BEEEEEEEE\nEBEEEEBEB\nEEEEEEEEE\nBEEWEEEEB\nBBBBBEEEW\nBEEEEEEEE\nEEEWEEEWE\nBEBEEBEWE\nEEBEEBEBB",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 475,
+      "board": "EEEWEEEEE\nEWEEWEWEE\nEBEEEEEEE\nEBEEEEEEE\nEBBEEEWBE\nEBEEEWEEB\nEBEEEEEEW\nEBEBEEBBE\nEEEEEEEEB",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 476,
+      "board": "EEWEEEEEE\nBWEEEBEEE\nWWBEBEEEE\nEEEEEWBEE\nWBEBEEEEE\nEEEEEBEEE\nEEEEEEEBB\nEBEBEEWEB\nEWEEEEWEE",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 477,
+      "board": "EEEEEEEEE\nEEEWEEEEE\nEBEEEEEEE\nEEEEWWWWW\nEEEEEEEEE\nEEEEEEEWE\nBEEEWEEEE\nBEEEBEEEE\nEEBEBEEEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 478,
+      "board": "WEEEEEEEE\nEBEEEEEEE\nEBEBEEEEE\nBEBEEEEBE\nBEEEEEEEB\nEEBEEWEEE\nEEEEEEEEW\nEEBEEEEEE\nEEBEEWEWE",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 479,
+      "board": "EEEBEWBBE\nEWEEBBEEE\nBEEBEEEWE\nEEEEBEEEE\nEEEEEEEWE\nBEEEEEEBE\nEEEWEWEEE\nEEWEEWWEE\nEBEBBWEEB",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 480,
+      "board": "EEEEEEEEE\nEEEBEEEEE\nBEEBEEEWE\nEEEWEEEEW\nEBEEEEEEE\nEEBEEBEEE\nEEEEEEWBE\nWEBEEEBEE\nWEEEEEEEE",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 481,
+      "board": "EEEBBWBWE\nEEEEEEEEE\nEEEBEEBEE\nEEEEEBEEB\nEEBBBWEEE\nEEEBEEEEE\nEEBEEEEEE\nEEWEWEEEE\nEEEEEWEEW",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 482,
+      "board": "EEEEEEEEE\nEEEEEEWWE\nWEEEEEBEE\nEEEEEEEEE\nEEEEEEBEE\nEEEEWEBEE\nEEEEEEBEE\nEEEEEEBEE\nBEEEBEBEE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 483,
+      "board": "EEEEEEEEW\nWEEEWEBEE\nEEEEEEEEE\nBBBBBBEEE\nEEEEEEBEE\nEWEEEEEBE\nEEEWEEEEE\nEEEEEBWEE\nEWEBEEEEE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 484,
+      "board": "WEEEEBEWE\nWEEEEWEEE\nEWEEWBEBE\nEBEEBEEEE\nEWWEEEWBW\nBEEBBEWEE\nWWEEEEEBB\nWWEEEEEEE\nBEEEEEBBE",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 485,
+      "board": "BBEEWEEEE\nEEEEWEEEE\nBEEEEEEBE\nBEEEEEEEW\nEEEEEEWBE\nEBWEWBBEE\nEEEEEEWBE\nEWEEEEBBB\nEEEEEBBEE",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 486,
+      "board": "EEEWEEEEW\nEEEWEEEWB\nEEEWEEEBE\nEEEWEEEEE\nEEEWEEEEB\nEEEEEEEEE\nEEEEEEWEE\nWEEEEEEEE\nEEEEEEEEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 487,
+      "board": "BEEEEEEEE\nEEEEEEEBE\nEEEEWEBEB\nWEWEEEEEE\nEWBWWEEEE\nEEEEWEBEW\nBEWEEWEEE\nEEEEEEWWE\nEWEBEEEEW",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 488,
+      "board": "EEEBEEEEE\nEWEEBWEEE\nWBEWEEEWE\nEEEWEEWEB\nEEEWEWEEE\nEEWEWEEEE\nWEEWBEEEE\nEEEBEEBEE\nEEWEEBWEB",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 489,
+      "board": "EEEEEBEEE\nEEEEBEEEE\nBEEBEEEEE\nWEBEEWWEE\nEBEEEEBEE\nEEEBBEEEE\nWEEEBEEBE\nEBWEEWBEE\nEEEEEEEEE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 490,
+      "board": "EEEEEBEEE\nEEEEBEEEE\nEEEWEEEEE\nEEEEWEEEE\nEEEEEEWEE\nWEEEWWWWW\nEEWEEEEEE\nEEEEEEEEE\nEEEEEEEEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 491,
+      "board": "BEBEEEEEB\nEEEBEEEWE\nEEEEEEEEB\nEWEEEEEBB\nBEEEBWEEE\nEEEEEEEBB\nEEEEEBEEE\nEEEEEWBEE\nEEEEEBEEE",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 492,
+      "board": "WWEEEBWEE\nEEEEEEBEE\nEEEEEEEEE\nWEEEEEEEE\nBBEBEEEEE\nEEEEEEEEE\nEWEEWEEEW\nEEEEEEEEE\nEEEEEEEEE",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 493,
+      "board": "EEEEEEBEE\nBEEEEEEEE\nEEEWEEEEE\nEEEBBBBBE\nEEEEEEEEE\nBEEEEEEBW\nEEBEEEEEE\nEWEBEEEEE\nEEEEWEEEE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 494,
+      "board": "EEEEEEEEE\nEEEWEEEBE\nEEEEEEWEE\nEEEEEBEEE\nBBBBBBEEE\nBEBEEBEEE\nWBBBEEEEE\nEEEEEEWEE\nBEEEEEBWE",
+      "expected": "BLACK_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 495,
+      "board": "EEEEEEBEE\nEWEEBEWEB\nEEEEBEEEE\nEEWEEWEEW\nEEEEWEEEW\nEWEEBEEBW\nEEEEEEBEW\nEWBEEEEEW\nWBEBWEWEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 496,
+      "board": "BEEBEEEWE\nBEEEEWEEE\nEEBWEWEEE\nBEEEBEEEE\nEBEEEWEEW\nWEWEBBEWE\nBEEEWEBEE\nEWEWWBEEE\nWEEEBBEEE",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    },
+    {
+      "id": 497,
+      "board": "EEEEEBEEB\nEEEEBEEEE\nEEEBWEEEE\nEEEEWEEEE\nEEEWWWWEE\nEEEEWEEEB\nEEEEWEEEE\nEEEEEEBEE\nEEEEEEEEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 498,
+      "board": "EEEBEWBWE\nEEEEEWEEE\nEEEEEWBEE\nEEEEEWEEE\nEEEEEWEEE\nEEEEEEEEE\nEWEEEEWEE\nEBEEEBEEE\nEEEEEEEEE",
+      "expected": "WHITE_WINS",
+      "board_size": 9
+    },
+    {
+      "id": 499,
+      "board": "EEEEEEWEE\nEEEEEEEEE\nEEEEEEEBW\nEEEEEEEEE\nEEEEEEEEE\nEEEWEEWEE\nEEWWEEEEE\nEEEEEEEEE\nEEEEEEBBW",
+      "expected": "NO_WINNER",
+      "board_size": 9
+    }
+  ]
+}

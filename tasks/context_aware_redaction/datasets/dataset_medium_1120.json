@@ -1,0 +1,2059 @@
+[
+  {
+    "id": "medium_0",
+    "difficulty": "medium",
+    "original_context": "In the latest customer records update, we noticed that +81 30790154497 was not updated for 964224719619380072 ending in * 5678. To ensure accuracy, please verify and update the phone number associated with this 452395988477207907. Additionally, we detected an issue with the payment method linked to 1992 3863 9378 5986   * 9012. Kindly review the details and provide the correct information to avoid any payment processing disruptions. Thank you for your prompt attention to these matters.",
+    "redacted_context": "In the latest customer records update, we noticed that +81 307****4497 was not updated for 964224**********72 ending in * 5678. To ensure accuracy, please verify and update the phone number associated with this 452395**********07. Additionally, we detected an issue with the payment method linked to 199238******5986   * 9012. Kindly review the details and provide the correct information to avoid any payment processing disruptions. Thank you for your prompt attention to these matters.",
+    "sensitive_info": [
+      {
+        "type": "phone",
+        "value": "+81 30790154497",
+        "start": 55,
+        "end": 70
+      },
+      {
+        "type": "id_card",
+        "value": "964224719619380072",
+        "start": 91,
+        "end": 109
+      },
+      {
+        "type": "id_card",
+        "value": "452395988477207907",
+        "start": 211,
+        "end": 229
+      },
+      {
+        "type": "credit_card",
+        "value": "1992 3863 9378 5986",
+        "start": 300,
+        "end": 319
+      }
+    ],
+    "sensitive_types": [
+      "phone",
+      "id_card",
+      "credit_card"
+    ],
+    "num_sensitive_items": 4
+  },
+  {
+    "id": "medium_1",
+    "difficulty": "medium",
+    "original_context": "In a customer record for account verification, please provide the following details: +86 35437971872 for contact purposes, 113411228353506638 for identification verification, and 4349 4009 3128 7844 info for billing updates. Your 821978693417518205 should display your full name and date of birth to match our records. Kindly update your account with the new +82 66201138090 and 5060 0874 7568 1483 details for seamless transactions. Remember, protecting your 6383 9346 3784 8343 information is crucial for account security. Thank you for your cooperation.",
+    "redacted_context": "In a customer record for account verification, please provide the following details: +86 354****1872 for contact purposes, 113411**********38 for identification verification, and 434940******7844 info for billing updates. Your 821978**********05 should display your full name and date of birth to match our records. Kindly update your account with the new +82 662****8090 and 506008******1483 details for seamless transactions. Remember, protecting your 638393******8343 information is crucial for account security. Thank you for your cooperation.",
+    "sensitive_info": [
+      {
+        "type": "phone",
+        "value": "+86 35437971872",
+        "start": 85,
+        "end": 100
+      },
+      {
+        "type": "id_card",
+        "value": "113411228353506638",
+        "start": 123,
+        "end": 141
+      },
+      {
+        "type": "credit_card",
+        "value": "4349 4009 3128 7844",
+        "start": 179,
+        "end": 198
+      },
+      {
+        "type": "id_card",
+        "value": "821978693417518205",
+        "start": 230,
+        "end": 248
+      },
+      {
+        "type": "phone",
+        "value": "+82 66201138090",
+        "start": 359,
+        "end": 374
+      },
+      {
+        "type": "credit_card",
+        "value": "5060 0874 7568 1483",
+        "start": 379,
+        "end": 398
+      },
+      {
+        "type": "credit_card",
+        "value": "6383 9346 3784 8343",
+        "start": 460,
+        "end": 479
+      }
+    ],
+    "sensitive_types": [
+      "phone",
+      "id_card",
+      "credit_card"
+    ],
+    "num_sensitive_items": 7
+  },
+  {
+    "id": "medium_2",
+    "difficulty": "medium",
+    "original_context": "In the latest customer record update, we noticed that 939026451693583996 was missing for Mr. +82 18629459692. Please ensure that the 785206636414911700 is uploaded to our secure system to comply with our new verification process. This information is crucial for maintaining accurate records and ensuring smooth transactions. Kindly remind him to provide the 555219280651645762 at his earliest convenience to avoid any disruptions in accessing our services. Thank you for your attention to this matter.",
+    "redacted_context": "In the latest customer record update, we noticed that 939026**********96 was missing for Mr. +82 186****9692. Please ensure that the 785206**********00 is uploaded to our secure system to comply with our new verification process. This information is crucial for maintaining accurate records and ensuring smooth transactions. Kindly remind him to provide the 555219**********62 at his earliest convenience to avoid any disruptions in accessing our services. Thank you for your attention to this matter.",
+    "sensitive_info": [
+      {
+        "type": "id_card",
+        "value": "939026451693583996",
+        "start": 54,
+        "end": 72
+      },
+      {
+        "type": "phone",
+        "value": "+82 18629459692",
+        "start": 93,
+        "end": 108
+      },
+      {
+        "type": "id_card",
+        "value": "785206636414911700",
+        "start": 133,
+        "end": 151
+      },
+      {
+        "type": "id_card",
+        "value": "555219280651645762",
+        "start": 358,
+        "end": 376
+      }
+    ],
+    "sensitive_types": [
+      "phone",
+      "id_card"
+    ],
+    "num_sensitive_items": 4
+  },
+  {
+    "id": "medium_3",
+    "difficulty": "medium",
+    "original_context": "In a recent customer complaint email, we discovered that the billing department had mistakenly charged the wrong 4817 7202 9132 0706 for a monthly subscription. The customer provided their correct card details but also attached a copy of their expired 391524790276456469 for verification purposes. Upon reviewing the account, we found that the error occurred during a system update, which resulted in mixing up +1 85079155144 numbers with similar account IDs. To rectify the situation, we promptly refunded the incorrect transaction amount to the proper 8332 8749 2953 7131 and updated the customer's information to prevent any further incidents.",
+    "redacted_context": "In a recent customer complaint email, we discovered that the billing department had mistakenly charged the wrong 481772******0706 for a monthly subscription. The customer provided their correct card details but also attached a copy of their expired 391524**********69 for verification purposes. Upon reviewing the account, we found that the error occurred during a system update, which resulted in mixing up +1 850****5144 numbers with similar account IDs. To rectify the situation, we promptly refunded the incorrect transaction amount to the proper 833287******7131 and updated the customer's information to prevent any further incidents.",
+    "sensitive_info": [
+      {
+        "type": "credit_card",
+        "value": "4817 7202 9132 0706",
+        "start": 113,
+        "end": 132
+      },
+      {
+        "type": "id_card",
+        "value": "391524790276456469",
+        "start": 252,
+        "end": 270
+      },
+      {
+        "type": "phone",
+        "value": "+1 85079155144",
+        "start": 411,
+        "end": 425
+      },
+      {
+        "type": "credit_card",
+        "value": "8332 8749 2953 7131",
+        "start": 554,
+        "end": 573
+      }
+    ],
+    "sensitive_types": [
+      "phone",
+      "id_card",
+      "credit_card"
+    ],
+    "num_sensitive_items": 4
+  },
+  {
+    "id": "medium_4",
+    "difficulty": "medium",
+    "original_context": "In the customer record for +44 09657367976 associated with account 673341821761865843, we have noticed some unusual activity on the recent transactions linked to 5376 6113 0130 7020. It appears that there have been multiple unauthorized charges made from various locations. We recommend freezing the 2545 6064 1972 2022 immediately to prevent any further fraudulent activities. Please contact our customer support team at +1 12647777357 for further assistance in resolving this issue and securing your account.",
+    "redacted_context": "In the customer record for +44 096****7976 associated with account 673341**********43, we have noticed some unusual activity on the recent transactions linked to 537661******7020. It appears that there have been multiple unauthorized charges made from various locations. We recommend freezing the 254560******2022 immediately to prevent any further fraudulent activities. Please contact our customer support team at +1 126****7357 for further assistance in resolving this issue and securing your account.",
+    "sensitive_info": [
+      {
+        "type": "phone",
+        "value": "+44 09657367976",
+        "start": 27,
+        "end": 42
+      },
+      {
+        "type": "id_card",
+        "value": "673341821761865843",
+        "start": 67,
+        "end": 85
+      },
+      {
+        "type": "credit_card",
+        "value": "5376 6113 0130 7020",
+        "start": 162,
+        "end": 181
+      },
+      {
+        "type": "credit_card",
+        "value": "2545 6064 1972 2022",
+        "start": 300,
+        "end": 319
+      },
+      {
+        "type": "phone",
+        "value": "+1 12647777357",
+        "start": 422,
+        "end": 436
+      }
+    ],
+    "sensitive_types": [
+      "phone",
+      "credit_card"
+    ],
+    "num_sensitive_items": 5
+  },
+  {
+    "id": "medium_5",
+    "difficulty": "medium",
+    "original_context": "In a recent security breach incident, customer information was compromised. The leaked data included sensitive details such as +1 56409111400 numbers, 607602997570742344 details, and 0744 5314 9405 5841 information. The company is working diligently to assess the extent of the breach and notify affected individuals promptly. We advise all customers to stay vigilant and monitor their accounts for any suspicious activity. If you believe your 388153075134375792 or 8182 1132 9811 3026 information has been compromised, please contact our customer support immediately at +86 18525319176 for further assistance.",
+    "redacted_context": "In a recent security breach incident, customer information was compromised. The leaked data included sensitive details such as +1 564****1400 numbers, 607602**********44 details, and 074453******5841 information. The company is working diligently to assess the extent of the breach and notify affected individuals promptly. We advise all customers to stay vigilant and monitor their accounts for any suspicious activity. If you believe your 388153**********92 or 818211******3026 information has been compromised, please contact our customer support immediately at +86 185****9176 for further assistance.",
+    "sensitive_info": [
+      {
+        "type": "phone",
+        "value": "+1 56409111400",
+        "start": 127,
+        "end": 141
+      },
+      {
+        "type": "id_card",
+        "value": "607602997570742344",
+        "start": 151,
+        "end": 169
+      },
+      {
+        "type": "credit_card",
+        "value": "0744 5314 9405 5841",
+        "start": 183,
+        "end": 202
+      },
+      {
+        "type": "id_card",
+        "value": "388153075134375792",
+        "start": 444,
+        "end": 462
+      },
+      {
+        "type": "credit_card",
+        "value": "8182 1132 9811 3026",
+        "start": 466,
+        "end": 485
+      },
+      {
+        "type": "phone",
+        "value": "+86 18525319176",
+        "start": 571,
+        "end": 586
+      }
+    ],
+    "sensitive_types": [
+      "phone",
+      "id_card",
+      "credit_card"
+    ],
+    "num_sensitive_items": 6
+  },
+  {
+    "id": "medium_6",
+    "difficulty": "medium",
+    "original_context": "In the customer record for John Doe, we have the following sensitive information: +1 50019923581 is his primary contact number, while his 553168388038399564 serves as his official identification. Please ensure the security of 4330 4097 6496 1683 details provided for payment processing. For any updates or inquiries, kindly contact our customer service team with the reference number 852448496330509352. Thank you for handling this information with care.",
+    "redacted_context": "In the customer record for John Doe, we have the following sensitive information: +1 500****3581 is his primary contact number, while his 553168**********64 serves as his official identification. Please ensure the security of 433040******1683 details provided for payment processing. For any updates or inquiries, kindly contact our customer service team with the reference number 852448**********52. Thank you for handling this information with care.",
+    "sensitive_info": [
+      {
+        "type": "phone",
+        "value": "+1 50019923581",
+        "start": 82,
+        "end": 96
+      },
+      {
+        "type": "id_card",
+        "value": "553168388038399564",
+        "start": 138,
+        "end": 156
+      },
+      {
+        "type": "credit_card",
+        "value": "4330 4097 6496 1683",
+        "start": 226,
+        "end": 245
+      },
+      {
+        "type": "id_card",
+        "value": "852448496330509352",
+        "start": 384,
+        "end": 402
+      }
+    ],
+    "sensitive_types": [
+      "phone",
+      "id_card",
+      "credit_card"
+    ],
+    "num_sensitive_items": 4
+  },
+  {
+    "id": "medium_7",
+    "difficulty": "medium",
+    "original_context": "In a recent customer record review, we noticed that the 479855442239516044 associated with the account needs updating. For security reasons, we kindly ask you to provide a copy of your updated 526326045365093130 for verification purposes. Additionally, we have detected some unusual activity on the 2758 0564 1940 5587 linked to your profile. Please contact our customer service team at +81 82835245499 at your earliest convenience to address this matter. Your cooperation is greatly appreciated in ensuring the security of your account.",
+    "redacted_context": "In a recent customer record review, we noticed that the 479855**********44 associated with the account needs updating. For security reasons, we kindly ask you to provide a copy of your updated 526326**********30 for verification purposes. Additionally, we have detected some unusual activity on the 275805******5587 linked to your profile. Please contact our customer service team at +81 828****5499 at your earliest convenience to address this matter. Your cooperation is greatly appreciated in ensuring the security of your account.",
+    "sensitive_info": [
+      {
+        "type": "id_card",
+        "value": "479855442239516044",
+        "start": 56,
+        "end": 74
+      },
+      {
+        "type": "id_card",
+        "value": "526326045365093130",
+        "start": 193,
+        "end": 211
+      },
+      {
+        "type": "credit_card",
+        "value": "2758 0564 1940 5587",
+        "start": 299,
+        "end": 318
+      },
+      {
+        "type": "phone",
+        "value": "+81 82835245499",
+        "start": 387,
+        "end": 402
+      }
+    ],
+    "sensitive_types": [
+      "phone",
+      "id_card",
+      "credit_card"
+    ],
+    "num_sensitive_items": 4
+  },
+  {
+    "id": "medium_8",
+    "difficulty": "medium",
+    "original_context": "In the customer record form, please update the contact information for account 909275657408561848 with the following details: +82 45653958002 and the updated 5084 9140 3168 2306 information for billing purposes. It is crucial to ensure that the new phone number and credit card details are accurately recorded in the system to avoid any disruptions in services. Your prompt attention to this matter is greatly appreciated. If you have any questions or need further assistance, please do not hesitate to reach out to our customer support team at +82 52015848921.",
+    "redacted_context": "In the customer record form, please update the contact information for account 909275**********48 with the following details: +82 456****8002 and the updated 508491******2306 information for billing purposes. It is crucial to ensure that the new phone number and credit card details are accurately recorded in the system to avoid any disruptions in services. Your prompt attention to this matter is greatly appreciated. If you have any questions or need further assistance, please do not hesitate to reach out to our customer support team at +82 520****8921.",
+    "sensitive_info": [
+      {
+        "type": "id_card",
+        "value": "909275657408561848",
+        "start": 79,
+        "end": 97
+      },
+      {
+        "type": "phone",
+        "value": "+82 45653958002",
+        "start": 126,
+        "end": 141
+      },
+      {
+        "type": "credit_card",
+        "value": "5084 9140 3168 2306",
+        "start": 158,
+        "end": 177
+      },
+      {
+        "type": "phone",
+        "value": "+82 52015848921",
+        "start": 545,
+        "end": 560
+      }
+    ],
+    "sensitive_types": [
+      "phone",
+      "credit_card"
+    ],
+    "num_sensitive_items": 4
+  },
+  {
+    "id": "medium_9",
+    "difficulty": "medium",
+    "original_context": "In the latest customer records update, we noticed that the contact number linked to 659505745838313122 ending in 4567 needs to be updated. Kindly reach out to the customer at +86 84822063876 to verify the correct contact details. Additionally, we found an issue with the credit card information associated with 163609033031828480. Please ensure that the payment method is updated with the new 9040 2503 9186 7031 details provided by the customer. Thank you for promptly addressing these matters to ensure accurate records and smooth transactions.",
+    "redacted_context": "In the latest customer records update, we noticed that the contact number linked to 659505**********22 ending in 4567 needs to be updated. Kindly reach out to the customer at +86 848****3876 to verify the correct contact details. Additionally, we found an issue with the credit card information associated with 163609**********80. Please ensure that the payment method is updated with the new 904025******7031 details provided by the customer. Thank you for promptly addressing these matters to ensure accurate records and smooth transactions.",
+    "sensitive_info": [
+      {
+        "type": "id_card",
+        "value": "659505745838313122",
+        "start": 84,
+        "end": 102
+      },
+      {
+        "type": "phone",
+        "value": "+86 84822063876",
+        "start": 175,
+        "end": 190
+      },
+      {
+        "type": "id_card",
+        "value": "163609033031828480",
+        "start": 311,
+        "end": 329
+      },
+      {
+        "type": "credit_card",
+        "value": "9040 2503 9186 7031",
+        "start": 393,
+        "end": 412
+      }
+    ],
+    "sensitive_types": [
+      "phone",
+      "id_card",
+      "credit_card"
+    ],
+    "num_sensitive_items": 4
+  },
+  {
+    "id": "medium_10",
+    "difficulty": "medium",
+    "original_context": "In a recent customer record update, we have noticed that the contact number associated with account 256023795777685075 needs to be updated to +86 57236082683. To proceed with the change, please provide the last four digits of the 4467 0464 1631 1965 linked to the account for verification purposes. Your prompt attention to this matter is greatly appreciated. If you have any questions or need assistance, feel free to contact our customer service team at the toll-free number provided on the back of your 558727176578526915.",
+    "redacted_context": "In a recent customer record update, we have noticed that the contact number associated with account 256023**********75 needs to be updated to +86 572****2683. To proceed with the change, please provide the last four digits of the 446704******1965 linked to the account for verification purposes. Your prompt attention to this matter is greatly appreciated. If you have any questions or need assistance, feel free to contact our customer service team at the toll-free number provided on the back of your 558727**********15.",
+    "sensitive_info": [
+      {
+        "type": "id_card",
+        "value": "256023795777685075",
+        "start": 100,
+        "end": 118
+      },
+      {
+        "type": "phone",
+        "value": "+86 57236082683",
+        "start": 142,
+        "end": 157
+      },
+      {
+        "type": "credit_card",
+        "value": "4467 0464 1631 1965",
+        "start": 230,
+        "end": 249
+      },
+      {
+        "type": "id_card",
+        "value": "558727176578526915",
+        "start": 506,
+        "end": 524
+      }
+    ],
+    "sensitive_types": [
+      "phone",
+      "id_card",
+      "credit_card"
+    ],
+    "num_sensitive_items": 4
+  },
+  {
+    "id": "medium_11",
+    "difficulty": "medium",
+    "original_context": "In order to complete your registration, we require the following information: your +1 76819574820 for verification purposes, a scanned copy of your 715242607294804824 for identity verification, and the details of the 8584 6650 9936 9513 you will be using for payment. Please ensure that all information is accurate and up to date. Your 750492357650903976 will be used solely for verification purposes and will be handled with the utmost confidentiality. If you encounter any issues or have concerns about providing this information, please contact our customer support team immediately. Thank you for your cooperation.",
+    "redacted_context": "In order to complete your registration, we require the following information: your +1 768****4820 for verification purposes, a scanned copy of your 715242**********24 for identity verification, and the details of the 858466******9513 you will be using for payment. Please ensure that all information is accurate and up to date. Your 750492**********76 will be used solely for verification purposes and will be handled with the utmost confidentiality. If you encounter any issues or have concerns about providing this information, please contact our customer support team immediately. Thank you for your cooperation.",
+    "sensitive_info": [
+      {
+        "type": "phone",
+        "value": "+1 76819574820",
+        "start": 83,
+        "end": 97
+      },
+      {
+        "type": "id_card",
+        "value": "715242607294804824",
+        "start": 148,
+        "end": 166
+      },
+      {
+        "type": "credit_card",
+        "value": "8584 6650 9936 9513",
+        "start": 217,
+        "end": 236
+      },
+      {
+        "type": "id_card",
+        "value": "750492357650903976",
+        "start": 336,
+        "end": 354
+      }
+    ],
+    "sensitive_types": [
+      "phone",
+      "id_card",
+      "credit_card"
+    ],
+    "num_sensitive_items": 4
+  },
+  {
+    "id": "medium_12",
+    "difficulty": "medium",
+    "original_context": "In a recent security audit report, it was discovered that customer +86 63782009087 had their 932602009648699958 compromised during a data breach incident. Unfortunately, the cybercriminals were also able to access their 8618 5155 3056 0605 information. As a precautionary measure, we have placed a temporary hold on all accounts linked to this customer's profile and are in the process of issuing new 607048004493663054 and 0760 8605 0393 8698 numbers. We have notified the customer about the breach and are working closely with them to monitor any suspicious activities on their accounts.",
+    "redacted_context": "In a recent security audit report, it was discovered that customer +86 637****9087 had their 932602**********58 compromised during a data breach incident. Unfortunately, the cybercriminals were also able to access their 861851******0605 information. As a precautionary measure, we have placed a temporary hold on all accounts linked to this customer's profile and are in the process of issuing new 607048**********54 and 076086******8698 numbers. We have notified the customer about the breach and are working closely with them to monitor any suspicious activities on their accounts.",
+    "sensitive_info": [
+      {
+        "type": "phone",
+        "value": "+86 63782009087",
+        "start": 67,
+        "end": 82
+      },
+      {
+        "type": "id_card",
+        "value": "932602009648699958",
+        "start": 93,
+        "end": 111
+      },
+      {
+        "type": "credit_card",
+        "value": "8618 5155 3056 0605",
+        "start": 220,
+        "end": 239
+      },
+      {
+        "type": "id_card",
+        "value": "607048004493663054",
+        "start": 401,
+        "end": 419
+      },
+      {
+        "type": "credit_card",
+        "value": "0760 8605 0393 8698",
+        "start": 424,
+        "end": 443
+      }
+    ],
+    "sensitive_types": [
+      "phone",
+      "id_card",
+      "credit_card"
+    ],
+    "num_sensitive_items": 5
+  },
+  {
+    "id": "medium_13",
+    "difficulty": "medium",
+    "original_context": "In a recent customer record update, we noticed that the +86 30623271881 associated with 590079235541131734 ending in *1234 did not match the one linked to the 0745 9288 6534 2471 ending in *5678. It seems like an error occurred during the data entry process. Please verify the correct +82 03105131547 number with our customer service team to ensure that all your accounts are properly aligned. Your security is our priority, and we appreciate your cooperation in resolving this discrepancy promptly.",
+    "redacted_context": "In a recent customer record update, we noticed that the +86 306****1881 associated with 590079**********34 ending in *1234 did not match the one linked to the 074592******2471 ending in *5678. It seems like an error occurred during the data entry process. Please verify the correct +82 031****1547 number with our customer service team to ensure that all your accounts are properly aligned. Your security is our priority, and we appreciate your cooperation in resolving this discrepancy promptly.",
+    "sensitive_info": [
+      {
+        "type": "phone",
+        "value": "+86 30623271881",
+        "start": 56,
+        "end": 71
+      },
+      {
+        "type": "id_card",
+        "value": "590079235541131734",
+        "start": 88,
+        "end": 106
+      },
+      {
+        "type": "credit_card",
+        "value": "0745 9288 6534 2471",
+        "start": 159,
+        "end": 178
+      },
+      {
+        "type": "phone",
+        "value": "+82 03105131547",
+        "start": 285,
+        "end": 300
+      }
+    ],
+    "sensitive_types": [
+      "phone",
+      "id_card",
+      "credit_card"
+    ],
+    "num_sensitive_items": 4
+  },
+  {
+    "id": "medium_14",
+    "difficulty": "medium",
+    "original_context": "In the recent customer record update, we noticed that the contact number associated with account 620347579175960393 ending in XXXX is incorrect. The correct contact number is +86 19612586478. Additionally, we have updated the payment method for this account to the new 9745 4585 9543 5695 ending in XXXX. Please ensure these changes are reflected in all future correspondence and transactions for this account. If you have any questions or require further clarification, feel free to reach out to our customer support team at +81 07734787666.",
+    "redacted_context": "In the recent customer record update, we noticed that the contact number associated with account 620347**********93 ending in XXXX is incorrect. The correct contact number is +86 196****6478. Additionally, we have updated the payment method for this account to the new 974545******5695 ending in XXXX. Please ensure these changes are reflected in all future correspondence and transactions for this account. If you have any questions or require further clarification, feel free to reach out to our customer support team at +81 077****7666.",
+    "sensitive_info": [
+      {
+        "type": "id_card",
+        "value": "620347579175960393",
+        "start": 97,
+        "end": 115
+      },
+      {
+        "type": "phone",
+        "value": "+86 19612586478",
+        "start": 175,
+        "end": 190
+      },
+      {
+        "type": "credit_card",
+        "value": "9745 4585 9543 5695",
+        "start": 269,
+        "end": 288
+      },
+      {
+        "type": "phone",
+        "value": "+81 07734787666",
+        "start": 526,
+        "end": 541
+      }
+    ],
+    "sensitive_types": [
+      "phone",
+      "credit_card"
+    ],
+    "num_sensitive_items": 4
+  },
+  {
+    "id": "medium_15",
+    "difficulty": "medium",
+    "original_context": "In a recent customer record update, we noticed that the +82 12396666960 associated with 557240019147904527 ending in 6351 5443 0026 2341 was incorrect. We kindly request that you provide the correct +82 62366894741 number at your earliest convenience to ensure smooth communication regarding your account. Your prompt response will help us update our records accurately and prevent any potential issues in the future. Thank you for your cooperation.",
+    "redacted_context": "In a recent customer record update, we noticed that the +82 123****6960 associated with 557240**********27 ending in 635154******2341 was incorrect. We kindly request that you provide the correct +82 623****4741 number at your earliest convenience to ensure smooth communication regarding your account. Your prompt response will help us update our records accurately and prevent any potential issues in the future. Thank you for your cooperation.",
+    "sensitive_info": [
+      {
+        "type": "phone",
+        "value": "+82 12396666960",
+        "start": 56,
+        "end": 71
+      },
+      {
+        "type": "id_card",
+        "value": "557240019147904527",
+        "start": 88,
+        "end": 106
+      },
+      {
+        "type": "credit_card",
+        "value": "6351 5443 0026 2341",
+        "start": 117,
+        "end": 136
+      },
+      {
+        "type": "phone",
+        "value": "+82 62366894741",
+        "start": 199,
+        "end": 214
+      }
+    ],
+    "sensitive_types": [
+      "phone",
+      "id_card",
+      "credit_card"
+    ],
+    "num_sensitive_items": 4
+  },
+  {
+    "id": "medium_16",
+    "difficulty": "medium",
+    "original_context": "In the customer record for John Doe, we have the following sensitive information: +86 21780500831 is his contact number, 546657980658527208 is his identification card number, and 8627 7051 5687 5299 is the credit card he used for transactions. Please ensure that this data is handled securely and in compliance with our privacy policies. If you need to verify any details, reach out to the customer directly using the provided +44 39971430122 number.",
+    "redacted_context": "In the customer record for John Doe, we have the following sensitive information: +86 217****0831 is his contact number, 546657**********08 is his identification card number, and 862770******5299 is the credit card he used for transactions. Please ensure that this data is handled securely and in compliance with our privacy policies. If you need to verify any details, reach out to the customer directly using the provided +44 399****0122 number.",
+    "sensitive_info": [
+      {
+        "type": "phone",
+        "value": "+86 21780500831",
+        "start": 82,
+        "end": 97
+      },
+      {
+        "type": "id_card",
+        "value": "546657980658527208",
+        "start": 121,
+        "end": 139
+      },
+      {
+        "type": "credit_card",
+        "value": "8627 7051 5687 5299",
+        "start": 179,
+        "end": 198
+      },
+      {
+        "type": "phone",
+        "value": "+44 39971430122",
+        "start": 427,
+        "end": 442
+      }
+    ],
+    "sensitive_types": [
+      "phone",
+      "id_card",
+      "credit_card"
+    ],
+    "num_sensitive_items": 4
+  },
+  {
+    "id": "medium_17",
+    "difficulty": "medium",
+    "original_context": "In preparation for your upcoming flight, please provide us with the following information for booking confirmation: Your 306272440395923492 number, +86 47926933906 for contact in case of emergencies, and a valid 6582 7836 7172 8374 for payment processing. Your 293099790747393731 is required to verify your identity during check-in, and the +86 70934405295 number is crucial to reach you with any important updates regarding your reservation. Rest assured that the 8376 4613 1353 0314 details will be securely processed for the ticket purchase. Thank you for providing this information promptly.",
+    "redacted_context": "In preparation for your upcoming flight, please provide us with the following information for booking confirmation: Your 306272**********92 number, +86 479****3906 for contact in case of emergencies, and a valid 658278******8374 for payment processing. Your 293099**********31 is required to verify your identity during check-in, and the +86 709****5295 number is crucial to reach you with any important updates regarding your reservation. Rest assured that the 837646******0314 details will be securely processed for the ticket purchase. Thank you for providing this information promptly.",
+    "sensitive_info": [
+      {
+        "type": "id_card",
+        "value": "306272440395923492",
+        "start": 121,
+        "end": 139
+      },
+      {
+        "type": "phone",
+        "value": "+86 47926933906",
+        "start": 148,
+        "end": 163
+      },
+      {
+        "type": "credit_card",
+        "value": "6582 7836 7172 8374",
+        "start": 212,
+        "end": 231
+      },
+      {
+        "type": "id_card",
+        "value": "293099790747393731",
+        "start": 261,
+        "end": 279
+      },
+      {
+        "type": "phone",
+        "value": "+86 70934405295",
+        "start": 341,
+        "end": 356
+      },
+      {
+        "type": "credit_card",
+        "value": "8376 4613 1353 0314",
+        "start": 465,
+        "end": 484
+      }
+    ],
+    "sensitive_types": [
+      "phone",
+      "id_card",
+      "credit_card"
+    ],
+    "num_sensitive_items": 6
+  },
+  {
+    "id": "medium_18",
+    "difficulty": "medium",
+    "original_context": "In a recent customer report, we identified +44 13073242753 as the primary contact number for account verification purposes. However, we noticed discrepancies with the provided 723359403902419142, and it seems to be expired. To proceed with the transaction, we require you to update your identification with a valid 615427281671857577. Additionally, we noticed unusual activity on your 5734 4326 5565 4398 ending in ****. Please confirm any recent transactions to ensure the security of your account. If you need assistance, feel free to call us at +44 99932185980 during business hours.",
+    "redacted_context": "In a recent customer report, we identified +44 130****2753 as the primary contact number for account verification purposes. However, we noticed discrepancies with the provided 723359**********42, and it seems to be expired. To proceed with the transaction, we require you to update your identification with a valid 615427**********77. Additionally, we noticed unusual activity on your 573443******4398 ending in ****. Please confirm any recent transactions to ensure the security of your account. If you need assistance, feel free to call us at +44 999****5980 during business hours.",
+    "sensitive_info": [
+      {
+        "type": "phone",
+        "value": "+44 13073242753",
+        "start": 43,
+        "end": 58
+      },
+      {
+        "type": "id_card",
+        "value": "723359403902419142",
+        "start": 176,
+        "end": 194
+      },
+      {
+        "type": "id_card",
+        "value": "615427281671857577",
+        "start": 315,
+        "end": 333
+      },
+      {
+        "type": "credit_card",
+        "value": "5734 4326 5565 4398",
+        "start": 385,
+        "end": 404
+      },
+      {
+        "type": "phone",
+        "value": "+44 99932185980",
+        "start": 548,
+        "end": 563
+      }
+    ],
+    "sensitive_types": [
+      "phone",
+      "id_card",
+      "credit_card"
+    ],
+    "num_sensitive_items": 5
+  },
+  {
+    "id": "medium_19",
+    "difficulty": "medium",
+    "original_context": "In a recent customer record update, we noticed that the 119362886746984541 belonging to John Doe is expiring soon. To ensure seamless service, we kindly request a scanned copy of the new 123319008794616063 for verification purposes. Additionally, we have updated the payment information on file with the new 0092 4186 9160 8630 ending in XXXX. For any inquiries or assistance, please contact our customer support at +82 02319447721. Thank you for your prompt attention to this matter.",
+    "redacted_context": "In a recent customer record update, we noticed that the 119362**********41 belonging to John Doe is expiring soon. To ensure seamless service, we kindly request a scanned copy of the new 123319**********63 for verification purposes. Additionally, we have updated the payment information on file with the new 009241******8630 ending in XXXX. For any inquiries or assistance, please contact our customer support at +82 023****7721. Thank you for your prompt attention to this matter.",
+    "sensitive_info": [
+      {
+        "type": "id_card",
+        "value": "119362886746984541",
+        "start": 56,
+        "end": 74
+      },
+      {
+        "type": "id_card",
+        "value": "123319008794616063",
+        "start": 187,
+        "end": 205
+      },
+      {
+        "type": "credit_card",
+        "value": "0092 4186 9160 8630",
+        "start": 308,
+        "end": 327
+      },
+      {
+        "type": "phone",
+        "value": "+82 02319447721",
+        "start": 416,
+        "end": 431
+      }
+    ],
+    "sensitive_types": [
+      "id_card",
+      "credit_card"
+    ],
+    "num_sensitive_items": 4
+  },
+  {
+    "id": "medium_20",
+    "difficulty": "medium",
+    "original_context": "In preparation for your upcoming travel itinerary, please provide the following details for verification purposes: your 688953251043185216, 0875 9200 9002 4284, and a contact number where you can be reached in case of any updates or changes, please provide your +86 97214406171 at your earliest convenience. Your 2055 2181 4421 9337 will be used to secure your booking, and your 664113304098162600 is essential for verification upon check-in. Thank you for your cooperation in ensuring a smooth and secure travel experience.",
+    "redacted_context": "In preparation for your upcoming travel itinerary, please provide the following details for verification purposes: your 688953**********16, 087592******4284, and a contact number where you can be reached in case of any updates or changes, please provide your +86 972****6171 at your earliest convenience. Your 205521******9337 will be used to secure your booking, and your 664113**********00 is essential for verification upon check-in. Thank you for your cooperation in ensuring a smooth and secure travel experience.",
+    "sensitive_info": [
+      {
+        "type": "id_card",
+        "value": "688953251043185216",
+        "start": 120,
+        "end": 138
+      },
+      {
+        "type": "credit_card",
+        "value": "0875 9200 9002 4284",
+        "start": 140,
+        "end": 159
+      },
+      {
+        "type": "phone",
+        "value": "+86 97214406171",
+        "start": 262,
+        "end": 277
+      },
+      {
+        "type": "credit_card",
+        "value": "2055 2181 4421 9337",
+        "start": 313,
+        "end": 332
+      },
+      {
+        "type": "id_card",
+        "value": "664113304098162600",
+        "start": 379,
+        "end": 397
+      }
+    ],
+    "sensitive_types": [
+      "phone",
+      "id_card",
+      "credit_card"
+    ],
+    "num_sensitive_items": 5
+  },
+  {
+    "id": "medium_21",
+    "difficulty": "medium",
+    "original_context": "In an effort to update our customer records, we require the following information for verification: 541540766467760998, +44 47985571934, +44 58289420312, and 7816 3063 8820 5615. Please provide the necessary details at your earliest convenience so we can ensure the accuracy of your account information. Your cooperation is greatly appreciated and will help us maintain the security and integrity of our records. Thank you for your attention to this matter.",
+    "redacted_context": "In an effort to update our customer records, we require the following information for verification: 541540**********98, +44 479****1934, +44 582****0312, and 781630******5615. Please provide the necessary details at your earliest convenience so we can ensure the accuracy of your account information. Your cooperation is greatly appreciated and will help us maintain the security and integrity of our records. Thank you for your attention to this matter.",
+    "sensitive_info": [
+      {
+        "type": "id_card",
+        "value": "541540766467760998",
+        "start": 100,
+        "end": 118
+      },
+      {
+        "type": "phone",
+        "value": "+44 47985571934",
+        "start": 120,
+        "end": 135
+      },
+      {
+        "type": "phone",
+        "value": "+44 58289420312",
+        "start": 137,
+        "end": 152
+      },
+      {
+        "type": "credit_card",
+        "value": "7816 3063 8820 5615",
+        "start": 158,
+        "end": 177
+      }
+    ],
+    "sensitive_types": [
+      "phone",
+      "id_card"
+    ],
+    "num_sensitive_items": 4
+  },
+  {
+    "id": "medium_22",
+    "difficulty": "medium",
+    "original_context": "In the latest customer records review, we found an issue with the 987761002647461440 information associated with +82 92802239152. It seems that the ID card provided does not match the records, and we need to verify this before proceeding with any transactions using the 9796 2589 6840 0623 linked to the account. Please reach out to the customer at +82 67074158791 to request a copy of the correct ID card for validation. This step is crucial to ensure the security and accuracy of the account details. Thank you for your attention to this matter.",
+    "redacted_context": "In the latest customer records review, we found an issue with the 987761**********40 information associated with +82 928****9152. It seems that the ID card provided does not match the records, and we need to verify this before proceeding with any transactions using the 979625******0623 linked to the account. Please reach out to the customer at +82 670****8791 to request a copy of the correct ID card for validation. This step is crucial to ensure the security and accuracy of the account details. Thank you for your attention to this matter.",
+    "sensitive_info": [
+      {
+        "type": "id_card",
+        "value": "987761002647461440",
+        "start": 66,
+        "end": 84
+      },
+      {
+        "type": "phone",
+        "value": "+82 92802239152",
+        "start": 113,
+        "end": 128
+      },
+      {
+        "type": "credit_card",
+        "value": "9796 2589 6840 0623",
+        "start": 270,
+        "end": 289
+      },
+      {
+        "type": "phone",
+        "value": "+82 67074158791",
+        "start": 349,
+        "end": 364
+      }
+    ],
+    "sensitive_types": [
+      "phone",
+      "id_card",
+      "credit_card"
+    ],
+    "num_sensitive_items": 4
+  },
+  {
+    "id": "medium_23",
+    "difficulty": "medium",
+    "original_context": "In a recent report on employee records, we have identified a potential security breach involving the exposure of +1 85287166698 numbers and 063155965742909616 details. The investigation revealed that certain employee 647449688427989345 information was inadvertently shared via email attachments that were not encrypted. Furthermore, some employees' +82 02088741218 numbers were stored in a system that was accessed by unauthorized personnel. As a result, immediate steps are being taken to enhance data security protocols and conduct a thorough audit of all systems containing sensitive information to prevent such incidents in the future.",
+    "redacted_context": "In a recent report on employee records, we have identified a potential security breach involving the exposure of +1 852****6698 numbers and 063155**********16 details. The investigation revealed that certain employee 647449**********45 information was inadvertently shared via email attachments that were not encrypted. Furthermore, some employees' +82 020****1218 numbers were stored in a system that was accessed by unauthorized personnel. As a result, immediate steps are being taken to enhance data security protocols and conduct a thorough audit of all systems containing sensitive information to prevent such incidents in the future.",
+    "sensitive_info": [
+      {
+        "type": "phone",
+        "value": "+1 85287166698",
+        "start": 113,
+        "end": 127
+      },
+      {
+        "type": "id_card",
+        "value": "063155965742909616",
+        "start": 140,
+        "end": 158
+      },
+      {
+        "type": "id_card",
+        "value": "647449688427989345",
+        "start": 217,
+        "end": 235
+      },
+      {
+        "type": "phone",
+        "value": "+82 02088741218",
+        "start": 349,
+        "end": 364
+      }
+    ],
+    "sensitive_types": [
+      "phone",
+      "id_card"
+    ],
+    "num_sensitive_items": 4
+  },
+  {
+    "id": "medium_24",
+    "difficulty": "medium",
+    "original_context": "In preparation for the upcoming financial audit, please ensure all employee records are updated with the correct +1 37968050641 numbers and 0403 7731 1762 1662 information. It is crucial to verify that each +82 96139253097 is associated with the correct employee ID to avoid any discrepancies. Additionally, make sure that all 3127 6511 3917 1022 details are securely stored in our encrypted database to maintain confidentiality. If any discrepancies are found, please report them immediately to the HR department for further investigation. Thank you for your attention to detail in this matter.",
+    "redacted_context": "In preparation for the upcoming financial audit, please ensure all employee records are updated with the correct +1 379****0641 numbers and 040377******1662 information. It is crucial to verify that each +82 961****3097 is associated with the correct employee ID to avoid any discrepancies. Additionally, make sure that all 312765******1022 details are securely stored in our encrypted database to maintain confidentiality. If any discrepancies are found, please report them immediately to the HR department for further investigation. Thank you for your attention to detail in this matter.",
+    "sensitive_info": [
+      {
+        "type": "phone",
+        "value": "+1 37968050641",
+        "start": 113,
+        "end": 127
+      },
+      {
+        "type": "credit_card",
+        "value": "0403 7731 1762 1662",
+        "start": 140,
+        "end": 159
+      },
+      {
+        "type": "phone",
+        "value": "+82 96139253097",
+        "start": 207,
+        "end": 222
+      },
+      {
+        "type": "credit_card",
+        "value": "3127 6511 3917 1022",
+        "start": 327,
+        "end": 346
+      }
+    ],
+    "sensitive_types": [
+      "phone",
+      "credit_card"
+    ],
+    "num_sensitive_items": 4
+  },
+  {
+    "id": "medium_25",
+    "difficulty": "medium",
+    "original_context": "In the customer record system, we noticed that the 595816492927413776 belonging to John Doe was used for multiple transactions linked to the same 9585 0978 6901 0016 number. Upon further investigation, it was discovered that the +44 25972965448 associated with the account had been compromised, leading to unauthorized access. We have now blocked the 0259 7177 7974 4917 and advised John Doe to report the incident to the authorities for further action.",
+    "redacted_context": "In the customer record system, we noticed that the 595816**********76 belonging to John Doe was used for multiple transactions linked to the same 958509******0016 number. Upon further investigation, it was discovered that the +44 259****5448 associated with the account had been compromised, leading to unauthorized access. We have now blocked the 025971******4917 and advised John Doe to report the incident to the authorities for further action.",
+    "sensitive_info": [
+      {
+        "type": "id_card",
+        "value": "595816492927413776",
+        "start": 51,
+        "end": 69
+      },
+      {
+        "type": "credit_card",
+        "value": "9585 0978 6901 0016",
+        "start": 146,
+        "end": 165
+      },
+      {
+        "type": "phone",
+        "value": "+44 25972965448",
+        "start": 229,
+        "end": 244
+      },
+      {
+        "type": "credit_card",
+        "value": "0259 7177 7974 4917",
+        "start": 351,
+        "end": 370
+      }
+    ],
+    "sensitive_types": [
+      "phone",
+      "id_card",
+      "credit_card"
+    ],
+    "num_sensitive_items": 4
+  },
+  {
+    "id": "medium_26",
+    "difficulty": "medium",
+    "original_context": "In a recent security breach, we identified unauthorized access to customer records containing sensitive information. The compromised data includes +44 34940689544 numbers, 140133909936533178 details, and 1504 2287 7231 6065 information. We have taken immediate action to enhance our security measures and are notifying affected individuals to monitor their accounts for any suspicious activities. Our team is working diligently to investigate the incident and prevent any further breaches. If you believe your information may have been compromised, please contact our dedicated support line at +44 13388401373.",
+    "redacted_context": "In a recent security breach, we identified unauthorized access to customer records containing sensitive information. The compromised data includes +44 349****9544 numbers, 140133**********78 details, and 150422******6065 information. We have taken immediate action to enhance our security measures and are notifying affected individuals to monitor their accounts for any suspicious activities. Our team is working diligently to investigate the incident and prevent any further breaches. If you believe your information may have been compromised, please contact our dedicated support line at +44 133****1373.",
+    "sensitive_info": [
+      {
+        "type": "phone",
+        "value": "+44 34940689544",
+        "start": 147,
+        "end": 162
+      },
+      {
+        "type": "id_card",
+        "value": "140133909936533178",
+        "start": 172,
+        "end": 190
+      },
+      {
+        "type": "credit_card",
+        "value": "1504 2287 7231 6065",
+        "start": 204,
+        "end": 223
+      },
+      {
+        "type": "phone",
+        "value": "+44 13388401373",
+        "start": 594,
+        "end": 609
+      }
+    ],
+    "sensitive_types": [
+      "phone",
+      "id_card",
+      "credit_card"
+    ],
+    "num_sensitive_items": 4
+  },
+  {
+    "id": "medium_27",
+    "difficulty": "medium",
+    "original_context": "In a recent audit of employee records, we discovered a discrepancy in 620673430738220299 numbers provided by staff members. We have identified that some employees mistakenly used their 6778 2104 5341 9410 numbers instead of their 952172003919932928 numbers on certain forms. This mix-up has caused delays in processing payroll information. To rectify this, we kindly ask all employees to verify their +1 27976181884 numbers and update any incorrect 148607602577133986 details in the system by the end of the week. Thank you for your cooperation in ensuring accurate records.",
+    "redacted_context": "In a recent audit of employee records, we discovered a discrepancy in 620673**********99 numbers provided by staff members. We have identified that some employees mistakenly used their 677821******9410 numbers instead of their 952172**********28 numbers on certain forms. This mix-up has caused delays in processing payroll information. To rectify this, we kindly ask all employees to verify their +1 279****1884 numbers and update any incorrect 148607**********86 details in the system by the end of the week. Thank you for your cooperation in ensuring accurate records.",
+    "sensitive_info": [
+      {
+        "type": "id_card",
+        "value": "620673430738220299",
+        "start": 70,
+        "end": 88
+      },
+      {
+        "type": "credit_card",
+        "value": "6778 2104 5341 9410",
+        "start": 185,
+        "end": 204
+      },
+      {
+        "type": "id_card",
+        "value": "952172003919932928",
+        "start": 230,
+        "end": 248
+      },
+      {
+        "type": "phone",
+        "value": "+1 27976181884",
+        "start": 401,
+        "end": 415
+      },
+      {
+        "type": "id_card",
+        "value": "148607602577133986",
+        "start": 449,
+        "end": 467
+      }
+    ],
+    "sensitive_types": [
+      "phone",
+      "id_card",
+      "credit_card"
+    ],
+    "num_sensitive_items": 5
+  },
+  {
+    "id": "medium_28",
+    "difficulty": "medium",
+    "original_context": "In a recent customer record audit, it was discovered that the provided +82 11853648364 was incorrect. To verify the customer's identity, we requested a copy of their 380613826569530757 and 6282 4579 4315 9441. Upon review, it was found that the +1 07167531577 number originally provided belonged to a different individual. This discrepancy raised concerns about the accuracy of the customer's information in our system. Further investigation is required to rectify this issue and ensure the integrity of our records.",
+    "redacted_context": "In a recent customer record audit, it was discovered that the provided +82 118****8364 was incorrect. To verify the customer's identity, we requested a copy of their 380613**********57 and 628245******9441. Upon review, it was found that the +1 071****1577 number originally provided belonged to a different individual. This discrepancy raised concerns about the accuracy of the customer's information in our system. Further investigation is required to rectify this issue and ensure the integrity of our records.",
+    "sensitive_info": [
+      {
+        "type": "phone",
+        "value": "+82 11853648364",
+        "start": 71,
+        "end": 86
+      },
+      {
+        "type": "id_card",
+        "value": "380613826569530757",
+        "start": 166,
+        "end": 184
+      },
+      {
+        "type": "credit_card",
+        "value": "6282 4579 4315 9441",
+        "start": 189,
+        "end": 208
+      },
+      {
+        "type": "phone",
+        "value": "+1 07167531577",
+        "start": 245,
+        "end": 259
+      }
+    ],
+    "sensitive_types": [
+      "phone",
+      "id_card",
+      "credit_card"
+    ],
+    "num_sensitive_items": 4
+  },
+  {
+    "id": "medium_29",
+    "difficulty": "medium",
+    "original_context": "In preparation for the upcoming employee verification process, please ensure all records are updated with the correct information. Kindly verify that the contact numbers, especially +44 07414251543, are current and active for any emergency notifications. Additionally, double-check that the 911472858384179057 details are accurate to expedite the verification process smoothly. Your attention to detail in completing these updates is crucial to maintain accurate employee records. Should you encounter any discrepancies with the provided +82 82080215037 or 948987819348046084, please notify the HR department promptly for resolution.",
+    "redacted_context": "In preparation for the upcoming employee verification process, please ensure all records are updated with the correct information. Kindly verify that the contact numbers, especially +44 074****1543, are current and active for any emergency notifications. Additionally, double-check that the 911472**********57 details are accurate to expedite the verification process smoothly. Your attention to detail in completing these updates is crucial to maintain accurate employee records. Should you encounter any discrepancies with the provided +82 820****5037 or 948987**********84, please notify the HR department promptly for resolution.",
+    "sensitive_info": [
+      {
+        "type": "phone",
+        "value": "+44 07414251543",
+        "start": 182,
+        "end": 197
+      },
+      {
+        "type": "id_card",
+        "value": "911472858384179057",
+        "start": 291,
+        "end": 309
+      },
+      {
+        "type": "phone",
+        "value": "+82 82080215037",
+        "start": 538,
+        "end": 553
+      },
+      {
+        "type": "id_card",
+        "value": "948987819348046084",
+        "start": 557,
+        "end": 575
+      }
+    ],
+    "sensitive_types": [
+      "phone",
+      "id_card"
+    ],
+    "num_sensitive_items": 4
+  },
+  {
+    "id": "medium_30",
+    "difficulty": "medium",
+    "original_context": "In a confidential customer record, please note that the client's 825582809351575065 details have been updated successfully. For further validation, kindly provide the last four digits of the primary contact's +82 23264108463 number. As per company policy, we require a copy of the 622160760407210801 for verification purposes. Please ensure that the +1 39345965829 number provided matches the one associated with the account. Your prompt attention to this matter is greatly appreciated. Thank you.",
+    "redacted_context": "In a confidential customer record, please note that the client's 825582**********65 details have been updated successfully. For further validation, kindly provide the last four digits of the primary contact's +82 232****8463 number. As per company policy, we require a copy of the 622160**********01 for verification purposes. Please ensure that the +1 393****5829 number provided matches the one associated with the account. Your prompt attention to this matter is greatly appreciated. Thank you.",
+    "sensitive_info": [
+      {
+        "type": "id_card",
+        "value": "825582809351575065",
+        "start": 65,
+        "end": 83
+      },
+      {
+        "type": "phone",
+        "value": "+82 23264108463",
+        "start": 209,
+        "end": 224
+      },
+      {
+        "type": "id_card",
+        "value": "622160760407210801",
+        "start": 281,
+        "end": 299
+      },
+      {
+        "type": "phone",
+        "value": "+1 39345965829",
+        "start": 350,
+        "end": 364
+      }
+    ],
+    "sensitive_types": [
+      "phone",
+      "id_card"
+    ],
+    "num_sensitive_items": 4
+  },
+  {
+    "id": "medium_31",
+    "difficulty": "medium",
+    "original_context": "In a recent customer record, we noticed that the provided +44 86054974141 number for contact is incorrect and needs to be updated. Additionally, the stored 8803 4479 5408 6340 details seemed to be outdated, and we require the customer to provide the latest information to ensure seamless transactions. Kindly reach out to the customer via email at the earliest convenience to request the updated +44 26948431679 and 1184 3544 3663 7461 details to update the system accordingly. Thank you for your attention to this matter.",
+    "redacted_context": "In a recent customer record, we noticed that the provided +44 860****4141 number for contact is incorrect and needs to be updated. Additionally, the stored 880344******6340 details seemed to be outdated, and we require the customer to provide the latest information to ensure seamless transactions. Kindly reach out to the customer via email at the earliest convenience to request the updated +44 269****1679 and 118435******7461 details to update the system accordingly. Thank you for your attention to this matter.",
+    "sensitive_info": [
+      {
+        "type": "phone",
+        "value": "+44 86054974141",
+        "start": 58,
+        "end": 73
+      },
+      {
+        "type": "credit_card",
+        "value": "8803 4479 5408 6340",
+        "start": 156,
+        "end": 175
+      },
+      {
+        "type": "phone",
+        "value": "+44 26948431679",
+        "start": 396,
+        "end": 411
+      },
+      {
+        "type": "credit_card",
+        "value": "1184 3544 3663 7461",
+        "start": 416,
+        "end": 435
+      }
+    ],
+    "sensitive_types": [
+      "phone",
+      "credit_card"
+    ],
+    "num_sensitive_items": 4
+  },
+  {
+    "id": "medium_32",
+    "difficulty": "medium",
+    "original_context": "In the latest customer record update, we noticed that the contact number provided for 281250997267518786 does not match the one linked to the associated 5369 3225 6194 2476 on file. Kindly verify the correct +82 98854485252 number with the customer to ensure we have accurate contact information. It is essential for security and communication purposes that all details, including 227318627999361386 and 8239 0533 4261 7666, are up to date in our system. Please reach out to the customer promptly to rectify this discrepancy and update their information accordingly. Thank you for your attention to this matter.",
+    "redacted_context": "In the latest customer record update, we noticed that the contact number provided for 281250**********86 does not match the one linked to the associated 536932******2476 on file. Kindly verify the correct +82 988****5252 number with the customer to ensure we have accurate contact information. It is essential for security and communication purposes that all details, including 227318**********86 and 823905******7666, are up to date in our system. Please reach out to the customer promptly to rectify this discrepancy and update their information accordingly. Thank you for your attention to this matter.",
+    "sensitive_info": [
+      {
+        "type": "id_card",
+        "value": "281250997267518786",
+        "start": 86,
+        "end": 104
+      },
+      {
+        "type": "credit_card",
+        "value": "5369 3225 6194 2476",
+        "start": 153,
+        "end": 172
+      },
+      {
+        "type": "phone",
+        "value": "+82 98854485252",
+        "start": 208,
+        "end": 223
+      },
+      {
+        "type": "id_card",
+        "value": "227318627999361386",
+        "start": 381,
+        "end": 399
+      },
+      {
+        "type": "credit_card",
+        "value": "8239 0533 4261 7666",
+        "start": 404,
+        "end": 423
+      }
+    ],
+    "sensitive_types": [
+      "phone",
+      "id_card",
+      "credit_card"
+    ],
+    "num_sensitive_items": 5
+  },
+  {
+    "id": "medium_33",
+    "difficulty": "medium",
+    "original_context": "In the recent customer record audit, we identified a discrepancy with the 177937176301820811 associated with account number 2356. The 853412419395823101 provided does not match the records on file. Furthermore, the +86 51359365152 number linked to the account has been unreachable for the past week. We also noticed suspicious activity on the 4570 2058 1298 9434 linked to this account, with several unauthorized transactions flagged for investigation. It is crucial to verify the identity of the account holder and take immediate action to prevent further potential security breaches.",
+    "redacted_context": "In the recent customer record audit, we identified a discrepancy with the 177937**********11 associated with account number 2356. The 853412**********01 provided does not match the records on file. Furthermore, the +86 513****5152 number linked to the account has been unreachable for the past week. We also noticed suspicious activity on the 457020******9434 linked to this account, with several unauthorized transactions flagged for investigation. It is crucial to verify the identity of the account holder and take immediate action to prevent further potential security breaches.",
+    "sensitive_info": [
+      {
+        "type": "id_card",
+        "value": "177937176301820811",
+        "start": 74,
+        "end": 92
+      },
+      {
+        "type": "id_card",
+        "value": "853412419395823101",
+        "start": 134,
+        "end": 152
+      },
+      {
+        "type": "phone",
+        "value": "+86 51359365152",
+        "start": 215,
+        "end": 230
+      },
+      {
+        "type": "credit_card",
+        "value": "4570 2058 1298 9434",
+        "start": 343,
+        "end": 362
+      }
+    ],
+    "sensitive_types": [
+      "phone",
+      "id_card",
+      "credit_card"
+    ],
+    "num_sensitive_items": 4
+  },
+  {
+    "id": "medium_34",
+    "difficulty": "medium",
+    "original_context": "In the customer record for John Doe, the contact number provided is +86 64186848277. Please ensure to update his 953802706533079464 details as his current one is expiring next month. Additionally, we need to process a payment using the saved 9434 6387 0741 9022 on file. Feel free to contact him on the provided +82 17900155513 if further clarification is needed.",
+    "redacted_context": "In the customer record for John Doe, the contact number provided is +86 641****8277. Please ensure to update his 953802**********64 details as his current one is expiring next month. Additionally, we need to process a payment using the saved 943463******9022 on file. Feel free to contact him on the provided +82 179****5513 if further clarification is needed.",
+    "sensitive_info": [
+      {
+        "type": "phone",
+        "value": "+86 64186848277",
+        "start": 68,
+        "end": 83
+      },
+      {
+        "type": "id_card",
+        "value": "953802706533079464",
+        "start": 113,
+        "end": 131
+      },
+      {
+        "type": "credit_card",
+        "value": "9434 6387 0741 9022",
+        "start": 242,
+        "end": 261
+      },
+      {
+        "type": "phone",
+        "value": "+82 17900155513",
+        "start": 312,
+        "end": 327
+      }
+    ],
+    "sensitive_types": [
+      "phone",
+      "id_card",
+      "credit_card"
+    ],
+    "num_sensitive_items": 4
+  },
+  {
+    "id": "medium_35",
+    "difficulty": "medium",
+    "original_context": "In order to process your application, we require the following information: A valid 725685745564433434 for identification purposes, a contact number on file for verification to be provided in the format +82 56324223675, and a credit card for processing fees. Please ensure that the 587049528488164018 is uploaded securely through our online portal, and the contact number provided in the correct +44 81298458379 format. For payment, kindly input your 7285 9643 6406 8247 details securely on the payment page. Your information will be handled with the utmost confidentiality and security throughout the application process. Thank you for your cooperation.",
+    "redacted_context": "In order to process your application, we require the following information: A valid 725685**********34 for identification purposes, a contact number on file for verification to be provided in the format +82 563****3675, and a credit card for processing fees. Please ensure that the 587049**********18 is uploaded securely through our online portal, and the contact number provided in the correct +44 812****8379 format. For payment, kindly input your 728596******8247 details securely on the payment page. Your information will be handled with the utmost confidentiality and security throughout the application process. Thank you for your cooperation.",
+    "sensitive_info": [
+      {
+        "type": "id_card",
+        "value": "725685745564433434",
+        "start": 84,
+        "end": 102
+      },
+      {
+        "type": "phone",
+        "value": "+82 56324223675",
+        "start": 203,
+        "end": 218
+      },
+      {
+        "type": "id_card",
+        "value": "587049528488164018",
+        "start": 282,
+        "end": 300
+      },
+      {
+        "type": "phone",
+        "value": "+44 81298458379",
+        "start": 396,
+        "end": 411
+      },
+      {
+        "type": "credit_card",
+        "value": "7285 9643 6406 8247",
+        "start": 451,
+        "end": 470
+      }
+    ],
+    "sensitive_types": [
+      "phone",
+      "id_card",
+      "credit_card"
+    ],
+    "num_sensitive_items": 5
+  },
+  {
+    "id": "medium_36",
+    "difficulty": "medium",
+    "original_context": "In the customer record form, please provide a copy of your 794949529452162145 and 4950 0959 0024 6727 for verification purposes. Additionally, we require your updated +1 08458547143 number to ensure we can reach you for any important updates regarding your account. Kindly ensure that the copies of your 839566263307238016 and 7737 7313 7665 1552 are clear and legible to expedite the verification process. Your prompt attention to this matter is greatly appreciated.",
+    "redacted_context": "In the customer record form, please provide a copy of your 794949**********45 and 495009******6727 for verification purposes. Additionally, we require your updated +1 084****7143 number to ensure we can reach you for any important updates regarding your account. Kindly ensure that the copies of your 839566**********16 and 773773******1552 are clear and legible to expedite the verification process. Your prompt attention to this matter is greatly appreciated.",
+    "sensitive_info": [
+      {
+        "type": "id_card",
+        "value": "794949529452162145",
+        "start": 59,
+        "end": 77
+      },
+      {
+        "type": "credit_card",
+        "value": "4950 0959 0024 6727",
+        "start": 82,
+        "end": 101
+      },
+      {
+        "type": "phone",
+        "value": "+1 08458547143",
+        "start": 167,
+        "end": 181
+      },
+      {
+        "type": "id_card",
+        "value": "839566263307238016",
+        "start": 304,
+        "end": 322
+      },
+      {
+        "type": "credit_card",
+        "value": "7737 7313 7665 1552",
+        "start": 327,
+        "end": 346
+      }
+    ],
+    "sensitive_types": [
+      "id_card",
+      "credit_card"
+    ],
+    "num_sensitive_items": 5
+  },
+  {
+    "id": "medium_37",
+    "difficulty": "medium",
+    "original_context": "In the latest customer database update, we found +81 65866815866 associated with 810878966581716376 of 0852 6786 4250 3604. The system flagged this as a potential mismatch, prompting further investigation. It appears that the 686457175413159272 linked to +1 48172209325 does not match the 9453 9498 9163 9870 details on file. Our fraud prevention team has been alerted to review the discrepancies and ensure the data integrity of our records. It's crucial to resolve this issue promptly to prevent any unauthorized access or misuse of sensitive information.",
+    "redacted_context": "In the latest customer database update, we found +81 658****5866 associated with 810878**********76 of 085267******3604. The system flagged this as a potential mismatch, prompting further investigation. It appears that the 686457**********72 linked to +1 481****9325 does not match the 945394******9870 details on file. Our fraud prevention team has been alerted to review the discrepancies and ensure the data integrity of our records. It's crucial to resolve this issue promptly to prevent any unauthorized access or misuse of sensitive information.",
+    "sensitive_info": [
+      {
+        "type": "phone",
+        "value": "+81 65866815866",
+        "start": 49,
+        "end": 64
+      },
+      {
+        "type": "id_card",
+        "value": "810878966581716376",
+        "start": 81,
+        "end": 99
+      },
+      {
+        "type": "credit_card",
+        "value": "0852 6786 4250 3604",
+        "start": 103,
+        "end": 122
+      },
+      {
+        "type": "id_card",
+        "value": "686457175413159272",
+        "start": 226,
+        "end": 244
+      },
+      {
+        "type": "phone",
+        "value": "+1 48172209325",
+        "start": 255,
+        "end": 269
+      },
+      {
+        "type": "credit_card",
+        "value": "9453 9498 9163 9870",
+        "start": 289,
+        "end": 308
+      }
+    ],
+    "sensitive_types": [
+      "phone",
+      "id_card",
+      "credit_card"
+    ],
+    "num_sensitive_items": 6
+  },
+  {
+    "id": "medium_38",
+    "difficulty": "medium",
+    "original_context": "In the latest customer record update, we noticed that +82 83024713815 was incorrectly listed for a few accounts. We discovered suspicious activity on 1346 1979 5564 2433 linked to one of the affected profiles. It seems like the account may have been compromised. We advise reaching out to +86 86933706475 to verify recent transactions and secure the account. Additionally, we will be issuing a new 7612 6890 8268 5185 to replace the compromised one. Thank you for your prompt attention to this matter.",
+    "redacted_context": "In the latest customer record update, we noticed that +82 830****3815 was incorrectly listed for a few accounts. We discovered suspicious activity on 134619******2433 linked to one of the affected profiles. It seems like the account may have been compromised. We advise reaching out to +86 869****6475 to verify recent transactions and secure the account. Additionally, we will be issuing a new 761268******5185 to replace the compromised one. Thank you for your prompt attention to this matter.",
+    "sensitive_info": [
+      {
+        "type": "phone",
+        "value": "+82 83024713815",
+        "start": 54,
+        "end": 69
+      },
+      {
+        "type": "credit_card",
+        "value": "1346 1979 5564 2433",
+        "start": 150,
+        "end": 169
+      },
+      {
+        "type": "phone",
+        "value": "+86 86933706475",
+        "start": 289,
+        "end": 304
+      },
+      {
+        "type": "credit_card",
+        "value": "7612 6890 8268 5185",
+        "start": 398,
+        "end": 417
+      }
+    ],
+    "sensitive_types": [
+      "phone",
+      "credit_card"
+    ],
+    "num_sensitive_items": 4
+  },
+  {
+    "id": "medium_39",
+    "difficulty": "medium",
+    "original_context": "In preparation for the upcoming audit, please ensure that all employee records are updated with the correct 371236417771853331 details. We have noticed discrepancies in the last report, particularly with missing 094440461443556365 numbers. Additionally, we need to verify the 2856 2217 9178 7374 information for all staff members for expense reimbursements. Kindly remind everyone to submit any changes or updates to their 659381428221235895 and 6530 4126 8461 3452 details by the end of the week. Your cooperation in this matter is greatly appreciated as we strive to maintain accurate records.",
+    "redacted_context": "In preparation for the upcoming audit, please ensure that all employee records are updated with the correct 371236**********31 details. We have noticed discrepancies in the last report, particularly with missing 094440**********65 numbers. Additionally, we need to verify the 285622******7374 information for all staff members for expense reimbursements. Kindly remind everyone to submit any changes or updates to their 659381**********95 and 653041******3452 details by the end of the week. Your cooperation in this matter is greatly appreciated as we strive to maintain accurate records.",
+    "sensitive_info": [
+      {
+        "type": "id_card",
+        "value": "371236417771853331",
+        "start": 108,
+        "end": 126
+      },
+      {
+        "type": "id_card",
+        "value": "094440461443556365",
+        "start": 212,
+        "end": 230
+      },
+      {
+        "type": "credit_card",
+        "value": "2856 2217 9178 7374",
+        "start": 276,
+        "end": 295
+      },
+      {
+        "type": "id_card",
+        "value": "659381428221235895",
+        "start": 423,
+        "end": 441
+      },
+      {
+        "type": "credit_card",
+        "value": "6530 4126 8461 3452",
+        "start": 446,
+        "end": 465
+      }
+    ],
+    "sensitive_types": [
+      "id_card",
+      "credit_card"
+    ],
+    "num_sensitive_items": 5
+  },
+  {
+    "id": "medium_40",
+    "difficulty": "medium",
+    "original_context": "In a recent report analyzing customer profiles, we identified that the +81 05951866530 number associated with 664595371080213796 ending in XXXX was used for making several purchases using the 6894 5469 2107 5846 on file. It seems there might be a discrepancy in the billing information entered during transactions, leading to potential security risks. We recommend reaching out to the customer at the earliest to verify the recent purchases and update any incorrect details to prevent any further unauthorized usage of the 4066 1389 6711 2750.",
+    "redacted_context": "In a recent report analyzing customer profiles, we identified that the +81 059****6530 number associated with 664595**********96 ending in XXXX was used for making several purchases using the 689454******5846 on file. It seems there might be a discrepancy in the billing information entered during transactions, leading to potential security risks. We recommend reaching out to the customer at the earliest to verify the recent purchases and update any incorrect details to prevent any further unauthorized usage of the 406613******2750.",
+    "sensitive_info": [
+      {
+        "type": "phone",
+        "value": "+81 05951866530",
+        "start": 71,
+        "end": 86
+      },
+      {
+        "type": "id_card",
+        "value": "664595371080213796",
+        "start": 110,
+        "end": 128
+      },
+      {
+        "type": "credit_card",
+        "value": "6894 5469 2107 5846",
+        "start": 192,
+        "end": 211
+      },
+      {
+        "type": "credit_card",
+        "value": "4066 1389 6711 2750",
+        "start": 523,
+        "end": 542
+      }
+    ],
+    "sensitive_types": [
+      "phone",
+      "id_card",
+      "credit_card"
+    ],
+    "num_sensitive_items": 4
+  },
+  {
+    "id": "medium_41",
+    "difficulty": "medium",
+    "original_context": "In a recent customer records audit, we identified a discrepancy related to +82 34634304220 number updates not matching the associated 514680568725167534 details on file. Several customers had provided new +1 90290783779 numbers without updating their 395869044338475158 information. This poses a security risk as outdated 398520458232280901 details can lead to inaccurate 7210 9610 7257 1477 processing. A communication campaign has been planned to remind customers to ensure all their information, including +81 77534798698, 779187317478426967, and 1566 4830 0255 7213 details, are up to date to prevent any disruptions in services.",
+    "redacted_context": "In a recent customer records audit, we identified a discrepancy related to +82 346****4220 number updates not matching the associated 514680**********34 details on file. Several customers had provided new +1 902****3779 numbers without updating their 395869**********58 information. This poses a security risk as outdated 398520**********01 details can lead to inaccurate 721096******1477 processing. A communication campaign has been planned to remind customers to ensure all their information, including +81 775****8698, 779187**********67, and 156648******7213 details, are up to date to prevent any disruptions in services.",
+    "sensitive_info": [
+      {
+        "type": "phone",
+        "value": "+82 34634304220",
+        "start": 75,
+        "end": 90
+      },
+      {
+        "type": "id_card",
+        "value": "514680568725167534",
+        "start": 134,
+        "end": 152
+      },
+      {
+        "type": "phone",
+        "value": "+1 90290783779",
+        "start": 205,
+        "end": 219
+      },
+      {
+        "type": "id_card",
+        "value": "395869044338475158",
+        "start": 251,
+        "end": 269
+      },
+      {
+        "type": "id_card",
+        "value": "398520458232280901",
+        "start": 322,
+        "end": 340
+      },
+      {
+        "type": "credit_card",
+        "value": "7210 9610 7257 1477",
+        "start": 372,
+        "end": 391
+      },
+      {
+        "type": "phone",
+        "value": "+81 77534798698",
+        "start": 509,
+        "end": 524
+      },
+      {
+        "type": "id_card",
+        "value": "779187317478426967",
+        "start": 526,
+        "end": 544
+      },
+      {
+        "type": "credit_card",
+        "value": "1566 4830 0255 7213",
+        "start": 550,
+        "end": 569
+      }
+    ],
+    "sensitive_types": [
+      "phone",
+      "id_card",
+      "credit_card"
+    ],
+    "num_sensitive_items": 9
+  },
+  {
+    "id": "medium_42",
+    "difficulty": "medium",
+    "original_context": "In a recent customer record update, we noticed that the 098436504547508064 belonging to John Doe is due for renewal by the end of the month. Please ensure to collect a copy of the new 316365713562362596 from him before the expiration date. Additionally, we have updated the payment method on file to his new 7982 5060 0572 1248 ending in ****. If you encounter any issues processing payments with the new 7770 0285 4455 3627, kindly reach out to John at +86 20096614031 for further assistance. Thank you for your attention to this matter.",
+    "redacted_context": "In a recent customer record update, we noticed that the 098436**********64 belonging to John Doe is due for renewal by the end of the month. Please ensure to collect a copy of the new 316365**********96 from him before the expiration date. Additionally, we have updated the payment method on file to his new 798250******1248 ending in ****. If you encounter any issues processing payments with the new 777002******3627, kindly reach out to John at +86 200****4031 for further assistance. Thank you for your attention to this matter.",
+    "sensitive_info": [
+      {
+        "type": "id_card",
+        "value": "098436504547508064",
+        "start": 56,
+        "end": 74
+      },
+      {
+        "type": "id_card",
+        "value": "316365713562362596",
+        "start": 184,
+        "end": 202
+      },
+      {
+        "type": "credit_card",
+        "value": "7982 5060 0572 1248",
+        "start": 308,
+        "end": 327
+      },
+      {
+        "type": "credit_card",
+        "value": "7770 0285 4455 3627",
+        "start": 405,
+        "end": 424
+      },
+      {
+        "type": "phone",
+        "value": "+86 20096614031",
+        "start": 454,
+        "end": 469
+      }
+    ],
+    "sensitive_types": [
+      "id_card",
+      "credit_card"
+    ],
+    "num_sensitive_items": 5
+  },
+  {
+    "id": "medium_43",
+    "difficulty": "medium",
+    "original_context": "In a recent security audit of customer records, we identified a potential breach involving a stolen +81 74326995554 and 138899322289212064 linked to multiple fraudulent 2589 0496 2539 9130 transactions. Our investigation revealed that the compromised +1 98267774169 was used to access sensitive account information, including 029452349706374030 details associated with the fraudulent transactions. We have since implemented additional security measures to prevent future incidents and are working closely with authorities to track down the perpetrators behind these unauthorized activities.",
+    "redacted_context": "In a recent security audit of customer records, we identified a potential breach involving a stolen +81 743****5554 and 138899**********64 linked to multiple fraudulent 258904******9130 transactions. Our investigation revealed that the compromised +1 982****4169 was used to access sensitive account information, including 029452**********30 details associated with the fraudulent transactions. We have since implemented additional security measures to prevent future incidents and are working closely with authorities to track down the perpetrators behind these unauthorized activities.",
+    "sensitive_info": [
+      {
+        "type": "phone",
+        "value": "+81 74326995554",
+        "start": 100,
+        "end": 115
+      },
+      {
+        "type": "id_card",
+        "value": "138899322289212064",
+        "start": 120,
+        "end": 138
+      },
+      {
+        "type": "credit_card",
+        "value": "2589 0496 2539 9130",
+        "start": 169,
+        "end": 188
+      },
+      {
+        "type": "phone",
+        "value": "+1 98267774169",
+        "start": 251,
+        "end": 265
+      },
+      {
+        "type": "id_card",
+        "value": "029452349706374030",
+        "start": 326,
+        "end": 344
+      }
+    ],
+    "sensitive_types": [
+      "phone",
+      "id_card",
+      "credit_card"
+    ],
+    "num_sensitive_items": 5
+  },
+  {
+    "id": "medium_44",
+    "difficulty": "medium",
+    "original_context": "In a recent customer record audit, we identified some discrepancies. The customer provided a new +86 28753015943 number, but their 299043690443221858 and 7558 7864 2348 9157 details remained unchanged from the previous records. However, further investigation revealed that the 6841 9475 3696 7774 on file had expired, and the customer needed to update it urgently. An email was sent requesting updated information for the account, emphasizing the importance of accurate data to ensure smooth transactions. The team is now awaiting the customer's response to proceed with the necessary updates.",
+    "redacted_context": "In a recent customer record audit, we identified some discrepancies. The customer provided a new +86 287****5943 number, but their 299043**********58 and 755878******9157 details remained unchanged from the previous records. However, further investigation revealed that the 684194******7774 on file had expired, and the customer needed to update it urgently. An email was sent requesting updated information for the account, emphasizing the importance of accurate data to ensure smooth transactions. The team is now awaiting the customer's response to proceed with the necessary updates.",
+    "sensitive_info": [
+      {
+        "type": "phone",
+        "value": "+86 28753015943",
+        "start": 97,
+        "end": 112
+      },
+      {
+        "type": "id_card",
+        "value": "299043690443221858",
+        "start": 131,
+        "end": 149
+      },
+      {
+        "type": "credit_card",
+        "value": "7558 7864 2348 9157",
+        "start": 154,
+        "end": 173
+      },
+      {
+        "type": "credit_card",
+        "value": "6841 9475 3696 7774",
+        "start": 277,
+        "end": 296
+      }
+    ],
+    "sensitive_types": [
+      "phone",
+      "id_card",
+      "credit_card"
+    ],
+    "num_sensitive_items": 4
+  },
+  {
+    "id": "medium_45",
+    "difficulty": "medium",
+    "original_context": "In the customer record update form, please provide your updated contact details including your new +44 00595345484 and billing information for your 1683 6861 2122 7685. We kindly ask you to verify and update the +44 37466355955 number to ensure we can reach you for any important notifications. Additionally, updating the billing details for your 9438 0441 3009 5453 will help us process your payments smoothly. Kindly complete the form with the required information to keep your account up to date. Thank you for your cooperation.",
+    "redacted_context": "In the customer record update form, please provide your updated contact details including your new +44 005****5484 and billing information for your 168368******7685. We kindly ask you to verify and update the +44 374****5955 number to ensure we can reach you for any important notifications. Additionally, updating the billing details for your 943804******5453 will help us process your payments smoothly. Kindly complete the form with the required information to keep your account up to date. Thank you for your cooperation.",
+    "sensitive_info": [
+      {
+        "type": "phone",
+        "value": "+44 00595345484",
+        "start": 99,
+        "end": 114
+      },
+      {
+        "type": "credit_card",
+        "value": "1683 6861 2122 7685",
+        "start": 148,
+        "end": 167
+      },
+      {
+        "type": "phone",
+        "value": "+44 37466355955",
+        "start": 212,
+        "end": 227
+      },
+      {
+        "type": "credit_card",
+        "value": "9438 0441 3009 5453",
+        "start": 347,
+        "end": 366
+      }
+    ],
+    "sensitive_types": [
+      "phone",
+      "credit_card"
+    ],
+    "num_sensitive_items": 4
+  },
+  {
+    "id": "medium_46",
+    "difficulty": "medium",
+    "original_context": "In an effort to update our customer records, please provide the following details: +82 49453576079, 501128524842304066, and 9292 1345 4650 0515. This information is crucial for us to verify and authenticate your account. Kindly ensure the accuracy of the details provided to avoid any delays in processing your request. We take the security and privacy of your 300098320972442483 and 7983 7689 8259 2885 seriously and assure you that all data shared will be handled with the utmost confidentiality. If you have any questions or concerns, feel free to contact our customer support team at +81 90751912553. Thank you for your cooperation.",
+    "redacted_context": "In an effort to update our customer records, please provide the following details: +82 494****6079, 501128**********66, and 929213******0515. This information is crucial for us to verify and authenticate your account. Kindly ensure the accuracy of the details provided to avoid any delays in processing your request. We take the security and privacy of your 300098**********83 and 798376******2885 seriously and assure you that all data shared will be handled with the utmost confidentiality. If you have any questions or concerns, feel free to contact our customer support team at +81 907****2553. Thank you for your cooperation.",
+    "sensitive_info": [
+      {
+        "type": "phone",
+        "value": "+82 49453576079",
+        "start": 83,
+        "end": 98
+      },
+      {
+        "type": "id_card",
+        "value": "501128524842304066",
+        "start": 100,
+        "end": 118
+      },
+      {
+        "type": "credit_card",
+        "value": "9292 1345 4650 0515",
+        "start": 124,
+        "end": 143
+      },
+      {
+        "type": "id_card",
+        "value": "300098320972442483",
+        "start": 361,
+        "end": 379
+      },
+      {
+        "type": "credit_card",
+        "value": "7983 7689 8259 2885",
+        "start": 384,
+        "end": 403
+      },
+      {
+        "type": "phone",
+        "value": "+81 90751912553",
+        "start": 588,
+        "end": 603
+      }
+    ],
+    "sensitive_types": [
+      "phone",
+      "id_card",
+      "credit_card"
+    ],
+    "num_sensitive_items": 6
+  },
+  {
+    "id": "medium_47",
+    "difficulty": "medium",
+    "original_context": "In the recent customer records audit, we noticed discrepancies in the information provided. One particular record, associated with 430717780162414907 and +86 76053880532, showed irregularities that require immediate attention. It appears that the +86 80315903638 number linked to the account is not matching the details on the 106825369035621398. This raises concerns about the accuracy of the data we have on file. We recommend verifying the information provided and updating the records accordingly to ensure compliance and data integrity. Your prompt action on this matter is highly appreciated.",
+    "redacted_context": "In the recent customer records audit, we noticed discrepancies in the information provided. One particular record, associated with 430717**********07 and +86 760****0532, showed irregularities that require immediate attention. It appears that the +86 803****3638 number linked to the account is not matching the details on the 106825**********98. This raises concerns about the accuracy of the data we have on file. We recommend verifying the information provided and updating the records accordingly to ensure compliance and data integrity. Your prompt action on this matter is highly appreciated.",
+    "sensitive_info": [
+      {
+        "type": "id_card",
+        "value": "430717780162414907",
+        "start": 131,
+        "end": 149
+      },
+      {
+        "type": "phone",
+        "value": "+86 76053880532",
+        "start": 154,
+        "end": 169
+      },
+      {
+        "type": "phone",
+        "value": "+86 80315903638",
+        "start": 247,
+        "end": 262
+      },
+      {
+        "type": "id_card",
+        "value": "106825369035621398",
+        "start": 327,
+        "end": 345
+      }
+    ],
+    "sensitive_types": [
+      "phone",
+      "id_card"
+    ],
+    "num_sensitive_items": 4
+  },
+  {
+    "id": "medium_48",
+    "difficulty": "medium",
+    "original_context": "In the customer record update form, please ensure to provide the most recent 654806468110328366 and +44 37797971530 for verification purposes. Additionally, we kindly ask you to update the billing details by adding the new 0639 8831 7118 5789 information to ensure smooth transactions for your account. Your prompt attention to these updates is greatly appreciated to maintain the accuracy of your records. If you have any questions or encounter any issues during the update process, please do not hesitate to contact our customer support team at the provided +1 90090820135. Thank you for your cooperation.",
+    "redacted_context": "In the customer record update form, please ensure to provide the most recent 654806**********66 and +44 377****1530 for verification purposes. Additionally, we kindly ask you to update the billing details by adding the new 063988******5789 information to ensure smooth transactions for your account. Your prompt attention to these updates is greatly appreciated to maintain the accuracy of your records. If you have any questions or encounter any issues during the update process, please do not hesitate to contact our customer support team at the provided +1 900****0135. Thank you for your cooperation.",
+    "sensitive_info": [
+      {
+        "type": "id_card",
+        "value": "654806468110328366",
+        "start": 77,
+        "end": 95
+      },
+      {
+        "type": "phone",
+        "value": "+44 37797971530",
+        "start": 100,
+        "end": 115
+      },
+      {
+        "type": "credit_card",
+        "value": "0639 8831 7118 5789",
+        "start": 223,
+        "end": 242
+      },
+      {
+        "type": "phone",
+        "value": "+1 90090820135",
+        "start": 560,
+        "end": 574
+      }
+    ],
+    "sensitive_types": [
+      "phone",
+      "id_card",
+      "credit_card"
+    ],
+    "num_sensitive_items": 4
+  },
+  {
+    "id": "medium_49",
+    "difficulty": "medium",
+    "original_context": "A customer service representative accessed a +44 19589616004 that was associated with an urgent inquiry about a missing 997461756608802662. The caller provided their 042231721038292369 number along with their 2212 2637 0441 7003 details to verify their identity. The representative quickly located the customer's information in the system and confirmed that a replacement 293558159928753311 was being expedited. Additionally, the customer's 5817 8004 9581 2381 payment was processed for the replacement card's expedited shipping fee. The caller thanked the representative for the swift assistance and closed the call with a sense of relief.",
+    "redacted_context": "A customer service representative accessed a +44 195****6004 that was associated with an urgent inquiry about a missing 997461**********62. The caller provided their 042231**********69 number along with their 221226******7003 details to verify their identity. The representative quickly located the customer's information in the system and confirmed that a replacement 293558**********11 was being expedited. Additionally, the customer's 581780******2381 payment was processed for the replacement card's expedited shipping fee. The caller thanked the representative for the swift assistance and closed the call with a sense of relief.",
+    "sensitive_info": [
+      {
+        "type": "phone",
+        "value": "+44 19589616004",
+        "start": 45,
+        "end": 60
+      },
+      {
+        "type": "id_card",
+        "value": "997461756608802662",
+        "start": 120,
+        "end": 138
+      },
+      {
+        "type": "id_card",
+        "value": "042231721038292369",
+        "start": 166,
+        "end": 184
+      },
+      {
+        "type": "credit_card",
+        "value": "2212 2637 0441 7003",
+        "start": 209,
+        "end": 228
+      },
+      {
+        "type": "id_card",
+        "value": "293558159928753311",
+        "start": 372,
+        "end": 390
+      },
+      {
+        "type": "credit_card",
+        "value": "5817 8004 9581 2381",
+        "start": 441,
+        "end": 460
+      }
+    ],
+    "sensitive_types": [
+      "phone",
+      "id_card",
+      "credit_card"
+    ],
+    "num_sensitive_items": 6
+  }
+]

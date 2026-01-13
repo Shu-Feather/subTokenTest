@@ -1,0 +1,2491 @@
+[
+  {
+    "description": "This table represents a selection of universities, with additional information about their location, year of establishment, current student population, average tuition fee, acceptance rate, graduation rate, and world ranking.",
+    "table_data": [
+      [
+        "Harvard University",
+        "USA",
+        "1636",
+        "20457",
+        "$47",
+        "074",
+        "5%",
+        "98%",
+        "1"
+      ],
+      [
+        "University of Cambridge",
+        "UK",
+        "1209",
+        "19790",
+        "£9",
+        "250 (UK students)",
+        "£21",
+        "732 (International students)",
+        "21%",
+        "92%",
+        "3"
+      ],
+      [
+        "Stanford University",
+        "USA",
+        "1885",
+        "15878",
+        "$53",
+        "529",
+        "4.8%",
+        "94%",
+        "2"
+      ],
+      [
+        "University of Tokyo",
+        "Japan",
+        "1877",
+        "27932",
+        "¥535",
+        "800",
+        "34%",
+        "89%",
+        "22"
+      ],
+      [
+        "University of Toronto",
+        "Canada",
+        "1827",
+        "73209",
+        "CAD$6",
+        "100 (domestic students)",
+        "CAD$49",
+        "800 (International students)",
+        "43%",
+        "86%",
+        "25"
+      ],
+      [
+        "University of Melbourne",
+        "Australia",
+        "1853",
+        "49994",
+        "AUD$10",
+        "444 (domestic students)",
+        "AUD$40",
+        "680 (International students)",
+        "70%",
+        "85%",
+        "32"
+      ],
+      [
+        "University of Delhi",
+        "India",
+        "1922",
+        "132435",
+        "₹7",
+        "500",
+        "98%",
+        "86%",
+        "501-600"
+      ],
+      [
+        "University of Cape Town",
+        "South Africa",
+        "1829",
+        "28600",
+        "R53",
+        "440",
+        "42%",
+        "83%",
+        "155"
+      ]
+    ],
+    "context": "This table represents a selection of universities, with additional information about their location, year of establishment, current student population, average tuition fee, acceptance rate, graduation rate, and world ranking. row 1: Harvard University, USA, 1636, 20457, $47, 074, 5%, 98%, 1 row 2: University of Cambridge, UK, 1209, 19790, £9, 250 (UK students), £21, 732 (International students), 21%, 92%, 3 row 3: Stanford University, USA, 1885, 15878, $53, 529, 4.8%, 94%, 2 row 4: University of Tokyo, Japan, 1877, 27932, ¥535, 800, 34%, 89%, 22 row 5: University of Toronto, Canada, 1827, 73209, CAD$6, 100 (domestic students), CAD$49, 800 (International students), 43%, 86%, 25 row 6: University of Melbourne, Australia, 1853, 49994, AUD$10, 444 (domestic students), AUD$40, 680 (International students), 70%, 85%, 32 row 7: University of Delhi, India, 1922, 132435, ₹7, 500, 98%, 86%, 501-600 row 8: University of Cape Town, South Africa, 1829, 28600, R53, 440, 42%, 83%, 155",
+    "num_rows": 8,
+    "num_cols": 9
+  },
+  {
+    "description": "The table represents various product details. Each row corresponds to a different product and the columns represent the product's name, manufacturer, category, price (USD), launch date, rating out of 5, number of reviews, and availability status.",
+    "table_data": [
+      [
+        "iPhone 12",
+        "Apple",
+        "Electronics",
+        "799",
+        "October 23",
+        "2020",
+        "4.6",
+        "5000",
+        "Available"
+      ],
+      [
+        "Galaxy S21",
+        "Samsung",
+        "Electronics",
+        "699",
+        "January 29",
+        "2021",
+        "4.4",
+        "3500",
+        "Available"
+      ],
+      [
+        "PlayStation 5",
+        "Sony",
+        "Gaming",
+        "499",
+        "November 12",
+        "2020",
+        "4.8",
+        "4000",
+        "Out of Stock"
+      ],
+      [
+        "ThinkPad X1 Carbon",
+        "Lenovo",
+        "Computers",
+        "1200",
+        "June 23",
+        "2020",
+        "4.5",
+        "2000",
+        "Available"
+      ],
+      [
+        "Air Jordan 1 Retro High",
+        "Nike",
+        "Footwear",
+        "170",
+        "February 14",
+        "2020",
+        "4.7",
+        "1500",
+        "Available"
+      ],
+      [
+        "Kindle Paperwhite",
+        "Amazon",
+        "Electronics",
+        "130",
+        "July 14",
+        "2018",
+        "4.6",
+        "4500",
+        "Available"
+      ],
+      [
+        "Instant Pot Duo",
+        "Instant Brands",
+        "Kitchen Appliances",
+        "89",
+        "July 15",
+        "2019",
+        "4.7",
+        "6000",
+        "Available"
+      ],
+      [
+        "GoPro HERO9 Black",
+        "GoPro",
+        "Electronics",
+        "400",
+        "September 16",
+        "2020",
+        "4.5",
+        "3000",
+        "Available"
+      ]
+    ],
+    "context": "The table represents various product details. Each row corresponds to a different product and the columns represent the product's name, manufacturer, category, price (USD), launch date, rating out of 5, number of reviews, and availability status. row 1: iPhone 12, Apple, Electronics, 799, October 23, 2020, 4.6, 5000, Available row 2: Galaxy S21, Samsung, Electronics, 699, January 29, 2021, 4.4, 3500, Available row 3: PlayStation 5, Sony, Gaming, 499, November 12, 2020, 4.8, 4000, Out of Stock row 4: ThinkPad X1 Carbon, Lenovo, Computers, 1200, June 23, 2020, 4.5, 2000, Available row 5: Air Jordan 1 Retro High, Nike, Footwear, 170, February 14, 2020, 4.7, 1500, Available row 6: Kindle Paperwhite, Amazon, Electronics, 130, July 14, 2018, 4.6, 4500, Available row 7: Instant Pot Duo, Instant Brands, Kitchen Appliances, 89, July 15, 2019, 4.7, 6000, Available row 8: GoPro HERO9 Black, GoPro, Electronics, 400, September 16, 2020, 4.5, 3000, Available",
+    "num_rows": 8,
+    "num_cols": 9
+  },
+  {
+    "description": "This table represents various universities across the globe and their relevant attributes such as location, foundation year, total number of students, total faculty, ratio of international students, top academic discipline, and global ranking.",
+    "table_data": [
+      [
+        "Harvard University",
+        "USA",
+        "1636",
+        "22",
+        "000",
+        "2",
+        "400",
+        "25%",
+        "Social Sciences",
+        "1"
+      ],
+      [
+        "University of Cambridge",
+        "UK",
+        "1209",
+        "19",
+        "000",
+        "1",
+        "800",
+        "35%",
+        "Natural Sciences",
+        "2"
+      ],
+      [
+        "Stanford University",
+        "USA",
+        "1885",
+        "16",
+        "424",
+        "2",
+        "219",
+        "22%",
+        "Engineering",
+        "3"
+      ],
+      [
+        "University of Oxford",
+        "UK",
+        "1096",
+        "24",
+        "000",
+        "1",
+        "800",
+        "40%",
+        "Humanities",
+        "4"
+      ],
+      [
+        "University of Chicago",
+        "USA",
+        "1890",
+        "15",
+        "000",
+        "2",
+        "300",
+        "20%",
+        "Economics",
+        "6"
+      ],
+      [
+        "Swiss Federal Institute of Technology",
+        "Switzerland",
+        "1855",
+        "20",
+        "607",
+        "1",
+        "788",
+        "38%",
+        "Physical Sciences",
+        "8"
+      ],
+      [
+        "University of Tokyo",
+        "Japan",
+        "1877",
+        "28",
+        "000",
+        "2",
+        "000",
+        "10%",
+        "Technology",
+        "24"
+      ],
+      [
+        "University of Melbourne",
+        "Australia",
+        "1853",
+        "50",
+        "270",
+        "2",
+        "429",
+        "40%",
+        "Biomedical Sciences",
+        "30"
+      ]
+    ],
+    "context": "This table represents various universities across the globe and their relevant attributes such as location, foundation year, total number of students, total faculty, ratio of international students, top academic discipline, and global ranking. row 1: Harvard University, USA, 1636, 22, 000, 2, 400, 25%, Social Sciences, 1 row 2: University of Cambridge, UK, 1209, 19, 000, 1, 800, 35%, Natural Sciences, 2 row 3: Stanford University, USA, 1885, 16, 424, 2, 219, 22%, Engineering, 3 row 4: University of Oxford, UK, 1096, 24, 000, 1, 800, 40%, Humanities, 4 row 5: University of Chicago, USA, 1890, 15, 000, 2, 300, 20%, Economics, 6 row 6: Swiss Federal Institute of Technology, Switzerland, 1855, 20, 607, 1, 788, 38%, Physical Sciences, 8 row 7: University of Tokyo, Japan, 1877, 28, 000, 2, 000, 10%, Technology, 24 row 8: University of Melbourne, Australia, 1853, 50, 270, 2, 429, 40%, Biomedical Sciences, 30",
+    "num_rows": 8,
+    "num_cols": 10
+  },
+  {
+    "description": "The table represents various aspects of eight different companies, including their name, location, year of establishment, industry, number of employees, CEO, revenue in 2020, and market capitalization.",
+    "table_data": [
+      [
+        "Google",
+        "United States",
+        "1998",
+        "Technology",
+        "135301",
+        "Sundar Pichai",
+        "$181.69B",
+        "$1.5T"
+      ],
+      [
+        "Toyota",
+        "Japan",
+        "1937",
+        "Automotive",
+        "364445",
+        "Akio Toyoda",
+        "$275.35B",
+        "$236.6B"
+      ],
+      [
+        "Unilever",
+        "United Kingdom",
+        "1929",
+        "Consumer Goods",
+        "149867",
+        "Alan Jope",
+        "$58.22B",
+        "$143.9B"
+      ],
+      [
+        "Nestle",
+        "Switzerland",
+        "1866",
+        "Food Processing",
+        "291000",
+        "Mark Schneider",
+        "$90.8B",
+        "$328.2B"
+      ],
+      [
+        "Amazon",
+        "United States",
+        "1994",
+        "E-commerce",
+        "1291000",
+        "Andy Jassy",
+        "$386.06B",
+        "$1.75T"
+      ],
+      [
+        "Samsung",
+        "South Korea",
+        "1938",
+        "Electronics",
+        "287439",
+        "Kim Ki Nam",
+        "$211.2B",
+        "$352.7B"
+      ],
+      [
+        "Airbus",
+        "Netherlands",
+        "1970",
+        "Aerospace and Defense",
+        "134000",
+        "Guillaume Faury",
+        "$78.9B",
+        "$95.6B"
+      ],
+      [
+        "IKEA",
+        "Sweden",
+        "1943",
+        "Retail",
+        "211000",
+        "Jesper Brodin",
+        "$41.3B",
+        "$58.7B"
+      ]
+    ],
+    "context": "The table represents various aspects of eight different companies, including their name, location, year of establishment, industry, number of employees, CEO, revenue in 2020, and market capitalization. row 1: Google, United States, 1998, Technology, 135301, Sundar Pichai, $181.69B, $1.5T row 2: Toyota, Japan, 1937, Automotive, 364445, Akio Toyoda, $275.35B, $236.6B row 3: Unilever, United Kingdom, 1929, Consumer Goods, 149867, Alan Jope, $58.22B, $143.9B row 4: Nestle, Switzerland, 1866, Food Processing, 291000, Mark Schneider, $90.8B, $328.2B row 5: Amazon, United States, 1994, E-commerce, 1291000, Andy Jassy, $386.06B, $1.75T row 6: Samsung, South Korea, 1938, Electronics, 287439, Kim Ki Nam, $211.2B, $352.7B row 7: Airbus, Netherlands, 1970, Aerospace and Defense, 134000, Guillaume Faury, $78.9B, $95.6B row 8: IKEA, Sweden, 1943, Retail, 211000, Jesper Brodin, $41.3B, $58.7B",
+    "num_rows": 8,
+    "num_cols": 8
+  },
+  {
+    "description": "This table represents a list of products with their associated attributes such as product category, price, weight, color, manufacturer, launch date, and ratings.",
+    "table_data": [
+      [
+        "iPhone 12 Pro",
+        "Electronics",
+        "$999",
+        "189g",
+        "Silver",
+        "Apple",
+        "23/10/2020",
+        "4.5"
+      ],
+      [
+        "Samsung Galaxy S21",
+        "Electronics",
+        "$799",
+        "171g",
+        "Phantom Gray",
+        "Samsung",
+        "29/01/2021",
+        "4.6"
+      ],
+      [
+        "Nike Air Force 1",
+        "Footwear",
+        "$90",
+        "421g",
+        "White",
+        "Nike",
+        "28/11/1982",
+        "4.7"
+      ],
+      [
+        "Bose QuietComfort 35 II",
+        "Electronics",
+        "$299",
+        "235g",
+        "Black",
+        "Bose",
+        "20/09/2017",
+        "4.4"
+      ],
+      [
+        "Levis 501 Original Fit Jeans",
+        "Clothing",
+        "$59.50",
+        "500g",
+        "Blue",
+        "Levi's",
+        "01/05/1890",
+        "4.3"
+      ],
+      [
+        "KitchenAid Artisan Mixer",
+        "Kitchen Appliance",
+        "$379.99",
+        "10.6kg",
+        "Red",
+        "KitchenAid",
+        "05/09/2012",
+        "4.6"
+      ],
+      [
+        "Sony PlayStation 5",
+        "Electronics",
+        "$499",
+        "4.5kg",
+        "White",
+        "Sony",
+        "12/11/2020",
+        "4.8"
+      ],
+      [
+        "Dyson V11 Torque Drive",
+        "Home Appliance",
+        "$599.99",
+        "2.68kg",
+        "Blue",
+        "Dyson",
+        "20/03/2019",
+        "4.6"
+      ]
+    ],
+    "context": "This table represents a list of products with their associated attributes such as product category, price, weight, color, manufacturer, launch date, and ratings. row 1: iPhone 12 Pro, Electronics, $999, 189g, Silver, Apple, 23/10/2020, 4.5 row 2: Samsung Galaxy S21, Electronics, $799, 171g, Phantom Gray, Samsung, 29/01/2021, 4.6 row 3: Nike Air Force 1, Footwear, $90, 421g, White, Nike, 28/11/1982, 4.7 row 4: Bose QuietComfort 35 II, Electronics, $299, 235g, Black, Bose, 20/09/2017, 4.4 row 5: Levis 501 Original Fit Jeans, Clothing, $59.50, 500g, Blue, Levi's, 01/05/1890, 4.3 row 6: KitchenAid Artisan Mixer, Kitchen Appliance, $379.99, 10.6kg, Red, KitchenAid, 05/09/2012, 4.6 row 7: Sony PlayStation 5, Electronics, $499, 4.5kg, White, Sony, 12/11/2020, 4.8 row 8: Dyson V11 Torque Drive, Home Appliance, $599.99, 2.68kg, Blue, Dyson, 20/03/2019, 4.6",
+    "num_rows": 8,
+    "num_cols": 8
+  },
+  {
+    "description": "The table represents eight different universities with their respective attributes. The attributes include: location, year founded, total students, total faculty, undergraduate tuition (in-state), undergraduate tuition (out-of-state), number of undergraduate programs, and number of graduate programs.",
+    "table_data": [
+      [
+        "Harvard University",
+        "Cambridge",
+        "Massachusetts",
+        "1636",
+        "22",
+        "947",
+        "2",
+        "400",
+        "$51",
+        "925",
+        "$51",
+        "925",
+        "50",
+        "150"
+      ],
+      [
+        "Stanford University",
+        "Stanford",
+        "California",
+        "1885",
+        "17",
+        "381",
+        "2",
+        "219",
+        "$54",
+        "473",
+        "$54",
+        "473",
+        "65",
+        "120"
+      ],
+      [
+        "University of Chicago",
+        "Chicago",
+        "Illinois",
+        "1890",
+        "16",
+        "445",
+        "2",
+        "313",
+        "$59",
+        "298",
+        "$59",
+        "298",
+        "55",
+        "165"
+      ],
+      [
+        "Yale University",
+        "New Haven",
+        "Connecticut",
+        "1701",
+        "13",
+        "433",
+        "2",
+        "816",
+        "$55",
+        "500",
+        "$55",
+        "500",
+        "75",
+        "120"
+      ],
+      [
+        "University of Cambridge",
+        "Cambridge",
+        "England",
+        "1209",
+        "18",
+        "977",
+        "1",
+        "646",
+        "$14",
+        "096",
+        "$28",
+        "192",
+        "70",
+        "140"
+      ],
+      [
+        "University of Toronto",
+        "Toronto",
+        "Canada",
+        "1827",
+        "93",
+        "081",
+        "2",
+        "500",
+        "$6",
+        "100",
+        "$42",
+        "870",
+        "80",
+        "160"
+      ],
+      [
+        "University of Melbourne",
+        "Melbourne",
+        "Australia",
+        "1853",
+        "50",
+        "270",
+        "1",
+        "500",
+        "$28",
+        "632",
+        "$40",
+        "222",
+        "90",
+        "200"
+      ],
+      [
+        "University of Tokyo",
+        "Tokyo",
+        "Japan",
+        "1877",
+        "28",
+        "686",
+        "2",
+        "100",
+        "$4",
+        "735",
+        "$4",
+        "735",
+        "60",
+        "130"
+      ]
+    ],
+    "context": "The table represents eight different universities with their respective attributes. The attributes include: location, year founded, total students, total faculty, undergraduate tuition (in-state), undergraduate tuition (out-of-state), number of undergraduate programs, and number of graduate programs. row 1: Harvard University, Cambridge, Massachusetts, 1636, 22, 947, 2, 400, $51, 925, $51, 925, 50, 150 row 2: Stanford University, Stanford, California, 1885, 17, 381, 2, 219, $54, 473, $54, 473, 65, 120 row 3: University of Chicago, Chicago, Illinois, 1890, 16, 445, 2, 313, $59, 298, $59, 298, 55, 165 row 4: Yale University, New Haven, Connecticut, 1701, 13, 433, 2, 816, $55, 500, $55, 500, 75, 120 row 5: University of Cambridge, Cambridge, England, 1209, 18, 977, 1, 646, $14, 096, $28, 192, 70, 140 row 6: University of Toronto, Toronto, Canada, 1827, 93, 081, 2, 500, $6, 100, $42, 870, 80, 160 row 7: University of Melbourne, Melbourne, Australia, 1853, 50, 270, 1, 500, $28, 632, $40, 222, 90, 200 row 8: University of Tokyo, Tokyo, Japan, 1877, 28, 686, 2, 100, $4, 735, $4, 735, 60, 130",
+    "num_rows": 8,
+    "num_cols": 14
+  },
+  {
+    "description": "This table represents a collection of products from different categories with their respective attributes; which includes the product name, category, manufacturer, date of release, price, rating, number of reviews, and availability.",
+    "table_data": [
+      [
+        "iPhone 12",
+        "Electronics",
+        "Apple",
+        "10/13/2020",
+        "$699",
+        "4.6",
+        "5500",
+        "In Stock"
+      ],
+      [
+        "Samsung Galaxy S21",
+        "Electronics",
+        "Samsung",
+        "01/29/2021",
+        "$799",
+        "4.4",
+        "4500",
+        "In Stock"
+      ],
+      [
+        "Sony WH-1000XM4",
+        "Electronics",
+        "Sony",
+        "08/20/2020",
+        "$348",
+        "4.7",
+        "7000",
+        "Out of Stock"
+      ],
+      [
+        "Kindle Paperwhite",
+        "Electronics",
+        "Amazon",
+        "11/07/2018",
+        "$129.99",
+        "4.6",
+        "50000",
+        "In Stock"
+      ],
+      [
+        "Instant Pot Duo",
+        "Home & Kitchen",
+        "Instant Brand",
+        "12/17/2018",
+        "$89",
+        "4.7",
+        "105000",
+        "In Stock"
+      ],
+      [
+        "Levi's 501 Original Fit Jeans",
+        "Fashion",
+        "Levi's",
+        "01/01/2010",
+        "$59.50",
+        "4.5",
+        "15000",
+        "In Stock"
+      ],
+      [
+        "Nike Air Force 1",
+        "Fashion",
+        "Nike",
+        "01/01/1982",
+        "$90",
+        "4.7",
+        "25000",
+        "Out of Stock"
+      ],
+      [
+        "The Alchemist - Paperback",
+        "Books",
+        "HarperOne",
+        "05/01/1993",
+        "$11.28",
+        "4.7",
+        "50000",
+        "In Stock"
+      ]
+    ],
+    "context": "This table represents a collection of products from different categories with their respective attributes; which includes the product name, category, manufacturer, date of release, price, rating, number of reviews, and availability. row 1: iPhone 12, Electronics, Apple, 10/13/2020, $699, 4.6, 5500, In Stock row 2: Samsung Galaxy S21, Electronics, Samsung, 01/29/2021, $799, 4.4, 4500, In Stock row 3: Sony WH-1000XM4, Electronics, Sony, 08/20/2020, $348, 4.7, 7000, Out of Stock row 4: Kindle Paperwhite, Electronics, Amazon, 11/07/2018, $129.99, 4.6, 50000, In Stock row 5: Instant Pot Duo, Home & Kitchen, Instant Brand, 12/17/2018, $89, 4.7, 105000, In Stock row 6: Levi's 501 Original Fit Jeans, Fashion, Levi's, 01/01/2010, $59.50, 4.5, 15000, In Stock row 7: Nike Air Force 1, Fashion, Nike, 01/01/1982, $90, 4.7, 25000, Out of Stock row 8: The Alchemist - Paperback, Books, HarperOne, 05/01/1993, $11.28, 4.7, 50000, In Stock",
+    "num_rows": 8,
+    "num_cols": 8
+  },
+  {
+    "description": "The table represents a list of different tech products with their corresponding attributes such as price, launch year, manufacturer, made in country, product category, weight, and product rating.",
+    "table_data": [
+      [
+        "iPhone 13 Pro",
+        "$999",
+        "2021",
+        "Apple",
+        "USA",
+        "Smartphone",
+        "204 grams",
+        "4.6/5"
+      ],
+      [
+        "Samsung Galaxy S21",
+        "$799",
+        "2021",
+        "Samsung",
+        "South Korea",
+        "Smartphone",
+        "171 grams",
+        "4.4/5"
+      ],
+      [
+        "MacBook Pro",
+        "$2399",
+        "2020",
+        "Apple",
+        "USA",
+        "Laptop",
+        "1.4 kg",
+        "4.7/5"
+      ],
+      [
+        "Dell XPS 15",
+        "$1599",
+        "2020",
+        "Dell",
+        "USA",
+        "Laptop",
+        "2 kg",
+        "4.5/5"
+      ],
+      [
+        "Sony WH-1000XM4",
+        "$348",
+        "2020",
+        "Sony",
+        "Japan",
+        "Headphones",
+        "254 grams",
+        "4.7/5"
+      ],
+      [
+        "Amazon Echo Dot (4th Gen)",
+        "$49.99",
+        "2020",
+        "Amazon",
+        "China",
+        "Smart Speaker",
+        "341 grams",
+        "4.6/5"
+      ],
+      [
+        "Fitbit Charge 4",
+        "$129.95",
+        "2020",
+        "Fitbit",
+        "Singapore",
+        "Fitness Tracker",
+        "30 grams",
+        "4.3/5"
+      ],
+      [
+        "Google Nest Hub",
+        "$89.99",
+        "2019",
+        "Google",
+        "China",
+        "Smart Display",
+        "480 grams",
+        "4.4/5"
+      ]
+    ],
+    "context": "The table represents a list of different tech products with their corresponding attributes such as price, launch year, manufacturer, made in country, product category, weight, and product rating. row 1: iPhone 13 Pro, $999, 2021, Apple, USA, Smartphone, 204 grams, 4.6/5 row 2: Samsung Galaxy S21, $799, 2021, Samsung, South Korea, Smartphone, 171 grams, 4.4/5 row 3: MacBook Pro, $2399, 2020, Apple, USA, Laptop, 1.4 kg, 4.7/5 row 4: Dell XPS 15, $1599, 2020, Dell, USA, Laptop, 2 kg, 4.5/5 row 5: Sony WH-1000XM4, $348, 2020, Sony, Japan, Headphones, 254 grams, 4.7/5 row 6: Amazon Echo Dot (4th Gen), $49.99, 2020, Amazon, China, Smart Speaker, 341 grams, 4.6/5 row 7: Fitbit Charge 4, $129.95, 2020, Fitbit, Singapore, Fitness Tracker, 30 grams, 4.3/5 row 8: Google Nest Hub, $89.99, 2019, Google, China, Smart Display, 480 grams, 4.4/5",
+    "num_rows": 8,
+    "num_cols": 8
+  },
+  {
+    "description": "The table represents different books and their attributes such as author, genre, publication year, publisher, page count, language, and average rating.",
+    "table_data": [
+      [
+        "\"To Kill a Mockingbird\"",
+        "Harper Lee",
+        "Fiction",
+        "1960",
+        "J. B. Lippincott & Co.",
+        "281",
+        "English",
+        "4.3"
+      ],
+      [
+        "\"1984\"",
+        "George Orwell",
+        "Dystopian",
+        "1949",
+        "Secker & Warburg",
+        "328",
+        "English",
+        "4.2"
+      ],
+      [
+        "\"The Great Gatsby\"",
+        "F. Scott Fitzgerald",
+        "Tragedy",
+        "1925",
+        "Charles Scribner's Sons",
+        "180",
+        "English",
+        "3.9"
+      ],
+      [
+        "\"The Catcher in the Rye\"",
+        "J.D. Salinger",
+        "Coming-of-Age",
+        "1951",
+        "Little",
+        "Brown and Company",
+        "277",
+        "English",
+        "3.8"
+      ],
+      [
+        "\"The Hobbit\"",
+        "J.R.R. Tolkien",
+        "Fantasy",
+        "1937",
+        "George Allen & Unwin",
+        "310",
+        "English",
+        "4.3"
+      ],
+      [
+        "\"Moby-Dick\"",
+        "Herman Melville",
+        "Adventure",
+        "1851",
+        "Richard Bentley",
+        "635",
+        "English",
+        "3.5"
+      ],
+      [
+        "\"War and Peace\"",
+        "Leo Tolstoy",
+        "Historical Fiction",
+        "1869",
+        "The Russian Messenger",
+        "1225",
+        "Russian",
+        "4.1"
+      ],
+      [
+        "\"One Hundred Years of Solitude\"",
+        "Gabriel García Márquez",
+        "Magic Realism",
+        "1967",
+        "Editorial Sudamericana",
+        "417",
+        "Spanish",
+        "4.1"
+      ]
+    ],
+    "context": "The table represents different books and their attributes such as author, genre, publication year, publisher, page count, language, and average rating. row 1: \"To Kill a Mockingbird\", Harper Lee, Fiction, 1960, J. B. Lippincott & Co., 281, English, 4.3 row 2: \"1984\", George Orwell, Dystopian, 1949, Secker & Warburg, 328, English, 4.2 row 3: \"The Great Gatsby\", F. Scott Fitzgerald, Tragedy, 1925, Charles Scribner's Sons, 180, English, 3.9 row 4: \"The Catcher in the Rye\", J.D. Salinger, Coming-of-Age, 1951, Little, Brown and Company, 277, English, 3.8 row 5: \"The Hobbit\", J.R.R. Tolkien, Fantasy, 1937, George Allen & Unwin, 310, English, 4.3 row 6: \"Moby-Dick\", Herman Melville, Adventure, 1851, Richard Bentley, 635, English, 3.5 row 7: \"War and Peace\", Leo Tolstoy, Historical Fiction, 1869, The Russian Messenger, 1225, Russian, 4.1 row 8: \"One Hundred Years of Solitude\", Gabriel García Márquez, Magic Realism, 1967, Editorial Sudamericana, 417, Spanish, 4.1",
+    "num_rows": 8,
+    "num_cols": 8
+  },
+  {
+    "description": "This table represents various attributes of eight different countries. These attributes include the country's capital city, population, area (in square kilometers), official language, currency, GDP (in USD), average life expectancy, and the continent it is located in.",
+    "table_data": [
+      [
+        "United States",
+        "Washington D.C.",
+        "331",
+        "449",
+        "281",
+        "9",
+        "631",
+        "418",
+        "English",
+        "US Dollar",
+        "21.43 trillion",
+        "78.9 years",
+        "North America"
+      ],
+      [
+        "United Kingdom",
+        "London",
+        "66",
+        "834",
+        "405",
+        "242",
+        "495",
+        "English",
+        "Pound Sterling",
+        "2.83 trillion",
+        "81.2 years",
+        "Europe"
+      ],
+      [
+        "Japan",
+        "Tokyo",
+        "125",
+        "960",
+        "000",
+        "377",
+        "975",
+        "Japanese",
+        "Yen",
+        "5.08 trillion",
+        "84.2 years",
+        "Asia"
+      ],
+      [
+        "Australia",
+        "Canberra",
+        "25",
+        "499",
+        "884",
+        "7",
+        "692",
+        "024",
+        "English",
+        "Australian Dollar",
+        "1.39 trillion",
+        "82.8 years",
+        "Oceania"
+      ],
+      [
+        "Canada",
+        "Ottawa",
+        "37",
+        "364",
+        "117",
+        "9",
+        "984",
+        "670",
+        "English & French",
+        "Canadian Dollar",
+        "1.64 trillion",
+        "82.3 years",
+        "North America"
+      ],
+      [
+        "Brazil",
+        "Brasília",
+        "211",
+        "049",
+        "527",
+        "8",
+        "515",
+        "767",
+        "Portuguese",
+        "Real",
+        "2.05 trillion",
+        "75.7 years",
+        "South America"
+      ],
+      [
+        "South Africa",
+        "Pretoria",
+        "59",
+        "308",
+        "690",
+        "1",
+        "219",
+        "090",
+        "English",
+        "Rand",
+        "351.4 billion",
+        "63.3 years",
+        "Africa"
+      ],
+      [
+        "Russia",
+        "Moscow",
+        "145",
+        "912",
+        "025",
+        "17",
+        "098",
+        "242",
+        "Russian",
+        "Ruble",
+        "1.47 trillion",
+        "72.4 years",
+        "Europe"
+      ]
+    ],
+    "context": "This table represents various attributes of eight different countries. These attributes include the country's capital city, population, area (in square kilometers), official language, currency, GDP (in USD), average life expectancy, and the continent it is located in. row 1: United States, Washington D.C., 331, 449, 281, 9, 631, 418, English, US Dollar, 21.43 trillion, 78.9 years, North America row 2: United Kingdom, London, 66, 834, 405, 242, 495, English, Pound Sterling, 2.83 trillion, 81.2 years, Europe row 3: Japan, Tokyo, 125, 960, 000, 377, 975, Japanese, Yen, 5.08 trillion, 84.2 years, Asia row 4: Australia, Canberra, 25, 499, 884, 7, 692, 024, English, Australian Dollar, 1.39 trillion, 82.8 years, Oceania row 5: Canada, Ottawa, 37, 364, 117, 9, 984, 670, English & French, Canadian Dollar, 1.64 trillion, 82.3 years, North America row 6: Brazil, Brasília, 211, 049, 527, 8, 515, 767, Portuguese, Real, 2.05 trillion, 75.7 years, South America row 7: South Africa, Pretoria, 59, 308, 690, 1, 219, 090, English, Rand, 351.4 billion, 63.3 years, Africa row 8: Russia, Moscow, 145, 912, 025, 17, 098, 242, Russian, Ruble, 1.47 trillion, 72.4 years, Europe",
+    "num_rows": 8,
+    "num_cols": 13
+  },
+  {
+    "description": "The table represents various attributes of different smartphone models. The attributes include the manufacturer, launch year, operating system, screen size, camera resolution, battery capacity, RAM size, and storage capacity.",
+    "table_data": [
+      [
+        "iPhone 13",
+        "Apple",
+        "2021",
+        "iOS 15",
+        "6.1 inches",
+        "12 MP",
+        "3210 mAh",
+        "6 GB",
+        "128 GB"
+      ],
+      [
+        "Galaxy S21",
+        "Samsung",
+        "2021",
+        "Android 11",
+        "6.2 inches",
+        "64 MP",
+        "4000 mAh",
+        "8 GB",
+        "128 GB"
+      ],
+      [
+        "Pixel 6",
+        "Google",
+        "2021",
+        "Android 12",
+        "6.4 inches",
+        "50 MP",
+        "4614 mAh",
+        "8 GB",
+        "128 GB"
+      ],
+      [
+        "OnePlus 9",
+        "OnePlus",
+        "2021",
+        "Android 11",
+        "6.55 inches",
+        "48 MP",
+        "4500 mAh",
+        "8 GB",
+        "128 GB"
+      ],
+      [
+        "Mi 11",
+        "Xiaomi",
+        "2021",
+        "Android 11",
+        "6.81 inches",
+        "108 MP",
+        "4600 mAh",
+        "8 GB",
+        "128 GB"
+      ],
+      [
+        "Xperia 5 III",
+        "Sony",
+        "2021",
+        "Android 11",
+        "6.1 inches",
+        "12 MP",
+        "4500 mAh",
+        "8 GB",
+        "256 GB"
+      ],
+      [
+        "P50 Pro",
+        "Huawei",
+        "2021",
+        "HarmonyOS 2",
+        "6.6 inches",
+        "50 MP",
+        "4360 mAh",
+        "8 GB",
+        "256 GB"
+      ],
+      [
+        "Zenfone 8",
+        "Asus",
+        "2021",
+        "Android 11",
+        "5.9 inches",
+        "64 MP",
+        "4000 mAh",
+        "8 GB",
+        "128 GB"
+      ]
+    ],
+    "context": "The table represents various attributes of different smartphone models. The attributes include the manufacturer, launch year, operating system, screen size, camera resolution, battery capacity, RAM size, and storage capacity. row 1: iPhone 13, Apple, 2021, iOS 15, 6.1 inches, 12 MP, 3210 mAh, 6 GB, 128 GB row 2: Galaxy S21, Samsung, 2021, Android 11, 6.2 inches, 64 MP, 4000 mAh, 8 GB, 128 GB row 3: Pixel 6, Google, 2021, Android 12, 6.4 inches, 50 MP, 4614 mAh, 8 GB, 128 GB row 4: OnePlus 9, OnePlus, 2021, Android 11, 6.55 inches, 48 MP, 4500 mAh, 8 GB, 128 GB row 5: Mi 11, Xiaomi, 2021, Android 11, 6.81 inches, 108 MP, 4600 mAh, 8 GB, 128 GB row 6: Xperia 5 III, Sony, 2021, Android 11, 6.1 inches, 12 MP, 4500 mAh, 8 GB, 256 GB row 7: P50 Pro, Huawei, 2021, HarmonyOS 2, 6.6 inches, 50 MP, 4360 mAh, 8 GB, 256 GB row 8: Zenfone 8, Asus, 2021, Android 11, 5.9 inches, 64 MP, 4000 mAh, 8 GB, 128 GB",
+    "num_rows": 8,
+    "num_cols": 9
+  },
+  {
+    "description": "This table represents various attributes of countries including their capital city, population, area in square kilometers, official language, currency, GDP per capita (in US dollars), and the type of government.",
+    "table_data": [
+      [
+        "United States",
+        "Washington D.C.",
+        "331",
+        "002",
+        "651",
+        "9",
+        "631",
+        "418",
+        "English",
+        "US Dollar",
+        "63",
+        "544",
+        "Federal Presidential Constitutional Republic"
+      ],
+      [
+        "Canada",
+        "Ottawa",
+        "37",
+        "364",
+        "117",
+        "9",
+        "984",
+        "670",
+        "English and French",
+        "Canadian Dollar",
+        "46",
+        "211",
+        "Federal Parliamentary Constitutional Monarchy"
+      ],
+      [
+        "Australia",
+        "Canberra",
+        "25",
+        "499",
+        "884",
+        "7",
+        "692",
+        "024",
+        "English",
+        "Australian Dollar",
+        "55",
+        "060",
+        "Federal Parliamentary Constitutional Monarchy"
+      ],
+      [
+        "Germany",
+        "Berlin",
+        "83",
+        "783",
+        "942",
+        "357",
+        "022",
+        "German",
+        "Euro",
+        "46",
+        "563",
+        "Federal Parliamentary Republic"
+      ],
+      [
+        "Japan",
+        "Tokyo",
+        "126",
+        "476",
+        "461",
+        "377",
+        "975",
+        "Japanese",
+        "Yen",
+        "40",
+        "849",
+        "Unitary Parliamentary Constitutional Monarchy"
+      ],
+      [
+        "Brazil",
+        "Brasilia",
+        "211",
+        "049",
+        "527",
+        "8",
+        "515",
+        "767",
+        "Portuguese",
+        "Real",
+        "8",
+        "717",
+        "Federal Presidential Constitutional Republic"
+      ],
+      [
+        "South Africa",
+        "Pretoria",
+        "59",
+        "308",
+        "690",
+        "1",
+        "221",
+        "037",
+        "English",
+        "South African Rand",
+        "6",
+        "377",
+        "Unitary Dominant-Party Parliamentary Republic"
+      ],
+      [
+        "India",
+        "New Delhi",
+        "1",
+        "380",
+        "004",
+        "385",
+        "3",
+        "287",
+        "263",
+        "Hindi",
+        "Indian Rupee",
+        "2",
+        "016",
+        "Federal Parliamentary Constitutional Republic"
+      ]
+    ],
+    "context": "This table represents various attributes of countries including their capital city, population, area in square kilometers, official language, currency, GDP per capita (in US dollars), and the type of government. row 1: United States, Washington D.C., 331, 002, 651, 9, 631, 418, English, US Dollar, 63, 544, Federal Presidential Constitutional Republic row 2: Canada, Ottawa, 37, 364, 117, 9, 984, 670, English and French, Canadian Dollar, 46, 211, Federal Parliamentary Constitutional Monarchy row 3: Australia, Canberra, 25, 499, 884, 7, 692, 024, English, Australian Dollar, 55, 060, Federal Parliamentary Constitutional Monarchy row 4: Germany, Berlin, 83, 783, 942, 357, 022, German, Euro, 46, 563, Federal Parliamentary Republic row 5: Japan, Tokyo, 126, 476, 461, 377, 975, Japanese, Yen, 40, 849, Unitary Parliamentary Constitutional Monarchy row 6: Brazil, Brasilia, 211, 049, 527, 8, 515, 767, Portuguese, Real, 8, 717, Federal Presidential Constitutional Republic row 7: South Africa, Pretoria, 59, 308, 690, 1, 221, 037, English, South African Rand, 6, 377, Unitary Dominant-Party Parliamentary Republic row 8: India, New Delhi, 1, 380, 004, 385, 3, 287, 263, Hindi, Indian Rupee, 2, 016, Federal Parliamentary Constitutional Republic",
+    "num_rows": 8,
+    "num_cols": 13
+  },
+  {
+    "description": "The table represents specific information about eight different universities. The attributes in the table include the university's name, location, number of students, number of faculties, year of establishment, number of courses offered, tuition fee for international students, and ranking in the world.",
+    "table_data": [
+      [
+        "Harvard University",
+        "Cambridge",
+        "21000",
+        "2400",
+        "1636",
+        "4700",
+        "$50",
+        "420",
+        "1"
+      ],
+      [
+        "Stanford University",
+        "Stanford",
+        "17000",
+        "2200",
+        "1885",
+        "3400",
+        "$53",
+        "529",
+        "2"
+      ],
+      [
+        "University of Cambridge",
+        "Cambridge UK",
+        "19000",
+        "6500",
+        "1209",
+        "6000",
+        "£30",
+        "000",
+        "3"
+      ],
+      [
+        "California Institute of Technology",
+        "Pasadena",
+        "2200",
+        "300",
+        "1891",
+        "2000",
+        "$52",
+        "362",
+        "4"
+      ],
+      [
+        "University of Oxford",
+        "Oxford UK",
+        "24000",
+        "6900",
+        "1096",
+        "5700",
+        "£36",
+        "065",
+        "5"
+      ],
+      [
+        "University of Chicago",
+        "Chicago",
+        "14000",
+        "2100",
+        "1890",
+        "3200",
+        "$57",
+        "642",
+        "6"
+      ],
+      [
+        "Princeton University",
+        "Princeton",
+        "8000",
+        "1250",
+        "1746",
+        "3700",
+        "$51",
+        "879",
+        "7"
+      ],
+      [
+        "Yale University",
+        "New Haven",
+        "13000",
+        "2800",
+        "1701",
+        "4300",
+        "$55",
+        "500",
+        "8"
+      ]
+    ],
+    "context": "The table represents specific information about eight different universities. The attributes in the table include the university's name, location, number of students, number of faculties, year of establishment, number of courses offered, tuition fee for international students, and ranking in the world. row 1: Harvard University, Cambridge, 21000, 2400, 1636, 4700, $50, 420, 1 row 2: Stanford University, Stanford, 17000, 2200, 1885, 3400, $53, 529, 2 row 3: University of Cambridge, Cambridge UK, 19000, 6500, 1209, 6000, £30, 000, 3 row 4: California Institute of Technology, Pasadena, 2200, 300, 1891, 2000, $52, 362, 4 row 5: University of Oxford, Oxford UK, 24000, 6900, 1096, 5700, £36, 065, 5 row 6: University of Chicago, Chicago, 14000, 2100, 1890, 3200, $57, 642, 6 row 7: Princeton University, Princeton, 8000, 1250, 1746, 3700, $51, 879, 7 row 8: Yale University, New Haven, 13000, 2800, 1701, 4300, $55, 500, 8",
+    "num_rows": 8,
+    "num_cols": 9
+  },
+  {
+    "description": "The table represents various attributes of eight different countries. The attributes include the country's capital, population, area in square kilometers, official language, currency, GDP (gross domestic product) per capita, and time zone(s).",
+    "table_data": [
+      [
+        "United States",
+        "Washington D.C.",
+        "331",
+        "002",
+        "651",
+        "9",
+        "834",
+        "000",
+        "English",
+        "US Dollar",
+        "63",
+        "543",
+        "UTC-4 to UTC-12"
+      ],
+      [
+        "Canada",
+        "Ottawa",
+        "37",
+        "364",
+        "117",
+        "9",
+        "984",
+        "670",
+        "English and French",
+        "Canadian Dollar",
+        "46",
+        "211",
+        "UTC-3.5 to UTC-8"
+      ],
+      [
+        "Australia",
+        "Canberra",
+        "25",
+        "499",
+        "884",
+        "7",
+        "692",
+        "024",
+        "English",
+        "Australian Dollar",
+        "54",
+        "907",
+        "UTC+8 to UTC+10.5"
+      ],
+      [
+        "Japan",
+        "Tokyo",
+        "126",
+        "476",
+        "461",
+        "377",
+        "975",
+        "Japanese",
+        "Yen",
+        "40",
+        "849",
+        "UTC+9"
+      ],
+      [
+        "Germany",
+        "Berlin",
+        "83",
+        "783",
+        "942",
+        "357",
+        "022",
+        "German",
+        "Euro",
+        "45",
+        "466",
+        "UTC+1"
+      ],
+      [
+        "Brazil",
+        "Brasília",
+        "211",
+        "049",
+        "527",
+        "8",
+        "515",
+        "767",
+        "Portuguese",
+        "Real",
+        "8",
+        "717",
+        "UTC-2 to UTC-5"
+      ],
+      [
+        "South Africa",
+        "Pretoria",
+        "59",
+        "308",
+        "690",
+        "1",
+        "221",
+        "037",
+        "English",
+        "South African Rand",
+        "6",
+        "374",
+        "UTC+2"
+      ],
+      [
+        "India",
+        "New Delhi",
+        "1",
+        "380",
+        "004",
+        "385",
+        "3",
+        "287",
+        "263",
+        "Hindi",
+        "Indian Rupee",
+        "2",
+        "016",
+        "UTC+5:30"
+      ]
+    ],
+    "context": "The table represents various attributes of eight different countries. The attributes include the country's capital, population, area in square kilometers, official language, currency, GDP (gross domestic product) per capita, and time zone(s). row 1: United States, Washington D.C., 331, 002, 651, 9, 834, 000, English, US Dollar, 63, 543, UTC-4 to UTC-12 row 2: Canada, Ottawa, 37, 364, 117, 9, 984, 670, English and French, Canadian Dollar, 46, 211, UTC-3.5 to UTC-8 row 3: Australia, Canberra, 25, 499, 884, 7, 692, 024, English, Australian Dollar, 54, 907, UTC+8 to UTC+10.5 row 4: Japan, Tokyo, 126, 476, 461, 377, 975, Japanese, Yen, 40, 849, UTC+9 row 5: Germany, Berlin, 83, 783, 942, 357, 022, German, Euro, 45, 466, UTC+1 row 6: Brazil, Brasília, 211, 049, 527, 8, 515, 767, Portuguese, Real, 8, 717, UTC-2 to UTC-5 row 7: South Africa, Pretoria, 59, 308, 690, 1, 221, 037, English, South African Rand, 6, 374, UTC+2 row 8: India, New Delhi, 1, 380, 004, 385, 3, 287, 263, Hindi, Indian Rupee, 2, 016, UTC+5:30",
+    "num_rows": 8,
+    "num_cols": 13
+  },
+  {
+    "description": "This table represents a variety of consumer electronic products and their corresponding attributes, including Brand, Year of Manufacture, Price in USD, Weight in KG, Screen Size in Inch (if applicable), Battery Life in Hours (if applicable), and the Country of Manufacture.",
+    "table_data": [
+      [
+        "iPhone 12 Pro",
+        "Apple",
+        "2020",
+        "999",
+        "0.189",
+        "6.1",
+        "17",
+        "USA"
+      ],
+      [
+        "Galaxy S21",
+        "Samsung",
+        "2021",
+        "799",
+        "0.171",
+        "6.2",
+        "20",
+        "South Korea"
+      ],
+      [
+        "PlayStation 5",
+        "Sony",
+        "2020",
+        "499",
+        "4.5",
+        "N/A",
+        "N/A",
+        "Japan"
+      ],
+      [
+        "Surface Laptop 4",
+        "Microsoft",
+        "2021",
+        "999",
+        "1.265",
+        "13.5",
+        "19",
+        "China"
+      ],
+      [
+        "Kindle Paperwhite",
+        "Amazon",
+        "2018",
+        "129.99",
+        "0.182",
+        "6",
+        "Up to 6 weeks",
+        "China"
+      ],
+      [
+        "AirPods Pro",
+        "Apple",
+        "2019",
+        "249",
+        "0.005",
+        "N/A",
+        "4.5",
+        "China"
+      ],
+      [
+        "Switch",
+        "Nintendo",
+        "2017",
+        "299.99",
+        "0.4",
+        "6.2",
+        "6",
+        "Japan"
+      ],
+      [
+        "Echo Dot (4th Gen)",
+        "Amazon",
+        "2020",
+        "49.99",
+        "0.328",
+        "N/A",
+        "N/A",
+        "China"
+      ]
+    ],
+    "context": "This table represents a variety of consumer electronic products and their corresponding attributes, including Brand, Year of Manufacture, Price in USD, Weight in KG, Screen Size in Inch (if applicable), Battery Life in Hours (if applicable), and the Country of Manufacture. row 1: iPhone 12 Pro, Apple, 2020, 999, 0.189, 6.1, 17, USA row 2: Galaxy S21, Samsung, 2021, 799, 0.171, 6.2, 20, South Korea row 3: PlayStation 5, Sony, 2020, 499, 4.5, N/A, N/A, Japan row 4: Surface Laptop 4, Microsoft, 2021, 999, 1.265, 13.5, 19, China row 5: Kindle Paperwhite, Amazon, 2018, 129.99, 0.182, 6, Up to 6 weeks, China row 6: AirPods Pro, Apple, 2019, 249, 0.005, N/A, 4.5, China row 7: Switch, Nintendo, 2017, 299.99, 0.4, 6.2, 6, Japan row 8: Echo Dot (4th Gen), Amazon, 2020, 49.99, 0.328, N/A, N/A, China",
+    "num_rows": 8,
+    "num_cols": 8
+  },
+  {
+    "description": "This table represents a selection of eight cities around the world, along with key attributes including their country, population, area (in square kilometers), average annual temperature (in degrees Celsius), primary language spoken, currency used, time zone, and the mayor's name.",
+    "table_data": [
+      [
+        "New York City",
+        "United States",
+        "8.4 million",
+        "783.8",
+        "14.8",
+        "English",
+        "United States Dollar (USD)",
+        "Eastern Standard Time (EST)",
+        "Bill de Blasio"
+      ],
+      [
+        "Tokyo",
+        "Japan",
+        "9.7 million",
+        "622",
+        "15.4",
+        "Japanese",
+        "Japanese Yen (JPY)",
+        "Japan Standard Time (JST)",
+        "Yuriko Koike"
+      ],
+      [
+        "Paris",
+        "France",
+        "2.1 million",
+        "105.4",
+        "11.3",
+        "French",
+        "Euro (EUR)",
+        "Central European Time (CET)",
+        "Anne Hidalgo"
+      ],
+      [
+        "Sydney",
+        "Australia",
+        "5.3 million",
+        "12",
+        "367.7",
+        "17.6",
+        "English",
+        "Australian Dollar (AUD)",
+        "Australian Eastern Standard Time (AEST)",
+        "Clover Moore"
+      ],
+      [
+        "Cape Town",
+        "South Africa",
+        "4.6 million",
+        "2",
+        "455",
+        "17.0",
+        "Afrikaans",
+        "South African Rand (ZAR)",
+        "South Africa Standard Time (SAST)",
+        "Geordin Hill-Lewis"
+      ],
+      [
+        "Moscow",
+        "Russia",
+        "12.6 million",
+        "2",
+        "511",
+        "5.8",
+        "Russian",
+        "Russian Ruble (RUB)",
+        "Moscow Standard Time (MSK)",
+        "Sergey Sobyanin"
+      ],
+      [
+        "Buenos Aires",
+        "Argentina",
+        "2.9 million",
+        "203",
+        "18.6",
+        "Spanish",
+        "Argentine Peso (ARS)",
+        "Argentina Time (ART)",
+        "Horacio Rodríguez Larreta"
+      ],
+      [
+        "Mumbai",
+        "India",
+        "20.7 million",
+        "603.4",
+        "27.9",
+        "Marathi",
+        "Indian Rupee (INR)",
+        "Indian Standard Time (IST)",
+        "Kishori Pednekar"
+      ]
+    ],
+    "context": "This table represents a selection of eight cities around the world, along with key attributes including their country, population, area (in square kilometers), average annual temperature (in degrees Celsius), primary language spoken, currency used, time zone, and the mayor's name. row 1: New York City, United States, 8.4 million, 783.8, 14.8, English, United States Dollar (USD), Eastern Standard Time (EST), Bill de Blasio row 2: Tokyo, Japan, 9.7 million, 622, 15.4, Japanese, Japanese Yen (JPY), Japan Standard Time (JST), Yuriko Koike row 3: Paris, France, 2.1 million, 105.4, 11.3, French, Euro (EUR), Central European Time (CET), Anne Hidalgo row 4: Sydney, Australia, 5.3 million, 12, 367.7, 17.6, English, Australian Dollar (AUD), Australian Eastern Standard Time (AEST), Clover Moore row 5: Cape Town, South Africa, 4.6 million, 2, 455, 17.0, Afrikaans, South African Rand (ZAR), South Africa Standard Time (SAST), Geordin Hill-Lewis row 6: Moscow, Russia, 12.6 million, 2, 511, 5.8, Russian, Russian Ruble (RUB), Moscow Standard Time (MSK), Sergey Sobyanin row 7: Buenos Aires, Argentina, 2.9 million, 203, 18.6, Spanish, Argentine Peso (ARS), Argentina Time (ART), Horacio Rodríguez Larreta row 8: Mumbai, India, 20.7 million, 603.4, 27.9, Marathi, Indian Rupee (INR), Indian Standard Time (IST), Kishori Pednekar",
+    "num_rows": 8,
+    "num_cols": 9
+  },
+  {
+    "description": "This table represents information about eight different movies, with details including their title, director, release year, genre, lead actor, budget, box office earnings, and IMDb rating.",
+    "table_data": [
+      [
+        "\"The Godfather\"",
+        "\"Francis Ford Coppola\"",
+        "1972",
+        "\"Crime",
+        "Drama\"",
+        "\"Marlon Brando\"",
+        "\"$6 million\"",
+        "\"$246–287 million\"",
+        "9.2"
+      ],
+      [
+        "\"Pulp Fiction\"",
+        "\"Quentin Tarantino\"",
+        "1994",
+        "\"Crime",
+        "Drama\"",
+        "\"John Travolta\"",
+        "\"$8 million\"",
+        "\"$214 million\"",
+        "8.9"
+      ],
+      [
+        "\"Inception\"",
+        "\"Christopher Nolan\"",
+        "2010",
+        "\"Action",
+        "Adventure",
+        "Sci-Fi\"",
+        "\"Leonardo DiCaprio\"",
+        "\"$160 million\"",
+        "\"$829 million\"",
+        "8.8"
+      ],
+      [
+        "\"The Shawshank Redemption\"",
+        "\"Frank Darabont\"",
+        "1994",
+        "\"Drama\"",
+        "\"Tim Robbins\"",
+        "\"$25 million\"",
+        "\"$58 million\"",
+        "9.3"
+      ],
+      [
+        "\"Fight Club\"",
+        "\"David Fincher\"",
+        "1999",
+        "\"Drama\"",
+        "\"Brad Pitt\"",
+        "\"$63 million\"",
+        "\"$101 million\"",
+        "8.8"
+      ],
+      [
+        "\"The Dark Knight\"",
+        "\"Christopher Nolan\"",
+        "2008",
+        "\"Action",
+        "Crime",
+        "Drama\"",
+        "\"Christian Bale\"",
+        "\"$185 million\"",
+        "\"$1 billion\"",
+        "9.0"
+      ],
+      [
+        "\"Forrest Gump\"",
+        "\"Robert Zemeckis\"",
+        "1994",
+        "\"Drama",
+        "Romance\"",
+        "\"Tom Hanks\"",
+        "\"$55 million\"",
+        "\"$678.2 million\"",
+        "8.8"
+      ],
+      [
+        "\"The Matrix\"",
+        "\"The Wachowski Brothers\"",
+        "1999",
+        "\"Action",
+        "Sci-Fi\"",
+        "\"Keanu Reeves\"",
+        "\"$63 million\"",
+        "\"$465.3 million\"",
+        "8.7"
+      ]
+    ],
+    "context": "This table represents information about eight different movies, with details including their title, director, release year, genre, lead actor, budget, box office earnings, and IMDb rating. row 1: \"The Godfather\", \"Francis Ford Coppola\", 1972, \"Crime, Drama\", \"Marlon Brando\", \"$6 million\", \"$246–287 million\", 9.2 row 2: \"Pulp Fiction\", \"Quentin Tarantino\", 1994, \"Crime, Drama\", \"John Travolta\", \"$8 million\", \"$214 million\", 8.9 row 3: \"Inception\", \"Christopher Nolan\", 2010, \"Action, Adventure, Sci-Fi\", \"Leonardo DiCaprio\", \"$160 million\", \"$829 million\", 8.8 row 4: \"The Shawshank Redemption\", \"Frank Darabont\", 1994, \"Drama\", \"Tim Robbins\", \"$25 million\", \"$58 million\", 9.3 row 5: \"Fight Club\", \"David Fincher\", 1999, \"Drama\", \"Brad Pitt\", \"$63 million\", \"$101 million\", 8.8 row 6: \"The Dark Knight\", \"Christopher Nolan\", 2008, \"Action, Crime, Drama\", \"Christian Bale\", \"$185 million\", \"$1 billion\", 9.0 row 7: \"Forrest Gump\", \"Robert Zemeckis\", 1994, \"Drama, Romance\", \"Tom Hanks\", \"$55 million\", \"$678.2 million\", 8.8 row 8: \"The Matrix\", \"The Wachowski Brothers\", 1999, \"Action, Sci-Fi\", \"Keanu Reeves\", \"$63 million\", \"$465.3 million\", 8.7",
+    "num_rows": 8,
+    "num_cols": 9
+  },
+  {
+    "description": "This table represents information about eight universities around the world. The attributes include the country of location, the year of establishment, the type of university (public or private), the number of enrolled students, the number of academic staff, the number of undergraduate programs offered, and the university's ranking in the world.",
+    "table_data": [
+      [
+        "Harvard University",
+        "United States",
+        "1636",
+        "Private",
+        "36586",
+        "2400",
+        "46",
+        "3"
+      ],
+      [
+        "University of Oxford",
+        "United Kingdom",
+        "1096",
+        "Public",
+        "23800",
+        "1800",
+        "44",
+        "5"
+      ],
+      [
+        "University of Tokyo",
+        "Japan",
+        "1877",
+        "Public",
+        "28000",
+        "2100",
+        "52",
+        "36"
+      ],
+      [
+        "Tsinghua University",
+        "China",
+        "1911",
+        "Public",
+        "46644",
+        "3400",
+        "58",
+        "15"
+      ],
+      [
+        "University of Melbourne",
+        "Australia",
+        "1853",
+        "Public",
+        "49991",
+        "2300",
+        "42",
+        "31"
+      ],
+      [
+        "University of Cape Town",
+        "South Africa",
+        "1829",
+        "Public",
+        "28100",
+        "1700",
+        "33",
+        "155"
+      ],
+      [
+        "Moscow State University",
+        "Russia",
+        "1755",
+        "Public",
+        "47000",
+        "4000",
+        "57",
+        "74"
+      ],
+      [
+        "University of Sao Paulo",
+        "Brazil",
+        "1934",
+        "Public",
+        "95000",
+        "5900",
+        "72",
+        "115"
+      ]
+    ],
+    "context": "This table represents information about eight universities around the world. The attributes include the country of location, the year of establishment, the type of university (public or private), the number of enrolled students, the number of academic staff, the number of undergraduate programs offered, and the university's ranking in the world. row 1: Harvard University, United States, 1636, Private, 36586, 2400, 46, 3 row 2: University of Oxford, United Kingdom, 1096, Public, 23800, 1800, 44, 5 row 3: University of Tokyo, Japan, 1877, Public, 28000, 2100, 52, 36 row 4: Tsinghua University, China, 1911, Public, 46644, 3400, 58, 15 row 5: University of Melbourne, Australia, 1853, Public, 49991, 2300, 42, 31 row 6: University of Cape Town, South Africa, 1829, Public, 28100, 1700, 33, 155 row 7: Moscow State University, Russia, 1755, Public, 47000, 4000, 57, 74 row 8: University of Sao Paulo, Brazil, 1934, Public, 95000, 5900, 72, 115",
+    "num_rows": 8,
+    "num_cols": 8
+  },
+  {
+    "description": "This table represents data about eight international athletes, including their names, countries, sports, total medals won, gold medals won, silver medals won, bronze medals won and their age.",
+    "table_data": [
+      [
+        "Usain Bolt",
+        "Jamaica",
+        "Track and Field",
+        "8",
+        "6",
+        "2",
+        "0",
+        "35"
+      ],
+      [
+        "Michael Phelps",
+        "USA",
+        "Swimming",
+        "28",
+        "23",
+        "3",
+        "2",
+        "36"
+      ],
+      [
+        "Simone Biles",
+        "USA",
+        "Gymnastics",
+        "19",
+        "4",
+        "6",
+        "9",
+        "24"
+      ],
+      [
+        "Cristiano Ronaldo",
+        "Portugal",
+        "Soccer",
+        "0",
+        "0",
+        "0",
+        "0",
+        "36"
+      ],
+      [
+        "Serena Williams",
+        "USA",
+        "Tennis",
+        "4",
+        "4",
+        "0",
+        "0",
+        "40"
+      ],
+      [
+        "Roger Federer",
+        "Switzerland",
+        "Tennis",
+        "0",
+        "0",
+        "0",
+        "0",
+        "40"
+      ],
+      [
+        "Lionel Messi",
+        "Argentina",
+        "Soccer",
+        "0",
+        "0",
+        "0",
+        "0",
+        "33"
+      ],
+      [
+        "Novak Djokovic",
+        "Serbia",
+        "Tennis",
+        "0",
+        "0",
+        "0",
+        "0",
+        "34"
+      ]
+    ],
+    "context": "This table represents data about eight international athletes, including their names, countries, sports, total medals won, gold medals won, silver medals won, bronze medals won and their age. row 1: Usain Bolt, Jamaica, Track and Field, 8, 6, 2, 0, 35 row 2: Michael Phelps, USA, Swimming, 28, 23, 3, 2, 36 row 3: Simone Biles, USA, Gymnastics, 19, 4, 6, 9, 24 row 4: Cristiano Ronaldo, Portugal, Soccer, 0, 0, 0, 0, 36 row 5: Serena Williams, USA, Tennis, 4, 4, 0, 0, 40 row 6: Roger Federer, Switzerland, Tennis, 0, 0, 0, 0, 40 row 7: Lionel Messi, Argentina, Soccer, 0, 0, 0, 0, 33 row 8: Novak Djokovic, Serbia, Tennis, 0, 0, 0, 0, 34",
+    "num_rows": 8,
+    "num_cols": 8
+  },
+  {
+    "description": "This table represents the information about eight different books. The table includes the title of the book, the author, the genre, the year of publication, the number of pages, the publisher, the average rating and whether it is available in digital format (eBook).",
+    "table_data": [
+      [
+        "\"To Kill a Mockingbird\"",
+        "Harper Lee",
+        "Drama",
+        "1960",
+        "281",
+        "J.B. Lippincott & Co.",
+        "4.27",
+        "Yes"
+      ],
+      [
+        "\"1984\"",
+        "George Orwell",
+        "Dystopian",
+        "1949",
+        "328",
+        "Secker & Warburg",
+        "4.17",
+        "Yes"
+      ],
+      [
+        "\"Harry Potter and the Philosopher's Stone\"",
+        "J.K. Rowling",
+        "Fantasy",
+        "1997",
+        "309",
+        "Bloomsbury",
+        "4.47",
+        "Yes"
+      ],
+      [
+        "\"The Great Gatsby\"",
+        "F. Scott Fitzgerald",
+        "Tragedy",
+        "1925",
+        "180",
+        "Charles Scribner's Sons",
+        "3.91",
+        "Yes"
+      ],
+      [
+        "\"Pride and Prejudice\"",
+        "Jane Austen",
+        "Romance",
+        "1813",
+        "279",
+        "T. Egerton",
+        "4.25",
+        "No"
+      ],
+      [
+        "\"The Hobbit\"",
+        "J.R.R. Tolkien",
+        "Fantasy",
+        "1937",
+        "310",
+        "George Allen & Unwin",
+        "4.27",
+        "Yes"
+      ],
+      [
+        "\"The Da Vinci Code\"",
+        "Dan Brown",
+        "Mystery",
+        "2003",
+        "689",
+        "Doubleday",
+        "3.85",
+        "Yes"
+      ],
+      [
+        "\"Moby Dick\"",
+        "Herman Melville",
+        "Adventure",
+        "1851",
+        "635",
+        "Harper & Brothers",
+        "3.50",
+        "No"
+      ]
+    ],
+    "context": "This table represents the information about eight different books. The table includes the title of the book, the author, the genre, the year of publication, the number of pages, the publisher, the average rating and whether it is available in digital format (eBook). row 1: \"To Kill a Mockingbird\", Harper Lee, Drama, 1960, 281, J.B. Lippincott & Co., 4.27, Yes row 2: \"1984\", George Orwell, Dystopian, 1949, 328, Secker & Warburg, 4.17, Yes row 3: \"Harry Potter and the Philosopher's Stone\", J.K. Rowling, Fantasy, 1997, 309, Bloomsbury, 4.47, Yes row 4: \"The Great Gatsby\", F. Scott Fitzgerald, Tragedy, 1925, 180, Charles Scribner's Sons, 3.91, Yes row 5: \"Pride and Prejudice\", Jane Austen, Romance, 1813, 279, T. Egerton, 4.25, No row 6: \"The Hobbit\", J.R.R. Tolkien, Fantasy, 1937, 310, George Allen & Unwin, 4.27, Yes row 7: \"The Da Vinci Code\", Dan Brown, Mystery, 2003, 689, Doubleday, 3.85, Yes row 8: \"Moby Dick\", Herman Melville, Adventure, 1851, 635, Harper & Brothers, 3.50, No",
+    "num_rows": 8,
+    "num_cols": 8
+  },
+  {
+    "description": "The table represents information about eight different companies. The columns, from left to right, contain the following information: company name, industry, headquarters location, year founded, number of employees, annual revenue in USD, CEO name, and company website.",
+    "table_data": [
+      [
+        "Apple Inc.",
+        "Technology",
+        "Cupertino",
+        "CA",
+        "1976",
+        "147000",
+        "$274.515 billion",
+        "Tim Cook",
+        "www.apple.com"
+      ],
+      [
+        "Tesla",
+        "Inc.",
+        "Automotive",
+        "Palo Alto",
+        "CA",
+        "2003",
+        "70757",
+        "$31.536 billion",
+        "Elon Musk",
+        "www.tesla.com"
+      ],
+      [
+        "Amazon.com",
+        "Inc.",
+        "E-commerce",
+        "Seattle",
+        "WA",
+        "1994",
+        "1298000",
+        "$386.064 billion",
+        "Andy Jassy",
+        "www.amazon.com"
+      ],
+      [
+        "Microsoft Corporation",
+        "Technology",
+        "Redmond",
+        "WA",
+        "1975",
+        "181000",
+        "$153.284 billion",
+        "Satya Nadella",
+        "www.microsoft.com"
+      ],
+      [
+        "The Coca-Cola Company",
+        "Beverages",
+        "Atlanta",
+        "GA",
+        "1892",
+        "86200",
+        "$33.014 billion",
+        "James Quincey",
+        "www.coca-colacompany.com"
+      ],
+      [
+        "McDonald's Corporation",
+        "Fast Food",
+        "Chicago",
+        "IL",
+        "1955",
+        "205000",
+        "$19.034 billion",
+        "Chris Kempczinski",
+        "www.mcdonalds.com"
+      ],
+      [
+        "Samsung Electronics Co.",
+        "Ltd.",
+        "Technology",
+        "Suwon",
+        "South Korea",
+        "1969",
+        "287439",
+        "$211.070 billion",
+        "Kim Ki-nam",
+        "www.samsung.com"
+      ],
+      [
+        "The Boeing Company",
+        "Aerospace",
+        "Chicago",
+        "IL",
+        "1916",
+        "141000",
+        "$58.158 billion",
+        "David Calhoun",
+        "www.boeing.com"
+      ]
+    ],
+    "context": "The table represents information about eight different companies. The columns, from left to right, contain the following information: company name, industry, headquarters location, year founded, number of employees, annual revenue in USD, CEO name, and company website. row 1: Apple Inc., Technology, Cupertino, CA, 1976, 147000, $274.515 billion, Tim Cook, www.apple.com row 2: Tesla, Inc., Automotive, Palo Alto, CA, 2003, 70757, $31.536 billion, Elon Musk, www.tesla.com row 3: Amazon.com, Inc., E-commerce, Seattle, WA, 1994, 1298000, $386.064 billion, Andy Jassy, www.amazon.com row 4: Microsoft Corporation, Technology, Redmond, WA, 1975, 181000, $153.284 billion, Satya Nadella, www.microsoft.com row 5: The Coca-Cola Company, Beverages, Atlanta, GA, 1892, 86200, $33.014 billion, James Quincey, www.coca-colacompany.com row 6: McDonald's Corporation, Fast Food, Chicago, IL, 1955, 205000, $19.034 billion, Chris Kempczinski, www.mcdonalds.com row 7: Samsung Electronics Co., Ltd., Technology, Suwon, South Korea, 1969, 287439, $211.070 billion, Kim Ki-nam, www.samsung.com row 8: The Boeing Company, Aerospace, Chicago, IL, 1916, 141000, $58.158 billion, David Calhoun, www.boeing.com",
+    "num_rows": 8,
+    "num_cols": 9
+  },
+  {
+    "description": "This table represents a selection of universities, and provides relevant details about each one. The columns include the university name, its location (city and country), the year it was established, its current student population, the number of faculty members, the number of undergraduate programs offered, the number of postgraduate programs offered, and its ranking according to the QS World University Rankings for 2021.",
+    "table_data": [
+      [
+        "Harvard University",
+        "Cambridge",
+        "USA",
+        "1636",
+        "23",
+        "000",
+        "4",
+        "500",
+        "97",
+        "130",
+        "3"
+      ],
+      [
+        "University of Cambridge",
+        "Cambridge",
+        "UK",
+        "1209",
+        "19",
+        "000",
+        "3",
+        "810",
+        "80",
+        "92",
+        "5"
+      ],
+      [
+        "University of Tokyo",
+        "Tokyo",
+        "Japan",
+        "1877",
+        "28",
+        "000",
+        "4",
+        "200",
+        "110",
+        "150",
+        "23"
+      ],
+      [
+        "University of Melbourne",
+        "Melbourne",
+        "Australia",
+        "1853",
+        "50",
+        "000",
+        "4",
+        "500",
+        "80",
+        "270",
+        "41"
+      ],
+      [
+        "University of Toronto",
+        "Toronto",
+        "Canada",
+        "1827",
+        "90",
+        "000",
+        "11",
+        "000",
+        "250",
+        "300",
+        "25"
+      ],
+      [
+        "University of Cape Town",
+        "Cape Town",
+        "South Africa",
+        "1829",
+        "28",
+        "000",
+        "4",
+        "000",
+        "70",
+        "140",
+        "200"
+      ],
+      [
+        "National University of Singapore",
+        "Singapore",
+        "Singapore",
+        "1905",
+        "33",
+        "000",
+        "3",
+        "700",
+        "80",
+        "100",
+        "11"
+      ],
+      [
+        "University of Buenos Aires",
+        "Buenos Aires",
+        "Argentina",
+        "1821",
+        "317",
+        "000",
+        "30",
+        "000",
+        "107",
+        "300",
+        "74"
+      ]
+    ],
+    "context": "This table represents a selection of universities, and provides relevant details about each one. The columns include the university name, its location (city and country), the year it was established, its current student population, the number of faculty members, the number of undergraduate programs offered, the number of postgraduate programs offered, and its ranking according to the QS World University Rankings for 2021. row 1: Harvard University, Cambridge, USA, 1636, 23, 000, 4, 500, 97, 130, 3 row 2: University of Cambridge, Cambridge, UK, 1209, 19, 000, 3, 810, 80, 92, 5 row 3: University of Tokyo, Tokyo, Japan, 1877, 28, 000, 4, 200, 110, 150, 23 row 4: University of Melbourne, Melbourne, Australia, 1853, 50, 000, 4, 500, 80, 270, 41 row 5: University of Toronto, Toronto, Canada, 1827, 90, 000, 11, 000, 250, 300, 25 row 6: University of Cape Town, Cape Town, South Africa, 1829, 28, 000, 4, 000, 70, 140, 200 row 7: National University of Singapore, Singapore, Singapore, 1905, 33, 000, 3, 700, 80, 100, 11 row 8: University of Buenos Aires, Buenos Aires, Argentina, 1821, 317, 000, 30, 000, 107, 300, 74",
+    "num_rows": 8,
+    "num_cols": 11
+  },
+  {
+    "description": "This table represents a collection of movies. Each row corresponds to a different film. The columns, from left to right, contain the movie's title, director, year of release, genre, main actor, budget, box office gross, and IMDb rating.",
+    "table_data": [
+      [
+        "\"The Shawshank Redemption\"",
+        "\"Frank Darabont\"",
+        "\"1994\"",
+        "\"Drama\"",
+        "\"Tim Robbins\"",
+        "\"$25 million\"",
+        "\"$58.3 million\"",
+        "\"9.3\""
+      ],
+      [
+        "\"The Godfather\"",
+        "\"Francis Ford Coppola\"",
+        "\"1972\"",
+        "\"Crime/Drama\"",
+        "\"Marlon Brando\"",
+        "\"$6 million\"",
+        "\"$246 million\"",
+        "\"9.2\""
+      ],
+      [
+        "\"Inception\"",
+        "\"Christopher Nolan\"",
+        "\"2010\"",
+        "\"Action/Sci-Fi\"",
+        "\"Leonardo DiCaprio\"",
+        "\"$160 million\"",
+        "\"$828.3 million\"",
+        "\"8.8\""
+      ],
+      [
+        "\"Titanic\"",
+        "\"James Cameron\"",
+        "\"1997\"",
+        "\"Drama/Romance\"",
+        "\"Leonardo DiCaprio\"",
+        "\"$200 million\"",
+        "\"$2.20 billion\"",
+        "\"7.8\""
+      ],
+      [
+        "\"Jurassic Park\"",
+        "\"Steven Spielberg\"",
+        "\"1993\"",
+        "\"Adventure/Sci-Fi\"",
+        "\"Sam Neill\"",
+        "\"$63 million\"",
+        "\"$1.03 billion\"",
+        "\"8.1\""
+      ],
+      [
+        "\"Star Wars: Episode IV - A New Hope\"",
+        "\"George Lucas\"",
+        "\"1977\"",
+        "\"Action/Adventure\"",
+        "\"Mark Hamill\"",
+        "\"$11 million\"",
+        "\"$775.4 million\"",
+        "\"8.6\""
+      ],
+      [
+        "\"The Dark Knight\"",
+        "\"Christopher Nolan\"",
+        "\"2008\"",
+        "\"Action/Crime\"",
+        "\"Christian Bale\"",
+        "\"$185 million\"",
+        "\"$1 billion\"",
+        "\"9.0\""
+      ],
+      [
+        "\"Forrest Gump\"",
+        "\"Robert Zemeckis\"",
+        "\"1994\"",
+        "\"Drama/Romance\"",
+        "\"Tom Hanks\"",
+        "\"$55 million\"",
+        "\"$678.2 million\"",
+        "\"8.8\""
+      ]
+    ],
+    "context": "This table represents a collection of movies. Each row corresponds to a different film. The columns, from left to right, contain the movie's title, director, year of release, genre, main actor, budget, box office gross, and IMDb rating. row 1: \"The Shawshank Redemption\", \"Frank Darabont\", \"1994\", \"Drama\", \"Tim Robbins\", \"$25 million\", \"$58.3 million\", \"9.3\" row 2: \"The Godfather\", \"Francis Ford Coppola\", \"1972\", \"Crime/Drama\", \"Marlon Brando\", \"$6 million\", \"$246 million\", \"9.2\" row 3: \"Inception\", \"Christopher Nolan\", \"2010\", \"Action/Sci-Fi\", \"Leonardo DiCaprio\", \"$160 million\", \"$828.3 million\", \"8.8\" row 4: \"Titanic\", \"James Cameron\", \"1997\", \"Drama/Romance\", \"Leonardo DiCaprio\", \"$200 million\", \"$2.20 billion\", \"7.8\" row 5: \"Jurassic Park\", \"Steven Spielberg\", \"1993\", \"Adventure/Sci-Fi\", \"Sam Neill\", \"$63 million\", \"$1.03 billion\", \"8.1\" row 6: \"Star Wars: Episode IV - A New Hope\", \"George Lucas\", \"1977\", \"Action/Adventure\", \"Mark Hamill\", \"$11 million\", \"$775.4 million\", \"8.6\" row 7: \"The Dark Knight\", \"Christopher Nolan\", \"2008\", \"Action/Crime\", \"Christian Bale\", \"$185 million\", \"$1 billion\", \"9.0\" row 8: \"Forrest Gump\", \"Robert Zemeckis\", \"1994\", \"Drama/Romance\", \"Tom Hanks\", \"$55 million\", \"$678.2 million\", \"8.8\"",
+    "num_rows": 8,
+    "num_cols": 8
+  },
+  {
+    "description": "This table represents a selection of eight movies along with their relevant attributes, such as director, genre, release year, country of origin, language, runtime (in minutes), and IMDB rating.",
+    "table_data": [
+      [
+        "\"The Shawshank Redemption\"",
+        "\"Frank Darabont\"",
+        "\"Drama\"",
+        "1994",
+        "\"United States\"",
+        "\"English\"",
+        "142",
+        "9.3"
+      ],
+      [
+        "\"Parasite\"",
+        "\"Bong Joon Ho\"",
+        "\"Thriller/Drama\"",
+        "2019",
+        "\"South Korea\"",
+        "\"Korean\"",
+        "132",
+        "8.6"
+      ],
+      [
+        "\"The Godfather\"",
+        "\"Francis Ford Coppola\"",
+        "\"Crime/Drama\"",
+        "1972",
+        "\"United States\"",
+        "\"English\"",
+        "175",
+        "9.2"
+      ],
+      [
+        "\"Pulp Fiction\"",
+        "\"Quentin Tarantino\"",
+        "\"Crime/Drama\"",
+        "1994",
+        "\"United States\"",
+        "\"English\"",
+        "154",
+        "8.9"
+      ],
+      [
+        "\"Inception\"",
+        "\"Christopher Nolan\"",
+        "\"Action/Sci-Fi\"",
+        "2010",
+        "\"United States\"",
+        "\"English\"",
+        "148",
+        "8.8"
+      ],
+      [
+        "\"Spirited Away\"",
+        "\"Hayao Miyazaki\"",
+        "\"Animation/Fantasy\"",
+        "2001",
+        "\"Japan\"",
+        "\"Japanese\"",
+        "125",
+        "8.6"
+      ],
+      [
+        "\"The Dark Knight\"",
+        "\"Christopher Nolan\"",
+        "\"Action/Crime\"",
+        "2008",
+        "\"United States\"",
+        "\"English\"",
+        "152",
+        "9.0"
+      ],
+      [
+        "\"Life Is Beautiful\"",
+        "\"Roberto Benigni\"",
+        "\"Comedy/Drama\"",
+        "1997",
+        "\"Italy\"",
+        "\"Italian\"",
+        "116",
+        "8.6"
+      ]
+    ],
+    "context": "This table represents a selection of eight movies along with their relevant attributes, such as director, genre, release year, country of origin, language, runtime (in minutes), and IMDB rating. row 1: \"The Shawshank Redemption\", \"Frank Darabont\", \"Drama\", 1994, \"United States\", \"English\", 142, 9.3 row 2: \"Parasite\", \"Bong Joon Ho\", \"Thriller/Drama\", 2019, \"South Korea\", \"Korean\", 132, 8.6 row 3: \"The Godfather\", \"Francis Ford Coppola\", \"Crime/Drama\", 1972, \"United States\", \"English\", 175, 9.2 row 4: \"Pulp Fiction\", \"Quentin Tarantino\", \"Crime/Drama\", 1994, \"United States\", \"English\", 154, 8.9 row 5: \"Inception\", \"Christopher Nolan\", \"Action/Sci-Fi\", 2010, \"United States\", \"English\", 148, 8.8 row 6: \"Spirited Away\", \"Hayao Miyazaki\", \"Animation/Fantasy\", 2001, \"Japan\", \"Japanese\", 125, 8.6 row 7: \"The Dark Knight\", \"Christopher Nolan\", \"Action/Crime\", 2008, \"United States\", \"English\", 152, 9.0 row 8: \"Life Is Beautiful\", \"Roberto Benigni\", \"Comedy/Drama\", 1997, \"Italy\", \"Italian\", 116, 8.6",
+    "num_rows": 8,
+    "num_cols": 8
+  },
+  {
+    "description": "The table represents a set of athletes with their respective sports, country of origin, date of birth, height, weight, number of professional years, number of championships won, and current team/club.",
+    "table_data": [
+      [
+        "LeBron James",
+        "Basketball",
+        "USA",
+        "December 30",
+        "1984",
+        "6'9\"",
+        "250 lbs",
+        "18 years",
+        "4 Championships",
+        "Los Angeles Lakers"
+      ],
+      [
+        "Serena Williams",
+        "Tennis",
+        "USA",
+        "September 26",
+        "1981",
+        "5'9\"",
+        "154 lbs",
+        "25 years",
+        "23 Grand Slams",
+        "N/A"
+      ],
+      [
+        "Lionel Messi",
+        "Soccer",
+        "Argentina",
+        "June 24",
+        "1987",
+        "5'7\"",
+        "159 lbs",
+        "17 years",
+        "7 Ballon d'Or",
+        "Paris Saint-Germain"
+      ],
+      [
+        "Michael Phelps",
+        "Swimming",
+        "USA",
+        "June 30",
+        "1985",
+        "6'4\"",
+        "194 lbs",
+        "16 years",
+        "23 Olympic Gold Medals",
+        "Retired"
+      ],
+      [
+        "Usain Bolt",
+        "Track and Field",
+        "Jamaica",
+        "August 21",
+        "1986",
+        "6'5\"",
+        "207 lbs",
+        "10 years",
+        "8 Olympic Gold Medals",
+        "Retired"
+      ],
+      [
+        "Cristiano Ronaldo",
+        "Soccer",
+        "Portugal",
+        "February 5",
+        "1985",
+        "6'2\"",
+        "183 lbs",
+        "18 years",
+        "5 Ballon d'Or",
+        "Manchester United"
+      ],
+      [
+        "Roger Federer",
+        "Tennis",
+        "Switzerland",
+        "August 8",
+        "1981",
+        "6'1\"",
+        "187 lbs",
+        "22 years",
+        "20 Grand Slams",
+        "N/A"
+      ],
+      [
+        "Simone Biles",
+        "Gymnastics",
+        "USA",
+        "March 14",
+        "1997",
+        "4'8\"",
+        "103 lbs",
+        "7 years",
+        "19 World Championship Gold Medals",
+        "N/A"
+      ]
+    ],
+    "context": "The table represents a set of athletes with their respective sports, country of origin, date of birth, height, weight, number of professional years, number of championships won, and current team/club. row 1: LeBron James, Basketball, USA, December 30, 1984, 6'9\", 250 lbs, 18 years, 4 Championships, Los Angeles Lakers row 2: Serena Williams, Tennis, USA, September 26, 1981, 5'9\", 154 lbs, 25 years, 23 Grand Slams, N/A row 3: Lionel Messi, Soccer, Argentina, June 24, 1987, 5'7\", 159 lbs, 17 years, 7 Ballon d'Or, Paris Saint-Germain row 4: Michael Phelps, Swimming, USA, June 30, 1985, 6'4\", 194 lbs, 16 years, 23 Olympic Gold Medals, Retired row 5: Usain Bolt, Track and Field, Jamaica, August 21, 1986, 6'5\", 207 lbs, 10 years, 8 Olympic Gold Medals, Retired row 6: Cristiano Ronaldo, Soccer, Portugal, February 5, 1985, 6'2\", 183 lbs, 18 years, 5 Ballon d'Or, Manchester United row 7: Roger Federer, Tennis, Switzerland, August 8, 1981, 6'1\", 187 lbs, 22 years, 20 Grand Slams, N/A row 8: Simone Biles, Gymnastics, USA, March 14, 1997, 4'8\", 103 lbs, 7 years, 19 World Championship Gold Medals, N/A",
+    "num_rows": 8,
+    "num_cols": 10
+  }
+]

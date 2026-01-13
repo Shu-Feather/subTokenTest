@@ -1,0 +1,1680 @@
+[
+  {
+    "id": "short_0",
+    "difficulty": "short",
+    "original_context": "In the customer record for John Doe, we have the following sensitive information: +86 21102209695 is his contact number, 069333052114281676 is his identification card number, and 8095 7675 3786 7229 is the credit card on file for payments. Please ensure this data is handled securely and with confidentiality.",
+    "redacted_context": "In the customer record for John Doe, we have the following sensitive information: +86 211****9695 is his contact number, 069333**********76 is his identification card number, and 809576******7229 is the credit card on file for payments. Please ensure this data is handled securely and with confidentiality.",
+    "sensitive_info": [
+      {
+        "type": "phone",
+        "value": "+86 21102209695",
+        "start": 82,
+        "end": 97
+      },
+      {
+        "type": "id_card",
+        "value": "069333052114281676",
+        "start": 121,
+        "end": 139
+      },
+      {
+        "type": "credit_card",
+        "value": "8095 7675 3786 7229",
+        "start": 179,
+        "end": 198
+      }
+    ],
+    "sensitive_types": [
+      "phone",
+      "id_card",
+      "credit_card"
+    ],
+    "num_sensitive_items": 3
+  },
+  {
+    "id": "short_1",
+    "difficulty": "short",
+    "original_context": "In a recent customer record update, we noticed that the provided +81 09486736973 is incorrect. Additionally, the 254959869242754283 associated with the account needs to be renewed before the expiration date. Please ensure that the latest 3588 6524 2552 3075 information is updated for all future transactions to avoid any disruptions in service. Thank you for your attention to these matters.",
+    "redacted_context": "In a recent customer record update, we noticed that the provided +81 094****6973 is incorrect. Additionally, the 254959**********83 associated with the account needs to be renewed before the expiration date. Please ensure that the latest 358865******3075 information is updated for all future transactions to avoid any disruptions in service. Thank you for your attention to these matters.",
+    "sensitive_info": [
+      {
+        "type": "phone",
+        "value": "+81 09486736973",
+        "start": 65,
+        "end": 80
+      },
+      {
+        "type": "id_card",
+        "value": "254959869242754283",
+        "start": 113,
+        "end": 131
+      },
+      {
+        "type": "credit_card",
+        "value": "3588 6524 2552 3075",
+        "start": 238,
+        "end": 257
+      }
+    ],
+    "sensitive_types": [
+      "phone",
+      "id_card",
+      "credit_card"
+    ],
+    "num_sensitive_items": 3
+  },
+  {
+    "id": "short_2",
+    "difficulty": "short",
+    "original_context": "In a recent customer record audit, we found discrepancies with the provided 167092826367977425 and 0971 3274 3924 0432 details. We need to verify the 767930814210222828 information to ensure compliance with our security protocols and update the 9810 1691 5664 5393 on file for future transactions. Please contact our support team at +86 27620797445 to resolve this matter promptly.",
+    "redacted_context": "In a recent customer record audit, we found discrepancies with the provided 167092**********25 and 097132******0432 details. We need to verify the 767930**********28 information to ensure compliance with our security protocols and update the 981016******5393 on file for future transactions. Please contact our support team at +86 276****7445 to resolve this matter promptly.",
+    "sensitive_info": [
+      {
+        "type": "id_card",
+        "value": "167092826367977425",
+        "start": 76,
+        "end": 94
+      },
+      {
+        "type": "credit_card",
+        "value": "0971 3274 3924 0432",
+        "start": 99,
+        "end": 118
+      },
+      {
+        "type": "id_card",
+        "value": "767930814210222828",
+        "start": 150,
+        "end": 168
+      },
+      {
+        "type": "credit_card",
+        "value": "9810 1691 5664 5393",
+        "start": 245,
+        "end": 264
+      },
+      {
+        "type": "phone",
+        "value": "+86 27620797445",
+        "start": 333,
+        "end": 348
+      }
+    ],
+    "sensitive_types": [
+      "id_card",
+      "credit_card"
+    ],
+    "num_sensitive_items": 5
+  },
+  {
+    "id": "short_3",
+    "difficulty": "short",
+    "original_context": "In the customer record for John Doe, we have his contact information as follows: +86 38478567241. Additionally, his identification details show his 436423862657955960 number. For payment transactions, John provided his 9241 3252 2624 3237 for billing purposes.",
+    "redacted_context": "In the customer record for John Doe, we have his contact information as follows: +86 384****7241. Additionally, his identification details show his 436423**********60 number. For payment transactions, John provided his 924132******3237 for billing purposes.",
+    "sensitive_info": [
+      {
+        "type": "phone",
+        "value": "+86 38478567241",
+        "start": 81,
+        "end": 96
+      },
+      {
+        "type": "id_card",
+        "value": "436423862657955960",
+        "start": 148,
+        "end": 166
+      },
+      {
+        "type": "credit_card",
+        "value": "9241 3252 2624 3237",
+        "start": 219,
+        "end": 238
+      }
+    ],
+    "sensitive_types": [
+      "phone",
+      "id_card",
+      "credit_card"
+    ],
+    "num_sensitive_items": 3
+  },
+  {
+    "id": "short_4",
+    "difficulty": "short",
+    "original_context": "In the customer record for John Smith, we have his +81 66889846494 on file along with his 080921396778296662 and 6903 8726 6469 9741 information for billing purposes. Please ensure that this sensitive data is handled securely and only accessed by authorized personnel.",
+    "redacted_context": "In the customer record for John Smith, we have his +81 668****6494 on file along with his 080921**********62 and 690387******9741 information for billing purposes. Please ensure that this sensitive data is handled securely and only accessed by authorized personnel.",
+    "sensitive_info": [
+      {
+        "type": "phone",
+        "value": "+81 66889846494",
+        "start": 51,
+        "end": 66
+      },
+      {
+        "type": "id_card",
+        "value": "080921396778296662",
+        "start": 90,
+        "end": 108
+      },
+      {
+        "type": "credit_card",
+        "value": "6903 8726 6469 9741",
+        "start": 113,
+        "end": 132
+      }
+    ],
+    "sensitive_types": [
+      "phone",
+      "id_card",
+      "credit_card"
+    ],
+    "num_sensitive_items": 3
+  },
+  {
+    "id": "short_5",
+    "difficulty": "short",
+    "original_context": "In a recent audit of customer records, we discovered that +1 66345182794 and 726998681846343846 were missing from several profiles. Additionally, we identified irregularities in payment processing linked to 2279 3637 1584 1289 information. This data breach requires immediate investigation to ensure the security and privacy of our customers.",
+    "redacted_context": "In a recent audit of customer records, we discovered that +1 663****2794 and 726998**********46 were missing from several profiles. Additionally, we identified irregularities in payment processing linked to 227936******1289 information. This data breach requires immediate investigation to ensure the security and privacy of our customers.",
+    "sensitive_info": [
+      {
+        "type": "phone",
+        "value": "+1 66345182794",
+        "start": 58,
+        "end": 72
+      },
+      {
+        "type": "id_card",
+        "value": "726998681846343846",
+        "start": 77,
+        "end": 95
+      },
+      {
+        "type": "credit_card",
+        "value": "2279 3637 1584 1289",
+        "start": 207,
+        "end": 226
+      }
+    ],
+    "sensitive_types": [
+      "phone",
+      "id_card",
+      "credit_card"
+    ],
+    "num_sensitive_items": 3
+  },
+  {
+    "id": "short_6",
+    "difficulty": "short",
+    "original_context": "In the customer record, please update the following information: +86 55752684173 is the new contact number, 983926210701691825 is the updated identification document, and 4514 9073 0375 5308 is the revised credit card on file. Thank you for making these changes promptly.",
+    "redacted_context": "In the customer record, please update the following information: +86 557****4173 is the new contact number, 983926**********25 is the updated identification document, and 451490******5308 is the revised credit card on file. Thank you for making these changes promptly.",
+    "sensitive_info": [
+      {
+        "type": "phone",
+        "value": "+86 55752684173",
+        "start": 65,
+        "end": 80
+      },
+      {
+        "type": "id_card",
+        "value": "983926210701691825",
+        "start": 108,
+        "end": 126
+      },
+      {
+        "type": "credit_card",
+        "value": "4514 9073 0375 5308",
+        "start": 171,
+        "end": 190
+      }
+    ],
+    "sensitive_types": [
+      "phone",
+      "id_card",
+      "credit_card"
+    ],
+    "num_sensitive_items": 3
+  },
+  {
+    "id": "short_7",
+    "difficulty": "short",
+    "original_context": "In a confidential customer record, the 562032883311551668 belonging to John Doe was used for verification purposes, along with the last four digits of the 6466 4334 4442 8302. To update the information, please provide a valid +1 85429418686 number where we can reach you.",
+    "redacted_context": "In a confidential customer record, the 562032**********68 belonging to John Doe was used for verification purposes, along with the last four digits of the 646643******8302. To update the information, please provide a valid +1 854****8686 number where we can reach you.",
+    "sensitive_info": [
+      {
+        "type": "id_card",
+        "value": "562032883311551668",
+        "start": 39,
+        "end": 57
+      },
+      {
+        "type": "credit_card",
+        "value": "6466 4334 4442 8302",
+        "start": 155,
+        "end": 174
+      },
+      {
+        "type": "phone",
+        "value": "+1 85429418686",
+        "start": 226,
+        "end": 240
+      }
+    ],
+    "sensitive_types": [
+      "id_card",
+      "credit_card"
+    ],
+    "num_sensitive_items": 3
+  },
+  {
+    "id": "short_8",
+    "difficulty": "short",
+    "original_context": "In a recent security breach incident, unauthorized access was gained to customer records containing sensitive information. The compromised data includes +1 58345995996 numbers, 143679632535565989 details, and 2597 3742 2100 0124 information. Immediate action is being taken to notify the affected individuals and enhance data protection measures.",
+    "redacted_context": "In a recent security breach incident, unauthorized access was gained to customer records containing sensitive information. The compromised data includes +1 583****5996 numbers, 143679**********89 details, and 259737******0124 information. Immediate action is being taken to notify the affected individuals and enhance data protection measures.",
+    "sensitive_info": [
+      {
+        "type": "phone",
+        "value": "+1 58345995996",
+        "start": 153,
+        "end": 167
+      },
+      {
+        "type": "id_card",
+        "value": "143679632535565989",
+        "start": 177,
+        "end": 195
+      },
+      {
+        "type": "credit_card",
+        "value": "2597 3742 2100 0124",
+        "start": 209,
+        "end": 228
+      }
+    ],
+    "sensitive_types": [
+      "phone",
+      "id_card",
+      "credit_card"
+    ],
+    "num_sensitive_items": 3
+  },
+  {
+    "id": "short_9",
+    "difficulty": "short",
+    "original_context": "In the customer record for John Doe, we have updated his contact information with the new +44 39236378736 and verified his identification using the provided 695967813723151986. Additionally, we processed his recent payment using the saved 2978 7323 3589 3945 on file for his convenience.",
+    "redacted_context": "In the customer record for John Doe, we have updated his contact information with the new +44 392****8736 and verified his identification using the provided 695967**********86. Additionally, we processed his recent payment using the saved 297873******3945 on file for his convenience.",
+    "sensitive_info": [
+      {
+        "type": "phone",
+        "value": "+44 39236378736",
+        "start": 90,
+        "end": 105
+      },
+      {
+        "type": "id_card",
+        "value": "695967813723151986",
+        "start": 157,
+        "end": 175
+      },
+      {
+        "type": "credit_card",
+        "value": "2978 7323 3589 3945",
+        "start": 239,
+        "end": 258
+      }
+    ],
+    "sensitive_types": [
+      "phone",
+      "id_card",
+      "credit_card"
+    ],
+    "num_sensitive_items": 3
+  },
+  {
+    "id": "short_10",
+    "difficulty": "short",
+    "original_context": "In the customer record for account #12345, please update the +81 92783864060 and 4340 8964 5758 2729 details. The current +81 95823491462 is no longer in service, and the 1977 8566 6885 3894 on file is due to expire next month. Kindly verify and enter the updated information for the account.",
+    "redacted_context": "In the customer record for account #12345, please update the +81 927****4060 and 434089******2729 details. The current +81 958****1462 is no longer in service, and the 197785******3894 on file is due to expire next month. Kindly verify and enter the updated information for the account.",
+    "sensitive_info": [
+      {
+        "type": "phone",
+        "value": "+81 92783864060",
+        "start": 61,
+        "end": 76
+      },
+      {
+        "type": "credit_card",
+        "value": "4340 8964 5758 2729",
+        "start": 81,
+        "end": 100
+      },
+      {
+        "type": "phone",
+        "value": "+81 95823491462",
+        "start": 122,
+        "end": 137
+      },
+      {
+        "type": "credit_card",
+        "value": "1977 8566 6885 3894",
+        "start": 171,
+        "end": 190
+      }
+    ],
+    "sensitive_types": [
+      "phone",
+      "credit_card"
+    ],
+    "num_sensitive_items": 4
+  },
+  {
+    "id": "short_11",
+    "difficulty": "short",
+    "original_context": "An admin assistant was updating a customer records database when they noticed a discrepancy in the provided 552065067557365201. Concerned about potential identity theft, they decided to escalate the issue to the security team for further investigation. An email was promptly sent to the security department, outlining the suspicious details linked to the customer's +82 38229180662 and the irregular 559306447620039894 information.",
+    "redacted_context": "An admin assistant was updating a customer records database when they noticed a discrepancy in the provided 552065**********01. Concerned about potential identity theft, they decided to escalate the issue to the security team for further investigation. An email was promptly sent to the security department, outlining the suspicious details linked to the customer's +82 382****0662 and the irregular 559306**********94 information.",
+    "sensitive_info": [
+      {
+        "type": "id_card",
+        "value": "552065067557365201",
+        "start": 108,
+        "end": 126
+      },
+      {
+        "type": "phone",
+        "value": "+82 38229180662",
+        "start": 366,
+        "end": 381
+      },
+      {
+        "type": "id_card",
+        "value": "559306447620039894",
+        "start": 400,
+        "end": 418
+      }
+    ],
+    "sensitive_types": [
+      "phone",
+      "id_card"
+    ],
+    "num_sensitive_items": 3
+  },
+  {
+    "id": "short_12",
+    "difficulty": "short",
+    "original_context": "In the recent customer records audit, we identified a discrepancy with 045603461857283257 associated with +44 90328859805. The credit card linked to this account, 6872 5739 2175 1037, was also flagged for potential fraudulent activity. We recommend further investigation into these anomalies to ensure data integrity.",
+    "redacted_context": "In the recent customer records audit, we identified a discrepancy with 045603**********57 associated with +44 903****9805. The credit card linked to this account, 687257******1037, was also flagged for potential fraudulent activity. We recommend further investigation into these anomalies to ensure data integrity.",
+    "sensitive_info": [
+      {
+        "type": "id_card",
+        "value": "045603461857283257",
+        "start": 71,
+        "end": 89
+      },
+      {
+        "type": "phone",
+        "value": "+44 90328859805",
+        "start": 106,
+        "end": 121
+      },
+      {
+        "type": "credit_card",
+        "value": "6872 5739 2175 1037",
+        "start": 163,
+        "end": 182
+      }
+    ],
+    "sensitive_types": [
+      "phone",
+      "id_card",
+      "credit_card"
+    ],
+    "num_sensitive_items": 3
+  },
+  {
+    "id": "short_13",
+    "difficulty": "short",
+    "original_context": "In a recent customer record review, we noticed that the provided 868854010385092886 does not match the name on file. Additionally, the +44 96742915083 associated with the account seems to be disconnected. Please update this information promptly to avoid any disruptions in service. Kindly provide a valid 1021 6791 2570 6925 for billing purposes as well. Thank you. \nDuring the audit of employee records, it was discovered that an expired 570979256752420683 was used for identification. Furthermore, the company credit card linked to employee expenses has been reported as lost. Please submit a copy of your updated 819222720550038558 and provide the new 9616 6001 7822 9434 details at your earliest convenience. Thank you for your cooperation.",
+    "redacted_context": "In a recent customer record review, we noticed that the provided 868854**********86 does not match the name on file. Additionally, the +44 967****5083 associated with the account seems to be disconnected. Please update this information promptly to avoid any disruptions in service. Kindly provide a valid 102167******6925 for billing purposes as well. Thank you. \nDuring the audit of employee records, it was discovered that an expired 570979**********83 was used for identification. Furthermore, the company credit card linked to employee expenses has been reported as lost. Please submit a copy of your updated 819222**********58 and provide the new 961660******9434 details at your earliest convenience. Thank you for your cooperation.",
+    "sensitive_info": [
+      {
+        "type": "id_card",
+        "value": "868854010385092886",
+        "start": 65,
+        "end": 83
+      },
+      {
+        "type": "phone",
+        "value": "+44 96742915083",
+        "start": 135,
+        "end": 150
+      },
+      {
+        "type": "credit_card",
+        "value": "1021 6791 2570 6925",
+        "start": 305,
+        "end": 324
+      },
+      {
+        "type": "id_card",
+        "value": "570979256752420683",
+        "start": 439,
+        "end": 457
+      },
+      {
+        "type": "id_card",
+        "value": "819222720550038558",
+        "start": 616,
+        "end": 634
+      },
+      {
+        "type": "credit_card",
+        "value": "9616 6001 7822 9434",
+        "start": 655,
+        "end": 674
+      }
+    ],
+    "sensitive_types": [
+      "phone",
+      "id_card",
+      "credit_card"
+    ],
+    "num_sensitive_items": 6
+  },
+  {
+    "id": "short_14",
+    "difficulty": "short",
+    "original_context": "Customer Record:\nIn order to process your application, we require a copy of your 742655999299313472, 9301 6826 3852 1449, and an updated +82 58140000689 number. Please provide these documents at your earliest convenience.",
+    "redacted_context": "Customer Record:\nIn order to process your application, we require a copy of your 742655**********72, 930168******1449, and an updated +82 581****0689 number. Please provide these documents at your earliest convenience.",
+    "sensitive_info": [
+      {
+        "type": "id_card",
+        "value": "742655999299313472",
+        "start": 81,
+        "end": 99
+      },
+      {
+        "type": "credit_card",
+        "value": "9301 6826 3852 1449",
+        "start": 101,
+        "end": 120
+      },
+      {
+        "type": "phone",
+        "value": "+82 58140000689",
+        "start": 137,
+        "end": 152
+      }
+    ],
+    "sensitive_types": [
+      "id_card",
+      "credit_card"
+    ],
+    "num_sensitive_items": 3
+  },
+  {
+    "id": "short_15",
+    "difficulty": "short",
+    "original_context": "In a recent audit of customer records, we discovered that a +86 31128470900 was used for verification instead of the required 700608559130730536. Additionally, we found that a customer had provided an expired 394747737142642024 for identity verification, leading to potential security risks. We also identified a discrepancy in the billing information provided, where the 8414 1278 2666 7328 on file did not match the customer's primary payment method.",
+    "redacted_context": "In a recent audit of customer records, we discovered that a +86 311****0900 was used for verification instead of the required 700608**********36. Additionally, we found that a customer had provided an expired 394747**********24 for identity verification, leading to potential security risks. We also identified a discrepancy in the billing information provided, where the 841412******7328 on file did not match the customer's primary payment method.",
+    "sensitive_info": [
+      {
+        "type": "phone",
+        "value": "+86 31128470900",
+        "start": 60,
+        "end": 75
+      },
+      {
+        "type": "id_card",
+        "value": "700608559130730536",
+        "start": 126,
+        "end": 144
+      },
+      {
+        "type": "id_card",
+        "value": "394747737142642024",
+        "start": 209,
+        "end": 227
+      },
+      {
+        "type": "credit_card",
+        "value": "8414 1278 2666 7328",
+        "start": 372,
+        "end": 391
+      }
+    ],
+    "sensitive_types": [
+      "phone",
+      "id_card",
+      "credit_card"
+    ],
+    "num_sensitive_items": 4
+  },
+  {
+    "id": "short_16",
+    "difficulty": "short",
+    "original_context": "In a customer record update form, please provide your +86 12209968446 for verification purposes. Additionally, we require a copy of your government-issued 736828135572404033 and the last four digits of the 2890 2050 3277 8426 on file for security verification. Thank you for your cooperation.",
+    "redacted_context": "In a customer record update form, please provide your +86 122****8446 for verification purposes. Additionally, we require a copy of your government-issued 736828**********33 and the last four digits of the 289020******8426 on file for security verification. Thank you for your cooperation.",
+    "sensitive_info": [
+      {
+        "type": "phone",
+        "value": "+86 12209968446",
+        "start": 54,
+        "end": 69
+      },
+      {
+        "type": "id_card",
+        "value": "736828135572404033",
+        "start": 155,
+        "end": 173
+      },
+      {
+        "type": "credit_card",
+        "value": "2890 2050 3277 8426",
+        "start": 206,
+        "end": 225
+      }
+    ],
+    "sensitive_types": [
+      "phone",
+      "id_card",
+      "credit_card"
+    ],
+    "num_sensitive_items": 3
+  },
+  {
+    "id": "short_17",
+    "difficulty": "short",
+    "original_context": "In a recent security breach report, it was discovered that 270093378281540598 details were leaked along with 6994 8167 6091 0031 information. As a precaution, all affected individuals will be contacted via their registered +82 45222634051 numbers to inform them about the incident and provide guidance on next steps.",
+    "redacted_context": "In a recent security breach report, it was discovered that 270093**********98 details were leaked along with 699481******0031 information. As a precaution, all affected individuals will be contacted via their registered +82 452****4051 numbers to inform them about the incident and provide guidance on next steps.",
+    "sensitive_info": [
+      {
+        "type": "id_card",
+        "value": "270093378281540598",
+        "start": 59,
+        "end": 77
+      },
+      {
+        "type": "credit_card",
+        "value": "6994 8167 6091 0031",
+        "start": 109,
+        "end": 128
+      },
+      {
+        "type": "phone",
+        "value": "+82 45222634051",
+        "start": 223,
+        "end": 238
+      }
+    ],
+    "sensitive_types": [
+      "phone",
+      "id_card",
+      "credit_card"
+    ],
+    "num_sensitive_items": 3
+  },
+  {
+    "id": "short_18",
+    "difficulty": "short",
+    "original_context": "In a recent data breach incident, several +1 51829883473 numbers, 238081386598600877 details, and 0934 6497 5566 5171 information were compromised from our customer records. The security team is working diligently to investigate the breach and secure the sensitive data to prevent any further unauthorized access. We have informed all affected individuals and provided guidance on steps to protect their personal information.",
+    "redacted_context": "In a recent data breach incident, several +1 518****3473 numbers, 238081**********77 details, and 093464******5171 information were compromised from our customer records. The security team is working diligently to investigate the breach and secure the sensitive data to prevent any further unauthorized access. We have informed all affected individuals and provided guidance on steps to protect their personal information.",
+    "sensitive_info": [
+      {
+        "type": "phone",
+        "value": "+1 51829883473",
+        "start": 42,
+        "end": 56
+      },
+      {
+        "type": "id_card",
+        "value": "238081386598600877",
+        "start": 66,
+        "end": 84
+      },
+      {
+        "type": "credit_card",
+        "value": "0934 6497 5566 5171",
+        "start": 98,
+        "end": 117
+      }
+    ],
+    "sensitive_types": [
+      "phone",
+      "id_card",
+      "credit_card"
+    ],
+    "num_sensitive_items": 3
+  },
+  {
+    "id": "short_19",
+    "difficulty": "short",
+    "original_context": "In a confidential customer record, please update the contact number to +44 81115365506 and verify the expiration date on the 451202886541257839. Additionally, ensure that the +81 17938614563 is linked to the correct account for future communication.",
+    "redacted_context": "In a confidential customer record, please update the contact number to +44 811****5506 and verify the expiration date on the 451202**********39. Additionally, ensure that the +81 179****4563 is linked to the correct account for future communication.",
+    "sensitive_info": [
+      {
+        "type": "phone",
+        "value": "+44 81115365506",
+        "start": 71,
+        "end": 86
+      },
+      {
+        "type": "id_card",
+        "value": "451202886541257839",
+        "start": 125,
+        "end": 143
+      },
+      {
+        "type": "phone",
+        "value": "+81 17938614563",
+        "start": 175,
+        "end": 190
+      }
+    ],
+    "sensitive_types": [
+      "phone",
+      "id_card"
+    ],
+    "num_sensitive_items": 3
+  },
+  {
+    "id": "short_20",
+    "difficulty": "short",
+    "original_context": "In the customer record for John Doe, we have his 273055530953695818 and 5406 1812 6187 1102 details on file. Please contact him at +86 53143642610 for any further inquiries.\nIn the report regarding recent transactions, we noticed that the 232620053687663977 associated with the account ending in 9054 4988 9430 0783 was used for multiple unauthorized purchases. Kindly reach out to the customer at +86 11413940889 to verify these activities.",
+    "redacted_context": "In the customer record for John Doe, we have his 273055**********18 and 540618******1102 details on file. Please contact him at +86 531****2610 for any further inquiries.\nIn the report regarding recent transactions, we noticed that the 232620**********77 associated with the account ending in 905449******0783 was used for multiple unauthorized purchases. Kindly reach out to the customer at +86 114****0889 to verify these activities.",
+    "sensitive_info": [
+      {
+        "type": "id_card",
+        "value": "273055530953695818",
+        "start": 49,
+        "end": 67
+      },
+      {
+        "type": "credit_card",
+        "value": "5406 1812 6187 1102",
+        "start": 72,
+        "end": 91
+      },
+      {
+        "type": "phone",
+        "value": "+86 53143642610",
+        "start": 131,
+        "end": 146
+      },
+      {
+        "type": "id_card",
+        "value": "232620053687663977",
+        "start": 239,
+        "end": 257
+      },
+      {
+        "type": "credit_card",
+        "value": "9054 4988 9430 0783",
+        "start": 296,
+        "end": 315
+      },
+      {
+        "type": "phone",
+        "value": "+86 11413940889",
+        "start": 398,
+        "end": 413
+      }
+    ],
+    "sensitive_types": [
+      "id_card",
+      "credit_card"
+    ],
+    "num_sensitive_items": 6
+  },
+  {
+    "id": "short_21",
+    "difficulty": "short",
+    "original_context": "In a recent customer record update, we noticed that the provided +86 77171307611 is incorrect. Please verify and update your contact information. Additionally, we require a copy of your valid 792259510224943793 for identification purposes. Lastly, to process your payment, kindly provide the details of a valid 7393 5171 5831 7185. Thank you for your cooperation.",
+    "redacted_context": "In a recent customer record update, we noticed that the provided +86 771****7611 is incorrect. Please verify and update your contact information. Additionally, we require a copy of your valid 792259**********93 for identification purposes. Lastly, to process your payment, kindly provide the details of a valid 739351******7185. Thank you for your cooperation.",
+    "sensitive_info": [
+      {
+        "type": "phone",
+        "value": "+86 77171307611",
+        "start": 65,
+        "end": 80
+      },
+      {
+        "type": "id_card",
+        "value": "792259510224943793",
+        "start": 192,
+        "end": 210
+      },
+      {
+        "type": "credit_card",
+        "value": "7393 5171 5831 7185",
+        "start": 311,
+        "end": 330
+      }
+    ],
+    "sensitive_types": [
+      "phone",
+      "id_card",
+      "credit_card"
+    ],
+    "num_sensitive_items": 3
+  },
+  {
+    "id": "short_22",
+    "difficulty": "short",
+    "original_context": "In a customer record, please update the payment method to the new 3024 4423 5726 2080 ending in *1234 and ensure the billing address matches the one associated with the +82 40123404544 number ending in 5678. Thank you for your prompt attention to this matter.\n---\nFor the upcoming employee training session, please provide a list of attendees with their 824373508348265871 numbers for verification. Additionally, ensure that all attendees have updated their payment details with the new 3822 4852 2401 2172 ending in *9876. Thank you for your cooperation in organizing this event.",
+    "redacted_context": "In a customer record, please update the payment method to the new 302444******2080 ending in *1234 and ensure the billing address matches the one associated with the +82 401****4544 number ending in 5678. Thank you for your prompt attention to this matter.\n---\nFor the upcoming employee training session, please provide a list of attendees with their 824373**********71 numbers for verification. Additionally, ensure that all attendees have updated their payment details with the new 382248******2172 ending in *9876. Thank you for your cooperation in organizing this event.",
+    "sensitive_info": [
+      {
+        "type": "credit_card",
+        "value": "3024 4423 5726 2080",
+        "start": 66,
+        "end": 85
+      },
+      {
+        "type": "phone",
+        "value": "+82 40123404544",
+        "start": 169,
+        "end": 184
+      },
+      {
+        "type": "id_card",
+        "value": "824373508348265871",
+        "start": 354,
+        "end": 372
+      },
+      {
+        "type": "credit_card",
+        "value": "3822 4852 2401 2172",
+        "start": 487,
+        "end": 506
+      }
+    ],
+    "sensitive_types": [
+      "phone",
+      "credit_card"
+    ],
+    "num_sensitive_items": 4
+  },
+  {
+    "id": "short_23",
+    "difficulty": "short",
+    "original_context": "In a recent customer record update, we noticed that the 860287292698584025 associated with the account needs to be verified. Please provide a clear scanned copy of the 194055307519826767 for authentication purposes. Additionally, we require the last four digits of the 5590 1453 1292 0265 linked to the account to finalize the identity verification process. Thank you for your cooperation.",
+    "redacted_context": "In a recent customer record update, we noticed that the 860287**********25 associated with the account needs to be verified. Please provide a clear scanned copy of the 194055**********67 for authentication purposes. Additionally, we require the last four digits of the 559014******0265 linked to the account to finalize the identity verification process. Thank you for your cooperation.",
+    "sensitive_info": [
+      {
+        "type": "id_card",
+        "value": "860287292698584025",
+        "start": 56,
+        "end": 74
+      },
+      {
+        "type": "id_card",
+        "value": "194055307519826767",
+        "start": 168,
+        "end": 186
+      },
+      {
+        "type": "credit_card",
+        "value": "5590 1453 1292 0265",
+        "start": 269,
+        "end": 288
+      }
+    ],
+    "sensitive_types": [
+      "id_card",
+      "credit_card"
+    ],
+    "num_sensitive_items": 3
+  },
+  {
+    "id": "short_24",
+    "difficulty": "short",
+    "original_context": "In a secure customer record, the +44 71445016929 associated with the account is outdated. To update the information, we require a copy of a valid 732235341725641630 and a new +1 86783238128 number to be provided for verification purposes. Please ensure that the 8856 6082 9173 7187 linked to the account is also up to date to avoid any disruptions in service.",
+    "redacted_context": "In a secure customer record, the +44 714****6929 associated with the account is outdated. To update the information, we require a copy of a valid 732235**********30 and a new +1 867****8128 number to be provided for verification purposes. Please ensure that the 885660******7187 linked to the account is also up to date to avoid any disruptions in service.",
+    "sensitive_info": [
+      {
+        "type": "phone",
+        "value": "+44 71445016929",
+        "start": 33,
+        "end": 48
+      },
+      {
+        "type": "id_card",
+        "value": "732235341725641630",
+        "start": 146,
+        "end": 164
+      },
+      {
+        "type": "phone",
+        "value": "+1 86783238128",
+        "start": 175,
+        "end": 189
+      },
+      {
+        "type": "credit_card",
+        "value": "8856 6082 9173 7187",
+        "start": 262,
+        "end": 281
+      }
+    ],
+    "sensitive_types": [
+      "phone",
+      "id_card",
+      "credit_card"
+    ],
+    "num_sensitive_items": 4
+  },
+  {
+    "id": "short_25",
+    "difficulty": "short",
+    "original_context": "In a customer record form, please provide your +1 99550083404 number and 9082 3240 2442 9124 details for verification purposes. Your +86 70768933279 number will be used for communication regarding your account, and the 3789 9670 4796 3539 information is required to process your payment securely. Thank you for providing this information.",
+    "redacted_context": "In a customer record form, please provide your +1 995****3404 number and 908232******9124 details for verification purposes. Your +86 707****3279 number will be used for communication regarding your account, and the 378996******3539 information is required to process your payment securely. Thank you for providing this information.",
+    "sensitive_info": [
+      {
+        "type": "phone",
+        "value": "+1 99550083404",
+        "start": 47,
+        "end": 61
+      },
+      {
+        "type": "credit_card",
+        "value": "9082 3240 2442 9124",
+        "start": 73,
+        "end": 92
+      },
+      {
+        "type": "phone",
+        "value": "+86 70768933279",
+        "start": 133,
+        "end": 148
+      },
+      {
+        "type": "credit_card",
+        "value": "3789 9670 4796 3539",
+        "start": 219,
+        "end": 238
+      }
+    ],
+    "sensitive_types": [
+      "phone",
+      "credit_card"
+    ],
+    "num_sensitive_items": 4
+  },
+  {
+    "id": "short_26",
+    "difficulty": "short",
+    "original_context": "In the customer record for John Doe, we have updated his contact information with a new +81 57193682432 and also verified his 585194299528082957. Additionally, we processed a payment using his 5981 6677 0588 0925 on file for his recent order.",
+    "redacted_context": "In the customer record for John Doe, we have updated his contact information with a new +81 571****2432 and also verified his 585194**********57. Additionally, we processed a payment using his 598166******0925 on file for his recent order.",
+    "sensitive_info": [
+      {
+        "type": "phone",
+        "value": "+81 57193682432",
+        "start": 88,
+        "end": 103
+      },
+      {
+        "type": "id_card",
+        "value": "585194299528082957",
+        "start": 126,
+        "end": 144
+      },
+      {
+        "type": "credit_card",
+        "value": "5981 6677 0588 0925",
+        "start": 193,
+        "end": 212
+      }
+    ],
+    "sensitive_types": [
+      "phone",
+      "id_card",
+      "credit_card"
+    ],
+    "num_sensitive_items": 3
+  },
+  {
+    "id": "short_27",
+    "difficulty": "short",
+    "original_context": "In a recent audit report, it was noted that customer +44 44402344639 had provided an expired 992998400095934281 for verification. Additionally, the payment was made using a different 3594 0330 7935 7978 compared to the one on file. This discrepancy raised concerns regarding the accuracy of the customer's information in our records.",
+    "redacted_context": "In a recent audit report, it was noted that customer +44 444****4639 had provided an expired 992998**********81 for verification. Additionally, the payment was made using a different 359403******7978 compared to the one on file. This discrepancy raised concerns regarding the accuracy of the customer's information in our records.",
+    "sensitive_info": [
+      {
+        "type": "phone",
+        "value": "+44 44402344639",
+        "start": 53,
+        "end": 68
+      },
+      {
+        "type": "id_card",
+        "value": "992998400095934281",
+        "start": 93,
+        "end": 111
+      },
+      {
+        "type": "credit_card",
+        "value": "3594 0330 7935 7978",
+        "start": 183,
+        "end": 202
+      }
+    ],
+    "sensitive_types": [
+      "phone",
+      "id_card",
+      "credit_card"
+    ],
+    "num_sensitive_items": 3
+  },
+  {
+    "id": "short_28",
+    "difficulty": "short",
+    "original_context": "In a recent customer record update, we noticed that the +82 32392885139 associated with 474466860716109030 ending in 1234 didn't match the one linked to the 2916 4314 2539 5046 on file. This discrepancy raised concerns about the accuracy of the contact details provided. Further verification is needed to ensure data integrity and security.",
+    "redacted_context": "In a recent customer record update, we noticed that the +82 323****5139 associated with 474466**********30 ending in 1234 didn't match the one linked to the 291643******5046 on file. This discrepancy raised concerns about the accuracy of the contact details provided. Further verification is needed to ensure data integrity and security.",
+    "sensitive_info": [
+      {
+        "type": "phone",
+        "value": "+82 32392885139",
+        "start": 56,
+        "end": 71
+      },
+      {
+        "type": "id_card",
+        "value": "474466860716109030",
+        "start": 88,
+        "end": 106
+      },
+      {
+        "type": "credit_card",
+        "value": "2916 4314 2539 5046",
+        "start": 157,
+        "end": 176
+      }
+    ],
+    "sensitive_types": [
+      "phone",
+      "id_card",
+      "credit_card"
+    ],
+    "num_sensitive_items": 3
+  },
+  {
+    "id": "short_29",
+    "difficulty": "short",
+    "original_context": "In a recent audit report, we found that the customer's 065462848694367383 was not properly verified before processing the transaction with the provided 3628 3711 6566 0347. Additionally, the contact number associated with the account was listed as +81 93434377282 which seems to be outdated. We recommend updating the records to ensure compliance with security protocols.",
+    "redacted_context": "In a recent audit report, we found that the customer's 065462**********83 was not properly verified before processing the transaction with the provided 362837******0347. Additionally, the contact number associated with the account was listed as +81 934****7282 which seems to be outdated. We recommend updating the records to ensure compliance with security protocols.",
+    "sensitive_info": [
+      {
+        "type": "id_card",
+        "value": "065462848694367383",
+        "start": 55,
+        "end": 73
+      },
+      {
+        "type": "credit_card",
+        "value": "3628 3711 6566 0347",
+        "start": 152,
+        "end": 171
+      },
+      {
+        "type": "phone",
+        "value": "+81 93434377282",
+        "start": 248,
+        "end": 263
+      }
+    ],
+    "sensitive_types": [
+      "phone",
+      "id_card",
+      "credit_card"
+    ],
+    "num_sensitive_items": 3
+  },
+  {
+    "id": "short_30",
+    "difficulty": "short",
+    "original_context": "In a recent data breach incident, customer records containing sensitive information were compromised. The leaked data includes +86 13487094011 numbers, 387705303104356392 details, and 3402 5101 8639 5929 information. Immediate action is required to notify all affected individuals and mitigate any potential risks.",
+    "redacted_context": "In a recent data breach incident, customer records containing sensitive information were compromised. The leaked data includes +86 134****4011 numbers, 387705**********92 details, and 340251******5929 information. Immediate action is required to notify all affected individuals and mitigate any potential risks.",
+    "sensitive_info": [
+      {
+        "type": "phone",
+        "value": "+86 13487094011",
+        "start": 127,
+        "end": 142
+      },
+      {
+        "type": "id_card",
+        "value": "387705303104356392",
+        "start": 152,
+        "end": 170
+      },
+      {
+        "type": "credit_card",
+        "value": "3402 5101 8639 5929",
+        "start": 184,
+        "end": 203
+      }
+    ],
+    "sensitive_types": [
+      "phone",
+      "id_card",
+      "credit_card"
+    ],
+    "num_sensitive_items": 3
+  },
+  {
+    "id": "short_31",
+    "difficulty": "short",
+    "original_context": "In a confidential customer record, the contact information includes the following sensitive data: +81 32625232728 for communication, 906094398556545906 for identification purposes, and 6141 4973 6805 4410 for processing payments securely. The protection of this information is crucial for maintaining the client's privacy and security.",
+    "redacted_context": "In a confidential customer record, the contact information includes the following sensitive data: +81 326****2728 for communication, 906094**********06 for identification purposes, and 614149******4410 for processing payments securely. The protection of this information is crucial for maintaining the client's privacy and security.",
+    "sensitive_info": [
+      {
+        "type": "phone",
+        "value": "+81 32625232728",
+        "start": 98,
+        "end": 113
+      },
+      {
+        "type": "id_card",
+        "value": "906094398556545906",
+        "start": 133,
+        "end": 151
+      },
+      {
+        "type": "credit_card",
+        "value": "6141 4973 6805 4410",
+        "start": 185,
+        "end": 204
+      }
+    ],
+    "sensitive_types": [
+      "phone",
+      "id_card",
+      "credit_card"
+    ],
+    "num_sensitive_items": 3
+  },
+  {
+    "id": "short_32",
+    "difficulty": "short",
+    "original_context": "In a customer record update form, please provide your +1 39679153298 and 5087 8964 5803 4716 for verification purposes. Your 4067 2222 8029 0708 will be used for processing the annual subscription fee. Thank you for completing this information accurately.",
+    "redacted_context": "In a customer record update form, please provide your +1 396****3298 and 508789******4716 for verification purposes. Your 406722******0708 will be used for processing the annual subscription fee. Thank you for completing this information accurately.",
+    "sensitive_info": [
+      {
+        "type": "phone",
+        "value": "+1 39679153298",
+        "start": 54,
+        "end": 68
+      },
+      {
+        "type": "credit_card",
+        "value": "5087 8964 5803 4716",
+        "start": 73,
+        "end": 92
+      },
+      {
+        "type": "credit_card",
+        "value": "4067 2222 8029 0708",
+        "start": 125,
+        "end": 144
+      }
+    ],
+    "sensitive_types": [
+      "phone",
+      "credit_card"
+    ],
+    "num_sensitive_items": 3
+  },
+  {
+    "id": "short_33",
+    "difficulty": "short",
+    "original_context": "In the customer record for 438741117297392364 with the number 339911408598531599, please update the contact number to +86 14018232891. The payment for the recent purchase was made using 5841 9586 2582 7980 ending in ****.",
+    "redacted_context": "In the customer record for 438741**********64 with the number 339911**********99, please update the contact number to +86 140****2891. The payment for the recent purchase was made using 584195******7980 ending in ****.",
+    "sensitive_info": [
+      {
+        "type": "id_card",
+        "value": "438741117297392364",
+        "start": 27,
+        "end": 45
+      },
+      {
+        "type": "id_card",
+        "value": "339911408598531599",
+        "start": 62,
+        "end": 80
+      },
+      {
+        "type": "phone",
+        "value": "+86 14018232891",
+        "start": 118,
+        "end": 133
+      },
+      {
+        "type": "credit_card",
+        "value": "5841 9586 2582 7980",
+        "start": 186,
+        "end": 205
+      }
+    ],
+    "sensitive_types": [
+      "phone",
+      "id_card",
+      "credit_card"
+    ],
+    "num_sensitive_items": 4
+  },
+  {
+    "id": "short_34",
+    "difficulty": "short",
+    "original_context": "In the customer record for 085798975443808585, we have the +1 54087607889 associated with the account on file. Please update the payment method to the new 4225 6954 6825 5743 provided by the customer during the last call.",
+    "redacted_context": "In the customer record for 085798**********85, we have the +1 540****7889 associated with the account on file. Please update the payment method to the new 422569******5743 provided by the customer during the last call.",
+    "sensitive_info": [
+      {
+        "type": "id_card",
+        "value": "085798975443808585",
+        "start": 27,
+        "end": 45
+      },
+      {
+        "type": "phone",
+        "value": "+1 54087607889",
+        "start": 59,
+        "end": 73
+      },
+      {
+        "type": "credit_card",
+        "value": "4225 6954 6825 5743",
+        "start": 155,
+        "end": 174
+      }
+    ],
+    "sensitive_types": [
+      "phone",
+      "credit_card"
+    ],
+    "num_sensitive_items": 3
+  },
+  {
+    "id": "short_35",
+    "difficulty": "short",
+    "original_context": "Customer Record:\nCustomer 118927836948796774 needs to update their payment method for the upcoming subscription renewal. Please reach out to them at +81 83965797769 to assist with updating the 1310 7809 9642 9932 details on file.",
+    "redacted_context": "Customer Record:\nCustomer 118927**********74 needs to update their payment method for the upcoming subscription renewal. Please reach out to them at +81 839****7769 to assist with updating the 131078******9932 details on file.",
+    "sensitive_info": [
+      {
+        "type": "id_card",
+        "value": "118927836948796774",
+        "start": 26,
+        "end": 44
+      },
+      {
+        "type": "phone",
+        "value": "+81 83965797769",
+        "start": 149,
+        "end": 164
+      },
+      {
+        "type": "credit_card",
+        "value": "1310 7809 9642 9932",
+        "start": 193,
+        "end": 212
+      }
+    ],
+    "sensitive_types": [
+      "phone",
+      "credit_card"
+    ],
+    "num_sensitive_items": 3
+  },
+  {
+    "id": "short_36",
+    "difficulty": "short",
+    "original_context": "In a secure database entry for a customer record, we have +44 57414611933 listed as the primary contact number. The customer's 975814598789331854 was used for verification during the registration process, and the payment details were saved under the 5515 6582 8092 1240 for automatic billing.",
+    "redacted_context": "In a secure database entry for a customer record, we have +44 574****1933 listed as the primary contact number. The customer's 975814**********54 was used for verification during the registration process, and the payment details were saved under the 551565******1240 for automatic billing.",
+    "sensitive_info": [
+      {
+        "type": "phone",
+        "value": "+44 57414611933",
+        "start": 58,
+        "end": 73
+      },
+      {
+        "type": "id_card",
+        "value": "975814598789331854",
+        "start": 127,
+        "end": 145
+      },
+      {
+        "type": "credit_card",
+        "value": "5515 6582 8092 1240",
+        "start": 250,
+        "end": 269
+      }
+    ],
+    "sensitive_types": [
+      "phone",
+      "id_card",
+      "credit_card"
+    ],
+    "num_sensitive_items": 3
+  },
+  {
+    "id": "short_37",
+    "difficulty": "short",
+    "original_context": "In the customer record for John Doe, we have the following sensitive information: +81 83547671531 is his contact number, 398946088987233630 is his identification card number, and 8436 9985 0850 4926 is the credit card on file for payments.",
+    "redacted_context": "In the customer record for John Doe, we have the following sensitive information: +81 835****1531 is his contact number, 398946**********30 is his identification card number, and 843699******4926 is the credit card on file for payments.",
+    "sensitive_info": [
+      {
+        "type": "phone",
+        "value": "+81 83547671531",
+        "start": 82,
+        "end": 97
+      },
+      {
+        "type": "id_card",
+        "value": "398946088987233630",
+        "start": 121,
+        "end": 139
+      },
+      {
+        "type": "credit_card",
+        "value": "8436 9985 0850 4926",
+        "start": 179,
+        "end": 198
+      }
+    ],
+    "sensitive_types": [
+      "phone",
+      "id_card",
+      "credit_card"
+    ],
+    "num_sensitive_items": 3
+  },
+  {
+    "id": "short_38",
+    "difficulty": "short",
+    "original_context": "In a confidential customer record, please update the contact information for 952314685573417091 with the new +1 92326221457 number provided. For security purposes, we require a copy of the 745239593184887521 to process this change. Thank you.",
+    "redacted_context": "In a confidential customer record, please update the contact information for 952314**********91 with the new +1 923****1457 number provided. For security purposes, we require a copy of the 745239**********21 to process this change. Thank you.",
+    "sensitive_info": [
+      {
+        "type": "id_card",
+        "value": "952314685573417091",
+        "start": 77,
+        "end": 95
+      },
+      {
+        "type": "phone",
+        "value": "+1 92326221457",
+        "start": 109,
+        "end": 123
+      },
+      {
+        "type": "id_card",
+        "value": "745239593184887521",
+        "start": 189,
+        "end": 207
+      }
+    ],
+    "sensitive_types": [
+      "phone",
+      "id_card"
+    ],
+    "num_sensitive_items": 3
+  },
+  {
+    "id": "short_39",
+    "difficulty": "short",
+    "original_context": "In a customer record update form, please provide your +44 07364607651 for verification purposes. Additionally, we require your 8943 6823 8530 3493 details to process the payment. Your cooperation is greatly appreciated. Thank you.\nIn an email confirming your recent purchase, we kindly ask you to provide your +81 16045723411 for order verification. For your convenience, please also confirm the last four digits of the 2896 7744 8949 1858 used for the transaction. Your prompt response is appreciated.",
+    "redacted_context": "In a customer record update form, please provide your +44 073****7651 for verification purposes. Additionally, we require your 894368******3493 details to process the payment. Your cooperation is greatly appreciated. Thank you.\nIn an email confirming your recent purchase, we kindly ask you to provide your +81 160****3411 for order verification. For your convenience, please also confirm the last four digits of the 289677******1858 used for the transaction. Your prompt response is appreciated.",
+    "sensitive_info": [
+      {
+        "type": "phone",
+        "value": "+44 07364607651",
+        "start": 54,
+        "end": 69
+      },
+      {
+        "type": "credit_card",
+        "value": "8943 6823 8530 3493",
+        "start": 127,
+        "end": 146
+      },
+      {
+        "type": "phone",
+        "value": "+81 16045723411",
+        "start": 310,
+        "end": 325
+      },
+      {
+        "type": "credit_card",
+        "value": "2896 7744 8949 1858",
+        "start": 420,
+        "end": 439
+      }
+    ],
+    "sensitive_types": [
+      "phone",
+      "credit_card"
+    ],
+    "num_sensitive_items": 4
+  },
+  {
+    "id": "short_40",
+    "difficulty": "short",
+    "original_context": "In a recent customer record audit, we identified discrepancies in the information provided. The client's +86 26973246667 number was not up to date, the 670213487595264151 presented did not match our records, and the 1940 9324 5993 2483 on file was showing as expired. This prompted us to reach out to the customer for verification and updated details as soon as possible.",
+    "redacted_context": "In a recent customer record audit, we identified discrepancies in the information provided. The client's +86 269****6667 number was not up to date, the 670213**********51 presented did not match our records, and the 194093******2483 on file was showing as expired. This prompted us to reach out to the customer for verification and updated details as soon as possible.",
+    "sensitive_info": [
+      {
+        "type": "phone",
+        "value": "+86 26973246667",
+        "start": 105,
+        "end": 120
+      },
+      {
+        "type": "id_card",
+        "value": "670213487595264151",
+        "start": 152,
+        "end": 170
+      },
+      {
+        "type": "credit_card",
+        "value": "1940 9324 5993 2483",
+        "start": 216,
+        "end": 235
+      }
+    ],
+    "sensitive_types": [
+      "phone",
+      "id_card",
+      "credit_card"
+    ],
+    "num_sensitive_items": 3
+  },
+  {
+    "id": "short_41",
+    "difficulty": "short",
+    "original_context": "In a recent customer record review, we found that the provided 412674686914169216 was expired. Additionally, the +82 44466971146 number listed seemed to be disconnected. To proceed with the order, please update the 6986 0252 1230 5958 information on file. Thank you for your prompt attention to this matter.",
+    "redacted_context": "In a recent customer record review, we found that the provided 412674**********16 was expired. Additionally, the +82 444****1146 number listed seemed to be disconnected. To proceed with the order, please update the 698602******5958 information on file. Thank you for your prompt attention to this matter.",
+    "sensitive_info": [
+      {
+        "type": "id_card",
+        "value": "412674686914169216",
+        "start": 63,
+        "end": 81
+      },
+      {
+        "type": "phone",
+        "value": "+82 44466971146",
+        "start": 113,
+        "end": 128
+      },
+      {
+        "type": "credit_card",
+        "value": "6986 0252 1230 5958",
+        "start": 215,
+        "end": 234
+      }
+    ],
+    "sensitive_types": [
+      "phone",
+      "id_card",
+      "credit_card"
+    ],
+    "num_sensitive_items": 3
+  },
+  {
+    "id": "short_42",
+    "difficulty": "short",
+    "original_context": "In a recent customer record review, we noticed that the 141255930350472913 associated with the account has expired. To update your account information, please provide a copy of your valid 348269304221842810 and the last four digits of the 0412 4004 9855 2846 on file. You can securely send this information to our dedicated email address for verification. Thank you for your cooperation.",
+    "redacted_context": "In a recent customer record review, we noticed that the 141255**********13 associated with the account has expired. To update your account information, please provide a copy of your valid 348269**********10 and the last four digits of the 041240******2846 on file. You can securely send this information to our dedicated email address for verification. Thank you for your cooperation.",
+    "sensitive_info": [
+      {
+        "type": "id_card",
+        "value": "141255930350472913",
+        "start": 56,
+        "end": 74
+      },
+      {
+        "type": "id_card",
+        "value": "348269304221842810",
+        "start": 188,
+        "end": 206
+      },
+      {
+        "type": "credit_card",
+        "value": "0412 4004 9855 2846",
+        "start": 239,
+        "end": 258
+      }
+    ],
+    "sensitive_types": [
+      "id_card",
+      "credit_card"
+    ],
+    "num_sensitive_items": 3
+  },
+  {
+    "id": "short_43",
+    "difficulty": "short",
+    "original_context": "In the customer record for +1 15453099665 belonging to John Doe with 629667265611978726, we noticed a recent transaction made using the saved 2619 8871 8734 0939 ending in ****. Please review this activity as it appears to be unusual based on the user's typical behavior.",
+    "redacted_context": "In the customer record for +1 154****9665 belonging to John Doe with 629667**********26, we noticed a recent transaction made using the saved 261988******0939 ending in ****. Please review this activity as it appears to be unusual based on the user's typical behavior.",
+    "sensitive_info": [
+      {
+        "type": "phone",
+        "value": "+1 15453099665",
+        "start": 27,
+        "end": 41
+      },
+      {
+        "type": "id_card",
+        "value": "629667265611978726",
+        "start": 69,
+        "end": 87
+      },
+      {
+        "type": "credit_card",
+        "value": "2619 8871 8734 0939",
+        "start": 142,
+        "end": 161
+      }
+    ],
+    "sensitive_types": [
+      "phone",
+      "id_card",
+      "credit_card"
+    ],
+    "num_sensitive_items": 3
+  },
+  {
+    "id": "short_44",
+    "difficulty": "short",
+    "original_context": "In the customer record for John Doe, the +81 05051500152 associated with his account is outdated and needs to be updated. Additionally, his 155897448577510958 information requires verification due to a recent change of address. We also noticed that his 1782 1341 2177 1230 on file is set to expire next month, prompting us to request updated payment details.",
+    "redacted_context": "In the customer record for John Doe, the +81 050****0152 associated with his account is outdated and needs to be updated. Additionally, his 155897**********58 information requires verification due to a recent change of address. We also noticed that his 178213******1230 on file is set to expire next month, prompting us to request updated payment details.",
+    "sensitive_info": [
+      {
+        "type": "phone",
+        "value": "+81 05051500152",
+        "start": 41,
+        "end": 56
+      },
+      {
+        "type": "id_card",
+        "value": "155897448577510958",
+        "start": 140,
+        "end": 158
+      },
+      {
+        "type": "credit_card",
+        "value": "1782 1341 2177 1230",
+        "start": 253,
+        "end": 272
+      }
+    ],
+    "sensitive_types": [
+      "phone",
+      "id_card",
+      "credit_card"
+    ],
+    "num_sensitive_items": 3
+  },
+  {
+    "id": "short_45",
+    "difficulty": "short",
+    "original_context": "In the customer record for John Doe, we have the following information: +86 16317846289: XXX-XXX-XXXX, 452870185471267941: ABC12345, 0211 4728 8317 8074: XXXX-XXXX-XXXX-XXXX. Please ensure this sensitive data is handled securely.",
+    "redacted_context": "In the customer record for John Doe, we have the following information: +86 163****6289: XXX-XXX-XXXX, 452870**********41: ABC12345, 021147******8074: XXXX-XXXX-XXXX-XXXX. Please ensure this sensitive data is handled securely.",
+    "sensitive_info": [
+      {
+        "type": "phone",
+        "value": "+86 16317846289",
+        "start": 72,
+        "end": 87
+      },
+      {
+        "type": "id_card",
+        "value": "452870185471267941",
+        "start": 103,
+        "end": 121
+      },
+      {
+        "type": "credit_card",
+        "value": "0211 4728 8317 8074",
+        "start": 133,
+        "end": 152
+      }
+    ],
+    "sensitive_types": [
+      "phone",
+      "id_card",
+      "credit_card"
+    ],
+    "num_sensitive_items": 3
+  },
+  {
+    "id": "short_46",
+    "difficulty": "short",
+    "original_context": "In the customer record for John Doe, we have updated his contact information. Please note that his new +86 93552109641 is (555) 123-4567. Additionally, we have verified his 792780749259320870 and 9740 9213 7989 5710 details for security purposes.",
+    "redacted_context": "In the customer record for John Doe, we have updated his contact information. Please note that his new +86 935****9641 is (555) 123-4567. Additionally, we have verified his 792780**********70 and 974092******5710 details for security purposes.",
+    "sensitive_info": [
+      {
+        "type": "phone",
+        "value": "+86 93552109641",
+        "start": 103,
+        "end": 118
+      },
+      {
+        "type": "id_card",
+        "value": "792780749259320870",
+        "start": 173,
+        "end": 191
+      },
+      {
+        "type": "credit_card",
+        "value": "9740 9213 7989 5710",
+        "start": 196,
+        "end": 215
+      }
+    ],
+    "sensitive_types": [
+      "phone",
+      "id_card",
+      "credit_card"
+    ],
+    "num_sensitive_items": 3
+  },
+  {
+    "id": "short_47",
+    "difficulty": "short",
+    "original_context": "A customer record was updated with the following details: +81 04001368803 and 216306287736269399 were verified for security compliance. The +1 66389671790 number was confirmed to be accurate, while the 327846470456416884 details matched the information on file. The sensitive data validation process was successfully completed for the account.",
+    "redacted_context": "A customer record was updated with the following details: +81 040****8803 and 216306**********99 were verified for security compliance. The +1 663****1790 number was confirmed to be accurate, while the 327846**********84 details matched the information on file. The sensitive data validation process was successfully completed for the account.",
+    "sensitive_info": [
+      {
+        "type": "phone",
+        "value": "+81 04001368803",
+        "start": 58,
+        "end": 73
+      },
+      {
+        "type": "id_card",
+        "value": "216306287736269399",
+        "start": 78,
+        "end": 96
+      },
+      {
+        "type": "phone",
+        "value": "+1 66389671790",
+        "start": 140,
+        "end": 154
+      },
+      {
+        "type": "id_card",
+        "value": "327846470456416884",
+        "start": 202,
+        "end": 220
+      }
+    ],
+    "sensitive_types": [
+      "phone",
+      "id_card"
+    ],
+    "num_sensitive_items": 4
+  },
+  {
+    "id": "short_48",
+    "difficulty": "short",
+    "original_context": "In a confidential customer record, please update the payment method for +81 33559798624 ending in 1034 6007 8371 7449. Kindly ensure the new 1058 8187 4554 4826 details are accurately entered to avoid any payment processing issues. Thank you for your attention to this matter.",
+    "redacted_context": "In a confidential customer record, please update the payment method for +81 335****8624 ending in 103460******7449. Kindly ensure the new 105881******4826 details are accurately entered to avoid any payment processing issues. Thank you for your attention to this matter.",
+    "sensitive_info": [
+      {
+        "type": "phone",
+        "value": "+81 33559798624",
+        "start": 72,
+        "end": 87
+      },
+      {
+        "type": "credit_card",
+        "value": "1034 6007 8371 7449",
+        "start": 98,
+        "end": 117
+      },
+      {
+        "type": "credit_card",
+        "value": "1058 8187 4554 4826",
+        "start": 141,
+        "end": 160
+      }
+    ],
+    "sensitive_types": [
+      "phone",
+      "credit_card"
+    ],
+    "num_sensitive_items": 3
+  },
+  {
+    "id": "short_49",
+    "difficulty": "short",
+    "original_context": "In a recent audit report, we identified a discrepancy in the records associated with 182629880995181353. It seems that the 2936 7330 4207 6930 details linked to the account do not match the billing information provided. We recommend contacting the customer immediately at +1 17733207702 to address this issue and ensure data accuracy.",
+    "redacted_context": "In a recent audit report, we identified a discrepancy in the records associated with 182629**********53. It seems that the 293673******6930 details linked to the account do not match the billing information provided. We recommend contacting the customer immediately at +1 177****7702 to address this issue and ensure data accuracy.",
+    "sensitive_info": [
+      {
+        "type": "id_card",
+        "value": "182629880995181353",
+        "start": 85,
+        "end": 103
+      },
+      {
+        "type": "credit_card",
+        "value": "2936 7330 4207 6930",
+        "start": 123,
+        "end": 142
+      },
+      {
+        "type": "phone",
+        "value": "+1 17733207702",
+        "start": 272,
+        "end": 286
+      }
+    ],
+    "sensitive_types": [
+      "phone",
+      "id_card",
+      "credit_card"
+    ],
+    "num_sensitive_items": 3
+  }
+]

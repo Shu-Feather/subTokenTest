@@ -1,0 +1,25 @@
+[
+  {
+    "description": "The table represents a list of products with their respective prices and quantities available in the inventory.",
+    "table_data": [
+      [
+        "Apple iPhone 13",
+        "$799",
+        "150 units"
+      ],
+      [
+        "Samsung Galaxy S21",
+        "$699",
+        "180 units"
+      ],
+      [
+        "Google Pixel 6",
+        "$599",
+        "210 units"
+      ]
+    ],
+    "context": "The table represents a list of products with their respective prices and quantities available in the inventory. row 1: Apple iPhone 13, $799, 150 units row 2: Samsung Galaxy S21, $699, 180 units row 3: Google Pixel 6, $599, 210 units",
+    "num_rows": 3,
+    "num_cols": 3
+  }
+]

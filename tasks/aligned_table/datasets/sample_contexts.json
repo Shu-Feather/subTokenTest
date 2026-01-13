@@ -1,0 +1,72 @@
+[
+  {
+    "description": "The table represents a collection of books, with each book's title, author, genre, publication year, number of pages, and average rating.",
+    "table_data": [
+      [
+        "\"To Kill a Mockingbird\"",
+        "Harper Lee",
+        "Fiction",
+        "1960",
+        "324",
+        "4.27"
+      ],
+      [
+        "\"1984\"",
+        "George Orwell",
+        "Dystopian",
+        "1949",
+        "328",
+        "4.17"
+      ],
+      [
+        "\"The Great Gatsby\"",
+        "F. Scott Fitzgerald",
+        "Fiction",
+        "1925",
+        "180",
+        "3.91"
+      ]
+    ],
+    "context": "The table represents a collection of books, with each book's title, author, genre, publication year, number of pages, and average rating. row 1: \"To Kill a Mockingbird\", Harper Lee, Fiction, 1960, 324, 4.27 row 2: \"1984\", George Orwell, Dystopian, 1949, 328, 4.17 row 3: \"The Great Gatsby\", F. Scott Fitzgerald, Fiction, 1925, 180, 3.91",
+    "num_rows": 3,
+    "num_cols": 6
+  },
+  {
+    "description": "The table represents a selection of cities around the world, along with their respective countries and population sizes according to the most recent estimates.",
+    "table_data": [
+      [
+        "New York",
+        "USA",
+        "8.4 million"
+      ],
+      [
+        "Tokyo",
+        "Japan",
+        "37.4 million"
+      ],
+      [
+        "Mumbai",
+        "India",
+        "20.7 million"
+      ],
+      [
+        "Sydney",
+        "Australia",
+        "5.3 million"
+      ],
+      [
+        "Buenos Aires",
+        "Argentina",
+        "15.2 million"
+      ],
+      [
+        "Lagos",
+        "Nigeria",
+        "14.3 million"
+      ]
+    ],
+    "context": "The table represents a selection of cities around the world, along with their respective countries and population sizes according to the most recent estimates. row 1: New York, USA, 8.4 million row 2: Tokyo, Japan, 37.4 million row 3: Mumbai, India, 20.7 million row 4: Sydney, Australia, 5.3 million row 5: Buenos Aires, Argentina, 15.2 million row 6: Lagos, Nigeria, 14.3 million",
+    "num_rows": 6,
+    "num_cols": 3
+  }
+]

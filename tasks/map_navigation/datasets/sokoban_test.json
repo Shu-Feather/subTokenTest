@@ -1,0 +1,40 @@
+{
+  "metadata": {
+    "env_type": "sokoban",
+    "map_size": 8,
+    "num_maps": 1,
+    "tasks_per_type": {
+      "1": 1,
+      "2": 1,
+      "3": 0,
+      "4": 0
+    },
+    "total_tasks": 2,
+    "seed": 42
+  },
+  "data": [
+    {
+      "env_type": "sokoban",
+      "map_id": 0,
+      "map_size": 8,
+      "map": "# # # # # # # #\n# _ _ _ _ _ _ #\n# _ # _ _ # _ #\n# _ _ X P _ _ #\n# _ _ _ _ # _ #\n# _ _ _ O _ _ #\n# _ _ _ _ _ _ #\n# # # # # # # #",
+      "task_type": 1,
+      "question": "What element is at coordinates (2, 1)?",
+      "answer": "_",
+      "coordinates": {
+        "x": 2,
+        "y": 1
+      }
+    },
+    {
+      "env_type": "sokoban",
+      "map_id": 0,
+      "map_size": 8,
+      "map": "# # # # # # # #\n# _ _ _ _ _ _ #\n# _ # _ _ # _ #\n# _ _ X P _ _ #\n# _ _ _ _ # _ #\n# _ _ _ O _ _ #\n# _ _ _ _ _ _ #\n# # # # # # # #",
+      "task_type": 2,
+      "question": "What are the coordinates of element O?",
+      "answer": "(4, 5)",
+      "element": "O"
+    }
+  ]
+}

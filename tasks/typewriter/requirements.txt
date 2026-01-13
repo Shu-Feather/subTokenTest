@@ -1,0 +1,39 @@
+# Core dependencies
+openai>=1.0.0
+requests>=2.31.0
+python-dotenv>=1.0.0
+
+# Deep Learning frameworks
+torch>=2.0.0
+transformers>=4.36.0
+accelerate>=0.25.0
+
+# Quantization support
+bitsandbytes>=0.41.0
+scipy>=1.10.0
+
+# vLLM for high-performance inference (optional but recommended)
+# Uncomment the appropriate version for your CUDA version:
+# vllm>=0.2.7  # For CUDA 11.8
+# vllm-cuda121>=0.2.7  # For CUDA 12.1
+
+# Data processing
+numpy>=1.24.0
+pandas>=2.0.0
+datasets>=2.12.0
+
+# Progress and logging
+tqdm>=4.65.0
+colorama>=0.4.6
+
+# Utilities
+json5>=0.9.0
+pyyaml>=6.0
+
+# Optional: Performance optimization
+# flash-attn>=2.3.0  # Uncomment if you want to use Flash Attention
+# optimum>=1.14.0    # Uncomment for BetterTransformer support
+
+# Testing (optional)
+# pytest>=7.4.0
+# pytest-cov>=4.1.0

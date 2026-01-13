@@ -1,0 +1,35 @@
+{
+  "metadata": {
+    "board_size": 9,
+    "num_cases": 1,
+    "outcome_distribution": {
+      "WHITE_WINS": 0.3333333333333333,
+      "BLACK_WINS": 0.3333333333333333,
+      "NO_WINNER": 0.3333333333333333
+    },
+    "direction_distribution": {
+      "HORIZONTAL": 0.25,
+      "VERTICAL": 0.25,
+      "DIAGONAL_DOWN": 0.25,
+      "DIAGONAL_UP": 0.25
+    },
+    "density_range": {
+      "min": 0.2,
+      "max": 0.5
+    },
+    "generated_at": "2025-12-28T18:34:03.977958",
+    "seed": 42,
+    "version": "1.0",
+    "name_prefix": "test_small",
+    "strict_verification": true
+  },
+  "test_cases": [
+    {
+      "id": 0,
+      "board": "EWEEEEEEW\nEEEWEEBEE\nEWBEEBEEW\nEEEBEBBEE\nBEEWBEBEE\nEBWEWEEEE\nEEWWEEWWB\nWEBBEEEEB\nWEBEEEBBE",
+      "expected": "NO_WINNER",
+      "board_size": 9,
+      "density": 0.383
+    }
+  ]
+}

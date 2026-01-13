@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benchmark Results Visualization</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+        }
+
+        .upload-section {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 30px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            border: 2px dashed #667eea;
+        }
+
+        .file-input-wrapper {
+            position: relative;
+            display: inline-block;
+        }
+
+        input[type="file"] {
+            display: none;
+        }
+
+        .file-label {
+            display: inline-block;
+            padding: 12px 30px;
+            background: #667eea;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background 0.3s;
+        }
+
+        .file-label:hover {
+            background: #5568d3;
+        }
+
+        .uploaded-files {
+            margin-top: 20px;
+            text-align: left;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .uploaded-files h3 {
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        .file-item {
+            background: white;
+            padding: 10px 15px;
+            margin-bottom: 8px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border: 1px solid #dee2e6;
+        }
+
+        .file-item span {
+            color: #495057;
+            font-size: 14px;
+        }
+
+        .file-item .file-badge {
+            background: #667eea;
+            color: white;
+            padding: 3px 10px;
+            border-radius: 12px;
+            font-size: 12px;
+            margin-left: 10px;
+        }
+
+        .remove-file {
+            background: #dc3545;
+            color: white;
+            border: none;
+            padding: 4px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 12px;
+            transition: background 0.3s;
+        }
+
+        .remove-file:hover {
+            background: #c82333;
+        }
+
+        .action-buttons {
+            margin-top: 20px;
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .action-btn {
+            padding: 10px 24px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .analyze-btn {
+            background: #28a745;
+            color: white;
+        }
+
+        .analyze-btn:hover {
+            background: #218838;
+        }
+
+        .clear-btn {
+            background: #6c757d;
+            color: white;
+        }
+
+        .clear-btn:hover {
+            background: #5a6268;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .stat-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .stat-card h3 {
+            font-size: 14px;
+            margin-bottom: 10px;
+            opacity: 0.9;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .stat-card .value {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .stat-card .subtitle {
+            font-size: 12px;
+            opacity: 0.8;
+        }
+
+        .charts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .chart-container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+
+        .chart-container h2 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 18px;
+            text-align: center;
+        }
+
+        .table-container {
+            overflow-x: auto;
+            margin-top: 30px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+        }
+
+        th {
+            background: #667eea;
+            color: white;
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+            position: sticky;
+            top: 0;
+        }
+
+        td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #eee;
+        }
+
+        tr:hover {
+            background: #f8f9fa;
+        }
+
+        .correct {
+            color: #28a745;
+            font-weight: bold;
+        }
+
+        .incorrect {
+            color: #dc3545;
+            font-weight: bold;
+        }
+
+        .view-btn {
+            background: #667eea;
+            color: white;
+            border: none;
+            padding: 6px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background 0.3s;
+        }
+
+        .view-btn:hover {
+            background: #5568d3;
+        }
+
+        .alert {
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            display: none;
+        }
+
+        .alert-warning {
+            background: #fff3cd;
+            color: #856404;
+            border: 1px solid #ffeaa7;
+        }
+
+        .alert-info {
+            background: #d1ecf1;
+            color: #0c5460;
+            border: 1px solid #bee5eb;
+        }
+
+        .alert-success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+
+        .filter-info {
+            background: #e7f3ff;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            border-left: 4px solid #667eea;
+        }
+
+        .filter-info h3 {
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+
+        .source-badge {
+            display: inline-block;
+            background: #17a2b8;
+            color: white;
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-size: 11px;
+            margin-left: 5px;
+        }
+
+        canvas {
+            max-height: 400px;
+        }
+
+        /* Modal styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.5);
+            animation: fadeIn 0.3s;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: 5% auto;
+            padding: 0;
+            border: 1px solid #888;
+            border-radius: 10px;
+            width: 90%;
+            max-width: 800px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+            animation: slideIn 0.3s;
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .modal-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 10px 10px 0 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .modal-header h2 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .close {
+            color: white;
+            font-size: 32px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: color 0.3s;
+            line-height: 1;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #f1f1f1;
+        }
+
+        .modal-body {
+            padding: 30px;
+        }
+
+        .detail-row {
+            margin-bottom: 25px;
+        }
+
+        .detail-row label {
+            display: block;
+            font-weight: 600;
+            color: #667eea;
+            margin-bottom: 8px;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .detail-row .content {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 3px solid #667eea;
+            word-wrap: break-word;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+            line-height: 1.6;
+            max-height: 200px;
+            overflow-y: auto;
+        }
+
+        .detail-row .content::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .detail-row .content::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 4px;
+        }
+
+        .detail-row .content::-webkit-scrollbar-thumb {
+            background: #667eea;
+            border-radius: 4px;
+        }
+
+        .detail-row .content::-webkit-scrollbar-thumb:hover {
+            background: #5568d3;
+        }
+
+        .status-badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .status-correct {
+            background: #d4edda;
+            color: #155724;
+        }
+
+        .status-incorrect {
+            background: #f8d7da;
+            color: #721c24;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🧬 Benchmark Results Visualization</h1>
+        
+        <div class="upload-section">
+            <div class="file-input-wrapper">
+                <input type="file" id="csvFile" accept=".csv" multiple>
+                <label for="csvFile" class="file-label">📁 Choose CSV Files (Multiple)</label>
+            </div>
+            <div class="uploaded-files" id="uploadedFiles" style="display: none;">
+                <h3>📋 Uploaded Files:</h3>
+                <div id="filesList"></div>
+                <div class="action-buttons">
+                    <button class="action-btn analyze-btn" onclick="analyzeAllFiles()">📊 Analyze Combined Data</button>
+                    <button class="action-btn clear-btn" onclick="clearAllFiles()">🗑️ Clear All Files</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="alert alert-warning" id="alertWarning"></div>
+        <div class="alert alert-info" id="alertInfo"></div>
+        <div class="alert alert-success" id="alertSuccess"></div>
+
+        <div id="results" style="display: none;">
+            <div class="filter-info">
+                <h3>📊 Combined Data Analysis</h3>
+                <p><strong>Number of Files:</strong> <span id="fileCount">0</span></p>
+                <p><strong>Total Records (All Files):</strong> <span id="totalRecords">0</span></p>
+                <p><strong>Valid Records (non-empty model_output):</strong> <span id="validRecords">0</span></p>
+                <p><strong>Filtered Out (empty model_output):</strong> <span id="filteredRecords">0</span></p>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>Total Valid Tests</h3>
+                    <div class="value" id="totalTests">0</div>
+                    <div class="subtitle">After filtering</div>
+                </div>
+                <div class="stat-card">
+                    <h3>Correct</h3>
+                    <div class="value" id="correctTests">0</div>
+                    <div class="subtitle">Passed tests</div>
+                </div>
+                <div class="stat-card">
+                    <h3>Incorrect</h3>
+                    <div class="value" id="incorrectTests">0</div>
+                    <div class="subtitle">Failed tests</div>
+                </div>
+                <div class="stat-card">
+                    <h3>Accuracy</h3>
+                    <div class="value" id="accuracy">0%</div>
+                    <div class="subtitle">Success rate</div>
+                </div>
+            </div>
+
+            <div class="charts-grid">
+                <div class="chart-container">
+                    <h2>Overall Results Distribution</h2>
+                    <canvas id="overallChart"></canvas>
+                </div>
+                <div class="chart-container">
+                    <h2>Accuracy by Task Type</h2>
+                    <canvas id="taskTypeChart"></canvas>
+                </div>
+                <div class="chart-container">
+                    <h2>Confidence Score Distribution</h2>
+                    <canvas id="confidenceChart"></canvas>
+                </div>
+                <div class="chart-container">
+                    <h2>Test Results by Task Type</h2>
+                    <canvas id="taskResultsChart"></canvas>
+                </div>
+            </div>
+
+            <div class="table-container">
+                <h2 style="padding: 20px; background: #f8f9fa; margin: 0;">Detailed Results (Valid Records Only - Combined from All Files)</h2>
+                <table id="resultsTable">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Source File</th>
+                            <th>Task Type</th>
+                            <th>Result</th>
+                            <th>Confidence</th>
+                            <th>View</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="detailModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Test Details</h2>
+                <span class="close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="detail-row">
+                    <label>Source File</label>
+                    <div class="content" id="modalSource"></div>
+                </div>
+                <div class="detail-row">
+                    <label>Task Type</label>
+                    <div class="content" id="modalTaskType"></div>
+                </div>
+                <div class="detail-row">
+                    <label>Result Status</label>
+                    <div class="content" id="modalResult"></div>
+                </div>
+                <div class="detail-row">
+                    <label>Confidence Score</label>
+                    <div class="content" id="modalConfidence"></div>
+                </div>
+                <div class="detail-row">
+                    <label>Input Sequence</label>
+                    <div class="content" id="modalInput"></div>
+                </div>
+                <div class="detail-row">
+                    <label>Expected Output</label>
+                    <div class="content" id="modalExpected"></div>
+                </div>
+                <div class="detail-row">
+                    <label>Model Output</label>
+                    <div class="content" id="modalModel"></div>
+                </div>
+                <div class="detail-row" id="errorDetailsRow" style="display: none;">
+                    <label>Error Details</label>
+                    <div class="content" id="modalError"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let chartsInstances = {};
+        let uploadedFiles = {}; // Store files with their data
+        let mergedValidData = []; // Combined valid data from all files
+
+        // Modal functionality
+        const modal = document.getElementById('detailModal');
+        const closeBtn = document.querySelector('.close');
+
+        closeBtn.onclick = function() {
+            modal.style.display = 'none';
+        }
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+        }
+
+        function showDetails(index) {
+            if (!mergedValidData[index]) return;
+            
+            const row = mergedValidData[index];
+            
+            document.getElementById('modalSource').textContent = row._sourceFile || 'Unknown';
+            document.getElementById('modalTaskType').textContent = row.task_type;
+            
+            const isCorrect = row.is_correct === 'True';
+            const statusBadge = `<span class="status-badge ${isCorrect ? 'status-correct' : 'status-incorrect'}">${isCorrect ? '✓ Correct' : '✗ Incorrect'}</span>`;
+            document.getElementById('modalResult').innerHTML = statusBadge;
+            
+            document.getElementById('modalConfidence').textContent = parseFloat(row.confidence_score).toFixed(4);
+            document.getElementById('modalInput').textContent = row.input_sequence || 'N/A';
+            document.getElementById('modalExpected').textContent = row.expected_output || 'N/A';
+            document.getElementById('modalModel').textContent = row.model_output || 'N/A';
+            
+            if (row.error_details && row.error_details.trim() !== '') {
+                document.getElementById('errorDetailsRow').style.display = 'block';
+                document.getElementById('modalError').textContent = row.error_details;
+            } else {
+                document.getElementById('errorDetailsRow').style.display = 'none';
+            }
+            
+            modal.style.display = 'block';
+        }
+
+        document.getElementById('csvFile').addEventListener('change', function(e) {
+            const files = e.target.files;
+            if (files.length > 0) {
+                Array.from(files).forEach(file => {
+                    if (!uploadedFiles[file.name]) {
+                        parseCSV(file);
+                    }
+                });
+            }
+        });
+
+        function parseCSV(file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                const text = e.target.result;
+                const lines = text.split('\n');
+                const headers = lines[0].split(',').map(h => h.trim());
+                
+                let csvData = [];
+                for (let i = 1; i < lines.length; i++) {
+                    if (lines[i].trim() === '') continue;
+                    
+                    const values = parseCSVLine(lines[i]);
+                    const row = {};
+                    headers.forEach((header, index) => {
+                        row[header] = values[index] ? values[index].trim() : '';
+                    });
+                    // Add source file information
+                    row._sourceFile = file.name;
+                    csvData.push(row);
+                }
+
+                // Filter valid data: only records with non-empty model_output
+                const validData = csvData.filter(row => row.model_output && row.model_output.trim() !== '');
+                
+                // Store file data
+                uploadedFiles[file.name] = {
+                    csvData: csvData,
+                    validData: validData
+                };
+
+                updateFilesList();
+            };
+            reader.readAsText(file);
+        }
+
+        function parseCSVLine(line) {
+            const values = [];
+            let current = '';
+            let inQuotes = false;
+            
+            for (let i = 0; i < line.length; i++) {
+                const char = line[i];
+                if (char === '"') {
+                    inQuotes = !inQuotes;
+                } else if (char === ',' && !inQuotes) {
+                    values.push(current);
+                    current = '';
+                } else {
+                    current += char;
+                }
+            }
+            values.push(current);
+            return values;
+        }
+
+        function updateFilesList() {
+            const filesListDiv = document.getElementById('filesList');
+            const uploadedFilesDiv = document.getElementById('uploadedFiles');
+            
+            const fileCount = Object.keys(uploadedFiles).length;
+            
+            if (fileCount === 0) {
+                uploadedFilesDiv.style.display = 'none';
+                return;
+            }
+            
+            uploadedFilesDiv.style.display = 'block';
+            filesListDiv.innerHTML = '';
+            
+            Object.keys(uploadedFiles).forEach(filename => {
+                const fileData = uploadedFiles[filename];
+                const fileItem = document.createElement('div');
+                fileItem.className = 'file-item';
+                
+                const validCount = fileData.validData.length;
+                const totalCount = fileData.csvData.length;
+                
+                fileItem.innerHTML = `
+                    <span>
+                        📄 ${escapeHtml(filename)}
+                        <span class="file-badge">${validCount} valid / ${totalCount} total</span>
+                    </span>
+                    <button class="remove-file" onclick="removeFile('${escapeHtml(filename)}')">✕ Remove</button>
+                `;
+                
+                filesListDiv.appendChild(fileItem);
+            });
+        }
+
+        function removeFile(filename) {
+            delete uploadedFiles[filename];
+            updateFilesList();
+            
+            // Hide results if no files left
+            if (Object.keys(uploadedFiles).length === 0) {
+                document.getElementById('results').style.display = 'none';
+                clearAlerts();
+            } else {
+                // Re-analyze remaining files
+                analyzeAllFiles();
+            }
+        }
+
+        function clearAllFiles() {
+            if (!confirm('Are you sure you want to clear all uploaded files?')) {
+                return;
+            }
+            
+            uploadedFiles = {};
+            mergedValidData = [];
+            updateFilesList();
+            document.getElementById('results').style.display = 'none';
+            clearAlerts();
+        }
+
+        function clearAlerts() {
+            document.getElementById('alertWarning').style.display = 'none';
+            document.getElementById('alertInfo').style.display = 'none';
+            document.getElementById('alertSuccess').style.display = 'none';
+        }
+
+        function analyzeAllFiles() {
+            clearAlerts();
+            
+            const fileCount = Object.keys(uploadedFiles).length;
+            
+            if (fileCount === 0) {
+                const alertInfo = document.getElementById('alertInfo');
+                alertInfo.textContent = '❌ No files uploaded. Please upload at least one CSV file.';
+                alertInfo.style.display = 'block';
+                return;
+            }
+
+            // Merge all data
+            let allCsvData = [];
+            mergedValidData = [];
+            
+            Object.keys(uploadedFiles).forEach(filename => {
+                allCsvData = allCsvData.concat(uploadedFiles[filename].csvData);
+                mergedValidData = mergedValidData.concat(uploadedFiles[filename].validData);
+            });
+
+            const totalRecords = allCsvData.length;
+            const validRecords = mergedValidData.length;
+            const filteredRecords = totalRecords - validRecords;
+
+            // Show success message
+            const alertSuccess = document.getElementById('alertSuccess');
+            alertSuccess.textContent = `✅ Successfully combined ${fileCount} file(s) for analysis. Total: ${validRecords} valid records.`;
+            alertSuccess.style.display = 'block';
+
+            // Update filter info
+            document.getElementById('fileCount').textContent = fileCount;
+            document.getElementById('totalRecords').textContent = totalRecords;
+            document.getElementById('validRecords').textContent = validRecords;
+            document.getElementById('filteredRecords').textContent = filteredRecords;
+
+            if (filteredRecords > 0) {
+                const alertWarning = document.getElementById('alertWarning');
+                alertWarning.textContent = `⚠️ ${filteredRecords} record(s) were filtered out due to empty model_output. Analysis is based on ${validRecords} valid records only.`;
+                alertWarning.style.display = 'block';
+            }
+
+            if (validRecords === 0) {
+                const alertInfo = document.getElementById('alertInfo');
+                alertInfo.textContent = '❌ No valid records found. All records have empty model_output.';
+                alertInfo.style.display = 'block';
+                document.getElementById('results').style.display = 'none';
+                return;
+            }
+
+            visualizeData();
+        }
+
+        function visualizeData() {
+            document.getElementById('results').style.display = 'block';
+
+            // Calculate statistics based on merged valid data
+            const totalTests = mergedValidData.length;
+            const correctTests = mergedValidData.filter(row => row.is_correct === 'True').length;
+            const incorrectTests = totalTests - correctTests;
+            const accuracy = totalTests > 0 ? ((correctTests / totalTests) * 100).toFixed(2) : 0;
+
+            document.getElementById('totalTests').textContent = totalTests;
+            document.getElementById('correctTests').textContent = correctTests;
+            document.getElementById('incorrectTests').textContent = incorrectTests;
+            document.getElementById('accuracy').textContent = accuracy + '%';
+
+            // Create charts
+            createOverallChart(correctTests, incorrectTests);
+            createTaskTypeChart();
+            createConfidenceChart();
+            createTaskResultsChart();
+            populateTable();
+        }
+
+        function createOverallChart(correct, incorrect) {
+            const ctx = document.getElementById('overallChart').getContext('2d');
+            if (chartsInstances.overall) chartsInstances.overall.destroy();
+            
+            chartsInstances.overall = new Chart(ctx, {
+                type: 'doughnut',
+                data: {
+                    labels: ['Correct', 'Incorrect'],
+                    datasets: [{
+                        data: [correct, incorrect],
+                        backgroundColor: ['#28a745', '#dc3545'],
+                        borderWidth: 2,
+                        borderColor: '#fff'
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: true,
+                    plugins: {
+                        legend: {
+                            position: 'bottom'
+                        }
+                    }
+                }
+            });
+        }
+
+        function createTaskTypeChart() {
+            const taskTypes = {};
+            mergedValidData.forEach(row => {
+                const task = row.task_type;
+                if (!taskTypes[task]) {
+                    taskTypes[task] = { correct: 0, total: 0 };
+                }
+                taskTypes[task].total++;
+                if (row.is_correct === 'True') {
+                    taskTypes[task].correct++;
+                }
+            });
+
+            const labels = Object.keys(taskTypes);
+            const accuracies = labels.map(task => 
+                (taskTypes[task].correct / taskTypes[task].total * 100).toFixed(2)
+            );
+
+            const ctx = document.getElementById('taskTypeChart').getContext('2d');
+            if (chartsInstances.taskType) chartsInstances.taskType.destroy();
+            
+            chartsInstances.taskType = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        label: 'Accuracy (%)',
+                        data: accuracies,
+                        backgroundColor: '#667eea',
+                        borderColor: '#5568d3',
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: true,
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            max: 100,
+                            ticks: {
+                                callback: function(value) {
+                                    return value + '%';
+                                }
+                            }
+                        }
+                    },
+                    plugins: {
+                        legend: {
+                            display: false
+                        }
+                    }
+                }
+            });
+        }
+
+        function createConfidenceChart() {
+            const confidenceRanges = {
+                '0-0.2': 0,
+                '0.2-0.4': 0,
+                '0.4-0.6': 0,
+                '0.6-0.8': 0,
+                '0.8-1.0': 0
+            };
+
+            mergedValidData.forEach(row => {
+                const score = parseFloat(row.confidence_score);
+                if (score >= 0 && score < 0.2) confidenceRanges['0-0.2']++;
+                else if (score >= 0.2 && score < 0.4) confidenceRanges['0.2-0.4']++;
+                else if (score >= 0.4 && score < 0.6) confidenceRanges['0.4-0.6']++;
+                else if (score >= 0.6 && score < 0.8) confidenceRanges['0.6-0.8']++;
+                else if (score >= 0.8 && score <= 1.0) confidenceRanges['0.8-1.0']++;
+            });
+
+            const ctx = document.getElementById('confidenceChart').getContext('2d');
+            if (chartsInstances.confidence) chartsInstances.confidence.destroy();
+            
+            chartsInstances.confidence = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: Object.keys(confidenceRanges),
+                    datasets: [{
+                        label: 'Number of Tests',
+                        data: Object.values(confidenceRanges),
+                        backgroundColor: [
+                            '#dc3545',
+                            '#fd7e14',
+                            '#ffc107',
+                            '#20c997',
+                            '#28a745'
+                        ],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: true,
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            ticks: {
+                                stepSize: 1
+                            }
+                        }
+                    },
+                    plugins: {
+                        legend: {
+                            display: false
+                        }
+                    }
+                }
+            });
+        }
+
+        function createTaskResultsChart() {
+            const taskTypes = {};
+            mergedValidData.forEach(row => {
+                const task = row.task_type;
+                if (!taskTypes[task]) {
+                    taskTypes[task] = { correct: 0, incorrect: 0 };
+                }
+                if (row.is_correct === 'True') {
+                    taskTypes[task].correct++;
+                } else {
+                    taskTypes[task].incorrect++;
+                }
+            });
+
+            const labels = Object.keys(taskTypes);
+            const correctData = labels.map(task => taskTypes[task].correct);
+            const incorrectData = labels.map(task => taskTypes[task].incorrect);
+
+            const ctx = document.getElementById('taskResultsChart').getContext('2d');
+            if (chartsInstances.taskResults) chartsInstances.taskResults.destroy();
+            
+            chartsInstances.taskResults = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: labels,
+                    datasets: [
+                        {
+                            label: 'Correct',
+                            data: correctData,
+                            backgroundColor: '#28a745',
+                            borderWidth: 1
+                        },
+                        {
+                            label: 'Incorrect',
+                            data: incorrectData,
+                            backgroundColor: '#dc3545',
+                            borderWidth: 1
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: true,
+                    scales: {
+                        x: {
+                            stacked: true
+                        },
+                        y: {
+                            stacked: true,
+                            beginAtZero: true,
+                            ticks: {
+                                stepSize: 1
+                            }
+                        }
+                    },
+                    plugins: {
+                        legend: {
+                            position: 'bottom'
+                        }
+                    }
+                }
+            });
+        }
+
+        function populateTable() {
+            const tbody = document.querySelector('#resultsTable tbody');
+            tbody.innerHTML = '';
+
+            mergedValidData.forEach((row, index) => {
+                const tr = document.createElement('tr');
+                
+                const isCorrect = row.is_correct === 'True';
+                const resultClass = isCorrect ? 'correct' : 'incorrect';
+                const resultText = isCorrect ? '✓ Correct' : '✗ Incorrect';
+
+                tr.innerHTML = `
+                    <td>${index + 1}</td>
+                    <td>
+                        <span class="source-badge">${escapeHtml(truncate(row._sourceFile, 20))}</span>
+                    </td>
+                    <td>${escapeHtml(row.task_type)}</td>
+                    <td class="${resultClass}">${resultText}</td>
+                    <td>${parseFloat(row.confidence_score).toFixed(2)}</td>
+                    <td><button class="view-btn" onclick="showDetails(${index})">View</button></td>
+                `;
+                
+                tbody.appendChild(tr);
+            });
+        }
+
+        function truncate(str, maxLength) {
+            if (!str) return '';
+            return str.length > maxLength ? str.substring(0, maxLength) + '...' : str;
+        }
+
+        function escapeHtml(text) {
+            if (!text) return '';
+            const map = {
+                '&': '&amp;',
+                '<': '&lt;',
+                '>': '&gt;',
+                '"': '&quot;',
+                "'": '&#039;'
+            };
+            return text.replace(/[&<>"']/g, m => map[m]);
+        }
+    </script>
+</body>
+</html>

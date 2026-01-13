@@ -1,0 +1,67 @@
+# Configuration for Aligned-Table Benchmark
+
+# Test settings
+test:
+  num_samples: 25
+  table_formats: ["latex", "markdown", "text"]
+  format_distribution:  
+    latex: 0.33
+    markdown: 0.33
+    text: 0.34
+  # min_rows: 3
+  # max_rows: 8
+  # min_cols: 3
+  # max_cols: 6
+
+# Data generation settings
+data_generation:
+  entity_types:
+    - "countries"
+    - "companies"
+    - "movies"
+    - "books"
+    - "universities"
+    - "products"
+    - "athletes"
+    - "cities"
+  
+# Model settings
+models:
+  vllm:
+    batch_size: 4
+    temperature: 0.6
+    top_p: 0.95
+    max_tokens: 32768
+    tensor_parallel_size: 1
+    gpu_memory_utilization: 0.9
+    max_model_len: 4096
+    enforce_eager: true
+    
+  openai:
+    temperature: 0.0
+    # max_tokens: 6000
+    max_tokens: 50000
+    timeout: 1000
+    reasoning_effort: "low"
+    
+  deepseek:
+    temperature: 0.0
+    # max_tokens: 6000
+    max_tokens: 50000
+    timeout: 1000
+
+# Prompt settings
+prompt:
+  restricted_reasoning: false
+
+# Evaluation settings
+evaluation:
+  content_weight: 0.6
+  alignment_weight: 0.4
+  
+# Context generation settings
+context_generation:
+  model: "gpt-4"
+  temperature: 0.7
+  num_contexts: 100
+  output_file: "generated_contexts.json"

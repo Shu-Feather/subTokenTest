@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benchmark Results Analyzer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .upload-section {
+            padding: 30px;
+            background: #f8f9fa;
+            border-bottom: 2px solid #e9ecef;
+        }
+
+        .file-input-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        input[type="file"] {
+            padding: 10px;
+            border: 2px solid #667eea;
+            border-radius: 8px;
+            background: white;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        input[type="file"]::file-selector-button {
+            background: #667eea;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right: 10px;
+            font-weight: bold;
+        }
+
+        input[type="file"]::file-selector-button:hover {
+            background: #5568d3;
+        }
+
+        .stats-section {
+            padding: 30px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .stat-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .stat-label {
+            font-size: 14px;
+            opacity: 0.9;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .stat-value {
+            font-size: 36px;
+            font-weight: bold;
+        }
+
+        .charts-section {
+            padding: 30px;
+            background: #f8f9fa;
+        }
+
+        .chart-container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .chart-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .samples-section {
+            padding: 30px;
+        }
+
+        .sample-card {
+            background: #f8f9fa;
+            border: 2px solid #e9ecef;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            transition: all 0.3s;
+        }
+
+        .sample-card:hover {
+            border-color: #667eea;
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.2);
+        }
+
+        .sample-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #dee2e6;
+        }
+
+        .sample-id {
+            font-size: 18px;
+            font-weight: bold;
+            color: #667eea;
+        }
+
+        .accuracy-badge {
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .accuracy-perfect {
+            background: #28a745;
+            color: white;
+        }
+
+        .accuracy-partial {
+            background: #ffc107;
+            color: #333;
+        }
+
+        .accuracy-none {
+            background: #dc3545;
+            color: white;
+        }
+
+        .comparison-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 15px;
+        }
+
+        .comparison-column h4 {
+            margin-bottom: 10px;
+            color: #495057;
+        }
+
+        .diff-item {
+            background: white;
+            padding: 8px 12px;
+            margin: 5px 0;
+            border-radius: 5px;
+            border-left: 4px solid #667eea;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+        }
+
+        .diff-item.correct {
+            border-left-color: #28a745;
+            background: #d4edda;
+        }
+
+        .diff-item.incorrect {
+            border-left-color: #dc3545;
+            background: #f8d7da;
+        }
+
+        .diff-item.missing {
+            border-left-color: #ffc107;
+            background: #fff3cd;
+        }
+
+        .prompt-section {
+            margin-top: 15px;
+            padding: 15px;
+            background: white;
+            border-radius: 5px;
+            max-height: 200px;
+            overflow-y: auto;
+        }
+
+        .prompt-section pre {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            font-size: 12px;
+            color: #495057;
+        }
+
+        .toggle-button {
+            background: #667eea;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+        .toggle-button:hover {
+            background: #5568d3;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .filter-section {
+            padding: 20px 30px;
+            background: white;
+            border-bottom: 2px solid #e9ecef;
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .filter-section label {
+            font-weight: bold;
+            color: #495057;
+        }
+
+        .filter-section select {
+            padding: 8px 12px;
+            border: 2px solid #667eea;
+            border-radius: 5px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        canvas {
+            max-height: 400px;
+        }
+
+        .no-data {
+            text-align: center;
+            padding: 60px;
+            color: #6c757d;
+            font-size: 18px;
+        }
+
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .metric-item {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            border: 2px solid #e9ecef;
+        }
+
+        .metric-label {
+            font-size: 12px;
+            color: #6c757d;
+            margin-bottom: 5px;
+        }
+
+        .metric-value {
+            font-size: 24px;
+            font-weight: bold;
+            color: #667eea;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📊 Benchmark Results Analyzer</h1>
+            <p>RSA Pattern Difference Detection Analysis</p>
+        </header>
+
+        <div class="upload-section">
+            <div class="file-input-wrapper">
+                <input type="file" id="fileInput" accept=".json" />
+            </div>
+        </div>
+
+        <div id="statsSection" class="stats-section hidden"></div>
+        
+        <div id="metricsSection" class="hidden">
+            <div class="charts-section">
+                <div class="chart-container">
+                    <div class="chart-title">Performance Metrics</div>
+                    <div class="metrics-grid" id="metricsGrid"></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="chartsSection" class="charts-section hidden">
+            <div class="chart-container">
+                <div class="chart-title">Accuracy Distribution</div>
+                <canvas id="accuracyChart"></canvas>
+            </div>
+            <div class="chart-container">
+                <div class="chart-title">Prediction Statistics</div>
+                <canvas id="predictionChart"></canvas>
+            </div>
+        </div>
+
+        <div id="filterSection" class="filter-section hidden">
+            <label for="filterSelect">Filter by Accuracy:</label>
+            <select id="filterSelect">
+                <option value="all">All Samples</option>
+                <option value="perfect">Perfect Match (100%)</option>
+                <option value="partial">Partial Match (1-99%)</option>
+                <option value="none">No Match (0%)</option>
+            </select>
+        </div>
+
+        <div id="samplesSection" class="samples-section"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        let allData = [];
+        let validData = [];
+        let currentFilter = 'all';
+
+        document.getElementById('fileInput').addEventListener('change', handleFileUpload);
+        document.getElementById('filterSelect').addEventListener('change', handleFilterChange);
+
+        function handleFileUpload(event) {
+            const file = event.target.files[0];
+            if (!file) return;
+
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                try {
+                    allData = JSON.parse(e.target.result);
+                    validData = allData.filter(item => item.response && item.response.trim() !== '');
+                    processData();
+                } catch (error) {
+                    alert('Error parsing JSON file: ' + error.message);
+                }
+            };
+            reader.readAsText(file);
+        }
+
+        function processData() {
+            displayStats();
+            displayMetrics();
+            displayCharts();
+            displaySamples();
+            
+            document.getElementById('statsSection').classList.remove('hidden');
+            document.getElementById('metricsSection').classList.remove('hidden');
+            document.getElementById('chartsSection').classList.remove('hidden');
+            document.getElementById('filterSection').classList.remove('hidden');
+        }
+
+        function calculateAccuracy(prediction, groundTruth) {
+            if (!prediction || prediction.length === 0) return 0;
+            if (!groundTruth || groundTruth.length === 0) return prediction.length === 0 ? 100 : 0;
+
+            let correct = 0;
+            const gtSet = new Set(groundTruth.map(item => 
+                `${item.x},${item.y},${item.original},${item.modified}`
+            ));
+
+            prediction.forEach(pred => {
+                const key = `${pred.x},${pred.y},${pred.original},${pred.modified}`;
+                if (gtSet.has(key)) {
+                    correct++;
+                }
+            });
+
+            const precision = prediction.length > 0 ? (correct / prediction.length) * 100 : 0;
+            const recall = groundTruth.length > 0 ? (correct / groundTruth.length) * 100 : 0;
+            const f1 = (precision + recall) > 0 ? (2 * precision * recall) / (precision + recall) : 0;
+
+            return {
+                correct,
+                precision: precision.toFixed(2),
+                recall: recall.toFixed(2),
+                f1: f1.toFixed(2),
+                accuracy: recall.toFixed(2) // Using recall as main accuracy metric
+            };
+        }
+
+        function displayStats() {
+            const statsSection = document.getElementById('statsSection');
+            
+            let perfectCount = 0;
+            let partialCount = 0;
+            let noneCount = 0;
+
+            validData.forEach(item => {
+                const acc = calculateAccuracy(item.prediction, item.ground_truth);
+                if (parseFloat(acc.accuracy) === 100) perfectCount++;
+                else if (parseFloat(acc.accuracy) > 0) partialCount++;
+                else noneCount++;
+            });
+
+            const avgAccuracy = validData.reduce((sum, item) => {
+                const acc = calculateAccuracy(item.prediction, item.ground_truth);
+                return sum + parseFloat(acc.accuracy);
+            }, 0) / validData.length;
+
+            statsSection.innerHTML = `
+                <div class="stat-card">
+                    <div class="stat-label">Total Samples</div>
+                    <div class="stat-value">${allData.length}</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Valid Responses</div>
+                    <div class="stat-value">${validData.length}</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Average Accuracy</div>
+                    <div class="stat-value">${avgAccuracy.toFixed(1)}%</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Perfect Matches</div>
+                    <div class="stat-value">${perfectCount}</div>
+                </div>
+            `;
+        }
+
+        function displayMetrics() {
+            const metricsGrid = document.getElementById('metricsGrid');
+            
+            let totalCorrect = 0;
+            let totalPredictions = 0;
+            let totalGroundTruth = 0;
+            
+            validData.forEach(item => {
+                const acc = calculateAccuracy(item.prediction, item.ground_truth);
+                totalCorrect += acc.correct;
+                totalPredictions += (item.prediction || []).length;
+                totalGroundTruth += (item.ground_truth || []).length;
+            });
+
+            const overallPrecision = totalPredictions > 0 ? (totalCorrect / totalPredictions * 100).toFixed(2) : 0;
+            const overallRecall = totalGroundTruth > 0 ? (totalCorrect / totalGroundTruth * 100).toFixed(2) : 0;
+            const overallF1 = (parseFloat(overallPrecision) + parseFloat(overallRecall)) > 0 
+                ? (2 * overallPrecision * overallRecall / (parseFloat(overallPrecision) + parseFloat(overallRecall))).toFixed(2) 
+                : 0;
+
+            metricsGrid.innerHTML = `
+                <div class="metric-item">
+                    <div class="metric-label">Overall Precision</div>
+                    <div class="metric-value">${overallPrecision}%</div>
+                </div>
+                <div class="metric-item">
+                    <div class="metric-label">Overall Recall</div>
+                    <div class="metric-value">${overallRecall}%</div>
+                </div>
+                <div class="metric-item">
+                    <div class="metric-label">Overall F1 Score</div>
+                    <div class="metric-value">${overallF1}%</div>
+                </div>
+                <div class="metric-item">
+                    <div class="metric-label">Total Correct</div>
+                    <div class="metric-value">${totalCorrect}</div>
+                </div>
+                <div class="metric-item">
+                    <div class="metric-label">Total Predictions</div>
+                    <div class="metric-value">${totalPredictions}</div>
+                </div>
+                <div class="metric-item">
+                    <div class="metric-label">Total Ground Truth</div>
+                    <div class="metric-value">${totalGroundTruth}</div>
+                </div>
+            `;
+        }
+
+        function displayCharts() {
+            // Accuracy Distribution Chart
+            const accuracyData = {
+                perfect: 0,
+                high: 0,    // 75-99%
+                medium: 0,  // 50-74%
+                low: 0,     // 1-49%
+                none: 0     // 0%
+            };
+
+            validData.forEach(item => {
+                const acc = calculateAccuracy(item.prediction, item.ground_truth);
+                const accuracy = parseFloat(acc.accuracy);
+                
+                if (accuracy === 100) accuracyData.perfect++;
+                else if (accuracy >= 75) accuracyData.high++;
+                else if (accuracy >= 50) accuracyData.medium++;
+                else if (accuracy > 0) accuracyData.low++;
+                else accuracyData.none++;
+            });
+
+            const ctx1 = document.getElementById('accuracyChart').getContext('2d');
+            new Chart(ctx1, {
+                type: 'doughnut',
+                data: {
+                    labels: ['Perfect (100%)', 'High (75-99%)', 'Medium (50-74%)', 'Low (1-49%)', 'None (0%)'],
+                    datasets: [{
+                        data: [accuracyData.perfect, accuracyData.high, accuracyData.medium, accuracyData.low, accuracyData.none],
+                        backgroundColor: [
+                            '#28a745',
+                            '#17a2b8',
+                            '#ffc107',
+                            '#fd7e14',
+                            '#dc3545'
+                        ],
+                        borderWidth: 2,
+                        borderColor: '#fff'
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: true,
+                    plugins: {
+                        legend: {
+                            position: 'bottom',
+                            labels: {
+                                padding: 15,
+                                font: {
+                                    size: 12
+                                }
+                            }
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    const label = context.label || '';
+                                    const value = context.parsed || 0;
+                                    const total = context.dataset.data.reduce((a, b) => a + b, 0);
+                                    const percentage = ((value / total) * 100).toFixed(1);
+                                    return `${label}: ${value} (${percentage}%)`;
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+
+            // Prediction Statistics Chart
+            let totalTP = 0; // True Positives (correct predictions)
+            let totalFP = 0; // False Positives (incorrect predictions)
+            let totalFN = 0; // False Negatives (missed ground truths)
+
+            validData.forEach(item => {
+                const pred = item.prediction || [];
+                const gt = item.ground_truth || [];
+                
+                const gtSet = new Set(gt.map(g => 
+                    `${g.x},${g.y},${g.original},${g.modified}`
+                ));
+                
+                const predSet = new Set(pred.map(p => 
+                    `${p.x},${p.y},${p.original},${p.modified}`
+                ));
+
+                pred.forEach(p => {
+                    const key = `${p.x},${p.y},${p.original},${p.modified}`;
+                    if (gtSet.has(key)) {
+                        totalTP++;
+                    } else {
+                        totalFP++;
+                    }
+                });
+
+                gt.forEach(g => {
+                    const key = `${g.x},${g.y},${g.original},${g.modified}`;
+                    if (!predSet.has(key)) {
+                        totalFN++;
+                    }
+                });
+            });
+
+            const ctx2 = document.getElementById('predictionChart').getContext('2d');
+            new Chart(ctx2, {
+                type: 'bar',
+                data: {
+                    labels: ['True Positives', 'False Positives', 'False Negatives'],
+                    datasets: [{
+                        label: 'Count',
+                        data: [totalTP, totalFP, totalFN],
+                        backgroundColor: [
+                            '#28a745',
+                            '#dc3545',
+                            '#ffc107'
+                        ],
+                        borderColor: [
+                            '#1e7e34',
+                            '#bd2130',
+                            '#d39e00'
+                        ],
+                        borderWidth: 2
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: true,
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            ticks: {
+                                stepSize: 1
+                            }
+                        }
+                    },
+                    plugins: {
+                        legend: {
+                            display: false
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    return `Count: ${context.parsed.y}`;
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+        }
+
+        function handleFilterChange(event) {
+            currentFilter = event.target.value;
+            displaySamples();
+        }
+
+        function displaySamples() {
+            const samplesSection = document.getElementById('samplesSection');
+            
+            let filteredData = validData.filter(item => {
+                if (currentFilter === 'all') return true;
+                
+                const acc = calculateAccuracy(item.prediction, item.ground_truth);
+                const accuracy = parseFloat(acc.accuracy);
+                
+                if (currentFilter === 'perfect') return accuracy === 100;
+                if (currentFilter === 'partial') return accuracy > 0 && accuracy < 100;
+                if (currentFilter === 'none') return accuracy === 0;
+                
+                return true;
+            });
+
+            if (filteredData.length === 0) {
+                samplesSection.innerHTML = '<div class="no-data">No samples match the selected filter.</div>';
+                return;
+            }
+
+            samplesSection.innerHTML = filteredData.map(item => {
+                const metrics = calculateAccuracy(item.prediction, item.ground_truth);
+                const accuracy = parseFloat(metrics.accuracy);
+                
+                let badgeClass = 'accuracy-none';
+                let badgeText = 'No Match';
+                
+                if (accuracy === 100) {
+                    badgeClass = 'accuracy-perfect';
+                    badgeText = 'Perfect Match';
+                } else if (accuracy > 0) {
+                    badgeClass = 'accuracy-partial';
+                    badgeText = `Partial Match`;
+                }
+
+                const predSet = new Set((item.prediction || []).map(p => 
+                    `${p.x},${p.y},${p.original},${p.modified}`
+                ));
+                
+                const gtSet = new Set((item.ground_truth || []).map(g => 
+                    `${g.x},${g.y},${g.original},${g.modified}`
+                ));
+
+                const correctPreds = (item.prediction || []).filter(p => {
+                    const key = `${p.x},${p.y},${p.original},${p.modified}`;
+                    return gtSet.has(key);
+                });
+
+                const incorrectPreds = (item.prediction || []).filter(p => {
+                    const key = `${p.x},${p.y},${p.original},${p.modified}`;
+                    return !gtSet.has(key);
+                });
+
+                const missedGT = (item.ground_truth || []).filter(g => {
+                    const key = `${g.x},${g.y},${g.original},${g.modified}`;
+                    return !predSet.has(key);
+                });
+
+                return `
+                    <div class="sample-card">
+                        <div class="sample-header">
+                            <div class="sample-id">Sample #${item.sample_id}</div>
+                            <div class="accuracy-badge ${badgeClass}">
+                                ${badgeText} - ${accuracy}%
+                            </div>
+                        </div>
+                        
+                        <div class="metrics-grid">
+                            <div class="metric-item">
+                                <div class="metric-label">Precision</div>
+                                <div class="metric-value" style="font-size: 18px;">${metrics.precision}%</div>
+                            </div>
+                            <div class="metric-item">
+                                <div class="metric-label">Recall</div>
+                                <div class="metric-value" style="font-size: 18px;">${metrics.recall}%</div>
+                            </div>
+                            <div class="metric-item">
+                                <div class="metric-label">F1 Score</div>
+                                <div class="metric-value" style="font-size: 18px;">${metrics.f1}%</div>
+                            </div>
+                            <div class="metric-item">
+                                <div class="metric-label">Correct / Total</div>
+                                <div class="metric-value" style="font-size: 18px;">${metrics.correct} / ${(item.prediction || []).length}</div>
+                            </div>
+                        </div>
+
+                        <div class="comparison-grid">
+                            <div class="comparison-column">
+                                <h4>✅ Correct Predictions (${correctPreds.length})</h4>
+                                ${correctPreds.map(p => `
+                                    <div class="diff-item correct">
+                                        (${p.x}, ${p.y}): "${p.original}" → "${p.modified}"
+                                    </div>
+                                `).join('') || '<div class="diff-item">None</div>'}
+                                
+                                <h4 style="margin-top: 15px;">❌ Incorrect Predictions (${incorrectPreds.length})</h4>
+                                ${incorrectPreds.map(p => `
+                                    <div class="diff-item incorrect">
+                                        (${p.x}, ${p.y}): "${p.original}" → "${p.modified}"
+                                    </div>
+                                `).join('') || '<div class="diff-item">None</div>'}
+                            </div>
+                            
+                            <div class="comparison-column">
+                                <h4>📋 Ground Truth (${(item.ground_truth || []).length})</h4>
+                                ${(item.ground_truth || []).map(g => {
+                                    const key = `${g.x},${g.y},${g.original},${g.modified}`;
+                                    const found = predSet.has(key);
+                                    return `
+                                        <div class="diff-item ${found ? 'correct' : 'missing'}">
+                                            (${g.x}, ${g.y}): "${g.original}" → "${g.modified}"
+                                        </div>
+                                    `;
+                                }).join('') || '<div class="diff-item">None</div>'}
+                                
+                                <h4 style="margin-top: 15px;">⚠️ Missed Differences (${missedGT.length})</h4>
+                                ${missedGT.map(g => `
+                                    <div class="diff-item missing">
+                                        (${g.x}, ${g.y}): "${g.original}" → "${g.modified}"
+                                    </div>
+                                `).join('') || '<div class="diff-item">None</div>'}
+                            </div>
+                        </div>
+
+                        <button class="toggle-button" onclick="togglePrompt(${item.sample_id})">
+                            Toggle Prompt & Response
+                        </button>
+                        <div id="prompt-${item.sample_id}" class="prompt-section hidden">
+                            <h4>Prompt:</h4>
+                            <pre>${escapeHtml(item.prompt || 'N/A')}</pre>
+                            <h4 style="margin-top: 15px;">Response:</h4>
+                            <pre>${escapeHtml(item.response || 'N/A')}</pre>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        function togglePrompt(sampleId) {
+            const element = document.getElementById(`prompt-${sampleId}`);
+            element.classList.toggle('hidden');
+        }
+
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,605 @@
+[
+  {
+    "description": "The table represents some of the top universities in the world, their locations, and the year they were founded.",
+    "table_data": [
+      [
+        "Harvard University",
+        "United States",
+        "1636"
+      ],
+      [
+        "University of Cambridge",
+        "United Kingdom",
+        "1209"
+      ],
+      [
+        "University of Tokyo",
+        "Japan",
+        "1877"
+      ]
+    ],
+    "context": "The table represents some of the top universities in the world, their locations, and the year they were founded. row 1: Harvard University, United States, 1636 row 2: University of Cambridge, United Kingdom, 1209 row 3: University of Tokyo, Japan, 1877",
+    "num_rows": 3,
+    "num_cols": 3
+  },
+  {
+    "description": "This table represents a selection of books, including their authors and publication years.",
+    "table_data": [
+      [
+        "\"To Kill a Mockingbird\"",
+        "Harper Lee",
+        "1960"
+      ],
+      [
+        "\"1984\"",
+        "George Orwell",
+        "1949"
+      ],
+      [
+        "\"The Great Gatsby\"",
+        "F. Scott Fitzgerald",
+        "1925"
+      ]
+    ],
+    "context": "This table represents a selection of books, including their authors and publication years. row 1: \"To Kill a Mockingbird\", Harper Lee, 1960 row 2: \"1984\", George Orwell, 1949 row 3: \"The Great Gatsby\", F. Scott Fitzgerald, 1925",
+    "num_rows": 3,
+    "num_cols": 3
+  },
+  {
+    "description": "The table represents a selection of books, including their author, and publication year.",
+    "table_data": [
+      [
+        "\"To Kill a Mockingbird\"",
+        "Harper Lee",
+        "1960"
+      ],
+      [
+        "\"1984\"",
+        "George Orwell",
+        "1949"
+      ],
+      [
+        "\"The Great Gatsby\"",
+        "F. Scott Fitzgerald",
+        "1925"
+      ]
+    ],
+    "context": "The table represents a selection of books, including their author, and publication year. row 1: \"To Kill a Mockingbird\", Harper Lee, 1960 row 2: \"1984\", George Orwell, 1949 row 3: \"The Great Gatsby\", F. Scott Fitzgerald, 1925",
+    "num_rows": 3,
+    "num_cols": 3
+  },
+  {
+    "description": "This table represents the basic information about some multinational technology companies. The table includes the name of the company, its headquarters location, and the year it was founded.",
+    "table_data": [
+      [
+        "Apple Inc.",
+        "Cupertino",
+        "California",
+        "USA",
+        "1976"
+      ],
+      [
+        "Microsoft Corporation",
+        "Redmond",
+        "Washington",
+        "USA",
+        "1975"
+      ],
+      [
+        "Google LLC",
+        "Mountain View",
+        "California",
+        "USA",
+        "1998"
+      ]
+    ],
+    "context": "This table represents the basic information about some multinational technology companies. The table includes the name of the company, its headquarters location, and the year it was founded. row 1: Apple Inc., Cupertino, California, USA, 1976 row 2: Microsoft Corporation, Redmond, Washington, USA, 1975 row 3: Google LLC, Mountain View, California, USA, 1998",
+    "num_rows": 3,
+    "num_cols": 5
+  },
+  {
+    "description": "This table represents a list of athletes along with their respective sports and country of origin.",
+    "table_data": [
+      [
+        "Usain Bolt",
+        "Athletics",
+        "Jamaica"
+      ],
+      [
+        "Serena Williams",
+        "Tennis",
+        "United States"
+      ],
+      [
+        "Lionel Messi",
+        "Football",
+        "Argentina"
+      ]
+    ],
+    "context": "This table represents a list of athletes along with their respective sports and country of origin. row 1: Usain Bolt, Athletics, Jamaica row 2: Serena Williams, Tennis, United States row 3: Lionel Messi, Football, Argentina",
+    "num_rows": 3,
+    "num_cols": 3
+  },
+  {
+    "description": "The table represents various global companies along with their location and estimated number of employees.",
+    "table_data": [
+      [
+        "Google",
+        "United States",
+        "135",
+        "000"
+      ],
+      [
+        "Tata Consultancy Services",
+        "India",
+        "469",
+        "000"
+      ],
+      [
+        "Samsung Electronics",
+        "South Korea",
+        "309",
+        "000"
+      ]
+    ],
+    "context": "The table represents various global companies along with their location and estimated number of employees. row 1: Google, United States, 135, 000 row 2: Tata Consultancy Services, India, 469, 000 row 3: Samsung Electronics, South Korea, 309, 000",
+    "num_rows": 3,
+    "num_cols": 4
+  },
+  {
+    "description": "The table represents a selection of athletes along with their respective sports and nationalities.",
+    "table_data": [
+      [
+        "Usain Bolt",
+        "Athletics",
+        "Jamaica"
+      ],
+      [
+        "Serena Williams",
+        "Tennis",
+        "United States"
+      ],
+      [
+        "Lionel Messi",
+        "Football",
+        "Argentina"
+      ]
+    ],
+    "context": "The table represents a selection of athletes along with their respective sports and nationalities. row 1: Usain Bolt, Athletics, Jamaica row 2: Serena Williams, Tennis, United States row 3: Lionel Messi, Football, Argentina",
+    "num_rows": 3,
+    "num_cols": 3
+  },
+  {
+    "description": "This table represents three different cities and their respective populations and average annual temperatures.",
+    "table_data": [
+      [
+        "New York",
+        "8398748",
+        "12.7°C"
+      ],
+      [
+        "Paris",
+        "2140526",
+        "11.7°C"
+      ],
+      [
+        "Tokyo",
+        "9273000",
+        "15.4°C"
+      ]
+    ],
+    "context": "This table represents three different cities and their respective populations and average annual temperatures. row 1: New York, 8398748, 12.7°C row 2: Paris, 2140526, 11.7°C row 3: Tokyo, 9273000, 15.4°C",
+    "num_rows": 3,
+    "num_cols": 3
+  },
+  {
+    "description": "The table represents various universities and two of their relevant attributes: the year they were founded and the number of students currently enrolled.",
+    "table_data": [
+      [
+        "Harvard University",
+        "1636",
+        "22000"
+      ],
+      [
+        "Stanford University",
+        "1885",
+        "17000"
+      ],
+      [
+        "University of Oxford",
+        "1096",
+        "24000"
+      ]
+    ],
+    "context": "The table represents various universities and two of their relevant attributes: the year they were founded and the number of students currently enrolled. row 1: Harvard University, 1636, 22000 row 2: Stanford University, 1885, 17000 row 3: University of Oxford, 1096, 24000",
+    "num_rows": 3,
+    "num_cols": 3
+  },
+  {
+    "description": "This table represents information about different books, including their title, author, and year of publication.",
+    "table_data": [
+      [
+        "\"To Kill a Mockingbird\"",
+        "\"Harper Lee\"",
+        "1960"
+      ],
+      [
+        "\"1984\"",
+        "\"George Orwell\"",
+        "1949"
+      ],
+      [
+        "\"The Great Gatsby\"",
+        "\"F. Scott Fitzgerald\"",
+        "1925"
+      ]
+    ],
+    "context": "This table represents information about different books, including their title, author, and year of publication. row 1: \"To Kill a Mockingbird\", \"Harper Lee\", 1960 row 2: \"1984\", \"George Orwell\", 1949 row 3: \"The Great Gatsby\", \"F. Scott Fitzgerald\", 1925",
+    "num_rows": 3,
+    "num_cols": 3
+  },
+  {
+    "description": "The table represents some key attributes of three different countries. These attributes include the capital city of the country, and the country's population.",
+    "table_data": [
+      [
+        "United States",
+        "Washington D.C.",
+        "331 million"
+      ],
+      [
+        "United Kingdom",
+        "London",
+        "66 million"
+      ],
+      [
+        "India",
+        "New Delhi",
+        "1.366 billion"
+      ]
+    ],
+    "context": "The table represents some key attributes of three different countries. These attributes include the capital city of the country, and the country's population. row 1: United States, Washington D.C., 331 million row 2: United Kingdom, London, 66 million row 3: India, New Delhi, 1.366 billion",
+    "num_rows": 3,
+    "num_cols": 3
+  },
+  {
+    "description": "This table represents data about three different movies. The first column contains the movie titles, the second column shows the release years, and the third column describes the movie genres.",
+    "table_data": [
+      [
+        "The Godfather",
+        "1972",
+        "Crime/Drama"
+      ],
+      [
+        "The Avengers: Endgame",
+        "2019",
+        "Action/Adventure/Sci-Fi"
+      ],
+      [
+        "Inception",
+        "2010",
+        "Action/Adventure/Thriller"
+      ]
+    ],
+    "context": "This table represents data about three different movies. The first column contains the movie titles, the second column shows the release years, and the third column describes the movie genres. row 1: The Godfather, 1972, Crime/Drama row 2: The Avengers: Endgame, 2019, Action/Adventure/Sci-Fi row 3: Inception, 2010, Action/Adventure/Thriller",
+    "num_rows": 3,
+    "num_cols": 3
+  },
+  {
+    "description": "This table represents the information about three different companies. The first column contains the name of the company, the second column contains the year of establishment of the company, and the third column contains the primary sector of operation of the company.",
+    "table_data": [
+      [
+        "Microsoft",
+        "1975",
+        "Technology"
+      ],
+      [
+        "Starbucks Corporation",
+        "1971",
+        "Food and Beverage"
+      ],
+      [
+        "Tesla",
+        "Inc.",
+        "2003",
+        "Automotive"
+      ]
+    ],
+    "context": "This table represents the information about three different companies. The first column contains the name of the company, the second column contains the year of establishment of the company, and the third column contains the primary sector of operation of the company. row 1: Microsoft, 1975, Technology row 2: Starbucks Corporation, 1971, Food and Beverage row 3: Tesla, Inc., 2003, Automotive",
+    "num_rows": 3,
+    "num_cols": 3
+  },
+  {
+    "description": "This table represents data about three different books, including the title (entity), author, and year of publication.",
+    "table_data": [
+      [
+        "\"To Kill a Mockingbird\"",
+        "Harper Lee",
+        "1960"
+      ],
+      [
+        "\"1984\"",
+        "George Orwell",
+        "1949"
+      ],
+      [
+        "\"The Great Gatsby\"",
+        "F. Scott Fitzgerald",
+        "1925"
+      ]
+    ],
+    "context": "This table represents data about three different books, including the title (entity), author, and year of publication. row 1: \"To Kill a Mockingbird\", Harper Lee, 1960 row 2: \"1984\", George Orwell, 1949 row 3: \"The Great Gatsby\", F. Scott Fitzgerald, 1925",
+    "num_rows": 3,
+    "num_cols": 3
+  },
+  {
+    "description": "This table represents a list of universities with their respective founding years and the total number of students currently enrolled.",
+    "table_data": [
+      [
+        "Harvard University",
+        "1636",
+        "20",
+        "000"
+      ],
+      [
+        "University of Oxford",
+        "1096",
+        "24",
+        "000"
+      ],
+      [
+        "University of Tokyo",
+        "1877",
+        "28",
+        "000"
+      ]
+    ],
+    "context": "This table represents a list of universities with their respective founding years and the total number of students currently enrolled. row 1: Harvard University, 1636, 20, 000 row 2: University of Oxford, 1096, 24, 000 row 3: University of Tokyo, 1877, 28, 000",
+    "num_rows": 3,
+    "num_cols": 4
+  },
+  {
+    "description": "The table represents the title of the movies, their release years and the directors.",
+    "table_data": [
+      [
+        "The Shawshank Redemption",
+        "1994",
+        "Frank Darabont"
+      ],
+      [
+        "The Godfather",
+        "1972",
+        "Francis Ford Coppola"
+      ],
+      [
+        "The Dark Knight",
+        "2008",
+        "Christopher Nolan"
+      ]
+    ],
+    "context": "The table represents the title of the movies, their release years and the directors. row 1: The Shawshank Redemption, 1994, Frank Darabont row 2: The Godfather, 1972, Francis Ford Coppola row 3: The Dark Knight, 2008, Christopher Nolan",
+    "num_rows": 3,
+    "num_cols": 3
+  },
+  {
+    "description": "The table represents information on three different countries, with columns representing the country name, its capital city, and the population in millions.",
+    "table_data": [
+      [
+        "Brazil",
+        "Brasília",
+        "211.05"
+      ],
+      [
+        "Spain",
+        "Madrid",
+        "46.94"
+      ],
+      [
+        "Australia",
+        "Canberra",
+        "25.36"
+      ]
+    ],
+    "context": "The table represents information on three different countries, with columns representing the country name, its capital city, and the population in millions. row 1: Brazil, Brasília, 211.05 row 2: Spain, Madrid, 46.94 row 3: Australia, Canberra, 25.36",
+    "num_rows": 3,
+    "num_cols": 3
+  },
+  {
+    "description": "The table represents a list of movies. For each movie (entity), it provides the year of release and the director of the movie.",
+    "table_data": [
+      [
+        "\"The Shawshank Redemption\"",
+        "1994",
+        "\"Frank Darabont\""
+      ],
+      [
+        "\"The Godfather\"",
+        "1972",
+        "\"Francis Ford Coppola\""
+      ],
+      [
+        "\"Pulp Fiction\"",
+        "1994",
+        "\"Quentin Tarantino\""
+      ]
+    ],
+    "context": "The table represents a list of movies. For each movie (entity), it provides the year of release and the director of the movie. row 1: \"The Shawshank Redemption\", 1994, \"Frank Darabont\" row 2: \"The Godfather\", 1972, \"Francis Ford Coppola\" row 3: \"Pulp Fiction\", 1994, \"Quentin Tarantino\"",
+    "num_rows": 3,
+    "num_cols": 3
+  },
+  {
+    "description": "The table represents detailed information about three different universities. The data includes the name of the university, its location, and the number of students enrolled.",
+    "table_data": [
+      [
+        "Harvard University",
+        "Cambridge",
+        "Massachusetts",
+        "20",
+        "000"
+      ],
+      [
+        "Stanford University",
+        "Stanford",
+        "California",
+        "17",
+        "381"
+      ],
+      [
+        "University of Oxford",
+        "Oxford",
+        "England",
+        "24",
+        "000"
+      ]
+    ],
+    "context": "The table represents detailed information about three different universities. The data includes the name of the university, its location, and the number of students enrolled. row 1: Harvard University, Cambridge, Massachusetts, 20, 000 row 2: Stanford University, Stanford, California, 17, 381 row 3: University of Oxford, Oxford, England, 24, 000",
+    "num_rows": 3,
+    "num_cols": 5
+  },
+  {
+    "description": "This table represents a selection of books, with their respective authors and years of publication.",
+    "table_data": [
+      [
+        "\"To Kill a Mockingbird\"",
+        "Harper Lee",
+        "1960"
+      ],
+      [
+        "\"1984\"",
+        "George Orwell",
+        "1949"
+      ],
+      [
+        "\"The Great Gatsby\"",
+        "F. Scott Fitzgerald",
+        "1925"
+      ]
+    ],
+    "context": "This table represents a selection of books, with their respective authors and years of publication. row 1: \"To Kill a Mockingbird\", Harper Lee, 1960 row 2: \"1984\", George Orwell, 1949 row 3: \"The Great Gatsby\", F. Scott Fitzgerald, 1925",
+    "num_rows": 3,
+    "num_cols": 3
+  },
+  {
+    "description": "This table represents some popular products along with their prices and the number of units sold.",
+    "table_data": [
+      [
+        "iPhone 13",
+        "$999",
+        "5000 units"
+      ],
+      [
+        "Samsung Galaxy S21",
+        "$799",
+        "7000 units"
+      ],
+      [
+        "Google Pixel 6",
+        "$599",
+        "4000 units"
+      ]
+    ],
+    "context": "This table represents some popular products along with their prices and the number of units sold. row 1: iPhone 13, $999, 5000 units row 2: Samsung Galaxy S21, $799, 7000 units row 3: Google Pixel 6, $599, 4000 units",
+    "num_rows": 3,
+    "num_cols": 3
+  },
+  {
+    "description": "This table represents information about different movies, including their title, the year they were released, and their director.",
+    "table_data": [
+      [
+        "\"The Godfather\"",
+        "1972",
+        "\"Francis Ford Coppola\""
+      ],
+      [
+        "\"Inception\"",
+        "2010",
+        "\"Christopher Nolan\""
+      ],
+      [
+        "\"Parasite\"",
+        "2019",
+        "\"Bong Joon Ho\""
+      ]
+    ],
+    "context": "This table represents information about different movies, including their title, the year they were released, and their director. row 1: \"The Godfather\", 1972, \"Francis Ford Coppola\" row 2: \"Inception\", 2010, \"Christopher Nolan\" row 3: \"Parasite\", 2019, \"Bong Joon Ho\"",
+    "num_rows": 3,
+    "num_cols": 3
+  },
+  {
+    "description": "This table represents a small selection of movies and includes their release years and directors.",
+    "table_data": [
+      [
+        "\"The Lord of the Rings: The Return of the King\"",
+        "2003",
+        "\"Peter Jackson\""
+      ],
+      [
+        "\"Inception\"",
+        "2010",
+        "\"Christopher Nolan\""
+      ],
+      [
+        "\"Pulp Fiction\"",
+        "1994",
+        "\"Quentin Tarantino\""
+      ]
+    ],
+    "context": "This table represents a small selection of movies and includes their release years and directors. row 1: \"The Lord of the Rings: The Return of the King\", 2003, \"Peter Jackson\" row 2: \"Inception\", 2010, \"Christopher Nolan\" row 3: \"Pulp Fiction\", 1994, \"Quentin Tarantino\"",
+    "num_rows": 3,
+    "num_cols": 3
+  },
+  {
+    "description": "This table represents information about three different movies. The first column contains the names of the movies, the second column indicates the director of each movie, and the third column shows the year of release.",
+    "table_data": [
+      [
+        "\"The Shawshank Redemption\"",
+        "\"Frank Darabont\"",
+        "1994"
+      ],
+      [
+        "\"The Godfather\"",
+        "\"Francis Ford Coppola\"",
+        "1972"
+      ],
+      [
+        "\"Inception\"",
+        "\"Christopher Nolan\"",
+        "2010"
+      ]
+    ],
+    "context": "This table represents information about three different movies. The first column contains the names of the movies, the second column indicates the director of each movie, and the third column shows the year of release. row 1: \"The Shawshank Redemption\", \"Frank Darabont\", 1994 row 2: \"The Godfather\", \"Francis Ford Coppola\", 1972 row 3: \"Inception\", \"Christopher Nolan\", 2010",
+    "num_rows": 3,
+    "num_cols": 3
+  },
+  {
+    "description": "This table represents a selection of three movies, with their corresponding director and box office gross.",
+    "table_data": [
+      [
+        "The Dark Knight",
+        "Christopher Nolan",
+        "$1",
+        "004",
+        "934",
+        "033"
+      ],
+      [
+        "Titanic",
+        "James Cameron",
+        "$2",
+        "201",
+        "647",
+        "264"
+      ],
+      [
+        "The Lion King",
+        "Jon Favreau",
+        "$1",
+        "656",
+        "943",
+        "394"
+      ]
+    ],
+    "context": "This table represents a selection of three movies, with their corresponding director and box office gross. row 1: The Dark Knight, Christopher Nolan, $1, 004, 934, 033 row 2: Titanic, James Cameron, $2, 201, 647, 264 row 3: The Lion King, Jon Favreau, $1, 656, 943, 394",
+    "num_rows": 3,
+    "num_cols": 6
+  }
+]

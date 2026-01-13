@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benchmark Results Visualization</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            padding: 30px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+        }
+
+        .upload-section {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 30px;
+            border: 2px dashed #667eea;
+            border-radius: 10px;
+            background: #f8f9ff;
+        }
+
+        .upload-section input[type="file"] {
+            display: none;
+        }
+
+        .upload-label {
+            display: inline-block;
+            padding: 15px 30px;
+            background: #667eea;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1em;
+            transition: background 0.3s;
+        }
+
+        .upload-label:hover {
+            background: #764ba2;
+        }
+
+        .file-name {
+            margin-top: 15px;
+            color: #666;
+            font-style: italic;
+        }
+
+        .stats-overview {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .stat-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .stat-card h3 {
+            font-size: 0.9em;
+            margin-bottom: 10px;
+            opacity: 0.9;
+        }
+
+        .stat-card .value {
+            font-size: 2em;
+            font-weight: bold;
+        }
+
+        .charts-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .chart-wrapper {
+            background: #f8f9ff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .chart-wrapper h2 {
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+
+        .table-container {
+            overflow-x: auto;
+            margin-top: 30px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        th {
+            background: #667eea;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        td {
+            padding: 12px;
+            border-bottom: 1px solid #eee;
+        }
+
+        tr:hover {
+            background: #f8f9ff;
+        }
+
+        .exact-match-true {
+            color: #28a745;
+            font-weight: bold;
+        }
+
+        .exact-match-false {
+            color: #dc3545;
+            font-weight: bold;
+        }
+
+        .view-btn {
+            padding: 6px 16px;
+            background: #667eea;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 0.9em;
+            transition: background 0.3s;
+        }
+
+        .view-btn:hover {
+            background: #764ba2;
+        }
+
+        .no-data {
+            text-align: center;
+            padding: 40px;
+            color: #999;
+            font-size: 1.2em;
+        }
+
+        canvas {
+            max-height: 300px;
+        }
+
+        /* Modal Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.5);
+            animation: fadeIn 0.3s;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .modal-content {
+            background-color: white;
+            margin: 2% auto;
+            padding: 0;
+            border-radius: 10px;
+            width: 90%;
+            max-width: 1000px;
+            max-height: 90vh;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+            animation: slideIn 0.3s;
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .modal-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .modal-header h2 {
+            margin: 0;
+            font-size: 1.5em;
+        }
+
+        .close {
+            color: white;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: color 0.3s;
+            line-height: 1;
+        }
+
+        .close:hover {
+            color: #ddd;
+        }
+
+        .modal-body {
+            padding: 20px;
+            overflow-y: auto;
+            max-height: calc(90vh - 80px);
+        }
+
+        .text-section {
+            margin-bottom: 25px;
+            padding: 15px;
+            background: #f8f9ff;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+
+        .text-section h3 {
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+
+        .text-section p {
+            color: #333;
+            line-height: 1.6;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            margin: 0;
+            font-size: 0.95em;
+        }
+
+        .text-section.original {
+            border-left-color: #28a745;
+        }
+
+        .text-section.original h3 {
+            color: #28a745;
+        }
+
+        .text-section.perturbed {
+            border-left-color: #ffc107;
+        }
+
+        .text-section.perturbed h3 {
+            color: #e69500;
+        }
+
+        .text-section.response {
+            border-left-color: #dc3545;
+        }
+
+        .text-section.response h3 {
+            color: #dc3545;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔍 Benchmark Results Visualization</h1>
+        
+        <div class="upload-section">
+            <label for="fileInput" class="upload-label">
+                📁 Upload JSON File
+            </label>
+            <input type="file" id="fileInput" accept=".json">
+            <div class="file-name" id="fileName">No file selected</div>
+        </div>
+
+        <div id="content" style="display: none;">
+            <div class="stats-overview" id="statsOverview"></div>
+            
+            <div class="charts-container">
+                <div class="chart-wrapper">
+                    <h2>Category Distribution</h2>
+                    <canvas id="categoryChart"></canvas>
+                </div>
+                
+                <div class="chart-wrapper">
+                    <h2>Difficulty Distribution</h2>
+                    <canvas id="difficultyChart"></canvas>
+                </div>
+                
+                <div class="chart-wrapper">
+                    <h2>Perturbation Type Distribution</h2>
+                    <canvas id="perturbationChart"></canvas>
+                </div>
+                
+                <div class="chart-wrapper">
+                    <h2>Exact Match Rate</h2>
+                    <canvas id="exactMatchChart"></canvas>
+                </div>
+                
+                <div class="chart-wrapper">
+                    <h2>Similarity Score Distribution</h2>
+                    <canvas id="similarityChart"></canvas>
+                </div>
+                
+                <div class="chart-wrapper">
+                    <h2>Tags Found Distribution</h2>
+                    <canvas id="tagsChart"></canvas>
+                </div>
+            </div>
+
+            <div class="table-container">
+                <h2 style="margin-bottom: 15px; color: #333;">📊 Detailed Results</h2>
+                <table id="resultsTable">
+                    <thead>
+                        <tr>
+                            <th>Sample ID</th>
+                            <th>Category</th>
+                            <th>Difficulty</th>
+                            <th>Perturbation Type</th>
+                            <th>Exact Match</th>
+                            <th>Similarity Score</th>
+                            <th>Levenshtein Distance</th>
+                            <th>Tags Found</th>
+                            <th>View</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody"></tbody>
+                </table>
+            </div>
+        </div>
+
+        <div id="noData" class="no-data">
+            Please upload a JSON file to visualize the results
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="detailModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Sample Details - ID: <span id="modalSampleId"></span></h2>
+                <span class="close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="text-section original">
+                    <h3>📄 Original</h3>
+                    <p id="modalOriginal"></p>
+                </div>
+                <div class="text-section perturbed">
+                    <h3>🔀 Perturbed</h3>
+                    <p id="modalPerturbed"></p>
+                </div>
+                <div class="text-section response">
+                    <h3>💬 Raw Response</h3>
+                    <p id="modalResponse"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let allData = [];
+        let validData = [];
+        let charts = {};
+
+        document.getElementById('fileInput').addEventListener('change', handleFileUpload);
+
+        // Modal functionality
+        const modal = document.getElementById('detailModal');
+        const closeBtn = document.querySelector('.close');
+
+        closeBtn.onclick = function() {
+            modal.style.display = 'none';
+        }
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+        }
+
+        function showDetails(index) {
+            const item = validData[index];
+            document.getElementById('modalSampleId').textContent = item.sample_id;
+            document.getElementById('modalOriginal').textContent = item.original || 'N/A';
+            document.getElementById('modalPerturbed').textContent = item.perturbed || 'N/A';
+            document.getElementById('modalResponse').textContent = item.raw_response || 'N/A';
+            modal.style.display = 'block';
+        }
+
+        function handleFileUpload(event) {
+            const file = event.target.files[0];
+            if (!file) return;
+
+            document.getElementById('fileName').textContent = `Selected: ${file.name}`;
+
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                try {
+                    allData = JSON.parse(e.target.result);
+                    // Filter only valid results (raw_response is not empty)
+                    validData = allData.filter(item => item.raw_response && item.raw_response.trim() !== '');
+                    
+                    if (validData.length === 0) {
+                        alert('No valid results found (all raw_response fields are empty)');
+                        return;
+                    }
+
+                    visualizeData();
+                    document.getElementById('content').style.display = 'block';
+                    document.getElementById('noData').style.display = 'none';
+                } catch (error) {
+                    alert('Error parsing JSON file: ' + error.message);
+                }
+            };
+            reader.readAsText(file);
+        }
+
+        function visualizeData() {
+            displayStats();
+            createCharts();
+            populateTable();
+        }
+
+        function displayStats() {
+            const totalSamples = allData.length;
+            const validSamples = validData.length;
+            const exactMatches = validData.filter(item => item.exact_match === true).length;
+            const avgSimilarity = (validData.reduce((sum, item) => sum + (item.similarity_score || 0), 0) / validSamples).toFixed(4);
+            const avgLevenshtein = (validData.reduce((sum, item) => sum + (item.levenshtein_distance || 0), 0) / validSamples).toFixed(2);
+            const tagsFoundCount = validData.filter(item => item.tags_found === true).length;
+
+            const statsHTML = `
+                <div class="stat-card">
+                    <h3>Total Samples</h3>
+                    <div class="value">${totalSamples}</div>
+                </div>
+                <div class="stat-card">
+                    <h3>Valid Results</h3>
+                    <div class="value">${validSamples}</div>
+                </div>
+                <div class="stat-card">
+                    <h3>Exact Matches</h3>
+                    <div class="value">${exactMatches}</div>
+                </div>
+                <div class="stat-card">
+                    <h3>Avg Similarity</h3>
+                    <div class="value">${avgSimilarity}</div>
+                </div>
+                <div class="stat-card">
+                    <h3>Avg Levenshtein</h3>
+                    <div class="value">${avgLevenshtein}</div>
+                </div>
+                <div class="stat-card">
+                    <h3>Tags Found</h3>
+                    <div class="value">${tagsFoundCount}</div>
+                </div>
+            `;
+
+            document.getElementById('statsOverview').innerHTML = statsHTML;
+        }
+
+        function createCharts() {
+            // Destroy existing charts
+            Object.values(charts).forEach(chart => chart.destroy());
+            charts = {};
+
+            // Category Distribution
+            const categories = countByField('category');
+            charts.category = createPieChart('categoryChart', 'Category Distribution', categories);
+
+            // Difficulty Distribution
+            const difficulties = countByField('difficulty');
+            charts.difficulty = createPieChart('difficultyChart', 'Difficulty Distribution', difficulties);
+
+            // Perturbation Type Distribution
+            const perturbations = countByField('perturbation_type');
+            charts.perturbation = createPieChart('perturbationChart', 'Perturbation Type Distribution', perturbations);
+
+            // Exact Match Rate
+            const exactMatchData = {
+                'True': validData.filter(item => item.exact_match === true).length,
+                'False': validData.filter(item => item.exact_match === false).length
+            };
+            charts.exactMatch = createPieChart('exactMatchChart', 'Exact Match Rate', exactMatchData);
+
+            // Similarity Score Distribution
+            const similarityRanges = {
+                '0.0-0.2': 0,
+                '0.2-0.4': 0,
+                '0.4-0.6': 0,
+                '0.6-0.8': 0,
+                '0.8-1.0': 0
+            };
+            validData.forEach(item => {
+                const score = item.similarity_score || 0;
+                if (score < 0.2) similarityRanges['0.0-0.2']++;
+                else if (score < 0.4) similarityRanges['0.2-0.4']++;
+                else if (score < 0.6) similarityRanges['0.4-0.6']++;
+                else if (score < 0.8) similarityRanges['0.6-0.8']++;
+                else similarityRanges['0.8-1.0']++;
+            });
+            charts.similarity = createBarChart('similarityChart', 'Similarity Score Distribution', similarityRanges);
+
+            // Tags Found Distribution
+            const tagsData = {
+                'Found': validData.filter(item => item.tags_found === true).length,
+                'Not Found': validData.filter(item => item.tags_found === false).length
+            };
+            charts.tags = createPieChart('tagsChart', 'Tags Found Distribution', tagsData);
+        }
+
+        function countByField(field) {
+            const counts = {};
+            validData.forEach(item => {
+                const value = item[field] || 'Unknown';
+                counts[value] = (counts[value] || 0) + 1;
+            });
+            return counts;
+        }
+
+        function createPieChart(canvasId, title, data) {
+            const ctx = document.getElementById(canvasId).getContext('2d');
+            return new Chart(ctx, {
+                type: 'pie',
+                data: {
+                    labels: Object.keys(data),
+                    datasets: [{
+                        data: Object.values(data),
+                        backgroundColor: [
+                            '#667eea',
+                            '#764ba2',
+                            '#f093fb',
+                            '#4facfe',
+                            '#43e97b',
+                            '#fa709a',
+                            '#fee140',
+                            '#30cfd0'
+                        ]
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: true,
+                    plugins: {
+                        legend: {
+                            position: 'bottom'
+                        },
+                        title: {
+                            display: false
+                        }
+                    }
+                }
+            });
+        }
+
+        function createBarChart(canvasId, title, data) {
+            const ctx = document.getElementById(canvasId).getContext('2d');
+            return new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: Object.keys(data),
+                    datasets: [{
+                        label: 'Count',
+                        data: Object.values(data),
+                        backgroundColor: '#667eea'
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: true,
+                    plugins: {
+                        legend: {
+                            display: false
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+        }
+
+        function populateTable() {
+            const tbody = document.getElementById('tableBody');
+            tbody.innerHTML = '';
+
+            validData.forEach((item, index) => {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td>${item.sample_id}</td>
+                    <td>${item.category || 'N/A'}</td>
+                    <td>${item.difficulty || 'N/A'}</td>
+                    <td>${item.perturbation_type || 'N/A'}</td>
+                    <td class="${item.exact_match ? 'exact-match-true' : 'exact-match-false'}">${item.exact_match ? 'True' : 'False'}</td>
+                    <td>${(item.similarity_score || 0).toFixed(4)}</td>
+                    <td>${item.levenshtein_distance || 0}</td>
+                    <td class="${item.tags_found ? 'exact-match-true' : 'exact-match-false'}">${item.tags_found ? 'Yes' : 'No'}</td>
+                    <td><button class="view-btn" onclick="showDetails(${index})">View</button></td>
+                `;
+                tbody.appendChild(row);
+            });
+        }
+
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benchmark Results Visualization</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .upload-section {
+            padding: 30px;
+            text-align: center;
+            background: #f8f9fa;
+            border-bottom: 2px solid #e9ecef;
+        }
+
+        .upload-btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: #667eea;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: all 0.3s;
+        }
+
+        .upload-btn:hover {
+            background: #764ba2;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        input[type="file"] {
+            display: none;
+        }
+
+        .content {
+            padding: 30px;
+            display: none;
+        }
+
+        .content.active {
+            display: block;
+        }
+
+        .summary-section {
+            margin-bottom: 40px;
+        }
+
+        .summary-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            font-size: 14px;
+            opacity: 0.9;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .card .value {
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        .charts-section {
+            margin-bottom: 40px;
+        }
+
+        .charts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .chart-container {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .chart-container h3 {
+            margin-bottom: 15px;
+            color: #333;
+            text-align: center;
+        }
+
+        .table-section {
+            margin-top: 40px;
+        }
+
+        .table-container {
+            overflow-x: auto;
+            margin-top: 20px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+        }
+
+        th {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #e9ecef;
+        }
+
+        tr:hover {
+            background: #f8f9fa;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .badge-success {
+            background: #d4edda;
+            color: #155724;
+        }
+
+        .badge-danger {
+            background: #f8d7da;
+            color: #721c24;
+        }
+
+        .badge-warning {
+            background: #fff3cd;
+            color: #856404;
+        }
+
+        h2 {
+            color: #333;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+        }
+
+        .filter-info {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+
+        .filter-info strong {
+            color: #856404;
+        }
+
+        .detail-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 1000;
+            overflow-y: auto;
+        }
+
+        .modal-content {
+            background: white;
+            margin: 50px auto;
+            padding: 30px;
+            max-width: 900px;
+            border-radius: 15px;
+            position: relative;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            font-size: 28px;
+            cursor: pointer;
+            color: #999;
+        }
+
+        .close-btn:hover {
+            color: #333;
+        }
+
+        .text-comparison {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .text-box {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 10px;
+            max-height: 400px;
+            overflow-y: auto;
+        }
+
+        .text-box h4 {
+            margin-bottom: 10px;
+            color: #667eea;
+        }
+
+        .text-box pre {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            font-size: 13px;
+            line-height: 1.6;
+        }
+
+        .view-detail-btn {
+            background: #667eea;
+            color: white;
+            border: none;
+            padding: 6px 12px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 12px;
+        }
+
+        .view-detail-btn:hover {
+            background: #764ba2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🚀 Benchmark Results Dashboard</h1>
+            <p>Privacy Protection Model Evaluation</p>
+        </div>
+
+        <div class="upload-section">
+            <label for="fileInput" class="upload-btn">
+                📁 Upload JSON File
+            </label>
+            <input type="file" id="fileInput" accept=".json">
+        </div>
+
+        <div class="content" id="content">
+            <!-- Filter Info -->
+            <div class="filter-info">
+                <strong>⚠️ Filter Applied:</strong> Only samples with non-empty model_output are included in statistics. 
+                <span id="filterStats"></span>
+            </div>
+
+            <!-- Summary Section -->
+            <section class="summary-section">
+                <h2>📊 Overall Metrics</h2>
+                <div class="summary-cards" id="summaryCards"></div>
+            </section>
+
+            <!-- Charts Section -->
+            <section class="charts-section">
+                <h2>📈 Visual Analytics</h2>
+                <div class="charts-grid">
+                    <div class="chart-container">
+                        <h3>Performance Metrics</h3>
+                        <canvas id="metricsChart"></canvas>
+                    </div>
+                    <div class="chart-container">
+                        <h3>Difficulty Distribution</h3>
+                        <canvas id="difficultyChart"></canvas>
+                    </div>
+                    <div class="chart-container">
+                        <h3>Exact Match by Difficulty</h3>
+                        <canvas id="exactMatchChart"></canvas>
+                    </div>
+                    <div class="chart-container">
+                        <h3>F1 Score by Difficulty</h3>
+                        <canvas id="f1Chart"></canvas>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Difficulty Breakdown -->
+            <section class="table-section">
+                <h2>🎯 Difficulty Breakdown</h2>
+                <div class="table-container">
+                    <table id="difficultyTable">
+                        <thead>
+                            <tr>
+                                <th>Difficulty</th>
+                                <th>Valid Samples</th>
+                                <th>Exact Match Rate</th>
+                                <th>Avg Precision</th>
+                                <th>Avg Recall</th>
+                                <th>Avg F1</th>
+                                <th>Leakage Rate</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Detailed Results -->
+            <section class="table-section">
+                <h2>📋 Detailed Results</h2>
+                <div class="table-container">
+                    <table id="detailedTable">
+                        <thead>
+                            <tr>
+                                <th>Sample ID</th>
+                                <th>Difficulty</th>
+                                <th>Exact Match</th>
+                                <th>Precision</th>
+                                <th>Recall</th>
+                                <th>F1</th>
+                                <th>Leakage</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- Detail Modal -->
+    <div class="detail-modal" id="detailModal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <div class="text-comparison">
+                <div class="text-box">
+                    <h4>Original Text</h4>
+                    <pre id="originalText"></pre>
+                </div>
+                <div class="text-box">
+                    <h4>Ground Truth</h4>
+                    <pre id="groundTruth"></pre>
+                </div>
+            </div>
+            <div class="text-box" style="margin-top: 20px;">
+                <h4>Model Output</h4>
+                <pre id="modelOutput"></pre>
+            </div>
+            <div style="margin-top: 20px;">
+                <h4>Evaluation Metrics</h4>
+                <div class="summary-cards" id="modalMetrics"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let benchmarkData = null;
+        let validResults = [];
+        let charts = {};
+
+        document.getElementById('fileInput').addEventListener('change', handleFileUpload);
+
+        function handleFileUpload(event) {
+            const file = event.target.files[0];
+            if (!file) return;
+
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                try {
+                    benchmarkData = JSON.parse(e.target.result);
+                    filterAndProcessData();
+                    renderDashboard();
+                } catch (error) {
+                    alert('Error parsing JSON file: ' + error.message);
+                }
+            };
+            reader.readAsText(file);
+        }
+
+        function filterAndProcessData() {
+            // Filter valid results (non-empty model_output)
+            validResults = benchmarkData.detailed_results.filter(result => 
+                result.model_output && result.model_output.trim() !== ''
+            );
+
+            // Recalculate metrics based on valid results
+            recalculateMetrics();
+
+            // Update filter stats
+            const totalSamples = benchmarkData.detailed_results.length;
+            const validSamples = validResults.length;
+            const filteredOut = totalSamples - validSamples;
+            
+            document.getElementById('filterStats').innerHTML = 
+                `Total: <strong>${totalSamples}</strong> | Valid: <strong>${validSamples}</strong> | Filtered out: <strong>${filteredOut}</strong>`;
+        }
+
+        function recalculateMetrics() {
+            if (validResults.length === 0) {
+                benchmarkData.overall_metrics = {
+                    exact_match_rate: 0,
+                    avg_precision: 0,
+                    avg_recall: 0,
+                    avg_f1: 0,
+                    leakage_rate: 0,
+                    avg_leakage_ratio: 0
+                };
+                benchmarkData.difficulty_metrics = {};
+                return;
+            }
+
+            // Recalculate overall metrics
+            const exactMatches = validResults.filter(r => r.evaluation.exact_match).length;
+            const totalPrecision = validResults.reduce((sum, r) => sum + r.evaluation.precision, 0);
+            const totalRecall = validResults.reduce((sum, r) => sum + r.evaluation.recall, 0);
+            const totalF1 = validResults.reduce((sum, r) => sum + r.evaluation.f1, 0);
+            const leakages = validResults.filter(r => r.evaluation.has_leakage).length;
+            const totalLeakageRatio = validResults.reduce((sum, r) => sum + r.evaluation.leakage_ratio, 0);
+
+            benchmarkData.overall_metrics = {
+                exact_match_rate: exactMatches / validResults.length,
+                avg_precision: totalPrecision / validResults.length,
+                avg_recall: totalRecall / validResults.length,
+                avg_f1: totalF1 / validResults.length,
+                leakage_rate: leakages / validResults.length,
+                avg_leakage_ratio: totalLeakageRatio / validResults.length
+            };
+
+            // Recalculate difficulty metrics
+            const difficultyGroups = {};
+            validResults.forEach(result => {
+                if (!difficultyGroups[result.difficulty]) {
+                    difficultyGroups[result.difficulty] = [];
+                }
+                difficultyGroups[result.difficulty].push(result);
+            });
+
+            benchmarkData.difficulty_metrics = {};
+            Object.keys(difficultyGroups).forEach(difficulty => {
+                const group = difficultyGroups[difficulty];
+                const exactMatches = group.filter(r => r.evaluation.exact_match).length;
+                const totalPrecision = group.reduce((sum, r) => sum + r.evaluation.precision, 0);
+                const totalRecall = group.reduce((sum, r) => sum + r.evaluation.recall, 0);
+                const totalF1 = group.reduce((sum, r) => sum + r.evaluation.f1, 0);
+                const leakages = group.filter(r => r.evaluation.has_leakage).length;
+                const totalLeakageRatio = group.reduce((sum, r) => sum + r.evaluation.leakage_ratio, 0);
+
+                benchmarkData.difficulty_metrics[difficulty] = {
+                    total_samples: group.length,
+                    exact_match_rate: exactMatches / group.length,
+                    avg_precision: totalPrecision / group.length,
+                    avg_recall: totalRecall / group.length,
+                    avg_f1: totalF1 / group.length,
+                    leakage_rate: leakages / group.length,
+                    avg_leakage_ratio: totalLeakageRatio / group.length
+                };
+            });
+        }
+
+        function renderDashboard() {
+            document.getElementById('content').classList.add('active');
+            renderSummaryCards();
+            renderCharts();
+            renderDifficultyTable();
+            renderDetailedTable();
+        }
+
+        function renderSummaryCards() {
+            const metrics = benchmarkData.overall_metrics;
+            const cards = [
+                { title: 'Valid Samples', value: validResults.length, suffix: '' },
+                { title: 'Exact Match Rate', value: (metrics.exact_match_rate * 100).toFixed(2), suffix: '%' },
+                { title: 'Avg Precision', value: (metrics.avg_precision * 100).toFixed(2), suffix: '%' },
+                { title: 'Avg Recall', value: (metrics.avg_recall * 100).toFixed(2), suffix: '%' },
+                { title: 'Avg F1 Score', value: (metrics.avg_f1 * 100).toFixed(2), suffix: '%' },
+                { title: 'Leakage Rate', value: (metrics.leakage_rate * 100).toFixed(2), suffix: '%' }
+            ];
+
+            const html = cards.map(card => `
+                <div class="card">
+                    <h3>${card.title}</h3>
+                    <div class="value">${card.value}${card.suffix}</div>
+                </div>
+            `).join('');
+
+            document.getElementById('summaryCards').innerHTML = html;
+        }
+
+        function renderCharts() {
+            // Destroy existing charts
+            Object.values(charts).forEach(chart => chart.destroy());
+            charts = {};
+
+            // Performance Metrics Chart
+            const metrics = benchmarkData.overall_metrics;
+            charts.metrics = new Chart(document.getElementById('metricsChart'), {
+                type: 'bar',
+                data: {
+                    labels: ['Exact Match', 'Precision', 'Recall', 'F1 Score'],
+                    datasets: [{
+                        label: 'Score (%)',
+                        data: [
+                            metrics.exact_match_rate * 100,
+                            metrics.avg_precision * 100,
+                            metrics.avg_recall * 100,
+                            metrics.avg_f1 * 100
+                        ],
+                        backgroundColor: [
+                            'rgba(102, 126, 234, 0.8)',
+                            'rgba(118, 75, 162, 0.8)',
+                            'rgba(237, 100, 166, 0.8)',
+                            'rgba(255, 154, 158, 0.8)'
+                        ],
+                        borderColor: [
+                            'rgba(102, 126, 234, 1)',
+                            'rgba(118, 75, 162, 1)',
+                            'rgba(237, 100, 166, 1)',
+                            'rgba(255, 154, 158, 1)'
+                        ],
+                        borderWidth: 2
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: true,
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            max: 100
+                        }
+                    },
+                    plugins: {
+                        legend: {
+                            display: false
+                        }
+                    }
+                }
+            });
+
+            // Difficulty Distribution Chart
+            const difficultyData = benchmarkData.difficulty_metrics;
+            const difficulties = Object.keys(difficultyData);
+            const samples = difficulties.map(d => difficultyData[d].total_samples);
+
+            charts.difficulty = new Chart(document.getElementById('difficultyChart'), {
+                type: 'doughnut',
+                data: {
+                    labels: difficulties,
+                    datasets: [{
+                        data: samples,
+                        backgroundColor: [
+                            'rgba(102, 126, 234, 0.8)',
+                            'rgba(118, 75, 162, 0.8)',
+                            'rgba(237, 100, 166, 0.8)',
+                            'rgba(255, 154, 158, 0.8)',
+                            'rgba(108, 92, 231, 0.8)'
+                        ],
+                        borderColor: '#fff',
+                        borderWidth: 2
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: true,
+                    plugins: {
+                        legend: {
+                            position: 'bottom'
+                        }
+                    }
+                }
+            });
+
+            // Exact Match by Difficulty Chart
+            const exactMatchRates = difficulties.map(d => difficultyData[d].exact_match_rate * 100);
+
+            charts.exactMatch = new Chart(document.getElementById('exactMatchChart'), {
+                type: 'bar',
+                data: {
+                    labels: difficulties,
+                    datasets: [{
+                        label: 'Exact Match Rate (%)',
+                        data: exactMatchRates,
+                        backgroundColor: 'rgba(102, 126, 234, 0.8)',
+                        borderColor: 'rgba(102, 126, 234, 1)',
+                        borderWidth: 2
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: true,
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            max: 100
+                        }
+                    }
+                }
+            });
+
+            // F1 Score by Difficulty Chart
+            const f1Scores = difficulties.map(d => difficultyData[d].avg_f1 * 100);
+
+            charts.f1 = new Chart(document.getElementById('f1Chart'), {
+                type: 'line',
+                data: {
+                    labels: difficulties,
+                    datasets: [{
+                        label: 'F1 Score (%)',
+                        data: f1Scores,
+                        backgroundColor: 'rgba(118, 75, 162, 0.2)',
+                        borderColor: 'rgba(118, 75, 162, 1)',
+                        borderWidth: 3,
+                        fill: true,
+                        tension: 0.4
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: true,
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            max: 100
+                        }
+                    }
+                }
+            });
+        }
+
+        function renderDifficultyTable() {
+            const tbody = document.querySelector('#difficultyTable tbody');
+            const difficultyData = benchmarkData.difficulty_metrics;
+
+            const rows = Object.keys(difficultyData).map(difficulty => {
+                const data = difficultyData[difficulty];
+                return `
+                    <tr>
+                        <td><strong>${difficulty}</strong></td>
+                        <td>${data.total_samples}</td>
+                        <td>${(data.exact_match_rate * 100).toFixed(2)}%</td>
+                        <td>${(data.avg_precision * 100).toFixed(2)}%</td>
+                        <td>${(data.avg_recall * 100).toFixed(2)}%</td>
+                        <td>${(data.avg_f1 * 100).toFixed(2)}%</td>
+                        <td>${(data.leakage_rate * 100).toFixed(2)}%</td>
+                    </tr>
+                `;
+            }).join('');
+
+            tbody.innerHTML = rows;
+        }
+
+        function renderDetailedTable() {
+            const tbody = document.querySelector('#detailedTable tbody');
+
+            const rows = validResults.map((result, index) => {
+                const eval_data = result.evaluation;
+                return `
+                    <tr>
+                        <td>${result.sample_id}</td>
+                        <td><span class="badge badge-warning">${result.difficulty}</span></td>
+                        <td>
+                            <span class="badge ${eval_data.exact_match ? 'badge-success' : 'badge-danger'}">
+                                ${eval_data.exact_match ? 'Yes' : 'No'}
+                            </span>
+                        </td>
+                        <td>${(eval_data.precision * 100).toFixed(2)}%</td>
+                        <td>${(eval_data.recall * 100).toFixed(2)}%</td>
+                        <td>${(eval_data.f1 * 100).toFixed(2)}%</td>
+                        <td>
+                            <span class="badge ${eval_data.has_leakage ? 'badge-danger' : 'badge-success'}">
+                                ${eval_data.has_leakage ? 'Yes' : 'No'}
+                            </span>
+                        </td>
+                        <td>
+                            <button class="view-detail-btn" onclick="viewDetail(${index})">
+                                View Details
+                            </button>
+                        </td>
+                    </tr>
+                `;
+            }).join('');
+
+            tbody.innerHTML = rows;
+        }
+
+        function viewDetail(index) {
+            const result = validResults[index];
+            const modal = document.getElementById('detailModal');
+
+            document.getElementById('modalTitle').textContent = `Sample: ${result.sample_id}`;
+            document.getElementById('originalText').textContent = result.original_text;
+            document.getElementById('groundTruth').textContent = result.ground_truth;
+            document.getElementById('modelOutput').textContent = result.prediction;
+
+            const metricsHtml = `
+                <div class="card">
+                    <h3>Exact Match</h3>
+                    <div class="value">${result.evaluation.exact_match ? 'Yes' : 'No'}</div>
+                </div>
+                <div class="card">
+                    <h3>Precision</h3>
+                    <div class="value">${(result.evaluation.precision * 100).toFixed(2)}%</div>
+                </div>
+                <div class="card">
+                    <h3>Recall</h3>
+                    <div class="value">${(result.evaluation.recall * 100).toFixed(2)}%</div>
+                </div>
+                <div class="card">
+                    <h3>F1 Score</h3>
+                    <div class="value">${(result.evaluation.f1 * 100).toFixed(2)}%</div>
+                </div>
+                <div class="card">
+                    <h3>Leakage Count</h3>
+                    <div class="value">${result.evaluation.leakage_count}</div>
+                </div>
+                <div class="card">
+                    <h3>Sensitive Items</h3>
+                    <div class="value">${result.evaluation.total_sensitive_items}</div>
+                </div>
+            `;
+
+            document.getElementById('modalMetrics').innerHTML = metricsHtml;
+            modal.style.display = 'block';
+        }
+
+        function closeModal() {
+            document.getElementById('detailModal').style.display = 'none';
+        }
+
+        // Close modal when clicking outside
+        window.onclick = function(event) {
+            const modal = document.getElementById('detailModal');
+            if (event.target === modal) {
+                closeModal();
+            }
+        }
+    </script>
+</body>
+</html>

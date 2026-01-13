@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benchmark Results Visualizer</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .upload-section {
+            padding: 30px;
+            background: #f8f9fa;
+            border-bottom: 2px solid #e9ecef;
+        }
+
+        .file-input-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .file-input-label {
+            display: inline-block;
+            padding: 12px 30px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: transform 0.2s;
+            font-weight: 600;
+        }
+
+        .file-input-label:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        #fileInput {
+            display: none;
+        }
+
+        #fileName {
+            color: #495057;
+            font-style: italic;
+        }
+
+        .content {
+            padding: 30px;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .stat-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .stat-card h3 {
+            font-size: 0.9em;
+            opacity: 0.9;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .stat-card .value {
+            font-size: 2.5em;
+            font-weight: bold;
+        }
+
+        .charts-section {
+            margin-bottom: 40px;
+        }
+
+        .chart-container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+
+        .chart-container h2 {
+            color: #495057;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #667eea;
+        }
+
+        .results-table-container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            overflow-x: auto;
+        }
+
+        .results-table-container h2 {
+            color: #495057;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #667eea;
+        }
+
+        .filter-section {
+            margin-bottom: 20px;
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .filter-section select,
+        .filter-section input {
+            padding: 10px 15px;
+            border: 2px solid #e9ecef;
+            border-radius: 5px;
+            font-size: 14px;
+            transition: border-color 0.3s;
+        }
+
+        .filter-section select:focus,
+        .filter-section input:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        thead {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #e9ecef;
+        }
+
+        th {
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.85em;
+            letter-spacing: 0.5px;
+        }
+
+        tbody tr:hover {
+            background-color: #f8f9fa;
+        }
+
+        .correct {
+            color: #28a745;
+            font-weight: bold;
+        }
+
+        .incorrect {
+            color: #dc3545;
+            font-weight: bold;
+        }
+
+        .prompt-cell {
+            max-width: 300px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            cursor: pointer;
+        }
+
+        .prompt-cell:hover {
+            white-space: normal;
+            overflow: visible;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            overflow: auto;
+        }
+
+        .modal-content {
+            background-color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 0;
+            border-radius: 10px;
+            width: 80%;
+            max-width: 1000px;
+            min-width: 400px;
+            min-height: 300px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            resize: both;
+            overflow: auto;
+            max-height: 90vh;
+        }
+
+        .modal-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px 30px;
+            border-radius: 10px 10px 0 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: move;
+            user-select: none;
+        }
+
+        .modal-header h2 {
+            margin: 0;
+            font-size: 1.5em;
+        }
+
+        .modal-controls {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .modal-btn {
+            background: rgba(255, 255, 255, 0.2);
+            border: none;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.3s;
+        }
+
+        .modal-btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        .modal-body {
+            padding: 30px;
+            overflow-y: auto;
+            max-height: calc(90vh - 80px);
+        }
+
+        .close {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            cursor: pointer;
+            background: none;
+            border: none;
+        }
+
+        .close:hover {
+            color: #f0f0f0;
+        }
+
+        .modal-body pre {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+
+        .modal-body h3 {
+            color: #667eea;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+
+        .modal-body h4 {
+            color: #495057;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .modal-body p {
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+
+        .resize-handle {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 20px;
+            height: 20px;
+            cursor: nwse-resize;
+            background: linear-gradient(135deg, transparent 0%, transparent 50%, #667eea 50%, #667eea 100%);
+            border-radius: 0 0 10px 0;
+        }
+
+        .pagination {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .pagination button {
+            padding: 8px 15px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .pagination button:hover:not(:disabled) {
+            transform: translateY(-2px);
+        }
+
+        .pagination button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .pagination span {
+            color: #495057;
+            font-weight: 600;
+        }
+
+        #loadingMessage {
+            text-align: center;
+            padding: 40px;
+            color: #6c757d;
+            font-size: 1.2em;
+        }
+
+        /* Fullscreen mode */
+        .modal-content.fullscreen {
+            width: 95vw !important;
+            height: 95vh !important;
+            max-width: none !important;
+            max-height: none !important;
+            top: 50% !important;
+            left: 50% !important;
+        }
+
+        .modal-content.fullscreen .modal-body {
+            max-height: calc(95vh - 80px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎯 Benchmark Results Visualizer</h1>
+            <p>Upload your JSON file to analyze Task 1 results</p>
+        </div>
+
+        <div class="upload-section">
+            <div class="file-input-wrapper">
+                <label for="fileInput" class="file-input-label">
+                    📁 Choose JSON File
+                </label>
+                <input type="file" id="fileInput" accept=".json">
+                <span id="fileName">No file chosen</span>
+            </div>
+        </div>
+
+        <div class="content" id="content">
+            <div id="loadingMessage">Please upload a JSON file to view results</div>
+        </div>
+    </div>
+
+    <!-- Modal for detailed view -->
+    <div id="detailModal" class="modal">
+        <div class="modal-content" id="modalContent">
+            <div class="modal-header" id="modalHeader">
+                <h2>Sample Details</h2>
+                <div class="modal-controls">
+                    <button class="modal-btn" id="fullscreenBtn" title="Toggle Fullscreen">⛶</button>
+                    <button class="close" id="closeBtn">&times;</button>
+                </div>
+            </div>
+            <div class="modal-body" id="modalBody"></div>
+            <div class="resize-handle" id="resizeHandle"></div>
+        </div>
+    </div>
+
+    <script>
+        let jsonData = null;
+        let currentPage = 1;
+        const itemsPerPage = 20;
+        let filteredResults = [];
+
+        const fileInput = document.getElementById('fileInput');
+        const fileName = document.getElementById('fileName');
+        const content = document.getElementById('content');
+        const modal = document.getElementById('detailModal');
+        const modalContent = document.getElementById('modalContent');
+        const modalHeader = document.getElementById('modalHeader');
+        const closeBtn = document.getElementById('closeBtn');
+        const fullscreenBtn = document.getElementById('fullscreenBtn');
+        const resizeHandle = document.getElementById('resizeHandle');
+
+        // Modal drag functionality
+        let isDragging = false;
+        let currentX;
+        let currentY;
+        let initialX;
+        let initialY;
+
+        modalHeader.addEventListener('mousedown', dragStart);
+        document.addEventListener('mousemove', drag);
+        document.addEventListener('mouseup', dragEnd);
+
+        function dragStart(e) {
+            if (e.target.closest('.modal-controls')) return;
+            
+            initialX = e.clientX - modalContent.offsetLeft;
+            initialY = e.clientY - modalContent.offsetTop;
+            
+            if (e.target === modalHeader || modalHeader.contains(e.target)) {
+                isDragging = true;
+                modalContent.style.transform = 'none';
+            }
+        }
+
+        function drag(e) {
+            if (isDragging) {
+                e.preventDefault();
+                currentX = e.clientX - initialX;
+                currentY = e.clientY - initialY;
+                
+                modalContent.style.left = currentX + 'px';
+                modalContent.style.top = currentY + 'px';
+            }
+        }
+
+        function dragEnd() {
+            isDragging = false;
+        }
+
+        // Modal resize functionality
+        let isResizing = false;
+        let startWidth, startHeight, startX, startY;
+
+        resizeHandle.addEventListener('mousedown', function(e) {
+            isResizing = true;
+            startWidth = modalContent.offsetWidth;
+            startHeight = modalContent.offsetHeight;
+            startX = e.clientX;
+            startY = e.clientY;
+            e.preventDefault();
+        });
+
+        document.addEventListener('mousemove', function(e) {
+            if (isResizing) {
+                const width = startWidth + (e.clientX - startX);
+                const height = startHeight + (e.clientY - startY);
+                
+                if (width > 400) {
+                    modalContent.style.width = width + 'px';
+                }
+                if (height > 300) {
+                    modalContent.style.height = height + 'px';
+                }
+            }
+        });
+
+        document.addEventListener('mouseup', function() {
+            isResizing = false;
+        });
+
+        // Fullscreen toggle
+        fullscreenBtn.addEventListener('click', function() {
+            modalContent.classList.toggle('fullscreen');
+            if (modalContent.classList.contains('fullscreen')) {
+                fullscreenBtn.textContent = '⛶';
+                fullscreenBtn.title = 'Exit Fullscreen';
+            } else {
+                fullscreenBtn.textContent = '⛶';
+                fullscreenBtn.title = 'Toggle Fullscreen';
+            }
+        });
+
+        fileInput.addEventListener('change', function(e) {
+            const file = e.target.files[0];
+            if (file) {
+                fileName.textContent = file.name;
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    try {
+                        jsonData = JSON.parse(e.target.result);
+                        renderDashboard();
+                    } catch (error) {
+                        alert('Error parsing JSON file: ' + error.message);
+                    }
+                };
+                reader.readAsText(file);
+            }
+        });
+
+        closeBtn.onclick = function() {
+            modal.style.display = "none";
+            modalContent.classList.remove('fullscreen');
+        }
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+                modalContent.classList.remove('fullscreen');
+            }
+        }
+
+        function renderDashboard() {
+            if (!jsonData || !jsonData.task1_results) {
+                content.innerHTML = '<div id="loadingMessage">Invalid JSON format</div>';
+                return;
+            }
+
+            filteredResults = jsonData.task1_results;
+            
+            const totalSamples = jsonData.task1_results.length;
+            const correctSamples = jsonData.task1_results.filter(r => r.is_correct).length;
+            const accuracy = (correctSamples / totalSamples * 100).toFixed(2);
+
+            let html = `
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <h3>Total Samples</h3>
+                        <div class="value">${totalSamples}</div>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Correct Answers</h3>
+                        <div class="value">${correctSamples}</div>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Overall Accuracy</h3>
+                        <div class="value">${accuracy}%</div>
+                    </div>
+                </div>
+
+                <div class="charts-section">
+                    <div class="chart-container">
+                        <h2>📊 Difficulty Statistics</h2>
+                        <canvas id="difficultyChart"></canvas>
+                    </div>
+                    
+                    <div class="chart-container">
+                        <h2>📈 Accuracy by Difficulty</h2>
+                        <canvas id="accuracyChart"></canvas>
+                    </div>
+
+                    <div class="chart-container">
+                        <h2>🌳 Performance by Tree Depth</h2>
+                        <canvas id="depthChart"></canvas>
+                    </div>
+
+                    <div class="chart-container">
+                        <h2>❓ Performance by Question Type</h2>
+                        <canvas id="questionTypeChart"></canvas>
+                    </div>
+                </div>
+
+                <div class="results-table-container">
+                    <h2>📋 Detailed Results</h2>
+                    
+                    <div class="filter-section">
+                        <select id="difficultyFilter">
+                            <option value="all">All Difficulties</option>
+                            <option value="easy">Easy</option>
+                            <option value="medium">Medium</option>
+                            <option value="hard">Hard</option>
+                        </select>
+                        
+                        <select id="correctnessFilter">
+                            <option value="all">All Results</option>
+                            <option value="correct">Correct Only</option>
+                            <option value="incorrect">Incorrect Only</option>
+                        </select>
+
+                        <select id="questionTypeFilter">
+                            <option value="all">All Question Types</option>
+                        </select>
+
+                        <input type="number" id="depthFilter" placeholder="Filter by tree depth" min="1">
+                    </div>
+
+                    <div id="tableContainer"></div>
+                    
+                    <div class="pagination">
+                        <button id="prevPage">Previous</button>
+                        <span id="pageInfo"></span>
+                        <button id="nextPage">Next</button>
+                    </div>
+                </div>
+            `;
+
+            content.innerHTML = html;
+
+            renderCharts();
+            populateQuestionTypeFilter();
+            renderTable();
+            setupFilters();
+        }
+
+        function renderCharts() {
+            // Difficulty Distribution Chart
+            if (jsonData.task1_difficulty_stats) {
+                const difficulties = Object.keys(jsonData.task1_difficulty_stats);
+                const totals = difficulties.map(d => jsonData.task1_difficulty_stats[d].total);
+                const correct = difficulties.map(d => jsonData.task1_difficulty_stats[d].correct);
+
+                new Chart(document.getElementById('difficultyChart'), {
+                    type: 'bar',
+                    data: {
+                        labels: difficulties.map(d => d.charAt(0).toUpperCase() + d.slice(1)),
+                        datasets: [{
+                            label: 'Total Samples',
+                            data: totals,
+                            backgroundColor: 'rgba(102, 126, 234, 0.6)',
+                            borderColor: 'rgba(102, 126, 234, 1)',
+                            borderWidth: 2
+                        }, {
+                            label: 'Correct Answers',
+                            data: correct,
+                            backgroundColor: 'rgba(40, 167, 69, 0.6)',
+                            borderColor: 'rgba(40, 167, 69, 1)',
+                            borderWidth: 2
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: true,
+                        scales: {
+                            y: {
+                                beginAtZero: true
+                            }
+                        }
+                    }
+                });
+
+                // Accuracy by Difficulty Chart
+                const accuracies = difficulties.map(d => 
+                    (jsonData.task1_difficulty_stats[d].accuracy * 100).toFixed(2)
+                );
+
+                new Chart(document.getElementById('accuracyChart'), {
+                    type: 'line',
+                    data: {
+                        labels: difficulties.map(d => d.charAt(0).toUpperCase() + d.slice(1)),
+                        datasets: [{
+                            label: 'Accuracy (%)',
+                            data: accuracies,
+                            backgroundColor: 'rgba(118, 75, 162, 0.2)',
+                            borderColor: 'rgba(118, 75, 162, 1)',
+                            borderWidth: 3,
+                            fill: true,
+                            tension: 0.4,
+                            pointRadius: 6,
+                            pointHoverRadius: 8
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: true,
+                        scales: {
+                            y: {
+                                beginAtZero: true,
+                                max: 100
+                            }
+                        }
+                    }
+                });
+            }
+
+            // Performance by Tree Depth
+            const depthStats = {};
+            jsonData.task1_results.forEach(result => {
+                if (!depthStats[result.tree_depth]) {
+                    depthStats[result.tree_depth] = { total: 0, correct: 0 };
+                }
+                depthStats[result.tree_depth].total++;
+                if (result.is_correct) {
+                    depthStats[result.tree_depth].correct++;
+                }
+            });
+
+            const depths = Object.keys(depthStats).sort((a, b) => a - b);
+            const depthAccuracies = depths.map(d => 
+                (depthStats[d].correct / depthStats[d].total * 100).toFixed(2)
+            );
+
+            new Chart(document.getElementById('depthChart'), {
+                type: 'bar',
+                data: {
+                    labels: depths.map(d => `Depth ${d}`),
+                    datasets: [{
+                        label: 'Accuracy (%)',
+                        data: depthAccuracies,
+                        backgroundColor: 'rgba(102, 126, 234, 0.6)',
+                        borderColor: 'rgba(102, 126, 234, 1)',
+                        borderWidth: 2
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: true,
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            max: 100
+                        }
+                    }
+                }
+            });
+
+            // Performance by Question Type
+            const questionTypeStats = {};
+            jsonData.task1_results.forEach(result => {
+                if (!questionTypeStats[result.question_type]) {
+                    questionTypeStats[result.question_type] = { total: 0, correct: 0 };
+                }
+                questionTypeStats[result.question_type].total++;
+                if (result.is_correct) {
+                    questionTypeStats[result.question_type].correct++;
+                }
+            });
+
+            const questionTypes = Object.keys(questionTypeStats);
+            const questionTypeAccuracies = questionTypes.map(qt => 
+                (questionTypeStats[qt].correct / questionTypeStats[qt].total * 100).toFixed(2)
+            );
+
+            new Chart(document.getElementById('questionTypeChart'), {
+                type: 'doughnut',
+                data: {
+                    labels: questionTypes.map(qt => qt.replace(/_/g, ' ').toUpperCase()),
+                    datasets: [{
+                        label: 'Accuracy (%)',
+                        data: questionTypeAccuracies,
+                        backgroundColor: [
+                            'rgba(102, 126, 234, 0.8)',
+                            'rgba(118, 75, 162, 0.8)',
+                            'rgba(40, 167, 69, 0.8)',
+                            'rgba(255, 193, 7, 0.8)',
+                            'rgba(220, 53, 69, 0.8)',
+                            'rgba(23, 162, 184, 0.8)'
+                        ],
+                        borderWidth: 2
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: true,
+                    plugins: {
+                        legend: {
+                            position: 'bottom'
+                        }
+                    }
+                }
+            });
+        }
+
+        function populateQuestionTypeFilter() {
+            const questionTypes = [...new Set(jsonData.task1_results.map(r => r.question_type))];
+            const select = document.getElementById('questionTypeFilter');
+            questionTypes.forEach(qt => {
+                const option = document.createElement('option');
+                option.value = qt;
+                option.textContent = qt.replace(/_/g, ' ').toUpperCase();
+                select.appendChild(option);
+            });
+        }
+
+        function setupFilters() {
+            const difficultyFilter = document.getElementById('difficultyFilter');
+            const correctnessFilter = document.getElementById('correctnessFilter');
+            const questionTypeFilter = document.getElementById('questionTypeFilter');
+            const depthFilter = document.getElementById('depthFilter');
+
+            difficultyFilter.addEventListener('change', applyFilters);
+            correctnessFilter.addEventListener('change', applyFilters);
+            questionTypeFilter.addEventListener('change', applyFilters);
+            depthFilter.addEventListener('input', applyFilters);
+
+            document.getElementById('prevPage').addEventListener('click', () => {
+                if (currentPage > 1) {
+                    currentPage--;
+                    renderTable();
+                }
+            });
+
+            document.getElementById('nextPage').addEventListener('click', () => {
+                const maxPage = Math.ceil(filteredResults.length / itemsPerPage);
+                if (currentPage < maxPage) {
+                    currentPage++;
+                    renderTable();
+                }
+            });
+        }
+
+        function applyFilters() {
+            const difficultyFilter = document.getElementById('difficultyFilter').value;
+            const correctnessFilter = document.getElementById('correctnessFilter').value;
+            const questionTypeFilter = document.getElementById('questionTypeFilter').value;
+            const depthFilter = document.getElementById('depthFilter').value;
+
+            filteredResults = jsonData.task1_results.filter(result => {
+                if (difficultyFilter !== 'all' && result.difficulty !== difficultyFilter) {
+                    return false;
+                }
+                if (correctnessFilter === 'correct' && !result.is_correct) {
+                    return false;
+                }
+                if (correctnessFilter === 'incorrect' && result.is_correct) {
+                    return false;
+                }
+                if (questionTypeFilter !== 'all' && result.question_type !== questionTypeFilter) {
+                    return false;
+                }
+                if (depthFilter && result.tree_depth != depthFilter) {
+                    return false;
+                }
+                return true;
+            });
+
+            currentPage = 1;
+            renderTable();
+        }
+
+        function renderTable() {
+            const start = (currentPage - 1) * itemsPerPage;
+            const end = start + itemsPerPage;
+            const pageResults = filteredResults.slice(start, end);
+
+            let tableHTML = `
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Sample ID</th>
+                            <th>Question Type</th>
+                            <th>Difficulty</th>
+                            <th>Tree Depth</th>
+                            <th>Expected</th>
+                            <th>Response</th>
+                            <th>Correct</th>
+                            <th>Similarity</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+            `;
+
+            pageResults.forEach(result => {
+                const correctClass = result.is_correct ? 'correct' : 'incorrect';
+                const correctSymbol = result.is_correct ? '✓' : '✗';
+                
+                tableHTML += `
+                    <tr>
+                        <td>${result.sample_id}</td>
+                        <td>${result.question_type.replace(/_/g, ' ')}</td>
+                        <td>${result.difficulty}</td>
+                        <td>${result.tree_depth}</td>
+                        <td>${result.expected_answer}</td>
+                        <td>${result.model_response ? result.model_response.substring(result.model_response.indexOf('### My answer is:') + 17).trim().substring(0, 50) : 'N/A'}</td>
+                        <td class="${correctClass}">${correctSymbol}</td>
+                        <td>${result.similarity ? result.similarity.toFixed(3) : 'N/A'}</td>
+                        <td><button onclick="showDetails(${result.sample_id})" style="padding: 5px 10px; background: #667eea; color: white; border: none; border-radius: 3px; cursor: pointer;">View</button></td>
+                    </tr>
+                `;
+            });
+
+            tableHTML += `
+                    </tbody>
+                </table>
+            `;
+
+            document.getElementById('tableContainer').innerHTML = tableHTML;
+
+            // Update pagination
+            const maxPage = Math.ceil(filteredResults.length / itemsPerPage);
+            document.getElementById('pageInfo').textContent = `Page ${currentPage} of ${maxPage} (${filteredResults.length} results)`;
+            document.getElementById('prevPage').disabled = currentPage === 1;
+            document.getElementById('nextPage').disabled = currentPage === maxPage || maxPage === 0;
+        }
+
+        function showDetails(sampleId) {
+            const result = jsonData.task1_results.find(r => r.sample_id === sampleId);
+            if (!result) return;
+
+            const modalBody = document.getElementById('modalBody');
+            modalBody.innerHTML = `
+                <h3>Sample ID: ${result.sample_id}</h3>
+                <p><strong>Task Type:</strong> ${result.task_type}</p>
+                <p><strong>Question Type:</strong> ${result.question_type.replace(/_/g, ' ')}</p>
+                <p><strong>Difficulty:</strong> ${result.difficulty}</p>
+                <p><strong>Tree Depth:</strong> ${result.tree_depth}</p>
+                <p><strong>Expected Answer:</strong> ${result.expected_answer}</p>
+                <p><strong>Correct:</strong> ${result.is_correct ? '✓ Yes' : '✗ No'}</p>
+                <p><strong>Similarity:</strong> ${result.similarity ? result.similarity.toFixed(3) : 'N/A'}</p>
+                
+                <h4>Prompt:</h4>
+                <pre>${result.prompt}</pre>
+                
+                <h4>Model Response:</h4>
+                <pre>${result.model_response || 'N/A'}</pre>
+            `;
+
+            // Reset modal position and size
+            modalContent.style.width = '80%';
+            modalContent.style.height = 'auto';
+            modalContent.style.maxWidth = '1000px';
+            modalContent.style.left = '50%';
+            modalContent.style.top = '50%';
+            modalContent.style.transform = 'translate(-50%, -50%)';
+            modalContent.classList.remove('fullscreen');
+
+            modal.style.display = "block";
+        }
+
+        // Keyboard shortcuts
+        document.addEventListener('keydown', function(e) {
+            if (modal.style.display === 'block') {
+                // ESC to close
+                if (e.key === 'Escape') {
+                    modal.style.display = "none";
+                    modalContent.classList.remove('fullscreen');
+                }
+                // F11 to toggle fullscreen
+                if (e.key === 'F11') {
+                    e.preventDefault();
+                    modalContent.classList.toggle('fullscreen');
+                }
+            }
+        });
+    </script>
+</body>
+</html>

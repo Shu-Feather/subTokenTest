@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benchmark Results Visualization</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            padding: 30px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+        }
+
+        .upload-section {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 30px;
+            border: 3px dashed #667eea;
+            border-radius: 10px;
+            background: #f8f9ff;
+        }
+
+        .upload-section input[type="file"] {
+            display: none;
+        }
+
+        .upload-label {
+            display: inline-block;
+            padding: 15px 30px;
+            background: #667eea;
+            color: white;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1.1em;
+            transition: all 0.3s;
+        }
+
+        .upload-label:hover {
+            background: #764ba2;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .stat-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .stat-card h3 {
+            font-size: 0.9em;
+            opacity: 0.9;
+            margin-bottom: 10px;
+        }
+
+        .stat-card .value {
+            font-size: 2.5em;
+            font-weight: bold;
+        }
+
+        .charts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .chart-container {
+            background: #f8f9ff;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .chart-container h2 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 1.3em;
+            text-align: center;
+        }
+
+        .details-section {
+            margin-top: 40px;
+        }
+
+        .details-section h2 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 1.5em;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        thead {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+        }
+
+        tbody tr:nth-child(even) {
+            background: #f8f9ff;
+        }
+
+        tbody tr:hover {
+            background: #e8e9ff;
+        }
+
+        .correct {
+            color: #22c55e;
+            font-weight: bold;
+        }
+
+        .incorrect {
+            color: #ef4444;
+            font-weight: bold;
+        }
+
+        .filter-section {
+            margin-bottom: 20px;
+            padding: 20px;
+            background: #f8f9ff;
+            border-radius: 10px;
+        }
+
+        .filter-section label {
+            margin-right: 15px;
+            font-weight: 500;
+        }
+
+        .filter-section select {
+            padding: 8px 15px;
+            border: 2px solid #667eea;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+        }
+
+        .no-data {
+            text-align: center;
+            padding: 50px;
+            color: #666;
+            font-size: 1.2em;
+        }
+
+        .view-btn {
+            background: #667eea;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 0.9em;
+            transition: all 0.3s;
+        }
+
+        .view-btn:hover {
+            background: #764ba2;
+            transform: scale(1.05);
+        }
+
+        /* Modal styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.6);
+            animation: fadeIn 0.3s;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .modal-content {
+            background-color: white;
+            margin: 2% auto;
+            padding: 0;
+            border-radius: 15px;
+            width: 90%;
+            max-width: 1200px;
+            max-height: 90vh;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+            animation: slideIn 0.3s;
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .modal-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .modal-header h2 {
+            margin: 0;
+            font-size: 1.5em;
+        }
+
+        .close {
+            color: white;
+            font-size: 35px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+            line-height: 1;
+        }
+
+        .close:hover {
+            transform: scale(1.2);
+        }
+
+        .modal-body {
+            padding: 30px;
+            max-height: calc(90vh - 80px);
+            overflow-y: auto;
+        }
+
+        .detail-section {
+            margin-bottom: 25px;
+            padding: 20px;
+            background: #f8f9ff;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+        }
+
+        .detail-section h3 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 1.2em;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .detail-section .content {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+            line-height: 1.6;
+            max-height: 300px;
+            overflow-y: auto;
+            border: 1px solid #e0e0e0;
+        }
+
+        .metadata {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+
+        .metadata-item {
+            background: #f8f9ff;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #764ba2;
+        }
+
+        .metadata-item label {
+            font-weight: bold;
+            color: #764ba2;
+            display: block;
+            margin-bottom: 5px;
+            font-size: 0.9em;
+        }
+
+        .metadata-item value {
+            color: #333;
+            font-size: 1.1em;
+        }
+
+        .icon {
+            font-size: 1.2em;
+        }
+
+        /* Scrollbar styling */
+        .modal-body::-webkit-scrollbar,
+        .detail-section .content::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .modal-body::-webkit-scrollbar-track,
+        .detail-section .content::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 10px;
+        }
+
+        .modal-body::-webkit-scrollbar-thumb,
+        .detail-section .content::-webkit-scrollbar-thumb {
+            background: #667eea;
+            border-radius: 10px;
+        }
+
+        .modal-body::-webkit-scrollbar-thumb:hover,
+        .detail-section .content::-webkit-scrollbar-thumb:hover {
+            background: #764ba2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎯 Benchmark Results Dashboard</h1>
+        
+        <div class="upload-section">
+            <input type="file" id="fileInput" accept=".json">
+            <label for="fileInput" class="upload-label">📁 Upload JSON File</label>
+            <p id="fileName" style="margin-top: 15px; color: #667eea; font-weight: 500;"></p>
+        </div>
+
+        <div id="content" style="display: none;">
+            <div class="filter-section">
+                <label for="taskTypeFilter">Task Type:</label>
+                <select id="taskTypeFilter">
+                    <option value="all">All</option>
+                </select>
+                
+                <label for="difficultyFilter" style="margin-left: 20px;">Difficulty:</label>
+                <select id="difficultyFilter">
+                    <option value="all">All</option>
+                </select>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>Total Tasks</h3>
+                    <div class="value" id="totalTasks">0</div>
+                </div>
+                <div class="stat-card">
+                    <h3>Valid Results</h3>
+                    <div class="value" id="validResults">0</div>
+                </div>
+                <div class="stat-card">
+                    <h3>Correct Answers</h3>
+                    <div class="value" id="correctAnswers">0</div>
+                </div>
+                <div class="stat-card">
+                    <h3>Accuracy Rate</h3>
+                    <div class="value" id="accuracyRate">0%</div>
+                </div>
+            </div>
+
+            <div class="charts-grid">
+                <div class="chart-container">
+                    <h2>Results Overview</h2>
+                    <canvas id="overviewChart"></canvas>
+                </div>
+                <div class="chart-container">
+                    <h2>Accuracy by Task Type</h2>
+                    <canvas id="taskTypeChart"></canvas>
+                </div>
+                <div class="chart-container">
+                    <h2>Accuracy by Difficulty</h2>
+                    <canvas id="difficultyChart"></canvas>
+                </div>
+                <div class="chart-container">
+                    <h2>Task Distribution</h2>
+                    <canvas id="distributionChart"></canvas>
+                </div>
+            </div>
+
+            <div class="details-section">
+                <h2>📊 Detailed Results</h2>
+                <table id="resultsTable">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Timestamp</th>
+                            <th>Task Type</th>
+                            <th>Difficulty</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div id="noData" class="no-data">
+            Please upload a JSON file to view the results
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="detailModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>📋 Task Details</h2>
+                <span class="close">&times;</span>
+            </div>
+            <div class="modal-body" id="modalBody">
+                <!-- Content will be dynamically inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let allData = [];
+        let filteredData = [];
+        let charts = {};
+
+        document.getElementById('fileInput').addEventListener('change', handleFileUpload);
+        document.getElementById('taskTypeFilter').addEventListener('change', applyFilters);
+        document.getElementById('difficultyFilter').addEventListener('change', applyFilters);
+
+        // Modal functionality
+        const modal = document.getElementById('detailModal');
+        const closeBtn = document.getElementsByClassName('close')[0];
+
+        closeBtn.onclick = function() {
+            modal.style.display = 'none';
+        }
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+        }
+
+        function handleFileUpload(event) {
+            const file = event.target.files[0];
+            if (!file) return;
+
+            document.getElementById('fileName').textContent = `Selected: ${file.name}`;
+
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                try {
+                    allData = JSON.parse(e.target.result);
+                    initializeFilters();
+                    applyFilters();
+                    document.getElementById('content').style.display = 'block';
+                    document.getElementById('noData').style.display = 'none';
+                } catch(error) {
+                    alert('Error parsing JSON file: ' + error.message);
+                }
+            };
+            reader.readAsText(file);
+        }
+
+        function initializeFilters() {
+            const taskTypes = [...new Set(allData.map(item => item.task_type))];
+            const difficulties = [...new Set(allData.map(item => item.difficulty || item.additional_info?.difficulty).filter(d => d))];
+
+            const taskTypeFilter = document.getElementById('taskTypeFilter');
+            const difficultyFilter = document.getElementById('difficultyFilter');
+
+            taskTypeFilter.innerHTML = '<option value="all">All</option>';
+            taskTypes.forEach(type => {
+                const option = document.createElement('option');
+                option.value = type;
+                option.textContent = type;
+                taskTypeFilter.appendChild(option);
+            });
+
+            difficultyFilter.innerHTML = '<option value="all">All</option>';
+            difficulties.forEach(diff => {
+                const option = document.createElement('option');
+                option.value = diff;
+                option.textContent = diff;
+                difficultyFilter.appendChild(option);
+            });
+        }
+
+        function applyFilters() {
+            const taskTypeFilter = document.getElementById('taskTypeFilter').value;
+            const difficultyFilter = document.getElementById('difficultyFilter').value;
+
+            filteredData = allData.filter(item => {
+                // Only include items with non-empty model_response
+                if (!item.model_response || item.model_response.trim() === '') {
+                    return false;
+                }
+
+                const taskTypeMatch = taskTypeFilter === 'all' || item.task_type === taskTypeFilter;
+                const difficulty = item.difficulty || item.additional_info?.difficulty;
+                const difficultyMatch = difficultyFilter === 'all' || difficulty === difficultyFilter;
+
+                return taskTypeMatch && difficultyMatch;
+            });
+
+            updateDashboard();
+        }
+
+        function updateDashboard() {
+            updateStats();
+            updateCharts();
+            updateTable();
+        }
+
+        function updateStats() {
+            const totalInData = allData.length;
+            const validResults = filteredData.length;
+            const correctAnswers = filteredData.filter(item => item.is_correct).length;
+            const accuracyRate = validResults > 0 ? ((correctAnswers / validResults) * 100).toFixed(2) : 0;
+
+            document.getElementById('totalTasks').textContent = totalInData;
+            document.getElementById('validResults').textContent = validResults;
+            document.getElementById('correctAnswers').textContent = correctAnswers;
+            document.getElementById('accuracyRate').textContent = accuracyRate + '%';
+        }
+
+        function updateCharts() {
+            updateOverviewChart();
+            updateTaskTypeChart();
+            updateDifficultyChart();
+            updateDistributionChart();
+        }
+
+        function updateOverviewChart() {
+            const ctx = document.getElementById('overviewChart').getContext('2d');
+            const correct = filteredData.filter(item => item.is_correct).length;
+            const incorrect = filteredData.length - correct;
+
+            if (charts.overview) charts.overview.destroy();
+
+            charts.overview = new Chart(ctx, {
+                type: 'doughnut',
+                data: {
+                    labels: ['Correct', 'Incorrect'],
+                    datasets: [{
+                        data: [correct, incorrect],
+                        backgroundColor: ['#22c55e', '#ef4444'],
+                        borderWidth: 2,
+                        borderColor: '#fff'
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: true,
+                    plugins: {
+                        legend: {
+                            position: 'bottom'
+                        }
+                    }
+                }
+            });
+        }
+
+        function updateTaskTypeChart() {
+            const ctx = document.getElementById('taskTypeChart').getContext('2d');
+            const taskTypes = {};
+
+            filteredData.forEach(item => {
+                if (!taskTypes[item.task_type]) {
+                    taskTypes[item.task_type] = { correct: 0, total: 0 };
+                }
+                taskTypes[item.task_type].total++;
+                if (item.is_correct) taskTypes[item.task_type].correct++;
+            });
+
+            const labels = Object.keys(taskTypes);
+            const accuracies = labels.map(type => 
+                taskTypes[type].total > 0 ? (taskTypes[type].correct / taskTypes[type].total * 100).toFixed(2) : 0
+            );
+
+            if (charts.taskType) charts.taskType.destroy();
+
+            charts.taskType = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        label: 'Accuracy (%)',
+                        data: accuracies,
+                        backgroundColor: '#667eea',
+                        borderColor: '#764ba2',
+                        borderWidth: 2
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: true,
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            max: 100
+                        }
+                    },
+                    plugins: {
+                        legend: {
+                            display: false
+                        }
+                    }
+                }
+            });
+        }
+
+        function updateDifficultyChart() {
+            const ctx = document.getElementById('difficultyChart').getContext('2d');
+            const difficulties = {};
+
+            filteredData.forEach(item => {
+                const diff = item.difficulty || item.additional_info?.difficulty || 'unknown';
+                if (!difficulties[diff]) {
+                    difficulties[diff] = { correct: 0, total: 0 };
+                }
+                difficulties[diff].total++;
+                if (item.is_correct) difficulties[diff].correct++;
+            });
+
+            const labels = Object.keys(difficulties);
+            const accuracies = labels.map(diff => 
+                difficulties[diff].total > 0 ? (difficulties[diff].correct / difficulties[diff].total * 100).toFixed(2) : 0
+            );
+
+            if (charts.difficulty) charts.difficulty.destroy();
+
+            charts.difficulty = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        label: 'Accuracy (%)',
+                        data: accuracies,
+                        backgroundColor: '#764ba2',
+                        borderColor: '#667eea',
+                        borderWidth: 2
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: true,
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            max: 100
+                        }
+                    },
+                    plugins: {
+                        legend: {
+                            display: false
+                        }
+                    }
+                }
+            });
+        }
+
+        function updateDistributionChart() {
+            const ctx = document.getElementById('distributionChart').getContext('2d');
+            const taskTypes = {};
+
+            filteredData.forEach(item => {
+                taskTypes[item.task_type] = (taskTypes[item.task_type] || 0) + 1;
+            });
+
+            const labels = Object.keys(taskTypes);
+            const data = Object.values(taskTypes);
+
+            const colors = [
+                '#667eea', '#764ba2', '#f093fb', '#4facfe',
+                '#43e97b', '#fa709a', '#fee140', '#30cfd0'
+            ];
+
+            if (charts.distribution) charts.distribution.destroy();
+
+            charts.distribution = new Chart(ctx, {
+                type: 'pie',
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        data: data,
+                        backgroundColor: colors.slice(0, labels.length),
+                        borderWidth: 2,
+                        borderColor: '#fff'
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: true,
+                    plugins: {
+                        legend: {
+                            position: 'bottom'
+                        }
+                    }
+                }
+            });
+        }
+
+        function updateTable() {
+            const tbody = document.getElementById('tableBody');
+            tbody.innerHTML = '';
+
+            filteredData.forEach((item, index) => {
+                const row = document.createElement('tr');
+                
+                const timestamp = new Date(item.timestamp).toLocaleString();
+                const difficulty = item.difficulty || item.additional_info?.difficulty || 'N/A';
+                const status = item.is_correct ? 
+                    '<span class="correct">✓ Correct</span>' : 
+                    '<span class="incorrect">✗ Incorrect</span>';
+
+                row.innerHTML = `
+                    <td>${index + 1}</td>
+                    <td>${timestamp}</td>
+                    <td>${item.task_type}</td>
+                    <td>${difficulty}</td>
+                    <td>${status}</td>
+                    <td><button class="view-btn" onclick="showDetails(${index})">View</button></td>
+                `;
+
+                tbody.appendChild(row);
+            });
+        }
+
+        function showDetails(index) {
+            const item = filteredData[index];
+            const modalBody = document.getElementById('modalBody');
+            
+            const timestamp = new Date(item.timestamp).toLocaleString();
+            const difficulty = item.difficulty || item.additional_info?.difficulty || 'N/A';
+            const statusClass = item.is_correct ? 'correct' : 'incorrect';
+            const statusText = item.is_correct ? '✓ Correct' : '✗ Incorrect';
+
+            modalBody.innerHTML = `
+                <div class="metadata">
+                    <div class="metadata-item">
+                        <label>Timestamp</label>
+                        <value>${timestamp}</value>
+                    </div>
+                    <div class="metadata-item">
+                        <label>Task Type</label>
+                        <value>${item.task_type}</value>
+                    </div>
+                    <div class="metadata-item">
+                        <label>Difficulty</label>
+                        <value>${difficulty}</value>
+                    </div>
+                    <div class="metadata-item">
+                        <label>Status</label>
+                        <value class="${statusClass}">${statusText}</value>
+                    </div>
+                </div>
+
+                <div class="detail-section">
+                    <h3><span class="icon">📝</span> Prompt</h3>
+                    <div class="content">${escapeHtml(item.prompt || 'N/A')}</div>
+                </div>
+
+                <div class="detail-section">
+                    <h3><span class="icon">🤖</span> Model Response</h3>
+                    <div class="content">${escapeHtml(item.model_response || 'N/A')}</div>
+                </div>
+
+                <div class="detail-section">
+                    <h3><span class="icon">🎯</span> Golden Answer</h3>
+                    <div class="content">${escapeHtml(item.golden_answer || 'N/A')}</div>
+                </div>
+
+                <div class="detail-section">
+                    <h3><span class="icon">📤</span> Extracted Answer</h3>
+                    <div class="content">${escapeHtml(item.extracted_answer || 'N/A')}</div>
+                </div>
+            `;
+
+            modal.style.display = 'block';
+        }
+
+        function escapeHtml(text) {
+            const map = {
+                '&': '&amp;',
+                '<': '&lt;',
+                '>': '&gt;',
+                '"': '&quot;',
+                "'": '&#039;'
+            };
+            return text.replace(/[&<>"']/g, m => map[m]);
+        }
+    </script>
+</body>
+</html>

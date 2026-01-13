@@ -1,0 +1,580 @@
+[
+  {
+    "description": "The table represents the title of the books, the authors of those books, and the year the books were published.",
+    "table_data": [
+      [
+        "\"To Kill a Mockingbird\"",
+        "Harper Lee",
+        "1960"
+      ],
+      [
+        "\"The Great Gatsby\"",
+        "F. Scott Fitzgerald",
+        "1925"
+      ],
+      [
+        "\"Pride and Prejudice\"",
+        "Jane Austen",
+        "1813"
+      ]
+    ],
+    "context": "The table represents the title of the books, the authors of those books, and the year the books were published. row 1: \"To Kill a Mockingbird\", Harper Lee, 1960 row 2: \"The Great Gatsby\", F. Scott Fitzgerald, 1925 row 3: \"Pride and Prejudice\", Jane Austen, 1813",
+    "num_rows": 3,
+    "num_cols": 3
+  },
+  {
+    "description": "This table represents the names of three universities, along with their respective establishment year and current student population.",
+    "table_data": [
+      [
+        "Harvard University",
+        "1636",
+        "20,739 students"
+      ],
+      [
+        "Stanford University",
+        "1885",
+        "16,424 students"
+      ],
+      [
+        "University of Oxford",
+        "1096",
+        "23,975 students"
+      ]
+    ],
+    "context": "This table represents the names of three universities, along with their respective establishment year and current student population. row 1: Harvard University, 1636, 20,739 students row 2: Stanford University, 1885, 16,424 students row 3: University of Oxford, 1096, 23,975 students",
+    "num_rows": 3,
+    "num_cols": 3
+  },
+  {
+    "description": "The table represents some of the world's cities along with their country and population.",
+    "table_data": [
+      [
+        "New York City",
+        "United States",
+        "8.4 million"
+      ],
+      [
+        "London",
+        "United Kingdom",
+        "9.3 million"
+      ],
+      [
+        "Sydney",
+        "Australia",
+        "5.3 million"
+      ]
+    ],
+    "context": "The table represents some of the world's cities along with their country and population. row 1: New York City, United States, 8.4 million row 2: London, United Kingdom, 9.3 million row 3: Sydney, Australia, 5.3 million",
+    "num_rows": 3,
+    "num_cols": 3
+  },
+  {
+    "description": "The table represents a list of universities with their respective locations and the year they were established.",
+    "table_data": [
+      [
+        "Harvard University",
+        "Cambridge, Massachusetts, USA",
+        "1636"
+      ],
+      [
+        "University of Cambridge",
+        "Cambridge, England, UK",
+        "1209"
+      ],
+      [
+        "The Australian National University",
+        "Canberra, Australia",
+        "1946"
+      ]
+    ],
+    "context": "The table represents a list of universities with their respective locations and the year they were established. row 1: Harvard University, Cambridge, Massachusetts, USA, 1636 row 2: University of Cambridge, Cambridge, England, UK, 1209 row 3: The Australian National University, Canberra, Australia, 1946",
+    "num_rows": 3,
+    "num_cols": 3
+  },
+  {
+    "description": "This table represents a list of three companies along with their founding year and the number of employees they have.",
+    "table_data": [
+      [
+        "Microsoft",
+        "Founded in 1975",
+        "161,000 employees"
+      ],
+      [
+        "Tesla Inc.",
+        "Founded in 2003",
+        "70,757 employees"
+      ],
+      [
+        "Unilever",
+        "Founded in 1929",
+        "149,867 employees"
+      ]
+    ],
+    "context": "This table represents a list of three companies along with their founding year and the number of employees they have. row 1: Microsoft, Founded in 1975, 161,000 employees row 2: Tesla Inc., Founded in 2003, 70,757 employees row 3: Unilever, Founded in 1929, 149,867 employees",
+    "num_rows": 3,
+    "num_cols": 3
+  },
+  {
+    "description": "This table represents different products along with their prices and the countries where they are primarily produced.",
+    "table_data": [
+      [
+        "Apple iPhone 12",
+        "$699",
+        "United States"
+      ],
+      [
+        "Samsung Galaxy S21",
+        "$799",
+        "South Korea"
+      ],
+      [
+        "Sony PlayStation 5",
+        "$499",
+        "Japan"
+      ]
+    ],
+    "context": "This table represents different products along with their prices and the countries where they are primarily produced. row 1: Apple iPhone 12, $699, United States row 2: Samsung Galaxy S21, $799, South Korea row 3: Sony PlayStation 5, $499, Japan",
+    "num_rows": 3,
+    "num_cols": 3
+  },
+  {
+    "description": "The table represents various electronic products along with their brand names and their average market prices.",
+    "table_data": [
+      [
+        "iPhone 12 Pro Max",
+        "Apple",
+        "$1099"
+      ],
+      [
+        "Galaxy S21 Ultra",
+        "Samsung",
+        "$1199"
+      ],
+      [
+        "ThinkPad X1 Carbon",
+        "Lenovo",
+        "$1421"
+      ]
+    ],
+    "context": "The table represents various electronic products along with their brand names and their average market prices. row 1: iPhone 12 Pro Max, Apple, $1099 row 2: Galaxy S21 Ultra, Samsung, $1199 row 3: ThinkPad X1 Carbon, Lenovo, $1421",
+    "num_rows": 3,
+    "num_cols": 3
+  },
+  {
+    "description": "The table represents notable athletes, their sports, and the country they represent.",
+    "table_data": [
+      [
+        "Serena Williams",
+        "Tennis",
+        "United States"
+      ],
+      [
+        "Lionel Messi",
+        "Football",
+        "Argentina"
+      ],
+      [
+        "Usain Bolt",
+        "Track and Field",
+        "Jamaica"
+      ]
+    ],
+    "context": "The table represents notable athletes, their sports, and the country they represent. row 1: Serena Williams, Tennis, United States row 2: Lionel Messi, Football, Argentina row 3: Usain Bolt, Track and Field, Jamaica",
+    "num_rows": 3,
+    "num_cols": 3
+  },
+  {
+    "description": "The table represents the name of universities, their established year, and the number of students currently enrolled.",
+    "table_data": [
+      [
+        "Harvard University",
+        "1636",
+        "22,000 students"
+      ],
+      [
+        "University of Oxford",
+        "1096",
+        "24,000 students"
+      ],
+      [
+        "Massachusetts Institute of Technology (MIT)",
+        "1861",
+        "11,500 students"
+      ]
+    ],
+    "context": "The table represents the name of universities, their established year, and the number of students currently enrolled. row 1: Harvard University, 1636, 22,000 students row 2: University of Oxford, 1096, 24,000 students row 3: Massachusetts Institute of Technology (MIT), 1861, 11,500 students",
+    "num_rows": 3,
+    "num_cols": 3
+  },
+  {
+    "description": "The table represents three different companies with their respective headquarters location and the year they were founded.",
+    "table_data": [
+      [
+        "Google",
+        "Mountain View, California, USA",
+        "1998"
+      ],
+      [
+        "Siemens AG",
+        "Munich, Bavaria, Germany",
+        "1847"
+      ],
+      [
+        "Tata Consultancy Services",
+        "Mumbai, Maharashtra, India",
+        "1968"
+      ]
+    ],
+    "context": "The table represents three different companies with their respective headquarters location and the year they were founded. row 1: Google, Mountain View, California, USA, 1998 row 2: Siemens AG, Munich, Bavaria, Germany, 1847 row 3: Tata Consultancy Services, Mumbai, Maharashtra, India, 1968",
+    "num_rows": 3,
+    "num_cols": 3
+  },
+  {
+    "description": "This table represents the information about three different books. The first column includes the book's title, the second column contains the genre of the book, and the third column has the year of publication.",
+    "table_data": [
+      [
+        "To Kill a Mockingbird",
+        "Fiction",
+        "1960"
+      ],
+      [
+        "A Brief History of Time",
+        "Non-fiction",
+        "1988"
+      ],
+      [
+        "Harry Potter and the Philosopher's Stone",
+        "Fantasy",
+        "1997"
+      ]
+    ],
+    "context": "This table represents the information about three different books. The first column includes the book's title, the second column contains the genre of the book, and the third column has the year of publication. row 1: To Kill a Mockingbird, Fiction, 1960 row 2: A Brief History of Time, Non-fiction, 1988 row 3: Harry Potter and the Philosopher's Stone, Fantasy, 1997",
+    "num_rows": 3,
+    "num_cols": 3
+  },
+  {
+    "description": "This table represents various cities along with their respective countries and populations.",
+    "table_data": [
+      [
+        "New York",
+        "United States",
+        "8.4 million"
+      ],
+      [
+        "London",
+        "United Kingdom",
+        "9 million"
+      ],
+      [
+        "Tokyo",
+        "Japan",
+        "37.4 million"
+      ]
+    ],
+    "context": "This table represents various cities along with their respective countries and populations. row 1: New York, United States, 8.4 million row 2: London, United Kingdom, 9 million row 3: Tokyo, Japan, 37.4 million",
+    "num_rows": 3,
+    "num_cols": 3
+  },
+  {
+    "description": "The table represents a list of athletes, along with their respective sports and recent achievements.",
+    "table_data": [
+      [
+        "Serena Williams",
+        "Tennis",
+        "Won Australian Open 2021"
+      ],
+      [
+        "Cristiano Ronaldo",
+        "Football",
+        "Scored 30 goals in Serie A 2020/2021"
+      ],
+      [
+        "LeBron James",
+        "Basketball",
+        "NBA Champion 2020 with LA Lakers"
+      ]
+    ],
+    "context": "The table represents a list of athletes, along with their respective sports and recent achievements. row 1: Serena Williams, Tennis, Won Australian Open 2021 row 2: Cristiano Ronaldo, Football, Scored 30 goals in Serie A 2020/2021 row 3: LeBron James, Basketball, NBA Champion 2020 with LA Lakers",
+    "num_rows": 3,
+    "num_cols": 3
+  },
+  {
+    "description": "The table represents athletes from different sports, their current teams, and total career points.",
+    "table_data": [
+      [
+        "LeBron James",
+        "Los Angeles Lakers",
+        "35236"
+      ],
+      [
+        "Tom Brady",
+        "Tampa Bay Buccaneers",
+        "581"
+      ],
+      [
+        "Serena Williams",
+        "Tennis (No team)",
+        "23000"
+      ]
+    ],
+    "context": "The table represents athletes from different sports, their current teams, and total career points. row 1: LeBron James, Los Angeles Lakers, 35236 row 2: Tom Brady, Tampa Bay Buccaneers, 581 row 3: Serena Williams, Tennis (No team), 23000",
+    "num_rows": 3,
+    "num_cols": 3
+  },
+  {
+    "description": "The table represents different countries with their respective capitals and population.",
+    "table_data": [
+      [
+        "United States",
+        "Washington D.C.",
+        "331,449,281"
+      ],
+      [
+        "Australia",
+        "Canberra",
+        "25,499,883"
+      ],
+      [
+        "India",
+        "New Delhi",
+        "1,380,004,385"
+      ]
+    ],
+    "context": "The table represents different countries with their respective capitals and population. row 1: United States, Washington D.C., 331,449,281 row 2: Australia, Canberra, 25,499,883 row 3: India, New Delhi, 1,380,004,385",
+    "num_rows": 3,
+    "num_cols": 3
+  },
+  {
+    "description": "This table represents a list of products with their corresponding prices and locations where they are majorly manufactured.",
+    "table_data": [
+      [
+        "iPhone 12 Pro Max",
+        "$1099",
+        "United States"
+      ],
+      [
+        "Samsung Galaxy S21",
+        "$799",
+        "South Korea"
+      ],
+      [
+        "Lenovo ThinkPad X1 Carbon",
+        "$1200",
+        "China"
+      ]
+    ],
+    "context": "This table represents a list of products with their corresponding prices and locations where they are majorly manufactured. row 1: iPhone 12 Pro Max, $1099, United States row 2: Samsung Galaxy S21, $799, South Korea row 3: Lenovo ThinkPad X1 Carbon, $1200, China",
+    "num_rows": 3,
+    "num_cols": 3
+  },
+  {
+    "description": "The table represents a list of universities along with their country of location and their world ranking according to the QS World University Rankings 2021.",
+    "table_data": [
+      [
+        "Massachusetts Institute of Technology (MIT)",
+        "United States",
+        "1"
+      ],
+      [
+        "University of Oxford",
+        "United Kingdom",
+        "2"
+      ],
+      [
+        "Swiss Federal Institute of Technology",
+        "Switzerland",
+        "6"
+      ]
+    ],
+    "context": "The table represents a list of universities along with their country of location and their world ranking according to the QS World University Rankings 2021. row 1: Massachusetts Institute of Technology (MIT), United States, 1 row 2: University of Oxford, United Kingdom, 2 row 3: Swiss Federal Institute of Technology, Switzerland, 6",
+    "num_rows": 3,
+    "num_cols": 3
+  },
+  {
+    "description": "The table represents the title of the movie, the director of the movie, and the year the movie was released.",
+    "table_data": [
+      [
+        "The Dark Knight",
+        "Christopher Nolan",
+        "2008"
+      ],
+      [
+        "The Shape of Water",
+        "Guillermo del Toro",
+        "2017"
+      ],
+      [
+        "Parasite",
+        "Bong Joon-ho",
+        "2019"
+      ]
+    ],
+    "context": "The table represents the title of the movie, the director of the movie, and the year the movie was released. row 1: The Dark Knight, Christopher Nolan, 2008 row 2: The Shape of Water, Guillermo del Toro, 2017 row 3: Parasite, Bong Joon-ho, 2019",
+    "num_rows": 3,
+    "num_cols": 3
+  },
+  {
+    "description": "This table represents three different universities with their respective establishment year and student population count.",
+    "table_data": [
+      [
+        "University of Oxford",
+        "1096",
+        "24000"
+      ],
+      [
+        "Massachusetts Institute of Technology (MIT)",
+        "1861",
+        "11466"
+      ],
+      [
+        "Indian Institute of Technology, Delhi",
+        "1961",
+        "11000"
+      ]
+    ],
+    "context": "This table represents three different universities with their respective establishment year and student population count. row 1: University of Oxford, 1096, 24000 row 2: Massachusetts Institute of Technology (MIT), 1861, 11466 row 3: Indian Institute of Technology, Delhi, 1961, 11000",
+    "num_rows": 3,
+    "num_cols": 3
+  },
+  {
+    "description": "The table represents various tech companies along with their year of establishment and the city where their headquarters are located.",
+    "table_data": [
+      [
+        "Apple Inc.",
+        "1976",
+        "Cupertino"
+      ],
+      [
+        "Microsoft Corporation",
+        "1975",
+        "Redmond"
+      ],
+      [
+        "Alphabet Inc. (Google)",
+        "1998",
+        "Mountain View"
+      ]
+    ],
+    "context": "The table represents various tech companies along with their year of establishment and the city where their headquarters are located. row 1: Apple Inc., 1976, Cupertino row 2: Microsoft Corporation, 1975, Redmond row 3: Alphabet Inc. (Google), 1998, Mountain View",
+    "num_rows": 3,
+    "num_cols": 3
+  },
+  {
+    "description": "This table provides data on various cities, specifying their country, population, and the year they were founded.",
+    "table_data": [
+      [
+        "New York City",
+        "United States",
+        "8.419 million",
+        "1624"
+      ],
+      [
+        "Tokyo",
+        "Japan",
+        "37.4 million",
+        "1457"
+      ],
+      [
+        "Sydney",
+        "Australia",
+        "5.23 million",
+        "1788"
+      ]
+    ],
+    "context": "This table provides data on various cities, specifying their country, population, and the year they were founded. row 1: New York City, United States, 8.419 million, 1624 row 2: Tokyo, Japan, 37.4 million, 1457 row 3: Sydney, Australia, 5.23 million, 1788",
+    "num_rows": 3,
+    "num_cols": 4
+  },
+  {
+    "description": "This table represents a selection of movies, with their release years and directors.",
+    "table_data": [
+      [
+        "Inception",
+        "2010",
+        "Christopher Nolan"
+      ],
+      [
+        "Titanic",
+        "1997",
+        "James Cameron"
+      ],
+      [
+        "The Shawshank Redemption",
+        "1994",
+        "Frank Darabont"
+      ]
+    ],
+    "context": "This table represents a selection of movies, with their release years and directors. row 1: Inception, 2010, Christopher Nolan row 2: Titanic, 1997, James Cameron row 3: The Shawshank Redemption, 1994, Frank Darabont",
+    "num_rows": 3,
+    "num_cols": 3
+  },
+  {
+    "description": "The table represents movies and their relevant attributes such as director and release year.",
+    "table_data": [
+      [
+        "Inception",
+        "Christopher Nolan",
+        "2010"
+      ],
+      [
+        "The Grand Budapest Hotel",
+        "Wes Anderson",
+        "2014"
+      ],
+      [
+        "Parasite",
+        "Bong Joon Ho",
+        "2019"
+      ]
+    ],
+    "context": "The table represents movies and their relevant attributes such as director and release year. row 1: Inception, Christopher Nolan, 2010 row 2: The Grand Budapest Hotel, Wes Anderson, 2014 row 3: Parasite, Bong Joon Ho, 2019",
+    "num_rows": 3,
+    "num_cols": 3
+  },
+  {
+    "description": "The table represents information about three different companies, including their names, the industry they belong to, and their headquarter locations.",
+    "table_data": [
+      [
+        "Microsoft",
+        "Technology",
+        "Redmond, Washington, USA"
+      ],
+      [
+        "Toyota Motor Corporation",
+        "Automotive",
+        "Toyota City, Aichi, Japan"
+      ],
+      [
+        "Unilever",
+        "Consumer Goods",
+        "London, United Kingdom and Rotterdam, Netherlands"
+      ]
+    ],
+    "context": "The table represents information about three different companies, including their names, the industry they belong to, and their headquarter locations. row 1: Microsoft, Technology, Redmond, Washington, USA row 2: Toyota Motor Corporation, Automotive, Toyota City, Aichi, Japan row 3: Unilever, Consumer Goods, London, United Kingdom and Rotterdam, Netherlands",
+    "num_rows": 3,
+    "num_cols": 3
+  },
+  {
+    "description": "This table represents different countries with their corresponding population and GDP per capita.",
+    "table_data": [
+      [
+        "United States",
+        "331,002,651",
+        "$63,544"
+      ],
+      [
+        "China",
+        "1,439,323,776",
+        "$10,098"
+      ],
+      [
+        "United Kingdom",
+        "67,886,011",
+        "$42,330"
+      ]
+    ],
+    "context": "This table represents different countries with their corresponding population and GDP per capita. row 1: United States, 331,002,651, $63,544 row 2: China, 1,439,323,776, $10,098 row 3: United Kingdom, 67,886,011, $42,330",
+    "num_rows": 3,
+    "num_cols": 3
+  }
+]

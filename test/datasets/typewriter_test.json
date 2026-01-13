@@ -1,0 +1,21 @@
+{
+  "task1": [
+    "communicating",
+    "rearranged",
+    "aristocratic",
+    "approximated",
+    "compulsory"
+  ],
+  "task2": [
+    "g ← m k c ← r j k w b ← q q ← b s ← u c ← e n d e m w b v w c q ← o ← a c t g ← k m w",
+    "s s u r m e f ← b ← t ← b i ← b m ← x n b n w b b w k ← y ← o p b c ← r ← o",
+    "l y y a ← q ← o c ← n n ← d ← j ← b g h l o h z ← u n r o y c ← w g",
+    "n g x b ← q v b ← i ← d z e l ← s o c y r d ← a j o l ← b j ← y z ← b",
+    "t ← y g e ← u e ← k e y ← u k ← r t g e s j b ← m ← f x j ← v w f ← r k ← h b u j n"
+  ],
+  "metadata": {
+    "difficulty": "hard",
+    "task1_samples": 5,
+    "task2_samples": 5
+  }
+}

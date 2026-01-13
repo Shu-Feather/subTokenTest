@@ -1,0 +1,599 @@
+[
+  {
+    "description": "The table represents the basic information about three different companies, including their names, the industry they operate in, and their founding year.",
+    "table_data": [
+      [
+        "\"Microsoft Corporation\"",
+        "\"Technology\"",
+        "\"1975\""
+      ],
+      [
+        "\"The Coca-Cola Company\"",
+        "\"Beverages\"",
+        "\"1886\""
+      ],
+      [
+        "\"Nike",
+        "Inc.\"",
+        "\"Sportswear\"",
+        "\"1964\""
+      ]
+    ],
+    "context": "The table represents the basic information about three different companies, including their names, the industry they operate in, and their founding year. row 1: \"Microsoft Corporation\", \"Technology\", \"1975\" row 2: \"The Coca-Cola Company\", \"Beverages\", \"1886\" row 3: \"Nike, Inc.\", \"Sportswear\", \"1964\"",
+    "num_rows": 3,
+    "num_cols": 3
+  },
+  {
+    "description": "The table represents a list of books and their relevant attributes, including their authors and publication years.",
+    "table_data": [
+      [
+        "\"To Kill a Mockingbird\"",
+        "Harper Lee",
+        "1960"
+      ],
+      [
+        "\"1984\"",
+        "George Orwell",
+        "1949"
+      ],
+      [
+        "\"The Great Gatsby\"",
+        "F. Scott Fitzgerald",
+        "1925"
+      ]
+    ],
+    "context": "The table represents a list of books and their relevant attributes, including their authors and publication years. row 1: \"To Kill a Mockingbird\", Harper Lee, 1960 row 2: \"1984\", George Orwell, 1949 row 3: \"The Great Gatsby\", F. Scott Fitzgerald, 1925",
+    "num_rows": 3,
+    "num_cols": 3
+  },
+  {
+    "description": "The table represents a list of athletes, their respective sports, and the number of medals they have won in the Olympics.",
+    "table_data": [
+      [
+        "Usain Bolt",
+        "Athletics",
+        "8"
+      ],
+      [
+        "Michael Phelps",
+        "Swimming",
+        "23"
+      ],
+      [
+        "Simone Biles",
+        "Gymnastics",
+        "7"
+      ]
+    ],
+    "context": "The table represents a list of athletes, their respective sports, and the number of medals they have won in the Olympics. row 1: Usain Bolt, Athletics, 8 row 2: Michael Phelps, Swimming, 23 row 3: Simone Biles, Gymnastics, 7",
+    "num_rows": 3,
+    "num_cols": 3
+  },
+  {
+    "description": "The table represents cities and lists their country and population.",
+    "table_data": [
+      [
+        "New York",
+        "United States",
+        "8.4 Million"
+      ],
+      [
+        "London",
+        "United Kingdom",
+        "8.9 Million"
+      ],
+      [
+        "Tokyo",
+        "Japan",
+        "37.4 Million"
+      ]
+    ],
+    "context": "The table represents cities and lists their country and population. row 1: New York, United States, 8.4 Million row 2: London, United Kingdom, 8.9 Million row 3: Tokyo, Japan, 37.4 Million",
+    "num_rows": 3,
+    "num_cols": 3
+  },
+  {
+    "description": "The table represents a list of movies with their corresponding release years and genres.",
+    "table_data": [
+      [
+        "\"The Godfather\"",
+        "1972",
+        "\"Crime",
+        "Drama\""
+      ],
+      [
+        "\"Star Wars: Episode IV - A New Hope\"",
+        "1977",
+        "\"Action",
+        "Adventure",
+        "Fantasy\""
+      ],
+      [
+        "\"The Shawshank Redemption\"",
+        "1994",
+        "\"Drama\""
+      ]
+    ],
+    "context": "The table represents a list of movies with their corresponding release years and genres. row 1: \"The Godfather\", 1972, \"Crime, Drama\" row 2: \"Star Wars: Episode IV - A New Hope\", 1977, \"Action, Adventure, Fantasy\" row 3: \"The Shawshank Redemption\", 1994, \"Drama\"",
+    "num_rows": 3,
+    "num_cols": 4
+  },
+  {
+    "description": "This table represents a listing of three different athletes, detailing their individual sport, and the country they represent.",
+    "table_data": [
+      [
+        "Serena Williams",
+        "Tennis",
+        "United States"
+      ],
+      [
+        "Lionel Messi",
+        "Football",
+        "Argentina"
+      ],
+      [
+        "Usain Bolt",
+        "Athletics",
+        "Jamaica"
+      ]
+    ],
+    "context": "This table represents a listing of three different athletes, detailing their individual sport, and the country they represent. row 1: Serena Williams, Tennis, United States row 2: Lionel Messi, Football, Argentina row 3: Usain Bolt, Athletics, Jamaica",
+    "num_rows": 3,
+    "num_cols": 3
+  },
+  {
+    "description": "The table represents three athletes, their sports, and their countries of origin.",
+    "table_data": [
+      [
+        "Serena Williams",
+        "Tennis",
+        "USA"
+      ],
+      [
+        "Lionel Messi",
+        "Football",
+        "Argentina"
+      ],
+      [
+        "Usain Bolt",
+        "Athletics",
+        "Jamaica"
+      ]
+    ],
+    "context": "The table represents three athletes, their sports, and their countries of origin. row 1: Serena Williams, Tennis, USA row 2: Lionel Messi, Football, Argentina row 3: Usain Bolt, Athletics, Jamaica",
+    "num_rows": 3,
+    "num_cols": 3
+  },
+  {
+    "description": "This table represents a list of universities and their relevant attributes, including the location of each university and the number of students enrolled.",
+    "table_data": [
+      [
+        "Harvard University",
+        "Cambridge",
+        "Massachusetts",
+        "20",
+        "000"
+      ],
+      [
+        "University of Oxford",
+        "Oxford",
+        "United Kingdom",
+        "24",
+        "000"
+      ],
+      [
+        "Stanford University",
+        "Stanford",
+        "California",
+        "16",
+        "424"
+      ]
+    ],
+    "context": "This table represents a list of universities and their relevant attributes, including the location of each university and the number of students enrolled. row 1: Harvard University, Cambridge, Massachusetts, 20, 000 row 2: University of Oxford, Oxford, United Kingdom, 24, 000 row 3: Stanford University, Stanford, California, 16, 424",
+    "num_rows": 3,
+    "num_cols": 5
+  },
+  {
+    "description": "This table represents the name of the movie (column 1), the director of the movie (column 2), and the year it was released (column 3).",
+    "table_data": [
+      [
+        "\"The Dark Knight\"",
+        "\"Christopher Nolan\"",
+        "2008"
+      ],
+      [
+        "\"The Godfather\"",
+        "\"Francis Ford Coppola\"",
+        "1972"
+      ],
+      [
+        "\"Pulp Fiction\"",
+        "\"Quentin Tarantino\"",
+        "1994"
+      ]
+    ],
+    "context": "This table represents the name of the movie (column 1), the director of the movie (column 2), and the year it was released (column 3). row 1: \"The Dark Knight\", \"Christopher Nolan\", 2008 row 2: \"The Godfather\", \"Francis Ford Coppola\", 1972 row 3: \"Pulp Fiction\", \"Quentin Tarantino\", 1994",
+    "num_rows": 3,
+    "num_cols": 3
+  },
+  {
+    "description": "The table represents three different companies and includes relevant attributes such as the year they were established and their main industry.",
+    "table_data": [
+      [
+        "Microsoft",
+        "1975",
+        "Software & Services"
+      ],
+      [
+        "Tesla",
+        "Inc.",
+        "2003",
+        "Automotive"
+      ],
+      [
+        "Pfizer Inc.",
+        "1849",
+        "Pharmaceuticals"
+      ]
+    ],
+    "context": "The table represents three different companies and includes relevant attributes such as the year they were established and their main industry. row 1: Microsoft, 1975, Software & Services row 2: Tesla, Inc., 2003, Automotive row 3: Pfizer Inc., 1849, Pharmaceuticals",
+    "num_rows": 3,
+    "num_cols": 3
+  },
+  {
+    "description": "The table represents movie entities with their corresponding release year and director.",
+    "table_data": [
+      [
+        "\"The Shawshank Redemption\"",
+        "1994",
+        "\"Frank Darabont\""
+      ],
+      [
+        "\"The Godfather\"",
+        "1972",
+        "\"Francis Ford Coppola\""
+      ],
+      [
+        "\"Pulp Fiction\"",
+        "1994",
+        "\"Quentin Tarantino\""
+      ]
+    ],
+    "context": "The table represents movie entities with their corresponding release year and director. row 1: \"The Shawshank Redemption\", 1994, \"Frank Darabont\" row 2: \"The Godfather\", 1972, \"Francis Ford Coppola\" row 3: \"Pulp Fiction\", 1994, \"Quentin Tarantino\"",
+    "num_rows": 3,
+    "num_cols": 3
+  },
+  {
+    "description": "This table represents three different movies, listing their title, director, and year of release.",
+    "table_data": [
+      [
+        "\"The Shawshank Redemption\"",
+        "\"Frank Darabont\"",
+        "1994"
+      ],
+      [
+        "\"Inception\"",
+        "\"Christopher Nolan\"",
+        "2010"
+      ],
+      [
+        "\"The Godfather\"",
+        "\"Francis Ford Coppola\"",
+        "1972"
+      ]
+    ],
+    "context": "This table represents three different movies, listing their title, director, and year of release. row 1: \"The Shawshank Redemption\", \"Frank Darabont\", 1994 row 2: \"Inception\", \"Christopher Nolan\", 2010 row 3: \"The Godfather\", \"Francis Ford Coppola\", 1972",
+    "num_rows": 3,
+    "num_cols": 3
+  },
+  {
+    "description": "The table represents the name of the cities along with their population and the country they belong to.",
+    "table_data": [
+      [
+        "New York",
+        "8.4 Million",
+        "United States"
+      ],
+      [
+        "Tokyo",
+        "37.4 Million",
+        "Japan"
+      ],
+      [
+        "Sydney",
+        "5.3 Million",
+        "Australia"
+      ]
+    ],
+    "context": "The table represents the name of the cities along with their population and the country they belong to. row 1: New York, 8.4 Million, United States row 2: Tokyo, 37.4 Million, Japan row 3: Sydney, 5.3 Million, Australia",
+    "num_rows": 3,
+    "num_cols": 3
+  },
+  {
+    "description": "The table represents a selection of athletes, their main sports discipline and the respective countries they represent.",
+    "table_data": [
+      [
+        "Usain Bolt",
+        "Sprinting",
+        "Jamaica"
+      ],
+      [
+        "Serena Williams",
+        "Tennis",
+        "USA"
+      ],
+      [
+        "Lionel Messi",
+        "Football",
+        "Argentina"
+      ]
+    ],
+    "context": "The table represents a selection of athletes, their main sports discipline and the respective countries they represent. row 1: Usain Bolt, Sprinting, Jamaica row 2: Serena Williams, Tennis, USA row 3: Lionel Messi, Football, Argentina",
+    "num_rows": 3,
+    "num_cols": 3
+  },
+  {
+    "description": "This table represents a selection of popular tech products, with the name of the product, its manufacturer, and the year it was released.",
+    "table_data": [
+      [
+        "iPhone 12",
+        "Apple Inc.",
+        "2020"
+      ],
+      [
+        "Galaxy S21",
+        "Samsung",
+        "2021"
+      ],
+      [
+        "Surface Pro 7",
+        "Microsoft",
+        "2019"
+      ]
+    ],
+    "context": "This table represents a selection of popular tech products, with the name of the product, its manufacturer, and the year it was released. row 1: iPhone 12, Apple Inc., 2020 row 2: Galaxy S21, Samsung, 2021 row 3: Surface Pro 7, Microsoft, 2019",
+    "num_rows": 3,
+    "num_cols": 3
+  },
+  {
+    "description": "The table represents a brief overview of three different popular movies, including their release years and the directors who produced them.",
+    "table_data": [
+      [
+        "\"The Lord of the Rings: The Return of the King\"",
+        "2003",
+        "\"Peter Jackson\""
+      ],
+      [
+        "\"The Dark Knight\"",
+        "2008",
+        "\"Christopher Nolan\""
+      ],
+      [
+        "\"Inception\"",
+        "2010",
+        "\"Christopher Nolan\""
+      ]
+    ],
+    "context": "The table represents a brief overview of three different popular movies, including their release years and the directors who produced them. row 1: \"The Lord of the Rings: The Return of the King\", 2003, \"Peter Jackson\" row 2: \"The Dark Knight\", 2008, \"Christopher Nolan\" row 3: \"Inception\", 2010, \"Christopher Nolan\"",
+    "num_rows": 3,
+    "num_cols": 3
+  },
+  {
+    "description": "The table represents a list of universities along with their location and the year of their establishment.",
+    "table_data": [
+      [
+        "Harvard University",
+        "Cambridge",
+        "Massachusetts",
+        "1636"
+      ],
+      [
+        "Stanford University",
+        "Stanford",
+        "California",
+        "1885"
+      ],
+      [
+        "University of Oxford",
+        "Oxford",
+        "England",
+        "1096"
+      ]
+    ],
+    "context": "The table represents a list of universities along with their location and the year of their establishment. row 1: Harvard University, Cambridge, Massachusetts, 1636 row 2: Stanford University, Stanford, California, 1885 row 3: University of Oxford, Oxford, England, 1096",
+    "num_rows": 3,
+    "num_cols": 4
+  },
+  {
+    "description": "The table represents a selection of cities and provides information about their respective countries and populations.",
+    "table_data": [
+      [
+        "New York City",
+        "United States",
+        "8.4 million"
+      ],
+      [
+        "Sydney",
+        "Australia",
+        "5.3 million"
+      ],
+      [
+        "Tokyo",
+        "Japan",
+        "37.4 million"
+      ]
+    ],
+    "context": "The table represents a selection of cities and provides information about their respective countries and populations. row 1: New York City, United States, 8.4 million row 2: Sydney, Australia, 5.3 million row 3: Tokyo, Japan, 37.4 million",
+    "num_rows": 3,
+    "num_cols": 3
+  },
+  {
+    "description": "This table represents the names of universities along with their location and the year they were established.",
+    "table_data": [
+      [
+        "Harvard University",
+        "Cambridge",
+        "Massachusetts",
+        "USA",
+        "1636"
+      ],
+      [
+        "University of Oxford",
+        "Oxford",
+        "England",
+        "1096"
+      ],
+      [
+        "University of Tokyo",
+        "Bunkyo",
+        "Tokyo",
+        "Japan",
+        "1877"
+      ]
+    ],
+    "context": "This table represents the names of universities along with their location and the year they were established. row 1: Harvard University, Cambridge, Massachusetts, USA, 1636 row 2: University of Oxford, Oxford, England, 1096 row 3: University of Tokyo, Bunkyo, Tokyo, Japan, 1877",
+    "num_rows": 3,
+    "num_cols": 5
+  },
+  {
+    "description": "The table represents some basic information about three popular movies. The first column indicates the movie title, the second column shows the release year of the movie, and the third column provides the genre of the movie.",
+    "table_data": [
+      [
+        "\"The Shawshank Redemption\"",
+        "1994",
+        "\"Drama\""
+      ],
+      [
+        "\"The Dark Knight\"",
+        "2008",
+        "\"Action/Crime/Drama\""
+      ],
+      [
+        "\"Inception\"",
+        "2010",
+        "\"Action/Adventure/Sci-Fi\""
+      ]
+    ],
+    "context": "The table represents some basic information about three popular movies. The first column indicates the movie title, the second column shows the release year of the movie, and the third column provides the genre of the movie. row 1: \"The Shawshank Redemption\", 1994, \"Drama\" row 2: \"The Dark Knight\", 2008, \"Action/Crime/Drama\" row 3: \"Inception\", 2010, \"Action/Adventure/Sci-Fi\"",
+    "num_rows": 3,
+    "num_cols": 3
+  },
+  {
+    "description": "The table represents the title of the movies, their release year, and the director's name.",
+    "table_data": [
+      [
+        "\"The Shawshank Redemption\"",
+        "1994",
+        "\"Frank Darabont\""
+      ],
+      [
+        "\"The Godfather\"",
+        "1972",
+        "\"Francis Ford Coppola\""
+      ],
+      [
+        "\"The Dark Knight\"",
+        "2008",
+        "\"Christopher Nolan\""
+      ]
+    ],
+    "context": "The table represents the title of the movies, their release year, and the director's name. row 1: \"The Shawshank Redemption\", 1994, \"Frank Darabont\" row 2: \"The Godfather\", 1972, \"Francis Ford Coppola\" row 3: \"The Dark Knight\", 2008, \"Christopher Nolan\"",
+    "num_rows": 3,
+    "num_cols": 3
+  },
+  {
+    "description": "This table represents three popular movies and their respective release years and directors.",
+    "table_data": [
+      [
+        "\"The Dark Knight\"",
+        "2008",
+        "\"Christopher Nolan\""
+      ],
+      [
+        "\"The Godfather\"",
+        "1972",
+        "\"Francis Ford Coppola\""
+      ],
+      [
+        "\"Pulp Fiction\"",
+        "1994",
+        "\"Quentin Tarantino\""
+      ]
+    ],
+    "context": "This table represents three popular movies and their respective release years and directors. row 1: \"The Dark Knight\", 2008, \"Christopher Nolan\" row 2: \"The Godfather\", 1972, \"Francis Ford Coppola\" row 3: \"Pulp Fiction\", 1994, \"Quentin Tarantino\"",
+    "num_rows": 3,
+    "num_cols": 3
+  },
+  {
+    "description": "The table represents the name of the universities, their location, and the number of students enrolled.",
+    "table_data": [
+      [
+        "Harvard University",
+        "Cambridge",
+        "Massachusetts",
+        "21000"
+      ],
+      [
+        "Oxford University",
+        "Oxford",
+        "England",
+        "24000"
+      ],
+      [
+        "University of Tokyo",
+        "Bunkyo",
+        "Tokyo",
+        "28000"
+      ]
+    ],
+    "context": "The table represents the name of the universities, their location, and the number of students enrolled. row 1: Harvard University, Cambridge, Massachusetts, 21000 row 2: Oxford University, Oxford, England, 24000 row 3: University of Tokyo, Bunkyo, Tokyo, 28000",
+    "num_rows": 3,
+    "num_cols": 4
+  },
+  {
+    "description": "This table represents the names of three different countries along with their estimated population in millions and their capital cities.",
+    "table_data": [
+      [
+        "France",
+        "67",
+        "Paris"
+      ],
+      [
+        "Japan",
+        "126",
+        "Tokyo"
+      ],
+      [
+        "Australia",
+        "25",
+        "Canberra"
+      ]
+    ],
+    "context": "This table represents the names of three different countries along with their estimated population in millions and their capital cities. row 1: France, 67, Paris row 2: Japan, 126, Tokyo row 3: Australia, 25, Canberra",
+    "num_rows": 3,
+    "num_cols": 3
+  },
+  {
+    "description": "The table represents a list of books with their respective authors and publication years.",
+    "table_data": [
+      [
+        "\"To Kill a Mockingbird\"",
+        "\"Harper Lee\"",
+        "1960"
+      ],
+      [
+        "\"1984\"",
+        "\"George Orwell\"",
+        "1949"
+      ],
+      [
+        "\"The Great Gatsby\"",
+        "\"F. Scott Fitzgerald\"",
+        "1925"
+      ]
+    ],
+    "context": "The table represents a list of books with their respective authors and publication years. row 1: \"To Kill a Mockingbird\", \"Harper Lee\", 1960 row 2: \"1984\", \"George Orwell\", 1949 row 3: \"The Great Gatsby\", \"F. Scott Fitzgerald\", 1925",
+    "num_rows": 3,
+    "num_cols": 3
+  }
+]

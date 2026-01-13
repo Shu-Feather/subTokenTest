@@ -1,0 +1,72 @@
+{
+  "metadata": {
+    "env_type": "sokoban",
+    "map_size": 6,
+    "num_maps": 1,
+    "tasks_per_type": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1
+    },
+    "total_tasks": 4,
+    "seed": 42
+  },
+  "data": [
+    {
+      "env_type": "sokoban",
+      "map_id": 0,
+      "map_size": 6,
+      "map": "# # # # # #\n# _ _ _ _ #\n# _ P O _ #\n# _ _ X _ #\n# _ _ _ _ #\n# # # # # #",
+      "task_type": 1,
+      "question": "What element is at coordinates (1, 1)?",
+      "answer": "_",
+      "coordinates": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "env_type": "sokoban",
+      "map_id": 0,
+      "map_size": 6,
+      "map": "# # # # # #\n# _ _ _ _ #\n# _ P O _ #\n# _ _ X _ #\n# _ _ _ _ #\n# # # # # #",
+      "task_type": 2,
+      "question": "What are the coordinates of element P?",
+      "answer": "(2, 2)",
+      "element": "P"
+    },
+    {
+      "env_type": "sokoban",
+      "map_id": 0,
+      "map_size": 6,
+      "map": "# # # # # #\n# _ _ _ _ #\n# _ P O _ #\n# _ _ X _ #\n# _ _ _ _ #\n# # # # # #",
+      "task_type": 3,
+      "question": "What are the 8 elements surrounding P (up, down, left, right, up-left, up-right, down-left, down-right)?",
+      "answer": "{\"down\": \"_\", \"down-left\": \"_\", \"down-right\": \"X\", \"left\": \"_\", \"right\": \"O\", \"up\": \"_\", \"up-left\": \"_\", \"up-right\": \"_\"}",
+      "surrounding": {
+        "up": "_",
+        "down": "_",
+        "left": "_",
+        "right": "O",
+        "up-left": "_",
+        "up-right": "_",
+        "down-left": "_",
+        "down-right": "X"
+      }
+    },
+    {
+      "env_type": "sokoban",
+      "map_id": 0,
+      "map_size": 6,
+      "map": "# # # # # #\n# _ _ _ _ #\n# _ P O _ #\n# _ _ X _ #\n# _ _ _ _ #\n# # # # # #",
+      "task_type": 4,
+      "question": "What is the relative position from X to O? (Answer in format: (dx, dy))",
+      "answer": "(0, -1)",
+      "relative_position": {
+        "dx": 0,
+        "dy": -1
+      }
+    }
+  ]
+}

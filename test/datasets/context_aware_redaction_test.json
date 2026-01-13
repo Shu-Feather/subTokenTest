@@ -1,0 +1,39 @@
+[
+  {
+    "id": "short_0",
+    "difficulty": "short",
+    "original_context": "In the customer record for John Doe, we have his 287942164497854347 on file along with his +44 36882498763 number. Please ensure that the 430704362849238686 details are verified before processing any sensitive information. If you need to contact John, you can reach him at the provided +81 59671147360 number.",
+    "redacted_context": "In the customer record for John Doe, we have his 287942**********47 on file along with his +44 368****8763 number. Please ensure that the 430704**********86 details are verified before processing any sensitive information. If you need to contact John, you can reach him at the provided +81 596****7360 number.",
+    "sensitive_info": [
+      {
+        "type": "id_card",
+        "value": "287942164497854347",
+        "start": 49,
+        "end": 67
+      },
+      {
+        "type": "phone",
+        "value": "+44 36882498763",
+        "start": 91,
+        "end": 106
+      },
+      {
+        "type": "id_card",
+        "value": "430704362849238686",
+        "start": 138,
+        "end": 156
+      },
+      {
+        "type": "phone",
+        "value": "+81 59671147360",
+        "start": 286,
+        "end": 301
+      }
+    ],
+    "sensitive_types": [
+      "phone",
+      "id_card"
+    ],
+    "num_sensitive_items": 4
+  }
+]

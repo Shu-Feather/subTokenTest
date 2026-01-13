@@ -1,0 +1,12 @@
+vllm>=0.3.0
+openai>=1.0.0
+torch>=2.0.0
+transformers>=4.35.0
+pyyaml>=6.0
+numpy>=1.24.0
+tqdm>=4.65.0
+pandas>=2.0.0
+rapidfuzz>=3.0.0
+python-Levenshtein>=0.20.0
+matplotlib>=3.7.0
+seaborn>=0.12.0

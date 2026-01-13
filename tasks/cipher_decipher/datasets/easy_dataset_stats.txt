@@ -1,0 +1,15 @@
+Dataset Statistics
+==================================================
+
+EASY:
+  Total samples: 25
+  Word count range: 17-37
+  Average word count: 26.4
+
+MEDIUM:
+  Total samples: 0
+
+HARD:
+  Total samples: 0
+
+TOTAL SAMPLES: 25

@@ -1,0 +1,37 @@
+{
+  "generation_info": {
+    "difficulty": "easy",
+    "depth_range": [
+      3,
+      4
+    ],
+    "total_samples": 1,
+    "generation_timestamp": "2025-12-28T18:34:08.560980",
+    "task_type": "task1",
+    "tree_generation_strategy": "Biased towards fuller trees (complete, near-complete)"
+  },
+  "difficulty_distribution": {},
+  "question_type_distribution": {
+    "left_child": 1
+  },
+  "tree_type_distribution": {
+    "near_complete": 1
+  },
+  "samples": [
+    {
+      "task_type": "task1",
+      "tree_type": "near_complete",
+      "tree_depth": 4,
+      "tree_structure": "              63\n          /       \\\n      49              9\n    /   \\           /   \\\n  21      16      10      2\n / \\     / \\     /       /\n42  32  23  6   55      53",
+      "question": "What is the left child of node 21?",
+      "question_type": "left_child",
+      "prompt": "You are given a binary tree structure. Please analyze it carefully and answer the question.\n\nFirst you need to understand the following fundamental concepts:\n\n1. **Parent Node**\n   - A parent node is a node that has one or more child nodes connected below it\n   - Every node except the root has exactly one parent\n   - The root node has no parent\n\n2. **Left Child Node**\n   - The left child is the node connected to the left side of a parent node\n   - A node can have at most one left child\n   - If a node has no left child, the answer is \"None\"\n   - In tree diagrams, left children are typically shown connected with \"/\" from the parent\n\n3. **Right Child Node**\n   - The right child is the node connected to the right side of a parent node\n   - A node can have at most one right child\n   - If a node has no right child, the answer is \"None\"\n   - In tree diagrams, right children are typically shown connected with \"\\\" from the parent\n\n4. **Node Count (Total Number of Nodes)**\n   - This is the total count of all nodes in the entire tree\n   - Count every node including the root node and all internal and leaf nodes\n\n**Tree Diagram Format:**\n- Nodes are represented by numbers (1, 2, 3, etc.)\n- \"/\" represents a connection to a left child\n- \"\\\\\" represents a connection to a right child\n- Spacing is used to show the hierarchical structure\n\n**Example Tree:**\n```\n    1\n   / \\\n  2   3\n /   / \\\n4   5   6\n```\n\nIn this example:\n- Parent of node 4: 2\n- Left child of node 1: 2\n- Right child of node 2: None\n- Tree depth: 3 levels\n- Total nodes: 6\n\nBinary Tree Structure:\n              63\n          /       \\\n      49              9\n    /   \\           /   \\\n  21      16      10      2\n / \\     / \\     /       /\n42  32  23  6   55      53\n\nQuestion: What is the left child of node 21?\n\nPlease provide your answer following this format, that is, put only your anwser after the tag `### My answer is:`.\nNote that if there is no such node, answer 'None'.\n\nFollowing is the **example format**:\n\n---OUTPUT FORMAT---\n[Your analysis here if any]\n### My answer is:\n[Your answer here - just the number or 'None']",
+      "expected_answer": "42",
+      "sample_id": 0,
+      "difficulty": "easy"
+    }
+  ],
+  "depth_distribution": {
+    "4": 1
+  }
+}

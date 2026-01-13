@@ -1,0 +1,103 @@
+{
+  "benchmark_settings": {
+    "results_dir": "results",
+    "save_raw_responses": true,
+    "save_detailed_results": true,
+    "timeout_seconds": 30
+  },
+  "tasks": {
+    "dna_complement": {
+      "enabled": true,
+      "num_cases": 10,
+      "sequence_length_range": [
+        8,
+        20
+      ],
+      "description": "Generate complementary DNA sequences"
+    },
+    "rna_complement": {
+      "enabled": true,
+      "num_cases": 10,
+      "sequence_length_range": [
+        8,
+        20
+      ],
+      "description": "Generate complementary RNA sequences"
+    },
+    "protein_three_to_one": {
+      "enabled": true,
+      "num_cases": 10,
+      "sequence_length_range": [
+        5,
+        12
+      ],
+      "description": "Convert protein sequences from three-letter to one-letter codes"
+    },
+    "protein_one_to_three": {
+      "enabled": true,
+      "num_cases": 10,
+      "sequence_length_range": [
+        5,
+        12
+      ],
+      "description": "Convert protein sequences from one-letter to three-letter codes"
+    }
+  },
+  "models": {
+    "qwen-7b": {
+      "provider": "vllm",
+      "model_name": "/path/to/local/qwen-7b",
+      "parameters": {
+        "temperature": 0.6,
+        "max_tokens": 32768,
+        "tensor_parallel_size": 2,
+        "gpu_memory_utilization": 0.9,
+        "system_message": "You are a knowledgeable biology assistant.",
+        "top_p": 0.95,
+        "batch_size": 4
+      }
+    },
+    "r1-distill-qwen-7b": {
+      "provider": "vllm",
+      "model_name": "/path/to/local/r1-distill-qwen-7b",
+      "parameters": {
+        "temperature": 0.6,
+        "max_tokens": 32768,
+        "tensor_parallel_size": 2,
+        "gpu_memory_utilization": 0.9,
+        "trust_remote_code": true,
+        "system_message": "You are a knowledgeable biology assistant focused on careful reasoning.",
+        "top_p": 0.95,
+        "batch_size": 4
+      }
+    },
+    "qwen-32b": {
+      "provider": "vllm",
+      "model_name": "/path/to/local/qwen-32b",
+      "parameters": {
+        "temperature": 0.6,
+        "max_tokens": 32768,
+        "tensor_parallel_size": 2,
+        "gpu_memory_utilization": 0.9,
+        "trust_remote_code": true,
+        "system_message": "You are a knowledgeable biology assistant.",
+        "top_p": 0.95,
+        "batch_size": 4
+      }
+    },
+    "r1-distill-qwen-32b": {
+      "provider": "vllm",
+      "model_name": "/path/to/local/r1-distill-qwen-32b",
+      "parameters": {
+        "temperature": 0.6,
+        "max_tokens": 32768,
+        "tensor_parallel_size": 2,
+        "gpu_memory_utilization": 0.9,
+        "trust_remote_code": true,
+        "system_message": "You are a knowledgeable biology assistant focused on careful reasoning.",
+        "top_p": 0.95,
+        "batch_size": 4
+      }
+    }
+  }
+}

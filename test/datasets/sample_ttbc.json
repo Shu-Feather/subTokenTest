@@ -1,0 +1,14 @@
+[
+  {
+    "prompt": "How many letter r are in the word 'raspberry'?",
+    "answer": "2"
+  },
+  {
+    "prompt": "What is 17 plus 23?",
+    "answer": "40"
+  },
+  {
+    "prompt": "If a box holds 8 apples, how many apples are in 3 boxes?",
+    "answer": "24"
+  }
+]

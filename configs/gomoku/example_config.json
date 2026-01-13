@@ -1,0 +1,56 @@
+{
+  "_comment": "Example configuration file for Gomoku Benchmark",
+  
+  "models": [
+    "gpt-4",
+    "gpt-3.5-turbo",
+    "deepseek-chat"
+  ],
+  
+  "board_sizes": [9, 15, 19],
+  
+  "test_counts": [100, 200, 500],
+  
+  "output_dir": "results",
+  
+  "data_dir": "data",
+  
+  "custom_models": {
+    "custom-gpt": {
+      "model_name": "gpt-4-1106-preview",
+      "api_key": "${OPENAI_API_KEY}",
+      "model_type": "openai",
+      "max_tokens": 1000,
+      "temperature": 0.0,
+      "timeout": 60
+    },
+    
+    "local-llama": {
+      "model_name": "llama3.2:8b",
+      "model_type": "ollama",
+      "base_url": "http://localhost:11434",
+      "max_tokens": 500,
+      "temperature": 0.1,
+      "timeout": 120
+    },
+    
+    "hf-model": {
+      "model_name": "microsoft/DialoGPT-medium",
+      "model_type": "transformers",
+      "max_tokens": 200,
+      "temperature": 0.0
+    }
+  },
+  
+  "evaluation_settings": {
+    "strict_parsing": true,
+    "case_sensitive": false,
+    "timeout_as_error": true
+  },
+  
+  "logging": {
+    "level": "INFO",
+    "save_detailed_logs": true,
+    "log_model_responses": false
+  }
+}

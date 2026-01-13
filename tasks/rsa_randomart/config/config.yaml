@@ -1,0 +1,55 @@
+# Model configurations
+models:
+  vllm:
+    batch_size: 4
+    temperature: 0.6
+    top_p: 0.95
+    max_tokens: 32768
+    tensor_parallel_size: 1
+    gpu_memory_utilization: 0.9
+    max_model_len: 4096
+    enforce_eager: true
+  
+  openai:
+    api_base: "https://api.openai.com/v1"
+    timeout: 300
+    max_tokens: 40000
+    reasoning_effort: "low"
+    # max_tokens: 6000
+  
+  deepseek:
+    api_base: "https://api.deepseek.com/v1"
+    timeout: 300
+    max_tokens: 40000
+    # max_tokens: 6000
+
+# Prompt settings
+prompt:
+  restricted_reasoning: false
+
+# Data generation configurations
+data_generation:
+  default_width: 19
+  default_height: 9
+  default_num_differences: 5
+  available_elements:
+    - 'o'
+    - '+'
+    - '='
+    - '.'
+    - 'X'
+    - 'O'
+    - 'B'
+    - '*'
+    - '-'
+    - '@'
+    - '%'
+    - '&'
+    - '#'
+    - '^'
+    - ' '
+
+# Evaluation configurations
+evaluation:
+  coordinate_weight: 0.5
+  replacement_weight: 0.5

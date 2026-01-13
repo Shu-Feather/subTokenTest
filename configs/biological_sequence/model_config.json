@@ -1,0 +1,248 @@
+{
+  "benchmark_settings": {
+    "results_dir": "results",
+    "save_raw_responses": true,
+    "save_detailed_results": true,
+    "timeout_seconds": 30
+  },
+  "tasks": {
+    "dna_complement": {
+      "enabled": true,
+      "num_cases": 100,
+      "sequence_length_range": [
+        8,
+        20
+      ],
+      "description": "Generate complementary DNA sequences"
+    },
+    "rna_complement": {
+      "enabled": true,
+      "num_cases": 100,
+      "sequence_length_range": [
+        8,
+        20
+      ],
+      "description": "Generate complementary RNA sequences"
+    },
+    "protein_three_to_one": {
+      "enabled": true,
+      "num_cases": 75,
+      "sequence_length_range": [
+        5,
+        12
+      ],
+      "description": "Convert protein sequences from three-letter to one-letter codes"
+    },
+    "protein_one_to_three": {
+      "enabled": true,
+      "num_cases": 75,
+      "sequence_length_range": [
+        5,
+        12
+      ],
+      "description": "Convert protein sequences from one-letter to three-letter codes"
+    }
+  },
+  "models": {
+    "gpt-3.5-turbo": {
+      "provider": "openai",
+      "model_name": "gpt-3.5-turbo",
+      "parameters": {
+        "temperature": 0.1,
+        "max_tokens": 1024,
+        "top_p": 1.0
+      }
+    },
+    "gpt-4": {
+      "provider": "openai",
+      "model_name": "gpt-4",
+      "parameters": {
+        "temperature": 0.1,
+        "max_tokens": 1024,
+        "top_p": 1.0
+      }
+    },
+    "deepseek-chat": {
+      "provider": "deepseek_chat",
+      "model_name": "deepseek-chat",
+      "parameters": {
+        "temperature": 0.1,
+        "max_tokens": 1024,
+        "system_message": "You are a helpful biology assistant with expertise in molecular biology and genetics."
+      }
+    },
+    "deepseek-reasoner": {
+      "provider": "deepseek_reasoning",
+      "model_name": "deepseek-reasoner",
+      "parameters": {
+        "temperature": 0.1,
+        "max_tokens": 8000,
+        "return_reasoning_content": false
+      }
+    },
+    "deepseek-r1": {
+      "provider": "deepseek_reasoning",
+      "model_name": "deepseek-r1",
+      "parameters": {
+        "temperature": 0.1,
+        "max_tokens": 8000,
+        "return_reasoning_content": true,
+        "system_message": "You are an expert in biology. Think step by step to solve problems."
+      }
+    },
+    "llama-3-8b-local": {
+      "provider": "vllm",
+      "model_name": "/path/to/Meta-Llama-3-8B-Instruct",
+      "parameters": {
+        "temperature": 0.6,
+        "max_tokens": 32768,
+        "tensor_parallel_size": 1,
+        "gpu_memory_utilization": 0.9,
+        "top_p": 0.95,
+        "batch_size": 4
+      }
+    },
+    "llama-3-70b-local": {
+      "provider": "vllm",
+      "model_name": "/path/to/Meta-Llama-3-70B-Instruct",
+      "parameters": {
+        "temperature": 0.6,
+        "max_tokens": 32768,
+        "tensor_parallel_size": 4,
+        "gpu_memory_utilization": 0.95,
+        "max_model_len": 8192,
+        "top_p": 0.95,
+        "batch_size": 4
+      }
+    },
+    "llama-3-8b-instruct": {
+      "provider": "vllm_chat",
+      "model_name": "meta-llama/Meta-Llama-3-8B-Instruct",
+      "parameters": {
+        "temperature": 0.6,
+        "max_tokens": 32768,
+        "tensor_parallel_size": 1,
+        "gpu_memory_utilization": 0.9,
+        "system_message": "You are a knowledgeable biology assistant.",
+        "top_p": 0.95,
+        "batch_size": 4
+      }
+    },
+    "llama-3-70b-instruct": {
+      "provider": "vllm_chat",
+      "model_name": "meta-llama/Meta-Llama-3-70B-Instruct",
+      "parameters": {
+        "temperature": 0.6,
+        "max_tokens": 32768,
+        "tensor_parallel_size": 4,
+        "gpu_memory_utilization": 0.95,
+        "top_p": 0.95,
+        "batch_size": 4
+      }
+    },
+    "qwen-7b-local": {
+      "provider": "vllm",
+      "model_name": "/path/to/Qwen2-7B-Instruct",
+      "parameters": {
+        "temperature": 0.6,
+        "max_tokens": 32768,
+        "tensor_parallel_size": 1,
+        "gpu_memory_utilization": 0.9,
+        "trust_remote_code": true,
+        "top_p": 0.95,
+        "batch_size": 4
+      }
+    },
+    "qwen-14b-local": {
+      "provider": "vllm",
+      "model_name": "/path/to/Qwen2-14B-Instruct",
+      "parameters": {
+        "temperature": 0.6,
+        "max_tokens": 32768,
+        "tensor_parallel_size": 2,
+        "gpu_memory_utilization": 0.9,
+        "trust_remote_code": true,
+        "top_p": 0.95,
+        "batch_size": 4
+      }
+    },
+    "qwen-72b-local": {
+      "provider": "vllm",
+      "model_name": "/path/to/Qwen2-72B-Instruct",
+      "parameters": {
+        "temperature": 0.6,
+        "max_tokens": 32768,
+        "tensor_parallel_size": 4,
+        "gpu_memory_utilization": 0.95,
+        "trust_remote_code": true,
+        "max_model_len": 8192,
+        "top_p": 0.95,
+        "batch_size": 4
+      }
+    },
+    "qwen-7b": {
+      "provider": "vllm",
+      "model_name": "Qwen/Qwen2-7B-Instruct",
+      "parameters": {
+        "temperature": 0.6,
+        "max_tokens": 32768,
+        "tensor_parallel_size": 1,
+        "gpu_memory_utilization": 0.9,
+        "trust_remote_code": true,
+        "top_p": 0.95,
+        "batch_size": 4
+      }
+    },
+    "qwen-14b": {
+      "provider": "vllm",
+      "model_name": "Qwen/Qwen2-14B-Instruct",
+      "parameters": {
+        "temperature": 0.6,
+        "max_tokens": 32768,
+        "tensor_parallel_size": 1,
+        "gpu_memory_utilization": 0.9,
+        "trust_remote_code": true,
+        "top_p": 0.95,
+        "batch_size": 4
+      }
+    },
+    "qwen-7b-chat": {
+      "provider": "vllm_chat",
+      "model_name": "Qwen/Qwen2-7B-Instruct",
+      "parameters": {
+        "temperature": 0.6,
+        "max_tokens": 32768,
+        "tensor_parallel_size": 1,
+        "gpu_memory_utilization": 0.9,
+        "trust_remote_code": true,
+        "system_message": "You are a helpful biology assistant.",
+        "top_p": 0.95,
+        "batch_size": 4
+      }
+    },
+    "mistral-7b": {
+      "provider": "vllm",
+      "model_name": "mistralai/Mistral-7B-Instruct-v0.2",
+      "parameters": {
+        "temperature": 0.6,
+        "max_tokens": 32768,
+        "tensor_parallel_size": 1,
+        "gpu_memory_utilization": 0.9,
+        "top_p": 0.95,
+        "batch_size": 4
+      }
+    },
+    "mistral-7b-local": {
+      "provider": "vllm",
+      "model_name": "/path/to/Mistral-7B-Instruct-v0.2",
+      "parameters": {
+        "temperature": 0.6,
+        "max_tokens": 32768,
+        "tensor_parallel_size": 1,
+        "gpu_memory_utilization": 0.9,
+        "top_p": 0.95,
+        "batch_size": 4
+      }
+    }
+  }
+}

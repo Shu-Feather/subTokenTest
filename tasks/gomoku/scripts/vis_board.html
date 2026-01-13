@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gomoku Board Renderer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            max-width: 1200px;
+            width: 100%;
+        }
+        
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+        
+        .input-section {
+            margin-bottom: 20px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #555;
+            font-weight: 600;
+        }
+        
+        textarea {
+            width: 100%;
+            min-height: 200px;
+            padding: 12px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-family: monospace;
+            font-size: 14px;
+            resize: vertical;
+            transition: border-color 0.3s;
+        }
+        
+        textarea:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+        
+        .button-group {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+        
+        button {
+            padding: 12px 24px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+        
+        button:active {
+            transform: translateY(0);
+        }
+        
+        #exportBtn {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+        }
+        
+        #exportBtn:hover {
+            box-shadow: 0 5px 15px rgba(245, 87, 108, 0.4);
+        }
+        
+        .canvas-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 10px;
+        }
+        
+        canvas {
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            background: #daa520;
+        }
+        
+        .info {
+            margin-top: 15px;
+            padding: 12px;
+            background: #e7f3ff;
+            border-left: 4px solid #667eea;
+            border-radius: 5px;
+            color: #555;
+        }
+        
+        .info strong {
+            color: #667eea;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎮 Gomoku Board Renderer</h1>
+        
+        <div class="input-section">
+            <label for="boardInput">Enter Board Configuration (W=White, B=Black, E=Empty):</label>
+            <textarea id="boardInput" placeholder="Paste your board configuration here...">EBWWBEBEBWEWEWE
+BBEEWWWEBEBWWWW
+BEBWEBBBWBEBEEB
+BBBWWBBEBWBBWEB
+EWEWWWEBEBWEBBE
+WWBWBEBWWBWEWWB
+EWBEWBEWBWEEWWE
+EEBBEBEEWWWWEWW
+BEEWBEWBBEEBWEW
+BWWBWEWEEWBWWWB
+BWEBEBBEEWEEWEW
+WWBWWBEWWWWBBBE
+EBWBWWWWEWWBWWE
+WWEEWWBWBEBBWEB
+WBWBBBEEWBEWBWW</textarea>
+        </div>
+        
+        <div class="button-group">
+            <button id="renderBtn">🎨 Render Board</button>
+            <button id="exportBtn">💾 Export as PNG</button>
+        </div>
+        
+        <div class="info">
+            <strong>Instructions:</strong> Paste your board configuration in the text area above. Each line represents a row, and each character represents a position (W=White stone, B=Black stone, E=Empty). Click "Render Board" to visualize, then "Export as PNG" to download.
+        </div>
+        
+        <div class="canvas-container">
+            <canvas id="boardCanvas"></canvas>
+        </div>
+    </div>
+
+    <script>
+        const canvas = document.getElementById('boardCanvas');
+        const ctx = canvas.getContext('2d');
+        const boardInput = document.getElementById('boardInput');
+        const renderBtn = document.getElementById('renderBtn');
+        const exportBtn = document.getElementById('exportBtn');
+        
+        let boardData = [];
+        let rows = 0;
+        let cols = 0;
+        
+        function parseBoard(input) {
+            const lines = input.trim().split('\n').map(line => line.trim()).filter(line => line.length > 0);
+            rows = lines.length;
+            cols = lines[0].length;
+            
+            boardData = lines.map(line => line.split(''));
+            
+            // Validate board
+            for (let row of boardData) {
+                if (row.length !== cols) {
+                    alert('Error: All rows must have the same number of columns!');
+                    return false;
+                }
+            }
+            
+            return true;
+        }
+        
+        function drawBoard() {
+            const cellSize = 40;
+            const padding = 30;
+            const stoneRadius = cellSize * 0.4;
+            
+            canvas.width = cols * cellSize + padding * 2;
+            canvas.height = rows * cellSize + padding * 2;
+            
+            // Draw wooden board background
+            const gradient = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
+            gradient.addColorStop(0, '#daa520');
+            gradient.addColorStop(1, '#b8860b');
+            ctx.fillStyle = gradient;
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            
+            // Draw grid lines
+            ctx.strokeStyle = '#000000';
+            ctx.lineWidth = 1.5;
+            
+            for (let i = 0; i < rows; i++) {
+                ctx.beginPath();
+                ctx.moveTo(padding, padding + i * cellSize);
+                ctx.lineTo(padding + (cols - 1) * cellSize, padding + i * cellSize);
+                ctx.stroke();
+            }
+            
+            for (let i = 0; i < cols; i++) {
+                ctx.beginPath();
+                ctx.moveTo(padding + i * cellSize, padding);
+                ctx.lineTo(padding + i * cellSize, padding + (rows - 1) * cellSize);
+                ctx.stroke();
+            }
+            
+            // Draw star points (for traditional Go/Gomoku boards)
+            const starPoints = [];
+            if (rows === 15 && cols === 15) {
+                starPoints.push([3, 3], [3, 11], [7, 7], [11, 3], [11, 11]);
+            }
+            
+            ctx.fillStyle = '#000000';
+            for (let [r, c] of starPoints) {
+                ctx.beginPath();
+                ctx.arc(padding + c * cellSize, padding + r * cellSize, 3, 0, Math.PI * 2);
+                ctx.fill();
+            }
+            
+            // Draw stones
+            for (let i = 0; i < rows; i++) {
+                for (let j = 0; j < cols; j++) {
+                    const x = padding + j * cellSize;
+                    const y = padding + i * cellSize;
+                    
+                    if (boardData[i][j] === 'B') {
+                        // Black stone
+                        const blackGradient = ctx.createRadialGradient(
+                            x - stoneRadius * 0.3, y - stoneRadius * 0.3, stoneRadius * 0.1,
+                            x, y, stoneRadius
+                        );
+                        blackGradient.addColorStop(0, '#555555');
+                        blackGradient.addColorStop(1, '#000000');
+                        
+                        ctx.fillStyle = blackGradient;
+                        ctx.beginPath();
+                        ctx.arc(x, y, stoneRadius, 0, Math.PI * 2);
+                        ctx.fill();
+                        
+                        // Stone border
+                        ctx.strokeStyle = '#000000';
+                        ctx.lineWidth = 1;
+                        ctx.stroke();
+                        
+                    } else if (boardData[i][j] === 'W') {
+                        // White stone
+                        const whiteGradient = ctx.createRadialGradient(
+                            x - stoneRadius * 0.3, y - stoneRadius * 0.3, stoneRadius * 0.1,
+                            x, y, stoneRadius
+                        );
+                        whiteGradient.addColorStop(0, '#ffffff');
+                        whiteGradient.addColorStop(1, '#e0e0e0');
+                        
+                        ctx.fillStyle = whiteGradient;
+                        ctx.beginPath();
+                        ctx.arc(x, y, stoneRadius, 0, Math.PI * 2);
+                        ctx.fill();
+                        
+                        // Stone border
+                        ctx.strokeStyle = '#999999';
+                        ctx.lineWidth = 1;
+                        ctx.stroke();
+                    }
+                }
+            }
+        }
+        
+        function exportToPNG() {
+            const link = document.createElement('a');
+            link.download = 'gomoku_board.png';
+            link.href = canvas.toDataURL('image/png', 1.0);
+            link.click();
+        }
+        
+        renderBtn.addEventListener('click', () => {
+            const input = boardInput.value;
+            if (parseBoard(input)) {
+                drawBoard();
+            }
+        });
+        
+        exportBtn.addEventListener('click', () => {
+            if (rows === 0 || cols === 0) {
+                alert('Please render the board first!');
+                return;
+            }
+            exportToPNG();
+        });
+        
+        // Initial render
+        if (parseBoard(boardInput.value)) {
+            drawBoard();
+        }
+    </script>
+</body>
+</html>

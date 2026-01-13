@@ -1,0 +1,53 @@
+# Configuration file for cipher & decipher benchmark
+
+# Test configuration
+test_config:
+  # num_samples: 2  # Number of test samples per task
+  # max_text_length: 200  # Maximum length of generated text
+  # min_text_length: 10   # Minimum length of generated text
+  
+  # Task selection (true to enable, false to disable)
+  tasks:
+    morse_encode: true
+    morse_decode: true
+    caesar_encode: true
+    caesar_decode: true
+  
+  # Caesar cipher shifts to test
+  caesar_shifts: [1, 3]
+
+# Model configurations
+models:
+  llama3-8b:
+    type: vllm
+    model_path: /path/to/local/llama-3-8b-instruct
+    model_name: Llama-3-8B-Instruct
+    tensor_parallel_size: 1
+    gpu_memory_utilization: 0.9
+    enforce_eager: true
+    batch_size: 4
+    max_tokens: 32768
+    temperature: 0.6
+    top_p: 0.95
+    use_chat_template: true
+    trust_remote_code: false
+    dtype: auto
+
+# Evaluation settings
+evaluation:
+  strict_match: true  # Require exact match for correct answers
+  case_sensitive: false  # Case sensitivity for text comparison
+  ignore_punctuation: true  # Ignore punctuation in comparison
+  timeout_seconds: 60  # Timeout for each model query
+
+# Prompt settings
+prompt_settings:
+  # Available styles: 'basic', 'detailed', 'step_by_step'
+  default_style: "basic"  # Default prompt style for all tasks
+
+# Output settings
+output:
+  save_results: true
+  results_dir: "results"
+  detailed_logs: true
+  export_formats: ["json", "csv"]

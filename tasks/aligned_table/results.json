@@ -1,0 +1,75 @@
+{
+  "config": {
+    "model_type": "openai",
+    "model_name": "gpt-4",
+    "num_test_cases": 2
+  },
+  "overall_statistics": {
+    "total_cases": 2,
+    "valid_cases": 2,
+    "avg_content_score": 1.0,
+    "avg_alignment_score": 1.0,
+    "avg_total_score": 1.0,
+    "alignment_rate": 1.0,
+    "perfect_content_count": 2,
+    "perfect_alignment_count": 2,
+    "perfect_total_count": 2,
+    "perfect_content_rate": 1.0,
+    "perfect_alignment_rate": 1.0,
+    "perfect_total_rate": 1.0
+  },
+  "format_statistics": {
+    "latex": {
+      "total_cases": 2,
+      "valid_cases": 2,
+      "avg_content_score": 1.0,
+      "avg_alignment_score": 1.0,
+      "avg_total_score": 1.0,
+      "alignment_rate": 1.0,
+      "perfect_content_count": 2,
+      "perfect_alignment_count": 2,
+      "perfect_total_count": 2,
+      "perfect_content_rate": 1.0,
+      "perfect_alignment_rate": 1.0,
+      "perfect_total_rate": 1.0
+    }
+  },
+  "detailed_results": [
+    {
+      "content_score": 1.0,
+      "alignment_score": 1.0,
+      "is_aligned": true,
+      "total_score": 1.0,
+      "content_details": {
+        "row_score": 1.0,
+        "col_score": 1.0,
+        "cell_accuracy": 1.0,
+        "correct_cells": 18,
+        "total_cells": 18,
+        "extracted_rows": 3,
+        "expected_rows": 3
+      },
+      "test_id": 0,
+      "table_format": "latex",
+      "entity_type": "custom"
+    },
+    {
+      "content_score": 1.0,
+      "alignment_score": 1.0,
+      "is_aligned": true,
+      "total_score": 1.0,
+      "content_details": {
+        "row_score": 1.0,
+        "col_score": 1.0,
+        "cell_accuracy": 1.0,
+        "correct_cells": 18,
+        "total_cells": 18,
+        "extracted_rows": 6,
+        "expected_rows": 6
+      },
+      "test_id": 1,
+      "table_format": "latex",
+      "entity_type": "custom"
+    }
+  ]
+}

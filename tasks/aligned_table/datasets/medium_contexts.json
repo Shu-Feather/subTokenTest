@@ -1,0 +1,1178 @@
+[
+  {
+    "description": "The table represents information about five professional athletes, including their full name, sport they participate in, the country they represent, their age, and the number of professional wins they have.",
+    "table_data": [
+      [
+        "\"Serena Williams\"",
+        "Tennis",
+        "USA",
+        "39",
+        "73"
+      ],
+      [
+        "\"Lionel Messi\"",
+        "Football",
+        "Argentina",
+        "33",
+        "34"
+      ],
+      [
+        "\"LeBron James\"",
+        "Basketball",
+        "USA",
+        "36",
+        "4"
+      ],
+      [
+        "\"Michael Phelps\"",
+        "Swimming",
+        "USA",
+        "36",
+        "28"
+      ],
+      [
+        "\"Usain Bolt\"",
+        "Track and Field",
+        "Jamaica",
+        "35",
+        "8"
+      ]
+    ],
+    "context": "The table represents information about five professional athletes, including their full name, sport they participate in, the country they represent, their age, and the number of professional wins they have. row 1: \"Serena Williams\", Tennis, USA, 39, 73 row 2: \"Lionel Messi\", Football, Argentina, 33, 34 row 3: \"LeBron James\", Basketball, USA, 36, 4 row 4: \"Michael Phelps\", Swimming, USA, 36, 28 row 5: \"Usain Bolt\", Track and Field, Jamaica, 35, 8",
+    "num_rows": 5,
+    "num_cols": 5
+  },
+  {
+    "description": "This table represents the key details of five different companies. The details include the company name, the industry it operates in, its headquarters location, the year it was established, and the number of employees.",
+    "table_data": [
+      [
+        "Apple Inc.",
+        "Technology",
+        "Cupertino",
+        "California",
+        "1976",
+        "147",
+        "000"
+      ],
+      [
+        "Toyota Motor Corporation",
+        "Automotive",
+        "Toyota City",
+        "Japan",
+        "1937",
+        "364",
+        "445"
+      ],
+      [
+        "Pfizer Inc.",
+        "Pharmaceuticals",
+        "New York City",
+        "New York",
+        "1849",
+        "78",
+        "500"
+      ],
+      [
+        "Amazon.com",
+        "Inc.",
+        "E-commerce",
+        "Seattle",
+        "Washington",
+        "1994",
+        "1",
+        "298",
+        "000"
+      ],
+      [
+        "HSBC Holdings plc",
+        "Banking and finance",
+        "London",
+        "United Kingdom",
+        "1865",
+        "235",
+        "351"
+      ]
+    ],
+    "context": "This table represents the key details of five different companies. The details include the company name, the industry it operates in, its headquarters location, the year it was established, and the number of employees. row 1: Apple Inc., Technology, Cupertino, California, 1976, 147, 000 row 2: Toyota Motor Corporation, Automotive, Toyota City, Japan, 1937, 364, 445 row 3: Pfizer Inc., Pharmaceuticals, New York City, New York, 1849, 78, 500 row 4: Amazon.com, Inc., E-commerce, Seattle, Washington, 1994, 1, 298, 000 row 5: HSBC Holdings plc, Banking and finance, London, United Kingdom, 1865, 235, 351",
+    "num_rows": 5,
+    "num_cols": 7
+  },
+  {
+    "description": "This table represents details about different movies. The columns include the movie's name, its director, the year it was released, the genre of the movie, and the IMDb rating.",
+    "table_data": [
+      [
+        "\"The Shawshank Redemption\"",
+        "\"Frank Darabont\"",
+        "1994",
+        "\"Drama\"",
+        "9.3"
+      ],
+      [
+        "\"The Godfather\"",
+        "\"Francis Ford Coppola\"",
+        "1972",
+        "\"Crime",
+        "Drama\"",
+        "9.2"
+      ],
+      [
+        "\"Inception\"",
+        "\"Christopher Nolan\"",
+        "2010",
+        "\"Action",
+        "Adventure",
+        "Sci-Fi\"",
+        "8.8"
+      ],
+      [
+        "\"Forrest Gump\"",
+        "\"Robert Zemeckis\"",
+        "1994",
+        "\"Drama",
+        "Romance\"",
+        "8.8"
+      ],
+      [
+        "\"The Dark Knight\"",
+        "\"Christopher Nolan\"",
+        "2008",
+        "\"Action",
+        "Crime",
+        "Drama\"",
+        "9.0"
+      ]
+    ],
+    "context": "This table represents details about different movies. The columns include the movie's name, its director, the year it was released, the genre of the movie, and the IMDb rating. row 1: \"The Shawshank Redemption\", \"Frank Darabont\", 1994, \"Drama\", 9.3 row 2: \"The Godfather\", \"Francis Ford Coppola\", 1972, \"Crime, Drama\", 9.2 row 3: \"Inception\", \"Christopher Nolan\", 2010, \"Action, Adventure, Sci-Fi\", 8.8 row 4: \"Forrest Gump\", \"Robert Zemeckis\", 1994, \"Drama, Romance\", 8.8 row 5: \"The Dark Knight\", \"Christopher Nolan\", 2008, \"Action, Crime, Drama\", 9.0",
+    "num_rows": 5,
+    "num_cols": 5
+  },
+  {
+    "description": "This table represents a list of five different products, along with their relevant attributes such as price, manufacturer, manufacturing date, and product category.",
+    "table_data": [
+      [
+        "iPhone 12",
+        "$799",
+        "Apple Inc.",
+        "13-10-2020",
+        "Electronics"
+      ],
+      [
+        "Levi's 501 Original Fit Jeans",
+        "$59.50",
+        "Levi Strauss & Co.",
+        "02-01-2021",
+        "Clothing"
+      ],
+      [
+        "Nike Air Force 1",
+        "$90",
+        "Nike Inc.",
+        "15-02-2021",
+        "Footwear"
+      ],
+      [
+        "Sony WH-1000XM4",
+        "$348",
+        "Sony Corporation",
+        "06-08-2020",
+        "Electronics"
+      ],
+      [
+        "KitchenAid Artisan Mixer",
+        "$379.99",
+        "Whirlpool Corporation",
+        "01-11-2020",
+        "Kitchen appliances"
+      ]
+    ],
+    "context": "This table represents a list of five different products, along with their relevant attributes such as price, manufacturer, manufacturing date, and product category. row 1: iPhone 12, $799, Apple Inc., 13-10-2020, Electronics row 2: Levi's 501 Original Fit Jeans, $59.50, Levi Strauss & Co., 02-01-2021, Clothing row 3: Nike Air Force 1, $90, Nike Inc., 15-02-2021, Footwear row 4: Sony WH-1000XM4, $348, Sony Corporation, 06-08-2020, Electronics row 5: KitchenAid Artisan Mixer, $379.99, Whirlpool Corporation, 01-11-2020, Kitchen appliances",
+    "num_rows": 5,
+    "num_cols": 5
+  },
+  {
+    "description": "The table represents five different cities around the world and their respective attributes: population, area in square kilometers, average temperature in Celsius, and the official language.",
+    "table_data": [
+      [
+        "New York",
+        "8.4 million",
+        "783.8 km²",
+        "12°C",
+        "English"
+      ],
+      [
+        "Tokyo",
+        "9.7 million",
+        "2187.66 km²",
+        "15.4°C",
+        "Japanese"
+      ],
+      [
+        "London",
+        "8.9 million",
+        "1572 km²",
+        "11.6°C",
+        "English"
+      ],
+      [
+        "Sydney",
+        "5.2 million",
+        "1687.9 km²",
+        "17.6°C",
+        "English"
+      ],
+      [
+        "Buenos Aires",
+        "2.9 million",
+        "203 km²",
+        "16.5°C",
+        "Spanish"
+      ]
+    ],
+    "context": "The table represents five different cities around the world and their respective attributes: population, area in square kilometers, average temperature in Celsius, and the official language. row 1: New York, 8.4 million, 783.8 km², 12°C, English row 2: Tokyo, 9.7 million, 2187.66 km², 15.4°C, Japanese row 3: London, 8.9 million, 1572 km², 11.6°C, English row 4: Sydney, 5.2 million, 1687.9 km², 17.6°C, English row 5: Buenos Aires, 2.9 million, 203 km², 16.5°C, Spanish",
+    "num_rows": 5,
+    "num_cols": 5
+  },
+  {
+    "description": "The table represents various key attributes for different countries. These attributes include: capital city, population, area (in sq km), official language, and currency.",
+    "table_data": [
+      [
+        "United States",
+        "Washington D.C.",
+        "331",
+        "002",
+        "651",
+        "9",
+        "631",
+        "418 sq km",
+        "English",
+        "US Dollar"
+      ],
+      [
+        "Australia",
+        "Canberra",
+        "25",
+        "499",
+        "884",
+        "7",
+        "692",
+        "024 sq km",
+        "English",
+        "Australian Dollar"
+      ],
+      [
+        "Japan",
+        "Tokyo",
+        "126",
+        "476",
+        "461",
+        "377",
+        "975 sq km",
+        "Japanese",
+        "Yen"
+      ],
+      [
+        "Canada",
+        "Ottawa",
+        "37",
+        "364",
+        "117",
+        "9",
+        "984",
+        "670 sq km",
+        "English / French",
+        "Canadian Dollar"
+      ],
+      [
+        "Brazil",
+        "Brasília",
+        "211",
+        "049",
+        "527",
+        "8",
+        "515",
+        "767 sq km",
+        "Portuguese",
+        "Real"
+      ]
+    ],
+    "context": "The table represents various key attributes for different countries. These attributes include: capital city, population, area (in sq km), official language, and currency. row 1: United States, Washington D.C., 331, 002, 651, 9, 631, 418 sq km, English, US Dollar row 2: Australia, Canberra, 25, 499, 884, 7, 692, 024 sq km, English, Australian Dollar row 3: Japan, Tokyo, 126, 476, 461, 377, 975 sq km, Japanese, Yen row 4: Canada, Ottawa, 37, 364, 117, 9, 984, 670 sq km, English / French, Canadian Dollar row 5: Brazil, Brasília, 211, 049, 527, 8, 515, 767 sq km, Portuguese, Real",
+    "num_rows": 5,
+    "num_cols": 10
+  },
+  {
+    "description": "The table represents key statistics about five major world cities. The columns contain the city name, the country in which the city is located, the population, the land area in square kilometers, and the city's established year.",
+    "table_data": [
+      [
+        "New York",
+        "USA",
+        "8.4 million",
+        "783.8 square kilometers",
+        "1624"
+      ],
+      [
+        "London",
+        "UK",
+        "9 million",
+        "1",
+        "572 square kilometers",
+        "AD 43"
+      ],
+      [
+        "Tokyo",
+        "Japan",
+        "37.4 million",
+        "2",
+        "188 square kilometers",
+        "1457"
+      ],
+      [
+        "Mumbai",
+        "India",
+        "20.7 million",
+        "603.4 square kilometers",
+        "1853"
+      ],
+      [
+        "Sydney",
+        "Australia",
+        "5.3 million",
+        "12",
+        "367.7 square kilometers",
+        "1788"
+      ]
+    ],
+    "context": "The table represents key statistics about five major world cities. The columns contain the city name, the country in which the city is located, the population, the land area in square kilometers, and the city's established year. row 1: New York, USA, 8.4 million, 783.8 square kilometers, 1624 row 2: London, UK, 9 million, 1, 572 square kilometers, AD 43 row 3: Tokyo, Japan, 37.4 million, 2, 188 square kilometers, 1457 row 4: Mumbai, India, 20.7 million, 603.4 square kilometers, 1853 row 5: Sydney, Australia, 5.3 million, 12, 367.7 square kilometers, 1788",
+    "num_rows": 5,
+    "num_cols": 5
+  },
+  {
+    "description": "This table represents a list of books with their corresponding attributes. The attributes include the book's author, publishing year, genre, and number of pages.",
+    "table_data": [
+      [
+        "\"To Kill a Mockingbird\"",
+        "\"Harper Lee\"",
+        "1960",
+        "\"Fiction\"",
+        "281"
+      ],
+      [
+        "\"1984\"",
+        "\"George Orwell\"",
+        "1949",
+        "\"Dystopian\"",
+        "328"
+      ],
+      [
+        "\"The Great Gatsby\"",
+        "\"F. Scott Fitzgerald\"",
+        "1925",
+        "\"Fiction\"",
+        "180"
+      ],
+      [
+        "\"War and Peace\"",
+        "\"Leo Tolstoy\"",
+        "1869",
+        "\"Historical Fiction\"",
+        "1225"
+      ],
+      [
+        "\"Harry Potter and the Philosopher's Stone\"",
+        "\"J.K. Rowling\"",
+        "1997",
+        "\"Fantasy\"",
+        "223"
+      ]
+    ],
+    "context": "This table represents a list of books with their corresponding attributes. The attributes include the book's author, publishing year, genre, and number of pages. row 1: \"To Kill a Mockingbird\", \"Harper Lee\", 1960, \"Fiction\", 281 row 2: \"1984\", \"George Orwell\", 1949, \"Dystopian\", 328 row 3: \"The Great Gatsby\", \"F. Scott Fitzgerald\", 1925, \"Fiction\", 180 row 4: \"War and Peace\", \"Leo Tolstoy\", 1869, \"Historical Fiction\", 1225 row 5: \"Harry Potter and the Philosopher's Stone\", \"J.K. Rowling\", 1997, \"Fantasy\", 223",
+    "num_rows": 5,
+    "num_cols": 5
+  },
+  {
+    "description": "The table represents a list of universities along with some of their key attributes including their location, year of establishment, student population, and number of faculty members.",
+    "table_data": [
+      [
+        "Harvard University",
+        "Cambridge",
+        "MA",
+        "USA",
+        "1636",
+        "21000",
+        "2400"
+      ],
+      [
+        "University of Oxford",
+        "Oxford",
+        "England",
+        "1096",
+        "24000",
+        "1800"
+      ],
+      [
+        "University of Tokyo",
+        "Bunkyo",
+        "Tokyo",
+        "Japan",
+        "1877",
+        "28000",
+        "2500"
+      ],
+      [
+        "University of Melbourne",
+        "Parkville",
+        "Victoria",
+        "Australia",
+        "1853",
+        "50000",
+        "2300"
+      ],
+      [
+        "University of Cape Town",
+        "Rondebosch",
+        "Cape Town",
+        "South Africa",
+        "1829",
+        "29000",
+        "1700"
+      ]
+    ],
+    "context": "The table represents a list of universities along with some of their key attributes including their location, year of establishment, student population, and number of faculty members. row 1: Harvard University, Cambridge, MA, USA, 1636, 21000, 2400 row 2: University of Oxford, Oxford, England, 1096, 24000, 1800 row 3: University of Tokyo, Bunkyo, Tokyo, Japan, 1877, 28000, 2500 row 4: University of Melbourne, Parkville, Victoria, Australia, 1853, 50000, 2300 row 5: University of Cape Town, Rondebosch, Cape Town, South Africa, 1829, 29000, 1700",
+    "num_rows": 5,
+    "num_cols": 7
+  },
+  {
+    "description": "The table represents a set of cities along with their corresponding country, population, area in square kilometers, and the average yearly temperature.",
+    "table_data": [
+      [
+        "New York",
+        "USA",
+        "8",
+        "398",
+        "748",
+        "783.8",
+        "12.2°C"
+      ],
+      [
+        "London",
+        "UK",
+        "8",
+        "961",
+        "989",
+        "1",
+        "572",
+        "11.1°C"
+      ],
+      [
+        "Sydney",
+        "Australia",
+        "5",
+        "312",
+        "163",
+        "12",
+        "367.7",
+        "17.6°C"
+      ],
+      [
+        "Tokyo",
+        "Japan",
+        "9",
+        "273",
+        "000",
+        "2",
+        "194",
+        "15.4°C"
+      ],
+      [
+        "Moscow",
+        "Russia",
+        "12",
+        "615",
+        "279",
+        "2",
+        "511",
+        "5.8°C"
+      ]
+    ],
+    "context": "The table represents a set of cities along with their corresponding country, population, area in square kilometers, and the average yearly temperature. row 1: New York, USA, 8, 398, 748, 783.8, 12.2°C row 2: London, UK, 8, 961, 989, 1, 572, 11.1°C row 3: Sydney, Australia, 5, 312, 163, 12, 367.7, 17.6°C row 4: Tokyo, Japan, 9, 273, 000, 2, 194, 15.4°C row 5: Moscow, Russia, 12, 615, 279, 2, 511, 5.8°C",
+    "num_rows": 5,
+    "num_cols": 7
+  },
+  {
+    "description": "This table represents various movies, with details about their title, director, release year, genre, and box office gross.",
+    "table_data": [
+      [
+        "\"The Godfather\"",
+        "\"Francis Ford Coppola\"",
+        "1972",
+        "\"Crime",
+        "Drama\"",
+        "\"$246-286 million\""
+      ],
+      [
+        "\"Titanic\"",
+        "\"James Cameron\"",
+        "1997",
+        "\"Drama",
+        "Romance\"",
+        "\"$2.202 billion\""
+      ],
+      [
+        "\"Inception\"",
+        "\"Christopher Nolan\"",
+        "2010",
+        "\"Action",
+        "Adventure",
+        "Sci-Fi\"",
+        "\"$826.8 million\""
+      ],
+      [
+        "\"Jurassic Park\"",
+        "\"Steven Spielberg\"",
+        "1993",
+        "\"Action",
+        "Adventure",
+        "Sci-Fi\"",
+        "\"$1.032 billion\""
+      ],
+      [
+        "\"Parasite\"",
+        "\"Bong Joon-ho\"",
+        "2019",
+        "\"Comedy",
+        "Drama",
+        "Thriller\"",
+        "\"$258.4 million\""
+      ]
+    ],
+    "context": "This table represents various movies, with details about their title, director, release year, genre, and box office gross. row 1: \"The Godfather\", \"Francis Ford Coppola\", 1972, \"Crime, Drama\", \"$246-286 million\" row 2: \"Titanic\", \"James Cameron\", 1997, \"Drama, Romance\", \"$2.202 billion\" row 3: \"Inception\", \"Christopher Nolan\", 2010, \"Action, Adventure, Sci-Fi\", \"$826.8 million\" row 4: \"Jurassic Park\", \"Steven Spielberg\", 1993, \"Action, Adventure, Sci-Fi\", \"$1.032 billion\" row 5: \"Parasite\", \"Bong Joon-ho\", 2019, \"Comedy, Drama, Thriller\", \"$258.4 million\"",
+    "num_rows": 5,
+    "num_cols": 6
+  },
+  {
+    "description": "This table represents a list of books with their respective authors, publication years, genres, and number of pages.",
+    "table_data": [
+      [
+        "\"Pride and Prejudice\"",
+        "Jane Austen",
+        "1813",
+        "Romance",
+        "279"
+      ],
+      [
+        "\"The Great Gatsby\"",
+        "F. Scott Fitzgerald",
+        "1925",
+        "Tragedy",
+        "180"
+      ],
+      [
+        "\"1984\"",
+        "George Orwell",
+        "1949",
+        "Dystopian",
+        "328"
+      ],
+      [
+        "\"To Kill a Mockingbird\"",
+        "Harper Lee",
+        "1960",
+        "Coming-of-Age Story",
+        "324"
+      ],
+      [
+        "\"Moby-Dick\"",
+        "Herman Melville",
+        "1851",
+        "Adventure",
+        "635"
+      ]
+    ],
+    "context": "This table represents a list of books with their respective authors, publication years, genres, and number of pages. row 1: \"Pride and Prejudice\", Jane Austen, 1813, Romance, 279 row 2: \"The Great Gatsby\", F. Scott Fitzgerald, 1925, Tragedy, 180 row 3: \"1984\", George Orwell, 1949, Dystopian, 328 row 4: \"To Kill a Mockingbird\", Harper Lee, 1960, Coming-of-Age Story, 324 row 5: \"Moby-Dick\", Herman Melville, 1851, Adventure, 635",
+    "num_rows": 5,
+    "num_cols": 5
+  },
+  {
+    "description": "The table represents various universities across the world. It details their names, locations, year of establishment, number of students, and the number of faculty members.",
+    "table_data": [
+      [
+        "Harvard University",
+        "United States",
+        "1636",
+        "22000",
+        "2400"
+      ],
+      [
+        "University of Oxford",
+        "United Kingdom",
+        "1096",
+        "24000",
+        "1800"
+      ],
+      [
+        "University of Tokyo",
+        "Japan",
+        "1877",
+        "28000",
+        "2100"
+      ],
+      [
+        "University of Melbourne",
+        "Australia",
+        "1853",
+        "50000",
+        "2800"
+      ],
+      [
+        "University of Cape Town",
+        "South Africa",
+        "1829",
+        "29000",
+        "1600"
+      ]
+    ],
+    "context": "The table represents various universities across the world. It details their names, locations, year of establishment, number of students, and the number of faculty members. row 1: Harvard University, United States, 1636, 22000, 2400 row 2: University of Oxford, United Kingdom, 1096, 24000, 1800 row 3: University of Tokyo, Japan, 1877, 28000, 2100 row 4: University of Melbourne, Australia, 1853, 50000, 2800 row 5: University of Cape Town, South Africa, 1829, 29000, 1600",
+    "num_rows": 5,
+    "num_cols": 5
+  },
+  {
+    "description": "The table represents information about five athletes, including their names, the sport they play, the country they represent, their age, and the number of Olympic medals they have won.",
+    "table_data": [
+      [
+        "Usain Bolt",
+        "Athletics",
+        "Jamaica",
+        "34",
+        "8"
+      ],
+      [
+        "Michael Phelps",
+        "Swimming",
+        "USA",
+        "35",
+        "23"
+      ],
+      [
+        "Serena Williams",
+        "Tennis",
+        "USA",
+        "39",
+        "4"
+      ],
+      [
+        "Lionel Messi",
+        "Football",
+        "Argentina",
+        "33",
+        "0"
+      ],
+      [
+        "Roger Federer",
+        "Tennis",
+        "Switzerland",
+        "39",
+        "1"
+      ]
+    ],
+    "context": "The table represents information about five athletes, including their names, the sport they play, the country they represent, their age, and the number of Olympic medals they have won. row 1: Usain Bolt, Athletics, Jamaica, 34, 8 row 2: Michael Phelps, Swimming, USA, 35, 23 row 3: Serena Williams, Tennis, USA, 39, 4 row 4: Lionel Messi, Football, Argentina, 33, 0 row 5: Roger Federer, Tennis, Switzerland, 39, 1",
+    "num_rows": 5,
+    "num_cols": 5
+  },
+  {
+    "description": "This table represents a set of top athletes from various sports, their respective countries, the sport they play, their current ranking, and the year they turned professional.",
+    "table_data": [
+      [
+        "Serena Williams",
+        "USA",
+        "Tennis",
+        "1",
+        "1995"
+      ],
+      [
+        "Lionel Messi",
+        "Argentina",
+        "Football",
+        "1",
+        "2004"
+      ],
+      [
+        "Michael Phelps",
+        "USA",
+        "Swimming",
+        "1",
+        "2001"
+      ],
+      [
+        "Usain Bolt",
+        "Jamaica",
+        "Athletics",
+        "1",
+        "2004"
+      ],
+      [
+        "Roger Federer",
+        "Switzerland",
+        "Tennis",
+        "2",
+        "1998"
+      ]
+    ],
+    "context": "This table represents a set of top athletes from various sports, their respective countries, the sport they play, their current ranking, and the year they turned professional. row 1: Serena Williams, USA, Tennis, 1, 1995 row 2: Lionel Messi, Argentina, Football, 1, 2004 row 3: Michael Phelps, USA, Swimming, 1, 2001 row 4: Usain Bolt, Jamaica, Athletics, 1, 2004 row 5: Roger Federer, Switzerland, Tennis, 2, 1998",
+    "num_rows": 5,
+    "num_cols": 5
+  },
+  {
+    "description": "The table represents a list of universities with their locations, years of establishment, total student population, and the type of institution.",
+    "table_data": [
+      [
+        "Harvard University",
+        "Cambridge",
+        "Massachusetts",
+        "1636",
+        "21000",
+        "Private"
+      ],
+      [
+        "University of Oxford",
+        "Oxford",
+        "England",
+        "1096",
+        "24000",
+        "Public"
+      ],
+      [
+        "Stanford University",
+        "Stanford",
+        "California",
+        "1885",
+        "16000",
+        "Private"
+      ],
+      [
+        "University of Tokyo",
+        "Bunkyo",
+        "Tokyo",
+        "1877",
+        "28000",
+        "Public"
+      ],
+      [
+        "University of Toronto",
+        "Toronto",
+        "Ontario",
+        "1827",
+        "73000",
+        "Public"
+      ]
+    ],
+    "context": "The table represents a list of universities with their locations, years of establishment, total student population, and the type of institution. row 1: Harvard University, Cambridge, Massachusetts, 1636, 21000, Private row 2: University of Oxford, Oxford, England, 1096, 24000, Public row 3: Stanford University, Stanford, California, 1885, 16000, Private row 4: University of Tokyo, Bunkyo, Tokyo, 1877, 28000, Public row 5: University of Toronto, Toronto, Ontario, 1827, 73000, Public",
+    "num_rows": 5,
+    "num_cols": 6
+  },
+  {
+    "description": "The table represents information about five different athletes, including their names, sports, nationalities, number of Olympic medals won, and their respective world records.",
+    "table_data": [
+      [
+        "Usain Bolt",
+        "Track & Field",
+        "Jamaica",
+        "8",
+        "Fastest 100m Sprint (9.58 seconds)"
+      ],
+      [
+        "Michael Phelps",
+        "Swimming",
+        "USA",
+        "23",
+        "Most Olympic Gold Medals (23)"
+      ],
+      [
+        "Serena Williams",
+        "Tennis",
+        "USA",
+        "4",
+        "Most Grand Slam Titles in Open Era (23)"
+      ],
+      [
+        "Lionel Messi",
+        "Soccer",
+        "Argentina",
+        "2",
+        "Most Goals for a Single Club (672)"
+      ],
+      [
+        "Simone Biles",
+        "Gymnastics",
+        "USA",
+        "4",
+        "Most World Championship Gold Medals in Gymnastics (19)"
+      ]
+    ],
+    "context": "The table represents information about five different athletes, including their names, sports, nationalities, number of Olympic medals won, and their respective world records. row 1: Usain Bolt, Track & Field, Jamaica, 8, Fastest 100m Sprint (9.58 seconds) row 2: Michael Phelps, Swimming, USA, 23, Most Olympic Gold Medals (23) row 3: Serena Williams, Tennis, USA, 4, Most Grand Slam Titles in Open Era (23) row 4: Lionel Messi, Soccer, Argentina, 2, Most Goals for a Single Club (672) row 5: Simone Biles, Gymnastics, USA, 4, Most World Championship Gold Medals in Gymnastics (19)",
+    "num_rows": 5,
+    "num_cols": 5
+  },
+  {
+    "description": "The table represents a set of five popular products. The first column contains the name of the product. The second column contains the type or category of the product. The third column represents the manufacturer of the product. The fourth column displays the retail price of the product, and the fifth column shows the average customer rating out of 5.",
+    "table_data": [
+      [
+        "iPhone 12",
+        "Smartphone",
+        "Apple",
+        "$799",
+        "4.5"
+      ],
+      [
+        "PlayStation 5",
+        "Gaming Console",
+        "Sony",
+        "$499",
+        "4.7"
+      ],
+      [
+        "Kindle Paperwhite",
+        "E-reader",
+        "Amazon",
+        "$129.99",
+        "4.6"
+      ],
+      [
+        "Air Jordan 1 Retro",
+        "Shoe",
+        "Nike",
+        "$170",
+        "4.8"
+      ],
+      [
+        "KitchenAid Artisan Mixer",
+        "Kitchen Appliance",
+        "KitchenAid",
+        "$379.99",
+        "4.9"
+      ]
+    ],
+    "context": "The table represents a set of five popular products. The first column contains the name of the product. The second column contains the type or category of the product. The third column represents the manufacturer of the product. The fourth column displays the retail price of the product, and the fifth column shows the average customer rating out of 5. row 1: iPhone 12, Smartphone, Apple, $799, 4.5 row 2: PlayStation 5, Gaming Console, Sony, $499, 4.7 row 3: Kindle Paperwhite, E-reader, Amazon, $129.99, 4.6 row 4: Air Jordan 1 Retro, Shoe, Nike, $170, 4.8 row 5: KitchenAid Artisan Mixer, Kitchen Appliance, KitchenAid, $379.99, 4.9",
+    "num_rows": 5,
+    "num_cols": 5
+  },
+  {
+    "description": "The table represents a collection of books with their relevant attributes such as the author's name, publication date, genre, and number of pages.",
+    "table_data": [
+      [
+        "\"To Kill a Mockingbird\"",
+        "Harper Lee",
+        "1960",
+        "Fiction",
+        "281"
+      ],
+      [
+        "\"A Brief History of Time\"",
+        "Stephen Hawking",
+        "1988",
+        "Non-fiction",
+        "256"
+      ],
+      [
+        "\"The Alchemist\"",
+        "Paulo Coelho",
+        "1988",
+        "Adventure",
+        "208"
+      ],
+      [
+        "\"The Great Gatsby\"",
+        "F. Scott Fitzgerald",
+        "1925",
+        "Tragedy",
+        "180"
+      ],
+      [
+        "\"1984\"",
+        "George Orwell",
+        "1949",
+        "Dystopian",
+        "328"
+      ]
+    ],
+    "context": "The table represents a collection of books with their relevant attributes such as the author's name, publication date, genre, and number of pages. row 1: \"To Kill a Mockingbird\", Harper Lee, 1960, Fiction, 281 row 2: \"A Brief History of Time\", Stephen Hawking, 1988, Non-fiction, 256 row 3: \"The Alchemist\", Paulo Coelho, 1988, Adventure, 208 row 4: \"The Great Gatsby\", F. Scott Fitzgerald, 1925, Tragedy, 180 row 5: \"1984\", George Orwell, 1949, Dystopian, 328",
+    "num_rows": 5,
+    "num_cols": 5
+  },
+  {
+    "description": "This table represents information about five different companies, including their names, countries of origin, number of employees, annual revenue, and the year they were founded.",
+    "table_data": [
+      [
+        "Apple Inc.",
+        "United States",
+        "147000",
+        "$274.515 billion",
+        "1976"
+      ],
+      [
+        "Samsung Electronics",
+        "South Korea",
+        "287439",
+        "$211.95 billion",
+        "1938"
+      ],
+      [
+        "Toyota Motor Corporation",
+        "Japan",
+        "366283",
+        "$275.4 billion",
+        "1937"
+      ],
+      [
+        "Nestle",
+        "Switzerland",
+        "291000",
+        "$92.57 billion",
+        "1866"
+      ],
+      [
+        "Royal Dutch Shell",
+        "Netherlands",
+        "83000",
+        "$180.5 billion",
+        "1907"
+      ]
+    ],
+    "context": "This table represents information about five different companies, including their names, countries of origin, number of employees, annual revenue, and the year they were founded. row 1: Apple Inc., United States, 147000, $274.515 billion, 1976 row 2: Samsung Electronics, South Korea, 287439, $211.95 billion, 1938 row 3: Toyota Motor Corporation, Japan, 366283, $275.4 billion, 1937 row 4: Nestle, Switzerland, 291000, $92.57 billion, 1866 row 5: Royal Dutch Shell, Netherlands, 83000, $180.5 billion, 1907",
+    "num_rows": 5,
+    "num_cols": 5
+  },
+  {
+    "description": "This table represents data about five different companies, including their names, the industry they belong to, the year they were founded, their headquarter location, and the number of employees they have.",
+    "table_data": [
+      [
+        "Microsoft",
+        "Technology",
+        "1975",
+        "Redmond",
+        "Washington",
+        "USA",
+        "161000"
+      ],
+      [
+        "Tesla",
+        "Automotive",
+        "2003",
+        "Palo Alto",
+        "California",
+        "USA",
+        "48016"
+      ],
+      [
+        "Unilever",
+        "Consumer Goods",
+        "1929",
+        "London",
+        "United Kingdom & Rotterdam",
+        "Netherlands",
+        "149000"
+      ],
+      [
+        "Alibaba",
+        "E-commerce",
+        "1999",
+        "Hangzhou",
+        "China",
+        "101958"
+      ],
+      [
+        "LVMH",
+        "Luxury Goods",
+        "1987",
+        "Paris",
+        "France",
+        "147000"
+      ]
+    ],
+    "context": "This table represents data about five different companies, including their names, the industry they belong to, the year they were founded, their headquarter location, and the number of employees they have. row 1: Microsoft, Technology, 1975, Redmond, Washington, USA, 161000 row 2: Tesla, Automotive, 2003, Palo Alto, California, USA, 48016 row 3: Unilever, Consumer Goods, 1929, London, United Kingdom & Rotterdam, Netherlands, 149000 row 4: Alibaba, E-commerce, 1999, Hangzhou, China, 101958 row 5: LVMH, Luxury Goods, 1987, Paris, France, 147000",
+    "num_rows": 5,
+    "num_cols": 7
+  },
+  {
+    "description": "This table represents a list of movies with their corresponding release year, director, genre, and box office gross revenue.",
+    "table_data": [
+      [
+        "\"The Shawshank Redemption\"",
+        "1994",
+        "\"Frank Darabont\"",
+        "\"Drama\"",
+        "\"$28.3 Million\""
+      ],
+      [
+        "\"The Godfather\"",
+        "1972",
+        "\"Francis Ford Coppola\"",
+        "\"Crime/Drama\"",
+        "\"$246.1 Million\""
+      ],
+      [
+        "\"Inception\"",
+        "2010",
+        "\"Christopher Nolan\"",
+        "\"Sci-Fi/Thriller\"",
+        "\"$828.3 Million\""
+      ],
+      [
+        "\"Toy Story 3\"",
+        "2010",
+        "\"Lee Unkrich\"",
+        "\"Animation/Adventure\"",
+        "\"$1.067 Billion\""
+      ],
+      [
+        "\"Avengers: Endgame\"",
+        "2019",
+        "\"Russo Brothers\"",
+        "\"Action/Sci-Fi\"",
+        "\"$2.798 Billion\""
+      ]
+    ],
+    "context": "This table represents a list of movies with their corresponding release year, director, genre, and box office gross revenue. row 1: \"The Shawshank Redemption\", 1994, \"Frank Darabont\", \"Drama\", \"$28.3 Million\" row 2: \"The Godfather\", 1972, \"Francis Ford Coppola\", \"Crime/Drama\", \"$246.1 Million\" row 3: \"Inception\", 2010, \"Christopher Nolan\", \"Sci-Fi/Thriller\", \"$828.3 Million\" row 4: \"Toy Story 3\", 2010, \"Lee Unkrich\", \"Animation/Adventure\", \"$1.067 Billion\" row 5: \"Avengers: Endgame\", 2019, \"Russo Brothers\", \"Action/Sci-Fi\", \"$2.798 Billion\"",
+    "num_rows": 5,
+    "num_cols": 5
+  },
+  {
+    "description": "This table represents a selection of books and some of their key characteristics, including the author, publication year, genre, and average rating.",
+    "table_data": [
+      [
+        "\"To Kill a Mockingbird\"",
+        "Harper Lee",
+        "1960",
+        "\"Southern Gothic\"",
+        "4.3"
+      ],
+      [
+        "\"The Great Gatsby\"",
+        "F. Scott Fitzgerald",
+        "1925",
+        "\"American Classic\"",
+        "3.9"
+      ],
+      [
+        "\"1984\"",
+        "George Orwell",
+        "1949",
+        "\"Dystopian\"",
+        "4.2"
+      ],
+      [
+        "\"Pride and Prejudice\"",
+        "Jane Austen",
+        "1813",
+        "\"Romance\"",
+        "4.1"
+      ],
+      [
+        "\"Harry Potter and the Philosopher's Stone\"",
+        "J.K. Rowling",
+        "1997",
+        "\"Fantasy\"",
+        "4.5"
+      ]
+    ],
+    "context": "This table represents a selection of books and some of their key characteristics, including the author, publication year, genre, and average rating. row 1: \"To Kill a Mockingbird\", Harper Lee, 1960, \"Southern Gothic\", 4.3 row 2: \"The Great Gatsby\", F. Scott Fitzgerald, 1925, \"American Classic\", 3.9 row 3: \"1984\", George Orwell, 1949, \"Dystopian\", 4.2 row 4: \"Pride and Prejudice\", Jane Austen, 1813, \"Romance\", 4.1 row 5: \"Harry Potter and the Philosopher's Stone\", J.K. Rowling, 1997, \"Fantasy\", 4.5",
+    "num_rows": 5,
+    "num_cols": 5
+  },
+  {
+    "description": "This table represents various information about five different tech companies. The columns describe the company's name, headquarters location, year of establishment, CEO, and most popular product.",
+    "table_data": [
+      [
+        "Apple Inc.",
+        "Cupertino",
+        "CA",
+        "1976",
+        "Tim Cook",
+        "iPhone"
+      ],
+      [
+        "Microsoft Corporation",
+        "Redmond",
+        "WA",
+        "1975",
+        "Satya Nadella",
+        "Windows OS"
+      ],
+      [
+        "Google LLC",
+        "Mountain View",
+        "CA",
+        "1998",
+        "Sundar Pichai",
+        "Google Search"
+      ],
+      [
+        "Amazon.com Inc.",
+        "Seattle",
+        "WA",
+        "1994",
+        "Andy Jassy",
+        "Amazon Prime"
+      ],
+      [
+        "Facebook Inc.",
+        "Menlo Park",
+        "CA",
+        "2004",
+        "Mark Zuckerberg",
+        "Facebook Social Networking"
+      ]
+    ],
+    "context": "This table represents various information about five different tech companies. The columns describe the company's name, headquarters location, year of establishment, CEO, and most popular product. row 1: Apple Inc., Cupertino, CA, 1976, Tim Cook, iPhone row 2: Microsoft Corporation, Redmond, WA, 1975, Satya Nadella, Windows OS row 3: Google LLC, Mountain View, CA, 1998, Sundar Pichai, Google Search row 4: Amazon.com Inc., Seattle, WA, 1994, Andy Jassy, Amazon Prime row 5: Facebook Inc., Menlo Park, CA, 2004, Mark Zuckerberg, Facebook Social Networking",
+    "num_rows": 5,
+    "num_cols": 6
+  },
+  {
+    "description": "This table lists five different companies and their respective data concerning the year of establishment, the number of employees, the industry in which they operate, and the headquarters location.",
+    "table_data": [
+      [
+        "Microsoft",
+        "1975",
+        "161000",
+        "Technology",
+        "Redmond",
+        "Washington",
+        "USA"
+      ],
+      [
+        "Tesla Inc.",
+        "2003",
+        "70757",
+        "Automotive",
+        "Palo Alto",
+        "California",
+        "USA"
+      ],
+      [
+        "Unilever",
+        "1929",
+        "149000",
+        "Consumer Goods",
+        "London",
+        "UK"
+      ],
+      [
+        "LVMH",
+        "1987",
+        "147000",
+        "Luxury Goods",
+        "Paris",
+        "France"
+      ],
+      [
+        "Sony Corporation",
+        "1946",
+        "114400",
+        "Electronics",
+        "Tokyo",
+        "Japan"
+      ]
+    ],
+    "context": "This table lists five different companies and their respective data concerning the year of establishment, the number of employees, the industry in which they operate, and the headquarters location. row 1: Microsoft, 1975, 161000, Technology, Redmond, Washington, USA row 2: Tesla Inc., 2003, 70757, Automotive, Palo Alto, California, USA row 3: Unilever, 1929, 149000, Consumer Goods, London, UK row 4: LVMH, 1987, 147000, Luxury Goods, Paris, France row 5: Sony Corporation, 1946, 114400, Electronics, Tokyo, Japan",
+    "num_rows": 5,
+    "num_cols": 7
+  }
+]

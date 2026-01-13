@@ -1,0 +1,1392 @@
+{
+  "metadata": {
+    "env_type": "sokoban",
+    "map_size": 12,
+    "num_maps": 25,
+    "tasks_per_type": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1
+    },
+    "total_tasks": 100,
+    "seed": 42
+  },
+  "data": [
+    {
+      "env_type": "sokoban",
+      "map_id": 0,
+      "map_size": 12,
+      "map": "# # # # # # # # # # # #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ # _ _ _ _ # P _ #\n# _ # _ _ _ _ _ # # _ #\n# _ _ # _ _ _ _ _ _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ O # _ _ _ _ _ _ #\n# _ _ _ _ # _ X _ # _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ # _ _ _ _ # _ # _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# # # # # # # # # # # #",
+      "task_type": 1,
+      "question": "What element is at coordinates (0, 0)?",
+      "answer": "#",
+      "coordinates": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "env_type": "sokoban",
+      "map_id": 0,
+      "map_size": 12,
+      "map": "# # # # # # # # # # # #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ # _ _ _ _ # P _ #\n# _ # _ _ _ _ _ # # _ #\n# _ _ # _ _ _ _ _ _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ O # _ _ _ _ _ _ #\n# _ _ _ _ # _ X _ # _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ # _ _ _ _ # _ # _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# # # # # # # # # # # #",
+      "task_type": 2,
+      "question": "What are the coordinates of element P?",
+      "answer": "(9, 2)",
+      "element": "P"
+    },
+    {
+      "env_type": "sokoban",
+      "map_id": 0,
+      "map_size": 12,
+      "map": "# # # # # # # # # # # #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ # _ _ _ _ # P _ #\n# _ # _ _ _ _ _ # # _ #\n# _ _ # _ _ _ _ _ _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ O # _ _ _ _ _ _ #\n# _ _ _ _ # _ X _ # _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ # _ _ _ _ # _ # _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# # # # # # # # # # # #",
+      "task_type": 3,
+      "question": "What are the 8 elements surrounding P (up, down, left, right, up-left, up-right, down-left, down-right)?",
+      "answer": "{\"down\": \"#\", \"down-left\": \"#\", \"down-right\": \"_\", \"left\": \"#\", \"right\": \"_\", \"up\": \"_\", \"up-left\": \"_\", \"up-right\": \"_\"}",
+      "surrounding": {
+        "up": "_",
+        "down": "#",
+        "left": "#",
+        "right": "_",
+        "up-left": "_",
+        "up-right": "_",
+        "down-left": "#",
+        "down-right": "_"
+      }
+    },
+    {
+      "env_type": "sokoban",
+      "map_id": 0,
+      "map_size": 12,
+      "map": "# # # # # # # # # # # #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ # _ _ _ _ # P _ #\n# _ # _ _ _ _ _ # # _ #\n# _ _ # _ _ _ _ _ _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ O # _ _ _ _ _ _ #\n# _ _ _ _ # _ X _ # _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ # _ _ _ _ # _ # _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# # # # # # # # # # # #",
+      "task_type": 4,
+      "question": "What is the relative position from X to O? (Answer in format: (dx, dy))",
+      "answer": "(-4, -1)",
+      "relative_position": {
+        "dx": -4,
+        "dy": -1
+      }
+    },
+    {
+      "env_type": "sokoban",
+      "map_id": 1,
+      "map_size": 12,
+      "map": "# # # # # # # # # # # #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ # _ _ _ _ _ _ _ #\n# _ _ _ _ _ # _ # _ _ #\n# _ _ P _ _ _ _ _ _ _ #\n# _ _ _ # # _ _ _ _ _ #\n# _ # _ # # X _ # _ _ #\n# _ _ # _ _ # # _ _ _ #\n# _ _ O _ _ _ _ _ _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# # # # # # # # # # # #",
+      "task_type": 1,
+      "question": "What element is at coordinates (4, 0)?",
+      "answer": "#",
+      "coordinates": {
+        "x": 4,
+        "y": 0
+      }
+    },
+    {
+      "env_type": "sokoban",
+      "map_id": 1,
+      "map_size": 12,
+      "map": "# # # # # # # # # # # #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ # _ _ _ _ _ _ _ #\n# _ _ _ _ _ # _ # _ _ #\n# _ _ P _ _ _ _ _ _ _ #\n# _ _ _ # # _ _ _ _ _ #\n# _ # _ # # X _ # _ _ #\n# _ _ # _ _ # # _ _ _ #\n# _ _ O _ _ _ _ _ _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# # # # # # # # # # # #",
+      "task_type": 2,
+      "question": "What are the coordinates of element P?",
+      "answer": "(3, 4)",
+      "element": "P"
+    },
+    {
+      "env_type": "sokoban",
+      "map_id": 1,
+      "map_size": 12,
+      "map": "# # # # # # # # # # # #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ # _ _ _ _ _ _ _ #\n# _ _ _ _ _ # _ # _ _ #\n# _ _ P _ _ _ _ _ _ _ #\n# _ _ _ # # _ _ _ _ _ #\n# _ # _ # # X _ # _ _ #\n# _ _ # _ _ # # _ _ _ #\n# _ _ O _ _ _ _ _ _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# # # # # # # # # # # #",
+      "task_type": 3,
+      "question": "What are the 8 elements surrounding P (up, down, left, right, up-left, up-right, down-left, down-right)?",
+      "answer": "{\"down\": \"_\", \"down-left\": \"_\", \"down-right\": \"#\", \"left\": \"_\", \"right\": \"_\", \"up\": \"_\", \"up-left\": \"_\", \"up-right\": \"_\"}",
+      "surrounding": {
+        "up": "_",
+        "down": "_",
+        "left": "_",
+        "right": "_",
+        "up-left": "_",
+        "up-right": "_",
+        "down-left": "_",
+        "down-right": "#"
+      }
+    },
+    {
+      "env_type": "sokoban",
+      "map_id": 1,
+      "map_size": 12,
+      "map": "# # # # # # # # # # # #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ # _ _ _ _ _ _ _ #\n# _ _ _ _ _ # _ # _ _ #\n# _ _ P _ _ _ _ _ _ _ #\n# _ _ _ # # _ _ _ _ _ #\n# _ # _ # # X _ # _ _ #\n# _ _ # _ _ # # _ _ _ #\n# _ _ O _ _ _ _ _ _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# # # # # # # # # # # #",
+      "task_type": 4,
+      "question": "What is the relative position from X to O? (Answer in format: (dx, dy))",
+      "answer": "(-3, 2)",
+      "relative_position": {
+        "dx": -3,
+        "dy": 2
+      }
+    },
+    {
+      "env_type": "sokoban",
+      "map_id": 2,
+      "map_size": 12,
+      "map": "# # # # # # # # # # # #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ _ _ _ # # _ _ #\n# _ _ # _ _ _ # _ _ _ #\n# _ _ # _ _ _ # # O _ #\n# _ # _ _ _ _ _ P _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ _ _ _ _ X _ _ #\n# _ # _ _ _ _ _ # _ _ #\n# _ # _ _ _ _ _ # _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# # # # # # # # # # # #",
+      "task_type": 1,
+      "question": "What element is at coordinates (0, 11)?",
+      "answer": "#",
+      "coordinates": {
+        "x": 0,
+        "y": 11
+      }
+    },
+    {
+      "env_type": "sokoban",
+      "map_id": 2,
+      "map_size": 12,
+      "map": "# # # # # # # # # # # #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ _ _ _ # # _ _ #\n# _ _ # _ _ _ # _ _ _ #\n# _ _ # _ _ _ # # O _ #\n# _ # _ _ _ _ _ P _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ _ _ _ _ X _ _ #\n# _ # _ _ _ _ _ # _ _ #\n# _ # _ _ _ _ _ # _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# # # # # # # # # # # #",
+      "task_type": 2,
+      "question": "What are the coordinates of element X?",
+      "answer": "(8, 7)",
+      "element": "X"
+    },
+    {
+      "env_type": "sokoban",
+      "map_id": 2,
+      "map_size": 12,
+      "map": "# # # # # # # # # # # #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ _ _ _ # # _ _ #\n# _ _ # _ _ _ # _ _ _ #\n# _ _ # _ _ _ # # O _ #\n# _ # _ _ _ _ _ P _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ _ _ _ _ X _ _ #\n# _ # _ _ _ _ _ # _ _ #\n# _ # _ _ _ _ _ # _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# # # # # # # # # # # #",
+      "task_type": 3,
+      "question": "What are the 8 elements surrounding P (up, down, left, right, up-left, up-right, down-left, down-right)?",
+      "answer": "{\"down\": \"_\", \"down-left\": \"_\", \"down-right\": \"_\", \"left\": \"_\", \"right\": \"_\", \"up\": \"#\", \"up-left\": \"#\", \"up-right\": \"O\"}",
+      "surrounding": {
+        "up": "#",
+        "down": "_",
+        "left": "_",
+        "right": "_",
+        "up-left": "#",
+        "up-right": "O",
+        "down-left": "_",
+        "down-right": "_"
+      }
+    },
+    {
+      "env_type": "sokoban",
+      "map_id": 2,
+      "map_size": 12,
+      "map": "# # # # # # # # # # # #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ _ _ _ # # _ _ #\n# _ _ # _ _ _ # _ _ _ #\n# _ _ # _ _ _ # # O _ #\n# _ # _ _ _ _ _ P _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ _ _ _ _ X _ _ #\n# _ # _ _ _ _ _ # _ _ #\n# _ # _ _ _ _ _ # _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# # # # # # # # # # # #",
+      "task_type": 4,
+      "question": "What is the relative position from X to O? (Answer in format: (dx, dy))",
+      "answer": "(1, -3)",
+      "relative_position": {
+        "dx": 1,
+        "dy": -3
+      }
+    },
+    {
+      "env_type": "sokoban",
+      "map_id": 3,
+      "map_size": 12,
+      "map": "# # # # # # # # # # # #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ _ _ O # _ _ _ #\n# _ _ _ _ _ _ P _ # _ #\n# _ _ _ # _ _ _ _ # _ #\n# _ # _ _ _ _ _ _ _ _ #\n# _ _ _ _ # # _ _ # _ #\n# _ # _ _ _ _ _ _ _ _ #\n# _ _ _ _ _ _ # _ X _ #\n# _ _ _ _ # _ _ # _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# # # # # # # # # # # #",
+      "task_type": 1,
+      "question": "What element is at coordinates (0, 10)?",
+      "answer": "#",
+      "coordinates": {
+        "x": 0,
+        "y": 10
+      }
+    },
+    {
+      "env_type": "sokoban",
+      "map_id": 3,
+      "map_size": 12,
+      "map": "# # # # # # # # # # # #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ _ _ O # _ _ _ #\n# _ _ _ _ _ _ P _ # _ #\n# _ _ _ # _ _ _ _ # _ #\n# _ # _ _ _ _ _ _ _ _ #\n# _ _ _ _ # # _ _ # _ #\n# _ # _ _ _ _ _ _ _ _ #\n# _ _ _ _ _ _ # _ X _ #\n# _ _ _ _ # _ _ # _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# # # # # # # # # # # #",
+      "task_type": 2,
+      "question": "What are the coordinates of element P?",
+      "answer": "(7, 3)",
+      "element": "P"
+    },
+    {
+      "env_type": "sokoban",
+      "map_id": 3,
+      "map_size": 12,
+      "map": "# # # # # # # # # # # #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ _ _ O # _ _ _ #\n# _ _ _ _ _ _ P _ # _ #\n# _ _ _ # _ _ _ _ # _ #\n# _ # _ _ _ _ _ _ _ _ #\n# _ _ _ _ # # _ _ # _ #\n# _ # _ _ _ _ _ _ _ _ #\n# _ _ _ _ _ _ # _ X _ #\n# _ _ _ _ # _ _ # _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# # # # # # # # # # # #",
+      "task_type": 3,
+      "question": "What are the 8 elements surrounding P (up, down, left, right, up-left, up-right, down-left, down-right)?",
+      "answer": "{\"down\": \"_\", \"down-left\": \"_\", \"down-right\": \"_\", \"left\": \"_\", \"right\": \"_\", \"up\": \"#\", \"up-left\": \"O\", \"up-right\": \"_\"}",
+      "surrounding": {
+        "up": "#",
+        "down": "_",
+        "left": "_",
+        "right": "_",
+        "up-left": "O",
+        "up-right": "_",
+        "down-left": "_",
+        "down-right": "_"
+      }
+    },
+    {
+      "env_type": "sokoban",
+      "map_id": 3,
+      "map_size": 12,
+      "map": "# # # # # # # # # # # #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ _ _ O # _ _ _ #\n# _ _ _ _ _ _ P _ # _ #\n# _ _ _ # _ _ _ _ # _ #\n# _ # _ _ _ _ _ _ _ _ #\n# _ _ _ _ # # _ _ # _ #\n# _ # _ _ _ _ _ _ _ _ #\n# _ _ _ _ _ _ # _ X _ #\n# _ _ _ _ # _ _ # _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# # # # # # # # # # # #",
+      "task_type": 4,
+      "question": "What is the relative position from X to O? (Answer in format: (dx, dy))",
+      "answer": "(-3, -6)",
+      "relative_position": {
+        "dx": -3,
+        "dy": -6
+      }
+    },
+    {
+      "env_type": "sokoban",
+      "map_id": 4,
+      "map_size": 12,
+      "map": "# # # # # # # # # # # #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ _ _ _ # # _ _ #\n# _ _ _ _ _ P _ # _ _ #\n# _ _ # _ _ _ _ _ # _ #\n# _ # _ _ _ O # X _ _ #\n# _ _ _ _ _ _ # _ _ _ #\n# _ # _ _ _ _ _ _ _ _ #\n# _ _ _ _ _ _ # # # _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# # # # # # # # # # # #",
+      "task_type": 1,
+      "question": "What element is at coordinates (3, 10)?",
+      "answer": "_",
+      "coordinates": {
+        "x": 3,
+        "y": 10
+      }
+    },
+    {
+      "env_type": "sokoban",
+      "map_id": 4,
+      "map_size": 12,
+      "map": "# # # # # # # # # # # #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ _ _ _ # # _ _ #\n# _ _ _ _ _ P _ # _ _ #\n# _ _ # _ _ _ _ _ # _ #\n# _ # _ _ _ O # X _ _ #\n# _ _ _ _ _ _ # _ _ _ #\n# _ # _ _ _ _ _ _ _ _ #\n# _ _ _ _ _ _ # # # _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# # # # # # # # # # # #",
+      "task_type": 2,
+      "question": "What are the coordinates of element X?",
+      "answer": "(8, 5)",
+      "element": "X"
+    },
+    {
+      "env_type": "sokoban",
+      "map_id": 4,
+      "map_size": 12,
+      "map": "# # # # # # # # # # # #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ _ _ _ # # _ _ #\n# _ _ _ _ _ P _ # _ _ #\n# _ _ # _ _ _ _ _ # _ #\n# _ # _ _ _ O # X _ _ #\n# _ _ _ _ _ _ # _ _ _ #\n# _ # _ _ _ _ _ _ _ _ #\n# _ _ _ _ _ _ # # # _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# # # # # # # # # # # #",
+      "task_type": 3,
+      "question": "What are the 8 elements surrounding P (up, down, left, right, up-left, up-right, down-left, down-right)?",
+      "answer": "{\"down\": \"_\", \"down-left\": \"_\", \"down-right\": \"_\", \"left\": \"_\", \"right\": \"_\", \"up\": \"_\", \"up-left\": \"_\", \"up-right\": \"#\"}",
+      "surrounding": {
+        "up": "_",
+        "down": "_",
+        "left": "_",
+        "right": "_",
+        "up-left": "_",
+        "up-right": "#",
+        "down-left": "_",
+        "down-right": "_"
+      }
+    },
+    {
+      "env_type": "sokoban",
+      "map_id": 4,
+      "map_size": 12,
+      "map": "# # # # # # # # # # # #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ _ _ _ # # _ _ #\n# _ _ _ _ _ P _ # _ _ #\n# _ _ # _ _ _ _ _ # _ #\n# _ # _ _ _ O # X _ _ #\n# _ _ _ _ _ _ # _ _ _ #\n# _ # _ _ _ _ _ _ _ _ #\n# _ _ _ _ _ _ # # # _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# # # # # # # # # # # #",
+      "task_type": 4,
+      "question": "What is the relative position from X to O? (Answer in format: (dx, dy))",
+      "answer": "(-2, 0)",
+      "relative_position": {
+        "dx": -2,
+        "dy": 0
+      }
+    },
+    {
+      "env_type": "sokoban",
+      "map_id": 5,
+      "map_size": 12,
+      "map": "# # # # # # # # # # # #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ # # _ _ _ _ # _ #\n# _ _ # O _ _ _ _ _ _ #\n# _ # _ _ _ _ # _ _ _ #\n# _ _ _ # _ _ _ # _ _ #\n# _ # _ _ _ X _ # _ _ #\n# _ _ _ _ _ _ _ P _ _ #\n# _ _ _ _ _ # # _ _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# # # # # # # # # # # #",
+      "task_type": 1,
+      "question": "What element is at coordinates (10, 5)?",
+      "answer": "_",
+      "coordinates": {
+        "x": 10,
+        "y": 5
+      }
+    },
+    {
+      "env_type": "sokoban",
+      "map_id": 5,
+      "map_size": 12,
+      "map": "# # # # # # # # # # # #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ # # _ _ _ _ # _ #\n# _ _ # O _ _ _ _ _ _ #\n# _ # _ _ _ _ # _ _ _ #\n# _ _ _ # _ _ _ # _ _ #\n# _ # _ _ _ X _ # _ _ #\n# _ _ _ _ _ _ _ P _ _ #\n# _ _ _ _ _ # # _ _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# # # # # # # # # # # #",
+      "task_type": 2,
+      "question": "What are the coordinates of element P?",
+      "answer": "(8, 8)",
+      "element": "P"
+    },
+    {
+      "env_type": "sokoban",
+      "map_id": 5,
+      "map_size": 12,
+      "map": "# # # # # # # # # # # #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ # # _ _ _ _ # _ #\n# _ _ # O _ _ _ _ _ _ #\n# _ # _ _ _ _ # _ _ _ #\n# _ _ _ # _ _ _ # _ _ #\n# _ # _ _ _ X _ # _ _ #\n# _ _ _ _ _ _ _ P _ _ #\n# _ _ _ _ _ # # _ _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# # # # # # # # # # # #",
+      "task_type": 3,
+      "question": "What are the 8 elements surrounding P (up, down, left, right, up-left, up-right, down-left, down-right)?",
+      "answer": "{\"down\": \"_\", \"down-left\": \"#\", \"down-right\": \"_\", \"left\": \"_\", \"right\": \"_\", \"up\": \"#\", \"up-left\": \"_\", \"up-right\": \"_\"}",
+      "surrounding": {
+        "up": "#",
+        "down": "_",
+        "left": "_",
+        "right": "_",
+        "up-left": "_",
+        "up-right": "_",
+        "down-left": "#",
+        "down-right": "_"
+      }
+    },
+    {
+      "env_type": "sokoban",
+      "map_id": 5,
+      "map_size": 12,
+      "map": "# # # # # # # # # # # #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ # # _ _ _ _ # _ #\n# _ _ # O _ _ _ _ _ _ #\n# _ # _ _ _ _ # _ _ _ #\n# _ _ _ # _ _ _ # _ _ #\n# _ # _ _ _ X _ # _ _ #\n# _ _ _ _ _ _ _ P _ _ #\n# _ _ _ _ _ # # _ _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# # # # # # # # # # # #",
+      "task_type": 4,
+      "question": "What is the relative position from X to O? (Answer in format: (dx, dy))",
+      "answer": "(-2, -3)",
+      "relative_position": {
+        "dx": -2,
+        "dy": -3
+      }
+    },
+    {
+      "env_type": "sokoban",
+      "map_id": 6,
+      "map_size": 12,
+      "map": "# # # # # # # # # # # #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ # _ # _ _ _ _ #\n# _ _ _ _ _ _ # _ _ _ #\n# _ P # _ _ # _ _ _ _ #\n# _ _ # _ _ _ # _ _ _ #\n# _ _ _ _ _ # _ _ O _ #\n# _ _ _ _ _ _ # _ _ _ #\n# _ _ _ X # # _ _ _ _ #\n# _ _ _ _ # _ _ _ _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# # # # # # # # # # # #",
+      "task_type": 1,
+      "question": "What element is at coordinates (6, 10)?",
+      "answer": "_",
+      "coordinates": {
+        "x": 6,
+        "y": 10
+      }
+    },
+    {
+      "env_type": "sokoban",
+      "map_id": 6,
+      "map_size": 12,
+      "map": "# # # # # # # # # # # #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ # _ # _ _ _ _ #\n# _ _ _ _ _ _ # _ _ _ #\n# _ P # _ _ # _ _ _ _ #\n# _ _ # _ _ _ # _ _ _ #\n# _ _ _ _ _ # _ _ O _ #\n# _ _ _ _ _ _ # _ _ _ #\n# _ _ _ X # # _ _ _ _ #\n# _ _ _ _ # _ _ _ _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# # # # # # # # # # # #",
+      "task_type": 2,
+      "question": "What are the coordinates of element X?",
+      "answer": "(4, 8)",
+      "element": "X"
+    },
+    {
+      "env_type": "sokoban",
+      "map_id": 6,
+      "map_size": 12,
+      "map": "# # # # # # # # # # # #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ # _ # _ _ _ _ #\n# _ _ _ _ _ _ # _ _ _ #\n# _ P # _ _ # _ _ _ _ #\n# _ _ # _ _ _ # _ _ _ #\n# _ _ _ _ _ # _ _ O _ #\n# _ _ _ _ _ _ # _ _ _ #\n# _ _ _ X # # _ _ _ _ #\n# _ _ _ _ # _ _ _ _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# # # # # # # # # # # #",
+      "task_type": 3,
+      "question": "What are the 8 elements surrounding P (up, down, left, right, up-left, up-right, down-left, down-right)?",
+      "answer": "{\"down\": \"_\", \"down-left\": \"_\", \"down-right\": \"#\", \"left\": \"_\", \"right\": \"#\", \"up\": \"_\", \"up-left\": \"_\", \"up-right\": \"_\"}",
+      "surrounding": {
+        "up": "_",
+        "down": "_",
+        "left": "_",
+        "right": "#",
+        "up-left": "_",
+        "up-right": "_",
+        "down-left": "_",
+        "down-right": "#"
+      }
+    },
+    {
+      "env_type": "sokoban",
+      "map_id": 6,
+      "map_size": 12,
+      "map": "# # # # # # # # # # # #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ # _ # _ _ _ _ #\n# _ _ _ _ _ _ # _ _ _ #\n# _ P # _ _ # _ _ _ _ #\n# _ _ # _ _ _ # _ _ _ #\n# _ _ _ _ _ # _ _ O _ #\n# _ _ _ _ _ _ # _ _ _ #\n# _ _ _ X # # _ _ _ _ #\n# _ _ _ _ # _ _ _ _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# # # # # # # # # # # #",
+      "task_type": 4,
+      "question": "What is the relative position from X to O? (Answer in format: (dx, dy))",
+      "answer": "(5, -2)",
+      "relative_position": {
+        "dx": 5,
+        "dy": -2
+      }
+    },
+    {
+      "env_type": "sokoban",
+      "map_id": 7,
+      "map_size": 12,
+      "map": "# # # # # # # # # # # #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ # _ _ _ _ _ _ # _ #\n# _ # O # _ _ _ _ _ _ #\n# _ _ _ _ # X _ P _ _ #\n# _ _ _ # # _ # _ _ _ #\n# _ _ _ _ _ _ _ _ # _ #\n# _ _ _ _ _ _ _ # _ _ #\n# _ _ _ _ # _ _ # _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# # # # # # # # # # # #",
+      "task_type": 1,
+      "question": "What element is at coordinates (2, 8)?",
+      "answer": "_",
+      "coordinates": {
+        "x": 2,
+        "y": 8
+      }
+    },
+    {
+      "env_type": "sokoban",
+      "map_id": 7,
+      "map_size": 12,
+      "map": "# # # # # # # # # # # #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ # _ _ _ _ _ _ # _ #\n# _ # O # _ _ _ _ _ _ #\n# _ _ _ _ # X _ P _ _ #\n# _ _ _ # # _ # _ _ _ #\n# _ _ _ _ _ _ _ _ # _ #\n# _ _ _ _ _ _ _ # _ _ #\n# _ _ _ _ # _ _ # _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# # # # # # # # # # # #",
+      "task_type": 2,
+      "question": "What are the coordinates of element X?",
+      "answer": "(6, 5)",
+      "element": "X"
+    },
+    {
+      "env_type": "sokoban",
+      "map_id": 7,
+      "map_size": 12,
+      "map": "# # # # # # # # # # # #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ # _ _ _ _ _ _ # _ #\n# _ # O # _ _ _ _ _ _ #\n# _ _ _ _ # X _ P _ _ #\n# _ _ _ # # _ # _ _ _ #\n# _ _ _ _ _ _ _ _ # _ #\n# _ _ _ _ _ _ _ # _ _ #\n# _ _ _ _ # _ _ # _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# # # # # # # # # # # #",
+      "task_type": 3,
+      "question": "What are the 8 elements surrounding P (up, down, left, right, up-left, up-right, down-left, down-right)?",
+      "answer": "{\"down\": \"_\", \"down-left\": \"#\", \"down-right\": \"_\", \"left\": \"_\", \"right\": \"_\", \"up\": \"_\", \"up-left\": \"_\", \"up-right\": \"_\"}",
+      "surrounding": {
+        "up": "_",
+        "down": "_",
+        "left": "_",
+        "right": "_",
+        "up-left": "_",
+        "up-right": "_",
+        "down-left": "#",
+        "down-right": "_"
+      }
+    },
+    {
+      "env_type": "sokoban",
+      "map_id": 7,
+      "map_size": 12,
+      "map": "# # # # # # # # # # # #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ # _ _ _ _ _ _ # _ #\n# _ # O # _ _ _ _ _ _ #\n# _ _ _ _ # X _ P _ _ #\n# _ _ _ # # _ # _ _ _ #\n# _ _ _ _ _ _ _ _ # _ #\n# _ _ _ _ _ _ _ # _ _ #\n# _ _ _ _ # _ _ # _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# # # # # # # # # # # #",
+      "task_type": 4,
+      "question": "What is the relative position from X to O? (Answer in format: (dx, dy))",
+      "answer": "(-3, -1)",
+      "relative_position": {
+        "dx": -3,
+        "dy": -1
+      }
+    },
+    {
+      "env_type": "sokoban",
+      "map_id": 8,
+      "map_size": 12,
+      "map": "# # # # # # # # # # # #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ _ # _ P _ # _ #\n# _ _ # # # _ _ _ _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ _ # _ _ X _ _ #\n# _ _ _ _ _ _ _ # _ _ #\n# _ # _ _ # _ _ _ O _ #\n# _ # _ # _ _ _ _ # _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# # # # # # # # # # # #",
+      "task_type": 1,
+      "question": "What element is at coordinates (7, 8)?",
+      "answer": "_",
+      "coordinates": {
+        "x": 7,
+        "y": 8
+      }
+    },
+    {
+      "env_type": "sokoban",
+      "map_id": 8,
+      "map_size": 12,
+      "map": "# # # # # # # # # # # #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ _ # _ P _ # _ #\n# _ _ # # # _ _ _ _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ _ # _ _ X _ _ #\n# _ _ _ _ _ _ _ # _ _ #\n# _ # _ _ # _ _ _ O _ #\n# _ # _ # _ _ _ _ # _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# # # # # # # # # # # #",
+      "task_type": 2,
+      "question": "What are the coordinates of element X?",
+      "answer": "(8, 5)",
+      "element": "X"
+    },
+    {
+      "env_type": "sokoban",
+      "map_id": 8,
+      "map_size": 12,
+      "map": "# # # # # # # # # # # #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ _ # _ P _ # _ #\n# _ _ # # # _ _ _ _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ _ # _ _ X _ _ #\n# _ _ _ _ _ _ _ # _ _ #\n# _ # _ _ # _ _ _ O _ #\n# _ # _ # _ _ _ _ # _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# # # # # # # # # # # #",
+      "task_type": 3,
+      "question": "What are the 8 elements surrounding P (up, down, left, right, up-left, up-right, down-left, down-right)?",
+      "answer": "{\"down\": \"_\", \"down-left\": \"_\", \"down-right\": \"_\", \"left\": \"_\", \"right\": \"_\", \"up\": \"_\", \"up-left\": \"_\", \"up-right\": \"_\"}",
+      "surrounding": {
+        "up": "_",
+        "down": "_",
+        "left": "_",
+        "right": "_",
+        "up-left": "_",
+        "up-right": "_",
+        "down-left": "_",
+        "down-right": "_"
+      }
+    },
+    {
+      "env_type": "sokoban",
+      "map_id": 8,
+      "map_size": 12,
+      "map": "# # # # # # # # # # # #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ _ # _ P _ # _ #\n# _ _ # # # _ _ _ _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ _ # _ _ X _ _ #\n# _ _ _ _ _ _ _ # _ _ #\n# _ # _ _ # _ _ _ O _ #\n# _ # _ # _ _ _ _ # _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# # # # # # # # # # # #",
+      "task_type": 4,
+      "question": "What is the relative position from X to O? (Answer in format: (dx, dy))",
+      "answer": "(1, 2)",
+      "relative_position": {
+        "dx": 1,
+        "dy": 2
+      }
+    },
+    {
+      "env_type": "sokoban",
+      "map_id": 9,
+      "map_size": 12,
+      "map": "# # # # # # # # # # # #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ # _ _ _ _ _ # _ #\n# _ _ P _ _ _ _ _ _ _ #\n# _ _ # _ _ _ # X _ _ #\n# _ _ _ _ _ _ _ _ O _ #\n# _ _ _ # _ _ _ _ _ _ #\n# _ _ # _ # _ _ # _ _ #\n# _ # # _ _ _ _ _ _ _ #\n# _ # _ _ _ _ _ # _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# # # # # # # # # # # #",
+      "task_type": 1,
+      "question": "What element is at coordinates (2, 7)?",
+      "answer": "_",
+      "coordinates": {
+        "x": 2,
+        "y": 7
+      }
+    },
+    {
+      "env_type": "sokoban",
+      "map_id": 9,
+      "map_size": 12,
+      "map": "# # # # # # # # # # # #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ # _ _ _ _ _ # _ #\n# _ _ P _ _ _ _ _ _ _ #\n# _ _ # _ _ _ # X _ _ #\n# _ _ _ _ _ _ _ _ O _ #\n# _ _ _ # _ _ _ _ _ _ #\n# _ _ # _ # _ _ # _ _ #\n# _ # # _ _ _ _ _ _ _ #\n# _ # _ _ _ _ _ # _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# # # # # # # # # # # #",
+      "task_type": 2,
+      "question": "What are the coordinates of element P?",
+      "answer": "(3, 3)",
+      "element": "P"
+    },
+    {
+      "env_type": "sokoban",
+      "map_id": 9,
+      "map_size": 12,
+      "map": "# # # # # # # # # # # #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ # _ _ _ _ _ # _ #\n# _ _ P _ _ _ _ _ _ _ #\n# _ _ # _ _ _ # X _ _ #\n# _ _ _ _ _ _ _ _ O _ #\n# _ _ _ # _ _ _ _ _ _ #\n# _ _ # _ # _ _ # _ _ #\n# _ # # _ _ _ _ _ _ _ #\n# _ # _ _ _ _ _ # _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# # # # # # # # # # # #",
+      "task_type": 3,
+      "question": "What are the 8 elements surrounding P (up, down, left, right, up-left, up-right, down-left, down-right)?",
+      "answer": "{\"down\": \"#\", \"down-left\": \"_\", \"down-right\": \"_\", \"left\": \"_\", \"right\": \"_\", \"up\": \"#\", \"up-left\": \"_\", \"up-right\": \"_\"}",
+      "surrounding": {
+        "up": "#",
+        "down": "#",
+        "left": "_",
+        "right": "_",
+        "up-left": "_",
+        "up-right": "_",
+        "down-left": "_",
+        "down-right": "_"
+      }
+    },
+    {
+      "env_type": "sokoban",
+      "map_id": 9,
+      "map_size": 12,
+      "map": "# # # # # # # # # # # #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ # _ _ _ _ _ # _ #\n# _ _ P _ _ _ _ _ _ _ #\n# _ _ # _ _ _ # X _ _ #\n# _ _ _ _ _ _ _ _ O _ #\n# _ _ _ # _ _ _ _ _ _ #\n# _ _ # _ # _ _ # _ _ #\n# _ # # _ _ _ _ _ _ _ #\n# _ # _ _ _ _ _ # _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# # # # # # # # # # # #",
+      "task_type": 4,
+      "question": "What is the relative position from X to O? (Answer in format: (dx, dy))",
+      "answer": "(1, 1)",
+      "relative_position": {
+        "dx": 1,
+        "dy": 1
+      }
+    },
+    {
+      "env_type": "sokoban",
+      "map_id": 10,
+      "map_size": 12,
+      "map": "# # # # # # # # # # # #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ _ _ _ _ # _ _ #\n# _ _ _ _ # _ _ O _ _ #\n# _ _ _ _ # _ _ _ _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ # # _ _ _ P _ _ _ #\n# _ # _ _ _ X _ _ _ _ #\n# _ # _ _ _ _ # _ # _ #\n# _ # _ _ _ _ # # _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# # # # # # # # # # # #",
+      "task_type": 1,
+      "question": "What element is at coordinates (2, 5)?",
+      "answer": "_",
+      "coordinates": {
+        "x": 2,
+        "y": 5
+      }
+    },
+    {
+      "env_type": "sokoban",
+      "map_id": 10,
+      "map_size": 12,
+      "map": "# # # # # # # # # # # #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ _ _ _ _ # _ _ #\n# _ _ _ _ # _ _ O _ _ #\n# _ _ _ _ # _ _ _ _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ # # _ _ _ P _ _ _ #\n# _ # _ _ _ X _ _ _ _ #\n# _ # _ _ _ _ # _ # _ #\n# _ # _ _ _ _ # # _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# # # # # # # # # # # #",
+      "task_type": 2,
+      "question": "What are the coordinates of element P?",
+      "answer": "(7, 6)",
+      "element": "P"
+    },
+    {
+      "env_type": "sokoban",
+      "map_id": 10,
+      "map_size": 12,
+      "map": "# # # # # # # # # # # #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ _ _ _ _ # _ _ #\n# _ _ _ _ # _ _ O _ _ #\n# _ _ _ _ # _ _ _ _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ # # _ _ _ P _ _ _ #\n# _ # _ _ _ X _ _ _ _ #\n# _ # _ _ _ _ # _ # _ #\n# _ # _ _ _ _ # # _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# # # # # # # # # # # #",
+      "task_type": 3,
+      "question": "What are the 8 elements surrounding P (up, down, left, right, up-left, up-right, down-left, down-right)?",
+      "answer": "{\"down\": \"_\", \"down-left\": \"X\", \"down-right\": \"_\", \"left\": \"_\", \"right\": \"_\", \"up\": \"_\", \"up-left\": \"_\", \"up-right\": \"_\"}",
+      "surrounding": {
+        "up": "_",
+        "down": "_",
+        "left": "_",
+        "right": "_",
+        "up-left": "_",
+        "up-right": "_",
+        "down-left": "X",
+        "down-right": "_"
+      }
+    },
+    {
+      "env_type": "sokoban",
+      "map_id": 10,
+      "map_size": 12,
+      "map": "# # # # # # # # # # # #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ _ _ _ _ # _ _ #\n# _ _ _ _ # _ _ O _ _ #\n# _ _ _ _ # _ _ _ _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ # # _ _ _ P _ _ _ #\n# _ # _ _ _ X _ _ _ _ #\n# _ # _ _ _ _ # _ # _ #\n# _ # _ _ _ _ # # _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# # # # # # # # # # # #",
+      "task_type": 4,
+      "question": "What is the relative position from X to O? (Answer in format: (dx, dy))",
+      "answer": "(2, -4)",
+      "relative_position": {
+        "dx": 2,
+        "dy": -4
+      }
+    },
+    {
+      "env_type": "sokoban",
+      "map_id": 11,
+      "map_size": 12,
+      "map": "# # # # # # # # # # # #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ # # _ _ _ P _ # _ #\n# _ _ _ _ _ _ _ _ # _ #\n# _ _ _ _ # # X _ # _ #\n# _ _ _ _ _ _ _ _ # _ #\n# _ _ _ _ _ _ _ # _ _ #\n# _ _ _ _ _ _ O _ _ _ #\n# _ _ _ _ # _ # _ _ _ #\n# _ # _ _ _ _ _ _ _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# # # # # # # # # # # #",
+      "task_type": 1,
+      "question": "What element is at coordinates (1, 1)?",
+      "answer": "_",
+      "coordinates": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "env_type": "sokoban",
+      "map_id": 11,
+      "map_size": 12,
+      "map": "# # # # # # # # # # # #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ # # _ _ _ P _ # _ #\n# _ _ _ _ _ _ _ _ # _ #\n# _ _ _ _ # # X _ # _ #\n# _ _ _ _ _ _ _ _ # _ #\n# _ _ _ _ _ _ _ # _ _ #\n# _ _ _ _ _ _ O _ _ _ #\n# _ _ _ _ # _ # _ _ _ #\n# _ # _ _ _ _ _ _ _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# # # # # # # # # # # #",
+      "task_type": 2,
+      "question": "What are the coordinates of element O?",
+      "answer": "(7, 7)",
+      "element": "O"
+    },
+    {
+      "env_type": "sokoban",
+      "map_id": 11,
+      "map_size": 12,
+      "map": "# # # # # # # # # # # #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ # # _ _ _ P _ # _ #\n# _ _ _ _ _ _ _ _ # _ #\n# _ _ _ _ # # X _ # _ #\n# _ _ _ _ _ _ _ _ # _ #\n# _ _ _ _ _ _ _ # _ _ #\n# _ _ _ _ _ _ O _ _ _ #\n# _ _ _ _ # _ # _ _ _ #\n# _ # _ _ _ _ _ _ _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# # # # # # # # # # # #",
+      "task_type": 3,
+      "question": "What are the 8 elements surrounding P (up, down, left, right, up-left, up-right, down-left, down-right)?",
+      "answer": "{\"down\": \"_\", \"down-left\": \"_\", \"down-right\": \"_\", \"left\": \"_\", \"right\": \"_\", \"up\": \"_\", \"up-left\": \"_\", \"up-right\": \"_\"}",
+      "surrounding": {
+        "up": "_",
+        "down": "_",
+        "left": "_",
+        "right": "_",
+        "up-left": "_",
+        "up-right": "_",
+        "down-left": "_",
+        "down-right": "_"
+      }
+    },
+    {
+      "env_type": "sokoban",
+      "map_id": 11,
+      "map_size": 12,
+      "map": "# # # # # # # # # # # #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ # # _ _ _ P _ # _ #\n# _ _ _ _ _ _ _ _ # _ #\n# _ _ _ _ # # X _ # _ #\n# _ _ _ _ _ _ _ _ # _ #\n# _ _ _ _ _ _ _ # _ _ #\n# _ _ _ _ _ _ O _ _ _ #\n# _ _ _ _ # _ # _ _ _ #\n# _ # _ _ _ _ _ _ _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# # # # # # # # # # # #",
+      "task_type": 4,
+      "question": "What is the relative position from X to O? (Answer in format: (dx, dy))",
+      "answer": "(0, 3)",
+      "relative_position": {
+        "dx": 0,
+        "dy": 3
+      }
+    },
+    {
+      "env_type": "sokoban",
+      "map_id": 12,
+      "map_size": 12,
+      "map": "# # # # # # # # # # # #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ _ _ # _ _ _ _ #\n# _ # _ # _ _ _ _ _ _ #\n# _ _ _ _ P _ _ _ _ _ #\n# _ _ _ _ _ _ _ # _ _ #\n# _ _ _ # # _ _ _ X _ #\n# _ _ _ # _ _ O _ _ _ #\n# _ # # _ _ # _ _ _ _ #\n# _ _ # _ _ _ _ # _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# # # # # # # # # # # #",
+      "task_type": 1,
+      "question": "What element is at coordinates (6, 3)?",
+      "answer": "_",
+      "coordinates": {
+        "x": 6,
+        "y": 3
+      }
+    },
+    {
+      "env_type": "sokoban",
+      "map_id": 12,
+      "map_size": 12,
+      "map": "# # # # # # # # # # # #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ _ _ # _ _ _ _ #\n# _ # _ # _ _ _ _ _ _ #\n# _ _ _ _ P _ _ _ _ _ #\n# _ _ _ _ _ _ _ # _ _ #\n# _ _ _ # # _ _ _ X _ #\n# _ _ _ # _ _ O _ _ _ #\n# _ # # _ _ # _ _ _ _ #\n# _ _ # _ _ _ _ # _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# # # # # # # # # # # #",
+      "task_type": 2,
+      "question": "What are the coordinates of element O?",
+      "answer": "(7, 7)",
+      "element": "O"
+    },
+    {
+      "env_type": "sokoban",
+      "map_id": 12,
+      "map_size": 12,
+      "map": "# # # # # # # # # # # #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ _ _ # _ _ _ _ #\n# _ # _ # _ _ _ _ _ _ #\n# _ _ _ _ P _ _ _ _ _ #\n# _ _ _ _ _ _ _ # _ _ #\n# _ _ _ # # _ _ _ X _ #\n# _ _ _ # _ _ O _ _ _ #\n# _ # # _ _ # _ _ _ _ #\n# _ _ # _ _ _ _ # _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# # # # # # # # # # # #",
+      "task_type": 3,
+      "question": "What are the 8 elements surrounding P (up, down, left, right, up-left, up-right, down-left, down-right)?",
+      "answer": "{\"down\": \"_\", \"down-left\": \"_\", \"down-right\": \"_\", \"left\": \"_\", \"right\": \"_\", \"up\": \"_\", \"up-left\": \"#\", \"up-right\": \"_\"}",
+      "surrounding": {
+        "up": "_",
+        "down": "_",
+        "left": "_",
+        "right": "_",
+        "up-left": "#",
+        "up-right": "_",
+        "down-left": "_",
+        "down-right": "_"
+      }
+    },
+    {
+      "env_type": "sokoban",
+      "map_id": 12,
+      "map_size": 12,
+      "map": "# # # # # # # # # # # #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ _ _ # _ _ _ _ #\n# _ # _ # _ _ _ _ _ _ #\n# _ _ _ _ P _ _ _ _ _ #\n# _ _ _ _ _ _ _ # _ _ #\n# _ _ _ # # _ _ _ X _ #\n# _ _ _ # _ _ O _ _ _ #\n# _ # # _ _ # _ _ _ _ #\n# _ _ # _ _ _ _ # _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# # # # # # # # # # # #",
+      "task_type": 4,
+      "question": "What is the relative position from X to O? (Answer in format: (dx, dy))",
+      "answer": "(-2, 1)",
+      "relative_position": {
+        "dx": -2,
+        "dy": 1
+      }
+    },
+    {
+      "env_type": "sokoban",
+      "map_id": 13,
+      "map_size": 12,
+      "map": "# # # # # # # # # # # #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ _ _ X _ _ # _ #\n# _ _ _ _ _ _ _ _ # _ #\n# _ P _ _ # _ _ _ # _ #\n# _ _ # O _ # _ _ _ _ #\n# _ _ # _ _ _ _ _ _ _ #\n# _ _ # # _ _ # _ _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ # _ _ _ _ _ _ # _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# # # # # # # # # # # #",
+      "task_type": 1,
+      "question": "What element is at coordinates (0, 9)?",
+      "answer": "#",
+      "coordinates": {
+        "x": 0,
+        "y": 9
+      }
+    },
+    {
+      "env_type": "sokoban",
+      "map_id": 13,
+      "map_size": 12,
+      "map": "# # # # # # # # # # # #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ _ _ X _ _ # _ #\n# _ _ _ _ _ _ _ _ # _ #\n# _ P _ _ # _ _ _ # _ #\n# _ _ # O _ # _ _ _ _ #\n# _ _ # _ _ _ _ _ _ _ #\n# _ _ # # _ _ # _ _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ # _ _ _ _ _ _ # _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# # # # # # # # # # # #",
+      "task_type": 2,
+      "question": "What are the coordinates of element O?",
+      "answer": "(4, 5)",
+      "element": "O"
+    },
+    {
+      "env_type": "sokoban",
+      "map_id": 13,
+      "map_size": 12,
+      "map": "# # # # # # # # # # # #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ _ _ X _ _ # _ #\n# _ _ _ _ _ _ _ _ # _ #\n# _ P _ _ # _ _ _ # _ #\n# _ _ # O _ # _ _ _ _ #\n# _ _ # _ _ _ _ _ _ _ #\n# _ _ # # _ _ # _ _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ # _ _ _ _ _ _ # _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# # # # # # # # # # # #",
+      "task_type": 3,
+      "question": "What are the 8 elements surrounding P (up, down, left, right, up-left, up-right, down-left, down-right)?",
+      "answer": "{\"down\": \"_\", \"down-left\": \"_\", \"down-right\": \"#\", \"left\": \"_\", \"right\": \"_\", \"up\": \"_\", \"up-left\": \"_\", \"up-right\": \"_\"}",
+      "surrounding": {
+        "up": "_",
+        "down": "_",
+        "left": "_",
+        "right": "_",
+        "up-left": "_",
+        "up-right": "_",
+        "down-left": "_",
+        "down-right": "#"
+      }
+    },
+    {
+      "env_type": "sokoban",
+      "map_id": 13,
+      "map_size": 12,
+      "map": "# # # # # # # # # # # #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ _ _ X _ _ # _ #\n# _ _ _ _ _ _ _ _ # _ #\n# _ P _ _ # _ _ _ # _ #\n# _ _ # O _ # _ _ _ _ #\n# _ _ # _ _ _ _ _ _ _ #\n# _ _ # # _ _ # _ _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ # _ _ _ _ _ _ # _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# # # # # # # # # # # #",
+      "task_type": 4,
+      "question": "What is the relative position from X to O? (Answer in format: (dx, dy))",
+      "answer": "(-2, 3)",
+      "relative_position": {
+        "dx": -2,
+        "dy": 3
+      }
+    },
+    {
+      "env_type": "sokoban",
+      "map_id": 14,
+      "map_size": 12,
+      "map": "# # # # # # # # # # # #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ # _ # # # _ _ _ _ #\n# _ P _ _ _ _ _ # _ _ #\n# _ _ _ _ _ O # _ _ _ #\n# _ _ _ _ _ _ # _ _ _ #\n# _ _ _ _ _ _ # _ _ _ #\n# _ # X _ _ _ # _ _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ _ # _ # _ _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# # # # # # # # # # # #",
+      "task_type": 1,
+      "question": "What element is at coordinates (4, 10)?",
+      "answer": "_",
+      "coordinates": {
+        "x": 4,
+        "y": 10
+      }
+    },
+    {
+      "env_type": "sokoban",
+      "map_id": 14,
+      "map_size": 12,
+      "map": "# # # # # # # # # # # #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ # _ # # # _ _ _ _ #\n# _ P _ _ _ _ _ # _ _ #\n# _ _ _ _ _ O # _ _ _ #\n# _ _ _ _ _ _ # _ _ _ #\n# _ _ _ _ _ _ # _ _ _ #\n# _ # X _ _ _ # _ _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ _ # _ # _ _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# # # # # # # # # # # #",
+      "task_type": 2,
+      "question": "What are the coordinates of element X?",
+      "answer": "(3, 7)",
+      "element": "X"
+    },
+    {
+      "env_type": "sokoban",
+      "map_id": 14,
+      "map_size": 12,
+      "map": "# # # # # # # # # # # #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ # _ # # # _ _ _ _ #\n# _ P _ _ _ _ _ # _ _ #\n# _ _ _ _ _ O # _ _ _ #\n# _ _ _ _ _ _ # _ _ _ #\n# _ _ _ _ _ _ # _ _ _ #\n# _ # X _ _ _ # _ _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ _ # _ # _ _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# # # # # # # # # # # #",
+      "task_type": 3,
+      "question": "What are the 8 elements surrounding P (up, down, left, right, up-left, up-right, down-left, down-right)?",
+      "answer": "{\"down\": \"_\", \"down-left\": \"_\", \"down-right\": \"_\", \"left\": \"_\", \"right\": \"_\", \"up\": \"#\", \"up-left\": \"_\", \"up-right\": \"_\"}",
+      "surrounding": {
+        "up": "#",
+        "down": "_",
+        "left": "_",
+        "right": "_",
+        "up-left": "_",
+        "up-right": "_",
+        "down-left": "_",
+        "down-right": "_"
+      }
+    },
+    {
+      "env_type": "sokoban",
+      "map_id": 14,
+      "map_size": 12,
+      "map": "# # # # # # # # # # # #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ # _ # # # _ _ _ _ #\n# _ P _ _ _ _ _ # _ _ #\n# _ _ _ _ _ O # _ _ _ #\n# _ _ _ _ _ _ # _ _ _ #\n# _ _ _ _ _ _ # _ _ _ #\n# _ # X _ _ _ # _ _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ _ # _ # _ _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# # # # # # # # # # # #",
+      "task_type": 4,
+      "question": "What is the relative position from X to O? (Answer in format: (dx, dy))",
+      "answer": "(3, -3)",
+      "relative_position": {
+        "dx": 3,
+        "dy": -3
+      }
+    },
+    {
+      "env_type": "sokoban",
+      "map_id": 15,
+      "map_size": 12,
+      "map": "# # # # # # # # # # # #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ # _ _ _ _ O _ # _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ _ # _ X # _ _ #\n# _ _ _ # _ # _ _ _ _ #\n# _ _ _ _ _ _ _ # _ _ #\n# _ _ _ # _ _ _ _ # _ #\n# _ # # _ # _ _ _ P _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# # # # # # # # # # # #",
+      "task_type": 1,
+      "question": "What element is at coordinates (1, 1)?",
+      "answer": "_",
+      "coordinates": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "env_type": "sokoban",
+      "map_id": 15,
+      "map_size": 12,
+      "map": "# # # # # # # # # # # #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ # _ _ _ _ O _ # _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ _ # _ X # _ _ #\n# _ _ _ # _ # _ _ _ _ #\n# _ _ _ _ _ _ _ # _ _ #\n# _ _ _ # _ _ _ _ # _ #\n# _ # # _ # _ _ _ P _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# # # # # # # # # # # #",
+      "task_type": 2,
+      "question": "What are the coordinates of element O?",
+      "answer": "(7, 3)",
+      "element": "O"
+    },
+    {
+      "env_type": "sokoban",
+      "map_id": 15,
+      "map_size": 12,
+      "map": "# # # # # # # # # # # #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ # _ _ _ _ O _ # _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ _ # _ X # _ _ #\n# _ _ _ # _ # _ _ _ _ #\n# _ _ _ _ _ _ _ # _ _ #\n# _ _ _ # _ _ _ _ # _ #\n# _ # # _ # _ _ _ P _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# # # # # # # # # # # #",
+      "task_type": 3,
+      "question": "What are the 8 elements surrounding P (up, down, left, right, up-left, up-right, down-left, down-right)?",
+      "answer": "{\"down\": \"_\", \"down-left\": \"_\", \"down-right\": \"_\", \"left\": \"_\", \"right\": \"_\", \"up\": \"#\", \"up-left\": \"_\", \"up-right\": \"_\"}",
+      "surrounding": {
+        "up": "#",
+        "down": "_",
+        "left": "_",
+        "right": "_",
+        "up-left": "_",
+        "up-right": "_",
+        "down-left": "_",
+        "down-right": "_"
+      }
+    },
+    {
+      "env_type": "sokoban",
+      "map_id": 15,
+      "map_size": 12,
+      "map": "# # # # # # # # # # # #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ # _ _ _ _ O _ # _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ _ # _ X # _ _ #\n# _ _ _ # _ # _ _ _ _ #\n# _ _ _ _ _ _ _ # _ _ #\n# _ _ _ # _ _ _ _ # _ #\n# _ # # _ # _ _ _ P _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# # # # # # # # # # # #",
+      "task_type": 4,
+      "question": "What is the relative position from X to O? (Answer in format: (dx, dy))",
+      "answer": "(0, -2)",
+      "relative_position": {
+        "dx": 0,
+        "dy": -2
+      }
+    },
+    {
+      "env_type": "sokoban",
+      "map_id": 16,
+      "map_size": 12,
+      "map": "# # # # # # # # # # # #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ _ # P _ # _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ _ _ _ _ # _ _ #\n# _ _ _ # # _ # _ X _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ # _ # _ _ # _ _ #\n# _ _ _ _ _ _ _ # # _ #\n# _ _ O _ _ _ _ _ # _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# # # # # # # # # # # #",
+      "task_type": 1,
+      "question": "What element is at coordinates (5, 1)?",
+      "answer": "_",
+      "coordinates": {
+        "x": 5,
+        "y": 1
+      }
+    },
+    {
+      "env_type": "sokoban",
+      "map_id": 16,
+      "map_size": 12,
+      "map": "# # # # # # # # # # # #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ _ # P _ # _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ _ _ _ _ # _ _ #\n# _ _ _ # # _ # _ X _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ # _ # _ _ # _ _ #\n# _ _ _ _ _ _ _ # # _ #\n# _ _ O _ _ _ _ _ # _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# # # # # # # # # # # #",
+      "task_type": 2,
+      "question": "What are the coordinates of element P?",
+      "answer": "(6, 2)",
+      "element": "P"
+    },
+    {
+      "env_type": "sokoban",
+      "map_id": 16,
+      "map_size": 12,
+      "map": "# # # # # # # # # # # #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ _ # P _ # _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ _ _ _ _ # _ _ #\n# _ _ _ # # _ # _ X _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ # _ # _ _ # _ _ #\n# _ _ _ _ _ _ _ # # _ #\n# _ _ O _ _ _ _ _ # _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# # # # # # # # # # # #",
+      "task_type": 3,
+      "question": "What are the 8 elements surrounding P (up, down, left, right, up-left, up-right, down-left, down-right)?",
+      "answer": "{\"down\": \"_\", \"down-left\": \"_\", \"down-right\": \"_\", \"left\": \"#\", \"right\": \"_\", \"up\": \"_\", \"up-left\": \"_\", \"up-right\": \"_\"}",
+      "surrounding": {
+        "up": "_",
+        "down": "_",
+        "left": "#",
+        "right": "_",
+        "up-left": "_",
+        "up-right": "_",
+        "down-left": "_",
+        "down-right": "_"
+      }
+    },
+    {
+      "env_type": "sokoban",
+      "map_id": 16,
+      "map_size": 12,
+      "map": "# # # # # # # # # # # #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ _ # P _ # _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ _ _ _ _ # _ _ #\n# _ _ _ # # _ # _ X _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ # _ # _ _ # _ _ #\n# _ _ _ _ _ _ _ # # _ #\n# _ _ O _ _ _ _ _ # _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# # # # # # # # # # # #",
+      "task_type": 4,
+      "question": "What is the relative position from X to O? (Answer in format: (dx, dy))",
+      "answer": "(-6, 4)",
+      "relative_position": {
+        "dx": -6,
+        "dy": 4
+      }
+    },
+    {
+      "env_type": "sokoban",
+      "map_id": 17,
+      "map_size": 12,
+      "map": "# # # # # # # # # # # #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ _ _ # _ _ O _ #\n# _ # _ _ # # _ _ # _ #\n# _ _ # _ _ _ _ _ _ _ #\n# _ # _ _ # # # _ _ _ #\n# _ _ _ # _ _ _ _ _ _ #\n# _ _ _ _ _ _ _ X _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ _ _ # _ _ P _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# # # # # # # # # # # #",
+      "task_type": 1,
+      "question": "What element is at coordinates (0, 10)?",
+      "answer": "#",
+      "coordinates": {
+        "x": 0,
+        "y": 10
+      }
+    },
+    {
+      "env_type": "sokoban",
+      "map_id": 17,
+      "map_size": 12,
+      "map": "# # # # # # # # # # # #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ _ _ # _ _ O _ #\n# _ # _ _ # # _ _ # _ #\n# _ _ # _ _ _ _ _ _ _ #\n# _ # _ _ # # # _ _ _ #\n# _ _ _ # _ _ _ _ _ _ #\n# _ _ _ _ _ _ _ X _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ _ _ # _ _ P _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# # # # # # # # # # # #",
+      "task_type": 2,
+      "question": "What are the coordinates of element O?",
+      "answer": "(9, 2)",
+      "element": "O"
+    },
+    {
+      "env_type": "sokoban",
+      "map_id": 17,
+      "map_size": 12,
+      "map": "# # # # # # # # # # # #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ _ _ # _ _ O _ #\n# _ # _ _ # # _ _ # _ #\n# _ _ # _ _ _ _ _ _ _ #\n# _ # _ _ # # # _ _ _ #\n# _ _ _ # _ _ _ _ _ _ #\n# _ _ _ _ _ _ _ X _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ _ _ # _ _ P _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# # # # # # # # # # # #",
+      "task_type": 3,
+      "question": "What are the 8 elements surrounding P (up, down, left, right, up-left, up-right, down-left, down-right)?",
+      "answer": "{\"down\": \"_\", \"down-left\": \"_\", \"down-right\": \"_\", \"left\": \"_\", \"right\": \"_\", \"up\": \"_\", \"up-left\": \"_\", \"up-right\": \"_\"}",
+      "surrounding": {
+        "up": "_",
+        "down": "_",
+        "left": "_",
+        "right": "_",
+        "up-left": "_",
+        "up-right": "_",
+        "down-left": "_",
+        "down-right": "_"
+      }
+    },
+    {
+      "env_type": "sokoban",
+      "map_id": 17,
+      "map_size": 12,
+      "map": "# # # # # # # # # # # #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ _ _ # _ _ O _ #\n# _ # _ _ # # _ _ # _ #\n# _ _ # _ _ _ _ _ _ _ #\n# _ # _ _ # # # _ _ _ #\n# _ _ _ # _ _ _ _ _ _ #\n# _ _ _ _ _ _ _ X _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ _ _ # _ _ P _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# # # # # # # # # # # #",
+      "task_type": 4,
+      "question": "What is the relative position from X to O? (Answer in format: (dx, dy))",
+      "answer": "(1, -5)",
+      "relative_position": {
+        "dx": 1,
+        "dy": -5
+      }
+    },
+    {
+      "env_type": "sokoban",
+      "map_id": 18,
+      "map_size": 12,
+      "map": "# # # # # # # # # # # #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ # _ _ X # _ _ _ #\n# _ _ _ # _ _ # O # _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ # _ _ _ # # _ #\n# _ _ P _ _ _ _ _ _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ # _ _ _ _ _ # _ _ #\n# _ _ _ _ # _ _ # _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# # # # # # # # # # # #",
+      "task_type": 1,
+      "question": "What element is at coordinates (6, 0)?",
+      "answer": "#",
+      "coordinates": {
+        "x": 6,
+        "y": 0
+      }
+    },
+    {
+      "env_type": "sokoban",
+      "map_id": 18,
+      "map_size": 12,
+      "map": "# # # # # # # # # # # #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ # _ _ X # _ _ _ #\n# _ _ _ # _ _ # O # _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ # _ _ _ # # _ #\n# _ _ P _ _ _ _ _ _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ # _ _ _ _ _ # _ _ #\n# _ _ _ _ # _ _ # _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# # # # # # # # # # # #",
+      "task_type": 2,
+      "question": "What are the coordinates of element X?",
+      "answer": "(6, 2)",
+      "element": "X"
+    },
+    {
+      "env_type": "sokoban",
+      "map_id": 18,
+      "map_size": 12,
+      "map": "# # # # # # # # # # # #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ # _ _ X # _ _ _ #\n# _ _ _ # _ _ # O # _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ # _ _ _ # # _ #\n# _ _ P _ _ _ _ _ _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ # _ _ _ _ _ # _ _ #\n# _ _ _ _ # _ _ # _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# # # # # # # # # # # #",
+      "task_type": 3,
+      "question": "What are the 8 elements surrounding P (up, down, left, right, up-left, up-right, down-left, down-right)?",
+      "answer": "{\"down\": \"_\", \"down-left\": \"_\", \"down-right\": \"_\", \"left\": \"_\", \"right\": \"_\", \"up\": \"_\", \"up-left\": \"_\", \"up-right\": \"#\"}",
+      "surrounding": {
+        "up": "_",
+        "down": "_",
+        "left": "_",
+        "right": "_",
+        "up-left": "_",
+        "up-right": "#",
+        "down-left": "_",
+        "down-right": "_"
+      }
+    },
+    {
+      "env_type": "sokoban",
+      "map_id": 18,
+      "map_size": 12,
+      "map": "# # # # # # # # # # # #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ # _ _ X # _ _ _ #\n# _ _ _ # _ _ # O # _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ # _ _ _ # # _ #\n# _ _ P _ _ _ _ _ _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ # _ _ _ _ _ # _ _ #\n# _ _ _ _ # _ _ # _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# # # # # # # # # # # #",
+      "task_type": 4,
+      "question": "What is the relative position from X to O? (Answer in format: (dx, dy))",
+      "answer": "(2, 1)",
+      "relative_position": {
+        "dx": 2,
+        "dy": 1
+      }
+    },
+    {
+      "env_type": "sokoban",
+      "map_id": 19,
+      "map_size": 12,
+      "map": "# # # # # # # # # # # #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ O _ _ _ _ _ _ _ #\n# _ _ _ # _ _ _ _ _ _ #\n# _ _ _ _ # _ # _ _ _ #\n# _ _ # _ # X _ _ _ _ #\n# _ _ _ # _ # _ # _ _ #\n# _ _ _ # _ _ _ P _ _ #\n# _ _ _ _ # # # _ _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# # # # # # # # # # # #",
+      "task_type": 1,
+      "question": "What element is at coordinates (3, 4)?",
+      "answer": "_",
+      "coordinates": {
+        "x": 3,
+        "y": 4
+      }
+    },
+    {
+      "env_type": "sokoban",
+      "map_id": 19,
+      "map_size": 12,
+      "map": "# # # # # # # # # # # #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ O _ _ _ _ _ _ _ #\n# _ _ _ # _ _ _ _ _ _ #\n# _ _ _ _ # _ # _ _ _ #\n# _ _ # _ # X _ _ _ _ #\n# _ _ _ # _ # _ # _ _ #\n# _ _ _ # _ _ _ P _ _ #\n# _ _ _ _ # # # _ _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# # # # # # # # # # # #",
+      "task_type": 2,
+      "question": "What are the coordinates of element P?",
+      "answer": "(8, 8)",
+      "element": "P"
+    },
+    {
+      "env_type": "sokoban",
+      "map_id": 19,
+      "map_size": 12,
+      "map": "# # # # # # # # # # # #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ O _ _ _ _ _ _ _ #\n# _ _ _ # _ _ _ _ _ _ #\n# _ _ _ _ # _ # _ _ _ #\n# _ _ # _ # X _ _ _ _ #\n# _ _ _ # _ # _ # _ _ #\n# _ _ _ # _ _ _ P _ _ #\n# _ _ _ _ # # # _ _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# # # # # # # # # # # #",
+      "task_type": 3,
+      "question": "What are the 8 elements surrounding P (up, down, left, right, up-left, up-right, down-left, down-right)?",
+      "answer": "{\"down\": \"_\", \"down-left\": \"#\", \"down-right\": \"_\", \"left\": \"_\", \"right\": \"_\", \"up\": \"#\", \"up-left\": \"_\", \"up-right\": \"_\"}",
+      "surrounding": {
+        "up": "#",
+        "down": "_",
+        "left": "_",
+        "right": "_",
+        "up-left": "_",
+        "up-right": "_",
+        "down-left": "#",
+        "down-right": "_"
+      }
+    },
+    {
+      "env_type": "sokoban",
+      "map_id": 19,
+      "map_size": 12,
+      "map": "# # # # # # # # # # # #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ O _ _ _ _ _ _ _ #\n# _ _ _ # _ _ _ _ _ _ #\n# _ _ _ _ # _ # _ _ _ #\n# _ _ # _ # X _ _ _ _ #\n# _ _ _ # _ # _ # _ _ #\n# _ _ _ # _ _ _ P _ _ #\n# _ _ _ _ # # # _ _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# # # # # # # # # # # #",
+      "task_type": 4,
+      "question": "What is the relative position from X to O? (Answer in format: (dx, dy))",
+      "answer": "(-3, -3)",
+      "relative_position": {
+        "dx": -3,
+        "dy": -3
+      }
+    },
+    {
+      "env_type": "sokoban",
+      "map_id": 20,
+      "map_size": 12,
+      "map": "# # # # # # # # # # # #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ _ # O _ _ # _ #\n# _ _ _ _ _ X _ _ _ _ #\n# _ _ _ _ _ # _ _ _ _ #\n# _ _ _ _ _ _ _ # _ _ #\n# _ # _ # _ _ # _ _ _ #\n# _ P _ _ _ _ _ _ # _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ # _ _ # _ # # _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# # # # # # # # # # # #",
+      "task_type": 1,
+      "question": "What element is at coordinates (8, 1)?",
+      "answer": "_",
+      "coordinates": {
+        "x": 8,
+        "y": 1
+      }
+    },
+    {
+      "env_type": "sokoban",
+      "map_id": 20,
+      "map_size": 12,
+      "map": "# # # # # # # # # # # #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ _ # O _ _ # _ #\n# _ _ _ _ _ X _ _ _ _ #\n# _ _ _ _ _ # _ _ _ _ #\n# _ _ _ _ _ _ _ # _ _ #\n# _ # _ # _ _ # _ _ _ #\n# _ P _ _ _ _ _ _ # _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ # _ _ # _ # # _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# # # # # # # # # # # #",
+      "task_type": 2,
+      "question": "What are the coordinates of element P?",
+      "answer": "(2, 7)",
+      "element": "P"
+    },
+    {
+      "env_type": "sokoban",
+      "map_id": 20,
+      "map_size": 12,
+      "map": "# # # # # # # # # # # #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ _ # O _ _ # _ #\n# _ _ _ _ _ X _ _ _ _ #\n# _ _ _ _ _ # _ _ _ _ #\n# _ _ _ _ _ _ _ # _ _ #\n# _ # _ # _ _ # _ _ _ #\n# _ P _ _ _ _ _ _ # _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ # _ _ # _ # # _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# # # # # # # # # # # #",
+      "task_type": 3,
+      "question": "What are the 8 elements surrounding P (up, down, left, right, up-left, up-right, down-left, down-right)?",
+      "answer": "{\"down\": \"_\", \"down-left\": \"_\", \"down-right\": \"_\", \"left\": \"_\", \"right\": \"_\", \"up\": \"#\", \"up-left\": \"_\", \"up-right\": \"_\"}",
+      "surrounding": {
+        "up": "#",
+        "down": "_",
+        "left": "_",
+        "right": "_",
+        "up-left": "_",
+        "up-right": "_",
+        "down-left": "_",
+        "down-right": "_"
+      }
+    },
+    {
+      "env_type": "sokoban",
+      "map_id": 20,
+      "map_size": 12,
+      "map": "# # # # # # # # # # # #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ _ # O _ _ # _ #\n# _ _ _ _ _ X _ _ _ _ #\n# _ _ _ _ _ # _ _ _ _ #\n# _ _ _ _ _ _ _ # _ _ #\n# _ # _ # _ _ # _ _ _ #\n# _ P _ _ _ _ _ _ # _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ # _ _ # _ # # _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# # # # # # # # # # # #",
+      "task_type": 4,
+      "question": "What is the relative position from X to O? (Answer in format: (dx, dy))",
+      "answer": "(0, -1)",
+      "relative_position": {
+        "dx": 0,
+        "dy": -1
+      }
+    },
+    {
+      "env_type": "sokoban",
+      "map_id": 21,
+      "map_size": 12,
+      "map": "# # # # # # # # # # # #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ P _ # _ O # _ #\n# _ # _ _ _ _ _ _ # _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ # _ _ _ _ _ _ _ #\n# _ _ _ _ _ # # # _ _ #\n# _ _ _ _ # _ _ _ _ _ #\n# _ X _ _ _ _ _ _ # _ #\n# _ _ _ # _ _ _ # _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# # # # # # # # # # # #",
+      "task_type": 1,
+      "question": "What element is at coordinates (6, 10)?",
+      "answer": "_",
+      "coordinates": {
+        "x": 6,
+        "y": 10
+      }
+    },
+    {
+      "env_type": "sokoban",
+      "map_id": 21,
+      "map_size": 12,
+      "map": "# # # # # # # # # # # #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ P _ # _ O # _ #\n# _ # _ _ _ _ _ _ # _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ # _ _ _ _ _ _ _ #\n# _ _ _ _ _ # # # _ _ #\n# _ _ _ _ # _ _ _ _ _ #\n# _ X _ _ _ _ _ _ # _ #\n# _ _ _ # _ _ _ # _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# # # # # # # # # # # #",
+      "task_type": 2,
+      "question": "What are the coordinates of element O?",
+      "answer": "(8, 2)",
+      "element": "O"
+    },
+    {
+      "env_type": "sokoban",
+      "map_id": 21,
+      "map_size": 12,
+      "map": "# # # # # # # # # # # #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ P _ # _ O # _ #\n# _ # _ _ _ _ _ _ # _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ # _ _ _ _ _ _ _ #\n# _ _ _ _ _ # # # _ _ #\n# _ _ _ _ # _ _ _ _ _ #\n# _ X _ _ _ _ _ _ # _ #\n# _ _ _ # _ _ _ # _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# # # # # # # # # # # #",
+      "task_type": 3,
+      "question": "What are the 8 elements surrounding P (up, down, left, right, up-left, up-right, down-left, down-right)?",
+      "answer": "{\"down\": \"_\", \"down-left\": \"_\", \"down-right\": \"_\", \"left\": \"_\", \"right\": \"_\", \"up\": \"_\", \"up-left\": \"_\", \"up-right\": \"_\"}",
+      "surrounding": {
+        "up": "_",
+        "down": "_",
+        "left": "_",
+        "right": "_",
+        "up-left": "_",
+        "up-right": "_",
+        "down-left": "_",
+        "down-right": "_"
+      }
+    },
+    {
+      "env_type": "sokoban",
+      "map_id": 21,
+      "map_size": 12,
+      "map": "# # # # # # # # # # # #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ P _ # _ O # _ #\n# _ # _ _ _ _ _ _ # _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ # _ _ _ _ _ _ _ #\n# _ _ _ _ _ # # # _ _ #\n# _ _ _ _ # _ _ _ _ _ #\n# _ X _ _ _ _ _ _ # _ #\n# _ _ _ # _ _ _ # _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# # # # # # # # # # # #",
+      "task_type": 4,
+      "question": "What is the relative position from X to O? (Answer in format: (dx, dy))",
+      "answer": "(6, -6)",
+      "relative_position": {
+        "dx": 6,
+        "dy": -6
+      }
+    },
+    {
+      "env_type": "sokoban",
+      "map_id": 22,
+      "map_size": 12,
+      "map": "# # # # # # # # # # # #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ # _ _ _ _ # _ # _ #\n# _ # _ _ _ # _ _ _ _ #\n# _ X # _ _ _ _ _ _ _ #\n# _ _ _ _ O _ _ _ _ _ #\n# _ # _ # _ _ # _ _ _ #\n# _ _ _ P _ _ _ _ _ _ #\n# _ _ _ _ # _ # # _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# # # # # # # # # # # #",
+      "task_type": 1,
+      "question": "What element is at coordinates (5, 1)?",
+      "answer": "_",
+      "coordinates": {
+        "x": 5,
+        "y": 1
+      }
+    },
+    {
+      "env_type": "sokoban",
+      "map_id": 22,
+      "map_size": 12,
+      "map": "# # # # # # # # # # # #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ # _ _ _ _ # _ # _ #\n# _ # _ _ _ # _ _ _ _ #\n# _ X # _ _ _ _ _ _ _ #\n# _ _ _ _ O _ _ _ _ _ #\n# _ # _ # _ _ # _ _ _ #\n# _ _ _ P _ _ _ _ _ _ #\n# _ _ _ _ # _ # # _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# # # # # # # # # # # #",
+      "task_type": 2,
+      "question": "What are the coordinates of element P?",
+      "answer": "(4, 8)",
+      "element": "P"
+    },
+    {
+      "env_type": "sokoban",
+      "map_id": 22,
+      "map_size": 12,
+      "map": "# # # # # # # # # # # #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ # _ _ _ _ # _ # _ #\n# _ # _ _ _ # _ _ _ _ #\n# _ X # _ _ _ _ _ _ _ #\n# _ _ _ _ O _ _ _ _ _ #\n# _ # _ # _ _ # _ _ _ #\n# _ _ _ P _ _ _ _ _ _ #\n# _ _ _ _ # _ # # _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# # # # # # # # # # # #",
+      "task_type": 3,
+      "question": "What are the 8 elements surrounding P (up, down, left, right, up-left, up-right, down-left, down-right)?",
+      "answer": "{\"down\": \"_\", \"down-left\": \"_\", \"down-right\": \"#\", \"left\": \"_\", \"right\": \"_\", \"up\": \"#\", \"up-left\": \"_\", \"up-right\": \"_\"}",
+      "surrounding": {
+        "up": "#",
+        "down": "_",
+        "left": "_",
+        "right": "_",
+        "up-left": "_",
+        "up-right": "_",
+        "down-left": "_",
+        "down-right": "#"
+      }
+    },
+    {
+      "env_type": "sokoban",
+      "map_id": 22,
+      "map_size": 12,
+      "map": "# # # # # # # # # # # #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ # _ _ _ _ # _ # _ #\n# _ # _ _ _ # _ _ _ _ #\n# _ X # _ _ _ _ _ _ _ #\n# _ _ _ _ O _ _ _ _ _ #\n# _ # _ # _ _ # _ _ _ #\n# _ _ _ P _ _ _ _ _ _ #\n# _ _ _ _ # _ # # _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# # # # # # # # # # # #",
+      "task_type": 4,
+      "question": "What is the relative position from X to O? (Answer in format: (dx, dy))",
+      "answer": "(3, 1)",
+      "relative_position": {
+        "dx": 3,
+        "dy": 1
+      }
+    },
+    {
+      "env_type": "sokoban",
+      "map_id": 23,
+      "map_size": 12,
+      "map": "# # # # # # # # # # # #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ _ _ # _ # _ _ #\n# _ # _ _ _ _ # _ _ _ #\n# _ # _ _ _ P _ # _ _ #\n# _ O _ _ _ _ X _ _ _ #\n# _ # _ # _ # _ _ # _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ # # _ _ _ _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# # # # # # # # # # # #",
+      "task_type": 1,
+      "question": "What element is at coordinates (2, 7)?",
+      "answer": "_",
+      "coordinates": {
+        "x": 2,
+        "y": 7
+      }
+    },
+    {
+      "env_type": "sokoban",
+      "map_id": 23,
+      "map_size": 12,
+      "map": "# # # # # # # # # # # #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ _ _ # _ # _ _ #\n# _ # _ _ _ _ # _ _ _ #\n# _ # _ _ _ P _ # _ _ #\n# _ O _ _ _ _ X _ _ _ #\n# _ # _ # _ # _ _ # _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ # # _ _ _ _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# # # # # # # # # # # #",
+      "task_type": 2,
+      "question": "What are the coordinates of element O?",
+      "answer": "(2, 5)",
+      "element": "O"
+    },
+    {
+      "env_type": "sokoban",
+      "map_id": 23,
+      "map_size": 12,
+      "map": "# # # # # # # # # # # #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ _ _ # _ # _ _ #\n# _ # _ _ _ _ # _ _ _ #\n# _ # _ _ _ P _ # _ _ #\n# _ O _ _ _ _ X _ _ _ #\n# _ # _ # _ # _ _ # _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ # # _ _ _ _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# # # # # # # # # # # #",
+      "task_type": 3,
+      "question": "What are the 8 elements surrounding P (up, down, left, right, up-left, up-right, down-left, down-right)?",
+      "answer": "{\"down\": \"_\", \"down-left\": \"_\", \"down-right\": \"X\", \"left\": \"_\", \"right\": \"_\", \"up\": \"_\", \"up-left\": \"_\", \"up-right\": \"#\"}",
+      "surrounding": {
+        "up": "_",
+        "down": "_",
+        "left": "_",
+        "right": "_",
+        "up-left": "_",
+        "up-right": "#",
+        "down-left": "_",
+        "down-right": "X"
+      }
+    },
+    {
+      "env_type": "sokoban",
+      "map_id": 23,
+      "map_size": 12,
+      "map": "# # # # # # # # # # # #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ _ _ # _ # _ _ #\n# _ # _ _ _ _ # _ _ _ #\n# _ # _ _ _ P _ # _ _ #\n# _ O _ _ _ _ X _ _ _ #\n# _ # _ # _ # _ _ # _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ _ # # _ _ _ _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# # # # # # # # # # # #",
+      "task_type": 4,
+      "question": "What is the relative position from X to O? (Answer in format: (dx, dy))",
+      "answer": "(-5, 0)",
+      "relative_position": {
+        "dx": -5,
+        "dy": 0
+      }
+    },
+    {
+      "env_type": "sokoban",
+      "map_id": 24,
+      "map_size": 12,
+      "map": "# # # # # # # # # # # #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ # _ _ _ _ _ # _ _ #\n# _ _ O P _ _ _ _ _ _ #\n# _ _ _ X # _ _ _ _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ # _ # _ _ # # _ #\n# _ _ # # _ _ _ _ _ _ #\n# _ _ _ _ # # _ _ _ _ #\n# _ _ # _ _ _ _ _ _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# # # # # # # # # # # #",
+      "task_type": 1,
+      "question": "What element is at coordinates (1, 11)?",
+      "answer": "#",
+      "coordinates": {
+        "x": 1,
+        "y": 11
+      }
+    },
+    {
+      "env_type": "sokoban",
+      "map_id": 24,
+      "map_size": 12,
+      "map": "# # # # # # # # # # # #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ # _ _ _ _ _ # _ _ #\n# _ _ O P _ _ _ _ _ _ #\n# _ _ _ X # _ _ _ _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ # _ # _ _ # # _ #\n# _ _ # # _ _ _ _ _ _ #\n# _ _ _ _ # # _ _ _ _ #\n# _ _ # _ _ _ _ _ _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# # # # # # # # # # # #",
+      "task_type": 2,
+      "question": "What are the coordinates of element O?",
+      "answer": "(3, 3)",
+      "element": "O"
+    },
+    {
+      "env_type": "sokoban",
+      "map_id": 24,
+      "map_size": 12,
+      "map": "# # # # # # # # # # # #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ # _ _ _ _ _ # _ _ #\n# _ _ O P _ _ _ _ _ _ #\n# _ _ _ X # _ _ _ _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ # _ # _ _ # # _ #\n# _ _ # # _ _ _ _ _ _ #\n# _ _ _ _ # # _ _ _ _ #\n# _ _ # _ _ _ _ _ _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# # # # # # # # # # # #",
+      "task_type": 3,
+      "question": "What are the 8 elements surrounding P (up, down, left, right, up-left, up-right, down-left, down-right)?",
+      "answer": "{\"down\": \"X\", \"down-left\": \"_\", \"down-right\": \"#\", \"left\": \"O\", \"right\": \"_\", \"up\": \"_\", \"up-left\": \"_\", \"up-right\": \"_\"}",
+      "surrounding": {
+        "up": "_",
+        "down": "X",
+        "left": "O",
+        "right": "_",
+        "up-left": "_",
+        "up-right": "_",
+        "down-left": "_",
+        "down-right": "#"
+      }
+    },
+    {
+      "env_type": "sokoban",
+      "map_id": 24,
+      "map_size": 12,
+      "map": "# # # # # # # # # # # #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ # _ _ _ _ _ # _ _ #\n# _ _ O P _ _ _ _ _ _ #\n# _ _ _ X # _ _ _ _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# _ _ # _ # _ _ # # _ #\n# _ _ # # _ _ _ _ _ _ #\n# _ _ _ _ # # _ _ _ _ #\n# _ _ # _ _ _ _ _ _ _ #\n# _ _ _ _ _ _ _ _ _ _ #\n# # # # # # # # # # # #",
+      "task_type": 4,
+      "question": "What is the relative position from X to O? (Answer in format: (dx, dy))",
+      "answer": "(-1, -1)",
+      "relative_position": {
+        "dx": -1,
+        "dy": -1
+      }
+    }
+  ]
+}

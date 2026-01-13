@@ -1,0 +1,37 @@
+{
+  "_comment": "Example configuration file for Gomoku Benchmark",
+  
+  "board_sizes": [9],
+
+  "models": [
+    "llama-3-8b"
+  ],
+  
+  "test_counts": [10],
+  
+  "output_dir": "./results",
+  
+  "data_dir": "./data",
+  
+  "custom_models": {
+    "llama3-8B": {
+      "model_name": "/path/to/local/llama-3-8b-instruct",
+      "model_type": "vllm",
+      "max_tokens": 2000,
+      "temperature": 0.1,
+      "timeout": 120
+    }
+  },
+  
+  "evaluation_settings": {
+    "strict_parsing": true,
+    "case_sensitive": false,
+    "timeout_as_error": true
+  },
+  
+  "logging": {
+    "level": "INFO",
+    "save_detailed_logs": true,
+    "log_model_responses": false
+  }
+}

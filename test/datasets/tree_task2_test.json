@@ -1,0 +1,46 @@
+{
+  "generation_info": {
+    "difficulty": "easy",
+    "depth_range": [
+      3,
+      3
+    ],
+    "total_samples": 1,
+    "generation_timestamp": "2025-12-28T18:34:08.588614",
+    "task_type": "task2",
+    "task_description": "Binary tree path analysis - finding paths between two nodes"
+  },
+  "difficulty_distribution": {},
+  "path_length_distribution": {
+    "4": 1
+  },
+  "depth_distribution": {
+    "3": 1
+  },
+  "samples": [
+    {
+      "task_type": "task2",
+      "tree_structure": "      1\n    /   \\\n  8       7\n / \\     / \\\n17  5   27  14",
+      "tree_depth": 3,
+      "source_node": 27,
+      "target_node": 17,
+      "question": "Find the path from node 27 to node 17 in the binary tree. Provide the path as a sequence of nodes separated by ' -> '.",
+      "prompt": "You are given a binary tree structure. Please analyze it carefully and find the requested path between two nodes.\n\n**Path Finding Concepts:**\n\n1. **Path Between Nodes**\n   - A path between two nodes in a binary tree is the shortest sequence of nodes you must traverse to get from the source node to the target node\n\n2. **How to Find Path**\n   - Find the Lowest Common Ancestor (LCA) of the two nodes\n   - The path goes: source → ... → LCA → ... → target\n   - If one node is an ancestor of another, the LCA is the ancestor node\n\n3. **Path Format**\n   - Format: source → intermediate_node1 → intermediate_node2 → ... → target\n   - If source and target are the same node, the path is just that single node\n   - Use \" -> \" (space-arrow-space) to separate nodes\n\n**Example:**\nFor the tree:\n```\n    1\n   / \\\n  2   3\n /   / \\\n4   5   6\n```\n\n- Path from 4 to 6: 4 -> 2 -> 1 -> 3 -> 6\n- Path from 2 to 5: 2 -> 1 -> 3 -> 5  \n- Path from 4 to 2: 4 -> 2\n\nBinary Tree Structure:\n      1\n    /   \\\n  8       7\n / \\     / \\\n17  5   27  14\n\nTask: Find the path from node 27 to node 17 in the binary tree. Provide the path as a sequence of nodes separated by ' -> '.\n\nPlease provide your answer following this format:\n\n---OUTPUT FORMAT---\n[Your analysis here if any]\n### My answer is:\n[The path in the format: node1 -> node2 -> ... -> nodeN]",
+      "expected_answer": "27 -> 7 -> 1 -> 8 -> 17",
+      "path_analysis": {
+        "source": 27,
+        "target": 17,
+        "path": [
+          27,
+          7,
+          1,
+          8,
+          17
+        ],
+        "path_length": 4
+      },
+      "sample_id": 0,
+      "difficulty": "easy"
+    }
+  ]
+}

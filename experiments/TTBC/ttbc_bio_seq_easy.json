@@ -1,0 +1,1002 @@
+[
+  {
+    "prompt": "You are a molecular biology expert. I need you to find the complementary DNA sequence for a given DNA sequence.\n\n**Biological Knowledge Required:**\nIn DNA, the four nucleotide bases pair specifically through hydrogen bonding:\n- Adenine (A) always pairs with Thymine (T)\n- Thymine (T) always pairs with Adenine (A)\n- Guanine (G) always pairs with Cytosine (C)\n- Cytosine (C) always pairs with Guanine (G)\n\nThis complementary base pairing is fundamental to DNA structure and replication.\n\n**Task:**\nGiven the following DNA sequence, provide its complementary sequence by applying the base pairing rules above.\n\n**Example:**\nInput: ATCG\nOutput answer: TAGC (A\u2192T, T\u2192A, C\u2192G, G\u2192C)\n\n**Input DNA sequence:** GTAACCCTAT\n\n**Instructions:**\n1. For each base in the input sequence, determine its complement using the pairing rules\n2. Write out the complete complementary sequence\n3. Provide your final answer between the tags <answer> and </answer>\n\nPlease provide the complementary DNA sequence for the given input.",
+    "answer": "CATTGGGATA",
+    "meta": {
+      "task_type": "dna_complement",
+      "input": "GTAACCCTAT",
+      "expected_output": "CATTGGGATA",
+      "sequence_length": 10
+    }
+  },
+  {
+    "prompt": "You are a molecular biology expert. I need you to find the complementary DNA sequence for a given DNA sequence.\n\n**Biological Knowledge Required:**\nIn DNA, the four nucleotide bases pair specifically through hydrogen bonding:\n- Adenine (A) always pairs with Thymine (T)\n- Thymine (T) always pairs with Adenine (A)\n- Guanine (G) always pairs with Cytosine (C)\n- Cytosine (C) always pairs with Guanine (G)\n\nThis complementary base pairing is fundamental to DNA structure and replication.\n\n**Task:**\nGiven the following DNA sequence, provide its complementary sequence by applying the base pairing rules above.\n\n**Example:**\nInput: ATCG\nOutput answer: TAGC (A\u2192T, T\u2192A, C\u2192G, G\u2192C)\n\n**Input DNA sequence:** TCCTAACAGA\n\n**Instructions:**\n1. For each base in the input sequence, determine its complement using the pairing rules\n2. Write out the complete complementary sequence\n3. Provide your final answer between the tags <answer> and </answer>\n\nPlease provide the complementary DNA sequence for the given input.",
+    "answer": "AGGATTGTCT",
+    "meta": {
+      "task_type": "dna_complement",
+      "input": "TCCTAACAGA",
+      "expected_output": "AGGATTGTCT",
+      "sequence_length": 10
+    }
+  },
+  {
+    "prompt": "You are a molecular biology expert. I need you to find the complementary DNA sequence for a given DNA sequence.\n\n**Biological Knowledge Required:**\nIn DNA, the four nucleotide bases pair specifically through hydrogen bonding:\n- Adenine (A) always pairs with Thymine (T)\n- Thymine (T) always pairs with Adenine (A)\n- Guanine (G) always pairs with Cytosine (C)\n- Cytosine (C) always pairs with Guanine (G)\n\nThis complementary base pairing is fundamental to DNA structure and replication.\n\n**Task:**\nGiven the following DNA sequence, provide its complementary sequence by applying the base pairing rules above.\n\n**Example:**\nInput: ATCG\nOutput answer: TAGC (A\u2192T, T\u2192A, C\u2192G, G\u2192C)\n\n**Input DNA sequence:** TAGACTTTCT\n\n**Instructions:**\n1. For each base in the input sequence, determine its complement using the pairing rules\n2. Write out the complete complementary sequence\n3. Provide your final answer between the tags <answer> and </answer>\n\nPlease provide the complementary DNA sequence for the given input.",
+    "answer": "ATCTGAAAGA",
+    "meta": {
+      "task_type": "dna_complement",
+      "input": "TAGACTTTCT",
+      "expected_output": "ATCTGAAAGA",
+      "sequence_length": 10
+    }
+  },
+  {
+    "prompt": "You are a molecular biology expert. I need you to find the complementary DNA sequence for a given DNA sequence.\n\n**Biological Knowledge Required:**\nIn DNA, the four nucleotide bases pair specifically through hydrogen bonding:\n- Adenine (A) always pairs with Thymine (T)\n- Thymine (T) always pairs with Adenine (A)\n- Guanine (G) always pairs with Cytosine (C)\n- Cytosine (C) always pairs with Guanine (G)\n\nThis complementary base pairing is fundamental to DNA structure and replication.\n\n**Task:**\nGiven the following DNA sequence, provide its complementary sequence by applying the base pairing rules above.\n\n**Example:**\nInput: ATCG\nOutput answer: TAGC (A\u2192T, T\u2192A, C\u2192G, G\u2192C)\n\n**Input DNA sequence:** TTCAGATCCA\n\n**Instructions:**\n1. For each base in the input sequence, determine its complement using the pairing rules\n2. Write out the complete complementary sequence\n3. Provide your final answer between the tags <answer> and </answer>\n\nPlease provide the complementary DNA sequence for the given input.",
+    "answer": "AAGTCTAGGT",
+    "meta": {
+      "task_type": "dna_complement",
+      "input": "TTCAGATCCA",
+      "expected_output": "AAGTCTAGGT",
+      "sequence_length": 10
+    }
+  },
+  {
+    "prompt": "You are a molecular biology expert. I need you to find the complementary DNA sequence for a given DNA sequence.\n\n**Biological Knowledge Required:**\nIn DNA, the four nucleotide bases pair specifically through hydrogen bonding:\n- Adenine (A) always pairs with Thymine (T)\n- Thymine (T) always pairs with Adenine (A)\n- Guanine (G) always pairs with Cytosine (C)\n- Cytosine (C) always pairs with Guanine (G)\n\nThis complementary base pairing is fundamental to DNA structure and replication.\n\n**Task:**\nGiven the following DNA sequence, provide its complementary sequence by applying the base pairing rules above.\n\n**Example:**\nInput: ATCG\nOutput answer: TAGC (A\u2192T, T\u2192A, C\u2192G, G\u2192C)\n\n**Input DNA sequence:** ATGGAGAAAA\n\n**Instructions:**\n1. For each base in the input sequence, determine its complement using the pairing rules\n2. Write out the complete complementary sequence\n3. Provide your final answer between the tags <answer> and </answer>\n\nPlease provide the complementary DNA sequence for the given input.",
+    "answer": "TACCTCTTTT",
+    "meta": {
+      "task_type": "dna_complement",
+      "input": "ATGGAGAAAA",
+      "expected_output": "TACCTCTTTT",
+      "sequence_length": 10
+    }
+  },
+  {
+    "prompt": "You are a molecular biology expert. I need you to find the complementary DNA sequence for a given DNA sequence.\n\n**Biological Knowledge Required:**\nIn DNA, the four nucleotide bases pair specifically through hydrogen bonding:\n- Adenine (A) always pairs with Thymine (T)\n- Thymine (T) always pairs with Adenine (A)\n- Guanine (G) always pairs with Cytosine (C)\n- Cytosine (C) always pairs with Guanine (G)\n\nThis complementary base pairing is fundamental to DNA structure and replication.\n\n**Task:**\nGiven the following DNA sequence, provide its complementary sequence by applying the base pairing rules above.\n\n**Example:**\nInput: ATCG\nOutput answer: TAGC (A\u2192T, T\u2192A, C\u2192G, G\u2192C)\n\n**Input DNA sequence:** CGGCTAAAAC\n\n**Instructions:**\n1. For each base in the input sequence, determine its complement using the pairing rules\n2. Write out the complete complementary sequence\n3. Provide your final answer between the tags <answer> and </answer>\n\nPlease provide the complementary DNA sequence for the given input.",
+    "answer": "GCCGATTTTG",
+    "meta": {
+      "task_type": "dna_complement",
+      "input": "CGGCTAAAAC",
+      "expected_output": "GCCGATTTTG",
+      "sequence_length": 10
+    }
+  },
+  {
+    "prompt": "You are a molecular biology expert. I need you to find the complementary DNA sequence for a given DNA sequence.\n\n**Biological Knowledge Required:**\nIn DNA, the four nucleotide bases pair specifically through hydrogen bonding:\n- Adenine (A) always pairs with Thymine (T)\n- Thymine (T) always pairs with Adenine (A)\n- Guanine (G) always pairs with Cytosine (C)\n- Cytosine (C) always pairs with Guanine (G)\n\nThis complementary base pairing is fundamental to DNA structure and replication.\n\n**Task:**\nGiven the following DNA sequence, provide its complementary sequence by applying the base pairing rules above.\n\n**Example:**\nInput: ATCG\nOutput answer: TAGC (A\u2192T, T\u2192A, C\u2192G, G\u2192C)\n\n**Input DNA sequence:** ACACTCCACA\n\n**Instructions:**\n1. For each base in the input sequence, determine its complement using the pairing rules\n2. Write out the complete complementary sequence\n3. Provide your final answer between the tags <answer> and </answer>\n\nPlease provide the complementary DNA sequence for the given input.",
+    "answer": "TGTGAGGTGT",
+    "meta": {
+      "task_type": "dna_complement",
+      "input": "ACACTCCACA",
+      "expected_output": "TGTGAGGTGT",
+      "sequence_length": 10
+    }
+  },
+  {
+    "prompt": "You are a molecular biology expert. I need you to find the complementary DNA sequence for a given DNA sequence.\n\n**Biological Knowledge Required:**\nIn DNA, the four nucleotide bases pair specifically through hydrogen bonding:\n- Adenine (A) always pairs with Thymine (T)\n- Thymine (T) always pairs with Adenine (A)\n- Guanine (G) always pairs with Cytosine (C)\n- Cytosine (C) always pairs with Guanine (G)\n\nThis complementary base pairing is fundamental to DNA structure and replication.\n\n**Task:**\nGiven the following DNA sequence, provide its complementary sequence by applying the base pairing rules above.\n\n**Example:**\nInput: ATCG\nOutput answer: TAGC (A\u2192T, T\u2192A, C\u2192G, G\u2192C)\n\n**Input DNA sequence:** GTCGTCCCTT\n\n**Instructions:**\n1. For each base in the input sequence, determine its complement using the pairing rules\n2. Write out the complete complementary sequence\n3. Provide your final answer between the tags <answer> and </answer>\n\nPlease provide the complementary DNA sequence for the given input.",
+    "answer": "CAGCAGGGAA",
+    "meta": {
+      "task_type": "dna_complement",
+      "input": "GTCGTCCCTT",
+      "expected_output": "CAGCAGGGAA",
+      "sequence_length": 10
+    }
+  },
+  {
+    "prompt": "You are a molecular biology expert. I need you to find the complementary DNA sequence for a given DNA sequence.\n\n**Biological Knowledge Required:**\nIn DNA, the four nucleotide bases pair specifically through hydrogen bonding:\n- Adenine (A) always pairs with Thymine (T)\n- Thymine (T) always pairs with Adenine (A)\n- Guanine (G) always pairs with Cytosine (C)\n- Cytosine (C) always pairs with Guanine (G)\n\nThis complementary base pairing is fundamental to DNA structure and replication.\n\n**Task:**\nGiven the following DNA sequence, provide its complementary sequence by applying the base pairing rules above.\n\n**Example:**\nInput: ATCG\nOutput answer: TAGC (A\u2192T, T\u2192A, C\u2192G, G\u2192C)\n\n**Input DNA sequence:** AAGCGTAAAC\n\n**Instructions:**\n1. For each base in the input sequence, determine its complement using the pairing rules\n2. Write out the complete complementary sequence\n3. Provide your final answer between the tags <answer> and </answer>\n\nPlease provide the complementary DNA sequence for the given input.",
+    "answer": "TTCGCATTTG",
+    "meta": {
+      "task_type": "dna_complement",
+      "input": "AAGCGTAAAC",
+      "expected_output": "TTCGCATTTG",
+      "sequence_length": 10
+    }
+  },
+  {
+    "prompt": "You are a molecular biology expert. I need you to find the complementary DNA sequence for a given DNA sequence.\n\n**Biological Knowledge Required:**\nIn DNA, the four nucleotide bases pair specifically through hydrogen bonding:\n- Adenine (A) always pairs with Thymine (T)\n- Thymine (T) always pairs with Adenine (A)\n- Guanine (G) always pairs with Cytosine (C)\n- Cytosine (C) always pairs with Guanine (G)\n\nThis complementary base pairing is fundamental to DNA structure and replication.\n\n**Task:**\nGiven the following DNA sequence, provide its complementary sequence by applying the base pairing rules above.\n\n**Example:**\nInput: ATCG\nOutput answer: TAGC (A\u2192T, T\u2192A, C\u2192G, G\u2192C)\n\n**Input DNA sequence:** GCCGTTCACA\n\n**Instructions:**\n1. For each base in the input sequence, determine its complement using the pairing rules\n2. Write out the complete complementary sequence\n3. Provide your final answer between the tags <answer> and </answer>\n\nPlease provide the complementary DNA sequence for the given input.",
+    "answer": "CGGCAAGTGT",
+    "meta": {
+      "task_type": "dna_complement",
+      "input": "GCCGTTCACA",
+      "expected_output": "CGGCAAGTGT",
+      "sequence_length": 10
+    }
+  },
+  {
+    "prompt": "You are a molecular biology expert. I need you to find the complementary DNA sequence for a given DNA sequence.\n\n**Biological Knowledge Required:**\nIn DNA, the four nucleotide bases pair specifically through hydrogen bonding:\n- Adenine (A) always pairs with Thymine (T)\n- Thymine (T) always pairs with Adenine (A)\n- Guanine (G) always pairs with Cytosine (C)\n- Cytosine (C) always pairs with Guanine (G)\n\nThis complementary base pairing is fundamental to DNA structure and replication.\n\n**Task:**\nGiven the following DNA sequence, provide its complementary sequence by applying the base pairing rules above.\n\n**Example:**\nInput: ATCG\nOutput answer: TAGC (A\u2192T, T\u2192A, C\u2192G, G\u2192C)\n\n**Input DNA sequence:** GTCCTTTTGG\n\n**Instructions:**\n1. For each base in the input sequence, determine its complement using the pairing rules\n2. Write out the complete complementary sequence\n3. Provide your final answer between the tags <answer> and </answer>\n\nPlease provide the complementary DNA sequence for the given input.",
+    "answer": "CAGGAAAACC",
+    "meta": {
+      "task_type": "dna_complement",
+      "input": "GTCCTTTTGG",
+      "expected_output": "CAGGAAAACC",
+      "sequence_length": 10
+    }
+  },
+  {
+    "prompt": "You are a molecular biology expert. I need you to find the complementary DNA sequence for a given DNA sequence.\n\n**Biological Knowledge Required:**\nIn DNA, the four nucleotide bases pair specifically through hydrogen bonding:\n- Adenine (A) always pairs with Thymine (T)\n- Thymine (T) always pairs with Adenine (A)\n- Guanine (G) always pairs with Cytosine (C)\n- Cytosine (C) always pairs with Guanine (G)\n\nThis complementary base pairing is fundamental to DNA structure and replication.\n\n**Task:**\nGiven the following DNA sequence, provide its complementary sequence by applying the base pairing rules above.\n\n**Example:**\nInput: ATCG\nOutput answer: TAGC (A\u2192T, T\u2192A, C\u2192G, G\u2192C)\n\n**Input DNA sequence:** CCAAGTAGGA\n\n**Instructions:**\n1. For each base in the input sequence, determine its complement using the pairing rules\n2. Write out the complete complementary sequence\n3. Provide your final answer between the tags <answer> and </answer>\n\nPlease provide the complementary DNA sequence for the given input.",
+    "answer": "GGTTCATCCT",
+    "meta": {
+      "task_type": "dna_complement",
+      "input": "CCAAGTAGGA",
+      "expected_output": "GGTTCATCCT",
+      "sequence_length": 10
+    }
+  },
+  {
+    "prompt": "You are a molecular biology expert. I need you to find the complementary DNA sequence for a given DNA sequence.\n\n**Biological Knowledge Required:**\nIn DNA, the four nucleotide bases pair specifically through hydrogen bonding:\n- Adenine (A) always pairs with Thymine (T)\n- Thymine (T) always pairs with Adenine (A)\n- Guanine (G) always pairs with Cytosine (C)\n- Cytosine (C) always pairs with Guanine (G)\n\nThis complementary base pairing is fundamental to DNA structure and replication.\n\n**Task:**\nGiven the following DNA sequence, provide its complementary sequence by applying the base pairing rules above.\n\n**Example:**\nInput: ATCG\nOutput answer: TAGC (A\u2192T, T\u2192A, C\u2192G, G\u2192C)\n\n**Input DNA sequence:** GGCTATCGAT\n\n**Instructions:**\n1. For each base in the input sequence, determine its complement using the pairing rules\n2. Write out the complete complementary sequence\n3. Provide your final answer between the tags <answer> and </answer>\n\nPlease provide the complementary DNA sequence for the given input.",
+    "answer": "CCGATAGCTA",
+    "meta": {
+      "task_type": "dna_complement",
+      "input": "GGCTATCGAT",
+      "expected_output": "CCGATAGCTA",
+      "sequence_length": 10
+    }
+  },
+  {
+    "prompt": "You are a molecular biology expert. I need you to find the complementary DNA sequence for a given DNA sequence.\n\n**Biological Knowledge Required:**\nIn DNA, the four nucleotide bases pair specifically through hydrogen bonding:\n- Adenine (A) always pairs with Thymine (T)\n- Thymine (T) always pairs with Adenine (A)\n- Guanine (G) always pairs with Cytosine (C)\n- Cytosine (C) always pairs with Guanine (G)\n\nThis complementary base pairing is fundamental to DNA structure and replication.\n\n**Task:**\nGiven the following DNA sequence, provide its complementary sequence by applying the base pairing rules above.\n\n**Example:**\nInput: ATCG\nOutput answer: TAGC (A\u2192T, T\u2192A, C\u2192G, G\u2192C)\n\n**Input DNA sequence:** CCCGCGTAAC\n\n**Instructions:**\n1. For each base in the input sequence, determine its complement using the pairing rules\n2. Write out the complete complementary sequence\n3. Provide your final answer between the tags <answer> and </answer>\n\nPlease provide the complementary DNA sequence for the given input.",
+    "answer": "GGGCGCATTG",
+    "meta": {
+      "task_type": "dna_complement",
+      "input": "CCCGCGTAAC",
+      "expected_output": "GGGCGCATTG",
+      "sequence_length": 10
+    }
+  },
+  {
+    "prompt": "You are a molecular biology expert. I need you to find the complementary DNA sequence for a given DNA sequence.\n\n**Biological Knowledge Required:**\nIn DNA, the four nucleotide bases pair specifically through hydrogen bonding:\n- Adenine (A) always pairs with Thymine (T)\n- Thymine (T) always pairs with Adenine (A)\n- Guanine (G) always pairs with Cytosine (C)\n- Cytosine (C) always pairs with Guanine (G)\n\nThis complementary base pairing is fundamental to DNA structure and replication.\n\n**Task:**\nGiven the following DNA sequence, provide its complementary sequence by applying the base pairing rules above.\n\n**Example:**\nInput: ATCG\nOutput answer: TAGC (A\u2192T, T\u2192A, C\u2192G, G\u2192C)\n\n**Input DNA sequence:** CTACTCTTAA\n\n**Instructions:**\n1. For each base in the input sequence, determine its complement using the pairing rules\n2. Write out the complete complementary sequence\n3. Provide your final answer between the tags <answer> and </answer>\n\nPlease provide the complementary DNA sequence for the given input.",
+    "answer": "GATGAGAATT",
+    "meta": {
+      "task_type": "dna_complement",
+      "input": "CTACTCTTAA",
+      "expected_output": "GATGAGAATT",
+      "sequence_length": 10
+    }
+  },
+  {
+    "prompt": "You are a molecular biology expert. I need you to find the complementary DNA sequence for a given DNA sequence.\n\n**Biological Knowledge Required:**\nIn DNA, the four nucleotide bases pair specifically through hydrogen bonding:\n- Adenine (A) always pairs with Thymine (T)\n- Thymine (T) always pairs with Adenine (A)\n- Guanine (G) always pairs with Cytosine (C)\n- Cytosine (C) always pairs with Guanine (G)\n\nThis complementary base pairing is fundamental to DNA structure and replication.\n\n**Task:**\nGiven the following DNA sequence, provide its complementary sequence by applying the base pairing rules above.\n\n**Example:**\nInput: ATCG\nOutput answer: TAGC (A\u2192T, T\u2192A, C\u2192G, G\u2192C)\n\n**Input DNA sequence:** CAGCTCGCCG\n\n**Instructions:**\n1. For each base in the input sequence, determine its complement using the pairing rules\n2. Write out the complete complementary sequence\n3. Provide your final answer between the tags <answer> and </answer>\n\nPlease provide the complementary DNA sequence for the given input.",
+    "answer": "GTCGAGCGGC",
+    "meta": {
+      "task_type": "dna_complement",
+      "input": "CAGCTCGCCG",
+      "expected_output": "GTCGAGCGGC",
+      "sequence_length": 10
+    }
+  },
+  {
+    "prompt": "You are a molecular biology expert. I need you to find the complementary DNA sequence for a given DNA sequence.\n\n**Biological Knowledge Required:**\nIn DNA, the four nucleotide bases pair specifically through hydrogen bonding:\n- Adenine (A) always pairs with Thymine (T)\n- Thymine (T) always pairs with Adenine (A)\n- Guanine (G) always pairs with Cytosine (C)\n- Cytosine (C) always pairs with Guanine (G)\n\nThis complementary base pairing is fundamental to DNA structure and replication.\n\n**Task:**\nGiven the following DNA sequence, provide its complementary sequence by applying the base pairing rules above.\n\n**Example:**\nInput: ATCG\nOutput answer: TAGC (A\u2192T, T\u2192A, C\u2192G, G\u2192C)\n\n**Input DNA sequence:** TTGTCAAGTT\n\n**Instructions:**\n1. For each base in the input sequence, determine its complement using the pairing rules\n2. Write out the complete complementary sequence\n3. Provide your final answer between the tags <answer> and </answer>\n\nPlease provide the complementary DNA sequence for the given input.",
+    "answer": "AACAGTTCAA",
+    "meta": {
+      "task_type": "dna_complement",
+      "input": "TTGTCAAGTT",
+      "expected_output": "AACAGTTCAA",
+      "sequence_length": 10
+    }
+  },
+  {
+    "prompt": "You are a molecular biology expert. I need you to find the complementary DNA sequence for a given DNA sequence.\n\n**Biological Knowledge Required:**\nIn DNA, the four nucleotide bases pair specifically through hydrogen bonding:\n- Adenine (A) always pairs with Thymine (T)\n- Thymine (T) always pairs with Adenine (A)\n- Guanine (G) always pairs with Cytosine (C)\n- Cytosine (C) always pairs with Guanine (G)\n\nThis complementary base pairing is fundamental to DNA structure and replication.\n\n**Task:**\nGiven the following DNA sequence, provide its complementary sequence by applying the base pairing rules above.\n\n**Example:**\nInput: ATCG\nOutput answer: TAGC (A\u2192T, T\u2192A, C\u2192G, G\u2192C)\n\n**Input DNA sequence:** AGAATACACC\n\n**Instructions:**\n1. For each base in the input sequence, determine its complement using the pairing rules\n2. Write out the complete complementary sequence\n3. Provide your final answer between the tags <answer> and </answer>\n\nPlease provide the complementary DNA sequence for the given input.",
+    "answer": "TCTTATGTGG",
+    "meta": {
+      "task_type": "dna_complement",
+      "input": "AGAATACACC",
+      "expected_output": "TCTTATGTGG",
+      "sequence_length": 10
+    }
+  },
+  {
+    "prompt": "You are a molecular biology expert. I need you to find the complementary DNA sequence for a given DNA sequence.\n\n**Biological Knowledge Required:**\nIn DNA, the four nucleotide bases pair specifically through hydrogen bonding:\n- Adenine (A) always pairs with Thymine (T)\n- Thymine (T) always pairs with Adenine (A)\n- Guanine (G) always pairs with Cytosine (C)\n- Cytosine (C) always pairs with Guanine (G)\n\nThis complementary base pairing is fundamental to DNA structure and replication.\n\n**Task:**\nGiven the following DNA sequence, provide its complementary sequence by applying the base pairing rules above.\n\n**Example:**\nInput: ATCG\nOutput answer: TAGC (A\u2192T, T\u2192A, C\u2192G, G\u2192C)\n\n**Input DNA sequence:** CCCCCTTATG\n\n**Instructions:**\n1. For each base in the input sequence, determine its complement using the pairing rules\n2. Write out the complete complementary sequence\n3. Provide your final answer between the tags <answer> and </answer>\n\nPlease provide the complementary DNA sequence for the given input.",
+    "answer": "GGGGGAATAC",
+    "meta": {
+      "task_type": "dna_complement",
+      "input": "CCCCCTTATG",
+      "expected_output": "GGGGGAATAC",
+      "sequence_length": 10
+    }
+  },
+  {
+    "prompt": "You are a molecular biology expert. I need you to find the complementary DNA sequence for a given DNA sequence.\n\n**Biological Knowledge Required:**\nIn DNA, the four nucleotide bases pair specifically through hydrogen bonding:\n- Adenine (A) always pairs with Thymine (T)\n- Thymine (T) always pairs with Adenine (A)\n- Guanine (G) always pairs with Cytosine (C)\n- Cytosine (C) always pairs with Guanine (G)\n\nThis complementary base pairing is fundamental to DNA structure and replication.\n\n**Task:**\nGiven the following DNA sequence, provide its complementary sequence by applying the base pairing rules above.\n\n**Example:**\nInput: ATCG\nOutput answer: TAGC (A\u2192T, T\u2192A, C\u2192G, G\u2192C)\n\n**Input DNA sequence:** TAGATAGAGC\n\n**Instructions:**\n1. For each base in the input sequence, determine its complement using the pairing rules\n2. Write out the complete complementary sequence\n3. Provide your final answer between the tags <answer> and </answer>\n\nPlease provide the complementary DNA sequence for the given input.",
+    "answer": "ATCTATCTCG",
+    "meta": {
+      "task_type": "dna_complement",
+      "input": "TAGATAGAGC",
+      "expected_output": "ATCTATCTCG",
+      "sequence_length": 10
+    }
+  },
+  {
+    "prompt": "You are a molecular biology expert. I need you to find the complementary DNA sequence for a given DNA sequence.\n\n**Biological Knowledge Required:**\nIn DNA, the four nucleotide bases pair specifically through hydrogen bonding:\n- Adenine (A) always pairs with Thymine (T)\n- Thymine (T) always pairs with Adenine (A)\n- Guanine (G) always pairs with Cytosine (C)\n- Cytosine (C) always pairs with Guanine (G)\n\nThis complementary base pairing is fundamental to DNA structure and replication.\n\n**Task:**\nGiven the following DNA sequence, provide its complementary sequence by applying the base pairing rules above.\n\n**Example:**\nInput: ATCG\nOutput answer: TAGC (A\u2192T, T\u2192A, C\u2192G, G\u2192C)\n\n**Input DNA sequence:** GCCCGAGCGT\n\n**Instructions:**\n1. For each base in the input sequence, determine its complement using the pairing rules\n2. Write out the complete complementary sequence\n3. Provide your final answer between the tags <answer> and </answer>\n\nPlease provide the complementary DNA sequence for the given input.",
+    "answer": "CGGGCTCGCA",
+    "meta": {
+      "task_type": "dna_complement",
+      "input": "GCCCGAGCGT",
+      "expected_output": "CGGGCTCGCA",
+      "sequence_length": 10
+    }
+  },
+  {
+    "prompt": "You are a molecular biology expert. I need you to find the complementary DNA sequence for a given DNA sequence.\n\n**Biological Knowledge Required:**\nIn DNA, the four nucleotide bases pair specifically through hydrogen bonding:\n- Adenine (A) always pairs with Thymine (T)\n- Thymine (T) always pairs with Adenine (A)\n- Guanine (G) always pairs with Cytosine (C)\n- Cytosine (C) always pairs with Guanine (G)\n\nThis complementary base pairing is fundamental to DNA structure and replication.\n\n**Task:**\nGiven the following DNA sequence, provide its complementary sequence by applying the base pairing rules above.\n\n**Example:**\nInput: ATCG\nOutput answer: TAGC (A\u2192T, T\u2192A, C\u2192G, G\u2192C)\n\n**Input DNA sequence:** CATCAAAATC\n\n**Instructions:**\n1. For each base in the input sequence, determine its complement using the pairing rules\n2. Write out the complete complementary sequence\n3. Provide your final answer between the tags <answer> and </answer>\n\nPlease provide the complementary DNA sequence for the given input.",
+    "answer": "GTAGTTTTAG",
+    "meta": {
+      "task_type": "dna_complement",
+      "input": "CATCAAAATC",
+      "expected_output": "GTAGTTTTAG",
+      "sequence_length": 10
+    }
+  },
+  {
+    "prompt": "You are a molecular biology expert. I need you to find the complementary DNA sequence for a given DNA sequence.\n\n**Biological Knowledge Required:**\nIn DNA, the four nucleotide bases pair specifically through hydrogen bonding:\n- Adenine (A) always pairs with Thymine (T)\n- Thymine (T) always pairs with Adenine (A)\n- Guanine (G) always pairs with Cytosine (C)\n- Cytosine (C) always pairs with Guanine (G)\n\nThis complementary base pairing is fundamental to DNA structure and replication.\n\n**Task:**\nGiven the following DNA sequence, provide its complementary sequence by applying the base pairing rules above.\n\n**Example:**\nInput: ATCG\nOutput answer: TAGC (A\u2192T, T\u2192A, C\u2192G, G\u2192C)\n\n**Input DNA sequence:** GAGCGACATG\n\n**Instructions:**\n1. For each base in the input sequence, determine its complement using the pairing rules\n2. Write out the complete complementary sequence\n3. Provide your final answer between the tags <answer> and </answer>\n\nPlease provide the complementary DNA sequence for the given input.",
+    "answer": "CTCGCTGTAC",
+    "meta": {
+      "task_type": "dna_complement",
+      "input": "GAGCGACATG",
+      "expected_output": "CTCGCTGTAC",
+      "sequence_length": 10
+    }
+  },
+  {
+    "prompt": "You are a molecular biology expert. I need you to find the complementary DNA sequence for a given DNA sequence.\n\n**Biological Knowledge Required:**\nIn DNA, the four nucleotide bases pair specifically through hydrogen bonding:\n- Adenine (A) always pairs with Thymine (T)\n- Thymine (T) always pairs with Adenine (A)\n- Guanine (G) always pairs with Cytosine (C)\n- Cytosine (C) always pairs with Guanine (G)\n\nThis complementary base pairing is fundamental to DNA structure and replication.\n\n**Task:**\nGiven the following DNA sequence, provide its complementary sequence by applying the base pairing rules above.\n\n**Example:**\nInput: ATCG\nOutput answer: TAGC (A\u2192T, T\u2192A, C\u2192G, G\u2192C)\n\n**Input DNA sequence:** GAGGGGTCTC\n\n**Instructions:**\n1. For each base in the input sequence, determine its complement using the pairing rules\n2. Write out the complete complementary sequence\n3. Provide your final answer between the tags <answer> and </answer>\n\nPlease provide the complementary DNA sequence for the given input.",
+    "answer": "CTCCCCAGAG",
+    "meta": {
+      "task_type": "dna_complement",
+      "input": "GAGGGGTCTC",
+      "expected_output": "CTCCCCAGAG",
+      "sequence_length": 10
+    }
+  },
+  {
+    "prompt": "You are a molecular biology expert. I need you to find the complementary DNA sequence for a given DNA sequence.\n\n**Biological Knowledge Required:**\nIn DNA, the four nucleotide bases pair specifically through hydrogen bonding:\n- Adenine (A) always pairs with Thymine (T)\n- Thymine (T) always pairs with Adenine (A)\n- Guanine (G) always pairs with Cytosine (C)\n- Cytosine (C) always pairs with Guanine (G)\n\nThis complementary base pairing is fundamental to DNA structure and replication.\n\n**Task:**\nGiven the following DNA sequence, provide its complementary sequence by applying the base pairing rules above.\n\n**Example:**\nInput: ATCG\nOutput answer: TAGC (A\u2192T, T\u2192A, C\u2192G, G\u2192C)\n\n**Input DNA sequence:** ACTCAAACCT\n\n**Instructions:**\n1. For each base in the input sequence, determine its complement using the pairing rules\n2. Write out the complete complementary sequence\n3. Provide your final answer between the tags <answer> and </answer>\n\nPlease provide the complementary DNA sequence for the given input.",
+    "answer": "TGAGTTTGGA",
+    "meta": {
+      "task_type": "dna_complement",
+      "input": "ACTCAAACCT",
+      "expected_output": "TGAGTTTGGA",
+      "sequence_length": 10
+    }
+  },
+  {
+    "prompt": "You are a molecular biology expert. I need you to find the complementary RNA sequence for a given RNA sequence.\n\n**Biological Knowledge Required:**\nIn RNA, the four nucleotide bases pair specifically through hydrogen bonding:\n- Adenine (A) always pairs with Uracil (U)\n- Uracil (U) always pairs with Adenine (A)  \n- Guanine (G) always pairs with Cytosine (C)\n- Cytosine (C) always pairs with Guanine (G)\n\nNote: RNA uses Uracil (U) instead of Thymine (T) found in DNA. This complementary base pairing is crucial for RNA secondary structure and function.\n\n**Task:**\nGiven the following RNA sequence, provide its complementary sequence by applying the base pairing rules above.\n\n**Example:**\nInput: AUCG\nOutput answer: UAGC (A\u2192U, U\u2192A, C\u2192G, G\u2192C)\n\n**Input RNA sequence:** CAGCUUGCGU\n\n**Instructions:**\n1. For each base in the input sequence, determine its complement using the RNA pairing rules\n2. Write out the complete complementary sequence\n3. Provide your final answer between the tags <answer> and </answer>\n\nPlease provide the complementary RNA sequence for the given input.",
+    "answer": "GUCGAACGCA",
+    "meta": {
+      "task_type": "rna_complement",
+      "input": "CAGCUUGCGU",
+      "expected_output": "GUCGAACGCA",
+      "sequence_length": 10
+    }
+  },
+  {
+    "prompt": "You are a molecular biology expert. I need you to find the complementary RNA sequence for a given RNA sequence.\n\n**Biological Knowledge Required:**\nIn RNA, the four nucleotide bases pair specifically through hydrogen bonding:\n- Adenine (A) always pairs with Uracil (U)\n- Uracil (U) always pairs with Adenine (A)  \n- Guanine (G) always pairs with Cytosine (C)\n- Cytosine (C) always pairs with Guanine (G)\n\nNote: RNA uses Uracil (U) instead of Thymine (T) found in DNA. This complementary base pairing is crucial for RNA secondary structure and function.\n\n**Task:**\nGiven the following RNA sequence, provide its complementary sequence by applying the base pairing rules above.\n\n**Example:**\nInput: AUCG\nOutput answer: UAGC (A\u2192U, U\u2192A, C\u2192G, G\u2192C)\n\n**Input RNA sequence:** UUUCGUGCCU\n\n**Instructions:**\n1. For each base in the input sequence, determine its complement using the RNA pairing rules\n2. Write out the complete complementary sequence\n3. Provide your final answer between the tags <answer> and </answer>\n\nPlease provide the complementary RNA sequence for the given input.",
+    "answer": "AAAGCACGGA",
+    "meta": {
+      "task_type": "rna_complement",
+      "input": "UUUCGUGCCU",
+      "expected_output": "AAAGCACGGA",
+      "sequence_length": 10
+    }
+  },
+  {
+    "prompt": "You are a molecular biology expert. I need you to find the complementary RNA sequence for a given RNA sequence.\n\n**Biological Knowledge Required:**\nIn RNA, the four nucleotide bases pair specifically through hydrogen bonding:\n- Adenine (A) always pairs with Uracil (U)\n- Uracil (U) always pairs with Adenine (A)  \n- Guanine (G) always pairs with Cytosine (C)\n- Cytosine (C) always pairs with Guanine (G)\n\nNote: RNA uses Uracil (U) instead of Thymine (T) found in DNA. This complementary base pairing is crucial for RNA secondary structure and function.\n\n**Task:**\nGiven the following RNA sequence, provide its complementary sequence by applying the base pairing rules above.\n\n**Example:**\nInput: AUCG\nOutput answer: UAGC (A\u2192U, U\u2192A, C\u2192G, G\u2192C)\n\n**Input RNA sequence:** GUGCCUGUGA\n\n**Instructions:**\n1. For each base in the input sequence, determine its complement using the RNA pairing rules\n2. Write out the complete complementary sequence\n3. Provide your final answer between the tags <answer> and </answer>\n\nPlease provide the complementary RNA sequence for the given input.",
+    "answer": "CACGGACACU",
+    "meta": {
+      "task_type": "rna_complement",
+      "input": "GUGCCUGUGA",
+      "expected_output": "CACGGACACU",
+      "sequence_length": 10
+    }
+  },
+  {
+    "prompt": "You are a molecular biology expert. I need you to find the complementary RNA sequence for a given RNA sequence.\n\n**Biological Knowledge Required:**\nIn RNA, the four nucleotide bases pair specifically through hydrogen bonding:\n- Adenine (A) always pairs with Uracil (U)\n- Uracil (U) always pairs with Adenine (A)  \n- Guanine (G) always pairs with Cytosine (C)\n- Cytosine (C) always pairs with Guanine (G)\n\nNote: RNA uses Uracil (U) instead of Thymine (T) found in DNA. This complementary base pairing is crucial for RNA secondary structure and function.\n\n**Task:**\nGiven the following RNA sequence, provide its complementary sequence by applying the base pairing rules above.\n\n**Example:**\nInput: AUCG\nOutput answer: UAGC (A\u2192U, U\u2192A, C\u2192G, G\u2192C)\n\n**Input RNA sequence:** AGUGUUGUUC\n\n**Instructions:**\n1. For each base in the input sequence, determine its complement using the RNA pairing rules\n2. Write out the complete complementary sequence\n3. Provide your final answer between the tags <answer> and </answer>\n\nPlease provide the complementary RNA sequence for the given input.",
+    "answer": "UCACAACAAG",
+    "meta": {
+      "task_type": "rna_complement",
+      "input": "AGUGUUGUUC",
+      "expected_output": "UCACAACAAG",
+      "sequence_length": 10
+    }
+  },
+  {
+    "prompt": "You are a molecular biology expert. I need you to find the complementary RNA sequence for a given RNA sequence.\n\n**Biological Knowledge Required:**\nIn RNA, the four nucleotide bases pair specifically through hydrogen bonding:\n- Adenine (A) always pairs with Uracil (U)\n- Uracil (U) always pairs with Adenine (A)  \n- Guanine (G) always pairs with Cytosine (C)\n- Cytosine (C) always pairs with Guanine (G)\n\nNote: RNA uses Uracil (U) instead of Thymine (T) found in DNA. This complementary base pairing is crucial for RNA secondary structure and function.\n\n**Task:**\nGiven the following RNA sequence, provide its complementary sequence by applying the base pairing rules above.\n\n**Example:**\nInput: AUCG\nOutput answer: UAGC (A\u2192U, U\u2192A, C\u2192G, G\u2192C)\n\n**Input RNA sequence:** AUUGACCGAC\n\n**Instructions:**\n1. For each base in the input sequence, determine its complement using the RNA pairing rules\n2. Write out the complete complementary sequence\n3. Provide your final answer between the tags <answer> and </answer>\n\nPlease provide the complementary RNA sequence for the given input.",
+    "answer": "UAACUGGCUG",
+    "meta": {
+      "task_type": "rna_complement",
+      "input": "AUUGACCGAC",
+      "expected_output": "UAACUGGCUG",
+      "sequence_length": 10
+    }
+  },
+  {
+    "prompt": "You are a molecular biology expert. I need you to find the complementary RNA sequence for a given RNA sequence.\n\n**Biological Knowledge Required:**\nIn RNA, the four nucleotide bases pair specifically through hydrogen bonding:\n- Adenine (A) always pairs with Uracil (U)\n- Uracil (U) always pairs with Adenine (A)  \n- Guanine (G) always pairs with Cytosine (C)\n- Cytosine (C) always pairs with Guanine (G)\n\nNote: RNA uses Uracil (U) instead of Thymine (T) found in DNA. This complementary base pairing is crucial for RNA secondary structure and function.\n\n**Task:**\nGiven the following RNA sequence, provide its complementary sequence by applying the base pairing rules above.\n\n**Example:**\nInput: AUCG\nOutput answer: UAGC (A\u2192U, U\u2192A, C\u2192G, G\u2192C)\n\n**Input RNA sequence:** AAUUCCCUCG\n\n**Instructions:**\n1. For each base in the input sequence, determine its complement using the RNA pairing rules\n2. Write out the complete complementary sequence\n3. Provide your final answer between the tags <answer> and </answer>\n\nPlease provide the complementary RNA sequence for the given input.",
+    "answer": "UUAAGGGAGC",
+    "meta": {
+      "task_type": "rna_complement",
+      "input": "AAUUCCCUCG",
+      "expected_output": "UUAAGGGAGC",
+      "sequence_length": 10
+    }
+  },
+  {
+    "prompt": "You are a molecular biology expert. I need you to find the complementary RNA sequence for a given RNA sequence.\n\n**Biological Knowledge Required:**\nIn RNA, the four nucleotide bases pair specifically through hydrogen bonding:\n- Adenine (A) always pairs with Uracil (U)\n- Uracil (U) always pairs with Adenine (A)  \n- Guanine (G) always pairs with Cytosine (C)\n- Cytosine (C) always pairs with Guanine (G)\n\nNote: RNA uses Uracil (U) instead of Thymine (T) found in DNA. This complementary base pairing is crucial for RNA secondary structure and function.\n\n**Task:**\nGiven the following RNA sequence, provide its complementary sequence by applying the base pairing rules above.\n\n**Example:**\nInput: AUCG\nOutput answer: UAGC (A\u2192U, U\u2192A, C\u2192G, G\u2192C)\n\n**Input RNA sequence:** UUCUAAAUCU\n\n**Instructions:**\n1. For each base in the input sequence, determine its complement using the RNA pairing rules\n2. Write out the complete complementary sequence\n3. Provide your final answer between the tags <answer> and </answer>\n\nPlease provide the complementary RNA sequence for the given input.",
+    "answer": "AAGAUUUAGA",
+    "meta": {
+      "task_type": "rna_complement",
+      "input": "UUCUAAAUCU",
+      "expected_output": "AAGAUUUAGA",
+      "sequence_length": 10
+    }
+  },
+  {
+    "prompt": "You are a molecular biology expert. I need you to find the complementary RNA sequence for a given RNA sequence.\n\n**Biological Knowledge Required:**\nIn RNA, the four nucleotide bases pair specifically through hydrogen bonding:\n- Adenine (A) always pairs with Uracil (U)\n- Uracil (U) always pairs with Adenine (A)  \n- Guanine (G) always pairs with Cytosine (C)\n- Cytosine (C) always pairs with Guanine (G)\n\nNote: RNA uses Uracil (U) instead of Thymine (T) found in DNA. This complementary base pairing is crucial for RNA secondary structure and function.\n\n**Task:**\nGiven the following RNA sequence, provide its complementary sequence by applying the base pairing rules above.\n\n**Example:**\nInput: AUCG\nOutput answer: UAGC (A\u2192U, U\u2192A, C\u2192G, G\u2192C)\n\n**Input RNA sequence:** AUCUUGCAAG\n\n**Instructions:**\n1. For each base in the input sequence, determine its complement using the RNA pairing rules\n2. Write out the complete complementary sequence\n3. Provide your final answer between the tags <answer> and </answer>\n\nPlease provide the complementary RNA sequence for the given input.",
+    "answer": "UAGAACGUUC",
+    "meta": {
+      "task_type": "rna_complement",
+      "input": "AUCUUGCAAG",
+      "expected_output": "UAGAACGUUC",
+      "sequence_length": 10
+    }
+  },
+  {
+    "prompt": "You are a molecular biology expert. I need you to find the complementary RNA sequence for a given RNA sequence.\n\n**Biological Knowledge Required:**\nIn RNA, the four nucleotide bases pair specifically through hydrogen bonding:\n- Adenine (A) always pairs with Uracil (U)\n- Uracil (U) always pairs with Adenine (A)  \n- Guanine (G) always pairs with Cytosine (C)\n- Cytosine (C) always pairs with Guanine (G)\n\nNote: RNA uses Uracil (U) instead of Thymine (T) found in DNA. This complementary base pairing is crucial for RNA secondary structure and function.\n\n**Task:**\nGiven the following RNA sequence, provide its complementary sequence by applying the base pairing rules above.\n\n**Example:**\nInput: AUCG\nOutput answer: UAGC (A\u2192U, U\u2192A, C\u2192G, G\u2192C)\n\n**Input RNA sequence:** AUAACCAGAU\n\n**Instructions:**\n1. For each base in the input sequence, determine its complement using the RNA pairing rules\n2. Write out the complete complementary sequence\n3. Provide your final answer between the tags <answer> and </answer>\n\nPlease provide the complementary RNA sequence for the given input.",
+    "answer": "UAUUGGUCUA",
+    "meta": {
+      "task_type": "rna_complement",
+      "input": "AUAACCAGAU",
+      "expected_output": "UAUUGGUCUA",
+      "sequence_length": 10
+    }
+  },
+  {
+    "prompt": "You are a molecular biology expert. I need you to find the complementary RNA sequence for a given RNA sequence.\n\n**Biological Knowledge Required:**\nIn RNA, the four nucleotide bases pair specifically through hydrogen bonding:\n- Adenine (A) always pairs with Uracil (U)\n- Uracil (U) always pairs with Adenine (A)  \n- Guanine (G) always pairs with Cytosine (C)\n- Cytosine (C) always pairs with Guanine (G)\n\nNote: RNA uses Uracil (U) instead of Thymine (T) found in DNA. This complementary base pairing is crucial for RNA secondary structure and function.\n\n**Task:**\nGiven the following RNA sequence, provide its complementary sequence by applying the base pairing rules above.\n\n**Example:**\nInput: AUCG\nOutput answer: UAGC (A\u2192U, U\u2192A, C\u2192G, G\u2192C)\n\n**Input RNA sequence:** UGUGCUGGGU\n\n**Instructions:**\n1. For each base in the input sequence, determine its complement using the RNA pairing rules\n2. Write out the complete complementary sequence\n3. Provide your final answer between the tags <answer> and </answer>\n\nPlease provide the complementary RNA sequence for the given input.",
+    "answer": "ACACGACCCA",
+    "meta": {
+      "task_type": "rna_complement",
+      "input": "UGUGCUGGGU",
+      "expected_output": "ACACGACCCA",
+      "sequence_length": 10
+    }
+  },
+  {
+    "prompt": "You are a molecular biology expert. I need you to find the complementary RNA sequence for a given RNA sequence.\n\n**Biological Knowledge Required:**\nIn RNA, the four nucleotide bases pair specifically through hydrogen bonding:\n- Adenine (A) always pairs with Uracil (U)\n- Uracil (U) always pairs with Adenine (A)  \n- Guanine (G) always pairs with Cytosine (C)\n- Cytosine (C) always pairs with Guanine (G)\n\nNote: RNA uses Uracil (U) instead of Thymine (T) found in DNA. This complementary base pairing is crucial for RNA secondary structure and function.\n\n**Task:**\nGiven the following RNA sequence, provide its complementary sequence by applying the base pairing rules above.\n\n**Example:**\nInput: AUCG\nOutput answer: UAGC (A\u2192U, U\u2192A, C\u2192G, G\u2192C)\n\n**Input RNA sequence:** UAGUCAACCU\n\n**Instructions:**\n1. For each base in the input sequence, determine its complement using the RNA pairing rules\n2. Write out the complete complementary sequence\n3. Provide your final answer between the tags <answer> and </answer>\n\nPlease provide the complementary RNA sequence for the given input.",
+    "answer": "AUCAGUUGGA",
+    "meta": {
+      "task_type": "rna_complement",
+      "input": "UAGUCAACCU",
+      "expected_output": "AUCAGUUGGA",
+      "sequence_length": 10
+    }
+  },
+  {
+    "prompt": "You are a molecular biology expert. I need you to find the complementary RNA sequence for a given RNA sequence.\n\n**Biological Knowledge Required:**\nIn RNA, the four nucleotide bases pair specifically through hydrogen bonding:\n- Adenine (A) always pairs with Uracil (U)\n- Uracil (U) always pairs with Adenine (A)  \n- Guanine (G) always pairs with Cytosine (C)\n- Cytosine (C) always pairs with Guanine (G)\n\nNote: RNA uses Uracil (U) instead of Thymine (T) found in DNA. This complementary base pairing is crucial for RNA secondary structure and function.\n\n**Task:**\nGiven the following RNA sequence, provide its complementary sequence by applying the base pairing rules above.\n\n**Example:**\nInput: AUCG\nOutput answer: UAGC (A\u2192U, U\u2192A, C\u2192G, G\u2192C)\n\n**Input RNA sequence:** UAUAUAGCUU\n\n**Instructions:**\n1. For each base in the input sequence, determine its complement using the RNA pairing rules\n2. Write out the complete complementary sequence\n3. Provide your final answer between the tags <answer> and </answer>\n\nPlease provide the complementary RNA sequence for the given input.",
+    "answer": "AUAUAUCGAA",
+    "meta": {
+      "task_type": "rna_complement",
+      "input": "UAUAUAGCUU",
+      "expected_output": "AUAUAUCGAA",
+      "sequence_length": 10
+    }
+  },
+  {
+    "prompt": "You are a molecular biology expert. I need you to find the complementary RNA sequence for a given RNA sequence.\n\n**Biological Knowledge Required:**\nIn RNA, the four nucleotide bases pair specifically through hydrogen bonding:\n- Adenine (A) always pairs with Uracil (U)\n- Uracil (U) always pairs with Adenine (A)  \n- Guanine (G) always pairs with Cytosine (C)\n- Cytosine (C) always pairs with Guanine (G)\n\nNote: RNA uses Uracil (U) instead of Thymine (T) found in DNA. This complementary base pairing is crucial for RNA secondary structure and function.\n\n**Task:**\nGiven the following RNA sequence, provide its complementary sequence by applying the base pairing rules above.\n\n**Example:**\nInput: AUCG\nOutput answer: UAGC (A\u2192U, U\u2192A, C\u2192G, G\u2192C)\n\n**Input RNA sequence:** CCAAUGGUUU\n\n**Instructions:**\n1. For each base in the input sequence, determine its complement using the RNA pairing rules\n2. Write out the complete complementary sequence\n3. Provide your final answer between the tags <answer> and </answer>\n\nPlease provide the complementary RNA sequence for the given input.",
+    "answer": "GGUUACCAAA",
+    "meta": {
+      "task_type": "rna_complement",
+      "input": "CCAAUGGUUU",
+      "expected_output": "GGUUACCAAA",
+      "sequence_length": 10
+    }
+  },
+  {
+    "prompt": "You are a molecular biology expert. I need you to find the complementary RNA sequence for a given RNA sequence.\n\n**Biological Knowledge Required:**\nIn RNA, the four nucleotide bases pair specifically through hydrogen bonding:\n- Adenine (A) always pairs with Uracil (U)\n- Uracil (U) always pairs with Adenine (A)  \n- Guanine (G) always pairs with Cytosine (C)\n- Cytosine (C) always pairs with Guanine (G)\n\nNote: RNA uses Uracil (U) instead of Thymine (T) found in DNA. This complementary base pairing is crucial for RNA secondary structure and function.\n\n**Task:**\nGiven the following RNA sequence, provide its complementary sequence by applying the base pairing rules above.\n\n**Example:**\nInput: AUCG\nOutput answer: UAGC (A\u2192U, U\u2192A, C\u2192G, G\u2192C)\n\n**Input RNA sequence:** GUUAAUUGAC\n\n**Instructions:**\n1. For each base in the input sequence, determine its complement using the RNA pairing rules\n2. Write out the complete complementary sequence\n3. Provide your final answer between the tags <answer> and </answer>\n\nPlease provide the complementary RNA sequence for the given input.",
+    "answer": "CAAUUAACUG",
+    "meta": {
+      "task_type": "rna_complement",
+      "input": "GUUAAUUGAC",
+      "expected_output": "CAAUUAACUG",
+      "sequence_length": 10
+    }
+  },
+  {
+    "prompt": "You are a molecular biology expert. I need you to find the complementary RNA sequence for a given RNA sequence.\n\n**Biological Knowledge Required:**\nIn RNA, the four nucleotide bases pair specifically through hydrogen bonding:\n- Adenine (A) always pairs with Uracil (U)\n- Uracil (U) always pairs with Adenine (A)  \n- Guanine (G) always pairs with Cytosine (C)\n- Cytosine (C) always pairs with Guanine (G)\n\nNote: RNA uses Uracil (U) instead of Thymine (T) found in DNA. This complementary base pairing is crucial for RNA secondary structure and function.\n\n**Task:**\nGiven the following RNA sequence, provide its complementary sequence by applying the base pairing rules above.\n\n**Example:**\nInput: AUCG\nOutput answer: UAGC (A\u2192U, U\u2192A, C\u2192G, G\u2192C)\n\n**Input RNA sequence:** AUAACGUUGC\n\n**Instructions:**\n1. For each base in the input sequence, determine its complement using the RNA pairing rules\n2. Write out the complete complementary sequence\n3. Provide your final answer between the tags <answer> and </answer>\n\nPlease provide the complementary RNA sequence for the given input.",
+    "answer": "UAUUGCAACG",
+    "meta": {
+      "task_type": "rna_complement",
+      "input": "AUAACGUUGC",
+      "expected_output": "UAUUGCAACG",
+      "sequence_length": 10
+    }
+  },
+  {
+    "prompt": "You are a molecular biology expert. I need you to find the complementary RNA sequence for a given RNA sequence.\n\n**Biological Knowledge Required:**\nIn RNA, the four nucleotide bases pair specifically through hydrogen bonding:\n- Adenine (A) always pairs with Uracil (U)\n- Uracil (U) always pairs with Adenine (A)  \n- Guanine (G) always pairs with Cytosine (C)\n- Cytosine (C) always pairs with Guanine (G)\n\nNote: RNA uses Uracil (U) instead of Thymine (T) found in DNA. This complementary base pairing is crucial for RNA secondary structure and function.\n\n**Task:**\nGiven the following RNA sequence, provide its complementary sequence by applying the base pairing rules above.\n\n**Example:**\nInput: AUCG\nOutput answer: UAGC (A\u2192U, U\u2192A, C\u2192G, G\u2192C)\n\n**Input RNA sequence:** CUGAAAUUGU\n\n**Instructions:**\n1. For each base in the input sequence, determine its complement using the RNA pairing rules\n2. Write out the complete complementary sequence\n3. Provide your final answer between the tags <answer> and </answer>\n\nPlease provide the complementary RNA sequence for the given input.",
+    "answer": "GACUUUAACA",
+    "meta": {
+      "task_type": "rna_complement",
+      "input": "CUGAAAUUGU",
+      "expected_output": "GACUUUAACA",
+      "sequence_length": 10
+    }
+  },
+  {
+    "prompt": "You are a molecular biology expert. I need you to find the complementary RNA sequence for a given RNA sequence.\n\n**Biological Knowledge Required:**\nIn RNA, the four nucleotide bases pair specifically through hydrogen bonding:\n- Adenine (A) always pairs with Uracil (U)\n- Uracil (U) always pairs with Adenine (A)  \n- Guanine (G) always pairs with Cytosine (C)\n- Cytosine (C) always pairs with Guanine (G)\n\nNote: RNA uses Uracil (U) instead of Thymine (T) found in DNA. This complementary base pairing is crucial for RNA secondary structure and function.\n\n**Task:**\nGiven the following RNA sequence, provide its complementary sequence by applying the base pairing rules above.\n\n**Example:**\nInput: AUCG\nOutput answer: UAGC (A\u2192U, U\u2192A, C\u2192G, G\u2192C)\n\n**Input RNA sequence:** CAAACGACGA\n\n**Instructions:**\n1. For each base in the input sequence, determine its complement using the RNA pairing rules\n2. Write out the complete complementary sequence\n3. Provide your final answer between the tags <answer> and </answer>\n\nPlease provide the complementary RNA sequence for the given input.",
+    "answer": "GUUUGCUGCU",
+    "meta": {
+      "task_type": "rna_complement",
+      "input": "CAAACGACGA",
+      "expected_output": "GUUUGCUGCU",
+      "sequence_length": 10
+    }
+  },
+  {
+    "prompt": "You are a molecular biology expert. I need you to find the complementary RNA sequence for a given RNA sequence.\n\n**Biological Knowledge Required:**\nIn RNA, the four nucleotide bases pair specifically through hydrogen bonding:\n- Adenine (A) always pairs with Uracil (U)\n- Uracil (U) always pairs with Adenine (A)  \n- Guanine (G) always pairs with Cytosine (C)\n- Cytosine (C) always pairs with Guanine (G)\n\nNote: RNA uses Uracil (U) instead of Thymine (T) found in DNA. This complementary base pairing is crucial for RNA secondary structure and function.\n\n**Task:**\nGiven the following RNA sequence, provide its complementary sequence by applying the base pairing rules above.\n\n**Example:**\nInput: AUCG\nOutput answer: UAGC (A\u2192U, U\u2192A, C\u2192G, G\u2192C)\n\n**Input RNA sequence:** UAGCAAUCUC\n\n**Instructions:**\n1. For each base in the input sequence, determine its complement using the RNA pairing rules\n2. Write out the complete complementary sequence\n3. Provide your final answer between the tags <answer> and </answer>\n\nPlease provide the complementary RNA sequence for the given input.",
+    "answer": "AUCGUUAGAG",
+    "meta": {
+      "task_type": "rna_complement",
+      "input": "UAGCAAUCUC",
+      "expected_output": "AUCGUUAGAG",
+      "sequence_length": 10
+    }
+  },
+  {
+    "prompt": "You are a molecular biology expert. I need you to find the complementary RNA sequence for a given RNA sequence.\n\n**Biological Knowledge Required:**\nIn RNA, the four nucleotide bases pair specifically through hydrogen bonding:\n- Adenine (A) always pairs with Uracil (U)\n- Uracil (U) always pairs with Adenine (A)  \n- Guanine (G) always pairs with Cytosine (C)\n- Cytosine (C) always pairs with Guanine (G)\n\nNote: RNA uses Uracil (U) instead of Thymine (T) found in DNA. This complementary base pairing is crucial for RNA secondary structure and function.\n\n**Task:**\nGiven the following RNA sequence, provide its complementary sequence by applying the base pairing rules above.\n\n**Example:**\nInput: AUCG\nOutput answer: UAGC (A\u2192U, U\u2192A, C\u2192G, G\u2192C)\n\n**Input RNA sequence:** CAGUUCUGCA\n\n**Instructions:**\n1. For each base in the input sequence, determine its complement using the RNA pairing rules\n2. Write out the complete complementary sequence\n3. Provide your final answer between the tags <answer> and </answer>\n\nPlease provide the complementary RNA sequence for the given input.",
+    "answer": "GUCAAGACGU",
+    "meta": {
+      "task_type": "rna_complement",
+      "input": "CAGUUCUGCA",
+      "expected_output": "GUCAAGACGU",
+      "sequence_length": 10
+    }
+  },
+  {
+    "prompt": "You are a molecular biology expert. I need you to find the complementary RNA sequence for a given RNA sequence.\n\n**Biological Knowledge Required:**\nIn RNA, the four nucleotide bases pair specifically through hydrogen bonding:\n- Adenine (A) always pairs with Uracil (U)\n- Uracil (U) always pairs with Adenine (A)  \n- Guanine (G) always pairs with Cytosine (C)\n- Cytosine (C) always pairs with Guanine (G)\n\nNote: RNA uses Uracil (U) instead of Thymine (T) found in DNA. This complementary base pairing is crucial for RNA secondary structure and function.\n\n**Task:**\nGiven the following RNA sequence, provide its complementary sequence by applying the base pairing rules above.\n\n**Example:**\nInput: AUCG\nOutput answer: UAGC (A\u2192U, U\u2192A, C\u2192G, G\u2192C)\n\n**Input RNA sequence:** ACUAGACGGU\n\n**Instructions:**\n1. For each base in the input sequence, determine its complement using the RNA pairing rules\n2. Write out the complete complementary sequence\n3. Provide your final answer between the tags <answer> and </answer>\n\nPlease provide the complementary RNA sequence for the given input.",
+    "answer": "UGAUCUGCCA",
+    "meta": {
+      "task_type": "rna_complement",
+      "input": "ACUAGACGGU",
+      "expected_output": "UGAUCUGCCA",
+      "sequence_length": 10
+    }
+  },
+  {
+    "prompt": "You are a molecular biology expert. I need you to find the complementary RNA sequence for a given RNA sequence.\n\n**Biological Knowledge Required:**\nIn RNA, the four nucleotide bases pair specifically through hydrogen bonding:\n- Adenine (A) always pairs with Uracil (U)\n- Uracil (U) always pairs with Adenine (A)  \n- Guanine (G) always pairs with Cytosine (C)\n- Cytosine (C) always pairs with Guanine (G)\n\nNote: RNA uses Uracil (U) instead of Thymine (T) found in DNA. This complementary base pairing is crucial for RNA secondary structure and function.\n\n**Task:**\nGiven the following RNA sequence, provide its complementary sequence by applying the base pairing rules above.\n\n**Example:**\nInput: AUCG\nOutput answer: UAGC (A\u2192U, U\u2192A, C\u2192G, G\u2192C)\n\n**Input RNA sequence:** GCCCGGAGCA\n\n**Instructions:**\n1. For each base in the input sequence, determine its complement using the RNA pairing rules\n2. Write out the complete complementary sequence\n3. Provide your final answer between the tags <answer> and </answer>\n\nPlease provide the complementary RNA sequence for the given input.",
+    "answer": "CGGGCCUCGU",
+    "meta": {
+      "task_type": "rna_complement",
+      "input": "GCCCGGAGCA",
+      "expected_output": "CGGGCCUCGU",
+      "sequence_length": 10
+    }
+  },
+  {
+    "prompt": "You are a molecular biology expert. I need you to find the complementary RNA sequence for a given RNA sequence.\n\n**Biological Knowledge Required:**\nIn RNA, the four nucleotide bases pair specifically through hydrogen bonding:\n- Adenine (A) always pairs with Uracil (U)\n- Uracil (U) always pairs with Adenine (A)  \n- Guanine (G) always pairs with Cytosine (C)\n- Cytosine (C) always pairs with Guanine (G)\n\nNote: RNA uses Uracil (U) instead of Thymine (T) found in DNA. This complementary base pairing is crucial for RNA secondary structure and function.\n\n**Task:**\nGiven the following RNA sequence, provide its complementary sequence by applying the base pairing rules above.\n\n**Example:**\nInput: AUCG\nOutput answer: UAGC (A\u2192U, U\u2192A, C\u2192G, G\u2192C)\n\n**Input RNA sequence:** CGUAACUAUA\n\n**Instructions:**\n1. For each base in the input sequence, determine its complement using the RNA pairing rules\n2. Write out the complete complementary sequence\n3. Provide your final answer between the tags <answer> and </answer>\n\nPlease provide the complementary RNA sequence for the given input.",
+    "answer": "GCAUUGAUAU",
+    "meta": {
+      "task_type": "rna_complement",
+      "input": "CGUAACUAUA",
+      "expected_output": "GCAUUGAUAU",
+      "sequence_length": 10
+    }
+  },
+  {
+    "prompt": "You are a molecular biology expert. I need you to find the complementary RNA sequence for a given RNA sequence.\n\n**Biological Knowledge Required:**\nIn RNA, the four nucleotide bases pair specifically through hydrogen bonding:\n- Adenine (A) always pairs with Uracil (U)\n- Uracil (U) always pairs with Adenine (A)  \n- Guanine (G) always pairs with Cytosine (C)\n- Cytosine (C) always pairs with Guanine (G)\n\nNote: RNA uses Uracil (U) instead of Thymine (T) found in DNA. This complementary base pairing is crucial for RNA secondary structure and function.\n\n**Task:**\nGiven the following RNA sequence, provide its complementary sequence by applying the base pairing rules above.\n\n**Example:**\nInput: AUCG\nOutput answer: UAGC (A\u2192U, U\u2192A, C\u2192G, G\u2192C)\n\n**Input RNA sequence:** GAACUAAGCA\n\n**Instructions:**\n1. For each base in the input sequence, determine its complement using the RNA pairing rules\n2. Write out the complete complementary sequence\n3. Provide your final answer between the tags <answer> and </answer>\n\nPlease provide the complementary RNA sequence for the given input.",
+    "answer": "CUUGAUUCGU",
+    "meta": {
+      "task_type": "rna_complement",
+      "input": "GAACUAAGCA",
+      "expected_output": "CUUGAUUCGU",
+      "sequence_length": 10
+    }
+  },
+  {
+    "prompt": "You are a molecular biology expert. I need you to find the complementary RNA sequence for a given RNA sequence.\n\n**Biological Knowledge Required:**\nIn RNA, the four nucleotide bases pair specifically through hydrogen bonding:\n- Adenine (A) always pairs with Uracil (U)\n- Uracil (U) always pairs with Adenine (A)  \n- Guanine (G) always pairs with Cytosine (C)\n- Cytosine (C) always pairs with Guanine (G)\n\nNote: RNA uses Uracil (U) instead of Thymine (T) found in DNA. This complementary base pairing is crucial for RNA secondary structure and function.\n\n**Task:**\nGiven the following RNA sequence, provide its complementary sequence by applying the base pairing rules above.\n\n**Example:**\nInput: AUCG\nOutput answer: UAGC (A\u2192U, U\u2192A, C\u2192G, G\u2192C)\n\n**Input RNA sequence:** AUUGUAGCAC\n\n**Instructions:**\n1. For each base in the input sequence, determine its complement using the RNA pairing rules\n2. Write out the complete complementary sequence\n3. Provide your final answer between the tags <answer> and </answer>\n\nPlease provide the complementary RNA sequence for the given input.",
+    "answer": "UAACAUCGUG",
+    "meta": {
+      "task_type": "rna_complement",
+      "input": "AUUGUAGCAC",
+      "expected_output": "UAACAUCGUG",
+      "sequence_length": 10
+    }
+  },
+  {
+    "prompt": "You are a molecular biology expert. I need you to find the complementary RNA sequence for a given RNA sequence.\n\n**Biological Knowledge Required:**\nIn RNA, the four nucleotide bases pair specifically through hydrogen bonding:\n- Adenine (A) always pairs with Uracil (U)\n- Uracil (U) always pairs with Adenine (A)  \n- Guanine (G) always pairs with Cytosine (C)\n- Cytosine (C) always pairs with Guanine (G)\n\nNote: RNA uses Uracil (U) instead of Thymine (T) found in DNA. This complementary base pairing is crucial for RNA secondary structure and function.\n\n**Task:**\nGiven the following RNA sequence, provide its complementary sequence by applying the base pairing rules above.\n\n**Example:**\nInput: AUCG\nOutput answer: UAGC (A\u2192U, U\u2192A, C\u2192G, G\u2192C)\n\n**Input RNA sequence:** UUGAGAGAUG\n\n**Instructions:**\n1. For each base in the input sequence, determine its complement using the RNA pairing rules\n2. Write out the complete complementary sequence\n3. Provide your final answer between the tags <answer> and </answer>\n\nPlease provide the complementary RNA sequence for the given input.",
+    "answer": "AACUCUCUAC",
+    "meta": {
+      "task_type": "rna_complement",
+      "input": "UUGAGAGAUG",
+      "expected_output": "AACUCUCUAC",
+      "sequence_length": 10
+    }
+  },
+  {
+    "prompt": "You are a biochemistry expert. I need you to convert a protein sequence from three-letter amino acid codes to one-letter codes.\n\n**Biological Knowledge Required:**\nEach of the 20 standard amino acids has both a three-letter and one-letter abbreviation:\n\nALA = A (Alanine)      ARG = R (Arginine)     ASN = N (Asparagine)   ASP = D (Aspartic acid)\nCYS = C (Cysteine)     GLN = Q (Glutamine)    GLU = E (Glutamic acid) GLY = G (Glycine)\nHIS = H (Histidine)    ILE = I (Isoleucine)   LEU = L (Leucine)      LYS = K (Lysine)\nMET = M (Methionine)   PHE = F (Phenylalanine) PRO = P (Proline)     SER = S (Serine)\nTHR = T (Threonine)    TRP = W (Tryptophan)   TYR = Y (Tyrosine)     VAL = V (Valine)\n\n**Task:**\nConvert the following protein sequence from three-letter amino acid codes to one-letter codes.\n\n**Example:**\nInput: GLY-ARG-PHE\nOutput answer: GRF\n\n**Input protein sequence (three-letter codes):** LEU-ALA-ALA-GLU-PHE-THR-PHE-ARG-ASP-THR\n\n**Instructions:**\n1. Split the input sequence by hyphens to get individual amino acids\n2. Convert each three-letter code to its corresponding one-letter code using the table above\n3. Join the one-letter codes together WITHOUT any separators (no hyphens, no spaces)\n4. Provide your final answer between the tags <answer> and </answer>\n\nPlease convert the given protein sequence to one-letter amino acid codes.",
+    "answer": "LAAEFTFRDT",
+    "meta": {
+      "task_type": "protein_three_to_one",
+      "input": "LEU-ALA-ALA-GLU-PHE-THR-PHE-ARG-ASP-THR",
+      "expected_output": "LAAEFTFRDT",
+      "sequence_length": 10
+    }
+  },
+  {
+    "prompt": "You are a biochemistry expert. I need you to convert a protein sequence from three-letter amino acid codes to one-letter codes.\n\n**Biological Knowledge Required:**\nEach of the 20 standard amino acids has both a three-letter and one-letter abbreviation:\n\nALA = A (Alanine)      ARG = R (Arginine)     ASN = N (Asparagine)   ASP = D (Aspartic acid)\nCYS = C (Cysteine)     GLN = Q (Glutamine)    GLU = E (Glutamic acid) GLY = G (Glycine)\nHIS = H (Histidine)    ILE = I (Isoleucine)   LEU = L (Leucine)      LYS = K (Lysine)\nMET = M (Methionine)   PHE = F (Phenylalanine) PRO = P (Proline)     SER = S (Serine)\nTHR = T (Threonine)    TRP = W (Tryptophan)   TYR = Y (Tyrosine)     VAL = V (Valine)\n\n**Task:**\nConvert the following protein sequence from three-letter amino acid codes to one-letter codes.\n\n**Example:**\nInput: GLY-ARG-PHE\nOutput answer: GRF\n\n**Input protein sequence (three-letter codes):** THR-LYS-LYS-GLU-ILE-ASP-LEU-SER-SER-PRO\n\n**Instructions:**\n1. Split the input sequence by hyphens to get individual amino acids\n2. Convert each three-letter code to its corresponding one-letter code using the table above\n3. Join the one-letter codes together WITHOUT any separators (no hyphens, no spaces)\n4. Provide your final answer between the tags <answer> and </answer>\n\nPlease convert the given protein sequence to one-letter amino acid codes.",
+    "answer": "TKKEIDLSSP",
+    "meta": {
+      "task_type": "protein_three_to_one",
+      "input": "THR-LYS-LYS-GLU-ILE-ASP-LEU-SER-SER-PRO",
+      "expected_output": "TKKEIDLSSP",
+      "sequence_length": 10
+    }
+  },
+  {
+    "prompt": "You are a biochemistry expert. I need you to convert a protein sequence from three-letter amino acid codes to one-letter codes.\n\n**Biological Knowledge Required:**\nEach of the 20 standard amino acids has both a three-letter and one-letter abbreviation:\n\nALA = A (Alanine)      ARG = R (Arginine)     ASN = N (Asparagine)   ASP = D (Aspartic acid)\nCYS = C (Cysteine)     GLN = Q (Glutamine)    GLU = E (Glutamic acid) GLY = G (Glycine)\nHIS = H (Histidine)    ILE = I (Isoleucine)   LEU = L (Leucine)      LYS = K (Lysine)\nMET = M (Methionine)   PHE = F (Phenylalanine) PRO = P (Proline)     SER = S (Serine)\nTHR = T (Threonine)    TRP = W (Tryptophan)   TYR = Y (Tyrosine)     VAL = V (Valine)\n\n**Task:**\nConvert the following protein sequence from three-letter amino acid codes to one-letter codes.\n\n**Example:**\nInput: GLY-ARG-PHE\nOutput answer: GRF\n\n**Input protein sequence (three-letter codes):** GLY-GLY-SER-ALA-SER-GLU-ILE-HIS-MET-HIS\n\n**Instructions:**\n1. Split the input sequence by hyphens to get individual amino acids\n2. Convert each three-letter code to its corresponding one-letter code using the table above\n3. Join the one-letter codes together WITHOUT any separators (no hyphens, no spaces)\n4. Provide your final answer between the tags <answer> and </answer>\n\nPlease convert the given protein sequence to one-letter amino acid codes.",
+    "answer": "GGSASEIHMH",
+    "meta": {
+      "task_type": "protein_three_to_one",
+      "input": "GLY-GLY-SER-ALA-SER-GLU-ILE-HIS-MET-HIS",
+      "expected_output": "GGSASEIHMH",
+      "sequence_length": 10
+    }
+  },
+  {
+    "prompt": "You are a biochemistry expert. I need you to convert a protein sequence from three-letter amino acid codes to one-letter codes.\n\n**Biological Knowledge Required:**\nEach of the 20 standard amino acids has both a three-letter and one-letter abbreviation:\n\nALA = A (Alanine)      ARG = R (Arginine)     ASN = N (Asparagine)   ASP = D (Aspartic acid)\nCYS = C (Cysteine)     GLN = Q (Glutamine)    GLU = E (Glutamic acid) GLY = G (Glycine)\nHIS = H (Histidine)    ILE = I (Isoleucine)   LEU = L (Leucine)      LYS = K (Lysine)\nMET = M (Methionine)   PHE = F (Phenylalanine) PRO = P (Proline)     SER = S (Serine)\nTHR = T (Threonine)    TRP = W (Tryptophan)   TYR = Y (Tyrosine)     VAL = V (Valine)\n\n**Task:**\nConvert the following protein sequence from three-letter amino acid codes to one-letter codes.\n\n**Example:**\nInput: GLY-ARG-PHE\nOutput answer: GRF\n\n**Input protein sequence (three-letter codes):** ALA-PRO-ASN-ILE-ILE-ALA-ARG-ARG-CYS-ASN\n\n**Instructions:**\n1. Split the input sequence by hyphens to get individual amino acids\n2. Convert each three-letter code to its corresponding one-letter code using the table above\n3. Join the one-letter codes together WITHOUT any separators (no hyphens, no spaces)\n4. Provide your final answer between the tags <answer> and </answer>\n\nPlease convert the given protein sequence to one-letter amino acid codes.",
+    "answer": "APNIIARRCN",
+    "meta": {
+      "task_type": "protein_three_to_one",
+      "input": "ALA-PRO-ASN-ILE-ILE-ALA-ARG-ARG-CYS-ASN",
+      "expected_output": "APNIIARRCN",
+      "sequence_length": 10
+    }
+  },
+  {
+    "prompt": "You are a biochemistry expert. I need you to convert a protein sequence from three-letter amino acid codes to one-letter codes.\n\n**Biological Knowledge Required:**\nEach of the 20 standard amino acids has both a three-letter and one-letter abbreviation:\n\nALA = A (Alanine)      ARG = R (Arginine)     ASN = N (Asparagine)   ASP = D (Aspartic acid)\nCYS = C (Cysteine)     GLN = Q (Glutamine)    GLU = E (Glutamic acid) GLY = G (Glycine)\nHIS = H (Histidine)    ILE = I (Isoleucine)   LEU = L (Leucine)      LYS = K (Lysine)\nMET = M (Methionine)   PHE = F (Phenylalanine) PRO = P (Proline)     SER = S (Serine)\nTHR = T (Threonine)    TRP = W (Tryptophan)   TYR = Y (Tyrosine)     VAL = V (Valine)\n\n**Task:**\nConvert the following protein sequence from three-letter amino acid codes to one-letter codes.\n\n**Example:**\nInput: GLY-ARG-PHE\nOutput answer: GRF\n\n**Input protein sequence (three-letter codes):** LYS-ILE-LYS-THR-GLY-GLY-HIS-ASP-GLU-THR\n\n**Instructions:**\n1. Split the input sequence by hyphens to get individual amino acids\n2. Convert each three-letter code to its corresponding one-letter code using the table above\n3. Join the one-letter codes together WITHOUT any separators (no hyphens, no spaces)\n4. Provide your final answer between the tags <answer> and </answer>\n\nPlease convert the given protein sequence to one-letter amino acid codes.",
+    "answer": "KIKTGGHDET",
+    "meta": {
+      "task_type": "protein_three_to_one",
+      "input": "LYS-ILE-LYS-THR-GLY-GLY-HIS-ASP-GLU-THR",
+      "expected_output": "KIKTGGHDET",
+      "sequence_length": 10
+    }
+  },
+  {
+    "prompt": "You are a biochemistry expert. I need you to convert a protein sequence from three-letter amino acid codes to one-letter codes.\n\n**Biological Knowledge Required:**\nEach of the 20 standard amino acids has both a three-letter and one-letter abbreviation:\n\nALA = A (Alanine)      ARG = R (Arginine)     ASN = N (Asparagine)   ASP = D (Aspartic acid)\nCYS = C (Cysteine)     GLN = Q (Glutamine)    GLU = E (Glutamic acid) GLY = G (Glycine)\nHIS = H (Histidine)    ILE = I (Isoleucine)   LEU = L (Leucine)      LYS = K (Lysine)\nMET = M (Methionine)   PHE = F (Phenylalanine) PRO = P (Proline)     SER = S (Serine)\nTHR = T (Threonine)    TRP = W (Tryptophan)   TYR = Y (Tyrosine)     VAL = V (Valine)\n\n**Task:**\nConvert the following protein sequence from three-letter amino acid codes to one-letter codes.\n\n**Example:**\nInput: GLY-ARG-PHE\nOutput answer: GRF\n\n**Input protein sequence (three-letter codes):** GLN-PRO-HIS-CYS-THR-LEU-ASP-ALA-TRP-MET\n\n**Instructions:**\n1. Split the input sequence by hyphens to get individual amino acids\n2. Convert each three-letter code to its corresponding one-letter code using the table above\n3. Join the one-letter codes together WITHOUT any separators (no hyphens, no spaces)\n4. Provide your final answer between the tags <answer> and </answer>\n\nPlease convert the given protein sequence to one-letter amino acid codes.",
+    "answer": "QPHCTLDAWM",
+    "meta": {
+      "task_type": "protein_three_to_one",
+      "input": "GLN-PRO-HIS-CYS-THR-LEU-ASP-ALA-TRP-MET",
+      "expected_output": "QPHCTLDAWM",
+      "sequence_length": 10
+    }
+  },
+  {
+    "prompt": "You are a biochemistry expert. I need you to convert a protein sequence from three-letter amino acid codes to one-letter codes.\n\n**Biological Knowledge Required:**\nEach of the 20 standard amino acids has both a three-letter and one-letter abbreviation:\n\nALA = A (Alanine)      ARG = R (Arginine)     ASN = N (Asparagine)   ASP = D (Aspartic acid)\nCYS = C (Cysteine)     GLN = Q (Glutamine)    GLU = E (Glutamic acid) GLY = G (Glycine)\nHIS = H (Histidine)    ILE = I (Isoleucine)   LEU = L (Leucine)      LYS = K (Lysine)\nMET = M (Methionine)   PHE = F (Phenylalanine) PRO = P (Proline)     SER = S (Serine)\nTHR = T (Threonine)    TRP = W (Tryptophan)   TYR = Y (Tyrosine)     VAL = V (Valine)\n\n**Task:**\nConvert the following protein sequence from three-letter amino acid codes to one-letter codes.\n\n**Example:**\nInput: GLY-ARG-PHE\nOutput answer: GRF\n\n**Input protein sequence (three-letter codes):** HIS-ARG-ASP-PRO-SER-GLU-GLY-HIS-GLY-PHE\n\n**Instructions:**\n1. Split the input sequence by hyphens to get individual amino acids\n2. Convert each three-letter code to its corresponding one-letter code using the table above\n3. Join the one-letter codes together WITHOUT any separators (no hyphens, no spaces)\n4. Provide your final answer between the tags <answer> and </answer>\n\nPlease convert the given protein sequence to one-letter amino acid codes.",
+    "answer": "HRDPSEGHGF",
+    "meta": {
+      "task_type": "protein_three_to_one",
+      "input": "HIS-ARG-ASP-PRO-SER-GLU-GLY-HIS-GLY-PHE",
+      "expected_output": "HRDPSEGHGF",
+      "sequence_length": 10
+    }
+  },
+  {
+    "prompt": "You are a biochemistry expert. I need you to convert a protein sequence from three-letter amino acid codes to one-letter codes.\n\n**Biological Knowledge Required:**\nEach of the 20 standard amino acids has both a three-letter and one-letter abbreviation:\n\nALA = A (Alanine)      ARG = R (Arginine)     ASN = N (Asparagine)   ASP = D (Aspartic acid)\nCYS = C (Cysteine)     GLN = Q (Glutamine)    GLU = E (Glutamic acid) GLY = G (Glycine)\nHIS = H (Histidine)    ILE = I (Isoleucine)   LEU = L (Leucine)      LYS = K (Lysine)\nMET = M (Methionine)   PHE = F (Phenylalanine) PRO = P (Proline)     SER = S (Serine)\nTHR = T (Threonine)    TRP = W (Tryptophan)   TYR = Y (Tyrosine)     VAL = V (Valine)\n\n**Task:**\nConvert the following protein sequence from three-letter amino acid codes to one-letter codes.\n\n**Example:**\nInput: GLY-ARG-PHE\nOutput answer: GRF\n\n**Input protein sequence (three-letter codes):** LYS-TRP-TRP-ASN-ALA-VAL-TRP-MET-GLN-GLU\n\n**Instructions:**\n1. Split the input sequence by hyphens to get individual amino acids\n2. Convert each three-letter code to its corresponding one-letter code using the table above\n3. Join the one-letter codes together WITHOUT any separators (no hyphens, no spaces)\n4. Provide your final answer between the tags <answer> and </answer>\n\nPlease convert the given protein sequence to one-letter amino acid codes.",
+    "answer": "KWWNAVWMQE",
+    "meta": {
+      "task_type": "protein_three_to_one",
+      "input": "LYS-TRP-TRP-ASN-ALA-VAL-TRP-MET-GLN-GLU",
+      "expected_output": "KWWNAVWMQE",
+      "sequence_length": 10
+    }
+  },
+  {
+    "prompt": "You are a biochemistry expert. I need you to convert a protein sequence from three-letter amino acid codes to one-letter codes.\n\n**Biological Knowledge Required:**\nEach of the 20 standard amino acids has both a three-letter and one-letter abbreviation:\n\nALA = A (Alanine)      ARG = R (Arginine)     ASN = N (Asparagine)   ASP = D (Aspartic acid)\nCYS = C (Cysteine)     GLN = Q (Glutamine)    GLU = E (Glutamic acid) GLY = G (Glycine)\nHIS = H (Histidine)    ILE = I (Isoleucine)   LEU = L (Leucine)      LYS = K (Lysine)\nMET = M (Methionine)   PHE = F (Phenylalanine) PRO = P (Proline)     SER = S (Serine)\nTHR = T (Threonine)    TRP = W (Tryptophan)   TYR = Y (Tyrosine)     VAL = V (Valine)\n\n**Task:**\nConvert the following protein sequence from three-letter amino acid codes to one-letter codes.\n\n**Example:**\nInput: GLY-ARG-PHE\nOutput answer: GRF\n\n**Input protein sequence (three-letter codes):** LYS-TRP-ARG-MET-GLN-SER-LEU-GLU-ALA-ASP\n\n**Instructions:**\n1. Split the input sequence by hyphens to get individual amino acids\n2. Convert each three-letter code to its corresponding one-letter code using the table above\n3. Join the one-letter codes together WITHOUT any separators (no hyphens, no spaces)\n4. Provide your final answer between the tags <answer> and </answer>\n\nPlease convert the given protein sequence to one-letter amino acid codes.",
+    "answer": "KWRMQSLEAD",
+    "meta": {
+      "task_type": "protein_three_to_one",
+      "input": "LYS-TRP-ARG-MET-GLN-SER-LEU-GLU-ALA-ASP",
+      "expected_output": "KWRMQSLEAD",
+      "sequence_length": 10
+    }
+  },
+  {
+    "prompt": "You are a biochemistry expert. I need you to convert a protein sequence from three-letter amino acid codes to one-letter codes.\n\n**Biological Knowledge Required:**\nEach of the 20 standard amino acids has both a three-letter and one-letter abbreviation:\n\nALA = A (Alanine)      ARG = R (Arginine)     ASN = N (Asparagine)   ASP = D (Aspartic acid)\nCYS = C (Cysteine)     GLN = Q (Glutamine)    GLU = E (Glutamic acid) GLY = G (Glycine)\nHIS = H (Histidine)    ILE = I (Isoleucine)   LEU = L (Leucine)      LYS = K (Lysine)\nMET = M (Methionine)   PHE = F (Phenylalanine) PRO = P (Proline)     SER = S (Serine)\nTHR = T (Threonine)    TRP = W (Tryptophan)   TYR = Y (Tyrosine)     VAL = V (Valine)\n\n**Task:**\nConvert the following protein sequence from three-letter amino acid codes to one-letter codes.\n\n**Example:**\nInput: GLY-ARG-PHE\nOutput answer: GRF\n\n**Input protein sequence (three-letter codes):** HIS-MET-SER-HIS-GLU-ILE-ARG-ARG-SER-MET\n\n**Instructions:**\n1. Split the input sequence by hyphens to get individual amino acids\n2. Convert each three-letter code to its corresponding one-letter code using the table above\n3. Join the one-letter codes together WITHOUT any separators (no hyphens, no spaces)\n4. Provide your final answer between the tags <answer> and </answer>\n\nPlease convert the given protein sequence to one-letter amino acid codes.",
+    "answer": "HMSHEIRRSM",
+    "meta": {
+      "task_type": "protein_three_to_one",
+      "input": "HIS-MET-SER-HIS-GLU-ILE-ARG-ARG-SER-MET",
+      "expected_output": "HMSHEIRRSM",
+      "sequence_length": 10
+    }
+  },
+  {
+    "prompt": "You are a biochemistry expert. I need you to convert a protein sequence from three-letter amino acid codes to one-letter codes.\n\n**Biological Knowledge Required:**\nEach of the 20 standard amino acids has both a three-letter and one-letter abbreviation:\n\nALA = A (Alanine)      ARG = R (Arginine)     ASN = N (Asparagine)   ASP = D (Aspartic acid)\nCYS = C (Cysteine)     GLN = Q (Glutamine)    GLU = E (Glutamic acid) GLY = G (Glycine)\nHIS = H (Histidine)    ILE = I (Isoleucine)   LEU = L (Leucine)      LYS = K (Lysine)\nMET = M (Methionine)   PHE = F (Phenylalanine) PRO = P (Proline)     SER = S (Serine)\nTHR = T (Threonine)    TRP = W (Tryptophan)   TYR = Y (Tyrosine)     VAL = V (Valine)\n\n**Task:**\nConvert the following protein sequence from three-letter amino acid codes to one-letter codes.\n\n**Example:**\nInput: GLY-ARG-PHE\nOutput answer: GRF\n\n**Input protein sequence (three-letter codes):** THR-ARG-SER-ASN-SER-GLU-PHE-CYS-ASN-HIS\n\n**Instructions:**\n1. Split the input sequence by hyphens to get individual amino acids\n2. Convert each three-letter code to its corresponding one-letter code using the table above\n3. Join the one-letter codes together WITHOUT any separators (no hyphens, no spaces)\n4. Provide your final answer between the tags <answer> and </answer>\n\nPlease convert the given protein sequence to one-letter amino acid codes.",
+    "answer": "TRSNSEFCNH",
+    "meta": {
+      "task_type": "protein_three_to_one",
+      "input": "THR-ARG-SER-ASN-SER-GLU-PHE-CYS-ASN-HIS",
+      "expected_output": "TRSNSEFCNH",
+      "sequence_length": 10
+    }
+  },
+  {
+    "prompt": "You are a biochemistry expert. I need you to convert a protein sequence from three-letter amino acid codes to one-letter codes.\n\n**Biological Knowledge Required:**\nEach of the 20 standard amino acids has both a three-letter and one-letter abbreviation:\n\nALA = A (Alanine)      ARG = R (Arginine)     ASN = N (Asparagine)   ASP = D (Aspartic acid)\nCYS = C (Cysteine)     GLN = Q (Glutamine)    GLU = E (Glutamic acid) GLY = G (Glycine)\nHIS = H (Histidine)    ILE = I (Isoleucine)   LEU = L (Leucine)      LYS = K (Lysine)\nMET = M (Methionine)   PHE = F (Phenylalanine) PRO = P (Proline)     SER = S (Serine)\nTHR = T (Threonine)    TRP = W (Tryptophan)   TYR = Y (Tyrosine)     VAL = V (Valine)\n\n**Task:**\nConvert the following protein sequence from three-letter amino acid codes to one-letter codes.\n\n**Example:**\nInput: GLY-ARG-PHE\nOutput answer: GRF\n\n**Input protein sequence (three-letter codes):** ASP-GLN-TYR-HIS-TRP-PHE-ASN-GLN-HIS-ASN\n\n**Instructions:**\n1. Split the input sequence by hyphens to get individual amino acids\n2. Convert each three-letter code to its corresponding one-letter code using the table above\n3. Join the one-letter codes together WITHOUT any separators (no hyphens, no spaces)\n4. Provide your final answer between the tags <answer> and </answer>\n\nPlease convert the given protein sequence to one-letter amino acid codes.",
+    "answer": "DQYHWFNQHN",
+    "meta": {
+      "task_type": "protein_three_to_one",
+      "input": "ASP-GLN-TYR-HIS-TRP-PHE-ASN-GLN-HIS-ASN",
+      "expected_output": "DQYHWFNQHN",
+      "sequence_length": 10
+    }
+  },
+  {
+    "prompt": "You are a biochemistry expert. I need you to convert a protein sequence from three-letter amino acid codes to one-letter codes.\n\n**Biological Knowledge Required:**\nEach of the 20 standard amino acids has both a three-letter and one-letter abbreviation:\n\nALA = A (Alanine)      ARG = R (Arginine)     ASN = N (Asparagine)   ASP = D (Aspartic acid)\nCYS = C (Cysteine)     GLN = Q (Glutamine)    GLU = E (Glutamic acid) GLY = G (Glycine)\nHIS = H (Histidine)    ILE = I (Isoleucine)   LEU = L (Leucine)      LYS = K (Lysine)\nMET = M (Methionine)   PHE = F (Phenylalanine) PRO = P (Proline)     SER = S (Serine)\nTHR = T (Threonine)    TRP = W (Tryptophan)   TYR = Y (Tyrosine)     VAL = V (Valine)\n\n**Task:**\nConvert the following protein sequence from three-letter amino acid codes to one-letter codes.\n\n**Example:**\nInput: GLY-ARG-PHE\nOutput answer: GRF\n\n**Input protein sequence (three-letter codes):** PHE-ILE-THR-SER-SER-LEU-SER-THR-TYR-PHE\n\n**Instructions:**\n1. Split the input sequence by hyphens to get individual amino acids\n2. Convert each three-letter code to its corresponding one-letter code using the table above\n3. Join the one-letter codes together WITHOUT any separators (no hyphens, no spaces)\n4. Provide your final answer between the tags <answer> and </answer>\n\nPlease convert the given protein sequence to one-letter amino acid codes.",
+    "answer": "FITSSLSTYF",
+    "meta": {
+      "task_type": "protein_three_to_one",
+      "input": "PHE-ILE-THR-SER-SER-LEU-SER-THR-TYR-PHE",
+      "expected_output": "FITSSLSTYF",
+      "sequence_length": 10
+    }
+  },
+  {
+    "prompt": "You are a biochemistry expert. I need you to convert a protein sequence from three-letter amino acid codes to one-letter codes.\n\n**Biological Knowledge Required:**\nEach of the 20 standard amino acids has both a three-letter and one-letter abbreviation:\n\nALA = A (Alanine)      ARG = R (Arginine)     ASN = N (Asparagine)   ASP = D (Aspartic acid)\nCYS = C (Cysteine)     GLN = Q (Glutamine)    GLU = E (Glutamic acid) GLY = G (Glycine)\nHIS = H (Histidine)    ILE = I (Isoleucine)   LEU = L (Leucine)      LYS = K (Lysine)\nMET = M (Methionine)   PHE = F (Phenylalanine) PRO = P (Proline)     SER = S (Serine)\nTHR = T (Threonine)    TRP = W (Tryptophan)   TYR = Y (Tyrosine)     VAL = V (Valine)\n\n**Task:**\nConvert the following protein sequence from three-letter amino acid codes to one-letter codes.\n\n**Example:**\nInput: GLY-ARG-PHE\nOutput answer: GRF\n\n**Input protein sequence (three-letter codes):** PRO-ALA-LEU-ASN-LYS-HIS-GLU-ILE-MET-SER\n\n**Instructions:**\n1. Split the input sequence by hyphens to get individual amino acids\n2. Convert each three-letter code to its corresponding one-letter code using the table above\n3. Join the one-letter codes together WITHOUT any separators (no hyphens, no spaces)\n4. Provide your final answer between the tags <answer> and </answer>\n\nPlease convert the given protein sequence to one-letter amino acid codes.",
+    "answer": "PALNKHEIMS",
+    "meta": {
+      "task_type": "protein_three_to_one",
+      "input": "PRO-ALA-LEU-ASN-LYS-HIS-GLU-ILE-MET-SER",
+      "expected_output": "PALNKHEIMS",
+      "sequence_length": 10
+    }
+  },
+  {
+    "prompt": "You are a biochemistry expert. I need you to convert a protein sequence from three-letter amino acid codes to one-letter codes.\n\n**Biological Knowledge Required:**\nEach of the 20 standard amino acids has both a three-letter and one-letter abbreviation:\n\nALA = A (Alanine)      ARG = R (Arginine)     ASN = N (Asparagine)   ASP = D (Aspartic acid)\nCYS = C (Cysteine)     GLN = Q (Glutamine)    GLU = E (Glutamic acid) GLY = G (Glycine)\nHIS = H (Histidine)    ILE = I (Isoleucine)   LEU = L (Leucine)      LYS = K (Lysine)\nMET = M (Methionine)   PHE = F (Phenylalanine) PRO = P (Proline)     SER = S (Serine)\nTHR = T (Threonine)    TRP = W (Tryptophan)   TYR = Y (Tyrosine)     VAL = V (Valine)\n\n**Task:**\nConvert the following protein sequence from three-letter amino acid codes to one-letter codes.\n\n**Example:**\nInput: GLY-ARG-PHE\nOutput answer: GRF\n\n**Input protein sequence (three-letter codes):** LYS-TRP-VAL-MET-PRO-ASP-THR-ALA-CYS-THR\n\n**Instructions:**\n1. Split the input sequence by hyphens to get individual amino acids\n2. Convert each three-letter code to its corresponding one-letter code using the table above\n3. Join the one-letter codes together WITHOUT any separators (no hyphens, no spaces)\n4. Provide your final answer between the tags <answer> and </answer>\n\nPlease convert the given protein sequence to one-letter amino acid codes.",
+    "answer": "KWVMPDTACT",
+    "meta": {
+      "task_type": "protein_three_to_one",
+      "input": "LYS-TRP-VAL-MET-PRO-ASP-THR-ALA-CYS-THR",
+      "expected_output": "KWVMPDTACT",
+      "sequence_length": 10
+    }
+  },
+  {
+    "prompt": "You are a biochemistry expert. I need you to convert a protein sequence from three-letter amino acid codes to one-letter codes.\n\n**Biological Knowledge Required:**\nEach of the 20 standard amino acids has both a three-letter and one-letter abbreviation:\n\nALA = A (Alanine)      ARG = R (Arginine)     ASN = N (Asparagine)   ASP = D (Aspartic acid)\nCYS = C (Cysteine)     GLN = Q (Glutamine)    GLU = E (Glutamic acid) GLY = G (Glycine)\nHIS = H (Histidine)    ILE = I (Isoleucine)   LEU = L (Leucine)      LYS = K (Lysine)\nMET = M (Methionine)   PHE = F (Phenylalanine) PRO = P (Proline)     SER = S (Serine)\nTHR = T (Threonine)    TRP = W (Tryptophan)   TYR = Y (Tyrosine)     VAL = V (Valine)\n\n**Task:**\nConvert the following protein sequence from three-letter amino acid codes to one-letter codes.\n\n**Example:**\nInput: GLY-ARG-PHE\nOutput answer: GRF\n\n**Input protein sequence (three-letter codes):** MET-ASP-ALA-GLN-HIS-HIS-ARG-ILE-GLY-MET\n\n**Instructions:**\n1. Split the input sequence by hyphens to get individual amino acids\n2. Convert each three-letter code to its corresponding one-letter code using the table above\n3. Join the one-letter codes together WITHOUT any separators (no hyphens, no spaces)\n4. Provide your final answer between the tags <answer> and </answer>\n\nPlease convert the given protein sequence to one-letter amino acid codes.",
+    "answer": "MDAQHHRIGM",
+    "meta": {
+      "task_type": "protein_three_to_one",
+      "input": "MET-ASP-ALA-GLN-HIS-HIS-ARG-ILE-GLY-MET",
+      "expected_output": "MDAQHHRIGM",
+      "sequence_length": 10
+    }
+  },
+  {
+    "prompt": "You are a biochemistry expert. I need you to convert a protein sequence from three-letter amino acid codes to one-letter codes.\n\n**Biological Knowledge Required:**\nEach of the 20 standard amino acids has both a three-letter and one-letter abbreviation:\n\nALA = A (Alanine)      ARG = R (Arginine)     ASN = N (Asparagine)   ASP = D (Aspartic acid)\nCYS = C (Cysteine)     GLN = Q (Glutamine)    GLU = E (Glutamic acid) GLY = G (Glycine)\nHIS = H (Histidine)    ILE = I (Isoleucine)   LEU = L (Leucine)      LYS = K (Lysine)\nMET = M (Methionine)   PHE = F (Phenylalanine) PRO = P (Proline)     SER = S (Serine)\nTHR = T (Threonine)    TRP = W (Tryptophan)   TYR = Y (Tyrosine)     VAL = V (Valine)\n\n**Task:**\nConvert the following protein sequence from three-letter amino acid codes to one-letter codes.\n\n**Example:**\nInput: GLY-ARG-PHE\nOutput answer: GRF\n\n**Input protein sequence (three-letter codes):** ALA-ILE-PHE-ASN-SER-GLU-GLN-ALA-GLU-VAL\n\n**Instructions:**\n1. Split the input sequence by hyphens to get individual amino acids\n2. Convert each three-letter code to its corresponding one-letter code using the table above\n3. Join the one-letter codes together WITHOUT any separators (no hyphens, no spaces)\n4. Provide your final answer between the tags <answer> and </answer>\n\nPlease convert the given protein sequence to one-letter amino acid codes.",
+    "answer": "AIFNSEQAEV",
+    "meta": {
+      "task_type": "protein_three_to_one",
+      "input": "ALA-ILE-PHE-ASN-SER-GLU-GLN-ALA-GLU-VAL",
+      "expected_output": "AIFNSEQAEV",
+      "sequence_length": 10
+    }
+  },
+  {
+    "prompt": "You are a biochemistry expert. I need you to convert a protein sequence from three-letter amino acid codes to one-letter codes.\n\n**Biological Knowledge Required:**\nEach of the 20 standard amino acids has both a three-letter and one-letter abbreviation:\n\nALA = A (Alanine)      ARG = R (Arginine)     ASN = N (Asparagine)   ASP = D (Aspartic acid)\nCYS = C (Cysteine)     GLN = Q (Glutamine)    GLU = E (Glutamic acid) GLY = G (Glycine)\nHIS = H (Histidine)    ILE = I (Isoleucine)   LEU = L (Leucine)      LYS = K (Lysine)\nMET = M (Methionine)   PHE = F (Phenylalanine) PRO = P (Proline)     SER = S (Serine)\nTHR = T (Threonine)    TRP = W (Tryptophan)   TYR = Y (Tyrosine)     VAL = V (Valine)\n\n**Task:**\nConvert the following protein sequence from three-letter amino acid codes to one-letter codes.\n\n**Example:**\nInput: GLY-ARG-PHE\nOutput answer: GRF\n\n**Input protein sequence (three-letter codes):** VAL-ALA-GLN-ILE-THR-HIS-TRP-ASN-GLN-CYS\n\n**Instructions:**\n1. Split the input sequence by hyphens to get individual amino acids\n2. Convert each three-letter code to its corresponding one-letter code using the table above\n3. Join the one-letter codes together WITHOUT any separators (no hyphens, no spaces)\n4. Provide your final answer between the tags <answer> and </answer>\n\nPlease convert the given protein sequence to one-letter amino acid codes.",
+    "answer": "VAQITHWNQC",
+    "meta": {
+      "task_type": "protein_three_to_one",
+      "input": "VAL-ALA-GLN-ILE-THR-HIS-TRP-ASN-GLN-CYS",
+      "expected_output": "VAQITHWNQC",
+      "sequence_length": 10
+    }
+  },
+  {
+    "prompt": "You are a biochemistry expert. I need you to convert a protein sequence from three-letter amino acid codes to one-letter codes.\n\n**Biological Knowledge Required:**\nEach of the 20 standard amino acids has both a three-letter and one-letter abbreviation:\n\nALA = A (Alanine)      ARG = R (Arginine)     ASN = N (Asparagine)   ASP = D (Aspartic acid)\nCYS = C (Cysteine)     GLN = Q (Glutamine)    GLU = E (Glutamic acid) GLY = G (Glycine)\nHIS = H (Histidine)    ILE = I (Isoleucine)   LEU = L (Leucine)      LYS = K (Lysine)\nMET = M (Methionine)   PHE = F (Phenylalanine) PRO = P (Proline)     SER = S (Serine)\nTHR = T (Threonine)    TRP = W (Tryptophan)   TYR = Y (Tyrosine)     VAL = V (Valine)\n\n**Task:**\nConvert the following protein sequence from three-letter amino acid codes to one-letter codes.\n\n**Example:**\nInput: GLY-ARG-PHE\nOutput answer: GRF\n\n**Input protein sequence (three-letter codes):** MET-VAL-CYS-CYS-TYR-TYR-ASP-ILE-VAL-ALA\n\n**Instructions:**\n1. Split the input sequence by hyphens to get individual amino acids\n2. Convert each three-letter code to its corresponding one-letter code using the table above\n3. Join the one-letter codes together WITHOUT any separators (no hyphens, no spaces)\n4. Provide your final answer between the tags <answer> and </answer>\n\nPlease convert the given protein sequence to one-letter amino acid codes.",
+    "answer": "MVCCYYDIVA",
+    "meta": {
+      "task_type": "protein_three_to_one",
+      "input": "MET-VAL-CYS-CYS-TYR-TYR-ASP-ILE-VAL-ALA",
+      "expected_output": "MVCCYYDIVA",
+      "sequence_length": 10
+    }
+  },
+  {
+    "prompt": "You are a biochemistry expert. I need you to convert a protein sequence from three-letter amino acid codes to one-letter codes.\n\n**Biological Knowledge Required:**\nEach of the 20 standard amino acids has both a three-letter and one-letter abbreviation:\n\nALA = A (Alanine)      ARG = R (Arginine)     ASN = N (Asparagine)   ASP = D (Aspartic acid)\nCYS = C (Cysteine)     GLN = Q (Glutamine)    GLU = E (Glutamic acid) GLY = G (Glycine)\nHIS = H (Histidine)    ILE = I (Isoleucine)   LEU = L (Leucine)      LYS = K (Lysine)\nMET = M (Methionine)   PHE = F (Phenylalanine) PRO = P (Proline)     SER = S (Serine)\nTHR = T (Threonine)    TRP = W (Tryptophan)   TYR = Y (Tyrosine)     VAL = V (Valine)\n\n**Task:**\nConvert the following protein sequence from three-letter amino acid codes to one-letter codes.\n\n**Example:**\nInput: GLY-ARG-PHE\nOutput answer: GRF\n\n**Input protein sequence (three-letter codes):** LEU-CYS-ALA-ASN-TRP-ALA-SER-ILE-GLN-LYS\n\n**Instructions:**\n1. Split the input sequence by hyphens to get individual amino acids\n2. Convert each three-letter code to its corresponding one-letter code using the table above\n3. Join the one-letter codes together WITHOUT any separators (no hyphens, no spaces)\n4. Provide your final answer between the tags <answer> and </answer>\n\nPlease convert the given protein sequence to one-letter amino acid codes.",
+    "answer": "LCANWASIQK",
+    "meta": {
+      "task_type": "protein_three_to_one",
+      "input": "LEU-CYS-ALA-ASN-TRP-ALA-SER-ILE-GLN-LYS",
+      "expected_output": "LCANWASIQK",
+      "sequence_length": 10
+    }
+  },
+  {
+    "prompt": "You are a biochemistry expert. I need you to convert a protein sequence from three-letter amino acid codes to one-letter codes.\n\n**Biological Knowledge Required:**\nEach of the 20 standard amino acids has both a three-letter and one-letter abbreviation:\n\nALA = A (Alanine)      ARG = R (Arginine)     ASN = N (Asparagine)   ASP = D (Aspartic acid)\nCYS = C (Cysteine)     GLN = Q (Glutamine)    GLU = E (Glutamic acid) GLY = G (Glycine)\nHIS = H (Histidine)    ILE = I (Isoleucine)   LEU = L (Leucine)      LYS = K (Lysine)\nMET = M (Methionine)   PHE = F (Phenylalanine) PRO = P (Proline)     SER = S (Serine)\nTHR = T (Threonine)    TRP = W (Tryptophan)   TYR = Y (Tyrosine)     VAL = V (Valine)\n\n**Task:**\nConvert the following protein sequence from three-letter amino acid codes to one-letter codes.\n\n**Example:**\nInput: GLY-ARG-PHE\nOutput answer: GRF\n\n**Input protein sequence (three-letter codes):** MET-SER-ASP-GLU-GLN-GLU-HIS-GLY-PRO-THR\n\n**Instructions:**\n1. Split the input sequence by hyphens to get individual amino acids\n2. Convert each three-letter code to its corresponding one-letter code using the table above\n3. Join the one-letter codes together WITHOUT any separators (no hyphens, no spaces)\n4. Provide your final answer between the tags <answer> and </answer>\n\nPlease convert the given protein sequence to one-letter amino acid codes.",
+    "answer": "MSDEQEHGPT",
+    "meta": {
+      "task_type": "protein_three_to_one",
+      "input": "MET-SER-ASP-GLU-GLN-GLU-HIS-GLY-PRO-THR",
+      "expected_output": "MSDEQEHGPT",
+      "sequence_length": 10
+    }
+  },
+  {
+    "prompt": "You are a biochemistry expert. I need you to convert a protein sequence from three-letter amino acid codes to one-letter codes.\n\n**Biological Knowledge Required:**\nEach of the 20 standard amino acids has both a three-letter and one-letter abbreviation:\n\nALA = A (Alanine)      ARG = R (Arginine)     ASN = N (Asparagine)   ASP = D (Aspartic acid)\nCYS = C (Cysteine)     GLN = Q (Glutamine)    GLU = E (Glutamic acid) GLY = G (Glycine)\nHIS = H (Histidine)    ILE = I (Isoleucine)   LEU = L (Leucine)      LYS = K (Lysine)\nMET = M (Methionine)   PHE = F (Phenylalanine) PRO = P (Proline)     SER = S (Serine)\nTHR = T (Threonine)    TRP = W (Tryptophan)   TYR = Y (Tyrosine)     VAL = V (Valine)\n\n**Task:**\nConvert the following protein sequence from three-letter amino acid codes to one-letter codes.\n\n**Example:**\nInput: GLY-ARG-PHE\nOutput answer: GRF\n\n**Input protein sequence (three-letter codes):** GLY-GLU-LYS-GLN-ALA-PHE-HIS-ALA-LEU-ASN\n\n**Instructions:**\n1. Split the input sequence by hyphens to get individual amino acids\n2. Convert each three-letter code to its corresponding one-letter code using the table above\n3. Join the one-letter codes together WITHOUT any separators (no hyphens, no spaces)\n4. Provide your final answer between the tags <answer> and </answer>\n\nPlease convert the given protein sequence to one-letter amino acid codes.",
+    "answer": "GEKQAFHALN",
+    "meta": {
+      "task_type": "protein_three_to_one",
+      "input": "GLY-GLU-LYS-GLN-ALA-PHE-HIS-ALA-LEU-ASN",
+      "expected_output": "GEKQAFHALN",
+      "sequence_length": 10
+    }
+  },
+  {
+    "prompt": "You are a biochemistry expert. I need you to convert a protein sequence from three-letter amino acid codes to one-letter codes.\n\n**Biological Knowledge Required:**\nEach of the 20 standard amino acids has both a three-letter and one-letter abbreviation:\n\nALA = A (Alanine)      ARG = R (Arginine)     ASN = N (Asparagine)   ASP = D (Aspartic acid)\nCYS = C (Cysteine)     GLN = Q (Glutamine)    GLU = E (Glutamic acid) GLY = G (Glycine)\nHIS = H (Histidine)    ILE = I (Isoleucine)   LEU = L (Leucine)      LYS = K (Lysine)\nMET = M (Methionine)   PHE = F (Phenylalanine) PRO = P (Proline)     SER = S (Serine)\nTHR = T (Threonine)    TRP = W (Tryptophan)   TYR = Y (Tyrosine)     VAL = V (Valine)\n\n**Task:**\nConvert the following protein sequence from three-letter amino acid codes to one-letter codes.\n\n**Example:**\nInput: GLY-ARG-PHE\nOutput answer: GRF\n\n**Input protein sequence (three-letter codes):** VAL-GLN-SER-ALA-MET-TYR-CYS-PRO-PHE-SER\n\n**Instructions:**\n1. Split the input sequence by hyphens to get individual amino acids\n2. Convert each three-letter code to its corresponding one-letter code using the table above\n3. Join the one-letter codes together WITHOUT any separators (no hyphens, no spaces)\n4. Provide your final answer between the tags <answer> and </answer>\n\nPlease convert the given protein sequence to one-letter amino acid codes.",
+    "answer": "VQSAMYCPFS",
+    "meta": {
+      "task_type": "protein_three_to_one",
+      "input": "VAL-GLN-SER-ALA-MET-TYR-CYS-PRO-PHE-SER",
+      "expected_output": "VQSAMYCPFS",
+      "sequence_length": 10
+    }
+  },
+  {
+    "prompt": "You are a biochemistry expert. I need you to convert a protein sequence from three-letter amino acid codes to one-letter codes.\n\n**Biological Knowledge Required:**\nEach of the 20 standard amino acids has both a three-letter and one-letter abbreviation:\n\nALA = A (Alanine)      ARG = R (Arginine)     ASN = N (Asparagine)   ASP = D (Aspartic acid)\nCYS = C (Cysteine)     GLN = Q (Glutamine)    GLU = E (Glutamic acid) GLY = G (Glycine)\nHIS = H (Histidine)    ILE = I (Isoleucine)   LEU = L (Leucine)      LYS = K (Lysine)\nMET = M (Methionine)   PHE = F (Phenylalanine) PRO = P (Proline)     SER = S (Serine)\nTHR = T (Threonine)    TRP = W (Tryptophan)   TYR = Y (Tyrosine)     VAL = V (Valine)\n\n**Task:**\nConvert the following protein sequence from three-letter amino acid codes to one-letter codes.\n\n**Example:**\nInput: GLY-ARG-PHE\nOutput answer: GRF\n\n**Input protein sequence (three-letter codes):** ILE-MET-PHE-HIS-THR-ALA-ILE-TRP-CYS-THR\n\n**Instructions:**\n1. Split the input sequence by hyphens to get individual amino acids\n2. Convert each three-letter code to its corresponding one-letter code using the table above\n3. Join the one-letter codes together WITHOUT any separators (no hyphens, no spaces)\n4. Provide your final answer between the tags <answer> and </answer>\n\nPlease convert the given protein sequence to one-letter amino acid codes.",
+    "answer": "IMFHTAIWCT",
+    "meta": {
+      "task_type": "protein_three_to_one",
+      "input": "ILE-MET-PHE-HIS-THR-ALA-ILE-TRP-CYS-THR",
+      "expected_output": "IMFHTAIWCT",
+      "sequence_length": 10
+    }
+  },
+  {
+    "prompt": "You are a biochemistry expert. I need you to convert a protein sequence from three-letter amino acid codes to one-letter codes.\n\n**Biological Knowledge Required:**\nEach of the 20 standard amino acids has both a three-letter and one-letter abbreviation:\n\nALA = A (Alanine)      ARG = R (Arginine)     ASN = N (Asparagine)   ASP = D (Aspartic acid)\nCYS = C (Cysteine)     GLN = Q (Glutamine)    GLU = E (Glutamic acid) GLY = G (Glycine)\nHIS = H (Histidine)    ILE = I (Isoleucine)   LEU = L (Leucine)      LYS = K (Lysine)\nMET = M (Methionine)   PHE = F (Phenylalanine) PRO = P (Proline)     SER = S (Serine)\nTHR = T (Threonine)    TRP = W (Tryptophan)   TYR = Y (Tyrosine)     VAL = V (Valine)\n\n**Task:**\nConvert the following protein sequence from three-letter amino acid codes to one-letter codes.\n\n**Example:**\nInput: GLY-ARG-PHE\nOutput answer: GRF\n\n**Input protein sequence (three-letter codes):** GLU-TYR-TRP-PRO-GLN-VAL-SER-ASP-PHE-SER\n\n**Instructions:**\n1. Split the input sequence by hyphens to get individual amino acids\n2. Convert each three-letter code to its corresponding one-letter code using the table above\n3. Join the one-letter codes together WITHOUT any separators (no hyphens, no spaces)\n4. Provide your final answer between the tags <answer> and </answer>\n\nPlease convert the given protein sequence to one-letter amino acid codes.",
+    "answer": "EYWPQVSDFS",
+    "meta": {
+      "task_type": "protein_three_to_one",
+      "input": "GLU-TYR-TRP-PRO-GLN-VAL-SER-ASP-PHE-SER",
+      "expected_output": "EYWPQVSDFS",
+      "sequence_length": 10
+    }
+  },
+  {
+    "prompt": "You are a biochemistry expert. I need you to convert a protein sequence from one-letter amino acid codes to three-letter codes.\n\n**Biological Knowledge Required:**\nEach of the 20 standard amino acids has both a one-letter and three-letter abbreviation:\n\nA = ALA (Alanine)      R = ARG (Arginine)     N = ASN (Asparagine)   D = ASP (Aspartic acid)\nC = CYS (Cysteine)     Q = GLN (Glutamine)    E = GLU (Glutamic acid) G = GLY (Glycine)\nH = HIS (Histidine)    I = ILE (Isoleucine)   L = LEU (Leucine)      K = LYS (Lysine)\nM = MET (Methionine)   F = PHE (Phenylalanine) P = PRO (Proline)     S = SER (Serine)\nT = THR (Threonine)    W = TRP (Tryptophan)   Y = TYR (Tyrosine)     V = VAL (Valine)\n\n**Task:**\nConvert the following protein sequence from one-letter amino acid codes to three-letter codes.\n\n**Example:**\nInput: GRF\nOutput answer: GLY-ARG-PHE\n\n**Input protein sequence (one-letter codes):** EGNAGTFMAT\n\n**Instructions:**\n1. The input sequence contains individual amino acid letters with no separators\n2. Convert each one-letter code to its corresponding three-letter code using the table above\n3. Join the three-letter codes with hyphens as separators\n4. Provide your final answer between the tags <answer> and </answer>\n\nPlease convert the given protein sequence to three-letter amino acid codes.",
+    "answer": "GLU-GLY-ASN-ALA-GLY-THR-PHE-MET-ALA-THR",
+    "meta": {
+      "task_type": "protein_one_to_three",
+      "input": "EGNAGTFMAT",
+      "expected_output": "GLU-GLY-ASN-ALA-GLY-THR-PHE-MET-ALA-THR",
+      "sequence_length": 10
+    }
+  },
+  {
+    "prompt": "You are a biochemistry expert. I need you to convert a protein sequence from one-letter amino acid codes to three-letter codes.\n\n**Biological Knowledge Required:**\nEach of the 20 standard amino acids has both a one-letter and three-letter abbreviation:\n\nA = ALA (Alanine)      R = ARG (Arginine)     N = ASN (Asparagine)   D = ASP (Aspartic acid)\nC = CYS (Cysteine)     Q = GLN (Glutamine)    E = GLU (Glutamic acid) G = GLY (Glycine)\nH = HIS (Histidine)    I = ILE (Isoleucine)   L = LEU (Leucine)      K = LYS (Lysine)\nM = MET (Methionine)   F = PHE (Phenylalanine) P = PRO (Proline)     S = SER (Serine)\nT = THR (Threonine)    W = TRP (Tryptophan)   Y = TYR (Tyrosine)     V = VAL (Valine)\n\n**Task:**\nConvert the following protein sequence from one-letter amino acid codes to three-letter codes.\n\n**Example:**\nInput: GRF\nOutput answer: GLY-ARG-PHE\n\n**Input protein sequence (one-letter codes):** FGNTVLELRQ\n\n**Instructions:**\n1. The input sequence contains individual amino acid letters with no separators\n2. Convert each one-letter code to its corresponding three-letter code using the table above\n3. Join the three-letter codes with hyphens as separators\n4. Provide your final answer between the tags <answer> and </answer>\n\nPlease convert the given protein sequence to three-letter amino acid codes.",
+    "answer": "PHE-GLY-ASN-THR-VAL-LEU-GLU-LEU-ARG-GLN",
+    "meta": {
+      "task_type": "protein_one_to_three",
+      "input": "FGNTVLELRQ",
+      "expected_output": "PHE-GLY-ASN-THR-VAL-LEU-GLU-LEU-ARG-GLN",
+      "sequence_length": 10
+    }
+  },
+  {
+    "prompt": "You are a biochemistry expert. I need you to convert a protein sequence from one-letter amino acid codes to three-letter codes.\n\n**Biological Knowledge Required:**\nEach of the 20 standard amino acids has both a one-letter and three-letter abbreviation:\n\nA = ALA (Alanine)      R = ARG (Arginine)     N = ASN (Asparagine)   D = ASP (Aspartic acid)\nC = CYS (Cysteine)     Q = GLN (Glutamine)    E = GLU (Glutamic acid) G = GLY (Glycine)\nH = HIS (Histidine)    I = ILE (Isoleucine)   L = LEU (Leucine)      K = LYS (Lysine)\nM = MET (Methionine)   F = PHE (Phenylalanine) P = PRO (Proline)     S = SER (Serine)\nT = THR (Threonine)    W = TRP (Tryptophan)   Y = TYR (Tyrosine)     V = VAL (Valine)\n\n**Task:**\nConvert the following protein sequence from one-letter amino acid codes to three-letter codes.\n\n**Example:**\nInput: GRF\nOutput answer: GLY-ARG-PHE\n\n**Input protein sequence (one-letter codes):** YFWSLFKGDN\n\n**Instructions:**\n1. The input sequence contains individual amino acid letters with no separators\n2. Convert each one-letter code to its corresponding three-letter code using the table above\n3. Join the three-letter codes with hyphens as separators\n4. Provide your final answer between the tags <answer> and </answer>\n\nPlease convert the given protein sequence to three-letter amino acid codes.",
+    "answer": "TYR-PHE-TRP-SER-LEU-PHE-LYS-GLY-ASP-ASN",
+    "meta": {
+      "task_type": "protein_one_to_three",
+      "input": "YFWSLFKGDN",
+      "expected_output": "TYR-PHE-TRP-SER-LEU-PHE-LYS-GLY-ASP-ASN",
+      "sequence_length": 10
+    }
+  },
+  {
+    "prompt": "You are a biochemistry expert. I need you to convert a protein sequence from one-letter amino acid codes to three-letter codes.\n\n**Biological Knowledge Required:**\nEach of the 20 standard amino acids has both a one-letter and three-letter abbreviation:\n\nA = ALA (Alanine)      R = ARG (Arginine)     N = ASN (Asparagine)   D = ASP (Aspartic acid)\nC = CYS (Cysteine)     Q = GLN (Glutamine)    E = GLU (Glutamic acid) G = GLY (Glycine)\nH = HIS (Histidine)    I = ILE (Isoleucine)   L = LEU (Leucine)      K = LYS (Lysine)\nM = MET (Methionine)   F = PHE (Phenylalanine) P = PRO (Proline)     S = SER (Serine)\nT = THR (Threonine)    W = TRP (Tryptophan)   Y = TYR (Tyrosine)     V = VAL (Valine)\n\n**Task:**\nConvert the following protein sequence from one-letter amino acid codes to three-letter codes.\n\n**Example:**\nInput: GRF\nOutput answer: GLY-ARG-PHE\n\n**Input protein sequence (one-letter codes):** KFEKMQSYGA\n\n**Instructions:**\n1. The input sequence contains individual amino acid letters with no separators\n2. Convert each one-letter code to its corresponding three-letter code using the table above\n3. Join the three-letter codes with hyphens as separators\n4. Provide your final answer between the tags <answer> and </answer>\n\nPlease convert the given protein sequence to three-letter amino acid codes.",
+    "answer": "LYS-PHE-GLU-LYS-MET-GLN-SER-TYR-GLY-ALA",
+    "meta": {
+      "task_type": "protein_one_to_three",
+      "input": "KFEKMQSYGA",
+      "expected_output": "LYS-PHE-GLU-LYS-MET-GLN-SER-TYR-GLY-ALA",
+      "sequence_length": 10
+    }
+  },
+  {
+    "prompt": "You are a biochemistry expert. I need you to convert a protein sequence from one-letter amino acid codes to three-letter codes.\n\n**Biological Knowledge Required:**\nEach of the 20 standard amino acids has both a one-letter and three-letter abbreviation:\n\nA = ALA (Alanine)      R = ARG (Arginine)     N = ASN (Asparagine)   D = ASP (Aspartic acid)\nC = CYS (Cysteine)     Q = GLN (Glutamine)    E = GLU (Glutamic acid) G = GLY (Glycine)\nH = HIS (Histidine)    I = ILE (Isoleucine)   L = LEU (Leucine)      K = LYS (Lysine)\nM = MET (Methionine)   F = PHE (Phenylalanine) P = PRO (Proline)     S = SER (Serine)\nT = THR (Threonine)    W = TRP (Tryptophan)   Y = TYR (Tyrosine)     V = VAL (Valine)\n\n**Task:**\nConvert the following protein sequence from one-letter amino acid codes to three-letter codes.\n\n**Example:**\nInput: GRF\nOutput answer: GLY-ARG-PHE\n\n**Input protein sequence (one-letter codes):** ASHHFYLLIV\n\n**Instructions:**\n1. The input sequence contains individual amino acid letters with no separators\n2. Convert each one-letter code to its corresponding three-letter code using the table above\n3. Join the three-letter codes with hyphens as separators\n4. Provide your final answer between the tags <answer> and </answer>\n\nPlease convert the given protein sequence to three-letter amino acid codes.",
+    "answer": "ALA-SER-HIS-HIS-PHE-TYR-LEU-LEU-ILE-VAL",
+    "meta": {
+      "task_type": "protein_one_to_three",
+      "input": "ASHHFYLLIV",
+      "expected_output": "ALA-SER-HIS-HIS-PHE-TYR-LEU-LEU-ILE-VAL",
+      "sequence_length": 10
+    }
+  },
+  {
+    "prompt": "You are a biochemistry expert. I need you to convert a protein sequence from one-letter amino acid codes to three-letter codes.\n\n**Biological Knowledge Required:**\nEach of the 20 standard amino acids has both a one-letter and three-letter abbreviation:\n\nA = ALA (Alanine)      R = ARG (Arginine)     N = ASN (Asparagine)   D = ASP (Aspartic acid)\nC = CYS (Cysteine)     Q = GLN (Glutamine)    E = GLU (Glutamic acid) G = GLY (Glycine)\nH = HIS (Histidine)    I = ILE (Isoleucine)   L = LEU (Leucine)      K = LYS (Lysine)\nM = MET (Methionine)   F = PHE (Phenylalanine) P = PRO (Proline)     S = SER (Serine)\nT = THR (Threonine)    W = TRP (Tryptophan)   Y = TYR (Tyrosine)     V = VAL (Valine)\n\n**Task:**\nConvert the following protein sequence from one-letter amino acid codes to three-letter codes.\n\n**Example:**\nInput: GRF\nOutput answer: GLY-ARG-PHE\n\n**Input protein sequence (one-letter codes):** NPMNRFEITA\n\n**Instructions:**\n1. The input sequence contains individual amino acid letters with no separators\n2. Convert each one-letter code to its corresponding three-letter code using the table above\n3. Join the three-letter codes with hyphens as separators\n4. Provide your final answer between the tags <answer> and </answer>\n\nPlease convert the given protein sequence to three-letter amino acid codes.",
+    "answer": "ASN-PRO-MET-ASN-ARG-PHE-GLU-ILE-THR-ALA",
+    "meta": {
+      "task_type": "protein_one_to_three",
+      "input": "NPMNRFEITA",
+      "expected_output": "ASN-PRO-MET-ASN-ARG-PHE-GLU-ILE-THR-ALA",
+      "sequence_length": 10
+    }
+  },
+  {
+    "prompt": "You are a biochemistry expert. I need you to convert a protein sequence from one-letter amino acid codes to three-letter codes.\n\n**Biological Knowledge Required:**\nEach of the 20 standard amino acids has both a one-letter and three-letter abbreviation:\n\nA = ALA (Alanine)      R = ARG (Arginine)     N = ASN (Asparagine)   D = ASP (Aspartic acid)\nC = CYS (Cysteine)     Q = GLN (Glutamine)    E = GLU (Glutamic acid) G = GLY (Glycine)\nH = HIS (Histidine)    I = ILE (Isoleucine)   L = LEU (Leucine)      K = LYS (Lysine)\nM = MET (Methionine)   F = PHE (Phenylalanine) P = PRO (Proline)     S = SER (Serine)\nT = THR (Threonine)    W = TRP (Tryptophan)   Y = TYR (Tyrosine)     V = VAL (Valine)\n\n**Task:**\nConvert the following protein sequence from one-letter amino acid codes to three-letter codes.\n\n**Example:**\nInput: GRF\nOutput answer: GLY-ARG-PHE\n\n**Input protein sequence (one-letter codes):** VIVAPWVAYI\n\n**Instructions:**\n1. The input sequence contains individual amino acid letters with no separators\n2. Convert each one-letter code to its corresponding three-letter code using the table above\n3. Join the three-letter codes with hyphens as separators\n4. Provide your final answer between the tags <answer> and </answer>\n\nPlease convert the given protein sequence to three-letter amino acid codes.",
+    "answer": "VAL-ILE-VAL-ALA-PRO-TRP-VAL-ALA-TYR-ILE",
+    "meta": {
+      "task_type": "protein_one_to_three",
+      "input": "VIVAPWVAYI",
+      "expected_output": "VAL-ILE-VAL-ALA-PRO-TRP-VAL-ALA-TYR-ILE",
+      "sequence_length": 10
+    }
+  },
+  {
+    "prompt": "You are a biochemistry expert. I need you to convert a protein sequence from one-letter amino acid codes to three-letter codes.\n\n**Biological Knowledge Required:**\nEach of the 20 standard amino acids has both a one-letter and three-letter abbreviation:\n\nA = ALA (Alanine)      R = ARG (Arginine)     N = ASN (Asparagine)   D = ASP (Aspartic acid)\nC = CYS (Cysteine)     Q = GLN (Glutamine)    E = GLU (Glutamic acid) G = GLY (Glycine)\nH = HIS (Histidine)    I = ILE (Isoleucine)   L = LEU (Leucine)      K = LYS (Lysine)\nM = MET (Methionine)   F = PHE (Phenylalanine) P = PRO (Proline)     S = SER (Serine)\nT = THR (Threonine)    W = TRP (Tryptophan)   Y = TYR (Tyrosine)     V = VAL (Valine)\n\n**Task:**\nConvert the following protein sequence from one-letter amino acid codes to three-letter codes.\n\n**Example:**\nInput: GRF\nOutput answer: GLY-ARG-PHE\n\n**Input protein sequence (one-letter codes):** NVTQYLYAVK\n\n**Instructions:**\n1. The input sequence contains individual amino acid letters with no separators\n2. Convert each one-letter code to its corresponding three-letter code using the table above\n3. Join the three-letter codes with hyphens as separators\n4. Provide your final answer between the tags <answer> and </answer>\n\nPlease convert the given protein sequence to three-letter amino acid codes.",
+    "answer": "ASN-VAL-THR-GLN-TYR-LEU-TYR-ALA-VAL-LYS",
+    "meta": {
+      "task_type": "protein_one_to_three",
+      "input": "NVTQYLYAVK",
+      "expected_output": "ASN-VAL-THR-GLN-TYR-LEU-TYR-ALA-VAL-LYS",
+      "sequence_length": 10
+    }
+  },
+  {
+    "prompt": "You are a biochemistry expert. I need you to convert a protein sequence from one-letter amino acid codes to three-letter codes.\n\n**Biological Knowledge Required:**\nEach of the 20 standard amino acids has both a one-letter and three-letter abbreviation:\n\nA = ALA (Alanine)      R = ARG (Arginine)     N = ASN (Asparagine)   D = ASP (Aspartic acid)\nC = CYS (Cysteine)     Q = GLN (Glutamine)    E = GLU (Glutamic acid) G = GLY (Glycine)\nH = HIS (Histidine)    I = ILE (Isoleucine)   L = LEU (Leucine)      K = LYS (Lysine)\nM = MET (Methionine)   F = PHE (Phenylalanine) P = PRO (Proline)     S = SER (Serine)\nT = THR (Threonine)    W = TRP (Tryptophan)   Y = TYR (Tyrosine)     V = VAL (Valine)\n\n**Task:**\nConvert the following protein sequence from one-letter amino acid codes to three-letter codes.\n\n**Example:**\nInput: GRF\nOutput answer: GLY-ARG-PHE\n\n**Input protein sequence (one-letter codes):** EGDVEMTWAR\n\n**Instructions:**\n1. The input sequence contains individual amino acid letters with no separators\n2. Convert each one-letter code to its corresponding three-letter code using the table above\n3. Join the three-letter codes with hyphens as separators\n4. Provide your final answer between the tags <answer> and </answer>\n\nPlease convert the given protein sequence to three-letter amino acid codes.",
+    "answer": "GLU-GLY-ASP-VAL-GLU-MET-THR-TRP-ALA-ARG",
+    "meta": {
+      "task_type": "protein_one_to_three",
+      "input": "EGDVEMTWAR",
+      "expected_output": "GLU-GLY-ASP-VAL-GLU-MET-THR-TRP-ALA-ARG",
+      "sequence_length": 10
+    }
+  },
+  {
+    "prompt": "You are a biochemistry expert. I need you to convert a protein sequence from one-letter amino acid codes to three-letter codes.\n\n**Biological Knowledge Required:**\nEach of the 20 standard amino acids has both a one-letter and three-letter abbreviation:\n\nA = ALA (Alanine)      R = ARG (Arginine)     N = ASN (Asparagine)   D = ASP (Aspartic acid)\nC = CYS (Cysteine)     Q = GLN (Glutamine)    E = GLU (Glutamic acid) G = GLY (Glycine)\nH = HIS (Histidine)    I = ILE (Isoleucine)   L = LEU (Leucine)      K = LYS (Lysine)\nM = MET (Methionine)   F = PHE (Phenylalanine) P = PRO (Proline)     S = SER (Serine)\nT = THR (Threonine)    W = TRP (Tryptophan)   Y = TYR (Tyrosine)     V = VAL (Valine)\n\n**Task:**\nConvert the following protein sequence from one-letter amino acid codes to three-letter codes.\n\n**Example:**\nInput: GRF\nOutput answer: GLY-ARG-PHE\n\n**Input protein sequence (one-letter codes):** DWKAAFNKGE\n\n**Instructions:**\n1. The input sequence contains individual amino acid letters with no separators\n2. Convert each one-letter code to its corresponding three-letter code using the table above\n3. Join the three-letter codes with hyphens as separators\n4. Provide your final answer between the tags <answer> and </answer>\n\nPlease convert the given protein sequence to three-letter amino acid codes.",
+    "answer": "ASP-TRP-LYS-ALA-ALA-PHE-ASN-LYS-GLY-GLU",
+    "meta": {
+      "task_type": "protein_one_to_three",
+      "input": "DWKAAFNKGE",
+      "expected_output": "ASP-TRP-LYS-ALA-ALA-PHE-ASN-LYS-GLY-GLU",
+      "sequence_length": 10
+    }
+  },
+  {
+    "prompt": "You are a biochemistry expert. I need you to convert a protein sequence from one-letter amino acid codes to three-letter codes.\n\n**Biological Knowledge Required:**\nEach of the 20 standard amino acids has both a one-letter and three-letter abbreviation:\n\nA = ALA (Alanine)      R = ARG (Arginine)     N = ASN (Asparagine)   D = ASP (Aspartic acid)\nC = CYS (Cysteine)     Q = GLN (Glutamine)    E = GLU (Glutamic acid) G = GLY (Glycine)\nH = HIS (Histidine)    I = ILE (Isoleucine)   L = LEU (Leucine)      K = LYS (Lysine)\nM = MET (Methionine)   F = PHE (Phenylalanine) P = PRO (Proline)     S = SER (Serine)\nT = THR (Threonine)    W = TRP (Tryptophan)   Y = TYR (Tyrosine)     V = VAL (Valine)\n\n**Task:**\nConvert the following protein sequence from one-letter amino acid codes to three-letter codes.\n\n**Example:**\nInput: GRF\nOutput answer: GLY-ARG-PHE\n\n**Input protein sequence (one-letter codes):** KRAMGFESIF\n\n**Instructions:**\n1. The input sequence contains individual amino acid letters with no separators\n2. Convert each one-letter code to its corresponding three-letter code using the table above\n3. Join the three-letter codes with hyphens as separators\n4. Provide your final answer between the tags <answer> and </answer>\n\nPlease convert the given protein sequence to three-letter amino acid codes.",
+    "answer": "LYS-ARG-ALA-MET-GLY-PHE-GLU-SER-ILE-PHE",
+    "meta": {
+      "task_type": "protein_one_to_three",
+      "input": "KRAMGFESIF",
+      "expected_output": "LYS-ARG-ALA-MET-GLY-PHE-GLU-SER-ILE-PHE",
+      "sequence_length": 10
+    }
+  },
+  {
+    "prompt": "You are a biochemistry expert. I need you to convert a protein sequence from one-letter amino acid codes to three-letter codes.\n\n**Biological Knowledge Required:**\nEach of the 20 standard amino acids has both a one-letter and three-letter abbreviation:\n\nA = ALA (Alanine)      R = ARG (Arginine)     N = ASN (Asparagine)   D = ASP (Aspartic acid)\nC = CYS (Cysteine)     Q = GLN (Glutamine)    E = GLU (Glutamic acid) G = GLY (Glycine)\nH = HIS (Histidine)    I = ILE (Isoleucine)   L = LEU (Leucine)      K = LYS (Lysine)\nM = MET (Methionine)   F = PHE (Phenylalanine) P = PRO (Proline)     S = SER (Serine)\nT = THR (Threonine)    W = TRP (Tryptophan)   Y = TYR (Tyrosine)     V = VAL (Valine)\n\n**Task:**\nConvert the following protein sequence from one-letter amino acid codes to three-letter codes.\n\n**Example:**\nInput: GRF\nOutput answer: GLY-ARG-PHE\n\n**Input protein sequence (one-letter codes):** WNMNKHIKLT\n\n**Instructions:**\n1. The input sequence contains individual amino acid letters with no separators\n2. Convert each one-letter code to its corresponding three-letter code using the table above\n3. Join the three-letter codes with hyphens as separators\n4. Provide your final answer between the tags <answer> and </answer>\n\nPlease convert the given protein sequence to three-letter amino acid codes.",
+    "answer": "TRP-ASN-MET-ASN-LYS-HIS-ILE-LYS-LEU-THR",
+    "meta": {
+      "task_type": "protein_one_to_three",
+      "input": "WNMNKHIKLT",
+      "expected_output": "TRP-ASN-MET-ASN-LYS-HIS-ILE-LYS-LEU-THR",
+      "sequence_length": 10
+    }
+  },
+  {
+    "prompt": "You are a biochemistry expert. I need you to convert a protein sequence from one-letter amino acid codes to three-letter codes.\n\n**Biological Knowledge Required:**\nEach of the 20 standard amino acids has both a one-letter and three-letter abbreviation:\n\nA = ALA (Alanine)      R = ARG (Arginine)     N = ASN (Asparagine)   D = ASP (Aspartic acid)\nC = CYS (Cysteine)     Q = GLN (Glutamine)    E = GLU (Glutamic acid) G = GLY (Glycine)\nH = HIS (Histidine)    I = ILE (Isoleucine)   L = LEU (Leucine)      K = LYS (Lysine)\nM = MET (Methionine)   F = PHE (Phenylalanine) P = PRO (Proline)     S = SER (Serine)\nT = THR (Threonine)    W = TRP (Tryptophan)   Y = TYR (Tyrosine)     V = VAL (Valine)\n\n**Task:**\nConvert the following protein sequence from one-letter amino acid codes to three-letter codes.\n\n**Example:**\nInput: GRF\nOutput answer: GLY-ARG-PHE\n\n**Input protein sequence (one-letter codes):** LTIMHFLHCE\n\n**Instructions:**\n1. The input sequence contains individual amino acid letters with no separators\n2. Convert each one-letter code to its corresponding three-letter code using the table above\n3. Join the three-letter codes with hyphens as separators\n4. Provide your final answer between the tags <answer> and </answer>\n\nPlease convert the given protein sequence to three-letter amino acid codes.",
+    "answer": "LEU-THR-ILE-MET-HIS-PHE-LEU-HIS-CYS-GLU",
+    "meta": {
+      "task_type": "protein_one_to_three",
+      "input": "LTIMHFLHCE",
+      "expected_output": "LEU-THR-ILE-MET-HIS-PHE-LEU-HIS-CYS-GLU",
+      "sequence_length": 10
+    }
+  },
+  {
+    "prompt": "You are a biochemistry expert. I need you to convert a protein sequence from one-letter amino acid codes to three-letter codes.\n\n**Biological Knowledge Required:**\nEach of the 20 standard amino acids has both a one-letter and three-letter abbreviation:\n\nA = ALA (Alanine)      R = ARG (Arginine)     N = ASN (Asparagine)   D = ASP (Aspartic acid)\nC = CYS (Cysteine)     Q = GLN (Glutamine)    E = GLU (Glutamic acid) G = GLY (Glycine)\nH = HIS (Histidine)    I = ILE (Isoleucine)   L = LEU (Leucine)      K = LYS (Lysine)\nM = MET (Methionine)   F = PHE (Phenylalanine) P = PRO (Proline)     S = SER (Serine)\nT = THR (Threonine)    W = TRP (Tryptophan)   Y = TYR (Tyrosine)     V = VAL (Valine)\n\n**Task:**\nConvert the following protein sequence from one-letter amino acid codes to three-letter codes.\n\n**Example:**\nInput: GRF\nOutput answer: GLY-ARG-PHE\n\n**Input protein sequence (one-letter codes):** ERWNGMTYHQ\n\n**Instructions:**\n1. The input sequence contains individual amino acid letters with no separators\n2. Convert each one-letter code to its corresponding three-letter code using the table above\n3. Join the three-letter codes with hyphens as separators\n4. Provide your final answer between the tags <answer> and </answer>\n\nPlease convert the given protein sequence to three-letter amino acid codes.",
+    "answer": "GLU-ARG-TRP-ASN-GLY-MET-THR-TYR-HIS-GLN",
+    "meta": {
+      "task_type": "protein_one_to_three",
+      "input": "ERWNGMTYHQ",
+      "expected_output": "GLU-ARG-TRP-ASN-GLY-MET-THR-TYR-HIS-GLN",
+      "sequence_length": 10
+    }
+  },
+  {
+    "prompt": "You are a biochemistry expert. I need you to convert a protein sequence from one-letter amino acid codes to three-letter codes.\n\n**Biological Knowledge Required:**\nEach of the 20 standard amino acids has both a one-letter and three-letter abbreviation:\n\nA = ALA (Alanine)      R = ARG (Arginine)     N = ASN (Asparagine)   D = ASP (Aspartic acid)\nC = CYS (Cysteine)     Q = GLN (Glutamine)    E = GLU (Glutamic acid) G = GLY (Glycine)\nH = HIS (Histidine)    I = ILE (Isoleucine)   L = LEU (Leucine)      K = LYS (Lysine)\nM = MET (Methionine)   F = PHE (Phenylalanine) P = PRO (Proline)     S = SER (Serine)\nT = THR (Threonine)    W = TRP (Tryptophan)   Y = TYR (Tyrosine)     V = VAL (Valine)\n\n**Task:**\nConvert the following protein sequence from one-letter amino acid codes to three-letter codes.\n\n**Example:**\nInput: GRF\nOutput answer: GLY-ARG-PHE\n\n**Input protein sequence (one-letter codes):** NAYRRIDYFV\n\n**Instructions:**\n1. The input sequence contains individual amino acid letters with no separators\n2. Convert each one-letter code to its corresponding three-letter code using the table above\n3. Join the three-letter codes with hyphens as separators\n4. Provide your final answer between the tags <answer> and </answer>\n\nPlease convert the given protein sequence to three-letter amino acid codes.",
+    "answer": "ASN-ALA-TYR-ARG-ARG-ILE-ASP-TYR-PHE-VAL",
+    "meta": {
+      "task_type": "protein_one_to_three",
+      "input": "NAYRRIDYFV",
+      "expected_output": "ASN-ALA-TYR-ARG-ARG-ILE-ASP-TYR-PHE-VAL",
+      "sequence_length": 10
+    }
+  },
+  {
+    "prompt": "You are a biochemistry expert. I need you to convert a protein sequence from one-letter amino acid codes to three-letter codes.\n\n**Biological Knowledge Required:**\nEach of the 20 standard amino acids has both a one-letter and three-letter abbreviation:\n\nA = ALA (Alanine)      R = ARG (Arginine)     N = ASN (Asparagine)   D = ASP (Aspartic acid)\nC = CYS (Cysteine)     Q = GLN (Glutamine)    E = GLU (Glutamic acid) G = GLY (Glycine)\nH = HIS (Histidine)    I = ILE (Isoleucine)   L = LEU (Leucine)      K = LYS (Lysine)\nM = MET (Methionine)   F = PHE (Phenylalanine) P = PRO (Proline)     S = SER (Serine)\nT = THR (Threonine)    W = TRP (Tryptophan)   Y = TYR (Tyrosine)     V = VAL (Valine)\n\n**Task:**\nConvert the following protein sequence from one-letter amino acid codes to three-letter codes.\n\n**Example:**\nInput: GRF\nOutput answer: GLY-ARG-PHE\n\n**Input protein sequence (one-letter codes):** VMPVLNPQSE\n\n**Instructions:**\n1. The input sequence contains individual amino acid letters with no separators\n2. Convert each one-letter code to its corresponding three-letter code using the table above\n3. Join the three-letter codes with hyphens as separators\n4. Provide your final answer between the tags <answer> and </answer>\n\nPlease convert the given protein sequence to three-letter amino acid codes.",
+    "answer": "VAL-MET-PRO-VAL-LEU-ASN-PRO-GLN-SER-GLU",
+    "meta": {
+      "task_type": "protein_one_to_three",
+      "input": "VMPVLNPQSE",
+      "expected_output": "VAL-MET-PRO-VAL-LEU-ASN-PRO-GLN-SER-GLU",
+      "sequence_length": 10
+    }
+  },
+  {
+    "prompt": "You are a biochemistry expert. I need you to convert a protein sequence from one-letter amino acid codes to three-letter codes.\n\n**Biological Knowledge Required:**\nEach of the 20 standard amino acids has both a one-letter and three-letter abbreviation:\n\nA = ALA (Alanine)      R = ARG (Arginine)     N = ASN (Asparagine)   D = ASP (Aspartic acid)\nC = CYS (Cysteine)     Q = GLN (Glutamine)    E = GLU (Glutamic acid) G = GLY (Glycine)\nH = HIS (Histidine)    I = ILE (Isoleucine)   L = LEU (Leucine)      K = LYS (Lysine)\nM = MET (Methionine)   F = PHE (Phenylalanine) P = PRO (Proline)     S = SER (Serine)\nT = THR (Threonine)    W = TRP (Tryptophan)   Y = TYR (Tyrosine)     V = VAL (Valine)\n\n**Task:**\nConvert the following protein sequence from one-letter amino acid codes to three-letter codes.\n\n**Example:**\nInput: GRF\nOutput answer: GLY-ARG-PHE\n\n**Input protein sequence (one-letter codes):** AGIRECWRER\n\n**Instructions:**\n1. The input sequence contains individual amino acid letters with no separators\n2. Convert each one-letter code to its corresponding three-letter code using the table above\n3. Join the three-letter codes with hyphens as separators\n4. Provide your final answer between the tags <answer> and </answer>\n\nPlease convert the given protein sequence to three-letter amino acid codes.",
+    "answer": "ALA-GLY-ILE-ARG-GLU-CYS-TRP-ARG-GLU-ARG",
+    "meta": {
+      "task_type": "protein_one_to_three",
+      "input": "AGIRECWRER",
+      "expected_output": "ALA-GLY-ILE-ARG-GLU-CYS-TRP-ARG-GLU-ARG",
+      "sequence_length": 10
+    }
+  },
+  {
+    "prompt": "You are a biochemistry expert. I need you to convert a protein sequence from one-letter amino acid codes to three-letter codes.\n\n**Biological Knowledge Required:**\nEach of the 20 standard amino acids has both a one-letter and three-letter abbreviation:\n\nA = ALA (Alanine)      R = ARG (Arginine)     N = ASN (Asparagine)   D = ASP (Aspartic acid)\nC = CYS (Cysteine)     Q = GLN (Glutamine)    E = GLU (Glutamic acid) G = GLY (Glycine)\nH = HIS (Histidine)    I = ILE (Isoleucine)   L = LEU (Leucine)      K = LYS (Lysine)\nM = MET (Methionine)   F = PHE (Phenylalanine) P = PRO (Proline)     S = SER (Serine)\nT = THR (Threonine)    W = TRP (Tryptophan)   Y = TYR (Tyrosine)     V = VAL (Valine)\n\n**Task:**\nConvert the following protein sequence from one-letter amino acid codes to three-letter codes.\n\n**Example:**\nInput: GRF\nOutput answer: GLY-ARG-PHE\n\n**Input protein sequence (one-letter codes):** GYVKLAFQEI\n\n**Instructions:**\n1. The input sequence contains individual amino acid letters with no separators\n2. Convert each one-letter code to its corresponding three-letter code using the table above\n3. Join the three-letter codes with hyphens as separators\n4. Provide your final answer between the tags <answer> and </answer>\n\nPlease convert the given protein sequence to three-letter amino acid codes.",
+    "answer": "GLY-TYR-VAL-LYS-LEU-ALA-PHE-GLN-GLU-ILE",
+    "meta": {
+      "task_type": "protein_one_to_three",
+      "input": "GYVKLAFQEI",
+      "expected_output": "GLY-TYR-VAL-LYS-LEU-ALA-PHE-GLN-GLU-ILE",
+      "sequence_length": 10
+    }
+  },
+  {
+    "prompt": "You are a biochemistry expert. I need you to convert a protein sequence from one-letter amino acid codes to three-letter codes.\n\n**Biological Knowledge Required:**\nEach of the 20 standard amino acids has both a one-letter and three-letter abbreviation:\n\nA = ALA (Alanine)      R = ARG (Arginine)     N = ASN (Asparagine)   D = ASP (Aspartic acid)\nC = CYS (Cysteine)     Q = GLN (Glutamine)    E = GLU (Glutamic acid) G = GLY (Glycine)\nH = HIS (Histidine)    I = ILE (Isoleucine)   L = LEU (Leucine)      K = LYS (Lysine)\nM = MET (Methionine)   F = PHE (Phenylalanine) P = PRO (Proline)     S = SER (Serine)\nT = THR (Threonine)    W = TRP (Tryptophan)   Y = TYR (Tyrosine)     V = VAL (Valine)\n\n**Task:**\nConvert the following protein sequence from one-letter amino acid codes to three-letter codes.\n\n**Example:**\nInput: GRF\nOutput answer: GLY-ARG-PHE\n\n**Input protein sequence (one-letter codes):** LEKWICESET\n\n**Instructions:**\n1. The input sequence contains individual amino acid letters with no separators\n2. Convert each one-letter code to its corresponding three-letter code using the table above\n3. Join the three-letter codes with hyphens as separators\n4. Provide your final answer between the tags <answer> and </answer>\n\nPlease convert the given protein sequence to three-letter amino acid codes.",
+    "answer": "LEU-GLU-LYS-TRP-ILE-CYS-GLU-SER-GLU-THR",
+    "meta": {
+      "task_type": "protein_one_to_three",
+      "input": "LEKWICESET",
+      "expected_output": "LEU-GLU-LYS-TRP-ILE-CYS-GLU-SER-GLU-THR",
+      "sequence_length": 10
+    }
+  },
+  {
+    "prompt": "You are a biochemistry expert. I need you to convert a protein sequence from one-letter amino acid codes to three-letter codes.\n\n**Biological Knowledge Required:**\nEach of the 20 standard amino acids has both a one-letter and three-letter abbreviation:\n\nA = ALA (Alanine)      R = ARG (Arginine)     N = ASN (Asparagine)   D = ASP (Aspartic acid)\nC = CYS (Cysteine)     Q = GLN (Glutamine)    E = GLU (Glutamic acid) G = GLY (Glycine)\nH = HIS (Histidine)    I = ILE (Isoleucine)   L = LEU (Leucine)      K = LYS (Lysine)\nM = MET (Methionine)   F = PHE (Phenylalanine) P = PRO (Proline)     S = SER (Serine)\nT = THR (Threonine)    W = TRP (Tryptophan)   Y = TYR (Tyrosine)     V = VAL (Valine)\n\n**Task:**\nConvert the following protein sequence from one-letter amino acid codes to three-letter codes.\n\n**Example:**\nInput: GRF\nOutput answer: GLY-ARG-PHE\n\n**Input protein sequence (one-letter codes):** LECQEVVQMC\n\n**Instructions:**\n1. The input sequence contains individual amino acid letters with no separators\n2. Convert each one-letter code to its corresponding three-letter code using the table above\n3. Join the three-letter codes with hyphens as separators\n4. Provide your final answer between the tags <answer> and </answer>\n\nPlease convert the given protein sequence to three-letter amino acid codes.",
+    "answer": "LEU-GLU-CYS-GLN-GLU-VAL-VAL-GLN-MET-CYS",
+    "meta": {
+      "task_type": "protein_one_to_three",
+      "input": "LECQEVVQMC",
+      "expected_output": "LEU-GLU-CYS-GLN-GLU-VAL-VAL-GLN-MET-CYS",
+      "sequence_length": 10
+    }
+  },
+  {
+    "prompt": "You are a biochemistry expert. I need you to convert a protein sequence from one-letter amino acid codes to three-letter codes.\n\n**Biological Knowledge Required:**\nEach of the 20 standard amino acids has both a one-letter and three-letter abbreviation:\n\nA = ALA (Alanine)      R = ARG (Arginine)     N = ASN (Asparagine)   D = ASP (Aspartic acid)\nC = CYS (Cysteine)     Q = GLN (Glutamine)    E = GLU (Glutamic acid) G = GLY (Glycine)\nH = HIS (Histidine)    I = ILE (Isoleucine)   L = LEU (Leucine)      K = LYS (Lysine)\nM = MET (Methionine)   F = PHE (Phenylalanine) P = PRO (Proline)     S = SER (Serine)\nT = THR (Threonine)    W = TRP (Tryptophan)   Y = TYR (Tyrosine)     V = VAL (Valine)\n\n**Task:**\nConvert the following protein sequence from one-letter amino acid codes to three-letter codes.\n\n**Example:**\nInput: GRF\nOutput answer: GLY-ARG-PHE\n\n**Input protein sequence (one-letter codes):** AFQFHTNVCF\n\n**Instructions:**\n1. The input sequence contains individual amino acid letters with no separators\n2. Convert each one-letter code to its corresponding three-letter code using the table above\n3. Join the three-letter codes with hyphens as separators\n4. Provide your final answer between the tags <answer> and </answer>\n\nPlease convert the given protein sequence to three-letter amino acid codes.",
+    "answer": "ALA-PHE-GLN-PHE-HIS-THR-ASN-VAL-CYS-PHE",
+    "meta": {
+      "task_type": "protein_one_to_three",
+      "input": "AFQFHTNVCF",
+      "expected_output": "ALA-PHE-GLN-PHE-HIS-THR-ASN-VAL-CYS-PHE",
+      "sequence_length": 10
+    }
+  },
+  {
+    "prompt": "You are a biochemistry expert. I need you to convert a protein sequence from one-letter amino acid codes to three-letter codes.\n\n**Biological Knowledge Required:**\nEach of the 20 standard amino acids has both a one-letter and three-letter abbreviation:\n\nA = ALA (Alanine)      R = ARG (Arginine)     N = ASN (Asparagine)   D = ASP (Aspartic acid)\nC = CYS (Cysteine)     Q = GLN (Glutamine)    E = GLU (Glutamic acid) G = GLY (Glycine)\nH = HIS (Histidine)    I = ILE (Isoleucine)   L = LEU (Leucine)      K = LYS (Lysine)\nM = MET (Methionine)   F = PHE (Phenylalanine) P = PRO (Proline)     S = SER (Serine)\nT = THR (Threonine)    W = TRP (Tryptophan)   Y = TYR (Tyrosine)     V = VAL (Valine)\n\n**Task:**\nConvert the following protein sequence from one-letter amino acid codes to three-letter codes.\n\n**Example:**\nInput: GRF\nOutput answer: GLY-ARG-PHE\n\n**Input protein sequence (one-letter codes):** RLFNPTHGCR\n\n**Instructions:**\n1. The input sequence contains individual amino acid letters with no separators\n2. Convert each one-letter code to its corresponding three-letter code using the table above\n3. Join the three-letter codes with hyphens as separators\n4. Provide your final answer between the tags <answer> and </answer>\n\nPlease convert the given protein sequence to three-letter amino acid codes.",
+    "answer": "ARG-LEU-PHE-ASN-PRO-THR-HIS-GLY-CYS-ARG",
+    "meta": {
+      "task_type": "protein_one_to_three",
+      "input": "RLFNPTHGCR",
+      "expected_output": "ARG-LEU-PHE-ASN-PRO-THR-HIS-GLY-CYS-ARG",
+      "sequence_length": 10
+    }
+  },
+  {
+    "prompt": "You are a biochemistry expert. I need you to convert a protein sequence from one-letter amino acid codes to three-letter codes.\n\n**Biological Knowledge Required:**\nEach of the 20 standard amino acids has both a one-letter and three-letter abbreviation:\n\nA = ALA (Alanine)      R = ARG (Arginine)     N = ASN (Asparagine)   D = ASP (Aspartic acid)\nC = CYS (Cysteine)     Q = GLN (Glutamine)    E = GLU (Glutamic acid) G = GLY (Glycine)\nH = HIS (Histidine)    I = ILE (Isoleucine)   L = LEU (Leucine)      K = LYS (Lysine)\nM = MET (Methionine)   F = PHE (Phenylalanine) P = PRO (Proline)     S = SER (Serine)\nT = THR (Threonine)    W = TRP (Tryptophan)   Y = TYR (Tyrosine)     V = VAL (Valine)\n\n**Task:**\nConvert the following protein sequence from one-letter amino acid codes to three-letter codes.\n\n**Example:**\nInput: GRF\nOutput answer: GLY-ARG-PHE\n\n**Input protein sequence (one-letter codes):** TMWMKHLLWD\n\n**Instructions:**\n1. The input sequence contains individual amino acid letters with no separators\n2. Convert each one-letter code to its corresponding three-letter code using the table above\n3. Join the three-letter codes with hyphens as separators\n4. Provide your final answer between the tags <answer> and </answer>\n\nPlease convert the given protein sequence to three-letter amino acid codes.",
+    "answer": "THR-MET-TRP-MET-LYS-HIS-LEU-LEU-TRP-ASP",
+    "meta": {
+      "task_type": "protein_one_to_three",
+      "input": "TMWMKHLLWD",
+      "expected_output": "THR-MET-TRP-MET-LYS-HIS-LEU-LEU-TRP-ASP",
+      "sequence_length": 10
+    }
+  },
+  {
+    "prompt": "You are a biochemistry expert. I need you to convert a protein sequence from one-letter amino acid codes to three-letter codes.\n\n**Biological Knowledge Required:**\nEach of the 20 standard amino acids has both a one-letter and three-letter abbreviation:\n\nA = ALA (Alanine)      R = ARG (Arginine)     N = ASN (Asparagine)   D = ASP (Aspartic acid)\nC = CYS (Cysteine)     Q = GLN (Glutamine)    E = GLU (Glutamic acid) G = GLY (Glycine)\nH = HIS (Histidine)    I = ILE (Isoleucine)   L = LEU (Leucine)      K = LYS (Lysine)\nM = MET (Methionine)   F = PHE (Phenylalanine) P = PRO (Proline)     S = SER (Serine)\nT = THR (Threonine)    W = TRP (Tryptophan)   Y = TYR (Tyrosine)     V = VAL (Valine)\n\n**Task:**\nConvert the following protein sequence from one-letter amino acid codes to three-letter codes.\n\n**Example:**\nInput: GRF\nOutput answer: GLY-ARG-PHE\n\n**Input protein sequence (one-letter codes):** MRWMFEMDEM\n\n**Instructions:**\n1. The input sequence contains individual amino acid letters with no separators\n2. Convert each one-letter code to its corresponding three-letter code using the table above\n3. Join the three-letter codes with hyphens as separators\n4. Provide your final answer between the tags <answer> and </answer>\n\nPlease convert the given protein sequence to three-letter amino acid codes.",
+    "answer": "MET-ARG-TRP-MET-PHE-GLU-MET-ASP-GLU-MET",
+    "meta": {
+      "task_type": "protein_one_to_three",
+      "input": "MRWMFEMDEM",
+      "expected_output": "MET-ARG-TRP-MET-PHE-GLU-MET-ASP-GLU-MET",
+      "sequence_length": 10
+    }
+  },
+  {
+    "prompt": "You are a biochemistry expert. I need you to convert a protein sequence from one-letter amino acid codes to three-letter codes.\n\n**Biological Knowledge Required:**\nEach of the 20 standard amino acids has both a one-letter and three-letter abbreviation:\n\nA = ALA (Alanine)      R = ARG (Arginine)     N = ASN (Asparagine)   D = ASP (Aspartic acid)\nC = CYS (Cysteine)     Q = GLN (Glutamine)    E = GLU (Glutamic acid) G = GLY (Glycine)\nH = HIS (Histidine)    I = ILE (Isoleucine)   L = LEU (Leucine)      K = LYS (Lysine)\nM = MET (Methionine)   F = PHE (Phenylalanine) P = PRO (Proline)     S = SER (Serine)\nT = THR (Threonine)    W = TRP (Tryptophan)   Y = TYR (Tyrosine)     V = VAL (Valine)\n\n**Task:**\nConvert the following protein sequence from one-letter amino acid codes to three-letter codes.\n\n**Example:**\nInput: GRF\nOutput answer: GLY-ARG-PHE\n\n**Input protein sequence (one-letter codes):** NSMFWSYHRF\n\n**Instructions:**\n1. The input sequence contains individual amino acid letters with no separators\n2. Convert each one-letter code to its corresponding three-letter code using the table above\n3. Join the three-letter codes with hyphens as separators\n4. Provide your final answer between the tags <answer> and </answer>\n\nPlease convert the given protein sequence to three-letter amino acid codes.",
+    "answer": "ASN-SER-MET-PHE-TRP-SER-TYR-HIS-ARG-PHE",
+    "meta": {
+      "task_type": "protein_one_to_three",
+      "input": "NSMFWSYHRF",
+      "expected_output": "ASN-SER-MET-PHE-TRP-SER-TYR-HIS-ARG-PHE",
+      "sequence_length": 10
+    }
+  }
+]
